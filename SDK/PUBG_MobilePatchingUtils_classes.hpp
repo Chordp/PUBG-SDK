@@ -31,7 +31,11 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	bool Mount(int* PakOrder, struct FString* MountPoint);
+=======
+	bool Mount(int PakOrder, const struct FString& MountPoint);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	float GetInstalledContentSize();
 	float GetDiskFreeSpace();
 };
@@ -54,7 +58,11 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void StartInstall(struct FScriptDelegate* OnSucceeded, struct FScriptDelegate* OnFailed);
+=======
+	void StartInstall(const struct FScriptDelegate& OnSucceeded, const struct FScriptDelegate& OnFailed);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	float GetTotalDownloadedSize();
 	float GetRequiredDiskSpace();
 	float GetInstallProgress();
@@ -80,10 +88,17 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void STATIC_RequestContent(struct FString* RemoteManifestURL, struct FString* CloudURL, struct FString* InstallDirectory, struct FScriptDelegate* OnSucceeded, struct FScriptDelegate* OnFailed);
 	bool STATIC_HasActiveWiFiConnection();
 	TArray<struct FString> STATIC_GetSupportedPlatformNames();
 	class UMobileInstalledContent* STATIC_GetInstalledContent(struct FString* InstallDirectory);
+=======
+	void STATIC_RequestContent(const struct FString& RemoteManifestURL, const struct FString& CloudURL, const struct FString& InstallDirectory, const struct FScriptDelegate& OnSucceeded, const struct FScriptDelegate& OnFailed);
+	bool STATIC_HasActiveWiFiConnection();
+	TArray<struct FString> STATIC_GetSupportedPlatformNames();
+	class UMobileInstalledContent* STATIC_GetInstalledContent(const struct FString& InstallDirectory);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	struct FString STATIC_GetActiveDeviceProfileName();
 };
 

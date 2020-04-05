@@ -14,7 +14,11 @@ namespace SDK
 
 // Function teenage_info.teenage_info_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void Uteenage_info_C::Construct()
 {
@@ -35,7 +39,11 @@ void Uteenage_info_C::Construct()
 
 // Function teenage_info.teenage_info_C.OnFinished
 // (BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void Uteenage_info_C::OnFinished()
 {
@@ -56,7 +64,11 @@ void Uteenage_info_C::OnFinished()
 
 // Function teenage_info.teenage_info_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void Uteenage_info_C::Destruct()
 {
@@ -79,7 +91,11 @@ void Uteenage_info_C::Destruct()
 // ()
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void Uteenage_info_C::ExecuteUbergraph_teenage_info(int* EntryPoint)
 {

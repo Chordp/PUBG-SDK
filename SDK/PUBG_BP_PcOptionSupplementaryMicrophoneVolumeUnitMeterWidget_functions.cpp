@@ -16,7 +16,11 @@ namespace SDK
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UClass*                  GuideClass                     (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UBP_PcOptionSupplementaryMicrophoneVolumeUnitMeterWidget_C::GetGamePadHelpWidgetClass(class UClass** GuideClass)
 {
@@ -40,7 +44,11 @@ void UBP_PcOptionSupplementaryMicrophoneVolumeUnitMeterWidget_C::GetGamePadHelpW
 
 // Function BP_PcOptionSupplementaryMicrophoneVolumeUnitMeterWidget.BP_PcOptionSupplementaryMicrophoneVolumeUnitMeterWidget_C.OnAnimFinish
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UBP_PcOptionSupplementaryMicrophoneVolumeUnitMeterWidget_C::OnAnimFinish()
 {
@@ -63,7 +71,11 @@ void UBP_PcOptionSupplementaryMicrophoneVolumeUnitMeterWidget_C::OnAnimFinish()
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float*                         Volume_Level_in_Decimal        (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UBP_PcOptionSupplementaryMicrophoneVolumeUnitMeterWidget_C::UpdateVolumeMeterValue(float* Volume_Level_in_Decimal)
 {
@@ -85,7 +97,11 @@ void UBP_PcOptionSupplementaryMicrophoneVolumeUnitMeterWidget_C::UpdateVolumeMet
 
 // Function BP_PcOptionSupplementaryMicrophoneVolumeUnitMeterWidget.BP_PcOptionSupplementaryMicrophoneVolumeUnitMeterWidget_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UBP_PcOptionSupplementaryMicrophoneVolumeUnitMeterWidget_C::Construct()
 {
@@ -108,7 +124,11 @@ void UBP_PcOptionSupplementaryMicrophoneVolumeUnitMeterWidget_C::Construct()
 // (Event, Public, BlueprintEvent)
 // Parameters:
 // float*                         Energy                         (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UBP_PcOptionSupplementaryMicrophoneVolumeUnitMeterWidget_C::UpdateVolumeUnitMeter(float* Energy)
 {
@@ -132,7 +152,11 @@ void UBP_PcOptionSupplementaryMicrophoneVolumeUnitMeterWidget_C::UpdateVolumeUni
 // ()
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UBP_PcOptionSupplementaryMicrophoneVolumeUnitMeterWidget_C::ExecuteUbergraph_BP_PcOptionSupplementaryMicrophoneVolumeUnitMeterWidget(int* EntryPoint)
 {

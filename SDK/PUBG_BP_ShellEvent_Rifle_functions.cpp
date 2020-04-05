@@ -21,7 +21,11 @@ namespace SDK
 // struct FName*                  InBoneName                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
 // class UWorld**                 InWorld                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 // class AActor**                 InActor                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UBP_ShellEvent_Rifle_C::RunEvent(struct FVector* InCollideDirection, struct FVector* InHitLocation, struct FVector* InHitNormal, struct FName* InBoneName, class UWorld** InWorld, class AActor** InActor)
 {
@@ -50,7 +54,11 @@ void UBP_ShellEvent_Rifle_C::RunEvent(struct FVector* InCollideDirection, struct
 // (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UBP_ShellEvent_Rifle_C::ExecuteUbergraph_BP_ShellEvent_Rifle(int* EntryPoint)
 {

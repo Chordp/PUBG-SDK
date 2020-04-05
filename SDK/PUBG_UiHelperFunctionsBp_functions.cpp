@@ -17,7 +17,11 @@ namespace SDK
 // Parameters:
 // class UObject**                __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData)
 // struct FLinearColor            NewParam                       (Parm, OutParm, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiHelperFunctionsBp_C::STATIC_InventoryFocusingColor(class UObject** __WorldContext, struct FLinearColor* NewParam)
 {
@@ -45,7 +49,11 @@ void UUiHelperFunctionsBp_C::STATIC_InventoryFocusingColor(class UObject** __Wor
 // Parameters:
 // class UObject**                __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           NewParam                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiHelperFunctionsBp_C::STATIC_IsXboxOnePlatform(class UObject** __WorldContext, bool* NewParam)
 {
@@ -74,7 +82,11 @@ void UUiHelperFunctionsBp_C::STATIC_IsXboxOnePlatform(class UObject** __WorldCon
 // class UUserWidget**            Widget                         (Parm, ZeroConstructor, IsPlainOldData)
 // class UObject**                __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData)
 // struct FVector                 Look                           (Parm, OutParm, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiHelperFunctionsBp_C::STATIC_GetCharacterLook(class UUserWidget** Widget, class UObject** __WorldContext, struct FVector* Look)
 {
@@ -104,7 +116,11 @@ void UUiHelperFunctionsBp_C::STATIC_GetCharacterLook(class UUserWidget** Widget,
 // class UUserWidget**            Widget                         (Parm, ZeroConstructor, IsPlainOldData)
 // class UObject**                __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData)
 // struct FVector                 Position                       (Parm, OutParm, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiHelperFunctionsBp_C::STATIC_GetCharacterPosititon(class UUserWidget** Widget, class UObject** __WorldContext, struct FVector* Position)
 {
@@ -134,7 +150,11 @@ void UUiHelperFunctionsBp_C::STATIC_GetCharacterPosititon(class UUserWidget** Wi
 // class UUserWidget**            Widget                         (Parm, ZeroConstructor, IsPlainOldData)
 // class UObject**                __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData)
 // float                          Angle                          (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiHelperFunctionsBp_C::STATIC_GetCharacterAngle(class UUserWidget** Widget, class UObject** __WorldContext, float* Angle)
 {
@@ -164,7 +184,11 @@ void UUiHelperFunctionsBp_C::STATIC_GetCharacterAngle(class UUserWidget** Widget
 // class UObject**                WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // class UObject**                __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData)
 // float                          WarningTime                    (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiHelperFunctionsBp_C::STATIC_GetBluezoneWarningTimeBp(class UObject** WorldContextObject, class UObject** __WorldContext, float* WarningTime)
 {
@@ -194,7 +218,11 @@ void UUiHelperFunctionsBp_C::STATIC_GetBluezoneWarningTimeBp(class UObject** Wor
 // class UObject**                WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // class UObject**                __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData)
 // float                          ReleaseTime                    (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiHelperFunctionsBp_C::STATIC_GetBluezoneReleaseTimeBp(class UObject** WorldContextObject, class UObject** __WorldContext, float* ReleaseTime)
 {
@@ -224,7 +252,11 @@ void UUiHelperFunctionsBp_C::STATIC_GetBluezoneReleaseTimeBp(class UObject** Wor
 // float*                         Distance                       (Parm, ZeroConstructor, IsPlainOldData)
 // class UObject**                __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData)
 // struct FLinearColor            Color                          (Parm, OutParm, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiHelperFunctionsBp_C::STATIC_GetDistanceColor(float* Distance, class UObject** __WorldContext, struct FLinearColor* Color)
 {
@@ -255,7 +287,11 @@ void UUiHelperFunctionsBp_C::STATIC_GetDistanceColor(float* Distance, class UObj
 // class ATslCharacter**          Character                      (Parm, ZeroConstructor, IsPlainOldData)
 // class UObject**                __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bIsTeam                        (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiHelperFunctionsBp_C::STATIC_IsLastSpectatorTeam(class UUserWidget** Widget, class ATslCharacter** Character, class UObject** __WorldContext, bool* bIsTeam)
 {
@@ -285,7 +321,11 @@ void UUiHelperFunctionsBp_C::STATIC_IsLastSpectatorTeam(class UUserWidget** Widg
 // Parameters:
 // class UObject**                __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData)
 // struct FLinearColor            Color                          (Parm, OutParm, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiHelperFunctionsBp_C::STATIC_GetTeamColor(class UObject** __WorldContext, struct FLinearColor* Color)
 {
@@ -315,7 +355,11 @@ void UUiHelperFunctionsBp_C::STATIC_GetTeamColor(class UObject** __WorldContext,
 // class ATslCharacter**          Character                      (Parm, ZeroConstructor, IsPlainOldData)
 // class UObject**                __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bIsTeam                        (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiHelperFunctionsBp_C::STATIC_IsSpectatorTeam(class UUserWidget** Widget, class ATslCharacter** Character, class UObject** __WorldContext, bool* bIsTeam)
 {
@@ -346,7 +390,11 @@ void UUiHelperFunctionsBp_C::STATIC_IsSpectatorTeam(class UUserWidget** Widget, 
 // class ATeam**                  Team                           (Parm, ZeroConstructor, IsPlainOldData)
 // class UObject**                __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData)
 // int                            State                          (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiHelperFunctionsBp_C::STATIC_GetStateByTeam(class ATeam** Team, class UObject** __WorldContext, int* State)
 {
@@ -376,7 +424,11 @@ void UUiHelperFunctionsBp_C::STATIC_GetStateByTeam(class ATeam** Team, class UOb
 // class ATslCharacter**          Character                      (Parm, ZeroConstructor, IsPlainOldData)
 // class UObject**                __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData)
 // int                            OutState                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiHelperFunctionsBp_C::STATIC_GetStateByCharacter(class ATslCharacter** Character, class UObject** __WorldContext, int* OutState)
 {
@@ -406,7 +458,11 @@ void UUiHelperFunctionsBp_C::STATIC_GetStateByCharacter(class ATslCharacter** Ch
 // bool*                          bISpectator                    (Parm, ZeroConstructor, IsPlainOldData)
 // class UObject**                __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData)
 // struct FLinearColor            Color                          (Parm, OutParm, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiHelperFunctionsBp_C::STATIC_GetSpectatorColor(bool* bISpectator, class UObject** __WorldContext, struct FLinearColor* Color)
 {
@@ -436,7 +492,11 @@ void UUiHelperFunctionsBp_C::STATIC_GetSpectatorColor(bool* bISpectator, class U
 // int*                           State                          (Parm, ZeroConstructor, IsPlainOldData)
 // class UObject**                __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData)
 // class UTexture2D*              NewParam                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiHelperFunctionsBp_C::STATIC_GetCharacterStateIcon(int* State, class UObject** __WorldContext, class UTexture2D** NewParam)
 {
@@ -466,7 +526,11 @@ void UUiHelperFunctionsBp_C::STATIC_GetCharacterStateIcon(int* State, class UObj
 // class UObject**                WorldContextObject             (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 // class UObject**                __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData)
 // TArray<class ATslCharacter*>   OutActors                      (Parm, OutParm, ZeroConstructor)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiHelperFunctionsBp_C::STATIC_GetTslCharacters_Bp(class UObject** WorldContextObject, class UObject** __WorldContext, TArray<class ATslCharacter*>* OutActors)
 {
@@ -493,6 +557,7 @@ void UUiHelperFunctionsBp_C::STATIC_GetTslCharacters_Bp(class UObject** WorldCon
 // Function UiHelperFunctionsBp.UiHelperFunctionsBp_C.NotifyWidgetShowed
 // (Static, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
+<<<<<<< HEAD
 // class UUserWidget**            Widget                         (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString*                WidgetName                     (Parm, ZeroConstructor)
 // bool*                          bShow                          (Parm, ZeroConstructor, IsPlainOldData)
@@ -500,6 +565,15 @@ void UUiHelperFunctionsBp_C::STATIC_GetTslCharacters_Bp(class UObject** WorldCon
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void UUiHelperFunctionsBp_C::STATIC_NotifyWidgetShowed(class UUserWidget** Widget, struct FString* WidgetName, bool* bShow, class UObject** __WorldContext)
+=======
+// class UUserWidget*             Widget                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 WidgetName                     (Parm, ZeroConstructor)
+// bool                           bShow                          (Parm, ZeroConstructor, IsPlainOldData)
+// class UObject*                 __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+
+void UUiHelperFunctionsBp_C::STATIC_NotifyWidgetShowed(class UUserWidget* Widget, const struct FString& WidgetName, bool bShow, class UObject* __WorldContext)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -526,7 +600,11 @@ void UUiHelperFunctionsBp_C::STATIC_NotifyWidgetShowed(class UUserWidget** Widge
 // int*                           MemberNumber                   (Parm, ZeroConstructor, IsPlainOldData)
 // class UObject**                __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData)
 // struct FLinearColor            NewParam                       (Parm, OutParm, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiHelperFunctionsBp_C::STATIC_GetTeamMarkerColor(int* MemberNumber, class UObject** __WorldContext, struct FLinearColor* NewParam)
 {
@@ -557,7 +635,11 @@ void UUiHelperFunctionsBp_C::STATIC_GetTeamMarkerColor(int* MemberNumber, class 
 // class UMaterialInstance**      Material                       (Parm, ZeroConstructor, IsPlainOldData)
 // class UObject**                __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData)
 // class UMaterialInstanceDynamic* DynamicMaterial                (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiHelperFunctionsBp_C::STATIC_CreateAndSetMaterial(class UWidget** Widget, class UMaterialInstance** Material, class UObject** __WorldContext, class UMaterialInstanceDynamic** DynamicMaterial)
 {
@@ -588,7 +670,11 @@ void UUiHelperFunctionsBp_C::STATIC_CreateAndSetMaterial(class UWidget** Widget,
 // class UWidget**                Widget                         (Parm, ZeroConstructor, IsPlainOldData)
 // class UObject**                __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData)
 // class UMaterialInstanceDynamic* DynamicMaterial                (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiHelperFunctionsBp_C::STATIC_GetDynamicMaterial(class UWidget** Widget, class UObject** __WorldContext, class UMaterialInstanceDynamic** DynamicMaterial)
 {
@@ -619,7 +705,11 @@ void UUiHelperFunctionsBp_C::STATIC_GetDynamicMaterial(class UWidget** Widget, c
 // bool*                          bSort                          (Parm, ZeroConstructor, IsPlainOldData)
 // class UObject**                __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData)
 // TArray<TScriptInterface<class USlotInterface>> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 TArray<TScriptInterface<class USlotInterface>> UUiHelperFunctionsBp_C::STATIC_SortItemBp(bool* bSort, class UObject** __WorldContext, TArray<TScriptInterface<class USlotInterface>>* InItemList)
 {

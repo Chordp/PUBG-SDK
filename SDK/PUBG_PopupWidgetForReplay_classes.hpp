@@ -54,7 +54,11 @@ public:
 	void Tick(struct FGeometry* MyGeometry, float* InDeltaTime);
 	void ExecuteUbergraph_PopupWidgetForReplay(int* EntryPoint);
 	void HideMyself__DelegateSignature();
+<<<<<<< HEAD
 	void ButtonClickDispatcher__DelegateSignature(EPopupButtonID* NewParam);
+=======
+	void ButtonClickDispatcher__DelegateSignature(EPopupButtonID NewParam);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

@@ -15,6 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_MasteryPose_FlareHandCover.BP_MasteryPose_FlareHandCover_C
+<<<<<<< HEAD
 // 0x0038 (0x0468 - 0x0430)
 class ABP_MasteryPose_FlareHandCover_C : public ABP_MasteryPose_C
 {
@@ -26,6 +27,19 @@ public:
 	class UPointLightComponent*                        PointLight;                                               // 0x0450(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	class UParticleSystemComponent*                    ParticleSystem;                                           // 0x0458(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	class USkeletalMeshComponent*                      FlareMesh;                                                // 0x0460(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+=======
+// 0x0038 (0x0488 - 0x0450)
+class ABP_MasteryPose_FlareHandCover_C : public ABP_MasteryPose_C
+{
+public:
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x0450(0x0008) (Transient, DuplicateTransient)
+	class UStaticMeshComponent*                        Plane;                                                    // 0x0458(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UPointLightComponent*                        PointLight1;                                              // 0x0460(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class USpotLightComponent*                         SpotLight;                                                // 0x0468(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UPointLightComponent*                        PointLight;                                               // 0x0470(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UParticleSystemComponent*                    ParticleSystem;                                           // 0x0478(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class USkeletalMeshComponent*                      FlareMesh;                                                // 0x0480(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{

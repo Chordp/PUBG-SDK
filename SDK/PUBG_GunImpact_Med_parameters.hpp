@@ -65,6 +65,12 @@ struct AGunImpact_Med_C_AdjustDecalEffectDataSet_BP_Params
 // Function GunImpact_Med.GunImpact_Med_C.OnSplatterDecalCreated
 struct AGunImpact_Med_C_OnSplatterDecalCreated_Params
 {
+<<<<<<< HEAD
+=======
+	EImpactType*                                       ImpactType;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	class UDecalComponent**                            Decal;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	class UMaterialInstanceDynamic**                   DecalMaterial;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function GunImpact_Med.GunImpact_Med_C.ExecuteUbergraph_GunImpact_Med

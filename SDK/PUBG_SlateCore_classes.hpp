@@ -14,6 +14,28 @@ namespace SDK
 //Classes
 //---------------------------------------------------------------------------
 
+<<<<<<< HEAD
+=======
+// Class SlateCore.SlateWidgetStyleContainerBase
+// 0x0008 (0x0030 - 0x0028)
+class USlateWidgetStyleContainerBase : public UObject
+{
+public:
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0028(0x0008) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class SlateCore.SlateWidgetStyleContainerBase"));
+
+		return ptr;
+	}
+
+};
+
+
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 // Class SlateCore.FontBulkData
 // 0x00A0 (0x00C8 - 0x0028)
 class UFontBulkData : public UObject
@@ -105,6 +127,7 @@ public:
 };
 
 
+<<<<<<< HEAD
 // Class SlateCore.SlateWidgetStyleContainerBase
 // 0x0008 (0x0030 - 0x0028)
 class USlateWidgetStyleContainerBase : public UObject
@@ -124,6 +147,8 @@ public:
 };
 
 
+=======
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 // Class SlateCore.SlateWidgetStyleAsset
 // 0x0008 (0x0030 - 0x0028)
 class USlateWidgetStyleAsset : public UObject

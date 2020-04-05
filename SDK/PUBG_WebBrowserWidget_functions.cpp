@@ -15,10 +15,17 @@ namespace SDK
 // DelegateFunction WebBrowserWidget.WebBrowser.OnUrlChanged__DelegateSignature
 // (MulticastDelegate, Public, Delegate, HasOutParms)
 // Parameters:
+<<<<<<< HEAD
 // struct FText*                  Text                           (ConstParm, Parm, OutParm, ReferenceParm)
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void UWebBrowser::OnUrlChanged__DelegateSignature(struct FText* Text)
+=======
+// struct FText                   Text                           (ConstParm, Parm, OutParm, ReferenceParm)
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+
+void UWebBrowser::OnUrlChanged__DelegateSignature(const struct FText& Text)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -39,10 +46,17 @@ void UWebBrowser::OnUrlChanged__DelegateSignature(struct FText* Text)
 // Function WebBrowserWidget.WebBrowser.LoadURL
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
+<<<<<<< HEAD
 // struct FString*                NewURL                         (Parm, ZeroConstructor)
 // FunctionAddress:0x00007FF71C8FFCA0              		 offset:4b2fca0                       
 
 void UWebBrowser::LoadURL(struct FString* NewURL)
+=======
+// struct FString                 NewURL                         (Parm, ZeroConstructor)
+// FunctionAddress:0x00007FF6DAEF3800              		 offset:4533800                       
+
+void UWebBrowser::LoadURL(const struct FString& NewURL)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -64,11 +78,19 @@ void UWebBrowser::LoadURL(struct FString* NewURL)
 // Function WebBrowserWidget.WebBrowser.LoadString
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
+<<<<<<< HEAD
 // struct FString*                Contents                       (Parm, ZeroConstructor)
 // struct FString*                DummyURL                       (Parm, ZeroConstructor)
 // FunctionAddress:0x00007FF71C8FFB10              		 offset:4b2fb10                       
 
 void UWebBrowser::LoadString(struct FString* Contents, struct FString* DummyURL)
+=======
+// struct FString                 Contents                       (Parm, ZeroConstructor)
+// struct FString                 DummyURL                       (Parm, ZeroConstructor)
+// FunctionAddress:0x00007FF6DAEF3670              		 offset:4533670                       
+
+void UWebBrowser::LoadString(const struct FString& Contents, const struct FString& DummyURL)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -92,7 +114,11 @@ void UWebBrowser::LoadString(struct FString* Contents, struct FString* DummyURL)
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8FFA80              		 offset:4b2fa80                       
+=======
+// FunctionAddress:0x00007FF6DAEF35E0              		 offset:45335e0                       
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 struct FString UWebBrowser::GetUrl()
 {
@@ -118,7 +144,11 @@ struct FString UWebBrowser::GetUrl()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // struct FText                   ReturnValue                    (Parm, OutParm, ReturnParm)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8FF9F0              		 offset:4b2f9f0                       
+=======
+// FunctionAddress:0x00007FF6DAEF3550              		 offset:4533550                       
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 struct FText UWebBrowser::GetTitleText()
 {
@@ -143,10 +173,17 @@ struct FText UWebBrowser::GetTitleText()
 // Function WebBrowserWidget.WebBrowser.ExecuteJavascript
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
+<<<<<<< HEAD
 // struct FString*                ScriptText                     (Parm, ZeroConstructor)
 // FunctionAddress:0x00007FF71C8FF950              		 offset:4b2f950                       
 
 void UWebBrowser::ExecuteJavascript(struct FString* ScriptText)
+=======
+// struct FString                 ScriptText                     (Parm, ZeroConstructor)
+// FunctionAddress:0x00007FF6DAEF34B0              		 offset:45334b0                       
+
+void UWebBrowser::ExecuteJavascript(const struct FString& ScriptText)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 

@@ -15,6 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass P_Sanhok_Environment_Dust_Ambient_01_BP1.P_Sanhok_Environment_Dust_Ambient_01_BP1_C
+<<<<<<< HEAD
 // 0x0064 (0x0514 - 0x04B0)
 class AP_Sanhok_Environment_Dust_Ambient_01_BP1_C : public ATslParticleEnvironment
 {
@@ -30,6 +31,23 @@ public:
 	float                                              MoteAlphaScale;                                           // 0x04FC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	float                                              MoteCount;                                                // 0x0500(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	struct FLinearColor                                MoteColor;                                                // 0x0504(0x0010) (Edit, BlueprintVisible, IsPlainOldData)
+=======
+// 0x0064 (0x0534 - 0x04D0)
+class AP_Sanhok_Environment_Dust_Ambient_01_BP1_C : public ATslParticleEnvironment
+{
+public:
+	struct FVector                                     SpawnBoxMax;                                              // 0x04D0(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
+	struct FVector                                     SpawnBoxMin;                                              // 0x04DC(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
+	float                                              SpawnRate;                                                // 0x04E8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     SizeMax;                                                  // 0x04EC(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
+	struct FVector                                     SizeMin;                                                  // 0x04F8(0x000C) (Edit, BlueprintVisible, IsPlainOldData)
+	float                                              MoteSpawnBoxMultiplier;                                   // 0x0504(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              AlphaScale;                                               // 0x0508(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	struct FLinearColor                                Color;                                                    // 0x050C(0x0010) (Edit, BlueprintVisible, IsPlainOldData)
+	float                                              MoteAlphaScale;                                           // 0x051C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              MoteCount;                                                // 0x0520(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	struct FLinearColor                                MoteColor;                                                // 0x0524(0x0010) (Edit, BlueprintVisible, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{

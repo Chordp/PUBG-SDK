@@ -15,11 +15,19 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Class Niagara.NiagaraActor
+<<<<<<< HEAD
 // 0x0008 (0x03E8 - 0x03E0)
 class ANiagaraActor : public AActor
 {
 public:
 	class UNiagaraComponent*                           NiagaraComponent;                                         // 0x03E0(0x0008) (Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
+=======
+// 0x0008 (0x0408 - 0x0400)
+class ANiagaraActor : public AActor
+{
+public:
+	class UNiagaraComponent*                           NiagaraComponent;                                         // 0x0400(0x0008) (Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -55,6 +63,7 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void SetRenderingEnabled(bool* bInRenderingEnabled);
 	void SetNiagaraVariableVec4(struct FString* InVariableName, struct FVector4* InValue);
 	void SetNiagaraVariableVec3(struct FString* InVariableName, struct FVector* InValue);
@@ -63,6 +72,16 @@ public:
 	void SetNiagaraVariableBool(struct FString* InVariableName, bool* InValue);
 	void SetNiagaraStaticMeshDataInterfaceActor(struct FString* InVariableName, class AActor** InSource);
 	void SetNiagaraEmitterSpawnRate(struct FString* InEmitterName, float* InValue);
+=======
+	void SetRenderingEnabled(bool bInRenderingEnabled);
+	void SetNiagaraVariableVec4(const struct FString& InVariableName, const struct FVector4& InValue);
+	void SetNiagaraVariableVec3(const struct FString& InVariableName, const struct FVector& InValue);
+	void SetNiagaraVariableVec2(const struct FString& InVariableName, const struct FVector2D& InValue);
+	void SetNiagaraVariableFloat(const struct FString& InVariableName, float InValue);
+	void SetNiagaraVariableBool(const struct FString& InVariableName, bool InValue);
+	void SetNiagaraStaticMeshDataInterfaceActor(const struct FString& InVariableName, class AActor* InSource);
+	void SetNiagaraEmitterSpawnRate(const struct FString& InEmitterName, float InValue);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	void ResetEffect();
 	void ReinitializeEffect();
 };
@@ -470,8 +489,13 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	class UNiagaraComponent* STATIC_SpawnEffectAttached(class UNiagaraEffect** EffectTemplate, class USceneComponent** AttachToComponent, struct FName* AttachPointName, struct FVector* Location, struct FRotator* Rotation, TEnumAsByte<EAttachLocation>* LocationType, bool* bAutoDestroy);
 	class UNiagaraComponent* STATIC_SpawnEffectAtLocation(class UObject** WorldContextObject, class UNiagaraEffect** EffectTemplate, struct FVector* Location, struct FRotator* Rotation, bool* bAutoDestroy);
+=======
+	class UNiagaraComponent* STATIC_SpawnEffectAttached(class UNiagaraEffect* EffectTemplate, class USceneComponent* AttachToComponent, const struct FName& AttachPointName, const struct FVector& Location, const struct FRotator& Rotation, TEnumAsByte<EAttachLocation> LocationType, bool bAutoDestroy);
+	class UNiagaraComponent* STATIC_SpawnEffectAtLocation(class UObject* WorldContextObject, class UNiagaraEffect* EffectTemplate, const struct FVector& Location, const struct FRotator& Rotation, bool bAutoDestroy);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

@@ -14,7 +14,11 @@ namespace SDK
 
 // Function KeyGuideWidgetBP.KeyGuideWidgetBP_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UKeyGuideWidgetBP_C::Construct()
 {
@@ -35,7 +39,11 @@ void UKeyGuideWidgetBP_C::Construct()
 
 // Function KeyGuideWidgetBP.KeyGuideWidgetBP_C.BndEvt__ButtonBack_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UKeyGuideWidgetBP_C::BndEvt__ButtonBack_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature()
 {
@@ -56,7 +64,11 @@ void UKeyGuideWidgetBP_C::BndEvt__ButtonBack_K2Node_ComponentBoundEvent_3_OnButt
 
 // Function KeyGuideWidgetBP.KeyGuideWidgetBP_C.EscapeEvent
 // (BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UKeyGuideWidgetBP_C::EscapeEvent()
 {
@@ -80,7 +92,11 @@ void UKeyGuideWidgetBP_C::EscapeEvent()
 // Parameters:
 // struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
 // float*                         InDeltaTime                    (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UKeyGuideWidgetBP_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
@@ -105,7 +121,11 @@ void UKeyGuideWidgetBP_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 // (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UKeyGuideWidgetBP_C::ExecuteUbergraph_KeyGuideWidgetBP(int* EntryPoint)
 {

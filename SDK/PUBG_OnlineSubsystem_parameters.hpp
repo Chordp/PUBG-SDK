@@ -17,14 +17,23 @@ namespace SDK
 // Function OnlineSubsystem.TurnBasedMatchInterface.OnMatchReceivedTurn
 struct UTurnBasedMatchInterface_OnMatchReceivedTurn_Params
 {
+<<<<<<< HEAD
 	struct FString*                                    Match;                                                    // (Parm, ZeroConstructor)
 	bool*                                              bDidBecomeActive;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+=======
+	struct FString                                     Match;                                                    // (Parm, ZeroConstructor)
+	bool                                               bDidBecomeActive;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function OnlineSubsystem.TurnBasedMatchInterface.OnMatchEnded
 struct UTurnBasedMatchInterface_OnMatchEnded_Params
 {
+<<<<<<< HEAD
 	struct FString*                                    Match;                                                    // (Parm, ZeroConstructor)
+=======
+	struct FString                                     Match;                                                    // (Parm, ZeroConstructor)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 }

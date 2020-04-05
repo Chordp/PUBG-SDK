@@ -16,7 +16,11 @@ namespace SDK
 // (BlueprintEvent)
 // Parameters:
 // struct FKey*                   Key                            (Parm)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ATslCaptureLobby_C::InpActEvt_Backslash_K2Node_InputKeyEvent(struct FKey* Key)
 {
@@ -40,7 +44,11 @@ void ATslCaptureLobby_C::InpActEvt_Backslash_K2Node_InputKeyEvent(struct FKey* K
 // (BlueprintEvent)
 // Parameters:
 // struct FKey*                   Key                            (Parm)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ATslCaptureLobby_C::InpActEvt_Left_K2Node_InputKeyEvent(struct FKey* Key)
 {
@@ -64,7 +72,11 @@ void ATslCaptureLobby_C::InpActEvt_Left_K2Node_InputKeyEvent(struct FKey* Key)
 // (BlueprintEvent)
 // Parameters:
 // struct FKey*                   Key                            (Parm)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ATslCaptureLobby_C::InpActEvt_Right_K2Node_InputKeyEvent(struct FKey* Key)
 {
@@ -88,7 +100,11 @@ void ATslCaptureLobby_C::InpActEvt_Right_K2Node_InputKeyEvent(struct FKey* Key)
 // (BlueprintEvent)
 // Parameters:
 // struct FKey*                   Key                            (Parm)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ATslCaptureLobby_C::InpActEvt_Up_K2Node_InputKeyEvent(struct FKey* Key)
 {
@@ -112,7 +128,11 @@ void ATslCaptureLobby_C::InpActEvt_Up_K2Node_InputKeyEvent(struct FKey* Key)
 // (BlueprintEvent)
 // Parameters:
 // struct FKey*                   Key                            (Parm)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ATslCaptureLobby_C::InpActEvt_Down_K2Node_InputKeyEvent(struct FKey* Key)
 {
@@ -136,7 +156,11 @@ void ATslCaptureLobby_C::InpActEvt_Down_K2Node_InputKeyEvent(struct FKey* Key)
 // (BlueprintEvent)
 // Parameters:
 // struct FKey*                   Key                            (Parm)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ATslCaptureLobby_C::InpActEvt_LeftBracket_K2Node_InputKeyEvent(struct FKey* Key)
 {
@@ -160,7 +184,11 @@ void ATslCaptureLobby_C::InpActEvt_LeftBracket_K2Node_InputKeyEvent(struct FKey*
 // (BlueprintEvent)
 // Parameters:
 // struct FKey*                   Key                            (Parm)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ATslCaptureLobby_C::InpActEvt_RightBracket_K2Node_InputKeyEvent(struct FKey* Key)
 {
@@ -184,7 +212,11 @@ void ATslCaptureLobby_C::InpActEvt_RightBracket_K2Node_InputKeyEvent(struct FKey
 // (Event, Public, BlueprintEvent)
 // Parameters:
 // float*                         DeltaSeconds                   (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ATslCaptureLobby_C::ReceiveTick(float* DeltaSeconds)
 {
@@ -208,7 +240,11 @@ void ATslCaptureLobby_C::ReceiveTick(float* DeltaSeconds)
 // (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ATslCaptureLobby_C::ExecuteUbergraph_TslCaptureLobby(int* EntryPoint)
 {

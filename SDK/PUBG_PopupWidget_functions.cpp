@@ -16,7 +16,11 @@ namespace SDK
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWidget**                BoundWidget                    (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UPopupWidget_C::OnGamepadButtonVisibilityPrepass(class UWidget** BoundWidget)
 {
@@ -43,7 +47,11 @@ void UPopupWidget_C::OnGamepadButtonVisibilityPrepass(class UWidget** BoundWidge
 // struct FText*                  Title                          (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FText*                  Message                        (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FScriptDelegate*        PressedDelegate                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UPopupWidget_C::SetPopup(EPopupStyle* PopupStyle, struct FText* Title, struct FText* Message, struct FScriptDelegate* PressedDelegate)
 {
@@ -68,7 +76,11 @@ void UPopupWidget_C::SetPopup(EPopupStyle* PopupStyle, struct FText* Title, stru
 
 // Function PopupWidget.PopupWidget_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UPopupWidget_C::Construct()
 {
@@ -89,7 +101,11 @@ void UPopupWidget_C::Construct()
 
 // Function PopupWidget.PopupWidget_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UPopupWidget_C::Destruct()
 {
@@ -110,7 +126,11 @@ void UPopupWidget_C::Destruct()
 
 // Function PopupWidget.PopupWidget_C.CustomEvent
 // (BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UPopupWidget_C::CustomEvent()
 {
@@ -133,7 +153,11 @@ void UPopupWidget_C::CustomEvent()
 // (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UPopupWidget_C::ExecuteUbergraph_PopupWidget(int* EntryPoint)
 {

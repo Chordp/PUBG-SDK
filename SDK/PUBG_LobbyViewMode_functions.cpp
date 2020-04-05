@@ -14,7 +14,11 @@ namespace SDK
 
 // Function LobbyViewMode.LobbyViewMode_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ALobbyViewMode_C::UserConstructionScript()
 {
@@ -37,7 +41,11 @@ void ALobbyViewMode_C::UserConstructionScript()
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float*                         Value                          (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ALobbyViewMode_C::AddYaw(float* Value)
 {
@@ -61,7 +69,11 @@ void ALobbyViewMode_C::AddYaw(float* Value)
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float*                         Value                          (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ALobbyViewMode_C::AddPitch(float* Value)
 {
@@ -85,7 +97,11 @@ void ALobbyViewMode_C::AddPitch(float* Value)
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float*                         Value                          (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ALobbyViewMode_C::AddRoll(float* Value)
 {
@@ -109,7 +125,11 @@ void ALobbyViewMode_C::AddRoll(float* Value)
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float*                         Value                          (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ALobbyViewMode_C::AddViewDistance(float* Value)
 {
@@ -133,7 +153,11 @@ void ALobbyViewMode_C::AddViewDistance(float* Value)
 // (Event, Public, BlueprintEvent)
 // Parameters:
 // float*                         DeltaSeconds                   (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ALobbyViewMode_C::ReceiveTick(float* DeltaSeconds)
 {
@@ -157,7 +181,11 @@ void ALobbyViewMode_C::ReceiveTick(float* DeltaSeconds)
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor**                 Actor                          (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ALobbyViewMode_C::SetViewModeAbleActor(class AActor** Actor)
 {
@@ -181,7 +209,11 @@ void ALobbyViewMode_C::SetViewModeAbleActor(class AActor** Actor)
 // (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ALobbyViewMode_C::ExecuteUbergraph_LobbyViewMode(int* EntryPoint)
 {

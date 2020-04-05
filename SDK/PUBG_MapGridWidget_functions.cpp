@@ -18,7 +18,11 @@ namespace SDK
 // struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
 // struct FPointerEvent*          MouseEvent                     (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FEventReply             ReturnValue                    (Parm, OutParm, ReturnParm)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 struct FEventReply UMapGridWidget_C::OnMouseMove(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
@@ -45,7 +49,11 @@ struct FEventReply UMapGridWidget_C::OnMouseMove(struct FGeometry* MyGeometry, s
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // struct FSlateBrush             ReturnValue                    (Parm, OutParm, ReturnParm)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 struct FSlateBrush UMapGridWidget_C::Get_Replayzone_Brush()
 {

@@ -15,10 +15,17 @@ namespace SDK
 // Function Buff_DecreaseBreathInApnea.Buff_DecreaseBreathInApnea_C.DecreaseHealth
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
+<<<<<<< HEAD
 // class ATslCharacter**          Character                      (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void ABuff_DecreaseBreathInApnea_C::DecreaseHealth(class ATslCharacter** Character)
+=======
+// class ATslCharacter*           Character                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+
+void ABuff_DecreaseBreathInApnea_C::DecreaseHealth(class ATslCharacter* Character)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -38,7 +45,11 @@ void ABuff_DecreaseBreathInApnea_C::DecreaseHealth(class ATslCharacter** Charact
 
 // Function Buff_DecreaseBreathInApnea.Buff_DecreaseBreathInApnea_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ABuff_DecreaseBreathInApnea_C::UserConstructionScript()
 {
@@ -59,7 +70,11 @@ void ABuff_DecreaseBreathInApnea_C::UserConstructionScript()
 
 // Function Buff_DecreaseBreathInApnea.Buff_DecreaseBreathInApnea_C.TickBuff
 // (Event, Public, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ABuff_DecreaseBreathInApnea_C::TickBuff()
 {
@@ -81,10 +96,17 @@ void ABuff_DecreaseBreathInApnea_C::TickBuff()
 // Function Buff_DecreaseBreathInApnea.Buff_DecreaseBreathInApnea_C.ExecuteUbergraph_Buff_DecreaseBreathInApnea
 // ()
 // Parameters:
+<<<<<<< HEAD
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void ABuff_DecreaseBreathInApnea_C::ExecuteUbergraph_Buff_DecreaseBreathInApnea(int* EntryPoint)
+=======
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+
+void ABuff_DecreaseBreathInApnea_C::ExecuteUbergraph_Buff_DecreaseBreathInApnea(int EntryPoint)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 

@@ -27,20 +27,33 @@ struct UMovieSceneSequencePlayer_StartPlayingNextTick_Params
 // Function MovieScene.MovieSceneSequencePlayer.SetPlayRate
 struct UMovieSceneSequencePlayer_SetPlayRate_Params
 {
+<<<<<<< HEAD
 	float*                                             PlayRate;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+=======
+	float                                              PlayRate;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function MovieScene.MovieSceneSequencePlayer.SetPlaybackRange
 struct UMovieSceneSequencePlayer_SetPlaybackRange_Params
 {
+<<<<<<< HEAD
 	float*                                             NewStartTime;                                             // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 	float*                                             NewEndTime;                                               // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+=======
+	float                                              NewStartTime;                                             // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	float                                              NewEndTime;                                               // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function MovieScene.MovieSceneSequencePlayer.SetPlaybackPosition
 struct UMovieSceneSequencePlayer_SetPlaybackPosition_Params
 {
+<<<<<<< HEAD
 	float*                                             NewPlaybackPosition;                                      // (Parm, ZeroConstructor, IsPlainOldData)
+=======
+	float                                              NewPlaybackPosition;                                      // (Parm, ZeroConstructor, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function MovieScene.MovieSceneSequencePlayer.PlayReverse
@@ -51,7 +64,11 @@ struct UMovieSceneSequencePlayer_PlayReverse_Params
 // Function MovieScene.MovieSceneSequencePlayer.PlayLooping
 struct UMovieSceneSequencePlayer_PlayLooping_Params
 {
+<<<<<<< HEAD
 	int*                                               NumLoops;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+=======
+	int                                                NumLoops;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function MovieScene.MovieSceneSequencePlayer.Play
@@ -103,7 +120,11 @@ struct UMovieSceneSequencePlayer_GetLength_Params
 // Function MovieScene.MovieSceneSequencePlayer.GetBoundObjects
 struct UMovieSceneSequencePlayer_GetBoundObjects_Params
 {
+<<<<<<< HEAD
 	struct FMovieSceneObjectBindingID*                 ObjectBinding;                                            // (Parm)
+=======
+	struct FMovieSceneObjectBindingID                  ObjectBinding;                                            // (Parm)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	TArray<class UObject*>                             ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 

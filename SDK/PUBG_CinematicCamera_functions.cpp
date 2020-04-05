@@ -16,7 +16,11 @@ namespace SDK
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // class UCineCameraComponent*    ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF719BE4BA0              		 offset:1e14ba0                       
+=======
+// FunctionAddress:0x00007FF6D8866AE0              		 offset:1ea6ae0                       
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 class UCineCameraComponent* ACineCameraActor::GetCineCameraComponent()
 {
@@ -42,7 +46,11 @@ class UCineCameraComponent* ACineCameraActor::GetCineCameraComponent()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF719BE4BF0              		 offset:1e14bf0                       
+=======
+// FunctionAddress:0x00007FF6D8866B30              		 offset:1ea6b30                       
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 float UCineCameraComponent::GetVerticalFieldOfView()
 {
@@ -68,7 +76,11 @@ float UCineCameraComponent::GetVerticalFieldOfView()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF719BE4BC0              		 offset:1e14bc0                       
+=======
+// FunctionAddress:0x00007FF6D8866B00              		 offset:1ea6b00                       
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 float UCineCameraComponent::GetHorizontalFieldOfView()
 {

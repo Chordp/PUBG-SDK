@@ -38,6 +38,7 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void SetInputString(struct FString* Identifier, struct FString* Value);
 	void SetInputInt(struct FString* Identifier, TArray<int>* InputValues);
 	bool SetInputImg(struct FString* InputName, class UObject** Value);
@@ -54,6 +55,24 @@ public:
 	struct FLinearColor GetInputColor(struct FString* Identifier);
 	bool GetInputBool(struct FString* Identifier);
 	struct FSubstanceFloatInputDesc GetFloatInputDesc(struct FString* Identifier);
+=======
+	void SetInputString(const struct FString& Identifier, const struct FString& Value);
+	void SetInputInt(const struct FString& Identifier, TArray<int> InputValues);
+	bool SetInputImg(const struct FString& InputName, class UObject* Value);
+	void SetInputFloat(const struct FString& Identifier, TArray<float> InputValues);
+	void SetInputColor(const struct FString& Identifier, const struct FLinearColor& Color);
+	void SetInputBool(const struct FString& Identifier, bool Bool);
+	struct FSubstanceIntInputDesc GetIntInputDesc(const struct FString& Identifier);
+	struct FSubstanceInstanceDesc GetInstanceDesc();
+	TEnumAsByte<ESubstanceInputType> GetInputType(const struct FString& InputName);
+	struct FString GetInputString(const struct FString& Identifier);
+	TArray<struct FString> GetInputNames();
+	TArray<int> GetInputInt(const struct FString& Identifier);
+	TArray<float> GetInputFloat(const struct FString& Identifier);
+	struct FLinearColor GetInputColor(const struct FString& Identifier);
+	bool GetInputBool(const struct FString& Identifier);
+	struct FSubstanceFloatInputDesc GetFloatInputDesc(const struct FString& Identifier);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -176,6 +195,7 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void STATIC_SyncRendering(class USubstanceGraphInstance** InstancesToRender);
 	void STATIC_SetGraphInstanceOutputSizeInt(class USubstanceGraphInstance** GraphInstance, int* Width, int* Height);
 	void STATIC_SetGraphInstanceOutputSize(class USubstanceGraphInstance** GraphInstance, TEnumAsByte<ESubstanceTextureSize>* Width, TEnumAsByte<ESubstanceTextureSize>* Height);
@@ -193,6 +213,25 @@ public:
 	void STATIC_CopyInputParameters(class USubstanceGraphInstance** SourceGraphInstance, class USubstanceGraphInstance** DestGraphInstance);
 	void STATIC_ClearCache();
 	void STATIC_AsyncRendering(class USubstanceGraphInstance** InstancesToRender);
+=======
+	void STATIC_SyncRendering(class USubstanceGraphInstance* InstancesToRender);
+	void STATIC_SetGraphInstanceOutputSizeInt(class USubstanceGraphInstance* GraphInstance, int Width, int Height);
+	void STATIC_SetGraphInstanceOutputSize(class USubstanceGraphInstance* GraphInstance, TEnumAsByte<ESubstanceTextureSize> Width, TEnumAsByte<ESubstanceTextureSize> Height);
+	void STATIC_ResetInputParameters(class USubstanceGraphInstance* GraphInstance);
+	TArray<class USubstanceTexture2D*> STATIC_GetSubstanceTextures(class USubstanceGraphInstance* GraphInstance);
+	TArray<class USubstanceGraphInstance*> STATIC_GetSubstances(class UMaterialInterface* Material);
+	float STATIC_GetSubstanceLoadingProgress();
+	struct FString STATIC_GetGraphName(class USubstanceGraphInstance* GraphInstance);
+	struct FString STATIC_GetFactoryName(class USubstanceGraphInstance* GraphInstance);
+	void STATIC_EnableInstanceOutputs(class UObject* WorldContextObject, class USubstanceGraphInstance* GraphInstance, TArray<int> OutputIndices);
+	class USubstanceGraphInstance* STATIC_DuplicateGraphInstance(class UObject* WorldContextObject, class USubstanceGraphInstance* GraphInstance);
+	void STATIC_DisableInstanceOutputs(class UObject* WorldContextObject, class USubstanceGraphInstance* GraphInstance, TArray<int> OutputIndices);
+	class USubstanceGraphInstance* STATIC_CreateGraphInstance(class UObject* WorldContextObject, class USubstanceInstanceFactory* Factory, int GraphDescIndex, const struct FString& InstanceName);
+	class USubstanceInstanceFactory* STATIC_CreateAggregateSubstanceFactory(class USubstanceInstanceFactory* OutputFactory, int OutputFactoryGraphIndex, class USubstanceInstanceFactory* InputFactory, int InputFactoryGraphIndex, TArray<struct FSubstanceConnection> Connections);
+	void STATIC_CopyInputParameters(class USubstanceGraphInstance* SourceGraphInstance, class USubstanceGraphInstance* DestGraphInstance);
+	void STATIC_ClearCache();
+	void STATIC_AsyncRendering(class USubstanceGraphInstance* InstancesToRender);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

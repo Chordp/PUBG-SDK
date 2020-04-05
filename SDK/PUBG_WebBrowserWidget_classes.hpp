@@ -34,12 +34,21 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void OnUrlChanged__DelegateSignature(struct FText* Text);
 	void LoadURL(struct FString* NewURL);
 	void LoadString(struct FString* Contents, struct FString* DummyURL);
 	struct FString GetUrl();
 	struct FText GetTitleText();
 	void ExecuteJavascript(struct FString* ScriptText);
+=======
+	void OnUrlChanged__DelegateSignature(const struct FText& Text);
+	void LoadURL(const struct FString& NewURL);
+	void LoadString(const struct FString& Contents, const struct FString& DummyURL);
+	struct FString GetUrl();
+	struct FText GetTitleText();
+	void ExecuteJavascript(const struct FString& ScriptText);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

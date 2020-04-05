@@ -66,6 +66,10 @@ public:
 	void BndEvt__SettingsButton_K2Node_ComponentBoundEvent_30_OnClicked__DelegateSignature();
 	void BndEvt__TeamManagementButton_K2Node_ComponentBoundEvent_36_OnClicked__DelegateSignature();
 	void BndEvt__RestartLobbyButton_K2Node_ComponentBoundEvent_43_OnClicked__DelegateSignature();
+<<<<<<< HEAD
+=======
+	void BndEvt__LeaveMatchButton_K2Node_ComponentBoundEvent_51_OnClicked__DelegateSignature();
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	void BndEvt__ExitToDesktopButton_K2Node_ComponentBoundEvent_60_OnClicked__DelegateSignature();
 	void Construct();
 	void BndEvt__RatingsButton_K2Node_ComponentBoundEvent_12_OnButtonClickedEvent__DelegateSignature();
@@ -81,7 +85,10 @@ public:
 	void Custom_Event();
 	void NotifyEnableMenuButtons(bool* bEnable);
 	void NotifyHideWidget();
+<<<<<<< HEAD
 	void BndEvt__LeaveMatchButton_K2Node_ComponentBoundEvent_51_OnClicked__DelegateSignature();
+=======
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	void ExecuteUbergraph_BP_PcSystemMenuWidget(int* EntryPoint);
 };
 

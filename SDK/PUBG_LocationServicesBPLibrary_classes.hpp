@@ -32,8 +32,13 @@ public:
 
 	bool STATIC_StopLocationServices();
 	bool STATIC_StartLocationServices();
+<<<<<<< HEAD
 	bool STATIC_IsLocationAccuracyAvailable(ELocationAccuracy* Accuracy);
 	bool STATIC_InitLocationServices(ELocationAccuracy* Accuracy, float* UpdateFrequency, float* MinDistanceFilter);
+=======
+	bool STATIC_IsLocationAccuracyAvailable(ELocationAccuracy Accuracy);
+	bool STATIC_InitLocationServices(ELocationAccuracy Accuracy, float UpdateFrequency, float MinDistanceFilter);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	class ULocationServicesImpl* STATIC_GetLocationServicesImpl();
 	struct FLocationServicesData STATIC_GetLastKnownLocation();
 	bool STATIC_AreLocationServicesEnabled();

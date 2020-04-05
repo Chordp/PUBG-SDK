@@ -14,7 +14,11 @@ namespace SDK
 
 // Function Buff_DecreaseBreathInHolding.Buff_DecreaseBreathInHolding_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ABuff_DecreaseBreathInHolding_C::UserConstructionScript()
 {
@@ -35,7 +39,11 @@ void ABuff_DecreaseBreathInHolding_C::UserConstructionScript()
 
 // Function Buff_DecreaseBreathInHolding.Buff_DecreaseBreathInHolding_C.TickBuff
 // (Event, Public, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ABuff_DecreaseBreathInHolding_C::TickBuff()
 {
@@ -57,10 +65,17 @@ void ABuff_DecreaseBreathInHolding_C::TickBuff()
 // Function Buff_DecreaseBreathInHolding.Buff_DecreaseBreathInHolding_C.ExecuteUbergraph_Buff_DecreaseBreathInHolding
 // ()
 // Parameters:
+<<<<<<< HEAD
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void ABuff_DecreaseBreathInHolding_C::ExecuteUbergraph_Buff_DecreaseBreathInHolding(int* EntryPoint)
+=======
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+
+void ABuff_DecreaseBreathInHolding_C::ExecuteUbergraph_Buff_DecreaseBreathInHolding(int EntryPoint)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 

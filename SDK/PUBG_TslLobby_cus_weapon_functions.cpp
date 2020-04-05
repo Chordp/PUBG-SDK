@@ -14,7 +14,11 @@ namespace SDK
 
 // Function TslLobby_cus_weapon.TslLobby_cus_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ATslLobby_cus_C::ReceiveBeginPlay()
 {
@@ -37,7 +41,11 @@ void ATslLobby_cus_C::ReceiveBeginPlay()
 // ()
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ATslLobby_cus_C::ExecuteUbergraph_TslLobby_cus_weapon(int* EntryPoint)
 {

@@ -7,8 +7,13 @@
 #endif
 
 #include "PUBG_Basic.hpp"
+<<<<<<< HEAD
 #include "PUBG_MovieScene_classes.hpp"
 #include "PUBG_CoreUObject_classes.hpp"
+=======
+#include "PUBG_CoreUObject_classes.hpp"
+#include "PUBG_MovieScene_classes.hpp"
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 #include "PUBG_Engine_classes.hpp"
 #include "PUBG_UMG_classes.hpp"
 

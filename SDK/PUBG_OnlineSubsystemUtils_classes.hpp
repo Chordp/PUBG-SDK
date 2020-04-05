@@ -34,6 +34,7 @@ public:
 
 
 // Class OnlineSubsystemUtils.IpNetDriver
+<<<<<<< HEAD
 // 0x0030 (0x04E0 - 0x04B0)
 class UIpNetDriver : public UNetDriver
 {
@@ -47,6 +48,21 @@ public:
 	uint32_t                                           ServerDesiredSocketSendBufferBytes;                       // 0x04D4(0x0004) (ZeroConstructor, Config, IsPlainOldData)
 	uint32_t                                           ClientDesiredSocketReceiveBufferBytes;                    // 0x04D8(0x0004) (ZeroConstructor, Config, IsPlainOldData)
 	uint32_t                                           ClientDesiredSocketSendBufferBytes;                       // 0x04DC(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+=======
+// 0x0030 (0x0490 - 0x0460)
+class UIpNetDriver : public UNetDriver
+{
+public:
+	unsigned char                                      LogPortUnreach : 1;                                       // 0x0460(0x0001) (Config)
+	unsigned char                                      AllowPlayerPortUnreach : 1;                               // 0x0460(0x0001) (Config)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0461(0x0003) MISSED OFFSET
+	uint32_t                                           MaxPortCountToTry;                                        // 0x0464(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x18];                                      // 0x0468(0x0018) MISSED OFFSET
+	uint32_t                                           ServerDesiredSocketReceiveBufferBytes;                    // 0x0480(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	uint32_t                                           ServerDesiredSocketSendBufferBytes;                       // 0x0484(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	uint32_t                                           ClientDesiredSocketReceiveBufferBytes;                    // 0x0488(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	uint32_t                                           ClientDesiredSocketSendBufferBytes;                       // 0x048C(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -76,8 +92,13 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void STATIC_GetCachedAchievementProgress(class UObject** WorldContextObject, class APlayerController** PlayerController, struct FName* AchievementID, bool* bFoundID, float* Progress);
 	void STATIC_GetCachedAchievementDescription(class UObject** WorldContextObject, class APlayerController** PlayerController, struct FName* AchievementID, bool* bFoundID, struct FText* Title, struct FText* LockedDescription, struct FText* UnlockedDescription, bool* bHidden);
+=======
+	void STATIC_GetCachedAchievementProgress(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FName& AchievementID, bool* bFoundID, float* Progress);
+	void STATIC_GetCachedAchievementDescription(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FName& AchievementID, bool* bFoundID, struct FText* Title, struct FText* LockedDescription, struct FText* UnlockedDescription, bool* bHidden);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -100,8 +121,13 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	class UAchievementQueryCallbackProxy* STATIC_CacheAchievements(class UObject** WorldContextObject, class APlayerController** PlayerController);
 	class UAchievementQueryCallbackProxy* STATIC_CacheAchievementDescriptions(class UObject** WorldContextObject, class APlayerController** PlayerController);
+=======
+	class UAchievementQueryCallbackProxy* STATIC_CacheAchievements(class UObject* WorldContextObject, class APlayerController* PlayerController);
+	class UAchievementQueryCallbackProxy* STATIC_CacheAchievementDescriptions(class UObject* WorldContextObject, class APlayerController* PlayerController);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -124,7 +150,11 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	class UAchievementWriteCallbackProxy* STATIC_WriteAchievementProgress(class UObject** WorldContextObject, class APlayerController** PlayerController, struct FName* AchievementName, float* Progress, int* UserTag);
+=======
+	class UAchievementWriteCallbackProxy* STATIC_WriteAchievementProgress(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FName& AchievementName, float Progress, int UserTag);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -147,7 +177,11 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	class UConnectionCallbackProxy* STATIC_ConnectToService(class UObject** WorldContextObject, class APlayerController** PlayerController);
+=======
+	class UConnectionCallbackProxy* STATIC_ConnectToService(class UObject* WorldContextObject, class APlayerController* PlayerController);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -170,7 +204,11 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	class UCreateSessionCallbackProxy* STATIC_CreateSession(class UObject** WorldContextObject, class APlayerController** PlayerController, int* PublicConnections, bool* bUseLAN);
+=======
+	class UCreateSessionCallbackProxy* STATIC_CreateSession(class UObject* WorldContextObject, class APlayerController* PlayerController, int PublicConnections, bool bUseLAN);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -193,7 +231,11 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	class UDestroySessionCallbackProxy* STATIC_DestroySession(class UObject** WorldContextObject, class APlayerController** PlayerController);
+=======
+	class UDestroySessionCallbackProxy* STATIC_DestroySession(class UObject* WorldContextObject, class APlayerController* PlayerController);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -216,7 +258,11 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	class UEndMatchCallbackProxy* STATIC_EndMatch(class UObject** WorldContextObject, class APlayerController** PlayerController, TScriptInterface<class UTurnBasedMatchInterface>* MatchActor, struct FString* MatchId, TEnumAsByte<EMPMatchOutcome>* LocalPlayerOutcome, TEnumAsByte<EMPMatchOutcome>* OtherPlayersOutcome);
+=======
+	class UEndMatchCallbackProxy* STATIC_EndMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, const TScriptInterface<class UTurnBasedMatchInterface>& MatchActor, const struct FString& MatchId, TEnumAsByte<EMPMatchOutcome> LocalPlayerOutcome, TEnumAsByte<EMPMatchOutcome> OtherPlayersOutcome);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -239,7 +285,11 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	class UEndTurnCallbackProxy* STATIC_EndTurn(class UObject** WorldContextObject, class APlayerController** PlayerController, struct FString* MatchId, TScriptInterface<class UTurnBasedMatchInterface>* TurnBasedMatchInterface);
+=======
+	class UEndTurnCallbackProxy* STATIC_EndTurn(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FString& MatchId, const TScriptInterface<class UTurnBasedMatchInterface>& TurnBasedMatchInterface);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -262,11 +312,19 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	struct FString STATIC_GetServerName(struct FBlueprintSessionResult* Result);
 	int STATIC_GetPingInMs(struct FBlueprintSessionResult* Result);
 	int STATIC_GetMaxPlayers(struct FBlueprintSessionResult* Result);
 	int STATIC_GetCurrentPlayers(struct FBlueprintSessionResult* Result);
 	class UFindSessionsCallbackProxy* STATIC_FindSessions(class UObject** WorldContextObject, class APlayerController** PlayerController, int* MaxResults, bool* bUseLAN);
+=======
+	struct FString STATIC_GetServerName(const struct FBlueprintSessionResult& Result);
+	int STATIC_GetPingInMs(const struct FBlueprintSessionResult& Result);
+	int STATIC_GetMaxPlayers(const struct FBlueprintSessionResult& Result);
+	int STATIC_GetCurrentPlayers(const struct FBlueprintSessionResult& Result);
+	class UFindSessionsCallbackProxy* STATIC_FindSessions(class UObject* WorldContextObject, class APlayerController* PlayerController, int MaxResults, bool bUseLAN);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -289,7 +347,11 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	class UFindTurnBasedMatchCallbackProxy* STATIC_FindTurnBasedMatch(class UObject** WorldContextObject, class APlayerController** PlayerController, TScriptInterface<class UTurnBasedMatchInterface>* MatchActor, int* MinPlayers, int* MaxPlayers, int* PlayerGroup, bool* ShowExistingMatches);
+=======
+	class UFindTurnBasedMatchCallbackProxy* STATIC_FindTurnBasedMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, const TScriptInterface<class UTurnBasedMatchInterface>& MatchActor, int MinPlayers, int MaxPlayers, int PlayerGroup, bool ShowExistingMatches);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -312,7 +374,11 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	class UInAppPurchaseCallbackProxy* STATIC_CreateProxyObjectForInAppPurchase(class APlayerController** PlayerController, struct FInAppPurchaseProductRequest* ProductRequest);
+=======
+	class UInAppPurchaseCallbackProxy* STATIC_CreateProxyObjectForInAppPurchase(class APlayerController* PlayerController, const struct FInAppPurchaseProductRequest& ProductRequest);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -335,7 +401,11 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	class UInAppPurchaseQueryCallbackProxy* STATIC_CreateProxyObjectForInAppPurchaseQuery(class APlayerController** PlayerController, TArray<struct FString>* ProductIdentifiers);
+=======
+	class UInAppPurchaseQueryCallbackProxy* STATIC_CreateProxyObjectForInAppPurchaseQuery(class APlayerController* PlayerController, TArray<struct FString> ProductIdentifiers);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -358,7 +428,11 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	class UInAppPurchaseRestoreCallbackProxy* STATIC_CreateProxyObjectForInAppPurchaseRestore(TArray<struct FInAppPurchaseProductRequest>* ConsumableProductFlags, class APlayerController** PlayerController);
+=======
+	class UInAppPurchaseRestoreCallbackProxy* STATIC_CreateProxyObjectForInAppPurchaseRestore(TArray<struct FInAppPurchaseProductRequest> ConsumableProductFlags, class APlayerController* PlayerController);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -381,7 +455,11 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	class UJoinSessionCallbackProxy* STATIC_JoinSession(class UObject** WorldContextObject, class APlayerController** PlayerController, struct FBlueprintSessionResult* SearchResult);
+=======
+	class UJoinSessionCallbackProxy* STATIC_JoinSession(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FBlueprintSessionResult& SearchResult);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -401,7 +479,11 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	bool STATIC_WriteLeaderboardInteger(class APlayerController** PlayerController, struct FName* StatName, int* StatValue);
+=======
+	bool STATIC_WriteLeaderboardInteger(class APlayerController* PlayerController, const struct FName& StatName, int StatValue);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -424,7 +506,11 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	class ULeaderboardFlushCallbackProxy* STATIC_CreateProxyObjectForFlush(class APlayerController** PlayerController, struct FName* SessionName);
+=======
+	class ULeaderboardFlushCallbackProxy* STATIC_CreateProxyObjectForFlush(class APlayerController* PlayerController, const struct FName& SessionName);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -447,7 +533,11 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	class ULeaderboardQueryCallbackProxy* STATIC_CreateProxyObjectForIntQuery(class APlayerController** PlayerController, struct FName* StatName);
+=======
+	class ULeaderboardQueryCallbackProxy* STATIC_CreateProxyObjectForIntQuery(class APlayerController* PlayerController, const struct FName& StatName);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -470,11 +560,16 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	class ULogoutCallbackProxy* STATIC_Logout(class UObject** WorldContextObject, class APlayerController** PlayerController);
+=======
+	class ULogoutCallbackProxy* STATIC_Logout(class UObject* WorldContextObject, class APlayerController* PlayerController);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
 // Class OnlineSubsystemUtils.OnlineBeacon
+<<<<<<< HEAD
 // 0x0028 (0x0408 - 0x03E0)
 class AOnlineBeacon : public AActor
 {
@@ -484,6 +579,17 @@ public:
 	float                                              BeaconConnectionTimeout;                                  // 0x03EC(0x0004) (ZeroConstructor, Config, IsPlainOldData)
 	class UNetDriver*                                  NetDriver;                                                // 0x03F0(0x0008) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x10];                                      // 0x03F8(0x0010) MISSED OFFSET
+=======
+// 0x0028 (0x0428 - 0x0400)
+class AOnlineBeacon : public AActor
+{
+public:
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0400(0x0008) MISSED OFFSET
+	float                                              BeaconConnectionInitialTimeout;                           // 0x0408(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	float                                              BeaconConnectionTimeout;                                  // 0x040C(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	class UNetDriver*                                  NetDriver;                                                // 0x0410(0x0008) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x10];                                      // 0x0418(0x0010) MISSED OFFSET
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -498,6 +604,7 @@ public:
 
 
 // Class OnlineSubsystemUtils.OnlineBeaconClient
+<<<<<<< HEAD
 // 0x0088 (0x0490 - 0x0408)
 class AOnlineBeaconClient : public AOnlineBeacon
 {
@@ -506,6 +613,16 @@ public:
 	class UNetConnection*                              BeaconConnection;                                         // 0x0410(0x0008) (ZeroConstructor, IsPlainOldData)
 	EBeaconConnectionState                             ConnectionState;                                          // 0x0418(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x77];                                      // 0x0419(0x0077) MISSED OFFSET
+=======
+// 0x0088 (0x04B0 - 0x0428)
+class AOnlineBeaconClient : public AOnlineBeacon
+{
+public:
+	class AOnlineBeaconHostObject*                     BeaconOwner;                                              // 0x0428(0x0008) (ZeroConstructor, IsPlainOldData)
+	class UNetConnection*                              BeaconConnection;                                         // 0x0430(0x0008) (ZeroConstructor, IsPlainOldData)
+	EBeaconConnectionState                             ConnectionState;                                          // 0x0438(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x77];                                      // 0x0439(0x0077) MISSED OFFSET
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -550,6 +667,7 @@ public:
 
 
 // Class OnlineSubsystemUtils.PartyBeaconClient
+<<<<<<< HEAD
 // 0x0130 (0x05C0 - 0x0490)
 class APartyBeaconClient : public AOnlineBeaconClient
 {
@@ -561,6 +679,19 @@ public:
 	bool                                               bPendingReservationSent;                                  // 0x0591(0x0001) (ZeroConstructor, IsPlainOldData)
 	bool                                               bCancelReservation;                                       // 0x0592(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x2D];                                      // 0x0593(0x002D) MISSED OFFSET
+=======
+// 0x0130 (0x05E0 - 0x04B0)
+class APartyBeaconClient : public AOnlineBeaconClient
+{
+public:
+	unsigned char                                      UnknownData00[0xC0];                                      // 0x04B0(0x00C0) MISSED OFFSET
+	struct FString                                     DestSessionId;                                            // 0x0570(0x0010) (ZeroConstructor)
+	struct FPartyReservation                           PendingReservation;                                       // 0x0580(0x0030)
+	EClientRequestType                                 RequestType;                                              // 0x05B0(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               bPendingReservationSent;                                  // 0x05B1(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               bCancelReservation;                                       // 0x05B2(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x2D];                                      // 0x05B3(0x002D) MISSED OFFSET
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -572,6 +703,7 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void ServerUpdateReservationRequest(struct FString* SessionId, struct FPartyReservation* ReservationUpdate);
 	void ServerReservationRequest(struct FString* SessionId, struct FPartyReservation* Reservation);
 	void ServerCancelReservationRequest(struct FUniqueNetIdRepl* PartyLeader);
@@ -579,11 +711,24 @@ public:
 	void ClientSendReservationFull();
 	void ClientReservationResponse(TEnumAsByte<EPartyReservationResult>* ReservationResponse);
 	void ClientCancelReservationResponse(TEnumAsByte<EPartyReservationResult>* ReservationResponse);
+=======
+	void ServerUpdateReservationRequest(const struct FString& SessionId, const struct FPartyReservation& ReservationUpdate);
+	void ServerReservationRequest(const struct FString& SessionId, const struct FPartyReservation& Reservation);
+	void ServerCancelReservationRequest(const struct FUniqueNetIdRepl& PartyLeader);
+	void ClientSendReservationUpdates(int NumRemainingReservations);
+	void ClientSendReservationFull();
+	void ClientReservationResponse(TEnumAsByte<EPartyReservationResult> ReservationResponse);
+	void ClientCancelReservationResponse(TEnumAsByte<EPartyReservationResult> ReservationResponse);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
 // Class OnlineSubsystemUtils.TestBeaconClient
+<<<<<<< HEAD
 // 0x0000 (0x0490 - 0x0490)
+=======
+// 0x0000 (0x04B0 - 0x04B0)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 class ATestBeaconClient : public AOnlineBeaconClient
 {
 public:
@@ -604,6 +749,7 @@ public:
 
 
 // Class OnlineSubsystemUtils.OnlineBeaconHost
+<<<<<<< HEAD
 // 0x00B8 (0x04C0 - 0x0408)
 class AOnlineBeaconHost : public AOnlineBeacon
 {
@@ -612,6 +758,16 @@ public:
 	unsigned char                                      UnknownData00[0x4];                                       // 0x040C(0x0004) MISSED OFFSET
 	TArray<class AOnlineBeaconClient*>                 ClientActors;                                             // 0x0410(0x0010) (ZeroConstructor)
 	unsigned char                                      UnknownData01[0xA0];                                      // 0x0420(0x00A0) MISSED OFFSET
+=======
+// 0x00B8 (0x04E0 - 0x0428)
+class AOnlineBeaconHost : public AOnlineBeacon
+{
+public:
+	int                                                ListenPort;                                               // 0x0428(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x042C(0x0004) MISSED OFFSET
+	TArray<class AOnlineBeaconClient*>                 ClientActors;                                             // 0x0430(0x0010) (ZeroConstructor)
+	unsigned char                                      UnknownData01[0xA0];                                      // 0x0440(0x00A0) MISSED OFFSET
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -626,6 +782,7 @@ public:
 
 
 // Class OnlineSubsystemUtils.OnlineBeaconHostObject
+<<<<<<< HEAD
 // 0x0028 (0x0408 - 0x03E0)
 class AOnlineBeaconHostObject : public AActor
 {
@@ -633,6 +790,15 @@ public:
 	struct FString                                     BeaconTypeName;                                           // 0x03E0(0x0010) (ZeroConstructor, Transient)
 	class UClass*                                      ClientBeaconActorClass;                                   // 0x03F0(0x0008) (ZeroConstructor, IsPlainOldData)
 	TArray<class AOnlineBeaconClient*>                 ClientActors;                                             // 0x03F8(0x0010) (ZeroConstructor)
+=======
+// 0x0028 (0x0428 - 0x0400)
+class AOnlineBeaconHostObject : public AActor
+{
+public:
+	struct FString                                     BeaconTypeName;                                           // 0x0400(0x0010) (ZeroConstructor, Transient)
+	class UClass*                                      ClientBeaconActorClass;                                   // 0x0410(0x0008) (ZeroConstructor, IsPlainOldData)
+	TArray<class AOnlineBeaconClient*>                 ClientActors;                                             // 0x0418(0x0010) (ZeroConstructor)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -647,6 +813,7 @@ public:
 
 
 // Class OnlineSubsystemUtils.PartyBeaconHost
+<<<<<<< HEAD
 // 0x0158 (0x0560 - 0x0408)
 class APartyBeaconHost : public AOnlineBeaconHostObject
 {
@@ -658,6 +825,19 @@ public:
 	float                                              SessionTimeoutSecs;                                       // 0x0554(0x0004) (ZeroConstructor, Transient, Config, IsPlainOldData)
 	float                                              TravelSessionTimeoutSecs;                                 // 0x0558(0x0004) (ZeroConstructor, Transient, Config, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x4];                                       // 0x055C(0x0004) MISSED OFFSET
+=======
+// 0x0158 (0x0580 - 0x0428)
+class APartyBeaconHost : public AOnlineBeaconHostObject
+{
+public:
+	class UPartyBeaconState*                           State;                                                    // 0x0428(0x0008) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x140];                                     // 0x0430(0x0140) MISSED OFFSET
+	bool                                               bLogoutOnSessionTimeout;                                  // 0x0570(0x0001) (ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x0571(0x0003) MISSED OFFSET
+	float                                              SessionTimeoutSecs;                                       // 0x0574(0x0004) (ZeroConstructor, Transient, Config, IsPlainOldData)
+	float                                              TravelSessionTimeoutSecs;                                 // 0x0578(0x0004) (ZeroConstructor, Transient, Config, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x057C(0x0004) MISSED OFFSET
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -672,7 +852,11 @@ public:
 
 
 // Class OnlineSubsystemUtils.TestBeaconHost
+<<<<<<< HEAD
 // 0x0000 (0x0408 - 0x0408)
+=======
+// 0x0000 (0x0428 - 0x0428)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 class ATestBeaconHost : public AOnlineBeaconHostObject
 {
 public:
@@ -771,7 +955,11 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	class UQuitMatchCallbackProxy* STATIC_QuitMatch(class UObject** WorldContextObject, class APlayerController** PlayerController, struct FString* MatchId, TEnumAsByte<EMPMatchOutcome>* Outcome, int* TurnTimeoutInSeconds);
+=======
+	class UQuitMatchCallbackProxy* STATIC_QuitMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FString& MatchId, TEnumAsByte<EMPMatchOutcome> Outcome, int TurnTimeoutInSeconds);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -794,7 +982,11 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	class UShowLoginUICallbackProxy* STATIC_ShowExternalLoginUI(class UObject** WorldContextObject, class APlayerController** InPlayerController);
+=======
+	class UShowLoginUICallbackProxy* STATIC_ShowExternalLoginUI(class UObject* WorldContextObject, class APlayerController* InPlayerController);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -814,10 +1006,17 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void STATIC_RegisterTurnBasedMatchInterfaceObject(class UObject** WorldContextObject, class APlayerController** PlayerController, class UObject** Object);
 	void STATIC_GetPlayerDisplayName(class UObject** WorldContextObject, class APlayerController** PlayerController, struct FString* MatchId, int* PlayerIndex, struct FString* PlayerDisplayName);
 	void STATIC_GetMyPlayerIndex(class UObject** WorldContextObject, class APlayerController** PlayerController, struct FString* MatchId, int* PlayerIndex);
 	void STATIC_GetIsMyTurn(class UObject** WorldContextObject, class APlayerController** PlayerController, struct FString* MatchId, bool* bIsMyTurn);
+=======
+	void STATIC_RegisterTurnBasedMatchInterfaceObject(class UObject* WorldContextObject, class APlayerController* PlayerController, class UObject* Object);
+	void STATIC_GetPlayerDisplayName(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FString& MatchId, int PlayerIndex, struct FString* PlayerDisplayName);
+	void STATIC_GetMyPlayerIndex(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FString& MatchId, int* PlayerIndex);
+	void STATIC_GetIsMyTurn(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FString& MatchId, bool* bIsMyTurn);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

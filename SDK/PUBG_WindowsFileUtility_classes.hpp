@@ -30,9 +30,15 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void OnListFileFound(struct FString* Filename, int* ByteCount, struct FString* FilePath);
 	void OnListDone(struct FString* DirectoryPath, TArray<struct FString>* Files, TArray<struct FString>* Folders);
 	void OnListDirectoryFound(struct FString* DirectoryName, struct FString* FilePath);
+=======
+	void OnListFileFound(const struct FString& Filename, int ByteCount, const struct FString& FilePath);
+	void OnListDone(const struct FString& DirectoryPath, TArray<struct FString> Files, TArray<struct FString> Folders);
+	void OnListDirectoryFound(const struct FString& DirectoryName, const struct FString& FilePath);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -71,8 +77,13 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void OnFileChanged(struct FString* Filename, struct FString* FilePath);
 	void OnDirectoryChanged(struct FString* DirectoryName, struct FString* DirectoryPath);
+=======
+	void OnFileChanged(const struct FString& Filename, const struct FString& FilePath);
+	void OnDirectoryChanged(const struct FString& DirectoryName, const struct FString& DirectoryPath);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -111,6 +122,7 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void STATIC_WatchFolder(struct FString* FullPath, class UObject** WatcherDelegate);
 	void STATIC_StopWatchingFolder(struct FString* FullPath, class UObject** WatcherDelegate);
 	bool STATIC_MoveFileTo(struct FString* From, struct FString* To);
@@ -119,6 +131,16 @@ public:
 	bool STATIC_DeleteFileAt(struct FString* FullPath);
 	bool STATIC_DeleteEmptyFolder(struct FString* FullPath);
 	bool STATIC_CreateDirectoryAt(struct FString* FullPath);
+=======
+	void STATIC_WatchFolder(const struct FString& FullPath, class UObject* WatcherDelegate);
+	void STATIC_StopWatchingFolder(const struct FString& FullPath, class UObject* WatcherDelegate);
+	bool STATIC_MoveFileTo(const struct FString& From, const struct FString& To);
+	void STATIC_ListContentsOfFolder(const struct FString& FullPath, class UObject* ListDelegate);
+	bool STATIC_DeleteFolderRecursively(const struct FString& FullPath);
+	bool STATIC_DeleteFileAt(const struct FString& FullPath);
+	bool STATIC_DeleteEmptyFolder(const struct FString& FullPath);
+	bool STATIC_CreateDirectoryAt(const struct FString& FullPath);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

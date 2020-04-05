@@ -16,7 +16,11 @@ namespace SDK
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 // bool*                          IsDesignTime                   (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UBP_Console_Icon_Y_C::PreConstruct(bool* IsDesignTime)
 {
@@ -38,7 +42,11 @@ void UBP_Console_Icon_Y_C::PreConstruct(bool* IsDesignTime)
 
 // Function BP_Console_Icon_Y.BP_Console_Icon_Y_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UBP_Console_Icon_Y_C::Construct()
 {
@@ -61,7 +69,11 @@ void UBP_Console_Icon_Y_C::Construct()
 // ()
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UBP_Console_Icon_Y_C::ExecuteUbergraph_BP_Console_Icon_Y(int* EntryPoint)
 {

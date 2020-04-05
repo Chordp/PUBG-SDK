@@ -15,7 +15,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_ItemRequestProjectile.BP_ItemRequestProjectile_C
+<<<<<<< HEAD
 // 0x0000 (0x05C8 - 0x05C8)
+=======
+// 0x0000 (0x05E8 - 0x05E8)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 class ABP_ItemRequestProjectile_C : public ATslItemRequestProjectile
 {
 public:

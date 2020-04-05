@@ -33,9 +33,15 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void BndEvt__ComboBox_K2Node_ComponentBoundEvent_21_OnSelectionChangedEvent__DelegateSignature(struct FString* SelectedItem, TEnumAsByte<ESelectInfo>* SelectionType);
 	void ExecuteUbergraph_BP_PcOptionItemDropDownListWidget(int* EntryPoint);
 	void OnSelectionChanged__DelegateSignature(struct FString* KeyStr, TEnumAsByte<ESelectInfo>* SelectionType);
+=======
+	void BndEvt__ComboBox_K2Node_ComponentBoundEvent_21_OnSelectionChangedEvent__DelegateSignature(const struct FString& SelectedItem, TEnumAsByte<ESelectInfo> SelectionType);
+	void ExecuteUbergraph_BP_PcOptionItemDropDownListWidget(int EntryPoint);
+	void OnSelectionChanged__DelegateSignature(const struct FString& KeyStr, TEnumAsByte<ESelectInfo> SelectionType);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

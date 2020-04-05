@@ -57,6 +57,14 @@ struct UBP_PcSystemMenuWidget_C_BndEvt__RestartLobbyButton_K2Node_ComponentBound
 {
 };
 
+<<<<<<< HEAD
+=======
+// Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__LeaveMatchButton_K2Node_ComponentBoundEvent_51_OnClicked__DelegateSignature
+struct UBP_PcSystemMenuWidget_C_BndEvt__LeaveMatchButton_K2Node_ComponentBoundEvent_51_OnClicked__DelegateSignature_Params
+{
+};
+
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__ExitToDesktopButton_K2Node_ComponentBoundEvent_60_OnClicked__DelegateSignature
 struct UBP_PcSystemMenuWidget_C_BndEvt__ExitToDesktopButton_K2Node_ComponentBoundEvent_60_OnClicked__DelegateSignature_Params
 {
@@ -135,11 +143,14 @@ struct UBP_PcSystemMenuWidget_C_NotifyHideWidget_Params
 {
 };
 
+<<<<<<< HEAD
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__LeaveMatchButton_K2Node_ComponentBoundEvent_51_OnClicked__DelegateSignature
 struct UBP_PcSystemMenuWidget_C_BndEvt__LeaveMatchButton_K2Node_ComponentBoundEvent_51_OnClicked__DelegateSignature_Params
 {
 };
 
+=======
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.ExecuteUbergraph_BP_PcSystemMenuWidget
 struct UBP_PcSystemMenuWidget_C_ExecuteUbergraph_BP_PcSystemMenuWidget_Params
 {

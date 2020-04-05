@@ -15,7 +15,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_UnderwaterBulletTrailEffectShort.BP_UnderwaterBulletTrailEffectShort_C
+<<<<<<< HEAD
 // 0x0000 (0x04B0 - 0x04B0)
+=======
+// 0x0000 (0x04D0 - 0x04D0)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 class ABP_UnderwaterBulletTrailEffectShort_C : public ATslParticleBulletTrail
 {
 public:

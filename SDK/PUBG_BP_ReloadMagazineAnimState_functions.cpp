@@ -16,7 +16,11 @@ namespace SDK
 // (Public, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
 // class USkeletalMeshComponent** MeshComp                       (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UBP_ReloadMagazineAnimState_C::DropMag(class USkeletalMeshComponent** MeshComp)
 {
@@ -41,7 +45,11 @@ void UBP_ReloadMagazineAnimState_C::DropMag(class USkeletalMeshComponent** MeshC
 // Parameters:
 // class USkeletalMeshComponent** MeshComp                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool*                          Attach                         (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UBP_ReloadMagazineAnimState_C::AttachMag(class USkeletalMeshComponent** MeshComp, bool* Attach)
 {
@@ -67,7 +75,11 @@ void UBP_ReloadMagazineAnimState_C::AttachMag(class USkeletalMeshComponent** Mes
 // Parameters:
 // class USkeletalMeshComponent** MeshComp                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool*                          Show                           (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UBP_ReloadMagazineAnimState_C::ShowMag(class USkeletalMeshComponent** MeshComp, bool* Show)
 {
@@ -94,7 +106,11 @@ void UBP_ReloadMagazineAnimState_C::ShowMag(class USkeletalMeshComponent** MeshC
 // class USkeletalMeshComponent** MeshComp                       (Parm, ZeroConstructor, IsPlainOldData)
 // class UAnimSequenceBase**      Animation                      (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 bool UBP_ReloadMagazineAnimState_C::Received_NotifyEnd(class USkeletalMeshComponent** MeshComp, class UAnimSequenceBase** Animation)
 {
@@ -124,7 +140,11 @@ bool UBP_ReloadMagazineAnimState_C::Received_NotifyEnd(class USkeletalMeshCompon
 // class UAnimSequenceBase**      Animation                      (Parm, ZeroConstructor, IsPlainOldData)
 // float*                         TotalDuration                  (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 bool UBP_ReloadMagazineAnimState_C::Received_NotifyBegin(class USkeletalMeshComponent** MeshComp, class UAnimSequenceBase** Animation, float* TotalDuration)
 {

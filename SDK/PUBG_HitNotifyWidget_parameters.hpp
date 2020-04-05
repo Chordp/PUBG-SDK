@@ -88,8 +88,13 @@ struct UHitNotifyWidget_C_GetRandomTranslation_Params
 // Function HitNotifyWidget.HitNotifyWidget_C.OnHitNotify_Temp
 struct UHitNotifyWidget_C_OnHitNotify_Temp_Params
 {
+<<<<<<< HEAD
 	float*                                             DamagePercent;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 	EDamageTypeCategory*                               DamageTypeCategory;                                       // (Parm, ZeroConstructor, IsPlainOldData)
+=======
+	float                                              DamagePercent;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	EDamageTypeCategory                                DamageTypeCategory;                                       // (Parm, ZeroConstructor, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function HitNotifyWidget.HitNotifyWidget_C.Construct

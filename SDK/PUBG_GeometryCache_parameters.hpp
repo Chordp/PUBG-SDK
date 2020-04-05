@@ -28,25 +28,41 @@ struct UGeometryCacheComponent_Stop_Params
 // Function GeometryCache.GeometryCacheComponent.SetStartTimeOffset
 struct UGeometryCacheComponent_SetStartTimeOffset_Params
 {
+<<<<<<< HEAD
 	float*                                             NewStartTimeOffset;                                       // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+=======
+	float                                              NewStartTimeOffset;                                       // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function GeometryCache.GeometryCacheComponent.SetPlaybackSpeed
 struct UGeometryCacheComponent_SetPlaybackSpeed_Params
 {
+<<<<<<< HEAD
 	float*                                             NewPlaybackSpeed;                                         // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+=======
+	float                                              NewPlaybackSpeed;                                         // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function GeometryCache.GeometryCacheComponent.SetLooping
 struct UGeometryCacheComponent_SetLooping_Params
 {
+<<<<<<< HEAD
 	bool*                                              bNewLooping;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+=======
+	bool                                               bNewLooping;                                              // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function GeometryCache.GeometryCacheComponent.SetGeometryCache
 struct UGeometryCacheComponent_SetGeometryCache_Params
 {
+<<<<<<< HEAD
 	class UGeometryCache**                             NewGeomCache;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+=======
+	class UGeometryCache*                              NewGeomCache;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -108,20 +124,33 @@ struct UGeometryCacheComponent_GetPlaybackSpeed_Params
 // Function GeometryCache.GeometryCacheTrack_FlipbookAnimation.AddMeshSample
 struct UGeometryCacheTrack_FlipbookAnimation_AddMeshSample_Params
 {
+<<<<<<< HEAD
 	struct FGeometryCacheMeshData*                     MeshData;                                                 // (ConstParm, Parm, OutParm, ReferenceParm)
 	float*                                             SampleTime;                                               // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+=======
+	struct FGeometryCacheMeshData                      MeshData;                                                 // (ConstParm, Parm, OutParm, ReferenceParm)
+	float                                              SampleTime;                                               // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function GeometryCache.GeometryCacheTrack_TransformAnimation.SetMesh
 struct UGeometryCacheTrack_TransformAnimation_SetMesh_Params
 {
+<<<<<<< HEAD
 	struct FGeometryCacheMeshData*                     NewMeshData;                                              // (ConstParm, Parm, OutParm, ReferenceParm)
+=======
+	struct FGeometryCacheMeshData                      NewMeshData;                                              // (ConstParm, Parm, OutParm, ReferenceParm)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function GeometryCache.GeometryCacheTrack_TransformGroupAnimation.SetMesh
 struct UGeometryCacheTrack_TransformGroupAnimation_SetMesh_Params
 {
+<<<<<<< HEAD
 	struct FGeometryCacheMeshData*                     NewMeshData;                                              // (ConstParm, Parm, OutParm, ReferenceParm)
+=======
+	struct FGeometryCacheMeshData                      NewMeshData;                                              // (ConstParm, Parm, OutParm, ReferenceParm)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 }

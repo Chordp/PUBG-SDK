@@ -50,8 +50,13 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	bool STATIC_CheckPermission(struct FString* permission);
 	class UAndroidPermissionCallbackProxy* STATIC_AcquirePermissions(TArray<struct FString>* Permissions);
+=======
+	bool STATIC_CheckPermission(const struct FString& permission);
+	class UAndroidPermissionCallbackProxy* STATIC_AcquirePermissions(TArray<struct FString> Permissions);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

@@ -43,7 +43,11 @@ struct ABuff_RestoreHoldingBreathOverTime_C_AfterDelay_Params
 // Function Buff_RestoreHoldingBreathOverTime.Buff_RestoreHoldingBreathOverTime_C.ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime
 struct ABuff_RestoreHoldingBreathOverTime_C_ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime_Params
 {
+<<<<<<< HEAD
 	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+=======
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 }

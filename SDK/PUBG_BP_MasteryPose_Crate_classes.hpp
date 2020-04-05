@@ -15,6 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_MasteryPose_Crate.BP_MasteryPose_Crate_C
+<<<<<<< HEAD
 // 0x0030 (0x0460 - 0x0430)
 class ABP_MasteryPose_Crate_C : public ABP_MasteryPose_C
 {
@@ -25,6 +26,18 @@ public:
 	class USpotLightComponent*                         SpotLight;                                                // 0x0448(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	class USpotLightComponent*                         LobbySpotLight;                                           // 0x0450(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	class UParticleSystemComponent*                    LobbyParticles;                                           // 0x0458(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+=======
+// 0x0030 (0x0480 - 0x0450)
+class ABP_MasteryPose_Crate_C : public ABP_MasteryPose_C
+{
+public:
+	class UStaticMeshComponent*                        Plane;                                                    // 0x0450(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UAsyncStaticMeshComponent*                   CrateMesh;                                                // 0x0458(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class USpotLightComponent*                         SpotLight1;                                               // 0x0460(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class USpotLightComponent*                         SpotLight;                                                // 0x0468(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class USpotLightComponent*                         LobbySpotLight;                                           // 0x0470(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class UParticleSystemComponent*                    LobbyParticles;                                           // 0x0478(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{

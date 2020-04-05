@@ -32,7 +32,11 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void SetSettings(struct FSubmixEffectDynamicsProcessorSettings* InSettings);
+=======
+	void SetSettings(const struct FSubmixEffectDynamicsProcessorSettings& InSettings);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -52,6 +56,7 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void STATIC_SetBypassSourceEffectChainEntry(class UObject** WorldContextObject, class USoundEffectSourcePresetChain** PresetChain, int* EntryIndex, bool* bBypassed);
 	void STATIC_RemoveSourceEffectFromPresetChain(class UObject** WorldContextObject, class USoundEffectSourcePresetChain** PresetChain, int* EntryIndex);
 	void STATIC_RemoveMasterSubmixEffect(class UObject** WorldContextObject, class USoundEffectSubmixPreset** SubmixEffectPreset);
@@ -59,6 +64,15 @@ public:
 	void STATIC_ClearMasterSubmixEffects(class UObject** WorldContextObject);
 	void STATIC_AddSourceEffectToPresetChain(class UObject** WorldContextObject, class USoundEffectSourcePresetChain** PresetChain, struct FSourceEffectChainEntry* Entry);
 	void STATIC_AddMasterSubmixEffect(class UObject** WorldContextObject, class USoundEffectSubmixPreset** SubmixEffectPreset);
+=======
+	void STATIC_SetBypassSourceEffectChainEntry(class UObject* WorldContextObject, class USoundEffectSourcePresetChain* PresetChain, int EntryIndex, bool bBypassed);
+	void STATIC_RemoveSourceEffectFromPresetChain(class UObject* WorldContextObject, class USoundEffectSourcePresetChain* PresetChain, int EntryIndex);
+	void STATIC_RemoveMasterSubmixEffect(class UObject* WorldContextObject, class USoundEffectSubmixPreset* SubmixEffectPreset);
+	int STATIC_GetNumberOfEntriesInSourceEffectChain(class UObject* WorldContextObject, class USoundEffectSourcePresetChain* PresetChain);
+	void STATIC_ClearMasterSubmixEffects(class UObject* WorldContextObject);
+	void STATIC_AddSourceEffectToPresetChain(class UObject* WorldContextObject, class USoundEffectSourcePresetChain* PresetChain, const struct FSourceEffectChainEntry& Entry);
+	void STATIC_AddMasterSubmixEffect(class UObject* WorldContextObject, class USoundEffectSubmixPreset* SubmixEffectPreset);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -80,8 +94,13 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void SetSettingsWithReverbEffect(class UReverbEffect** InReverbEffect, float* WetLevel);
 	void SetSettings(struct FSubmixEffectReverbSettings* InSettings);
+=======
+	void SetSettingsWithReverbEffect(class UReverbEffect* InReverbEffect, float WetLevel);
+	void SetSettings(const struct FSubmixEffectReverbSettings& InSettings);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -103,7 +122,11 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void SetSettings(struct FSubmixEffectSubmixEQSettings* InSettings);
+=======
+	void SetSettings(const struct FSubmixEffectSubmixEQSettings& InSettings);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -162,7 +185,11 @@ public:
 
 	void Stop();
 	void Start();
+<<<<<<< HEAD
 	void SetSubmixSend(class USoundSubmix** Submix, float* SendLevel);
+=======
+	void SetSubmixSend(class USoundSubmix* Submix, float SendLevel);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	bool IsPlaying();
 };
 

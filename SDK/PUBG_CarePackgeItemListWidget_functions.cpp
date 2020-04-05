@@ -14,7 +14,11 @@ namespace SDK
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.UpdateIconTexture
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackgeItemListWidget_C::UpdateIconTexture()
 {
@@ -35,7 +39,11 @@ void UCarePackgeItemListWidget_C::UpdateIconTexture()
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.FinishCarePackgeItemList
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackgeItemListWidget_C::FinishCarePackgeItemList()
 {
@@ -56,7 +64,11 @@ void UCarePackgeItemListWidget_C::FinishCarePackgeItemList()
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.PrepareCarePackgeItemList
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackgeItemListWidget_C::PrepareCarePackgeItemList()
 {
@@ -77,7 +89,11 @@ void UCarePackgeItemListWidget_C::PrepareCarePackgeItemList()
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.HideTextCarePackageEmpty
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackgeItemListWidget_C::HideTextCarePackageEmpty()
 {
@@ -98,7 +114,11 @@ void UCarePackgeItemListWidget_C::HideTextCarePackageEmpty()
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.SetCarePackgeItemList
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackgeItemListWidget_C::SetCarePackgeItemList()
 {
@@ -119,7 +139,11 @@ void UCarePackgeItemListWidget_C::SetCarePackgeItemList()
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.GetCarePackageItemIcons
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackgeItemListWidget_C::GetCarePackageItemIcons()
 {
@@ -140,7 +164,11 @@ void UCarePackgeItemListWidget_C::GetCarePackageItemIcons()
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.HideCarePackageItemList
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackgeItemListWidget_C::HideCarePackageItemList()
 {
@@ -166,7 +194,11 @@ void UCarePackgeItemListWidget_C::HideCarePackageItemList()
 // struct FText*                  ItemName                       (Parm)
 // int*                           ItemCount                      (Parm, ZeroConstructor, IsPlainOldData)
 // class UCarePackageItemSlotWidget_C* CarePackageItemSlotWidget      (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackgeItemListWidget_C::GetCarePackageItemWidget(class UTexture** ItemIcon, struct FText* ItemName, int* ItemCount, class UCarePackageItemSlotWidget_C** CarePackageItemSlotWidget)
 {
@@ -193,7 +225,11 @@ void UCarePackgeItemListWidget_C::GetCarePackageItemWidget(class UTexture** Item
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.ShowCarePackageItemList
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackgeItemListWidget_C::ShowCarePackageItemList()
 {
@@ -214,7 +250,11 @@ void UCarePackgeItemListWidget_C::ShowCarePackageItemList()
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackgeItemListWidget_C::Construct()
 {
@@ -235,7 +275,11 @@ void UCarePackgeItemListWidget_C::Construct()
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.ShowCarePackageItem
 // (BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackgeItemListWidget_C::ShowCarePackageItem()
 {
@@ -256,7 +300,11 @@ void UCarePackgeItemListWidget_C::ShowCarePackageItem()
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.CustomTick
 // (BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackgeItemListWidget_C::CustomTick()
 {
@@ -277,7 +325,11 @@ void UCarePackgeItemListWidget_C::CustomTick()
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.TimerCheckUpdateList
 // (BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackgeItemListWidget_C::TimerCheckUpdateList()
 {
@@ -300,7 +352,11 @@ void UCarePackgeItemListWidget_C::TimerCheckUpdateList()
 // (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackgeItemListWidget_C::ExecuteUbergraph_CarePackgeItemListWidget(int* EntryPoint)
 {
@@ -322,7 +378,11 @@ void UCarePackgeItemListWidget_C::ExecuteUbergraph_CarePackgeItemListWidget(int*
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.EventDispatcher_ShowCarePackageItem__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackgeItemListWidget_C::EventDispatcher_ShowCarePackageItem__DelegateSignature()
 {

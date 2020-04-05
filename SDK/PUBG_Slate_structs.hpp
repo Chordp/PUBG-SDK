@@ -7,8 +7,13 @@
 #endif
 
 #include "PUBG_Basic.hpp"
+<<<<<<< HEAD
 #include "PUBG_CoreUObject_classes.hpp"
 #include "PUBG_SlateCore_classes.hpp"
+=======
+#include "PUBG_SlateCore_classes.hpp"
+#include "PUBG_CoreUObject_classes.hpp"
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 #include "PUBG_InputCore_classes.hpp"
 
 namespace SDK

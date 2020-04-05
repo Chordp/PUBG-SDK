@@ -99,7 +99,11 @@ struct UWebPopup_C_ExecuteUbergraph_WebPopup_Params
 // Function WebPopup.WebPopup_C.OnClosePopup__DelegateSignature
 struct UWebPopup_C_OnClosePopup__DelegateSignature_Params
 {
+<<<<<<< HEAD
 	class UWebPopup_C**                                Widget;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+=======
+	class UWebPopup_C*                                 Widget;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 }

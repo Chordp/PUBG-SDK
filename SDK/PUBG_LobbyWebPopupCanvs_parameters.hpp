@@ -51,8 +51,13 @@ struct ULobbyWebPopupCanvs_C_GetWebPopupFromPopupId_Params
 // Function LobbyWebPopupCanvs.LobbyWebPopupCanvs_C.ChangeWebPopupUriImpl
 struct ULobbyWebPopupCanvs_C_ChangeWebPopupUriImpl_Params
 {
+<<<<<<< HEAD
 	struct FString*                                    PopupId;                                                  // (Parm, ZeroConstructor)
 	struct FString*                                    Uri;                                                      // (Parm, ZeroConstructor)
+=======
+	struct FString                                     PopupId;                                                  // (Parm, ZeroConstructor)
+	struct FString                                     Uri;                                                      // (Parm, ZeroConstructor)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function LobbyWebPopupCanvs.LobbyWebPopupCanvs_C.OnCloseWebPopupImpl

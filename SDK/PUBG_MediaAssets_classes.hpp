@@ -31,9 +31,15 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void GetTexts(struct FTimespan* Time, TArray<struct FMediaPlayerOverlay>* OutTexts);
 	void GetSubtitles(struct FTimespan* Time, TArray<struct FMediaPlayerOverlay>* OutSubtitles);
 	void GetCaptions(struct FTimespan* Time, TArray<struct FMediaPlayerOverlay>* OutCaptions);
+=======
+	void GetTexts(const struct FTimespan& Time, TArray<struct FMediaPlayerOverlay>* OutTexts);
+	void GetSubtitles(const struct FTimespan& Time, TArray<struct FMediaPlayerOverlay>* OutSubtitles);
+	void GetCaptions(const struct FTimespan& Time, TArray<struct FMediaPlayerOverlay>* OutCaptions);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -74,6 +80,7 @@ public:
 
 	bool SupportsSeeking();
 	bool SupportsScrubbing();
+<<<<<<< HEAD
 	bool SupportsRate(float* Rate, bool* Unthinned);
 	void SetVideoTexture(class UMediaTexture** NewTexture);
 	void SetSoundWave(class UMediaSoundWave** NewSoundWave);
@@ -83,16 +90,35 @@ public:
 	void SetDesiredPlayerName(struct FName* PlayerName);
 	bool SelectTrack(EMediaPlayerTrack* TrackType, int* TrackIndex);
 	bool Seek(struct FTimespan* Time);
+=======
+	bool SupportsRate(float Rate, bool Unthinned);
+	void SetVideoTexture(class UMediaTexture* NewTexture);
+	void SetSoundWave(class UMediaSoundWave* NewSoundWave);
+	bool SetRate(float Rate);
+	void SetOverlays(class UMediaOverlays* NewOverlays);
+	bool SetLooping(bool Looping);
+	void SetDesiredPlayerName(const struct FName& PlayerName);
+	bool SelectTrack(EMediaPlayerTrack TrackType, int TrackIndex);
+	bool Seek(const struct FTimespan& Time);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	bool Rewind();
 	bool Reopen();
 	bool Previous();
 	bool Play();
 	bool Pause();
+<<<<<<< HEAD
 	bool OpenUrl(struct FString* URL);
 	bool OpenSource(class UMediaSource** MediaSource);
 	bool OpenPlaylistIndex(class UMediaPlaylist** InPlaylist, int* Index);
 	bool OpenPlaylist(class UMediaPlaylist** InPlaylist);
 	bool OpenFile(struct FString* FilePath);
+=======
+	bool OpenUrl(const struct FString& URL);
+	bool OpenSource(class UMediaSource* MediaSource);
+	bool OpenPlaylistIndex(class UMediaPlaylist* InPlaylist, int Index);
+	bool OpenPlaylist(class UMediaPlaylist* InPlaylist);
+	bool OpenFile(const struct FString& FilePath);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	bool Next();
 	bool IsReady();
 	bool IsPreparing();
@@ -100,6 +126,7 @@ public:
 	bool IsPaused();
 	bool IsLooping();
 	struct FString GetUrl();
+<<<<<<< HEAD
 	struct FString GetTrackLanguage(EMediaPlayerTrack* TrackType, int* TrackIndex);
 	struct FText GetTrackDisplayName(EMediaPlayerTrack* TrackType, int* TrackIndex);
 	struct FTimespan GetTime();
@@ -114,6 +141,22 @@ public:
 	void Close();
 	bool CanPlayUrl(struct FString* URL);
 	bool CanPlaySource(class UMediaSource** MediaSource);
+=======
+	struct FString GetTrackLanguage(EMediaPlayerTrack TrackType, int TrackIndex);
+	struct FText GetTrackDisplayName(EMediaPlayerTrack TrackType, int TrackIndex);
+	struct FTimespan GetTime();
+	int GetSelectedTrack(EMediaPlayerTrack TrackType);
+	struct FFloatRange GetReverseRates(bool Unthinned);
+	float GetRate();
+	struct FName GetPlayerName();
+	int GetNumTracks(EMediaPlayerTrack TrackType);
+	struct FFloatRange GetForwardRates(bool Unthinned);
+	struct FTimespan GetDuration();
+	struct FName GetDesiredPlayerName();
+	void Close();
+	bool CanPlayUrl(const struct FString& URL);
+	bool CanPlaySource(class UMediaSource* MediaSource);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	bool CanPause();
 };
 
@@ -135,6 +178,7 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void RemoveAt(int* Index);
 	void Remove(class UMediaSource** MediaSource);
 	int Num();
@@ -144,6 +188,17 @@ public:
 	class UMediaSource* GetNext(int* InOutIndex);
 	class UMediaSource* Get(int* Index);
 	void Add(class UMediaSource** MediaSource);
+=======
+	void RemoveAt(int Index);
+	void Remove(class UMediaSource* MediaSource);
+	int Num();
+	void Insert(class UMediaSource* MediaSource, int Index);
+	class UMediaSource* GetRandom(int* InOutIndex);
+	class UMediaSource* GetPrevious(int* InOutIndex);
+	class UMediaSource* GetNext(int* InOutIndex);
+	class UMediaSource* Get(int Index);
+	void Add(class UMediaSource* MediaSource);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -227,7 +282,11 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void SetFilePath(struct FString* path);
+=======
+	void SetFilePath(const struct FString& path);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

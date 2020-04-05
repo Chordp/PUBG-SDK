@@ -144,10 +144,17 @@ struct UUiHelperFunctionsBp_C_GetTslCharacters_Bp_Params
 // Function UiHelperFunctionsBp.UiHelperFunctionsBp_C.NotifyWidgetShowed
 struct UUiHelperFunctionsBp_C_NotifyWidgetShowed_Params
 {
+<<<<<<< HEAD
 	class UUserWidget**                                Widget;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FString*                                    WidgetName;                                               // (Parm, ZeroConstructor)
 	bool*                                              bShow;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	class UObject**                                    __WorldContext;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+=======
+	class UUserWidget*                                 Widget;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FString                                     WidgetName;                                               // (Parm, ZeroConstructor)
+	bool                                               bShow;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	class UObject*                                     __WorldContext;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function UiHelperFunctionsBp.UiHelperFunctionsBp_C.GetTeamMarkerColor

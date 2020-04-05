@@ -39,7 +39,11 @@ public:
 	void ShowWebPopupImpl(struct FWebPopupParam* PopupParam);
 	void OnPreloadWebPopupImpl(TArray<struct FWebPopupParam>* Params);
 	void GetWebPopupFromPopupId(struct FString* PopupId, class UWebPopup_C** WebPopup);
+<<<<<<< HEAD
 	void ChangeWebPopupUriImpl(struct FString* PopupId, struct FString* Uri);
+=======
+	void ChangeWebPopupUriImpl(const struct FString& PopupId, const struct FString& Uri);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	void OnCloseWebPopupImpl(struct FString* PopupId);
 	void CloseWebPopupByID(struct FString* WebPopupID, bool* bForceRemoveParent);
 	void RemoveWebPopup(class UWebPopup_C** Widget);

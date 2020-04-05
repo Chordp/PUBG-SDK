@@ -16,7 +16,11 @@ namespace SDK
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int*                           MK3DReplayVersion              (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetMK3DReplayVersion(int* MK3DReplayVersion)
 {
@@ -40,7 +44,11 @@ void UReplayListItem_C::SetMK3DReplayVersion(int* MK3DReplayVersion)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool*                          bHaveCameraEvent               (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetHaveCameraEvent(bool* bHaveCameraEvent)
 {
@@ -64,7 +72,11 @@ void UReplayListItem_C::SetHaveCameraEvent(bool* bHaveCameraEvent)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FString*                GameVersion                    (Parm, ZeroConstructor)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetGameVersion(struct FString* GameVersion)
 {
@@ -88,7 +100,11 @@ void UReplayListItem_C::SetGameVersion(struct FString* GameVersion)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool*                          bAllDeadOrWin                  (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetAllDeadOrWin(bool* bAllDeadOrWin)
 {
@@ -112,7 +128,11 @@ void UReplayListItem_C::SetAllDeadOrWin(bool* bAllDeadOrWin)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool*                          bIsServerRecording             (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetSeverRecording(bool* bIsServerRecording)
 {
@@ -136,7 +156,11 @@ void UReplayListItem_C::SetSeverRecording(bool* bIsServerRecording)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float*                         fPercent                       (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetActionMessageDownloadPercent(float* fPercent)
 {
@@ -162,7 +186,11 @@ void UReplayListItem_C::SetActionMessageDownloadPercent(float* fPercent)
 // struct FString*                strFileName                    (Parm, ZeroConstructor)
 // int*                           nReceived                      (Parm, ZeroConstructor, IsPlainOldData)
 // int*                           nTotal                         (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::ShowDownloadPercent(struct FString* strFileName, int* nReceived, int* nTotal)
 {
@@ -186,7 +214,11 @@ void UReplayListItem_C::ShowDownloadPercent(struct FString* strFileName, int* nR
 
 // Function ReplayListItem.ReplayListItem_C.DisableDownload
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::DisableDownload()
 {
@@ -209,7 +241,11 @@ void UReplayListItem_C::DisableDownload()
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool*                          IsArchived                     (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetArchived(bool* IsArchived)
 {
@@ -233,7 +269,11 @@ void UReplayListItem_C::SetArchived(bool* IsArchived)
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FString*                inRegionOrLocal                (Parm, ZeroConstructor)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetRegionOrLocal(struct FString* inRegionOrLocal)
 {
@@ -257,7 +297,11 @@ void UReplayListItem_C::SetRegionOrLocal(struct FString* inRegionOrLocal)
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool*                          bShouldKeep                    (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetShouldKeep(bool* bShouldKeep)
 {
@@ -281,7 +325,11 @@ void UReplayListItem_C::SetShouldKeep(bool* bShouldKeep)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool*                          bIsCorrupt                     (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetCorrupt(bool* bIsCorrupt)
 {
@@ -305,7 +353,11 @@ void UReplayListItem_C::SetCorrupt(bool* bIsCorrupt)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool*                          bIncomplete                    (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetInComplete(bool* bIncomplete)
 {
@@ -329,7 +381,11 @@ void UReplayListItem_C::SetInComplete(bool* bIncomplete)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool*                          bIsVersionCompatible           (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetVersionCompatible(bool* bIsVersionCompatible)
 {
@@ -353,7 +409,11 @@ void UReplayListItem_C::SetVersionCompatible(bool* bIsVersionCompatible)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FString*                Mode                           (Parm, ZeroConstructor)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetMode(struct FString* Mode)
 {
@@ -377,7 +437,11 @@ void UReplayListItem_C::SetMode(struct FString* Mode)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int*                           LengthInMS                     (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetLength(int* LengthInMS)
 {
@@ -401,7 +465,11 @@ void UReplayListItem_C::SetLength(int* LengthInMS)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FString*                Message                        (Parm, ZeroConstructor)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetActionMessageSimple(struct FString* Message)
 {
@@ -425,7 +493,11 @@ void UReplayListItem_C::SetActionMessageSimple(struct FString* Message)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float*                         fPercent                       (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetActionMessageDecompressPercent(float* fPercent)
 {
@@ -450,7 +522,11 @@ void UReplayListItem_C::SetActionMessageDecompressPercent(float* fPercent)
 // Parameters:
 // bool*                          bIsDownloading                 (Parm, ZeroConstructor, IsPlainOldData)
 // bool*                          bIsUnzipping                   (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetActionMessage(bool* bIsDownloading, bool* bIsUnzipping)
 {
@@ -476,7 +552,11 @@ void UReplayListItem_C::SetActionMessage(bool* bIsDownloading, bool* bIsUnzippin
 // Parameters:
 // bool*                          bIsDownloading                 (Parm, ZeroConstructor, IsPlainOldData)
 // bool*                          bIsUnzipping                   (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetDownloadCancelBtns(bool* bIsDownloading, bool* bIsUnzipping)
 {
@@ -501,7 +581,11 @@ void UReplayListItem_C::SetDownloadCancelBtns(bool* bIsDownloading, bool* bIsUnz
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FDateTime*              Date                           (Parm)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetDate(struct FDateTime* Date)
 {
@@ -525,7 +609,11 @@ void UReplayListItem_C::SetDate(struct FDateTime* Date)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool*                          IsLive                         (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetLive(bool* IsLive)
 {
@@ -549,7 +637,11 @@ void UReplayListItem_C::SetLive(bool* IsLive)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int*                           SizeInBytes                    (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetSize(int* SizeInBytes)
 {
@@ -573,7 +665,11 @@ void UReplayListItem_C::SetSize(int* SizeInBytes)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FString*                FriendlyName                   (Parm, ZeroConstructor)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetFriendlyName(struct FString* FriendlyName)
 {
@@ -597,7 +693,11 @@ void UReplayListItem_C::SetFriendlyName(struct FString* FriendlyName)
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FReplayItem*            ReplayItem                     (Parm)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetReplayItem(struct FReplayItem* ReplayItem)
 {
@@ -621,7 +721,11 @@ void UReplayListItem_C::SetReplayItem(struct FReplayItem* ReplayItem)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FString*                Text                           (Parm, ZeroConstructor)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::SetSessionName(struct FString* Text)
 {
@@ -647,7 +751,11 @@ void UReplayListItem_C::SetSessionName(struct FString* Text)
 // struct FString*                archive                        (Parm, ZeroConstructor)
 // float*                         Percentage                     (Parm, ZeroConstructor, IsPlainOldData)
 // int*                           bytes                          (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::OnProgress(struct FString* archive, float* Percentage, int* bytes)
 {
@@ -674,7 +782,11 @@ void UReplayListItem_C::OnProgress(struct FString* archive, float* Percentage, i
 // Parameters:
 // struct FString*                archive                        (Parm, ZeroConstructor)
 // struct FString*                file                           (Parm, ZeroConstructor)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::OnFileDone(struct FString* archive, struct FString* file)
 {
@@ -700,7 +812,11 @@ void UReplayListItem_C::OnFileDone(struct FString* archive, struct FString* file
 // Parameters:
 // struct FString*                archive                        (Parm, ZeroConstructor)
 // TEnumAsByte<EZipUtilityCompletionState>* CompletionState                (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::OnDone(struct FString* archive, TEnumAsByte<EZipUtilityCompletionState>* CompletionState)
 {
@@ -723,7 +839,11 @@ void UReplayListItem_C::OnDone(struct FString* archive, TEnumAsByte<EZipUtilityC
 
 // Function ReplayListItem.ReplayListItem_C.BndEvt__Cancel_K2Node_ComponentBoundEvent_92_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::BndEvt__Cancel_K2Node_ComponentBoundEvent_92_OnButtonClickedEvent__DelegateSignature()
 {
@@ -746,7 +866,11 @@ void UReplayListItem_C::BndEvt__Cancel_K2Node_ComponentBoundEvent_92_OnButtonCli
 // (BlueprintEvent)
 // Parameters:
 // bool*                          bIsChecked                     (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::BndEvt__CheckBoxShouldKeep_K2Node_ComponentBoundEvent_548_OnCheckBoxComponentStateChanged__DelegateSignature(bool* bIsChecked)
 {
@@ -771,7 +895,11 @@ void UReplayListItem_C::BndEvt__CheckBoxShouldKeep_K2Node_ComponentBoundEvent_54
 // Parameters:
 // struct FString*                strFullPath                    (Parm, ZeroConstructor)
 // struct FString*                strToExtract                   (Parm, ZeroConstructor)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::UnzipEvent(struct FString* strFullPath, struct FString* strToExtract)
 {
@@ -798,7 +926,11 @@ void UReplayListItem_C::UnzipEvent(struct FString* strFullPath, struct FString* 
 // struct FString*                archive                        (Parm, ZeroConstructor)
 // float*                         Percentage                     (Parm, ZeroConstructor, IsPlainOldData)
 // int*                           bytes                          (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::ShowUnzipPercent(struct FString* archive, float* Percentage, int* bytes)
 {
@@ -822,7 +954,11 @@ void UReplayListItem_C::ShowUnzipPercent(struct FString* archive, float* Percent
 
 // Function ReplayListItem.ReplayListItem_C.BndEvt__ButtonReplay_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::BndEvt__ButtonReplay_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
 {
@@ -846,7 +982,11 @@ void UReplayListItem_C::BndEvt__ButtonReplay_K2Node_ComponentBoundEvent_0_OnButt
 // Parameters:
 // struct FString*                archive                        (Parm, ZeroConstructor)
 // int*                           bytes                          (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::OnStartProcess(struct FString* archive, int* bytes)
 {
@@ -873,7 +1013,11 @@ void UReplayListItem_C::OnStartProcess(struct FString* archive, int* bytes)
 // struct FString*                archive                        (Parm, ZeroConstructor)
 // struct FString*                file                           (Parm, ZeroConstructor)
 // int*                           Size                           (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::OnFileFound(struct FString* archive, struct FString* file, int* Size)
 {
@@ -900,7 +1044,11 @@ void UReplayListItem_C::OnFileFound(struct FString* archive, struct FString* fil
 // Parameters:
 // struct FString*                archive                        (Parm, ZeroConstructor)
 // struct FString*                file                           (Parm, ZeroConstructor)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::ShowUnZipFileDone(struct FString* archive, struct FString* file)
 {
@@ -926,7 +1074,11 @@ void UReplayListItem_C::ShowUnZipFileDone(struct FString* archive, struct FStrin
 // Parameters:
 // struct FString*                archive                        (Parm, ZeroConstructor)
 // TEnumAsByte<EZipUtilityCompletionState>* CompletionState                (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::ShowUnzipDone(struct FString* archive, TEnumAsByte<EZipUtilityCompletionState>* CompletionState)
 {
@@ -949,7 +1101,11 @@ void UReplayListItem_C::ShowUnzipDone(struct FString* archive, TEnumAsByte<EZipU
 
 // Function ReplayListItem.ReplayListItem_C.BndEvt__Download_K2Node_ComponentBoundEvent_15_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::BndEvt__Download_K2Node_ComponentBoundEvent_15_OnButtonClickedEvent__DelegateSignature()
 {
@@ -970,7 +1126,11 @@ void UReplayListItem_C::BndEvt__Download_K2Node_ComponentBoundEvent_15_OnButtonC
 
 // Function ReplayListItem.ReplayListItem_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::Construct()
 {
@@ -993,7 +1153,11 @@ void UReplayListItem_C::Construct()
 // (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UReplayListItem_C::ExecuteUbergraph_ReplayListItem(int* EntryPoint)
 {
@@ -1016,10 +1180,17 @@ void UReplayListItem_C::ExecuteUbergraph_ReplayListItem(int* EntryPoint)
 // Function ReplayListItem.ReplayListItem_C.EventOnUpdateItem__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
+<<<<<<< HEAD
 // struct FReplayItem*            inReplayItem                   (Parm)
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void UReplayListItem_C::EventOnUpdateItem__DelegateSignature(struct FReplayItem* inReplayItem)
+=======
+// struct FReplayItem             inReplayItem                   (Parm)
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+
+void UReplayListItem_C::EventOnUpdateItem__DelegateSignature(const struct FReplayItem& inReplayItem)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -1040,12 +1211,21 @@ void UReplayListItem_C::EventOnUpdateItem__DelegateSignature(struct FReplayItem*
 // Function ReplayListItem.ReplayListItem_C.EventOnUpdateShouldKeep__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
+<<<<<<< HEAD
 // struct FString*                RegionOrLocal                  (Parm, ZeroConstructor)
 // struct FReplayItem*            inReplayItem                   (Parm)
 // struct FReplayItem*            bShoudUpdate                   (Parm)
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void UReplayListItem_C::EventOnUpdateShouldKeep__DelegateSignature(struct FString* RegionOrLocal, struct FReplayItem* inReplayItem, struct FReplayItem* bShoudUpdate)
+=======
+// struct FString                 RegionOrLocal                  (Parm, ZeroConstructor)
+// struct FReplayItem             inReplayItem                   (Parm)
+// struct FReplayItem             bShoudUpdate                   (Parm)
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+
+void UReplayListItem_C::EventOnUpdateShouldKeep__DelegateSignature(const struct FString& RegionOrLocal, const struct FReplayItem& inReplayItem, const struct FReplayItem& bShoudUpdate)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -1068,11 +1248,19 @@ void UReplayListItem_C::EventOnUpdateShouldKeep__DelegateSignature(struct FStrin
 // Function ReplayListItem.ReplayListItem_C.EventOnCancelDownloading__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
+<<<<<<< HEAD
 // struct FString*                Name                           (Parm, ZeroConstructor)
 // class UWidget**                Widget                         (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void UReplayListItem_C::EventOnCancelDownloading__DelegateSignature(struct FString* Name, class UWidget** Widget)
+=======
+// struct FString                 Name                           (Parm, ZeroConstructor)
+// class UWidget*                 Widget                         (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+
+void UReplayListItem_C::EventOnCancelDownloading__DelegateSignature(const struct FString& Name, class UWidget* Widget)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -1094,11 +1282,19 @@ void UReplayListItem_C::EventOnCancelDownloading__DelegateSignature(struct FStri
 // Function ReplayListItem.ReplayListItem_C.EventOnDownload__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
+<<<<<<< HEAD
 // struct FString*                Name                           (Parm, ZeroConstructor)
 // class UWidget**                Widget                         (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void UReplayListItem_C::EventOnDownload__DelegateSignature(struct FString* Name, class UWidget** Widget)
+=======
+// struct FString                 Name                           (Parm, ZeroConstructor)
+// class UWidget*                 Widget                         (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+
+void UReplayListItem_C::EventOnDownload__DelegateSignature(const struct FString& Name, class UWidget* Widget)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -1120,11 +1316,19 @@ void UReplayListItem_C::EventOnDownload__DelegateSignature(struct FString* Name,
 // Function ReplayListItem.ReplayListItem_C.EventOnItemClicked__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
+<<<<<<< HEAD
 // struct FString*                inRegionOrLocal                (Parm, ZeroConstructor)
 // struct FReplayItem*            inReplayItem                   (Parm)
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void UReplayListItem_C::EventOnItemClicked__DelegateSignature(struct FString* inRegionOrLocal, struct FReplayItem* inReplayItem)
+=======
+// struct FString                 inRegionOrLocal                (Parm, ZeroConstructor)
+// struct FReplayItem             inReplayItem                   (Parm)
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+
+void UReplayListItem_C::EventOnItemClicked__DelegateSignature(const struct FString& inRegionOrLocal, const struct FReplayItem& inReplayItem)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 

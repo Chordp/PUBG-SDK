@@ -31,8 +31,13 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void ServerMessage(TArray<unsigned char>* Message);
 	void ClientMessage(TArray<unsigned char>* Message);
+=======
+	void ServerMessage(TArray<unsigned char> Message);
+	void ClientMessage(TArray<unsigned char> Message);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

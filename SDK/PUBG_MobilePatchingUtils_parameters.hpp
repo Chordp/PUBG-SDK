@@ -17,8 +17,13 @@ namespace SDK
 // Function MobilePatchingUtils.MobileInstalledContent.Mount
 struct UMobileInstalledContent_Mount_Params
 {
+<<<<<<< HEAD
 	int*                                               PakOrder;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FString*                                    MountPoint;                                               // (Parm, ZeroConstructor)
+=======
+	int                                                PakOrder;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FString                                     MountPoint;                                               // (Parm, ZeroConstructor)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -37,8 +42,13 @@ struct UMobileInstalledContent_GetDiskFreeSpace_Params
 // Function MobilePatchingUtils.MobilePendingContent.StartInstall
 struct UMobilePendingContent_StartInstall_Params
 {
+<<<<<<< HEAD
 	struct FScriptDelegate*                            OnSucceeded;                                              // (Parm, ZeroConstructor)
 	struct FScriptDelegate*                            OnFailed;                                                 // (Parm, ZeroConstructor)
+=======
+	struct FScriptDelegate                             OnSucceeded;                                              // (Parm, ZeroConstructor)
+	struct FScriptDelegate                             OnFailed;                                                 // (Parm, ZeroConstructor)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function MobilePatchingUtils.MobilePendingContent.GetTotalDownloadedSize
@@ -80,11 +90,19 @@ struct UMobilePendingContent_GetDownloadSize_Params
 // Function MobilePatchingUtils.MobilePatchingLibrary.RequestContent
 struct UMobilePatchingLibrary_RequestContent_Params
 {
+<<<<<<< HEAD
 	struct FString*                                    RemoteManifestURL;                                        // (Parm, ZeroConstructor)
 	struct FString*                                    CloudURL;                                                 // (Parm, ZeroConstructor)
 	struct FString*                                    InstallDirectory;                                         // (Parm, ZeroConstructor)
 	struct FScriptDelegate*                            OnSucceeded;                                              // (Parm, ZeroConstructor)
 	struct FScriptDelegate*                            OnFailed;                                                 // (Parm, ZeroConstructor)
+=======
+	struct FString                                     RemoteManifestURL;                                        // (Parm, ZeroConstructor)
+	struct FString                                     CloudURL;                                                 // (Parm, ZeroConstructor)
+	struct FString                                     InstallDirectory;                                         // (Parm, ZeroConstructor)
+	struct FScriptDelegate                             OnSucceeded;                                              // (Parm, ZeroConstructor)
+	struct FScriptDelegate                             OnFailed;                                                 // (Parm, ZeroConstructor)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function MobilePatchingUtils.MobilePatchingLibrary.HasActiveWiFiConnection
@@ -102,7 +120,11 @@ struct UMobilePatchingLibrary_GetSupportedPlatformNames_Params
 // Function MobilePatchingUtils.MobilePatchingLibrary.GetInstalledContent
 struct UMobilePatchingLibrary_GetInstalledContent_Params
 {
+<<<<<<< HEAD
 	struct FString*                                    InstallDirectory;                                         // (Parm, ZeroConstructor)
+=======
+	struct FString                                     InstallDirectory;                                         // (Parm, ZeroConstructor)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	class UMobileInstalledContent*                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 

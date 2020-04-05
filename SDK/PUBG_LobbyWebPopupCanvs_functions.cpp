@@ -16,7 +16,11 @@ namespace SDK
 // (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 bool ULobbyWebPopupCanvs_C::HasChildren()
 {
@@ -44,7 +48,11 @@ bool ULobbyWebPopupCanvs_C::HasChildren()
 // bool*                          bShow                          (Parm, ZeroConstructor, IsPlainOldData)
 // bool*                          bReuse                         (Parm, ZeroConstructor, IsPlainOldData)
 // class UWebPopup_C*             WebPopup                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebPopupCanvs_C::CreateWebPopupAndAddPanel(struct FWebPopupParam* Param, bool* bShow, bool* bReuse, class UWebPopup_C** WebPopup)
 {
@@ -73,7 +81,11 @@ void ULobbyWebPopupCanvs_C::CreateWebPopupAndAddPanel(struct FWebPopupParam* Par
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FWebPopupParam*         PopupParam                     (Parm)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebPopupCanvs_C::ShowWebPopupImpl(struct FWebPopupParam* PopupParam)
 {
@@ -97,7 +109,11 @@ void ULobbyWebPopupCanvs_C::ShowWebPopupImpl(struct FWebPopupParam* PopupParam)
 // (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // TArray<struct FWebPopupParam>  Params                         (Parm, OutParm, ZeroConstructor, ReferenceParm)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebPopupCanvs_C::OnPreloadWebPopupImpl(TArray<struct FWebPopupParam>* Params)
 {
@@ -124,7 +140,11 @@ void ULobbyWebPopupCanvs_C::OnPreloadWebPopupImpl(TArray<struct FWebPopupParam>*
 // Parameters:
 // struct FString*                PopupId                        (Parm, ZeroConstructor)
 // class UWebPopup_C*             WebPopup                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebPopupCanvs_C::GetWebPopupFromPopupId(struct FString* PopupId, class UWebPopup_C** WebPopup)
 {
@@ -150,11 +170,19 @@ void ULobbyWebPopupCanvs_C::GetWebPopupFromPopupId(struct FString* PopupId, clas
 // Function LobbyWebPopupCanvs.LobbyWebPopupCanvs_C.ChangeWebPopupUriImpl
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
+<<<<<<< HEAD
 // struct FString*                PopupId                        (Parm, ZeroConstructor)
 // struct FString*                Uri                            (Parm, ZeroConstructor)
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void ULobbyWebPopupCanvs_C::ChangeWebPopupUriImpl(struct FString* PopupId, struct FString* Uri)
+=======
+// struct FString                 PopupId                        (Parm, ZeroConstructor)
+// struct FString                 Uri                            (Parm, ZeroConstructor)
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+
+void ULobbyWebPopupCanvs_C::ChangeWebPopupUriImpl(const struct FString& PopupId, const struct FString& Uri)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -177,7 +205,11 @@ void ULobbyWebPopupCanvs_C::ChangeWebPopupUriImpl(struct FString* PopupId, struc
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FString*                PopupId                        (Parm, ZeroConstructor)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebPopupCanvs_C::OnCloseWebPopupImpl(struct FString* PopupId)
 {
@@ -202,7 +234,11 @@ void ULobbyWebPopupCanvs_C::OnCloseWebPopupImpl(struct FString* PopupId)
 // Parameters:
 // struct FString*                WebPopupID                     (Parm, ZeroConstructor)
 // bool*                          bForceRemoveParent             (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebPopupCanvs_C::CloseWebPopupByID(struct FString* WebPopupID, bool* bForceRemoveParent)
 {
@@ -227,7 +263,11 @@ void ULobbyWebPopupCanvs_C::CloseWebPopupByID(struct FString* WebPopupID, bool* 
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWebPopup_C**            Widget                         (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebPopupCanvs_C::RemoveWebPopup(class UWebPopup_C** Widget)
 {
@@ -251,7 +291,11 @@ void ULobbyWebPopupCanvs_C::RemoveWebPopup(class UWebPopup_C** Widget)
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWebPopup_C**            Widget                         (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebPopupCanvs_C::AddWebPopup(class UWebPopup_C** Widget)
 {
@@ -276,7 +320,11 @@ void ULobbyWebPopupCanvs_C::AddWebPopup(class UWebPopup_C** Widget)
 // Parameters:
 // struct FString*                PopupId                        (Parm, ZeroConstructor)
 // bool                           Result                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebPopupCanvs_C::CanShowWebPopup(struct FString* PopupId, bool* Result)
 {
@@ -305,7 +353,11 @@ void ULobbyWebPopupCanvs_C::CanShowWebPopup(struct FString* PopupId, bool* Resul
 // struct FWebPopupParam*         Param                          (Parm)
 // bool*                          bShow                          (Parm, ZeroConstructor, IsPlainOldData)
 // bool*                          bReuse                         (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebPopupCanvs_C::CreateWebPopupImpl(struct FWebPopupParam* Param, bool* bShow, bool* bReuse)
 {
@@ -331,7 +383,11 @@ void ULobbyWebPopupCanvs_C::CreateWebPopupImpl(struct FWebPopupParam* Param, boo
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FString*                PopupId                        (Parm, ZeroConstructor)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebPopupCanvs_C::CloseWebPopup(struct FString* PopupId)
 {
@@ -355,7 +411,11 @@ void ULobbyWebPopupCanvs_C::CloseWebPopup(struct FString* PopupId)
 // (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FWebPopupParam*         Param                          (ConstParm, Parm, OutParm, ReferenceParm)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebPopupCanvs_C::ShowWebPopup(struct FWebPopupParam* Param)
 {
@@ -379,7 +439,11 @@ void ULobbyWebPopupCanvs_C::ShowWebPopup(struct FWebPopupParam* Param)
 // (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // TArray<struct FWebPopupParam>* WebPopupParams                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebPopupCanvs_C::PreloadWebPopup(TArray<struct FWebPopupParam>* WebPopupParams)
 {
@@ -401,7 +465,11 @@ void ULobbyWebPopupCanvs_C::PreloadWebPopup(TArray<struct FWebPopupParam>* WebPo
 
 // Function LobbyWebPopupCanvs.LobbyWebPopupCanvs_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebPopupCanvs_C::Construct()
 {
@@ -424,7 +492,11 @@ void ULobbyWebPopupCanvs_C::Construct()
 // (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebPopupCanvs_C::ExecuteUbergraph_LobbyWebPopupCanvs(int* EntryPoint)
 {

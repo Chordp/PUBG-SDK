@@ -16,7 +16,11 @@ namespace SDK
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool*                          IsShow                         (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackageInteractionWidget_C::ShowCarePackageInteractionWidget(bool* IsShow)
 {
@@ -41,7 +45,11 @@ void UCarePackageInteractionWidget_C::ShowCarePackageInteractionWidget(bool* IsS
 // Parameters:
 // struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
 // float*                         InDeltaTime                    (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackageInteractionWidget_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
@@ -64,7 +72,11 @@ void UCarePackageInteractionWidget_C::Tick(struct FGeometry* MyGeometry, float* 
 
 // Function CarePackageInteractionWidget.CarePackageInteractionWidget_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackageInteractionWidget_C::Construct()
 {
@@ -85,7 +97,11 @@ void UCarePackageInteractionWidget_C::Construct()
 
 // Function CarePackageInteractionWidget.CarePackageInteractionWidget_C.BndEvt__Vanishing_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature
 // (BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackageInteractionWidget_C::BndEvt__Vanishing_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
@@ -106,7 +122,11 @@ void UCarePackageInteractionWidget_C::BndEvt__Vanishing_K2Node_ComponentBoundEve
 
 // Function CarePackageInteractionWidget.CarePackageInteractionWidget_C.CustomTick
 // (BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackageInteractionWidget_C::CustomTick()
 {
@@ -127,7 +147,11 @@ void UCarePackageInteractionWidget_C::CustomTick()
 
 // Function CarePackageInteractionWidget.CarePackageInteractionWidget_C.TimerCheckCarePackage
 // (BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackageInteractionWidget_C::TimerCheckCarePackage()
 {
@@ -150,7 +174,11 @@ void UCarePackageInteractionWidget_C::TimerCheckCarePackage()
 // (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackageInteractionWidget_C::ExecuteUbergraph_CarePackageInteractionWidget(int* EntryPoint)
 {

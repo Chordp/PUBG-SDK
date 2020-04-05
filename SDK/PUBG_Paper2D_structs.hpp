@@ -8,8 +8,13 @@
 
 #include "PUBG_Basic.hpp"
 #include "PUBG_Engine_classes.hpp"
+<<<<<<< HEAD
 #include "PUBG_SlateCore_classes.hpp"
 #include "PUBG_CoreUObject_classes.hpp"
+=======
+#include "PUBG_CoreUObject_classes.hpp"
+#include "PUBG_SlateCore_classes.hpp"
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 namespace SDK
 {

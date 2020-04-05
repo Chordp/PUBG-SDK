@@ -79,6 +79,28 @@ enum class EEvaluationMethod : uint8_t
 //Script Structs
 //---------------------------------------------------------------------------
 
+<<<<<<< HEAD
+=======
+// ScriptStruct MovieScene.MovieSceneSectionEvalOptions
+// 0x0002
+struct FMovieSceneSectionEvalOptions
+{
+	bool                                               bCanEditCompletionMode;                                   // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
+	EMovieSceneCompletionMode                          CompletionMode;                                           // 0x0001(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct MovieScene.MovieSceneTrackEvalOptions
+// 0x0004
+struct FMovieSceneTrackEvalOptions
+{
+	unsigned char                                      bCanEvaluateNearestSection : 1;                           // 0x0000(0x0001)
+	unsigned char                                      bEvaluateNearestSection : 1;                              // 0x0000(0x0001) (Edit)
+	unsigned char                                      bEvaluateInPreroll : 1;                                   // 0x0000(0x0001) (Edit)
+	unsigned char                                      bEvaluateInPostroll : 1;                                  // 0x0000(0x0001) (Edit)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
+};
+
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 // ScriptStruct MovieScene.MovieSceneSegment
 // 0x0050
 struct FMovieSceneSegment
@@ -331,6 +353,7 @@ struct FMovieSceneSequencePlaybackSettings
 	TScriptInterface<class UMovieSceneBindingOverridesInterface> BindingOverrides;                                         // 0x0018(0x0010) (ZeroConstructor, IsPlainOldData)
 };
 
+<<<<<<< HEAD
 // ScriptStruct MovieScene.MovieSceneSectionEvalOptions
 // 0x0002
 struct FMovieSceneSectionEvalOptions
@@ -348,6 +371,13 @@ struct FMovieSceneTrackEvalOptions
 	unsigned char                                      bEvaluateInPreroll : 1;                                   // 0x0000(0x0001) (Edit)
 	unsigned char                                      bEvaluateInPostroll : 1;                                  // 0x0000(0x0001) (Edit)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
+=======
+// ScriptStruct MovieScene.MovieSceneKeyStruct
+// 0x0008
+struct FMovieSceneKeyStruct
+{
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0000(0x0008) MISSED OFFSET
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // ScriptStruct MovieScene.MovieSceneEvalTemplateBase
@@ -448,6 +478,7 @@ struct FMovieSceneLegacyTrackInstanceTemplate : public FMovieSceneEvalTemplate
 	class UMovieSceneTrack*                            Track;                                                    // 0x0018(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
 };
 
+<<<<<<< HEAD
 // ScriptStruct MovieScene.MovieSceneKeyStruct
 // 0x0008
 struct FMovieSceneKeyStruct
@@ -455,6 +486,8 @@ struct FMovieSceneKeyStruct
 	unsigned char                                      UnknownData00[0x8];                                       // 0x0000(0x0008) MISSED OFFSET
 };
 
+=======
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 }
 
 #ifdef _MSC_VER

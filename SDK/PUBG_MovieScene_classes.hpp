@@ -34,6 +34,77 @@ public:
 };
 
 
+<<<<<<< HEAD
+=======
+// Class MovieScene.MovieSceneSection
+// 0x0020 (0x00D0 - 0x00B0)
+class UMovieSceneSection : public UMovieSceneSignedObject
+{
+public:
+	struct FMovieSceneSectionEvalOptions               EvalOptions;                                              // 0x00B0(0x0002) (Edit)
+	unsigned char                                      UnknownData00[0x2];                                       // 0x00B2(0x0002) MISSED OFFSET
+	float                                              StartTime;                                                // 0x00B4(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              EndTime;                                                  // 0x00B8(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	int                                                RowIndex;                                                 // 0x00BC(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                OverlapPriority;                                          // 0x00C0(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      bIsActive : 1;                                            // 0x00C4(0x0001) (Edit)
+	unsigned char                                      bIsLocked : 1;                                            // 0x00C4(0x0001) (Edit)
+	unsigned char                                      bIsInfinite : 1;                                          // 0x00C4(0x0001) (Edit)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x00C5(0x0003) MISSED OFFSET
+	float                                              PrerollTime;                                              // 0x00C8(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              PostrollTime;                                             // 0x00CC(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class MovieScene.MovieSceneSection"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class MovieScene.MovieSceneTrack
+// 0x0010 (0x00C0 - 0x00B0)
+class UMovieSceneTrack : public UMovieSceneSignedObject
+{
+public:
+	struct FMovieSceneTrackEvalOptions                 EvalOptions;                                              // 0x00B0(0x0004) (Edit)
+	unsigned char                                      UnknownData00[0xC];                                       // 0x00B4(0x000C) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class MovieScene.MovieSceneTrack"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class MovieScene.MovieSceneNameableTrack
+// 0x0000 (0x00C0 - 0x00C0)
+class UMovieSceneNameableTrack : public UMovieSceneTrack
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class MovieScene.MovieSceneNameableTrack"));
+
+		return ptr;
+	}
+
+};
+
+
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 // Class MovieScene.MovieSceneSequence
 // 0x0280 (0x0330 - 0x00B0)
 class UMovieSceneSequence : public UMovieSceneSignedObject
@@ -204,11 +275,19 @@ public:
 
 	void Stop();
 	void StartPlayingNextTick();
+<<<<<<< HEAD
 	void SetPlayRate(float* PlayRate);
 	void SetPlaybackRange(float* NewStartTime, float* NewEndTime);
 	void SetPlaybackPosition(float* NewPlaybackPosition);
 	void PlayReverse();
 	void PlayLooping(int* NumLoops);
+=======
+	void SetPlayRate(float PlayRate);
+	void SetPlaybackRange(float NewStartTime, float NewEndTime);
+	void SetPlaybackPosition(float NewPlaybackPosition);
+	void PlayReverse();
+	void PlayLooping(int NumLoops);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	void Play();
 	void Pause();
 	bool IsPlaying();
@@ -217,11 +296,16 @@ public:
 	float GetPlaybackPosition();
 	float GetPlaybackEnd();
 	float GetLength();
+<<<<<<< HEAD
 	TArray<class UObject*> GetBoundObjects(struct FMovieSceneObjectBindingID* ObjectBinding);
+=======
+	TArray<class UObject*> GetBoundObjects(const struct FMovieSceneObjectBindingID& ObjectBinding);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	void ChangePlaybackDirection();
 };
 
 
+<<<<<<< HEAD
 // Class MovieScene.MovieSceneSection
 // 0x0020 (0x00D0 - 0x00B0)
 class UMovieSceneSection : public UMovieSceneSignedObject
@@ -272,6 +356,8 @@ public:
 };
 
 
+=======
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 // Class MovieScene.MovieSceneSegmentCompilerTestTrack
 // 0x0010 (0x00D0 - 0x00C0)
 class UMovieSceneSegmentCompilerTestTrack : public UMovieSceneTrack
@@ -309,6 +395,7 @@ public:
 };
 
 
+<<<<<<< HEAD
 // Class MovieScene.MovieSceneNameableTrack
 // 0x0000 (0x00C0 - 0x00C0)
 class UMovieSceneNameableTrack : public UMovieSceneTrack
@@ -327,6 +414,8 @@ public:
 };
 
 
+=======
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 }
 
 #ifdef _MSC_VER

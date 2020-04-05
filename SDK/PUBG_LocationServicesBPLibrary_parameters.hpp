@@ -29,16 +29,26 @@ struct ULocationServices_StartLocationServices_Params
 // Function LocationServicesBPLibrary.LocationServices.IsLocationAccuracyAvailable
 struct ULocationServices_IsLocationAccuracyAvailable_Params
 {
+<<<<<<< HEAD
 	ELocationAccuracy*                                 Accuracy;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+=======
+	ELocationAccuracy                                  Accuracy;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function LocationServicesBPLibrary.LocationServices.InitLocationServices
 struct ULocationServices_InitLocationServices_Params
 {
+<<<<<<< HEAD
 	ELocationAccuracy*                                 Accuracy;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 	float*                                             UpdateFrequency;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	float*                                             MinDistanceFilter;                                        // (Parm, ZeroConstructor, IsPlainOldData)
+=======
+	ELocationAccuracy                                  Accuracy;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              UpdateFrequency;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              MinDistanceFilter;                                        // (Parm, ZeroConstructor, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 

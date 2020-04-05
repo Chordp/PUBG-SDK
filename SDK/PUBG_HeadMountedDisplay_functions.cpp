@@ -16,7 +16,11 @@ namespace SDK
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BE99C70              		 offset:40c9c70                       
+=======
+// FunctionAddress:0x00007FF6D7FF9AB0              		 offset:1639ab0                       
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 bool UMotionControllerComponent::IsTracked()
 {
@@ -41,10 +45,17 @@ bool UMotionControllerComponent::IsTracked()
 // Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.SetIsControllerMotionTrackingEnabledByDefault
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
+<<<<<<< HEAD
 // bool*                          Enable                         (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71BE99C90              		 offset:40c9c90                       
 
 void UMotionTrackedDeviceFunctionLibrary::STATIC_SetIsControllerMotionTrackingEnabledByDefault(bool* Enable)
+=======
+// bool                           Enable                         (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF6D7FF9AD0              		 offset:1639ad0                       
+
+void UMotionTrackedDeviceFunctionLibrary::STATIC_SetIsControllerMotionTrackingEnabledByDefault(bool Enable)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -66,12 +77,21 @@ void UMotionTrackedDeviceFunctionLibrary::STATIC_SetIsControllerMotionTrackingEn
 // Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionTrackingEnabledForDevice
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // int*                           PlayerIndex                    (Parm, ZeroConstructor, IsPlainOldData)
 // EControllerHand*               Hand                           (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF71BE99BB0              		 offset:40c9bb0                       
 
 bool UMotionTrackedDeviceFunctionLibrary::STATIC_IsMotionTrackingEnabledForDevice(int* PlayerIndex, EControllerHand* Hand)
+=======
+// int                            PlayerIndex                    (Parm, ZeroConstructor, IsPlainOldData)
+// EControllerHand                Hand                           (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D7FF99F0              		 offset:16399f0                       
+
+bool UMotionTrackedDeviceFunctionLibrary::STATIC_IsMotionTrackingEnabledForDevice(int PlayerIndex, EControllerHand Hand)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -96,11 +116,19 @@ bool UMotionTrackedDeviceFunctionLibrary::STATIC_IsMotionTrackingEnabledForDevic
 // Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionTrackingEnabledForComponent
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // class UMotionControllerComponent** MotionControllerComponent      (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF71BE99B30              		 offset:40c9b30                       
 
 bool UMotionTrackedDeviceFunctionLibrary::STATIC_IsMotionTrackingEnabledForComponent(class UMotionControllerComponent** MotionControllerComponent)
+=======
+// class UMotionControllerComponent* MotionControllerComponent      (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D7FF9970              		 offset:1639970                       
+
+bool UMotionTrackedDeviceFunctionLibrary::STATIC_IsMotionTrackingEnabledForComponent(class UMotionControllerComponent* MotionControllerComponent)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -125,7 +153,11 @@ bool UMotionTrackedDeviceFunctionLibrary::STATIC_IsMotionTrackingEnabledForCompo
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BE99B00              		 offset:40c9b00                       
+=======
+// FunctionAddress:0x00007FF6D7FF9940              		 offset:1639940                       
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 bool UMotionTrackedDeviceFunctionLibrary::STATIC_IsMotionTrackedDeviceCountManagementNecessary()
 {
@@ -151,7 +183,11 @@ bool UMotionTrackedDeviceFunctionLibrary::STATIC_IsMotionTrackedDeviceCountManag
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BE99AD0              		 offset:40c9ad0                       
+=======
+// FunctionAddress:0x00007FF6D7FF9910              		 offset:1639910                       
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 int UMotionTrackedDeviceFunctionLibrary::STATIC_GetMotionTrackingEnabledControllerCount()
 {
@@ -177,7 +213,11 @@ int UMotionTrackedDeviceFunctionLibrary::STATIC_GetMotionTrackingEnabledControll
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BE99AA0              		 offset:40c9aa0                       
+=======
+// FunctionAddress:0x00007FF6D7FF98E0              		 offset:16398e0                       
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 int UMotionTrackedDeviceFunctionLibrary::STATIC_GetMaximumMotionTrackedControllerCount()
 {
@@ -202,12 +242,21 @@ int UMotionTrackedDeviceFunctionLibrary::STATIC_GetMaximumMotionTrackedControlle
 // Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.EnableMotionTrackingOfDevice
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
+<<<<<<< HEAD
 // int*                           PlayerIndex                    (Parm, ZeroConstructor, IsPlainOldData)
 // EControllerHand*               Hand                           (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF71BE999E0              		 offset:40c99e0                       
 
 bool UMotionTrackedDeviceFunctionLibrary::STATIC_EnableMotionTrackingOfDevice(int* PlayerIndex, EControllerHand* Hand)
+=======
+// int                            PlayerIndex                    (Parm, ZeroConstructor, IsPlainOldData)
+// EControllerHand                Hand                           (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D7FF9820              		 offset:1639820                       
+
+bool UMotionTrackedDeviceFunctionLibrary::STATIC_EnableMotionTrackingOfDevice(int PlayerIndex, EControllerHand Hand)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -232,11 +281,19 @@ bool UMotionTrackedDeviceFunctionLibrary::STATIC_EnableMotionTrackingOfDevice(in
 // Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.EnableMotionTrackingForComponent
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
+<<<<<<< HEAD
 // class UMotionControllerComponent** MotionControllerComponent      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF71BE99960              		 offset:40c9960                       
 
 bool UMotionTrackedDeviceFunctionLibrary::STATIC_EnableMotionTrackingForComponent(class UMotionControllerComponent** MotionControllerComponent)
+=======
+// class UMotionControllerComponent* MotionControllerComponent      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D7FF97A0              		 offset:16397a0                       
+
+bool UMotionTrackedDeviceFunctionLibrary::STATIC_EnableMotionTrackingForComponent(class UMotionControllerComponent* MotionControllerComponent)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -260,11 +317,19 @@ bool UMotionTrackedDeviceFunctionLibrary::STATIC_EnableMotionTrackingForComponen
 // Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingOfDevice
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
+<<<<<<< HEAD
 // int*                           PlayerIndex                    (Parm, ZeroConstructor, IsPlainOldData)
 // EControllerHand*               Hand                           (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71BE998B0              		 offset:40c98b0                       
 
 void UMotionTrackedDeviceFunctionLibrary::STATIC_DisableMotionTrackingOfDevice(int* PlayerIndex, EControllerHand* Hand)
+=======
+// int                            PlayerIndex                    (Parm, ZeroConstructor, IsPlainOldData)
+// EControllerHand                Hand                           (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF6D7FF96F0              		 offset:16396f0                       
+
+void UMotionTrackedDeviceFunctionLibrary::STATIC_DisableMotionTrackingOfDevice(int PlayerIndex, EControllerHand Hand)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -287,10 +352,17 @@ void UMotionTrackedDeviceFunctionLibrary::STATIC_DisableMotionTrackingOfDevice(i
 // Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingOfControllersForPlayer
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
+<<<<<<< HEAD
 // int*                           PlayerIndex                    (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71BE99840              		 offset:40c9840                       
 
 void UMotionTrackedDeviceFunctionLibrary::STATIC_DisableMotionTrackingOfControllersForPlayer(int* PlayerIndex)
+=======
+// int                            PlayerIndex                    (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF6D7FF9680              		 offset:1639680                       
+
+void UMotionTrackedDeviceFunctionLibrary::STATIC_DisableMotionTrackingOfControllersForPlayer(int PlayerIndex)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -311,7 +383,11 @@ void UMotionTrackedDeviceFunctionLibrary::STATIC_DisableMotionTrackingOfControll
 
 // Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingOfAllControllers
 // (Final, Native, Static, Public, BlueprintCallable)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BE99820              		 offset:40c9820                       
+=======
+// FunctionAddress:0x00007FF6D7FF9660              		 offset:1639660                       
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UMotionTrackedDeviceFunctionLibrary::STATIC_DisableMotionTrackingOfAllControllers()
 {
@@ -334,10 +410,17 @@ void UMotionTrackedDeviceFunctionLibrary::STATIC_DisableMotionTrackingOfAllContr
 // Function HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingForComponent
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
+<<<<<<< HEAD
 // class UMotionControllerComponent** MotionControllerComponent      (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 // FunctionAddress:0x00007FF71BE997B0              		 offset:40c97b0                       
 
 void UMotionTrackedDeviceFunctionLibrary::STATIC_DisableMotionTrackingForComponent(class UMotionControllerComponent** MotionControllerComponent)
+=======
+// class UMotionControllerComponent* MotionControllerComponent      (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// FunctionAddress:0x00007FF6D7FF95F0              		 offset:16395f0                       
+
+void UMotionTrackedDeviceFunctionLibrary::STATIC_DisableMotionTrackingForComponent(class UMotionControllerComponent* MotionControllerComponent)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -358,7 +441,11 @@ void UMotionTrackedDeviceFunctionLibrary::STATIC_DisableMotionTrackingForCompone
 
 // DelegateFunction HeadMountedDisplay.VRNotificationsComponent.VRNotificationsDelegate__DelegateSignature
 // (MulticastDelegate, Public, Delegate)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UVRNotificationsComponent::VRNotificationsDelegate__DelegateSignature()
 {

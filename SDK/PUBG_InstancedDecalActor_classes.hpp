@@ -15,7 +15,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass InstancedDecalActor.InstancedDecalActor_C
+<<<<<<< HEAD
 // 0x0000 (0x03E8 - 0x03E8)
+=======
+// 0x0000 (0x0408 - 0x0408)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 class AInstancedDecalActor_C : public ADecalActor
 {
 public:

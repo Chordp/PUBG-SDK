@@ -110,11 +110,19 @@ public:
 	void BndEvt__Download_K2Node_ComponentBoundEvent_15_OnButtonClickedEvent__DelegateSignature();
 	void Construct();
 	void ExecuteUbergraph_ReplayListItem(int* EntryPoint);
+<<<<<<< HEAD
 	void EventOnUpdateItem__DelegateSignature(struct FReplayItem* inReplayItem);
 	void EventOnUpdateShouldKeep__DelegateSignature(struct FString* RegionOrLocal, struct FReplayItem* inReplayItem, struct FReplayItem* bShoudUpdate);
 	void EventOnCancelDownloading__DelegateSignature(struct FString* Name, class UWidget** Widget);
 	void EventOnDownload__DelegateSignature(struct FString* Name, class UWidget** Widget);
 	void EventOnItemClicked__DelegateSignature(struct FString* inRegionOrLocal, struct FReplayItem* inReplayItem);
+=======
+	void EventOnUpdateItem__DelegateSignature(const struct FReplayItem& inReplayItem);
+	void EventOnUpdateShouldKeep__DelegateSignature(const struct FString& RegionOrLocal, const struct FReplayItem& inReplayItem, const struct FReplayItem& bShoudUpdate);
+	void EventOnCancelDownloading__DelegateSignature(const struct FString& Name, class UWidget* Widget);
+	void EventOnDownload__DelegateSignature(const struct FString& Name, class UWidget* Widget);
+	void EventOnItemClicked__DelegateSignature(const struct FString& inRegionOrLocal, const struct FReplayItem& inReplayItem);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

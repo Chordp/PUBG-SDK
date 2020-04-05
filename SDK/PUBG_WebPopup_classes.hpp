@@ -50,7 +50,11 @@ public:
 	void BndEvt__WebView_K2Node_ComponentBoundEvent_49_UIGTStartLoadingSignature__DelegateSignature(struct FString* path, bool* isMainFrame);
 	void BndEvt__WebView_K2Node_ComponentBoundEvent_67_UIGTFailLoadSignature__DelegateSignature(struct FString* path, struct FString* Error, bool* isMainFrame);
 	void ExecuteUbergraph_WebPopup(int* EntryPoint);
+<<<<<<< HEAD
 	void OnClosePopup__DelegateSignature(class UWebPopup_C** Widget);
+=======
+	void OnClosePopup__DelegateSignature(class UWebPopup_C* Widget);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

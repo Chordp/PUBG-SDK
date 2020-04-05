@@ -15,7 +15,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass ItemDataTableManager.ItemDataTableManager_C
+<<<<<<< HEAD
 // 0x0000 (0x02B8 - 0x02B8)
+=======
+// 0x0000 (0x0268 - 0x0268)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 class UItemDataTableManager_C : public UTslItemDataTableManager
 {
 public:

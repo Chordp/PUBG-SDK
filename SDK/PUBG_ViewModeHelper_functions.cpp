@@ -14,7 +14,11 @@ namespace SDK
 
 // Function ViewModeHelper.ViewModeHelper_C.OnMouseDown
 // (BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UViewModeHelper_C::OnMouseDown()
 {
@@ -35,7 +39,11 @@ void UViewModeHelper_C::OnMouseDown()
 
 // Function ViewModeHelper.ViewModeHelper_C.OnMouseUp
 // (BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UViewModeHelper_C::OnMouseUp()
 {
@@ -58,7 +66,11 @@ void UViewModeHelper_C::OnMouseUp()
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float*                         Scale                          (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UViewModeHelper_C::AddX(float* Scale)
 {
@@ -82,7 +94,11 @@ void UViewModeHelper_C::AddX(float* Scale)
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float*                         Scale                          (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UViewModeHelper_C::AddY(float* Scale)
 {
@@ -106,7 +122,11 @@ void UViewModeHelper_C::AddY(float* Scale)
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float*                         Scale                          (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UViewModeHelper_C::ViewModeZoomInOrOut(float* Scale)
 {
@@ -128,7 +148,11 @@ void UViewModeHelper_C::ViewModeZoomInOrOut(float* Scale)
 
 // Function ViewModeHelper.ViewModeHelper_C.ViewModeReset
 // (BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UViewModeHelper_C::ViewModeReset()
 {
@@ -149,7 +173,11 @@ void UViewModeHelper_C::ViewModeReset()
 
 // Function ViewModeHelper.ViewModeHelper_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UViewModeHelper_C::Construct()
 {
@@ -172,7 +200,11 @@ void UViewModeHelper_C::Construct()
 // (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UViewModeHelper_C::ExecuteUbergraph_ViewModeHelper(int* EntryPoint)
 {

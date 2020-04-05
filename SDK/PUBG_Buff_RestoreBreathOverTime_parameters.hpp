@@ -43,7 +43,11 @@ struct ABuff_RestoreBreathOverTime_C_ReceiveBeginPlay_Params
 // Function Buff_RestoreBreathOverTime.Buff_RestoreBreathOverTime_C.ExecuteUbergraph_Buff_RestoreBreathOverTime
 struct ABuff_RestoreBreathOverTime_C_ExecuteUbergraph_Buff_RestoreBreathOverTime_Params
 {
+<<<<<<< HEAD
 	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+=======
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 }

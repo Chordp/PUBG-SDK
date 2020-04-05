@@ -14,7 +14,11 @@ namespace SDK
 
 // Function HudMain.HudMain_C.OnInsideBlackZone
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::OnInsideBlackZone()
 {
@@ -35,7 +39,11 @@ void UHudMain_C::OnInsideBlackZone()
 
 // Function HudMain.HudMain_C.OnNewBlackZone
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::OnNewBlackZone()
 {
@@ -56,7 +64,11 @@ void UHudMain_C::OnNewBlackZone()
 
 // Function HudMain.HudMain_C.OnKey_ThrowableItemWheelReleased
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::OnKey_ThrowableItemWheelReleased()
 {
@@ -77,7 +89,11 @@ void UHudMain_C::OnKey_ThrowableItemWheelReleased()
 
 // Function HudMain.HudMain_C.OnKey_ThrowableItemWheelPressed
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::OnKey_ThrowableItemWheelPressed()
 {
@@ -98,7 +114,11 @@ void UHudMain_C::OnKey_ThrowableItemWheelPressed()
 
 // Function HudMain.HudMain_C.OnKey_HealItemWheelReleased
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::OnKey_HealItemWheelReleased()
 {
@@ -119,7 +139,11 @@ void UHudMain_C::OnKey_HealItemWheelReleased()
 
 // Function HudMain.HudMain_C.OnKey_HealItemWheelPressed
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::OnKey_HealItemWheelPressed()
 {
@@ -140,7 +164,11 @@ void UHudMain_C::OnKey_HealItemWheelPressed()
 
 // Function HudMain.HudMain_C.MapIconShowNameOnly
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::MapIconShowNameOnly()
 {
@@ -161,7 +189,11 @@ void UHudMain_C::MapIconShowNameOnly()
 
 // Function HudMain.HudMain_C.MapIconShowIconOnly
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::MapIconShowIconOnly()
 {
@@ -182,7 +214,11 @@ void UHudMain_C::MapIconShowIconOnly()
 
 // Function HudMain.HudMain_C.MapIconShowBoth
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::MapIconShowBoth()
 {
@@ -206,7 +242,11 @@ void UHudMain_C::MapIconShowBoth()
 // Parameters:
 // bool*                          bShowIcon                      (Parm, ZeroConstructor, IsPlainOldData)
 // bool*                          bShowName                      (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::MapIconShow(bool* bShowIcon, bool* bShowName)
 {
@@ -229,7 +269,11 @@ void UHudMain_C::MapIconShow(bool* bShowIcon, bool* bShowName)
 
 // Function HudMain.HudMain_C.OnToggleAnticheatCenterBar
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::OnToggleAnticheatCenterBar()
 {
@@ -250,7 +294,11 @@ void UHudMain_C::OnToggleAnticheatCenterBar()
 
 // Function HudMain.HudMain_C.OnKey_EmoteWheelReleased
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::OnKey_EmoteWheelReleased()
 {
@@ -271,7 +319,11 @@ void UHudMain_C::OnKey_EmoteWheelReleased()
 
 // Function HudMain.HudMain_C.OnKey_EmoteWheelPressed
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::OnKey_EmoteWheelPressed()
 {
@@ -295,7 +347,11 @@ void UHudMain_C::OnKey_EmoteWheelPressed()
 // Parameters:
 // class ATslBaseHUD**            TslBaseHUD                     (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 bool UHudMain_C::OnInit_Delegate(class ATslBaseHUD** TslBaseHUD)
 {
@@ -322,7 +378,11 @@ bool UHudMain_C::OnInit_Delegate(class ATslBaseHUD** TslBaseHUD)
 // Parameters:
 // class ATslBaseHUD**            TslBaseHUD                     (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 bool UHudMain_C::OnInit_Replay(class ATslBaseHUD** TslBaseHUD)
 {
@@ -349,7 +409,11 @@ bool UHudMain_C::OnInit_Replay(class ATslBaseHUD** TslBaseHUD)
 // Parameters:
 // class ATslBaseHUD**            TslBaseHUD                     (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 bool UHudMain_C::OnInit_Input(class ATslBaseHUD** TslBaseHUD)
 {
@@ -376,7 +440,11 @@ bool UHudMain_C::OnInit_Input(class ATslBaseHUD** TslBaseHUD)
 // Parameters:
 // class ATslBaseHUD**            TslBaseHUD                     (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 bool UHudMain_C::OnInit_Widget(class ATslBaseHUD** TslBaseHUD)
 {
@@ -404,7 +472,11 @@ bool UHudMain_C::OnInit_Widget(class ATslBaseHUD** TslBaseHUD)
 // struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
 // struct FPointerEvent*          MouseEvent                     (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FEventReply             ReturnValue                    (Parm, OutParm, ReturnParm)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 struct FEventReply UHudMain_C::OnMouseMove(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
@@ -429,7 +501,11 @@ struct FEventReply UHudMain_C::OnMouseMove(struct FGeometry* MyGeometry, struct 
 
 // Function HudMain.HudMain_C.SetObserverSpectatingUp
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::SetObserverSpectatingUp()
 {
@@ -450,7 +526,11 @@ void UHudMain_C::SetObserverSpectatingUp()
 
 // Function HudMain.HudMain_C.SetObserverSpectatingDown
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::SetObserverSpectatingDown()
 {
@@ -473,7 +553,11 @@ void UHudMain_C::SetObserverSpectatingDown()
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                           bShow                          (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::ShouldShowReplayMenu(bool* bShow)
 {
@@ -497,7 +581,11 @@ void UHudMain_C::ShouldShowReplayMenu(bool* bShow)
 
 // Function HudMain.HudMain_C.BindEventForShowReplayTimeline
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::BindEventForShowReplayTimeline()
 {
@@ -520,7 +608,11 @@ void UHudMain_C::BindEventForShowReplayTimeline()
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool*                          bShow                          (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::ShowReplayTimeLine(bool* bShow)
 {
@@ -542,7 +634,11 @@ void UHudMain_C::ShowReplayTimeLine(bool* bShow)
 
 // Function HudMain.HudMain_C.SetHUDForIngameReplayMenu
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::SetHUDForIngameReplayMenu()
 {
@@ -563,7 +659,11 @@ void UHudMain_C::SetHUDForIngameReplayMenu()
 
 // Function HudMain.HudMain_C.BindEventForMapClosing
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::BindEventForMapClosing()
 {
@@ -584,7 +684,11 @@ void UHudMain_C::BindEventForMapClosing()
 
 // Function HudMain.HudMain_C.OnKey_ReplayMenuOrEscape
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::OnKey_ReplayMenuOrEscape()
 {
@@ -605,7 +709,11 @@ void UHudMain_C::OnKey_ReplayMenuOrEscape()
 
 // Function HudMain.HudMain_C.InitForReplay
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::InitForReplay()
 {
@@ -626,7 +734,11 @@ void UHudMain_C::InitForReplay()
 
 // Function HudMain.HudMain_C.OnToggleOption
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::OnToggleOption()
 {
@@ -647,7 +759,11 @@ void UHudMain_C::OnToggleOption()
 
 // Function HudMain.HudMain_C.OnMapHide
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::OnMapHide()
 {
@@ -668,7 +784,11 @@ void UHudMain_C::OnMapHide()
 
 // Function HudMain.HudMain_C.OnMapShow
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::OnMapShow()
 {
@@ -689,7 +809,11 @@ void UHudMain_C::OnMapShow()
 
 // Function HudMain.HudMain_C.OnKey_MapReleased
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::OnKey_MapReleased()
 {
@@ -710,7 +834,11 @@ void UHudMain_C::OnKey_MapReleased()
 
 // Function HudMain.HudMain_C.OnKey_MapPressed
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::OnKey_MapPressed()
 {
@@ -731,7 +859,11 @@ void UHudMain_C::OnKey_MapPressed()
 
 // Function HudMain.HudMain_C.OnShowCarePackageItemList
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::OnShowCarePackageItemList()
 {
@@ -754,7 +886,11 @@ void UHudMain_C::OnShowCarePackageItemList()
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // bool                           bIsShow                        (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::IsShowMapOrInventory(bool* bIsShow)
 {
@@ -778,7 +914,11 @@ void UHudMain_C::IsShowMapOrInventory(bool* bIsShow)
 
 // Function HudMain.HudMain_C.OnTogglePlayerList
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::OnTogglePlayerList()
 {
@@ -801,7 +941,11 @@ void UHudMain_C::OnTogglePlayerList()
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // bool                           IsAlive                        (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::IsCharacterAlive(bool* IsAlive)
 {
@@ -828,7 +972,11 @@ void UHudMain_C::IsCharacterAlive(bool* IsAlive)
 // Parameters:
 // float*                         DamagePercent                  (Parm, ZeroConstructor, IsPlainOldData)
 // EDamageTypeCategory*           DamageTypeCategory             (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::OnNitifyHit(float* DamagePercent, EDamageTypeCategory* DamageTypeCategory)
 {
@@ -851,7 +999,11 @@ void UHudMain_C::OnNitifyHit(float* DamagePercent, EDamageTypeCategory* DamageTy
 
 // Function HudMain.HudMain_C.OnKey_SystemMenuOrEscape
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::OnKey_SystemMenuOrEscape()
 {
@@ -872,7 +1024,11 @@ void UHudMain_C::OnKey_SystemMenuOrEscape()
 
 // Function HudMain.HudMain_C.OnToggleMap
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::OnToggleMap()
 {
@@ -893,7 +1049,11 @@ void UHudMain_C::OnToggleMap()
 
 // Function HudMain.HudMain_C.OnPossessPawnChange
 // (Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::OnPossessPawnChange()
 {
@@ -914,7 +1074,11 @@ void UHudMain_C::OnPossessPawnChange()
 
 // Function HudMain.HudMain_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::Construct()
 {
@@ -935,7 +1099,11 @@ void UHudMain_C::Construct()
 
 // Function HudMain.HudMain_C.HideMapForReplay
 // (BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::HideMapForReplay()
 {
@@ -956,7 +1124,11 @@ void UHudMain_C::HideMapForReplay()
 
 // Function HudMain.HudMain_C.CheckReplayTimer
 // (BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::CheckReplayTimer()
 {
@@ -977,7 +1149,11 @@ void UHudMain_C::CheckReplayTimer()
 
 // Function HudMain.HudMain_C.CreateCheckReplayTimer
 // (BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::CreateCheckReplayTimer()
 {
@@ -1000,7 +1176,11 @@ void UHudMain_C::CreateCheckReplayTimer()
 // (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::ExecuteUbergraph_HudMain(int* EntryPoint)
 {
@@ -1022,7 +1202,11 @@ void UHudMain_C::ExecuteUbergraph_HudMain(int* EntryPoint)
 
 // Function HudMain.HudMain_C.ButtonClickedDispatcher__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHudMain_C::ButtonClickedDispatcher__DelegateSignature()
 {

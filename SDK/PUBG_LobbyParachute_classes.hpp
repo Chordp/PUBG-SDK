@@ -15,7 +15,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass LobbyParachute.LobbyParachute_C
+<<<<<<< HEAD
 // 0x0000 (0x0420 - 0x0420)
+=======
+// 0x0000 (0x0440 - 0x0440)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 class ALobbyParachute_C : public ALobbyParachute
 {
 public:

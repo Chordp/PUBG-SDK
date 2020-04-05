@@ -15,11 +15,19 @@ namespace SDK
 // Function GameplayTags.GameplayTagAssetInterface.HasMatchingGameplayTag
 // (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTag*           TagToCheck                     (Parm)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF718430DB0              		 offset:660db0                        
 
 bool UGameplayTagAssetInterface::HasMatchingGameplayTag(struct FGameplayTag* TagToCheck)
+=======
+// struct FGameplayTag            TagToCheck                     (Parm)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D6F37830              		 offset:577830                        
+
+bool UGameplayTagAssetInterface::HasMatchingGameplayTag(const struct FGameplayTag& TagToCheck)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -43,11 +51,19 @@ bool UGameplayTagAssetInterface::HasMatchingGameplayTag(struct FGameplayTag* Tag
 // Function GameplayTags.GameplayTagAssetInterface.HasAnyMatchingGameplayTags
 // (Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTagContainer*  TagContainer                   (ConstParm, Parm, OutParm, ReferenceParm)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF718430B40              		 offset:660b40                        
 
 bool UGameplayTagAssetInterface::HasAnyMatchingGameplayTags(struct FGameplayTagContainer* TagContainer)
+=======
+// struct FGameplayTagContainer   TagContainer                   (ConstParm, Parm, OutParm, ReferenceParm)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D6F375C0              		 offset:5775c0                        
+
+bool UGameplayTagAssetInterface::HasAnyMatchingGameplayTags(const struct FGameplayTagContainer& TagContainer)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -71,11 +87,19 @@ bool UGameplayTagAssetInterface::HasAnyMatchingGameplayTags(struct FGameplayTagC
 // Function GameplayTags.GameplayTagAssetInterface.HasAllMatchingGameplayTags
 // (Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTagContainer*  TagContainer                   (ConstParm, Parm, OutParm, ReferenceParm)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF7184307A0              		 offset:6607a0                        
 
 bool UGameplayTagAssetInterface::HasAllMatchingGameplayTags(struct FGameplayTagContainer* TagContainer)
+=======
+// struct FGameplayTagContainer   TagContainer                   (ConstParm, Parm, OutParm, ReferenceParm)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D6F37220              		 offset:577220                        
+
+bool UGameplayTagAssetInterface::HasAllMatchingGameplayTags(const struct FGameplayTagContainer& TagContainer)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -100,7 +124,11 @@ bool UGameplayTagAssetInterface::HasAllMatchingGameplayTags(struct FGameplayTagC
 // (Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // struct FGameplayTagContainer   TagContainer                   (Parm, OutParm)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF718430630              		 offset:660630                        
+=======
+// FunctionAddress:0x00007FF6D6F370B0              		 offset:5770b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UGameplayTagAssetInterface::GetOwnedGameplayTags(struct FGameplayTagContainer* TagContainer)
 {
@@ -127,11 +155,19 @@ void UGameplayTagAssetInterface::GetOwnedGameplayTags(struct FGameplayTagContain
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
 // struct FGameplayTagContainer   TagContainer                   (Parm, OutParm, ReferenceParm)
+<<<<<<< HEAD
 // struct FGameplayTag*           Tag                            (Parm)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF718431BC0              		 offset:661bc0                        
 
 bool UBlueprintGameplayTagLibrary::STATIC_RemoveGameplayTag(struct FGameplayTag* Tag, struct FGameplayTagContainer* TagContainer)
+=======
+// struct FGameplayTag            Tag                            (Parm)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D6F38640              		 offset:578640                        
+
+bool UBlueprintGameplayTagLibrary::STATIC_RemoveGameplayTag(const struct FGameplayTag& Tag, struct FGameplayTagContainer* TagContainer)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -158,12 +194,21 @@ bool UBlueprintGameplayTagLibrary::STATIC_RemoveGameplayTag(struct FGameplayTag*
 // Function GameplayTags.BlueprintGameplayTagLibrary.NotEqual_TagTag
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTag*           A                              (Parm)
 // struct FString*                B                              (Parm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF718431A90              		 offset:661a90                        
 
 bool UBlueprintGameplayTagLibrary::STATIC_NotEqual_TagTag(struct FGameplayTag* A, struct FString* B)
+=======
+// struct FGameplayTag            A                              (Parm)
+// struct FString                 B                              (Parm, ZeroConstructor)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D6F38510              		 offset:578510                        
+
+bool UBlueprintGameplayTagLibrary::STATIC_NotEqual_TagTag(const struct FGameplayTag& A, const struct FString& B)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -188,12 +233,21 @@ bool UBlueprintGameplayTagLibrary::STATIC_NotEqual_TagTag(struct FGameplayTag* A
 // Function GameplayTags.BlueprintGameplayTagLibrary.NotEqual_TagContainerTagContainer
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTagContainer*  A                              (Parm)
 // struct FString*                B                              (Parm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF718431910              		 offset:661910                        
 
 bool UBlueprintGameplayTagLibrary::STATIC_NotEqual_TagContainerTagContainer(struct FGameplayTagContainer* A, struct FString* B)
+=======
+// struct FGameplayTagContainer   A                              (Parm)
+// struct FString                 B                              (Parm, ZeroConstructor)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D6F38390              		 offset:578390                        
+
+bool UBlueprintGameplayTagLibrary::STATIC_NotEqual_TagContainerTagContainer(const struct FGameplayTagContainer& A, const struct FString& B)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -218,12 +272,21 @@ bool UBlueprintGameplayTagLibrary::STATIC_NotEqual_TagContainerTagContainer(stru
 // Function GameplayTags.BlueprintGameplayTagLibrary.NotEqual_GameplayTagContainer
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTagContainer*  A                              (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FGameplayTagContainer*  B                              (ConstParm, Parm, OutParm, ReferenceParm)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF7184317C0              		 offset:6617c0                        
 
 bool UBlueprintGameplayTagLibrary::STATIC_NotEqual_GameplayTagContainer(struct FGameplayTagContainer* A, struct FGameplayTagContainer* B)
+=======
+// struct FGameplayTagContainer   A                              (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FGameplayTagContainer   B                              (ConstParm, Parm, OutParm, ReferenceParm)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D6F38240              		 offset:578240                        
+
+bool UBlueprintGameplayTagLibrary::STATIC_NotEqual_GameplayTagContainer(const struct FGameplayTagContainer& A, const struct FGameplayTagContainer& B)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -248,12 +311,21 @@ bool UBlueprintGameplayTagLibrary::STATIC_NotEqual_GameplayTagContainer(struct F
 // Function GameplayTags.BlueprintGameplayTagLibrary.NotEqual_GameplayTag
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTag*           A                              (Parm)
 // struct FGameplayTag*           B                              (Parm)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF718431700              		 offset:661700                        
 
 bool UBlueprintGameplayTagLibrary::STATIC_NotEqual_GameplayTag(struct FGameplayTag* A, struct FGameplayTag* B)
+=======
+// struct FGameplayTag            A                              (Parm)
+// struct FGameplayTag            B                              (Parm)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D6F38180              		 offset:578180                        
+
+bool UBlueprintGameplayTagLibrary::STATIC_NotEqual_GameplayTag(const struct FGameplayTag& A, const struct FGameplayTag& B)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -278,6 +350,7 @@ bool UBlueprintGameplayTagLibrary::STATIC_NotEqual_GameplayTag(struct FGameplayT
 // Function GameplayTags.BlueprintGameplayTagLibrary.MatchesTag
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTag*           TagOne                         (Parm)
 // struct FGameplayTag*           TagTwo                         (Parm)
 // bool*                          bExactMatch                    (Parm, ZeroConstructor, IsPlainOldData)
@@ -285,6 +358,15 @@ bool UBlueprintGameplayTagLibrary::STATIC_NotEqual_GameplayTag(struct FGameplayT
 // FunctionAddress:0x00007FF718431610              		 offset:661610                        
 
 bool UBlueprintGameplayTagLibrary::STATIC_MatchesTag(struct FGameplayTag* TagOne, struct FGameplayTag* TagTwo, bool* bExactMatch)
+=======
+// struct FGameplayTag            TagOne                         (Parm)
+// struct FGameplayTag            TagTwo                         (Parm)
+// bool                           bExactMatch                    (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D6F38090              		 offset:578090                        
+
+bool UBlueprintGameplayTagLibrary::STATIC_MatchesTag(const struct FGameplayTag& TagOne, const struct FGameplayTag& TagTwo, bool bExactMatch)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -310,6 +392,7 @@ bool UBlueprintGameplayTagLibrary::STATIC_MatchesTag(struct FGameplayTag* TagOne
 // Function GameplayTags.BlueprintGameplayTagLibrary.MatchesAnyTags
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTag*           TagOne                         (Parm)
 // struct FGameplayTagContainer*  OtherContainer                 (ConstParm, Parm, OutParm, ReferenceParm)
 // bool*                          bExactMatch                    (Parm, ZeroConstructor, IsPlainOldData)
@@ -317,6 +400,15 @@ bool UBlueprintGameplayTagLibrary::STATIC_MatchesTag(struct FGameplayTag* TagOne
 // FunctionAddress:0x00007FF7184314C0              		 offset:6614c0                        
 
 bool UBlueprintGameplayTagLibrary::STATIC_MatchesAnyTags(struct FGameplayTag* TagOne, struct FGameplayTagContainer* OtherContainer, bool* bExactMatch)
+=======
+// struct FGameplayTag            TagOne                         (Parm)
+// struct FGameplayTagContainer   OtherContainer                 (ConstParm, Parm, OutParm, ReferenceParm)
+// bool                           bExactMatch                    (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D6F37F40              		 offset:577f40                        
+
+bool UBlueprintGameplayTagLibrary::STATIC_MatchesAnyTags(const struct FGameplayTag& TagOne, const struct FGameplayTagContainer& OtherContainer, bool bExactMatch)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -342,11 +434,19 @@ bool UBlueprintGameplayTagLibrary::STATIC_MatchesAnyTags(struct FGameplayTag* Ta
 // Function GameplayTags.BlueprintGameplayTagLibrary.MakeLiteralGameplayTagContainer
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTagContainer*  Value                          (Parm)
 // struct FGameplayTagContainer   ReturnValue                    (Parm, OutParm, ReturnParm)
 // FunctionAddress:0x00007FF7184313A0              		 offset:6613a0                        
 
 struct FGameplayTagContainer UBlueprintGameplayTagLibrary::STATIC_MakeLiteralGameplayTagContainer(struct FGameplayTagContainer* Value)
+=======
+// struct FGameplayTagContainer   Value                          (Parm)
+// struct FGameplayTagContainer   ReturnValue                    (Parm, OutParm, ReturnParm)
+// FunctionAddress:0x00007FF6D6F37E20              		 offset:577e20                        
+
+struct FGameplayTagContainer UBlueprintGameplayTagLibrary::STATIC_MakeLiteralGameplayTagContainer(const struct FGameplayTagContainer& Value)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -370,11 +470,19 @@ struct FGameplayTagContainer UBlueprintGameplayTagLibrary::STATIC_MakeLiteralGam
 // Function GameplayTags.BlueprintGameplayTagLibrary.MakeLiteralGameplayTag
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTag*           Value                          (Parm)
 // struct FGameplayTag            ReturnValue                    (Parm, OutParm, ReturnParm)
 // FunctionAddress:0x00007FF718431310              		 offset:661310                        
 
 struct FGameplayTag UBlueprintGameplayTagLibrary::STATIC_MakeLiteralGameplayTag(struct FGameplayTag* Value)
+=======
+// struct FGameplayTag            Value                          (Parm)
+// struct FGameplayTag            ReturnValue                    (Parm, OutParm, ReturnParm)
+// FunctionAddress:0x00007FF6D6F37D90              		 offset:577d90                        
+
+struct FGameplayTag UBlueprintGameplayTagLibrary::STATIC_MakeLiteralGameplayTag(const struct FGameplayTag& Value)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -398,11 +506,19 @@ struct FGameplayTag UBlueprintGameplayTagLibrary::STATIC_MakeLiteralGameplayTag(
 // Function GameplayTags.BlueprintGameplayTagLibrary.MakeGameplayTagQuery
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTagQuery*      TagQuery                       (Parm)
 // struct FGameplayTagQuery       ReturnValue                    (Parm, OutParm, ReturnParm)
 // FunctionAddress:0x00007FF7184311D0              		 offset:6611d0                        
 
 struct FGameplayTagQuery UBlueprintGameplayTagLibrary::STATIC_MakeGameplayTagQuery(struct FGameplayTagQuery* TagQuery)
+=======
+// struct FGameplayTagQuery       TagQuery                       (Parm)
+// struct FGameplayTagQuery       ReturnValue                    (Parm, OutParm, ReturnParm)
+// FunctionAddress:0x00007FF6D6F37C50              		 offset:577c50                        
+
+struct FGameplayTagQuery UBlueprintGameplayTagLibrary::STATIC_MakeGameplayTagQuery(const struct FGameplayTagQuery& TagQuery)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -426,11 +542,19 @@ struct FGameplayTagQuery UBlueprintGameplayTagLibrary::STATIC_MakeGameplayTagQue
 // Function GameplayTags.BlueprintGameplayTagLibrary.MakeGameplayTagContainerFromTag
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTag*           SingleTag                      (Parm)
 // struct FGameplayTagContainer   ReturnValue                    (Parm, OutParm, ReturnParm)
 // FunctionAddress:0x00007FF718431110              		 offset:661110                        
 
 struct FGameplayTagContainer UBlueprintGameplayTagLibrary::STATIC_MakeGameplayTagContainerFromTag(struct FGameplayTag* SingleTag)
+=======
+// struct FGameplayTag            SingleTag                      (Parm)
+// struct FGameplayTagContainer   ReturnValue                    (Parm, OutParm, ReturnParm)
+// FunctionAddress:0x00007FF6D6F37B90              		 offset:577b90                        
+
+struct FGameplayTagContainer UBlueprintGameplayTagLibrary::STATIC_MakeGameplayTagContainerFromTag(const struct FGameplayTag& SingleTag)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -454,11 +578,19 @@ struct FGameplayTagContainer UBlueprintGameplayTagLibrary::STATIC_MakeGameplayTa
 // Function GameplayTags.BlueprintGameplayTagLibrary.MakeGameplayTagContainerFromArray
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // TArray<struct FGameplayTag>*   GameplayTags                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // struct FGameplayTagContainer   ReturnValue                    (Parm, OutParm, ReturnParm)
 // FunctionAddress:0x00007FF718431030              		 offset:661030                        
 
 struct FGameplayTagContainer UBlueprintGameplayTagLibrary::STATIC_MakeGameplayTagContainerFromArray(TArray<struct FGameplayTag>* GameplayTags)
+=======
+// TArray<struct FGameplayTag>    GameplayTags                   (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// struct FGameplayTagContainer   ReturnValue                    (Parm, OutParm, ReturnParm)
+// FunctionAddress:0x00007FF6D6F37AB0              		 offset:577ab0                        
+
+struct FGameplayTagContainer UBlueprintGameplayTagLibrary::STATIC_MakeGameplayTagContainerFromArray(TArray<struct FGameplayTag> GameplayTags)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -482,11 +614,19 @@ struct FGameplayTagContainer UBlueprintGameplayTagLibrary::STATIC_MakeGameplayTa
 // Function GameplayTags.BlueprintGameplayTagLibrary.IsGameplayTagValid
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTag*           GameplayTag                    (Parm)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF718430FB0              		 offset:660fb0                        
 
 bool UBlueprintGameplayTagLibrary::STATIC_IsGameplayTagValid(struct FGameplayTag* GameplayTag)
+=======
+// struct FGameplayTag            GameplayTag                    (Parm)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D6F37A30              		 offset:577a30                        
+
+bool UBlueprintGameplayTagLibrary::STATIC_IsGameplayTagValid(const struct FGameplayTag& GameplayTag)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -510,6 +650,7 @@ bool UBlueprintGameplayTagLibrary::STATIC_IsGameplayTagValid(struct FGameplayTag
 // Function GameplayTags.BlueprintGameplayTagLibrary.HasTag
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTagContainer*  TagContainer                   (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FGameplayTag*           Tag                            (Parm)
 // bool*                          bExactMatch                    (Parm, ZeroConstructor, IsPlainOldData)
@@ -517,6 +658,15 @@ bool UBlueprintGameplayTagLibrary::STATIC_IsGameplayTagValid(struct FGameplayTag
 // FunctionAddress:0x00007FF718430E50              		 offset:660e50                        
 
 bool UBlueprintGameplayTagLibrary::STATIC_HasTag(struct FGameplayTagContainer* TagContainer, struct FGameplayTag* Tag, bool* bExactMatch)
+=======
+// struct FGameplayTagContainer   TagContainer                   (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FGameplayTag            Tag                            (Parm)
+// bool                           bExactMatch                    (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D6F378D0              		 offset:5778d0                        
+
+bool UBlueprintGameplayTagLibrary::STATIC_HasTag(const struct FGameplayTagContainer& TagContainer, const struct FGameplayTag& Tag, bool bExactMatch)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -542,6 +692,7 @@ bool UBlueprintGameplayTagLibrary::STATIC_HasTag(struct FGameplayTagContainer* T
 // Function GameplayTags.BlueprintGameplayTagLibrary.HasAnyTags
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTagContainer*  TagContainer                   (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FGameplayTagContainer*  OtherContainer                 (ConstParm, Parm, OutParm, ReferenceParm)
 // bool*                          bExactMatch                    (Parm, ZeroConstructor, IsPlainOldData)
@@ -549,6 +700,15 @@ bool UBlueprintGameplayTagLibrary::STATIC_HasTag(struct FGameplayTagContainer* T
 // FunctionAddress:0x00007FF718430C20              		 offset:660c20                        
 
 bool UBlueprintGameplayTagLibrary::STATIC_HasAnyTags(struct FGameplayTagContainer* TagContainer, struct FGameplayTagContainer* OtherContainer, bool* bExactMatch)
+=======
+// struct FGameplayTagContainer   TagContainer                   (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FGameplayTagContainer   OtherContainer                 (ConstParm, Parm, OutParm, ReferenceParm)
+// bool                           bExactMatch                    (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D6F376A0              		 offset:5776a0                        
+
+bool UBlueprintGameplayTagLibrary::STATIC_HasAnyTags(const struct FGameplayTagContainer& TagContainer, const struct FGameplayTagContainer& OtherContainer, bool bExactMatch)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -574,6 +734,7 @@ bool UBlueprintGameplayTagLibrary::STATIC_HasAnyTags(struct FGameplayTagContaine
 // Function GameplayTags.BlueprintGameplayTagLibrary.HasAllTags
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTagContainer*  TagContainer                   (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FGameplayTagContainer*  OtherContainer                 (ConstParm, Parm, OutParm, ReferenceParm)
 // bool*                          bExactMatch                    (Parm, ZeroConstructor, IsPlainOldData)
@@ -581,6 +742,15 @@ bool UBlueprintGameplayTagLibrary::STATIC_HasAnyTags(struct FGameplayTagContaine
 // FunctionAddress:0x00007FF7184309B0              		 offset:6609b0                        
 
 bool UBlueprintGameplayTagLibrary::STATIC_HasAllTags(struct FGameplayTagContainer* TagContainer, struct FGameplayTagContainer* OtherContainer, bool* bExactMatch)
+=======
+// struct FGameplayTagContainer   TagContainer                   (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FGameplayTagContainer   OtherContainer                 (ConstParm, Parm, OutParm, ReferenceParm)
+// bool                           bExactMatch                    (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D6F37430              		 offset:577430                        
+
+bool UBlueprintGameplayTagLibrary::STATIC_HasAllTags(const struct FGameplayTagContainer& TagContainer, const struct FGameplayTagContainer& OtherContainer, bool bExactMatch)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -606,12 +776,21 @@ bool UBlueprintGameplayTagLibrary::STATIC_HasAllTags(struct FGameplayTagContaine
 // Function GameplayTags.BlueprintGameplayTagLibrary.HasAllMatchingGameplayTags
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // TScriptInterface<class UGameplayTagAssetInterface>* TagContainerInterface          (Parm, ZeroConstructor, IsPlainOldData)
 // struct FGameplayTagContainer*  OtherContainer                 (ConstParm, Parm, OutParm, ReferenceParm)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF718430880              		 offset:660880                        
 
 bool UBlueprintGameplayTagLibrary::STATIC_HasAllMatchingGameplayTags(TScriptInterface<class UGameplayTagAssetInterface>* TagContainerInterface, struct FGameplayTagContainer* OtherContainer)
+=======
+// TScriptInterface<class UGameplayTagAssetInterface> TagContainerInterface          (Parm, ZeroConstructor, IsPlainOldData)
+// struct FGameplayTagContainer   OtherContainer                 (ConstParm, Parm, OutParm, ReferenceParm)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D6F37300              		 offset:577300                        
+
+bool UBlueprintGameplayTagLibrary::STATIC_HasAllMatchingGameplayTags(const TScriptInterface<class UGameplayTagAssetInterface>& TagContainerInterface, const struct FGameplayTagContainer& OtherContainer)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -636,11 +815,19 @@ bool UBlueprintGameplayTagLibrary::STATIC_HasAllMatchingGameplayTags(TScriptInte
 // Function GameplayTags.BlueprintGameplayTagLibrary.GetTagName
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTag*           GameplayTag                    (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FName                   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF718430700              		 offset:660700                        
 
 struct FName UBlueprintGameplayTagLibrary::STATIC_GetTagName(struct FGameplayTag* GameplayTag)
+=======
+// struct FGameplayTag            GameplayTag                    (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FName                   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D6F37180              		 offset:577180                        
+
+struct FName UBlueprintGameplayTagLibrary::STATIC_GetTagName(const struct FGameplayTag& GameplayTag)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -664,11 +851,19 @@ struct FName UBlueprintGameplayTagLibrary::STATIC_GetTagName(struct FGameplayTag
 // Function GameplayTags.BlueprintGameplayTagLibrary.GetNumGameplayTagsInContainer
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTagContainer*  TagContainer                   (ConstParm, Parm, OutParm, ReferenceParm)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF718430570              		 offset:660570                        
 
 int UBlueprintGameplayTagLibrary::STATIC_GetNumGameplayTagsInContainer(struct FGameplayTagContainer* TagContainer)
+=======
+// struct FGameplayTagContainer   TagContainer                   (ConstParm, Parm, OutParm, ReferenceParm)
+// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D6F36FF0              		 offset:576ff0                        
+
+int UBlueprintGameplayTagLibrary::STATIC_GetNumGameplayTagsInContainer(const struct FGameplayTagContainer& TagContainer)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -692,11 +887,19 @@ int UBlueprintGameplayTagLibrary::STATIC_GetNumGameplayTagsInContainer(struct FG
 // Function GameplayTags.BlueprintGameplayTagLibrary.GetDebugStringFromGameplayTagContainer
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTagContainer*  TagContainer                   (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
 // FunctionAddress:0x00007FF718430460              		 offset:660460                        
 
 struct FString UBlueprintGameplayTagLibrary::STATIC_GetDebugStringFromGameplayTagContainer(struct FGameplayTagContainer* TagContainer)
+=======
+// struct FGameplayTagContainer   TagContainer                   (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+// FunctionAddress:0x00007FF6D6F36EE0              		 offset:576ee0                        
+
+struct FString UBlueprintGameplayTagLibrary::STATIC_GetDebugStringFromGameplayTagContainer(const struct FGameplayTagContainer& TagContainer)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -720,11 +923,19 @@ struct FString UBlueprintGameplayTagLibrary::STATIC_GetDebugStringFromGameplayTa
 // Function GameplayTags.BlueprintGameplayTagLibrary.GetDebugStringFromGameplayTag
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTag*           GameplayTag                    (Parm)
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
 // FunctionAddress:0x00007FF718430390              		 offset:660390                        
 
 struct FString UBlueprintGameplayTagLibrary::STATIC_GetDebugStringFromGameplayTag(struct FGameplayTag* GameplayTag)
+=======
+// struct FGameplayTag            GameplayTag                    (Parm)
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+// FunctionAddress:0x00007FF6D6F36E10              		 offset:576e10                        
+
+struct FString UBlueprintGameplayTagLibrary::STATIC_GetDebugStringFromGameplayTag(const struct FGameplayTag& GameplayTag)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -748,6 +959,7 @@ struct FString UBlueprintGameplayTagLibrary::STATIC_GetDebugStringFromGameplayTa
 // Function GameplayTags.BlueprintGameplayTagLibrary.GetAllActorsOfClassMatchingTagQuery
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
+<<<<<<< HEAD
 // class UObject**                WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // class UClass**                 ActorClass                     (Parm, ZeroConstructor, IsPlainOldData)
 // struct FGameplayTagQuery*      GameplayTagQuery               (ConstParm, Parm, OutParm, ReferenceParm)
@@ -755,6 +967,15 @@ struct FString UBlueprintGameplayTagLibrary::STATIC_GetDebugStringFromGameplayTa
 // FunctionAddress:0x00007FF7184301B0              		 offset:6601b0                        
 
 void UBlueprintGameplayTagLibrary::STATIC_GetAllActorsOfClassMatchingTagQuery(class UObject** WorldContextObject, class UClass** ActorClass, struct FGameplayTagQuery* GameplayTagQuery, TArray<class AActor*>* OutActors)
+=======
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// class UClass*                  ActorClass                     (Parm, ZeroConstructor, IsPlainOldData)
+// struct FGameplayTagQuery       GameplayTagQuery               (ConstParm, Parm, OutParm, ReferenceParm)
+// TArray<class AActor*>          OutActors                      (Parm, OutParm, ZeroConstructor)
+// FunctionAddress:0x00007FF6D6F36C30              		 offset:576c30                        
+
+void UBlueprintGameplayTagLibrary::STATIC_GetAllActorsOfClassMatchingTagQuery(class UObject* WorldContextObject, class UClass* ActorClass, const struct FGameplayTagQuery& GameplayTagQuery, TArray<class AActor*>* OutActors)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -781,12 +1002,21 @@ void UBlueprintGameplayTagLibrary::STATIC_GetAllActorsOfClassMatchingTagQuery(cl
 // Function GameplayTags.BlueprintGameplayTagLibrary.EqualEqual_GameplayTagContainer
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTagContainer*  A                              (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FGameplayTagContainer*  B                              (ConstParm, Parm, OutParm, ReferenceParm)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF718430060              		 offset:660060                        
 
 bool UBlueprintGameplayTagLibrary::STATIC_EqualEqual_GameplayTagContainer(struct FGameplayTagContainer* A, struct FGameplayTagContainer* B)
+=======
+// struct FGameplayTagContainer   A                              (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FGameplayTagContainer   B                              (ConstParm, Parm, OutParm, ReferenceParm)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D6F36AE0              		 offset:576ae0                        
+
+bool UBlueprintGameplayTagLibrary::STATIC_EqualEqual_GameplayTagContainer(const struct FGameplayTagContainer& A, const struct FGameplayTagContainer& B)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -811,12 +1041,21 @@ bool UBlueprintGameplayTagLibrary::STATIC_EqualEqual_GameplayTagContainer(struct
 // Function GameplayTags.BlueprintGameplayTagLibrary.EqualEqual_GameplayTag
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTag*           A                              (Parm)
 // struct FGameplayTag*           B                              (Parm)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF71842FFA0              		 offset:65ffa0                        
 
 bool UBlueprintGameplayTagLibrary::STATIC_EqualEqual_GameplayTag(struct FGameplayTag* A, struct FGameplayTag* B)
+=======
+// struct FGameplayTag            A                              (Parm)
+// struct FGameplayTag            B                              (Parm)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D6F36A20              		 offset:576a20                        
+
+bool UBlueprintGameplayTagLibrary::STATIC_EqualEqual_GameplayTag(const struct FGameplayTag& A, const struct FGameplayTag& B)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -841,12 +1080,21 @@ bool UBlueprintGameplayTagLibrary::STATIC_EqualEqual_GameplayTag(struct FGamepla
 // Function GameplayTags.BlueprintGameplayTagLibrary.DoesTagAssetInterfaceHaveTag
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // TScriptInterface<class UGameplayTagAssetInterface>* TagContainerInterface          (Parm, ZeroConstructor, IsPlainOldData)
 // struct FGameplayTag*           Tag                            (Parm)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF71842FEC0              		 offset:65fec0                        
 
 bool UBlueprintGameplayTagLibrary::STATIC_DoesTagAssetInterfaceHaveTag(TScriptInterface<class UGameplayTagAssetInterface>* TagContainerInterface, struct FGameplayTag* Tag)
+=======
+// TScriptInterface<class UGameplayTagAssetInterface> TagContainerInterface          (Parm, ZeroConstructor, IsPlainOldData)
+// struct FGameplayTag            Tag                            (Parm)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D6F36940              		 offset:576940                        
+
+bool UBlueprintGameplayTagLibrary::STATIC_DoesTagAssetInterfaceHaveTag(const TScriptInterface<class UGameplayTagAssetInterface>& TagContainerInterface, const struct FGameplayTag& Tag)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -871,12 +1119,21 @@ bool UBlueprintGameplayTagLibrary::STATIC_DoesTagAssetInterfaceHaveTag(TScriptIn
 // Function GameplayTags.BlueprintGameplayTagLibrary.DoesContainerMatchTagQuery
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTagContainer*  TagContainer                   (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FGameplayTagQuery*      TagQuery                       (ConstParm, Parm, OutParm, ReferenceParm)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF71842FD50              		 offset:65fd50                        
 
 bool UBlueprintGameplayTagLibrary::STATIC_DoesContainerMatchTagQuery(struct FGameplayTagContainer* TagContainer, struct FGameplayTagQuery* TagQuery)
+=======
+// struct FGameplayTagContainer   TagContainer                   (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FGameplayTagQuery       TagQuery                       (ConstParm, Parm, OutParm, ReferenceParm)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF6D6F367D0              		 offset:5767d0                        
+
+bool UBlueprintGameplayTagLibrary::STATIC_DoesContainerMatchTagQuery(const struct FGameplayTagContainer& TagContainer, const struct FGameplayTagQuery& TagQuery)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -901,11 +1158,19 @@ bool UBlueprintGameplayTagLibrary::STATIC_DoesContainerMatchTagQuery(struct FGam
 // Function GameplayTags.BlueprintGameplayTagLibrary.BreakGameplayTagContainer
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
+<<<<<<< HEAD
 // struct FGameplayTagContainer*  GameplayTagContainer           (ConstParm, Parm, OutParm, ReferenceParm)
 // TArray<struct FGameplayTag>    GameplayTags                   (Parm, OutParm, ZeroConstructor)
 // FunctionAddress:0x00007FF71842FC20              		 offset:65fc20                        
 
 void UBlueprintGameplayTagLibrary::STATIC_BreakGameplayTagContainer(struct FGameplayTagContainer* GameplayTagContainer, TArray<struct FGameplayTag>* GameplayTags)
+=======
+// struct FGameplayTagContainer   GameplayTagContainer           (ConstParm, Parm, OutParm, ReferenceParm)
+// TArray<struct FGameplayTag>    GameplayTags                   (Parm, OutParm, ZeroConstructor)
+// FunctionAddress:0x00007FF6D6F366A0              		 offset:5766a0                        
+
+void UBlueprintGameplayTagLibrary::STATIC_BreakGameplayTagContainer(const struct FGameplayTagContainer& GameplayTagContainer, TArray<struct FGameplayTag>* GameplayTags)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -931,10 +1196,17 @@ void UBlueprintGameplayTagLibrary::STATIC_BreakGameplayTagContainer(struct FGame
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
 // struct FGameplayTagContainer   InOutTagContainer              (Parm, OutParm, ReferenceParm)
+<<<<<<< HEAD
 // struct FGameplayTagContainer*  InTagContainer                 (ConstParm, Parm, OutParm, ReferenceParm)
 // FunctionAddress:0x00007FF71842FAE0              		 offset:65fae0                        
 
 void UBlueprintGameplayTagLibrary::STATIC_AppendGameplayTagContainers(struct FGameplayTagContainer* InTagContainer, struct FGameplayTagContainer* InOutTagContainer)
+=======
+// struct FGameplayTagContainer   InTagContainer                 (ConstParm, Parm, OutParm, ReferenceParm)
+// FunctionAddress:0x00007FF6D6F36560              		 offset:576560                        
+
+void UBlueprintGameplayTagLibrary::STATIC_AppendGameplayTagContainers(const struct FGameplayTagContainer& InTagContainer, struct FGameplayTagContainer* InOutTagContainer)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -960,10 +1232,17 @@ void UBlueprintGameplayTagLibrary::STATIC_AppendGameplayTagContainers(struct FGa
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
 // struct FGameplayTagContainer   TagContainer                   (Parm, OutParm, ReferenceParm)
+<<<<<<< HEAD
 // struct FGameplayTag*           Tag                            (Parm)
 // FunctionAddress:0x00007FF71842F9E0              		 offset:65f9e0                        
 
 void UBlueprintGameplayTagLibrary::STATIC_AddGameplayTag(struct FGameplayTag* Tag, struct FGameplayTagContainer* TagContainer)
+=======
+// struct FGameplayTag            Tag                            (Parm)
+// FunctionAddress:0x00007FF6D6F36460              		 offset:576460                        
+
+void UBlueprintGameplayTagLibrary::STATIC_AddGameplayTag(const struct FGameplayTag& Tag, struct FGameplayTagContainer* TagContainer)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 

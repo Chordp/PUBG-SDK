@@ -15,11 +15,19 @@ namespace SDK
 // Function OnlineSubsystem.TurnBasedMatchInterface.OnMatchReceivedTurn
 // (Event, Public, BlueprintEvent)
 // Parameters:
+<<<<<<< HEAD
 // struct FString*                Match                          (Parm, ZeroConstructor)
 // bool*                          bDidBecomeActive               (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void UTurnBasedMatchInterface::OnMatchReceivedTurn(struct FString* Match, bool* bDidBecomeActive)
+=======
+// struct FString                 Match                          (Parm, ZeroConstructor)
+// bool                           bDidBecomeActive               (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+
+void UTurnBasedMatchInterface::OnMatchReceivedTurn(const struct FString& Match, bool bDidBecomeActive)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -41,10 +49,17 @@ void UTurnBasedMatchInterface::OnMatchReceivedTurn(struct FString* Match, bool* 
 // Function OnlineSubsystem.TurnBasedMatchInterface.OnMatchEnded
 // (Event, Public, BlueprintEvent)
 // Parameters:
+<<<<<<< HEAD
 // struct FString*                Match                          (Parm, ZeroConstructor)
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void UTurnBasedMatchInterface::OnMatchEnded(struct FString* Match)
+=======
+// struct FString                 Match                          (Parm, ZeroConstructor)
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+
+void UTurnBasedMatchInterface::OnMatchEnded(const struct FString& Match)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 

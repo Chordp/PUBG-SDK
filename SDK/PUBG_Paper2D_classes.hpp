@@ -37,12 +37,21 @@ public:
 
 
 // Class Paper2D.PaperCharacter
+<<<<<<< HEAD
 // 0x0010 (0x0830 - 0x0820)
 class APaperCharacter : public ACharacter
 {
 public:
 	class UPaperFlipbookComponent*                     Sprite;                                                   // 0x0820(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x8];                                       // 0x0828(0x0008) MISSED OFFSET
+=======
+// 0x0010 (0x0850 - 0x0840)
+class APaperCharacter : public ACharacter
+{
+public:
+	class UPaperFlipbookComponent*                     Sprite;                                                   // 0x0840(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0848(0x0008) MISSED OFFSET
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -78,6 +87,7 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	bool IsValidKeyFrameIndex(int* Index);
 	float GetTotalDuration();
 	class UPaperSprite* GetSpriteAtTime(float* Time, bool* bClampToEnds);
@@ -85,15 +95,32 @@ public:
 	int GetNumKeyFrames();
 	int GetNumFrames();
 	int GetKeyFrameIndexAtTime(float* Time, bool* bClampToEnds);
+=======
+	bool IsValidKeyFrameIndex(int Index);
+	float GetTotalDuration();
+	class UPaperSprite* GetSpriteAtTime(float Time, bool bClampToEnds);
+	class UPaperSprite* GetSpriteAtFrame(int FrameIndex);
+	int GetNumKeyFrames();
+	int GetNumFrames();
+	int GetKeyFrameIndexAtTime(float Time, bool bClampToEnds);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
 // Class Paper2D.PaperFlipbookActor
+<<<<<<< HEAD
 // 0x0008 (0x03E8 - 0x03E0)
 class APaperFlipbookActor : public AActor
 {
 public:
 	class UPaperFlipbookComponent*                     RenderComponent;                                          // 0x03E0(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
+=======
+// 0x0008 (0x0408 - 0x0400)
+class APaperFlipbookActor : public AActor
+{
+public:
+	class UPaperFlipbookComponent*                     RenderComponent;                                          // 0x0400(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -137,6 +164,7 @@ public:
 
 
 	void Stop();
+<<<<<<< HEAD
 	void SetSpriteColor(struct FLinearColor* NewColor);
 	void SetPlayRate(float* NewRate);
 	void SetPlaybackPositionInFrames(int* NewFramePosition, bool* bFireEvents);
@@ -144,11 +172,24 @@ public:
 	void SetNewTime(float* NewTime);
 	void SetLooping(bool* bNewLooping);
 	bool SetFlipbook(class UPaperFlipbook** NewFlipbook);
+=======
+	void SetSpriteColor(const struct FLinearColor& NewColor);
+	void SetPlayRate(float NewRate);
+	void SetPlaybackPositionInFrames(int NewFramePosition, bool bFireEvents);
+	void SetPlaybackPosition(float NewPosition, bool bFireEvents);
+	void SetNewTime(float NewTime);
+	void SetLooping(bool bNewLooping);
+	bool SetFlipbook(class UPaperFlipbook* NewFlipbook);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	void ReverseFromEnd();
 	void Reverse();
 	void PlayFromStart();
 	void Play();
+<<<<<<< HEAD
 	void OnRep_SourceFlipbook(class UPaperFlipbook** OldFlipbook);
+=======
+	void OnRep_SourceFlipbook(class UPaperFlipbook* OldFlipbook);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	bool IsReversing();
 	bool IsPlaying();
 	bool IsLooping();
@@ -164,11 +205,19 @@ public:
 
 
 // Class Paper2D.PaperGroupedSpriteActor
+<<<<<<< HEAD
 // 0x0008 (0x03E8 - 0x03E0)
 class APaperGroupedSpriteActor : public AActor
 {
 public:
 	class UPaperGroupedSpriteComponent*                RenderComponent;                                          // 0x03E0(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
+=======
+// 0x0008 (0x0408 - 0x0400)
+class APaperGroupedSpriteActor : public AActor
+{
+public:
+	class UPaperGroupedSpriteComponent*                RenderComponent;                                          // 0x0400(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -201,6 +250,7 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	bool UpdateInstanceTransform(int* InstanceIndex, struct FTransform* NewInstanceTransform, bool* bWorldSpace, bool* bMarkRenderStateDirty, bool* bTeleport);
 	bool UpdateInstanceColor(int* InstanceIndex, struct FLinearColor* NewInstanceColor, bool* bMarkRenderStateDirty);
 	void SortInstancesAlongAxis(struct FVector* WorldSpaceSortAxis);
@@ -209,6 +259,16 @@ public:
 	int GetInstanceCount();
 	void ClearInstances();
 	int AddInstance(struct FTransform* Transform, class UPaperSprite** Sprite, bool* bWorldSpace, struct FLinearColor* Color);
+=======
+	bool UpdateInstanceTransform(int InstanceIndex, const struct FTransform& NewInstanceTransform, bool bWorldSpace, bool bMarkRenderStateDirty, bool bTeleport);
+	bool UpdateInstanceColor(int InstanceIndex, const struct FLinearColor& NewInstanceColor, bool bMarkRenderStateDirty);
+	void SortInstancesAlongAxis(const struct FVector& WorldSpaceSortAxis);
+	bool RemoveInstance(int InstanceIndex);
+	bool GetInstanceTransform(int InstanceIndex, bool bWorldSpace, struct FTransform* OutInstanceTransform);
+	int GetInstanceCount();
+	void ClearInstances();
+	int AddInstance(const struct FTransform& Transform, class UPaperSprite* Sprite, bool bWorldSpace, const struct FLinearColor& Color);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -271,11 +331,19 @@ public:
 
 
 // Class Paper2D.PaperSpriteActor
+<<<<<<< HEAD
 // 0x0008 (0x03E8 - 0x03E0)
 class APaperSpriteActor : public AActor
 {
 public:
 	class UPaperSpriteComponent*                       RenderComponent;                                          // 0x03E0(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
+=======
+// 0x0008 (0x0408 - 0x0400)
+class APaperSpriteActor : public AActor
+{
+public:
+	class UPaperSpriteComponent*                       RenderComponent;                                          // 0x0400(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -323,7 +391,11 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	struct FSlateBrush STATIC_MakeBrushFromSprite(class UPaperSprite** Sprite, int* Width, int* Height);
+=======
+	struct FSlateBrush STATIC_MakeBrushFromSprite(class UPaperSprite* Sprite, int Width, int Height);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -346,13 +418,19 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void SetSpriteColor(struct FLinearColor* NewColor);
 	bool SetSprite(class UPaperSprite** NewSprite);
+=======
+	void SetSpriteColor(const struct FLinearColor& NewColor);
+	bool SetSprite(class UPaperSprite* NewSprite);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	class UPaperSprite* GetSprite();
 };
 
 
 // Class Paper2D.PaperTerrainActor
+<<<<<<< HEAD
 // 0x0018 (0x03F8 - 0x03E0)
 class APaperTerrainActor : public AActor
 {
@@ -360,6 +438,15 @@ public:
 	class USceneComponent*                             DummyRoot;                                                // 0x03E0(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
 	class UPaperTerrainSplineComponent*                SplineComponent;                                          // 0x03E8(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
 	class UPaperTerrainComponent*                      RenderComponent;                                          // 0x03F0(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
+=======
+// 0x0018 (0x0418 - 0x0400)
+class APaperTerrainActor : public AActor
+{
+public:
+	class USceneComponent*                             DummyRoot;                                                // 0x0400(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+	class UPaperTerrainSplineComponent*                SplineComponent;                                          // 0x0408(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+	class UPaperTerrainComponent*                      RenderComponent;                                          // 0x0410(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -403,7 +490,11 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void SetTerrainColor(struct FLinearColor* NewColor);
+=======
+	void SetTerrainColor(const struct FLinearColor& NewColor);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -520,11 +611,19 @@ public:
 
 
 // Class Paper2D.PaperTileMapActor
+<<<<<<< HEAD
 // 0x0008 (0x03E8 - 0x03E0)
 class APaperTileMapActor : public AActor
 {
 public:
 	class UPaperTileMapComponent*                      RenderComponent;                                          // 0x03E0(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
+=======
+// 0x0008 (0x0408 - 0x0400)
+class APaperTileMapActor : public AActor
+{
+public:
+	class UPaperTileMapComponent*                      RenderComponent;                                          // 0x0400(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -566,6 +665,7 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void SetTileMapColor(struct FLinearColor* NewColor);
 	bool SetTileMap(class UPaperTileMap** NewTileMap);
 	void SetTile(int* X, int* Y, int* Layer, struct FPaperTileInfo* NewValue);
@@ -584,6 +684,26 @@ public:
 	void GetMapSize(int* MapWidth, int* MapHeight, int* NumLayers);
 	struct FLinearColor GetLayerColor(int* Layer);
 	void CreateNewTileMap(int* MapWidth, int* MapHeight, int* TileWidth, int* TileHeight, float* PixelsPerUnrealUnit, bool* bCreateLayer);
+=======
+	void SetTileMapColor(const struct FLinearColor& NewColor);
+	bool SetTileMap(class UPaperTileMap* NewTileMap);
+	void SetTile(int X, int Y, int Layer, const struct FPaperTileInfo& NewValue);
+	void SetLayerColor(const struct FLinearColor& NewColor, int Layer);
+	void SetLayerCollision(int Layer, bool bHasCollision, bool bOverrideThickness, float CustomThickness, bool bOverrideOffset, float CustomOffset, bool bRebuildCollision);
+	void SetDefaultCollisionThickness(float Thickness, bool bRebuildCollision);
+	void ResizeMap(int NewWidthInTiles, int NewHeightInTiles);
+	void RebuildCollision();
+	bool OwnsTileMap();
+	void MakeTileMapEditable();
+	void GetTilePolygon(int TileX, int TileY, int LayerIndex, bool bWorldSpace, TArray<struct FVector>* Points);
+	struct FLinearColor GetTileMapColor();
+	struct FVector GetTileCornerPosition(int TileX, int TileY, int LayerIndex, bool bWorldSpace);
+	struct FVector GetTileCenterPosition(int TileX, int TileY, int LayerIndex, bool bWorldSpace);
+	struct FPaperTileInfo GetTile(int X, int Y, int Layer);
+	void GetMapSize(int* MapWidth, int* MapHeight, int* NumLayers);
+	struct FLinearColor GetLayerColor(int Layer);
+	void CreateNewTileMap(int MapWidth, int MapHeight, int TileWidth, int TileHeight, float PixelsPerUnrealUnit, bool bCreateLayer);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	class UPaperTileLayer* AddNewLayer();
 };
 
@@ -637,10 +757,17 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	struct FPaperTileInfo STATIC_MakeTile(int* TileIndex, class UPaperTileSet** TileSet, bool* bFlipH, bool* bFlipV, bool* bFlipD);
 	struct FName STATIC_GetTileUserData(struct FPaperTileInfo* Tile);
 	struct FTransform STATIC_GetTileTransform(struct FPaperTileInfo* Tile);
 	void STATIC_BreakTile(struct FPaperTileInfo* Tile, int* TileIndex, class UPaperTileSet** TileSet, bool* bFlipH, bool* bFlipV, bool* bFlipD);
+=======
+	struct FPaperTileInfo STATIC_MakeTile(int TileIndex, class UPaperTileSet* TileSet, bool bFlipH, bool bFlipV, bool bFlipD);
+	struct FName STATIC_GetTileUserData(const struct FPaperTileInfo& Tile);
+	struct FTransform STATIC_GetTileTransform(const struct FPaperTileInfo& Tile);
+	void STATIC_BreakTile(const struct FPaperTileInfo& Tile, int* TileIndex, class UPaperTileSet** TileSet, bool* bFlipH, bool* bFlipV, bool* bFlipD);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

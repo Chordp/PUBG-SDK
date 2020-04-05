@@ -16,7 +16,11 @@ namespace SDK
 // (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // struct FDecalEffectDataSet     ReturnValue                    (Parm, OutParm, ReturnParm)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 struct FDecalEffectDataSet AGunImpact_Med_C::GetAdjustedDecalEffectDataSet_BP()
 {
@@ -39,7 +43,11 @@ struct FDecalEffectDataSet AGunImpact_Med_C::GetAdjustedDecalEffectDataSet_BP()
 
 // Function GunImpact_Med.GunImpact_Med_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AGunImpact_Med_C::UserConstructionScript()
 {
@@ -60,7 +68,11 @@ void AGunImpact_Med_C::UserConstructionScript()
 
 // Function GunImpact_Med.GunImpact_Med_C.Timeline_0__FinishedFunc
 // (BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AGunImpact_Med_C::Timeline_0__FinishedFunc()
 {
@@ -81,7 +93,11 @@ void AGunImpact_Med_C::Timeline_0__FinishedFunc()
 
 // Function GunImpact_Med.GunImpact_Med_C.Timeline_0__UpdateFunc
 // (BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AGunImpact_Med_C::Timeline_0__UpdateFunc()
 {
@@ -102,7 +118,11 @@ void AGunImpact_Med_C::Timeline_0__UpdateFunc()
 
 // Function GunImpact_Med.GunImpact_Med_C.Timeline_1__FinishedFunc
 // (BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AGunImpact_Med_C::Timeline_1__FinishedFunc()
 {
@@ -123,7 +143,11 @@ void AGunImpact_Med_C::Timeline_1__FinishedFunc()
 
 // Function GunImpact_Med.GunImpact_Med_C.Timeline_1__UpdateFunc
 // (BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AGunImpact_Med_C::Timeline_1__UpdateFunc()
 {
@@ -146,7 +170,11 @@ void AGunImpact_Med_C::Timeline_1__UpdateFunc()
 // (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FTransform*             InitialTransform               (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AGunImpact_Med_C::PreWakeUp_BP(struct FTransform* InitialTransform)
 {
@@ -170,7 +198,11 @@ void AGunImpact_Med_C::PreWakeUp_BP(struct FTransform* InitialTransform)
 // (Event, Public, BlueprintEvent)
 // Parameters:
 // TEnumAsByte<EEndPlayReason>*   EndPlayReason                  (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AGunImpact_Med_C::ReceiveEndPlay(TEnumAsByte<EEndPlayReason>* EndPlayReason)
 {
@@ -192,7 +224,11 @@ void AGunImpact_Med_C::ReceiveEndPlay(TEnumAsByte<EEndPlayReason>* EndPlayReason
 
 // Function GunImpact_Med.GunImpact_Med_C.AdjustDecalEffectDataSet_BP
 // (Event, Public, BlueprintCallable, BlueprintEvent)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AGunImpact_Med_C::AdjustDecalEffectDataSet_BP()
 {
@@ -212,10 +248,21 @@ void AGunImpact_Med_C::AdjustDecalEffectDataSet_BP()
 
 
 // Function GunImpact_Med.GunImpact_Med_C.OnSplatterDecalCreated
+<<<<<<< HEAD
 // (BlueprintCallable, BlueprintEvent)
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void AGunImpact_Med_C::OnSplatterDecalCreated()
+=======
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EImpactType*                   ImpactType                     (Parm, ZeroConstructor, IsPlainOldData)
+// class UDecalComponent**        Decal                          (Parm, ZeroConstructor, IsPlainOldData)
+// class UMaterialInstanceDynamic** DecalMaterial                  (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+
+void AGunImpact_Med_C::OnSplatterDecalCreated(EImpactType* ImpactType, class UDecalComponent** Decal, class UMaterialInstanceDynamic** DecalMaterial)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -223,6 +270,12 @@ void AGunImpact_Med_C::OnSplatterDecalCreated()
 		fn = UObject::FindObject<UFunction>(_xor_("Function GunImpact_Med.GunImpact_Med_C.OnSplatterDecalCreated"));
 
 	AGunImpact_Med_C_OnSplatterDecalCreated_Params params;
+<<<<<<< HEAD
+=======
+	params.ImpactType = ImpactType;
+	params.Decal = Decal;
+	params.DecalMaterial = DecalMaterial;
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	auto flags = fn->FunctionFlags;
 
@@ -236,7 +289,11 @@ void AGunImpact_Med_C::OnSplatterDecalCreated()
 // (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+=======
+// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AGunImpact_Med_C::ExecuteUbergraph_GunImpact_Med(int* EntryPoint)
 {

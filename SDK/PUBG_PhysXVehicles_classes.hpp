@@ -14,6 +14,7 @@ namespace SDK
 //Classes
 //---------------------------------------------------------------------------
 
+<<<<<<< HEAD
 // Class PhysXVehicles.WheeledVehicle
 // 0x0010 (0x0450 - 0x0440)
 class AWheeledVehicle : public APawn
@@ -21,6 +22,43 @@ class AWheeledVehicle : public APawn
 public:
 	class USkeletalMeshComponent*                      Mesh;                                                     // 0x0440(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, IsPlainOldData)
 	class UWheeledVehicleMovementComponent*            VehicleMovement;                                          // 0x0448(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, IsPlainOldData)
+=======
+// Class PhysXVehicles.VehicleAnimInstance
+// 0x0568 (0x0900 - 0x0398)
+class UVehicleAnimInstance : public UAnimInstance
+{
+public:
+	unsigned char                                      UnknownData00[0x548];                                     // 0x0398(0x0548) MISSED OFFSET
+	class UWheeledVehicleMovementComponent*            WheeledVehicleMovementComponent;                          // 0x08E0(0x0008) (ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData)
+	bool                                               bUseSupsensionInterpolation;                              // 0x08E8(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x08E9(0x0003) MISSED OFFSET
+	float                                              VehicleSuspensionInterpSpeed_ContactUpwards;              // 0x08EC(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              VehicleSuspensionInterpSpeed_Contact;                     // 0x08F0(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              VehicleSuspensionInterpSpeed_NoContact;                   // 0x08F4(0x0004) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x8];                                       // 0x08F8(0x0008) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class PhysXVehicles.VehicleAnimInstance"));
+
+		return ptr;
+	}
+
+
+	class AWheeledVehicle* GetVehicle();
+};
+
+
+// Class PhysXVehicles.WheeledVehicle
+// 0x0010 (0x0478 - 0x0468)
+class AWheeledVehicle : public APawn
+{
+public:
+	class USkeletalMeshComponent*                      Mesh;                                                     // 0x0468(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, IsPlainOldData)
+	class UWheeledVehicleMovementComponent*            VehicleMovement;                                          // 0x0470(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -187,6 +225,7 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void SetUseAutoGears(bool* bUseAuto);
 	void SetThrottleInput(float* Throttle);
 	void SetTargetGear(int* GearNum, bool* bImmediate);
@@ -204,6 +243,25 @@ public:
 	void SetAvoidanceEnabled(bool* bEnable);
 	void ServerUpdateState(float* InSteeringInput, float* InThrottleInput, float* InBrakeInput, float* InHandbrakeInput, int* CurrentGear, uint32_t* Checksum);
 	void OnRep_TirePunctured(TArray<bool>* LastTirePunctured);
+=======
+	void SetUseAutoGears(bool bUseAuto);
+	void SetThrottleInput(float Throttle);
+	void SetTargetGear(int GearNum, bool bImmediate);
+	void SetSteeringInput(float Steering);
+	void SetHandbrakeInput(bool bNewHandbrake);
+	void SetGroupsToIgnoreMask(const struct FNavAvoidanceMask& GroupMask);
+	void SetGroupsToIgnore(int GroupFlags);
+	void SetGroupsToAvoidMask(const struct FNavAvoidanceMask& GroupMask);
+	void SetGroupsToAvoid(int GroupFlags);
+	void SetGearUp(bool bNewGearUp);
+	void SetGearDown(bool bNewGearDown);
+	void SetBrakeInput(float Brake);
+	void SetAvoidanceGroupMask(const struct FNavAvoidanceMask& GroupMask);
+	void SetAvoidanceGroup(int GroupFlags);
+	void SetAvoidanceEnabled(bool bEnable);
+	void ServerUpdateState(float InSteeringInput, float InThrottleInput, float InBrakeInput, float InHandbrakeInput, int CurrentGear, uint32_t Checksum);
+	void OnRep_TirePunctured(TArray<bool> LastTirePunctured);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	bool GetUseAutoGears();
 	int GetTargetGear();
 	float GetSideSpeed();
@@ -239,6 +297,7 @@ public:
 };
 
 
+<<<<<<< HEAD
 // Class PhysXVehicles.VehicleAnimInstance
 // 0x0568 (0x0900 - 0x0398)
 class UVehicleAnimInstance : public UAnimInstance
@@ -267,6 +326,8 @@ public:
 };
 
 
+=======
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 // Class PhysXVehicles.TireConfig
 // 0x0050 (0x0080 - 0x0030)
 class UTireConfig : public UDataAsset
@@ -309,9 +370,15 @@ public:
 	}
 
 
+<<<<<<< HEAD
 	void SetSteerAngle(float* SteerAngle, int* WheelIndex);
 	void SetDriveTorque(float* DriveTorque, int* WheelIndex);
 	void SetBrakeTorque(float* BrakeTorque, int* WheelIndex);
+=======
+	void SetSteerAngle(float SteerAngle, int WheelIndex);
+	void SetDriveTorque(float DriveTorque, int WheelIndex);
+	void SetBrakeTorque(float BrakeTorque, int WheelIndex);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

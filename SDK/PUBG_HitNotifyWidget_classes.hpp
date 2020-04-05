@@ -50,7 +50,11 @@ public:
 	void PlayHitNotifySound();
 	void GetRandomScale(struct FVector2D* Scale);
 	void GetRandomTranslation(struct FVector2D* Translation);
+<<<<<<< HEAD
 	void OnHitNotify_Temp(float* DamagePercent, EDamageTypeCategory* DamageTypeCategory);
+=======
+	void OnHitNotify_Temp(float DamagePercent, EDamageTypeCategory DamageTypeCategory);
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	void Construct();
 	void OnPlayBloodSpot(class UUserWidget** Widget);
 	void ExecuteUbergraph_HitNotifyWidget(int* EntryPoint);

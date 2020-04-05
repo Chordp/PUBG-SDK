@@ -15,6 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Class CinematicCamera.CameraRig_Crane
+<<<<<<< HEAD
 // 0x0030 (0x0410 - 0x03E0)
 class ACameraRig_Crane : public AActor
 {
@@ -29,6 +30,22 @@ public:
 	class USceneComponent*                             CraneYawControl;                                          // 0x03F8(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData)
 	class USceneComponent*                             CranePitchControl;                                        // 0x0400(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData)
 	class USceneComponent*                             CraneCameraMount;                                         // 0x0408(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData)
+=======
+// 0x0030 (0x0430 - 0x0400)
+class ACameraRig_Crane : public AActor
+{
+public:
+	float                                              CranePitch;                                               // 0x0400(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              CraneYaw;                                                 // 0x0404(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              CraneArmLength;                                           // 0x0408(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bLockMountPitch;                                          // 0x040C(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bLockMountYaw;                                            // 0x040D(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x2];                                       // 0x040E(0x0002) MISSED OFFSET
+	class USceneComponent*                             TransformComponent;                                       // 0x0410(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData)
+	class USceneComponent*                             CraneYawControl;                                          // 0x0418(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData)
+	class USceneComponent*                             CranePitchControl;                                        // 0x0420(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData)
+	class USceneComponent*                             CraneCameraMount;                                         // 0x0428(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -43,6 +60,7 @@ public:
 
 
 // Class CinematicCamera.CameraRig_Rail
+<<<<<<< HEAD
 // 0x0020 (0x0400 - 0x03E0)
 class ACameraRig_Rail : public AActor
 {
@@ -52,6 +70,17 @@ public:
 	class USceneComponent*                             TransformComponent;                                       // 0x03E8(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData)
 	class USplineComponent*                            RailSplineComponent;                                      // 0x03F0(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData)
 	class USceneComponent*                             RailCameraMount;                                          // 0x03F8(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData)
+=======
+// 0x0020 (0x0420 - 0x0400)
+class ACameraRig_Rail : public AActor
+{
+public:
+	float                                              CurrentPositionOnRail;                                    // 0x0400(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0404(0x0004) MISSED OFFSET
+	class USceneComponent*                             TransformComponent;                                       // 0x0408(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData)
+	class USplineComponent*                            RailSplineComponent;                                      // 0x0410(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData)
+	class USceneComponent*                             RailCameraMount;                                          // 0x0418(0x0008) (Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData)
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -66,12 +95,21 @@ public:
 
 
 // Class CinematicCamera.CineCameraActor
+<<<<<<< HEAD
 // 0x0040 (0x09C0 - 0x0980)
 class ACineCameraActor : public ACameraActor
 {
 public:
 	struct FCameraLookatTrackingSettings               LookatTrackingSettings;                                   // 0x0980(0x0030) (Edit, BlueprintVisible)
 	unsigned char                                      UnknownData00[0x10];                                      // 0x09B0(0x0010) MISSED OFFSET
+=======
+// 0x0040 (0x09E0 - 0x09A0)
+class ACineCameraActor : public ACameraActor
+{
+public:
+	struct FCameraLookatTrackingSettings               LookatTrackingSettings;                                   // 0x09A0(0x0030) (Edit, BlueprintVisible)
+	unsigned char                                      UnknownData00[0x10];                                      // 0x09D0(0x0010) MISSED OFFSET
+>>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
