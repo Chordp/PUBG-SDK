@@ -7,13 +7,8 @@
 #endif
 
 #include "PUBG_Basic.hpp"
-<<<<<<< HEAD
 #include "PUBG_MovieScene_classes.hpp"
 #include "PUBG_CoreUObject_classes.hpp"
-=======
-#include "PUBG_CoreUObject_classes.hpp"
-#include "PUBG_MovieScene_classes.hpp"
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 #include "PUBG_Engine_classes.hpp"
 
 namespace SDK
@@ -176,7 +171,6 @@ struct FMovieSceneSkeletalAnimationParams
 	struct FRichCurve                                  Weight;                                                   // 0x0020(0x0070) (Edit)
 };
 
-<<<<<<< HEAD
 // ScriptStruct MovieSceneTracks.MovieSceneParameterSectionTemplate
 // 0x0030 (0x0048 - 0x0018)
 struct FMovieSceneParameterSectionTemplate : public FMovieSceneEvalTemplate
@@ -186,8 +180,6 @@ struct FMovieSceneParameterSectionTemplate : public FMovieSceneEvalTemplate
 	TArray<struct FColorParameterNameAndCurves>        Colors;                                                   // 0x0038(0x0010) (ZeroConstructor)
 };
 
-=======
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 // ScriptStruct MovieSceneTracks.MovieScene3DTransformKeyStruct
 // 0x0070 (0x0078 - 0x0008)
 struct FMovieScene3DTransformKeyStruct : public FMovieSceneKeyStruct
@@ -260,18 +252,6 @@ struct FMovieSceneVector2DKeyStruct : public FMovieSceneVectorKeyStructBase
 	struct FVector2D                                   Vector;                                                   // 0x0048(0x0008) (Edit, IsPlainOldData)
 };
 
-<<<<<<< HEAD
-=======
-// ScriptStruct MovieSceneTracks.MovieSceneParameterSectionTemplate
-// 0x0030 (0x0048 - 0x0018)
-struct FMovieSceneParameterSectionTemplate : public FMovieSceneEvalTemplate
-{
-	TArray<struct FScalarParameterNameAndCurve>        Scalars;                                                  // 0x0018(0x0010) (ZeroConstructor)
-	TArray<struct FVectorParameterNameAndCurves>       Vectors;                                                  // 0x0028(0x0010) (ZeroConstructor)
-	TArray<struct FColorParameterNameAndCurves>        Colors;                                                   // 0x0038(0x0010) (ZeroConstructor)
-};
-
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 // ScriptStruct MovieSceneTracks.MovieSceneComponentMaterialSectionTemplate
 // 0x0008 (0x0050 - 0x0048)
 struct FMovieSceneComponentMaterialSectionTemplate : public FMovieSceneParameterSectionTemplate

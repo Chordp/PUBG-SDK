@@ -16,11 +16,7 @@ namespace SDK
 // (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 bool ABuff_RestoreHoldingBreathOverTime_C::CanApplyBuff()
 {
@@ -43,11 +39,7 @@ bool ABuff_RestoreHoldingBreathOverTime_C::CanApplyBuff()
 
 // Function Buff_RestoreHoldingBreathOverTime.Buff_RestoreHoldingBreathOverTime_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ABuff_RestoreHoldingBreathOverTime_C::UserConstructionScript()
 {
@@ -68,11 +60,7 @@ void ABuff_RestoreHoldingBreathOverTime_C::UserConstructionScript()
 
 // Function Buff_RestoreHoldingBreathOverTime.Buff_RestoreHoldingBreathOverTime_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ABuff_RestoreHoldingBreathOverTime_C::ReceiveBeginPlay()
 {
@@ -93,11 +81,7 @@ void ABuff_RestoreHoldingBreathOverTime_C::ReceiveBeginPlay()
 
 // Function Buff_RestoreHoldingBreathOverTime.Buff_RestoreHoldingBreathOverTime_C.TickBuff
 // (Event, Public, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ABuff_RestoreHoldingBreathOverTime_C::TickBuff()
 {
@@ -118,11 +102,7 @@ void ABuff_RestoreHoldingBreathOverTime_C::TickBuff()
 
 // Function Buff_RestoreHoldingBreathOverTime.Buff_RestoreHoldingBreathOverTime_C.AfterDelay
 // (BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ABuff_RestoreHoldingBreathOverTime_C::AfterDelay()
 {
@@ -144,17 +124,10 @@ void ABuff_RestoreHoldingBreathOverTime_C::AfterDelay()
 // Function Buff_RestoreHoldingBreathOverTime.Buff_RestoreHoldingBreathOverTime_C.ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime
 // (HasDefaults)
 // Parameters:
-<<<<<<< HEAD
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void ABuff_RestoreHoldingBreathOverTime_C::ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime(int* EntryPoint)
-=======
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
-
-void ABuff_RestoreHoldingBreathOverTime_C::ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime(int EntryPoint)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 

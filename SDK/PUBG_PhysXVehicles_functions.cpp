@@ -12,44 +12,11 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
-<<<<<<< HEAD
-=======
-// Function PhysXVehicles.VehicleAnimInstance.GetVehicle
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// class AWheeledVehicle*         ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAEC9D50              		 offset:4509d50                       
-
-class AWheeledVehicle* UVehicleAnimInstance::GetVehicle()
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.VehicleAnimInstance.GetVehicle"));
-
-	UVehicleAnimInstance_GetVehicle_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 // Function PhysXVehicles.VehicleWheel.IsInAir
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8E42D0              		 offset:4b142d0                       
-=======
-// FunctionAddress:0x00007FF6DAEC9D80              		 offset:4509d80                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 bool UVehicleWheel::IsInAir()
 {
@@ -75,11 +42,7 @@ bool UVehicleWheel::IsInAir()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8E4210              		 offset:4b14210                       
-=======
-// FunctionAddress:0x00007FF6DAEC9CC0              		 offset:4509cc0                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 float UVehicleWheel::GetSuspensionOffset()
 {
@@ -105,11 +68,7 @@ float UVehicleWheel::GetSuspensionOffset()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8E41E0              		 offset:4b141e0                       
-=======
-// FunctionAddress:0x00007FF6DAEC9C90              		 offset:4509c90                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 float UVehicleWheel::GetSteerAngle()
 {
@@ -135,11 +94,7 @@ float UVehicleWheel::GetSteerAngle()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8E4180              		 offset:4b14180                       
-=======
-// FunctionAddress:0x00007FF6DAEC9C30              		 offset:4509c30                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 float UVehicleWheel::GetRotationAngle()
 {
@@ -165,11 +120,7 @@ float UVehicleWheel::GetRotationAngle()
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8E4150              		 offset:4b14150                       
-=======
-// FunctionAddress:0x00007FF6DAEC9C00              		 offset:4509c00                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 float UVehicleWheel::GetLongitudinalSlip()
 {
@@ -195,11 +146,7 @@ float UVehicleWheel::GetLongitudinalSlip()
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8E4120              		 offset:4b14120                       
-=======
-// FunctionAddress:0x00007FF6DAEC9BD0              		 offset:4509bd0                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 float UVehicleWheel::GetLateralSlip()
 {
@@ -224,17 +171,10 @@ float UVehicleWheel::GetLateralSlip()
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetUseAutoGears
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // bool*                          bUseAuto                       (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71C8E5040              		 offset:4b15040                       
 
 void UWheeledVehicleMovementComponent::SetUseAutoGears(bool* bUseAuto)
-=======
-// bool                           bUseAuto                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAECAAF0              		 offset:450aaf0                       
-
-void UWheeledVehicleMovementComponent::SetUseAutoGears(bool bUseAuto)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -256,17 +196,10 @@ void UWheeledVehicleMovementComponent::SetUseAutoGears(bool bUseAuto)
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetThrottleInput
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // float*                         Throttle                       (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71C8E4FC0              		 offset:4b14fc0                       
 
 void UWheeledVehicleMovementComponent::SetThrottleInput(float* Throttle)
-=======
-// float                          Throttle                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAECAA70              		 offset:450aa70                       
-
-void UWheeledVehicleMovementComponent::SetThrottleInput(float Throttle)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -288,19 +221,11 @@ void UWheeledVehicleMovementComponent::SetThrottleInput(float Throttle)
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetTargetGear
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // int*                           GearNum                        (Parm, ZeroConstructor, IsPlainOldData)
 // bool*                          bImmediate                     (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71C8E4F00              		 offset:4b14f00                       
 
 void UWheeledVehicleMovementComponent::SetTargetGear(int* GearNum, bool* bImmediate)
-=======
-// int                            GearNum                        (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bImmediate                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAECA9B0              		 offset:450a9b0                       
-
-void UWheeledVehicleMovementComponent::SetTargetGear(int GearNum, bool bImmediate)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -323,17 +248,10 @@ void UWheeledVehicleMovementComponent::SetTargetGear(int GearNum, bool bImmediat
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetSteeringInput
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // float*                         Steering                       (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71C8E4E80              		 offset:4b14e80                       
 
 void UWheeledVehicleMovementComponent::SetSteeringInput(float* Steering)
-=======
-// float                          Steering                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAECA930              		 offset:450a930                       
-
-void UWheeledVehicleMovementComponent::SetSteeringInput(float Steering)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -355,17 +273,10 @@ void UWheeledVehicleMovementComponent::SetSteeringInput(float Steering)
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetHandbrakeInput
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // bool*                          bNewHandbrake                  (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71C8E4D20              		 offset:4b14d20                       
 
 void UWheeledVehicleMovementComponent::SetHandbrakeInput(bool* bNewHandbrake)
-=======
-// bool                           bNewHandbrake                  (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAECA7D0              		 offset:450a7d0                       
-
-void UWheeledVehicleMovementComponent::SetHandbrakeInput(bool bNewHandbrake)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -387,17 +298,10 @@ void UWheeledVehicleMovementComponent::SetHandbrakeInput(bool bNewHandbrake)
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnoreMask
 // (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FNavAvoidanceMask*      GroupMask                      (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 // FunctionAddress:0x00007FF71C8E4C90              		 offset:4b14c90                       
 
 void UWheeledVehicleMovementComponent::SetGroupsToIgnoreMask(struct FNavAvoidanceMask* GroupMask)
-=======
-// struct FNavAvoidanceMask       GroupMask                      (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAECA740              		 offset:450a740                       
-
-void UWheeledVehicleMovementComponent::SetGroupsToIgnoreMask(const struct FNavAvoidanceMask& GroupMask)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -419,17 +323,10 @@ void UWheeledVehicleMovementComponent::SetGroupsToIgnoreMask(const struct FNavAv
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnore
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // int*                           GroupFlags                     (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71C8E4C10              		 offset:4b14c10                       
 
 void UWheeledVehicleMovementComponent::SetGroupsToIgnore(int* GroupFlags)
-=======
-// int                            GroupFlags                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAECA6C0              		 offset:450a6c0                       
-
-void UWheeledVehicleMovementComponent::SetGroupsToIgnore(int GroupFlags)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -451,17 +348,10 @@ void UWheeledVehicleMovementComponent::SetGroupsToIgnore(int GroupFlags)
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoidMask
 // (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FNavAvoidanceMask*      GroupMask                      (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 // FunctionAddress:0x00007FF71C8E4B80              		 offset:4b14b80                       
 
 void UWheeledVehicleMovementComponent::SetGroupsToAvoidMask(struct FNavAvoidanceMask* GroupMask)
-=======
-// struct FNavAvoidanceMask       GroupMask                      (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAECA630              		 offset:450a630                       
-
-void UWheeledVehicleMovementComponent::SetGroupsToAvoidMask(const struct FNavAvoidanceMask& GroupMask)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -483,17 +373,10 @@ void UWheeledVehicleMovementComponent::SetGroupsToAvoidMask(const struct FNavAvo
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoid
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // int*                           GroupFlags                     (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71C8E4B00              		 offset:4b14b00                       
 
 void UWheeledVehicleMovementComponent::SetGroupsToAvoid(int* GroupFlags)
-=======
-// int                            GroupFlags                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAECA5B0              		 offset:450a5b0                       
-
-void UWheeledVehicleMovementComponent::SetGroupsToAvoid(int GroupFlags)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -515,17 +398,10 @@ void UWheeledVehicleMovementComponent::SetGroupsToAvoid(int GroupFlags)
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGearUp
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // bool*                          bNewGearUp                     (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71C8E4A70              		 offset:4b14a70                       
 
 void UWheeledVehicleMovementComponent::SetGearUp(bool* bNewGearUp)
-=======
-// bool                           bNewGearUp                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAECA520              		 offset:450a520                       
-
-void UWheeledVehicleMovementComponent::SetGearUp(bool bNewGearUp)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -547,17 +423,10 @@ void UWheeledVehicleMovementComponent::SetGearUp(bool bNewGearUp)
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGearDown
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // bool*                          bNewGearDown                   (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71C8E49E0              		 offset:4b149e0                       
 
 void UWheeledVehicleMovementComponent::SetGearDown(bool* bNewGearDown)
-=======
-// bool                           bNewGearDown                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAECA490              		 offset:450a490                       
-
-void UWheeledVehicleMovementComponent::SetGearDown(bool bNewGearDown)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -579,17 +448,10 @@ void UWheeledVehicleMovementComponent::SetGearDown(bool bNewGearDown)
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetBrakeInput
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // float*                         Brake                          (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71C8E47C0              		 offset:4b147c0                       
 
 void UWheeledVehicleMovementComponent::SetBrakeInput(float* Brake)
-=======
-// float                          Brake                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAECA270              		 offset:450a270                       
-
-void UWheeledVehicleMovementComponent::SetBrakeInput(float Brake)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -611,17 +473,10 @@ void UWheeledVehicleMovementComponent::SetBrakeInput(float Brake)
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroupMask
 // (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FNavAvoidanceMask*      GroupMask                      (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 // FunctionAddress:0x00007FF71C8E4730              		 offset:4b14730                       
 
 void UWheeledVehicleMovementComponent::SetAvoidanceGroupMask(struct FNavAvoidanceMask* GroupMask)
-=======
-// struct FNavAvoidanceMask       GroupMask                      (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAECA1E0              		 offset:450a1e0                       
-
-void UWheeledVehicleMovementComponent::SetAvoidanceGroupMask(const struct FNavAvoidanceMask& GroupMask)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -643,17 +498,10 @@ void UWheeledVehicleMovementComponent::SetAvoidanceGroupMask(const struct FNavAv
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroup
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // int*                           GroupFlags                     (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71C8E46B0              		 offset:4b146b0                       
 
 void UWheeledVehicleMovementComponent::SetAvoidanceGroup(int* GroupFlags)
-=======
-// int                            GroupFlags                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAECA160              		 offset:450a160                       
-
-void UWheeledVehicleMovementComponent::SetAvoidanceGroup(int GroupFlags)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -675,17 +523,10 @@ void UWheeledVehicleMovementComponent::SetAvoidanceGroup(int GroupFlags)
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceEnabled
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // bool*                          bEnable                        (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71C8E4620              		 offset:4b14620                       
 
 void UWheeledVehicleMovementComponent::SetAvoidanceEnabled(bool* bEnable)
-=======
-// bool                           bEnable                        (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAECA0D0              		 offset:450a0d0                       
-
-void UWheeledVehicleMovementComponent::SetAvoidanceEnabled(bool bEnable)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -707,7 +548,6 @@ void UWheeledVehicleMovementComponent::SetAvoidanceEnabled(bool bEnable)
 // Function PhysXVehicles.WheeledVehicleMovementComponent.ServerUpdateState
 // (Net, Native, Event, Protected, NetServer, NetValidate)
 // Parameters:
-<<<<<<< HEAD
 // float*                         InSteeringInput                (Parm, ZeroConstructor, IsPlainOldData)
 // float*                         InThrottleInput                (Parm, ZeroConstructor, IsPlainOldData)
 // float*                         InBrakeInput                   (Parm, ZeroConstructor, IsPlainOldData)
@@ -717,17 +557,6 @@ void UWheeledVehicleMovementComponent::SetAvoidanceEnabled(bool bEnable)
 // FunctionAddress:0x00007FF71C8E4400              		 offset:4b14400                       
 
 void UWheeledVehicleMovementComponent::ServerUpdateState(float* InSteeringInput, float* InThrottleInput, float* InBrakeInput, float* InHandbrakeInput, int* CurrentGear, uint32_t* Checksum)
-=======
-// float                          InSteeringInput                (Parm, ZeroConstructor, IsPlainOldData)
-// float                          InThrottleInput                (Parm, ZeroConstructor, IsPlainOldData)
-// float                          InBrakeInput                   (Parm, ZeroConstructor, IsPlainOldData)
-// float                          InHandbrakeInput               (Parm, ZeroConstructor, IsPlainOldData)
-// int                            CurrentGear                    (Parm, ZeroConstructor, IsPlainOldData)
-// uint32_t                       Checksum                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAEC9EB0              		 offset:4509eb0                       
-
-void UWheeledVehicleMovementComponent::ServerUpdateState(float InSteeringInput, float InThrottleInput, float InBrakeInput, float InHandbrakeInput, int CurrentGear, uint32_t Checksum)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -754,17 +583,10 @@ void UWheeledVehicleMovementComponent::ServerUpdateState(float InSteeringInput, 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.OnRep_TirePunctured
 // (Native, Public)
 // Parameters:
-<<<<<<< HEAD
 // TArray<bool>*                  LastTirePunctured              (Parm, ZeroConstructor)
 // FunctionAddress:0x00007FF71C8E4300              		 offset:4b14300                       
 
 void UWheeledVehicleMovementComponent::OnRep_TirePunctured(TArray<bool>* LastTirePunctured)
-=======
-// TArray<bool>                   LastTirePunctured              (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF6DAEC9DB0              		 offset:4509db0                       
-
-void UWheeledVehicleMovementComponent::OnRep_TirePunctured(TArray<bool> LastTirePunctured)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -787,11 +609,7 @@ void UWheeledVehicleMovementComponent::OnRep_TirePunctured(TArray<bool> LastTire
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8E4270              		 offset:4b14270                       
-=======
-// FunctionAddress:0x00007FF6DAEC9D20              		 offset:4509d20                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 bool UWheeledVehicleMovementComponent::GetUseAutoGears()
 {
@@ -817,11 +635,7 @@ bool UWheeledVehicleMovementComponent::GetUseAutoGears()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8E4240              		 offset:4b14240                       
-=======
-// FunctionAddress:0x00007FF6DAEC9CF0              		 offset:4509cf0                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 int UWheeledVehicleMovementComponent::GetTargetGear()
 {
@@ -847,11 +661,7 @@ int UWheeledVehicleMovementComponent::GetTargetGear()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8E41B0              		 offset:4b141b0                       
-=======
-// FunctionAddress:0x00007FF6DAEC9C60              		 offset:4509c60                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 float UWheeledVehicleMovementComponent::GetSideSpeed()
 {
@@ -877,11 +687,7 @@ float UWheeledVehicleMovementComponent::GetSideSpeed()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8E40F0              		 offset:4b140f0                       
-=======
-// FunctionAddress:0x00007FF6DAEC9BA0              		 offset:4509ba0                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 float UWheeledVehicleMovementComponent::GetForwardSpeed()
 {
@@ -907,11 +713,7 @@ float UWheeledVehicleMovementComponent::GetForwardSpeed()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8E40C0              		 offset:4b140c0                       
-=======
-// FunctionAddress:0x00007FF6DAEC9B70              		 offset:4509b70                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 float UWheeledVehicleMovementComponent::GetEngineRotationSpeed()
 {
@@ -937,11 +739,7 @@ float UWheeledVehicleMovementComponent::GetEngineRotationSpeed()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8E4090              		 offset:4b14090                       
-=======
-// FunctionAddress:0x00007FF6DAEC9B40              		 offset:4509b40                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 float UWheeledVehicleMovementComponent::GetEngineMaxRotationSpeed()
 {
@@ -967,11 +765,7 @@ float UWheeledVehicleMovementComponent::GetEngineMaxRotationSpeed()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8E4060              		 offset:4b14060                       
-=======
-// FunctionAddress:0x00007FF6DAEC9B10              		 offset:4509b10                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 int UWheeledVehicleMovementComponent::GetCurrentGear()
 {
@@ -993,7 +787,6 @@ int UWheeledVehicleMovementComponent::GetCurrentGear()
 }
 
 
-<<<<<<< HEAD
 // Function PhysXVehicles.VehicleAnimInstance.GetVehicle
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -1028,16 +821,6 @@ class AWheeledVehicle* UVehicleAnimInstance::GetVehicle()
 // FunctionAddress:0x00007FF71C8E4DB0              		 offset:4b14db0                       
 
 void USimpleWheeledVehicleMovementComponent::SetSteerAngle(float* SteerAngle, int* WheelIndex)
-=======
-// Function PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetSteerAngle
-// (Final, Native, Public, BlueprintCallable)
-// Parameters:
-// float                          SteerAngle                     (Parm, ZeroConstructor, IsPlainOldData)
-// int                            WheelIndex                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAECA860              		 offset:450a860                       
-
-void USimpleWheeledVehicleMovementComponent::SetSteerAngle(float SteerAngle, int WheelIndex)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -1060,19 +843,11 @@ void USimpleWheeledVehicleMovementComponent::SetSteerAngle(float SteerAngle, int
 // Function PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetDriveTorque
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // float*                         DriveTorque                    (Parm, ZeroConstructor, IsPlainOldData)
 // int*                           WheelIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71C8E4910              		 offset:4b14910                       
 
 void USimpleWheeledVehicleMovementComponent::SetDriveTorque(float* DriveTorque, int* WheelIndex)
-=======
-// float                          DriveTorque                    (Parm, ZeroConstructor, IsPlainOldData)
-// int                            WheelIndex                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAECA3C0              		 offset:450a3c0                       
-
-void USimpleWheeledVehicleMovementComponent::SetDriveTorque(float DriveTorque, int WheelIndex)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -1095,19 +870,11 @@ void USimpleWheeledVehicleMovementComponent::SetDriveTorque(float DriveTorque, i
 // Function PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetBrakeTorque
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // float*                         BrakeTorque                    (Parm, ZeroConstructor, IsPlainOldData)
 // int*                           WheelIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71C8E4840              		 offset:4b14840                       
 
 void USimpleWheeledVehicleMovementComponent::SetBrakeTorque(float* BrakeTorque, int* WheelIndex)
-=======
-// float                          BrakeTorque                    (Parm, ZeroConstructor, IsPlainOldData)
-// int                            WheelIndex                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAECA2F0              		 offset:450a2f0                       
-
-void USimpleWheeledVehicleMovementComponent::SetBrakeTorque(float BrakeTorque, int WheelIndex)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 

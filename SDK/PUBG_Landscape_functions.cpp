@@ -15,7 +15,6 @@ namespace SDK
 // Function Landscape.LandscapeProxy.EditorApplySpline
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // class USplineComponent**       InSplineComponent              (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 // float*                         StartWidth                     (Parm, ZeroConstructor, IsPlainOldData)
 // float*                         EndWidth                       (Parm, ZeroConstructor, IsPlainOldData)
@@ -30,22 +29,6 @@ namespace SDK
 // FunctionAddress:0x00007FF71AFC57D0              		 offset:31f57d0                       
 
 void ALandscapeProxy::EditorApplySpline(class USplineComponent** InSplineComponent, float* StartWidth, float* EndWidth, float* StartSideFalloff, float* EndSideFalloff, float* StartRoll, float* EndRoll, int* NumSubdivisions, bool* bRaiseHeights, bool* bLowerHeights, class ULandscapeLayerInfoObject** PaintLayer)
-=======
-// class USplineComponent*        InSplineComponent              (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// float                          StartWidth                     (Parm, ZeroConstructor, IsPlainOldData)
-// float                          EndWidth                       (Parm, ZeroConstructor, IsPlainOldData)
-// float                          StartSideFalloff               (Parm, ZeroConstructor, IsPlainOldData)
-// float                          EndSideFalloff                 (Parm, ZeroConstructor, IsPlainOldData)
-// float                          StartRoll                      (Parm, ZeroConstructor, IsPlainOldData)
-// float                          EndRoll                        (Parm, ZeroConstructor, IsPlainOldData)
-// int                            NumSubdivisions                (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bRaiseHeights                  (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bLowerHeights                  (Parm, ZeroConstructor, IsPlainOldData)
-// class ULandscapeLayerInfoObject* PaintLayer                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6D70FA000              		 offset:73a000                        
-
-void ALandscapeProxy::EditorApplySpline(class USplineComponent* InSplineComponent, float StartWidth, float EndWidth, float StartSideFalloff, float EndSideFalloff, float StartRoll, float EndRoll, int NumSubdivisions, bool bRaiseHeights, bool bLowerHeights, class ULandscapeLayerInfoObject* PaintLayer)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -77,17 +60,10 @@ void ALandscapeProxy::EditorApplySpline(class USplineComponent* InSplineComponen
 // Function Landscape.LandscapeProxy.ChangeLODDistanceFactor
 // (Native, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // float*                         InLODDistanceFactor            (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71AF760E0              		 offset:31a60e0                       
 
 void ALandscapeProxy::ChangeLODDistanceFactor(float* InLODDistanceFactor)
-=======
-// float                          InLODDistanceFactor            (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6D70F9F80              		 offset:739f80                        
-
-void ALandscapeProxy::ChangeLODDistanceFactor(float InLODDistanceFactor)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 

@@ -16,11 +16,7 @@ namespace SDK
 // (Event, Public, BlueprintEvent)
 // Parameters:
 // EPlatoonCarePackageType*       Type                           (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UPlatoonCarePackageDropIndicator_C::BP_UpdateIconType(EPlatoonCarePackageType* Type)
 {
@@ -44,11 +40,7 @@ void UPlatoonCarePackageDropIndicator_C::BP_UpdateIconType(EPlatoonCarePackageTy
 // (Event, Public, BlueprintEvent)
 // Parameters:
 // EPlatoonSupportRequestEventType* IconType                       (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UPlatoonCarePackageDropIndicator_C::BP_UpdateIconImage(EPlatoonSupportRequestEventType* IconType)
 {
@@ -72,11 +64,7 @@ void UPlatoonCarePackageDropIndicator_C::BP_UpdateIconImage(EPlatoonSupportReque
 // (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UPlatoonCarePackageDropIndicator_C::ExecuteUbergraph_PlatoonCarePackageDropIndicator(int* EntryPoint)
 {

@@ -61,7 +61,6 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	void UpdateWholeDataModelFromStruct(class UStructProperty** Arg);
 	void UpdateWholeDataModelFromObject(class UObject** Model);
 	void TriggerJSEvent(struct FString* Name, class UCoherentUIGTJSEvent** EventData);
@@ -72,18 +71,6 @@ public:
 	void Reload();
 	void Redraw();
 	void Load(struct FString* path);
-=======
-	void UpdateWholeDataModelFromStruct(class UStructProperty* Arg);
-	void UpdateWholeDataModelFromObject(class UObject* Model);
-	void TriggerJSEvent(const struct FString& Name, class UCoherentUIGTJSEvent* EventData);
-	void SynchronizeModels();
-	void ShowPaintRects(bool Show);
-	void SetInputPropagationBehaviour(TEnumAsByte<ECoherentUIGTInputPropagationBehaviour> Propagation);
-	void SetClickThroughAlphaThreshold(float Threshold);
-	void Reload();
-	void Redraw();
-	void Load(const struct FString& path);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	bool IsTransparent();
 	bool IsReadyToCreateView();
 	bool IsReadyForBindings();
@@ -95,13 +82,8 @@ public:
 	void EndDebugFrameSave();
 	void DebugSaveNextFrame();
 	class UCoherentUIGTJSEvent* CreateJSEvent();
-<<<<<<< HEAD
 	void CreateDataModelFromStruct(struct FString* Name, class UStructProperty** Arg);
 	void CreateDataModelFromObject(struct FString* Name, class UObject** Model);
-=======
-	void CreateDataModelFromStruct(const struct FString& Name, class UStructProperty* Arg);
-	void CreateDataModelFromObject(const struct FString& Name, class UObject* Model);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	void BeginDebugFrameSave();
 };
 
@@ -125,19 +107,11 @@ public:
 
 
 // Class CoherentUIGTPlugin.CoherentUIGTSystem
-<<<<<<< HEAD
 // 0x0040 (0x0420 - 0x03E0)
 class ACoherentUIGTSystem : public AActor
 {
 public:
 	unsigned char                                      UnknownData00[0x40];                                      // 0x03E0(0x0040) MISSED OFFSET
-=======
-// 0x0040 (0x0440 - 0x0400)
-class ACoherentUIGTSystem : public AActor
-{
-public:
-	unsigned char                                      UnknownData00[0x40];                                      // 0x0400(0x0040) MISSED OFFSET
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -169,7 +143,6 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	void AddText(struct FText* Text);
 	void AddStructArg(class UStructProperty** Arg);
 	void AddString(struct FString* Str);
@@ -180,18 +153,6 @@ public:
 	void AddByte(unsigned char* byte);
 	void AddBool(bool* B);
 	void AddArray(TArray<int>* Array);
-=======
-	void AddText(const struct FText& Text);
-	void AddStructArg(class UStructProperty* Arg);
-	void AddString(const struct FString& Str);
-	void AddObject(class UObject* Object);
-	void AddName(const struct FName& Name);
-	void AddInt32(int integer);
-	void AddFloat(float FL);
-	void AddByte(unsigned char byte);
-	void AddBool(bool B);
-	void AddArray(TArray<int> Array);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -213,19 +174,11 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	void ReadObject(int* Index, class UObject** Object);
 	struct FString GetString(int* Index);
 	float GetNumber(int* Index);
 	int GetInt32(int* Index);
 	bool GetBool(int* Index);
-=======
-	void ReadObject(int Index, class UObject* Object);
-	struct FString GetString(int Index);
-	float GetNumber(int Index);
-	int GetInt32(int Index);
-	bool GetBool(int Index);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -288,7 +241,6 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	void UpdateWholeDataModelFromStruct(class UStructProperty** Arg);
 	void UpdateWholeDataModelFromObject(class UObject** Model);
 	void TriggerJSEvent(struct FString* Name, class UCoherentUIGTJSEvent** EventData);
@@ -299,18 +251,6 @@ public:
 	void Reload();
 	void Redraw();
 	void Load(struct FString* path);
-=======
-	void UpdateWholeDataModelFromStruct(class UStructProperty* Arg);
-	void UpdateWholeDataModelFromObject(class UObject* Model);
-	void TriggerJSEvent(const struct FString& Name, class UCoherentUIGTJSEvent* EventData);
-	void SynchronizeModels();
-	void ShowPaintRects(bool Show);
-	void SetClickThroughAlphaThreshold(float Threshold);
-	void Resize(int Width, int Height);
-	void Reload();
-	void Redraw();
-	void Load(const struct FString& path);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	bool IsTransparent();
 	bool IsReadyToCreateView();
 	bool IsReadyForBindings();
@@ -318,19 +258,11 @@ public:
 	bool HasRequestedView();
 	float GetClickThroughAlphaThreshold();
 	void EndDebugFrameSave();
-<<<<<<< HEAD
 	void EnableDelayedUpdate(bool* bEnabled);
 	void DebugSaveNextFrame();
 	class UCoherentUIGTJSEvent* CreateJSEvent();
 	void CreateDataModelFromStruct(struct FString* Name, class UStructProperty** Arg);
 	void CreateDataModelFromObject(struct FString* Name, class UObject** Model);
-=======
-	void EnableDelayedUpdate(bool bEnabled);
-	void DebugSaveNextFrame();
-	class UCoherentUIGTJSEvent* CreateJSEvent();
-	void CreateDataModelFromStruct(const struct FString& Name, class UStructProperty* Arg);
-	void CreateDataModelFromObject(const struct FString& Name, class UObject* Model);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	void BeginDebugFrameSave();
 };
 
@@ -399,7 +331,6 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	void STATIC_TriggerJSEvent(class UCoherentUIGTBaseComponent** Component, struct FString* EventName, class UCoherentUIGTJSEvent** JSEvent);
 	void STATIC_SetupLoadingScreen(class UObject** WorldContextObject, struct FCoherentUIGTLoadingScreenSettings* Settings);
 	class UCoherentUIGTJSEvent* STATIC_CreateJSEvent(class UObject** WorldContextObject);
@@ -412,39 +343,16 @@ public:
 	void STATIC_AddBool(class UCoherentUIGTJSEvent** JSEvent, bool* Arg);
 	void STATIC_AddArrayOfStructs(class UCoherentUIGTJSEvent** JSEvent, TArray<int>* Arg);
 	void STATIC_AddArray(class UCoherentUIGTJSEvent** JSEvent, TArray<int>* Arg, int* ArrayType);
-=======
-	void STATIC_TriggerJSEvent(class UCoherentUIGTBaseComponent* Component, const struct FString& EventName, class UCoherentUIGTJSEvent* JSEvent);
-	void STATIC_SetupLoadingScreen(class UObject* WorldContextObject, const struct FCoherentUIGTLoadingScreenSettings& Settings);
-	class UCoherentUIGTJSEvent* STATIC_CreateJSEvent(class UObject* WorldContextObject);
-	void STATIC_AddStructArg(class UCoherentUIGTJSEvent* JSEvent, class UStructProperty* Arg);
-	void STATIC_AddString(class UCoherentUIGTJSEvent* JSEvent, const struct FString& Arg);
-	void STATIC_AddObject(class UCoherentUIGTJSEvent* JSEvent, class UObject* Arg);
-	void STATIC_AddInt32(class UCoherentUIGTJSEvent* JSEvent, int Arg);
-	void STATIC_AddFloat(class UCoherentUIGTJSEvent* JSEvent, float Arg);
-	void STATIC_AddByte(class UCoherentUIGTJSEvent* JSEvent, unsigned char Arg);
-	void STATIC_AddBool(class UCoherentUIGTJSEvent* JSEvent, bool Arg);
-	void STATIC_AddArrayOfStructs(class UCoherentUIGTJSEvent* JSEvent, TArray<int> Arg);
-	void STATIC_AddArray(class UCoherentUIGTJSEvent* JSEvent, TArray<int> Arg, int ArrayType);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
 // Class CoherentUIGTPlugin.CoherentUIGTGameHUD
-<<<<<<< HEAD
 // 0x0098 (0x0560 - 0x04C8)
 class ACoherentUIGTGameHUD : public AHUD
 {
 public:
 	class UCoherentUIGTHUD*                            CoherentUIGTHUD;                                          // 0x04C8(0x0008) (BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x90];                                      // 0x04D0(0x0090) MISSED OFFSET
-=======
-// 0x0098 (0x0580 - 0x04E8)
-class ACoherentUIGTGameHUD : public AHUD
-{
-public:
-	class UCoherentUIGTHUD*                            CoherentUIGTHUD;                                          // 0x04E8(0x0008) (BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x90];                                      // 0x04F0(0x0090) MISSED OFFSET
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -456,17 +364,12 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	void SetupUIGTView(struct FString* PageUrl, bool* bIsTransparent, float* ClickThroughAlphaThreshold, float* AnimationFrameDefer, bool* bDelayedUpdate);
-=======
-	void SetupUIGTView(const struct FString& PageUrl, bool bIsTransparent, float ClickThroughAlphaThreshold, float AnimationFrameDefer, bool bDelayedUpdate);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	bool HasSetupUIGTView();
 };
 
 
 // Class CoherentUIGTPlugin.CoherentUIGTInputActor
-<<<<<<< HEAD
 // 0x0058 (0x0438 - 0x03E0)
 class ACoherentUIGTInputActor : public AActor
 {
@@ -476,17 +379,6 @@ public:
 	struct FScriptMulticastDelegate                    OnCoherentUIGTInputActorKeyDown;                          // 0x0400(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnCoherentUIGTInputActorKeyUp;                            // 0x0410(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
 	unsigned char                                      UnknownData00[0x18];                                      // 0x0420(0x0018) MISSED OFFSET
-=======
-// 0x0058 (0x0458 - 0x0400)
-class ACoherentUIGTInputActor : public AActor
-{
-public:
-	struct FScriptMulticastDelegate                    OnCoherentUIGTInputActorMouseButtonDown;                  // 0x0400(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnCoherentUIGTInputActorMouseButtonUp;                    // 0x0410(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnCoherentUIGTInputActorKeyDown;                          // 0x0420(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnCoherentUIGTInputActorKeyUp;                            // 0x0430(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData00[0x18];                                      // 0x0440(0x0018) MISSED OFFSET
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -499,7 +391,6 @@ public:
 
 
 	void ToggleCoherentUIGTInputFocus();
-<<<<<<< HEAD
 	void SetLineTraceMode(TEnumAsByte<EGTInputWidgetLineTraceMode>* Mode);
 	void SetInputPropagationBehaviour(TEnumAsByte<ECoherentUIGTInputPropagationBehaviour>* Propagation);
 	void SetCoherentUIGTViewFocus(class UCoherentUIGTBaseComponent** NewFocusedView);
@@ -510,18 +401,6 @@ public:
 	TEnumAsByte<ECoherentUIGTInputPropagationBehaviour> GetInputPropagationBehaviour();
 	void AlwaysAcceptMouseInput(bool* bAccept);
 	void AllowJoystickInputWhileUIGTIsFocused_DEPRECATED(bool* bAllow);
-=======
-	void SetLineTraceMode(TEnumAsByte<EGTInputWidgetLineTraceMode> Mode);
-	void SetInputPropagationBehaviour(TEnumAsByte<ECoherentUIGTInputPropagationBehaviour> Propagation);
-	void SetCoherentUIGTViewFocus(class UCoherentUIGTBaseComponent* NewFocusedView);
-	void SetCoherentUIGTInputFocus(bool FocusUI);
-	bool IsJoystickInputWhileUIGTIsFocusedAllowed_DEPRECATED();
-	bool IsCoherentUIGTFocused();
-	void Initialize(TEnumAsByte<ECollisionChannel> CollisionChannel, TEnumAsByte<ETextureAddress> AddressMode, TEnumAsByte<EGTInputWidgetRaycastQuality> RaycastQuality, int UVChannel);
-	TEnumAsByte<ECoherentUIGTInputPropagationBehaviour> GetInputPropagationBehaviour();
-	void AlwaysAcceptMouseInput(bool bAccept);
-	void AllowJoystickInputWhileUIGTIsFocused_DEPRECATED(bool bAllow);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -544,11 +423,7 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	void OnLiveViewSizeRequest(class UCoherentUIGTBaseComponent** baseComponent, struct FString* Name, int* Width, int* Height);
-=======
-	void OnLiveViewSizeRequest(class UCoherentUIGTBaseComponent* baseComponent, const struct FString& Name, int* Width, int* Height);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

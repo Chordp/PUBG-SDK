@@ -80,11 +80,7 @@ struct UPopupWidgetForReplay_C_HideMyself__DelegateSignature_Params
 // Function PopupWidgetForReplay.PopupWidgetForReplay_C.ButtonClickDispatcher__DelegateSignature
 struct UPopupWidgetForReplay_C_ButtonClickDispatcher__DelegateSignature_Params
 {
-<<<<<<< HEAD
 	EPopupButtonID*                                    NewParam;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-=======
-	EPopupButtonID                                     NewParam;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 }

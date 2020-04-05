@@ -51,13 +51,8 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	void OnMatchReceivedTurn(struct FString* Match, bool* bDidBecomeActive);
 	void OnMatchEnded(struct FString* Match);
-=======
-	void OnMatchReceivedTurn(const struct FString& Match, bool bDidBecomeActive);
-	void OnMatchEnded(const struct FString& Match);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

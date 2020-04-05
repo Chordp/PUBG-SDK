@@ -7,15 +7,9 @@
 #endif
 
 #include "PUBG_Basic.hpp"
-<<<<<<< HEAD
-#include "PUBG_Engine_classes.hpp"
-#include "PUBG_BP_MasteryPose_classes.hpp"
-#include "PUBG_PoseCharacterAttachments_classes.hpp"
-=======
-#include "PUBG_PoseCharacterAttachments_classes.hpp"
 #include "PUBG_BP_MasteryPose_classes.hpp"
 #include "PUBG_Engine_classes.hpp"
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
+#include "PUBG_PoseCharacterAttachments_classes.hpp"
 
 namespace SDK
 {

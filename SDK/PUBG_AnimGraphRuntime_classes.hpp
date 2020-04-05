@@ -86,13 +86,8 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	void STATIC_K2_TwoBoneIK(struct FVector* RootPos, struct FVector* JointPos, struct FVector* EndPos, struct FVector* JointTarget, struct FVector* Effector, bool* bAllowStretching, float* StartStretchRatio, float* MaxStretchScale, struct FVector* OutJointPos, struct FVector* OutEndPos);
 	struct FTransform STATIC_K2_LookAt(struct FTransform* CurrentTransform, struct FVector* TargetPosition, struct FVector* LookAtVector, bool* bUseUpVector, struct FVector* UpVector, float* ClampConeInDegree);
-=======
-	void STATIC_K2_TwoBoneIK(const struct FVector& RootPos, const struct FVector& JointPos, const struct FVector& EndPos, const struct FVector& JointTarget, const struct FVector& Effector, bool bAllowStretching, float StartStretchRatio, float MaxStretchScale, struct FVector* OutJointPos, struct FVector* OutEndPos);
-	struct FTransform STATIC_K2_LookAt(const struct FTransform& CurrentTransform, const struct FVector& TargetPosition, const struct FVector& LookAtVector, bool bUseUpVector, const struct FVector& UpVector, float ClampConeInDegree);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -118,19 +113,11 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	void OnNotifyEndReceived(struct FName* NotifyName, struct FBranchingPointNotifyPayload* BranchingPointNotifyPayload);
 	void OnNotifyBeginReceived(struct FName* NotifyName, struct FBranchingPointNotifyPayload* BranchingPointNotifyPayload);
 	void OnMontageEnded(class UAnimMontage** Montage, bool* bInterrupted);
 	void OnMontageBlendingOut(class UAnimMontage** Montage, bool* bInterrupted);
 	class UPlayMontageCallbackProxy* STATIC_CreateProxyObjectForPlayMontage(class USkeletalMeshComponent** InSkeletalMeshComponent, class UAnimMontage** MontageToPlay, float* PlayRate, float* StartingPosition, struct FName* StartingSection);
-=======
-	void OnNotifyEndReceived(const struct FName& NotifyName, const struct FBranchingPointNotifyPayload& BranchingPointNotifyPayload);
-	void OnNotifyBeginReceived(const struct FName& NotifyName, const struct FBranchingPointNotifyPayload& BranchingPointNotifyPayload);
-	void OnMontageEnded(class UAnimMontage* Montage, bool bInterrupted);
-	void OnMontageBlendingOut(class UAnimMontage* Montage, bool bInterrupted);
-	class UPlayMontageCallbackProxy* STATIC_CreateProxyObjectForPlayMontage(class USkeletalMeshComponent* InSkeletalMeshComponent, class UAnimMontage* MontageToPlay, float PlayRate, float StartingPosition, const struct FName& StartingSection);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

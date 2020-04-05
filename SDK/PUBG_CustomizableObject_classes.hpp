@@ -35,11 +35,7 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	void UpdateSkeletalMeshAsync(bool* bNeverSkipUpdate);
-=======
-	void UpdateSkeletalMeshAsync(bool bNeverSkipUpdate);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -75,7 +71,6 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	void UpdateSkeletalMeshAsync(bool* bIgnoreCloseDist, bool* bForceHighPriority);
 	void SetVectorParameterSelectedOption(struct FString* VectorParamName, struct FLinearColor* VectorValue);
 	void SetRandomValues();
@@ -97,29 +92,6 @@ public:
 	int FindIntParameterNameIndex(struct FString* ParamName);
 	int FindFloatParameterNameIndex(struct FString* ParamName);
 	int FindBoolParameterNameIndex(struct FString* ParamName);
-=======
-	void UpdateSkeletalMeshAsync(bool bIgnoreCloseDist, bool bForceHighPriority);
-	void SetVectorParameterSelectedOption(const struct FString& VectorParamName, const struct FLinearColor& VectorValue);
-	void SetRandomValues();
-	void SetProjectorValue(const struct FString& ProjectorParamName, float posX, float posY, float posZ, float dirX, float dirY, float dirZ, float upX, float upY, float upZ, float ScaleX, float ScaleY, float ScaleZ, float Angle, ECustomizableObjectProjectorType ProjectionType);
-	void SetProjectorParameterType(const struct FString& ParamName, ECustomizableObjectProjectorType Type);
-	void SetIntParameterSelectedOption(const struct FString& ParamName, const struct FString& SelectedOptionName);
-	void SetFloatParameterSelectedOption(const struct FString& FloatParamName, float FloatValue);
-	void SetCurrentState(const struct FString& StateName);
-	void SetBoolParameterSelectedOption(const struct FString& BoolParamName, bool boolValue);
-	bool IsParameterRelevant(const struct FString& ParamName);
-	ECustomizableObjectProjectorType GetProjectorParameterType(const struct FString& ParamName);
-	class UTexture2D* GetParameterDescription(const struct FString& ParamName, int DescIndex);
-	struct FString GetIntParameterSelectedOption(const struct FString& ParamName);
-	float GetFloatParameterSelectedOption(const struct FString& FloatParamName);
-	struct FString GetCurrentState();
-	bool GetBoolParameterSelectedOption(const struct FString& BoolParamName);
-	int FindVectorParameterNameIndex(const struct FString& ParamName);
-	int FindProjectorParameterNameIndex(const struct FString& ParamName);
-	int FindIntParameterNameIndex(const struct FString& ParamName);
-	int FindFloatParameterNameIndex(const struct FString& ParamName);
-	int FindBoolParameterNameIndex(const struct FString& ParamName);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -186,7 +158,6 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	struct FParameterUIData GetStateUIMetadataFromIndex(int* StateIndex);
 	struct FParameterUIData GetStateUIMetadata(struct FString* StateName);
 	struct FString GetStateParameterName(struct FString* StateName, int* ParameterIndex);
@@ -203,24 +174,6 @@ public:
 	int GetIntParameterNumOptions(int* ParamIndex);
 	struct FString GetIntParameterAvailableOption(int* ParamIndex, int* K);
 	int FindParameter(struct FString* Name);
-=======
-	struct FParameterUIData GetStateUIMetadataFromIndex(int StateIndex);
-	struct FParameterUIData GetStateUIMetadata(const struct FString& StateName);
-	struct FString GetStateParameterName(const struct FString& StateName, int ParameterIndex);
-	int GetStateParameterCount(const struct FString& StateName);
-	struct FString GetStateName(int StateIndex);
-	int GetStateCount();
-	struct FParameterUIData GetParameterUIMetadataFromIndex(int ParamIndex);
-	struct FParameterUIData GetParameterUIMetadata(const struct FString& ParamName);
-	EMutableParameterType GetParameterTypeByName(const struct FString& Name);
-	EMutableParameterType GetParameterType(int ParamIndex);
-	struct FString GetParameterName(int ParamIndex);
-	int GetParameterDescriptionCount(const struct FString& ParamName);
-	int GetParameterCount();
-	int GetIntParameterNumOptions(int ParamIndex);
-	struct FString GetIntParameterAvailableOption(int ParamIndex, int K);
-	int FindParameter(const struct FString& Name);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

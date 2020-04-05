@@ -15,7 +15,6 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Class PrefabAsset.PrefabActor
-<<<<<<< HEAD
 // 0x0028 (0x0408 - 0x03E0)
 class APrefabActor : public AActor
 {
@@ -23,14 +22,6 @@ public:
 	class UPrefabComponent*                            PrefabComponent;                                          // 0x03E0(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
 	struct FText                                       BackupPrefabCopyData;                                     // 0x03E8(0x0018) (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, EditConst)
 	class ULODParentComponent*                         BuildingHLOD;                                             // 0x0400(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, DisableEditOnTemplate, InstancedReference, IsPlainOldData)
-=======
-// 0x0010 (0x0410 - 0x0400)
-class APrefabActor : public AActor
-{
-public:
-	class UPrefabComponent*                            PrefabComponent;                                          // 0x0400(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
-	class ULODParentComponent*                         BuildingHLOD;                                             // 0x0408(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, DisableEditOnTemplate, InstancedReference, IsPlainOldData)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -42,26 +33,15 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	void SetPrefab(class UPrefabAsset** NewPrefab, bool* bForceRevertEvenDisconnected);
 	void SetMobility(TEnumAsByte<EComponentMobility>* InMobility);
 	class UPrefabAsset* GetPrefab();
 	void DestroyPrefabActor(bool* bDestroyAttachedChildren);
-=======
-	void SetPrefab(class UPrefabAsset* NewPrefab, bool bForceRevertEvenDisconnected);
-	void SetMobility(TEnumAsByte<EComponentMobility> InMobility);
-	class UPrefabAsset* GetPrefab();
-	void DestroyPrefabActor(bool bDestroyAttachedChildren);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
 // Class PrefabAsset.PrefabActorHolder
-<<<<<<< HEAD
 // 0x0000 (0x03E0 - 0x03E0)
-=======
-// 0x0000 (0x0400 - 0x0400)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 class APrefabActorHolder : public AActor
 {
 public:
@@ -79,21 +59,12 @@ public:
 
 
 // Class PrefabAsset.PrefabLODHolder
-<<<<<<< HEAD
 // 0x0010 (0x03F0 - 0x03E0)
 class APrefabLODHolder : public APrefabActorHolder
 {
 public:
 	class ULODParentComponent*                         HLODParentComponent;                                      // 0x03E0(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData)
 	class UStaticMesh*                                 LevelLODMesh;                                             // 0x03E8(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-=======
-// 0x0010 (0x0410 - 0x0400)
-class APrefabLODHolder : public APrefabActorHolder
-{
-public:
-	class ULODParentComponent*                         HLODParentComponent;                                      // 0x0400(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData)
-	class UStaticMesh*                                 LevelLODMesh;                                             // 0x0408(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{

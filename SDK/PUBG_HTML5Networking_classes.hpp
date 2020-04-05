@@ -34,21 +34,12 @@ public:
 
 
 // Class HTML5Networking.WebSocketNetDriver
-<<<<<<< HEAD
 // 0x0010 (0x04C0 - 0x04B0)
 class UWebSocketNetDriver : public UNetDriver
 {
 public:
 	int                                                WebSocketPort;                                            // 0x04B0(0x0004) (ZeroConstructor, Config, IsPlainOldData)
 	unsigned char                                      UnknownData00[0xC];                                       // 0x04B4(0x000C) MISSED OFFSET
-=======
-// 0x0010 (0x0470 - 0x0460)
-class UWebSocketNetDriver : public UNetDriver
-{
-public:
-	int                                                WebSocketPort;                                            // 0x0460(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	unsigned char                                      UnknownData00[0xC];                                       // 0x0464(0x000C) MISSED OFFSET
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{

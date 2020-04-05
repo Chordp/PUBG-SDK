@@ -17,11 +17,7 @@ namespace SDK
 // Parameters:
 // bool                           IsCarePackageComing            (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // bool                           IsVehicleComing                (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UBP_FlaregunUiWidget_C::IsCarePackageComming(bool* IsCarePackageComing, bool* IsVehicleComing)
 {
@@ -49,11 +45,7 @@ void UBP_FlaregunUiWidget_C::IsCarePackageComming(bool* IsCarePackageComing, boo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool*                          bShow                          (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UBP_FlaregunUiWidget_C::ShowTitle(bool* bShow)
 {
@@ -77,11 +69,7 @@ void UBP_FlaregunUiWidget_C::ShowTitle(bool* bShow)
 // (Protected, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // bool                           IsIn                           (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UBP_FlaregunUiWidget_C::IsCharacterInWhiteZone(bool* IsIn)
 {
@@ -109,11 +97,7 @@ void UBP_FlaregunUiWidget_C::IsCharacterInWhiteZone(bool* IsIn)
 // int*                           NumVehicle                     (Parm, ZeroConstructor, IsPlainOldData)
 // bool*                          CanFire                        (Parm, ZeroConstructor, IsPlainOldData)
 // bool*                          WaitingMine                    (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UBP_FlaregunUiWidget_C::SetVehicleNumber(int* NumVehicle, bool* CanFire, bool* WaitingMine)
 {
@@ -141,11 +125,7 @@ void UBP_FlaregunUiWidget_C::SetVehicleNumber(int* NumVehicle, bool* CanFire, bo
 // int*                           NumPackage                     (Parm, ZeroConstructor, IsPlainOldData)
 // bool*                          CanFire                        (Parm, ZeroConstructor, IsPlainOldData)
 // bool*                          WaitingMine                    (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UBP_FlaregunUiWidget_C::SetPackageNumber(int* NumPackage, bool* CanFire, bool* WaitingMine)
 {
@@ -172,11 +152,7 @@ void UBP_FlaregunUiWidget_C::SetPackageNumber(int* NumPackage, bool* CanFire, bo
 // Parameters:
 // struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
 // float*                         InDeltaTime                    (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UBP_FlaregunUiWidget_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
@@ -201,11 +177,7 @@ void UBP_FlaregunUiWidget_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTi
 // (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UBP_FlaregunUiWidget_C::ExecuteUbergraph_BP_FlaregunUiWidget(int* EntryPoint)
 {

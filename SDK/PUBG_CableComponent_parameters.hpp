@@ -17,15 +17,9 @@ namespace SDK
 // Function CableComponent.CableComponent.SetAttachEndTo
 struct UCableComponent_SetAttachEndTo_Params
 {
-<<<<<<< HEAD
 	class AActor**                                     Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FName*                                      ComponentProperty;                                        // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FName*                                      SocketName;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-=======
-	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FName                                       ComponentProperty;                                        // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FName                                       SocketName;                                               // (Parm, ZeroConstructor, IsPlainOldData)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function CableComponent.CableComponent.GetCableParticleLocations

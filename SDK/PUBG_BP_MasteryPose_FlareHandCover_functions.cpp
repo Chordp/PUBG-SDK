@@ -14,11 +14,7 @@ namespace SDK
 
 // Function BP_MasteryPose_FlareHandCover.BP_MasteryPose_FlareHandCover_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ABP_MasteryPose_FlareHandCover_C::UserConstructionScript()
 {
@@ -41,11 +37,7 @@ void ABP_MasteryPose_FlareHandCover_C::UserConstructionScript()
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ACharacter**             LobbyCharacter                 (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ABP_MasteryPose_FlareHandCover_C::AttachObjects(class ACharacter** LobbyCharacter)
 {
@@ -69,11 +61,7 @@ void ABP_MasteryPose_FlareHandCover_C::AttachObjects(class ACharacter** LobbyCha
 // (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ABP_MasteryPose_FlareHandCover_C::ExecuteUbergraph_BP_MasteryPose_FlareHandCover(int* EntryPoint)
 {

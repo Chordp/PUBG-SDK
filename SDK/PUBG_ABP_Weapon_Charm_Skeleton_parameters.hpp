@@ -27,11 +27,7 @@ struct UABP_Weapon_Charm_Skeleton_C_EvaluateGraphExposedInputs_ExecuteUbergraph_
 // Function ABP_Weapon_Charm_Skeleton.ABP_Weapon_Charm_Skeleton_C.ExecuteUbergraph_ABP_Weapon_Charm_Skeleton
 struct UABP_Weapon_Charm_Skeleton_C_ExecuteUbergraph_ABP_Weapon_Charm_Skeleton_Params
 {
-<<<<<<< HEAD
 	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-=======
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 }

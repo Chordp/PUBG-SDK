@@ -15,21 +15,12 @@ namespace SDK
 // Function MobilePatchingUtils.MobileInstalledContent.Mount
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // int*                           PakOrder                       (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString*                MountPoint                     (Parm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF71C8B9290              		 offset:4ae9290                       
 
 bool UMobileInstalledContent::Mount(int* PakOrder, struct FString* MountPoint)
-=======
-// int                            PakOrder                       (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 MountPoint                     (Parm, ZeroConstructor)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAEACE50              		 offset:44ece50                       
-
-bool UMobileInstalledContent::Mount(int PakOrder, const struct FString& MountPoint)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -55,11 +46,7 @@ bool UMobileInstalledContent::Mount(int PakOrder, const struct FString& MountPoi
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8B9110              		 offset:4ae9110                       
-=======
-// FunctionAddress:0x00007FF6DAEACCD0              		 offset:44eccd0                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 float UMobileInstalledContent::GetInstalledContentSize()
 {
@@ -85,11 +72,7 @@ float UMobileInstalledContent::GetInstalledContentSize()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8B8F20              		 offset:4ae8f20                       
-=======
-// FunctionAddress:0x00007FF6DAEACAE0              		 offset:44ecae0                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 float UMobileInstalledContent::GetDiskFreeSpace()
 {
@@ -114,19 +97,11 @@ float UMobileInstalledContent::GetDiskFreeSpace()
 // Function MobilePatchingUtils.MobilePendingContent.StartInstall
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FScriptDelegate*        OnSucceeded                    (Parm, ZeroConstructor)
 // struct FScriptDelegate*        OnFailed                       (Parm, ZeroConstructor)
 // FunctionAddress:0x00007FF71C8B9580              		 offset:4ae9580                       
 
 void UMobilePendingContent::StartInstall(struct FScriptDelegate* OnSucceeded, struct FScriptDelegate* OnFailed)
-=======
-// struct FScriptDelegate         OnSucceeded                    (Parm, ZeroConstructor)
-// struct FScriptDelegate         OnFailed                       (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF6DAEAD140              		 offset:44ed140                       
-
-void UMobilePendingContent::StartInstall(const struct FScriptDelegate& OnSucceeded, const struct FScriptDelegate& OnFailed)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -150,11 +125,7 @@ void UMobilePendingContent::StartInstall(const struct FScriptDelegate& OnSucceed
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8B9260              		 offset:4ae9260                       
-=======
-// FunctionAddress:0x00007FF6DAEACE20              		 offset:44ece20                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 float UMobilePendingContent::GetTotalDownloadedSize()
 {
@@ -180,11 +151,7 @@ float UMobilePendingContent::GetTotalDownloadedSize()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8B9140              		 offset:4ae9140                       
-=======
-// FunctionAddress:0x00007FF6DAEACD00              		 offset:44ecd00                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 float UMobilePendingContent::GetRequiredDiskSpace()
 {
@@ -210,11 +177,7 @@ float UMobilePendingContent::GetRequiredDiskSpace()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8B9040              		 offset:4ae9040                       
-=======
-// FunctionAddress:0x00007FF6DAEACC00              		 offset:44ecc00                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 float UMobilePendingContent::GetInstallProgress()
 {
@@ -240,11 +203,7 @@ float UMobilePendingContent::GetInstallProgress()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // struct FText                   ReturnValue                    (Parm, OutParm, ReturnParm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8B8FB0              		 offset:4ae8fb0                       
-=======
-// FunctionAddress:0x00007FF6DAEACB70              		 offset:44ecb70                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 struct FText UMobilePendingContent::GetDownloadStatusText()
 {
@@ -270,11 +229,7 @@ struct FText UMobilePendingContent::GetDownloadStatusText()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8B8F80              		 offset:4ae8f80                       
-=======
-// FunctionAddress:0x00007FF6DAEACB40              		 offset:44ecb40                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 float UMobilePendingContent::GetDownloadSpeed()
 {
@@ -300,11 +255,7 @@ float UMobilePendingContent::GetDownloadSpeed()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8B8F50              		 offset:4ae8f50                       
-=======
-// FunctionAddress:0x00007FF6DAEACB10              		 offset:44ecb10                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 float UMobilePendingContent::GetDownloadSize()
 {
@@ -329,7 +280,6 @@ float UMobilePendingContent::GetDownloadSize()
 // Function MobilePatchingUtils.MobilePatchingLibrary.RequestContent
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                RemoteManifestURL              (Parm, ZeroConstructor)
 // struct FString*                CloudURL                       (Parm, ZeroConstructor)
 // struct FString*                InstallDirectory               (Parm, ZeroConstructor)
@@ -338,16 +288,6 @@ float UMobilePendingContent::GetDownloadSize()
 // FunctionAddress:0x00007FF71C8B9380              		 offset:4ae9380                       
 
 void UMobilePatchingLibrary::STATIC_RequestContent(struct FString* RemoteManifestURL, struct FString* CloudURL, struct FString* InstallDirectory, struct FScriptDelegate* OnSucceeded, struct FScriptDelegate* OnFailed)
-=======
-// struct FString                 RemoteManifestURL              (Parm, ZeroConstructor)
-// struct FString                 CloudURL                       (Parm, ZeroConstructor)
-// struct FString                 InstallDirectory               (Parm, ZeroConstructor)
-// struct FScriptDelegate         OnSucceeded                    (Parm, ZeroConstructor)
-// struct FScriptDelegate         OnFailed                       (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF6DAEACF40              		 offset:44ecf40                       
-
-void UMobilePatchingLibrary::STATIC_RequestContent(const struct FString& RemoteManifestURL, const struct FString& CloudURL, const struct FString& InstallDirectory, const struct FScriptDelegate& OnSucceeded, const struct FScriptDelegate& OnFailed)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -374,11 +314,7 @@ void UMobilePatchingLibrary::STATIC_RequestContent(const struct FString& RemoteM
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71B890420              		 offset:3ac0420                       
-=======
-// FunctionAddress:0x00007FF6D87FA270              		 offset:1e3a270                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 bool UMobilePatchingLibrary::STATIC_HasActiveWiFiConnection()
 {
@@ -404,11 +340,7 @@ bool UMobilePatchingLibrary::STATIC_HasActiveWiFiConnection()
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // TArray<struct FString>         ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8B9170              		 offset:4ae9170                       
-=======
-// FunctionAddress:0x00007FF6DAEACD30              		 offset:44ecd30                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 TArray<struct FString> UMobilePatchingLibrary::STATIC_GetSupportedPlatformNames()
 {
@@ -433,19 +365,11 @@ TArray<struct FString> UMobilePatchingLibrary::STATIC_GetSupportedPlatformNames(
 // Function MobilePatchingUtils.MobilePatchingLibrary.GetInstalledContent
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                InstallDirectory               (Parm, ZeroConstructor)
 // class UMobileInstalledContent* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF71C8B9070              		 offset:4ae9070                       
 
 class UMobileInstalledContent* UMobilePatchingLibrary::STATIC_GetInstalledContent(struct FString* InstallDirectory)
-=======
-// struct FString                 InstallDirectory               (Parm, ZeroConstructor)
-// class UMobileInstalledContent* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAEACC30              		 offset:44ecc30                       
-
-class UMobileInstalledContent* UMobilePatchingLibrary::STATIC_GetInstalledContent(const struct FString& InstallDirectory)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -470,11 +394,7 @@ class UMobileInstalledContent* UMobilePatchingLibrary::STATIC_GetInstalledConten
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8B8E90              		 offset:4ae8e90                       
-=======
-// FunctionAddress:0x00007FF6DAEACA50              		 offset:44eca50                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 struct FString UMobilePatchingLibrary::STATIC_GetActiveDeviceProfileName()
 {

@@ -27,11 +27,7 @@ struct ABuff_DecreaseBreathInHolding_C_TickBuff_Params
 // Function Buff_DecreaseBreathInHolding.Buff_DecreaseBreathInHolding_C.ExecuteUbergraph_Buff_DecreaseBreathInHolding
 struct ABuff_DecreaseBreathInHolding_C_ExecuteUbergraph_Buff_DecreaseBreathInHolding_Params
 {
-<<<<<<< HEAD
 	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-=======
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 }

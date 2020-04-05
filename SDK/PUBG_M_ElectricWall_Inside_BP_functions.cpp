@@ -14,11 +14,7 @@ namespace SDK
 
 // Function M_ElectricWall_Inside_BP.M_ElectricWall_Inside_BP_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AM_ElectricWall_Inside_BP_C::UserConstructionScript()
 {
@@ -39,11 +35,7 @@ void AM_ElectricWall_Inside_BP_C::UserConstructionScript()
 
 // Function M_ElectricWall_Inside_BP.M_ElectricWall_Inside_BP_C.АР„З|·xЗ_
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AM_ElectricWall_Inside_BP_C::АР„З|·xЗ_()
 {
@@ -64,11 +56,7 @@ void AM_ElectricWall_Inside_BP_C::АР„З|·xЗ_()
 
 // Function M_ElectricWall_Inside_BP.M_ElectricWall_Inside_BP_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AM_ElectricWall_Inside_BP_C::ReceiveBeginPlay()
 {
@@ -89,11 +77,7 @@ void AM_ElectricWall_Inside_BP_C::ReceiveBeginPlay()
 
 // Function M_ElectricWall_Inside_BP.M_ElectricWall_Inside_BP_C.Custom Event
 // (BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AM_ElectricWall_Inside_BP_C::Custom_Event()
 {
@@ -115,19 +99,11 @@ void AM_ElectricWall_Inside_BP_C::Custom_Event()
 // Function M_ElectricWall_Inside_BP.M_ElectricWall_Inside_BP_C.OnSetEffectParameter
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                ParameterName                  (Parm, ZeroConstructor)
 // float*                         Value                          (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void AM_ElectricWall_Inside_BP_C::OnSetEffectParameter(struct FString* ParameterName, float* Value)
-=======
-// struct FString                 ParameterName                  (Parm, ZeroConstructor)
-// float                          Value                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
-
-void AM_ElectricWall_Inside_BP_C::OnSetEffectParameter(const struct FString& ParameterName, float Value)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -149,17 +125,10 @@ void AM_ElectricWall_Inside_BP_C::OnSetEffectParameter(const struct FString& Par
 // Function M_ElectricWall_Inside_BP.M_ElectricWall_Inside_BP_C.ExecuteUbergraph_M_ElectricWall_Inside_BP
 // (HasDefaults)
 // Parameters:
-<<<<<<< HEAD
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void AM_ElectricWall_Inside_BP_C::ExecuteUbergraph_M_ElectricWall_Inside_BP(int* EntryPoint)
-=======
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
-
-void AM_ElectricWall_Inside_BP_C::ExecuteUbergraph_M_ElectricWall_Inside_BP(int EntryPoint)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 

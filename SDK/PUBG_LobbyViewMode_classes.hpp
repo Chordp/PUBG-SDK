@@ -15,7 +15,6 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass LobbyViewMode.LobbyViewMode_C
-<<<<<<< HEAD
 // 0x00C0 (0x0500 - 0x0440)
 class ALobbyViewMode_C : public AViewModeStudio
 {
@@ -28,20 +27,6 @@ public:
 	struct FTransform                                  CurrentTM;                                                // 0x0470(0x0030) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
 	struct FTransform                                  NextTM;                                                   // 0x04A0(0x0030) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
 	struct FTransform                                  Temp;                                                     // 0x04D0(0x0030) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
-=======
-// 0x00C0 (0x0520 - 0x0460)
-class ALobbyViewMode_C : public AViewModeStudio
-{
-public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x0460(0x0008) (Transient, DuplicateTransient)
-	class USceneComponent*                             Scene;                                                    // 0x0468(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	struct FRotator                                    Target;                                                   // 0x0470(0x000C) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
-	struct FRotator                                    Rollback;                                                 // 0x047C(0x000C) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0488(0x0008) MISSED OFFSET
-	struct FTransform                                  CurrentTM;                                                // 0x0490(0x0030) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
-	struct FTransform                                  NextTM;                                                   // 0x04C0(0x0030) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
-	struct FTransform                                  Temp;                                                     // 0x04F0(0x0030) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{

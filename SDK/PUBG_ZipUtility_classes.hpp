@@ -30,19 +30,11 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	void OnStartProcess(struct FString* archive, int* bytes);
 	void OnProgress(struct FString* archive, float* Percentage, int* bytes);
 	void OnFileFound(struct FString* archive, struct FString* file, int* Size);
 	void OnFileDone(struct FString* archive, struct FString* file);
 	void OnDone(struct FString* archive, TEnumAsByte<EZipUtilityCompletionState>* CompletionState);
-=======
-	void OnStartProcess(const struct FString& archive, int bytes);
-	void OnProgress(const struct FString& archive, float Percentage, int bytes);
-	void OnFileFound(const struct FString& archive, const struct FString& file, int Size);
-	void OnFileDone(const struct FString& archive, const struct FString& file);
-	void OnDone(const struct FString& archive, TEnumAsByte<EZipUtilityCompletionState> CompletionState);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -92,7 +84,6 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	bool STATIC_Zip(struct FString* FileOrFolderPath, class UObject** ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat>* Format, TEnumAsByte<EZipUtilityCompressionLevel>* Level);
 	bool STATIC_UnzipTo(struct FString* ArchivePath, struct FString* destinationPath, class UObject** ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat>* Format);
 	bool STATIC_UnzipFilesTo(TArray<int>* fileIndices, struct FString* ArchivePath, struct FString* destinationPath, class UObject** ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat>* Format);
@@ -101,16 +92,6 @@ public:
 	bool STATIC_UnzipFileNamed(struct FString* ArchivePath, struct FString* Name, class UObject** ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat>* Format);
 	bool STATIC_Unzip(struct FString* ArchivePath, class UObject** ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat>* Format);
 	bool STATIC_ListFilesInArchive(struct FString* ArchivePath, class UObject** ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat>* Format);
-=======
-	bool STATIC_Zip(const struct FString& FileOrFolderPath, class UObject* ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat> Format, TEnumAsByte<EZipUtilityCompressionLevel> Level);
-	bool STATIC_UnzipTo(const struct FString& ArchivePath, const struct FString& destinationPath, class UObject* ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat> Format);
-	bool STATIC_UnzipFilesTo(TArray<int> fileIndices, const struct FString& ArchivePath, const struct FString& destinationPath, class UObject* ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat> Format);
-	bool STATIC_UnzipFiles(TArray<int> fileIndices, const struct FString& ArchivePath, class UObject* ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat> Format);
-	bool STATIC_UnzipFileNamedTo(const struct FString& ArchivePath, const struct FString& Name, const struct FString& destinationPath, class UObject* ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat> Format);
-	bool STATIC_UnzipFileNamed(const struct FString& ArchivePath, const struct FString& Name, class UObject* ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat> Format);
-	bool STATIC_Unzip(const struct FString& ArchivePath, class UObject* ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat> Format);
-	bool STATIC_ListFilesInArchive(const struct FString& ArchivePath, class UObject* ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat> Format);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

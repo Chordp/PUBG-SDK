@@ -14,11 +14,7 @@ namespace SDK
 
 // Function PlayerCardStudioV2_Default.PlayerCardStudioV2_Default_C.UserConstructionScript
 // (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void APlayerCardStudioV2_Default_C::UserConstructionScript()
 {
@@ -39,11 +35,7 @@ void APlayerCardStudioV2_Default_C::UserConstructionScript()
 
 // Function PlayerCardStudioV2_Default.PlayerCardStudioV2_Default_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void APlayerCardStudioV2_Default_C::ReceiveBeginPlay()
 {
@@ -64,11 +56,7 @@ void APlayerCardStudioV2_Default_C::ReceiveBeginPlay()
 
 // Function PlayerCardStudioV2_Default.PlayerCardStudioV2_Default_C.ReceiveDestroyed
 // (Event, Public, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void APlayerCardStudioV2_Default_C::ReceiveDestroyed()
 {
@@ -91,11 +79,7 @@ void APlayerCardStudioV2_Default_C::ReceiveDestroyed()
 // ()
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void APlayerCardStudioV2_Default_C::ExecuteUbergraph_PlayerCardStudioV2_Default(int* EntryPoint)
 {

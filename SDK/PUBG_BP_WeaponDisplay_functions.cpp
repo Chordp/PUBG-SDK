@@ -14,11 +14,7 @@ namespace SDK
 
 // Function BP_WeaponDisplay.BP_WeaponDisplay_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ABP_WeaponDisplay_C::UserConstructionScript()
 {
@@ -41,11 +37,7 @@ void ABP_WeaponDisplay_C::UserConstructionScript()
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool*                          indexMatch                     (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ABP_WeaponDisplay_C::AddStaticMeshAsyncEvent(bool* indexMatch)
 {
@@ -69,11 +61,7 @@ void ABP_WeaponDisplay_C::AddStaticMeshAsyncEvent(bool* indexMatch)
 // (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ABP_WeaponDisplay_C::ExecuteUbergraph_BP_WeaponDisplay(int* EntryPoint)
 {

@@ -15,7 +15,6 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_TslBaseLobbySceneTravel_CameraMove.BP_TslBaseLobbySceneTravel_CameraMove_C
-<<<<<<< HEAD
 // 0x0020 (0x0490 - 0x0470)
 class ABP_TslBaseLobbySceneTravel_CameraMove_C : public ATslBaseLobbySceneTravel
 {
@@ -26,18 +25,6 @@ public:
 	TEnumAsByte<ETimelineDirection>                    CameraMove__Direction_5540DD1349359D05D9E53CACA6BBFA89;   // 0x0484(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0485(0x0003) MISSED OFFSET
 	class UTimelineComponent*                          CameraMove;                                               // 0x0488(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-=======
-// 0x0020 (0x04B0 - 0x0490)
-class ABP_TslBaseLobbySceneTravel_CameraMove_C : public ATslBaseLobbySceneTravel
-{
-public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x0490(0x0008) (Transient, DuplicateTransient)
-	class USceneComponent*                             DefaultSceneRoot;                                         // 0x0498(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              CameraMove_Value_5540DD1349359D05D9E53CACA6BBFA89;        // 0x04A0(0x0004) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ETimelineDirection>                    CameraMove__Direction_5540DD1349359D05D9E53CACA6BBFA89;   // 0x04A4(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x04A5(0x0003) MISSED OFFSET
-	class UTimelineComponent*                          CameraMove;                                               // 0x04A8(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{

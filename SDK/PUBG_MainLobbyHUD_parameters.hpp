@@ -125,11 +125,7 @@ struct UMainLobbyHUD_C_ShowWebPopupImpl_Params
 // Function MainLobbyHUD.MainLobbyHUD_C.On_SystemMenuButton_Prepass
 struct UMainLobbyHUD_C_On_SystemMenuButton_Prepass_Params
 {
-<<<<<<< HEAD
 	class UWidget**                                    BoundWidget;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-=======
-	class UWidget*                                     BoundWidget;                                              // (Parm, ZeroConstructor, IsPlainOldData)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function MainLobbyHUD.MainLobbyHUD_C.OnReload

@@ -18,11 +18,7 @@ namespace SDK
 // class UUserWidget**            UserWidget                     (Parm, ZeroConstructor, IsPlainOldData)
 // class UObject**                __WorldContext                 (Parm, ZeroConstructor, IsPlainOldData)
 // class ATslCharacter*           ShooterCharacter               (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UWidgetFunctionLibrary_C::STATIC_GetOwningShooterCharacter(class UUserWidget** UserWidget, class UObject** __WorldContext, class ATslCharacter** ShooterCharacter)
 {

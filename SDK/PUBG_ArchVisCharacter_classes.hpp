@@ -15,7 +15,6 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Class ArchVisCharacter.ArchVisCharacter
-<<<<<<< HEAD
 // 0x0070 (0x0890 - 0x0820)
 class AArchVisCharacter : public ACharacter
 {
@@ -29,21 +28,6 @@ public:
 	float                                              MouseSensitivityScale_Pitch;                              // 0x0880(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	float                                              MouseSensitivityScale_Yaw;                                // 0x0884(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x8];                                       // 0x0888(0x0008) MISSED OFFSET
-=======
-// 0x0070 (0x08B0 - 0x0840)
-class AArchVisCharacter : public ACharacter
-{
-public:
-	struct FString                                     LookUpAxisName;                                           // 0x0840(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
-	struct FString                                     LookUpAtRateAxisName;                                     // 0x0850(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
-	struct FString                                     TurnAxisName;                                             // 0x0860(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
-	struct FString                                     TurnAtRateAxisName;                                       // 0x0870(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
-	struct FString                                     MoveForwardAxisName;                                      // 0x0880(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
-	struct FString                                     MoveRightAxisName;                                        // 0x0890(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
-	float                                              MouseSensitivityScale_Pitch;                              // 0x08A0(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              MouseSensitivityScale_Yaw;                                // 0x08A4(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x8];                                       // 0x08A8(0x0008) MISSED OFFSET
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{

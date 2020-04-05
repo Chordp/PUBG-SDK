@@ -16,11 +16,7 @@ namespace SDK
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF7195EAD80              		 offset:181ad80                       
-=======
-// FunctionAddress:0x00007FF6D8BEF2B0              		 offset:222f2b0                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 int UMovieSceneCaptureEnvironment::STATIC_GetCaptureFrameNumber()
 {
@@ -46,11 +42,7 @@ int UMovieSceneCaptureEnvironment::STATIC_GetCaptureFrameNumber()
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF7195EAD50              		 offset:181ad50                       
-=======
-// FunctionAddress:0x00007FF6D8BEF280              		 offset:222f280                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 float UMovieSceneCaptureEnvironment::STATIC_GetCaptureElapsedTime()
 {

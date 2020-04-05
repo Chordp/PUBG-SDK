@@ -54,7 +54,6 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	void STATIC_SetIsControllerMotionTrackingEnabledByDefault(bool* Enable);
 	bool STATIC_IsMotionTrackingEnabledForDevice(int* PlayerIndex, EControllerHand* Hand);
 	bool STATIC_IsMotionTrackingEnabledForComponent(class UMotionControllerComponent** MotionControllerComponent);
@@ -67,20 +66,6 @@ public:
 	void STATIC_DisableMotionTrackingOfControllersForPlayer(int* PlayerIndex);
 	void STATIC_DisableMotionTrackingOfAllControllers();
 	void STATIC_DisableMotionTrackingForComponent(class UMotionControllerComponent** MotionControllerComponent);
-=======
-	void STATIC_SetIsControllerMotionTrackingEnabledByDefault(bool Enable);
-	bool STATIC_IsMotionTrackingEnabledForDevice(int PlayerIndex, EControllerHand Hand);
-	bool STATIC_IsMotionTrackingEnabledForComponent(class UMotionControllerComponent* MotionControllerComponent);
-	bool STATIC_IsMotionTrackedDeviceCountManagementNecessary();
-	int STATIC_GetMotionTrackingEnabledControllerCount();
-	int STATIC_GetMaximumMotionTrackedControllerCount();
-	bool STATIC_EnableMotionTrackingOfDevice(int PlayerIndex, EControllerHand Hand);
-	bool STATIC_EnableMotionTrackingForComponent(class UMotionControllerComponent* MotionControllerComponent);
-	void STATIC_DisableMotionTrackingOfDevice(int PlayerIndex, EControllerHand Hand);
-	void STATIC_DisableMotionTrackingOfControllersForPlayer(int PlayerIndex);
-	void STATIC_DisableMotionTrackingOfAllControllers();
-	void STATIC_DisableMotionTrackingForComponent(class UMotionControllerComponent* MotionControllerComponent);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

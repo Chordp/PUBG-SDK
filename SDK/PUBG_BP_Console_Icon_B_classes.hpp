@@ -38,15 +38,9 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	void PreConstruct(bool* IsDesignTime);
 	void Construct();
 	void ExecuteUbergraph_BP_Console_Icon_B(int* EntryPoint);
-=======
-	void PreConstruct(bool IsDesignTime);
-	void Construct();
-	void ExecuteUbergraph_BP_Console_Icon_B(int EntryPoint);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

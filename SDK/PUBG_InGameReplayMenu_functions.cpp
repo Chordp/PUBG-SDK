@@ -16,11 +16,7 @@ namespace SDK
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ATslHUD**                inHUD                          (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UInGameReplayMenu_C::SetHUD(class ATslHUD** inHUD)
 {
@@ -44,11 +40,7 @@ void UInGameReplayMenu_C::SetHUD(class ATslHUD** inHUD)
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EPopupButtonID*                ButtonID                       (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UInGameReplayMenu_C::GotoReplayList(EPopupButtonID* ButtonID)
 {
@@ -72,11 +64,7 @@ void UInGameReplayMenu_C::GotoReplayList(EPopupButtonID* ButtonID)
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EPopupButtonID*                ButtonID                       (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UInGameReplayMenu_C::QuitReplay(EPopupButtonID* ButtonID)
 {
@@ -98,11 +86,7 @@ void UInGameReplayMenu_C::QuitReplay(EPopupButtonID* ButtonID)
 
 // Function InGameReplayMenu.InGameReplayMenu_C.BndEvt__Button_ReplayList_K2Node_ComponentBoundEvent_210_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UInGameReplayMenu_C::BndEvt__Button_ReplayList_K2Node_ComponentBoundEvent_210_OnButtonClickedEvent__DelegateSignature()
 {
@@ -123,11 +107,7 @@ void UInGameReplayMenu_C::BndEvt__Button_ReplayList_K2Node_ComponentBoundEvent_2
 
 // Function InGameReplayMenu.InGameReplayMenu_C.BndEvt__Button_Exit_K2Node_ComponentBoundEvent_228_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UInGameReplayMenu_C::BndEvt__Button_Exit_K2Node_ComponentBoundEvent_228_OnButtonClickedEvent__DelegateSignature()
 {
@@ -148,11 +128,7 @@ void UInGameReplayMenu_C::BndEvt__Button_Exit_K2Node_ComponentBoundEvent_228_OnB
 
 // Function InGameReplayMenu.InGameReplayMenu_C.BndEvt__Button_Resume_K2Node_ComponentBoundEvent_247_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UInGameReplayMenu_C::BndEvt__Button_Resume_K2Node_ComponentBoundEvent_247_OnButtonClickedEvent__DelegateSignature()
 {
@@ -173,11 +149,7 @@ void UInGameReplayMenu_C::BndEvt__Button_Resume_K2Node_ComponentBoundEvent_247_O
 
 // Function InGameReplayMenu.InGameReplayMenu_C.HidePopupWidgetForReplay
 // (BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UInGameReplayMenu_C::HidePopupWidgetForReplay()
 {
@@ -198,11 +170,7 @@ void UInGameReplayMenu_C::HidePopupWidgetForReplay()
 
 // Function InGameReplayMenu.InGameReplayMenu_C.OpenReplayListMap
 // (BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UInGameReplayMenu_C::OpenReplayListMap()
 {
@@ -223,11 +191,7 @@ void UInGameReplayMenu_C::OpenReplayListMap()
 
 // Function InGameReplayMenu.InGameReplayMenu_C.BndEvt__Button_Option_K2Node_ComponentBoundEvent_68_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UInGameReplayMenu_C::BndEvt__Button_Option_K2Node_ComponentBoundEvent_68_OnButtonClickedEvent__DelegateSignature()
 {
@@ -250,11 +214,7 @@ void UInGameReplayMenu_C::BndEvt__Button_Option_K2Node_ComponentBoundEvent_68_On
 // ()
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UInGameReplayMenu_C::ExecuteUbergraph_InGameReplayMenu(int* EntryPoint)
 {

@@ -35,13 +35,8 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	void PreConstruct(bool* IsDesignTime);
 	void ExecuteUbergraph_KeyImageWIdgetBP(int* EntryPoint);
-=======
-	void PreConstruct(bool IsDesignTime);
-	void ExecuteUbergraph_KeyImageWIdgetBP(int EntryPoint);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

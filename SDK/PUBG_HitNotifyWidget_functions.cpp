@@ -16,11 +16,7 @@ namespace SDK
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UUserWidget*             Widget                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHitNotifyWidget_C::GetBloodSpotWidget(class UUserWidget** Widget)
 {
@@ -44,11 +40,7 @@ void UHitNotifyWidget_C::GetBloodSpotWidget(class UUserWidget** Widget)
 
 // Function HitNotifyWidget.HitNotifyWidget_C.InitializeBloodSpotWidgets
 // (Public, BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHitNotifyWidget_C::InitializeBloodSpotWidgets()
 {
@@ -69,11 +61,7 @@ void UHitNotifyWidget_C::InitializeBloodSpotWidgets()
 
 // Function HitNotifyWidget.HitNotifyWidget_C.InitializeKoreanRating
 // (Public, BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHitNotifyWidget_C::InitializeKoreanRating()
 {
@@ -94,11 +82,7 @@ void UHitNotifyWidget_C::InitializeKoreanRating()
 
 // Function HitNotifyWidget.HitNotifyWidget_C.InitializeChineseLicensing
 // (Public, BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHitNotifyWidget_C::InitializeChineseLicensing()
 {
@@ -122,11 +106,7 @@ void UHitNotifyWidget_C::InitializeChineseLicensing()
 // Parameters:
 // float*                         DamagedPercent                 (Parm, ZeroConstructor, IsPlainOldData)
 // float                          Damage                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHitNotifyWidget_C::DamagedPercentToDamage(float* DamagedPercent, float* Damage)
 {
@@ -153,11 +133,7 @@ void UHitNotifyWidget_C::DamagedPercentToDamage(float* DamagedPercent, float* Da
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // float                          HealthPercent                  (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHitNotifyWidget_C::GetPlayerHealthPercent(float* HealthPercent)
 {
@@ -183,11 +159,7 @@ void UHitNotifyWidget_C::GetPlayerHealthPercent(float* HealthPercent)
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UAkAudioEvent**          AkEvent                        (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHitNotifyWidget_C::PostAkEvent(class UAkAudioEvent** AkEvent)
 {
@@ -212,11 +184,7 @@ void UHitNotifyWidget_C::PostAkEvent(class UAkAudioEvent** AkEvent)
 // Parameters:
 // struct FString*                RTPC                           (Parm, ZeroConstructor)
 // float*                         Value                          (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHitNotifyWidget_C::SetRTPCValue(struct FString* RTPC, float* Value)
 {
@@ -242,11 +210,7 @@ void UHitNotifyWidget_C::SetRTPCValue(struct FString* RTPC, float* Value)
 // Parameters:
 // float*                         DamagedPercent                 (Parm, ZeroConstructor, IsPlainOldData)
 // float                          DamagePercent                  (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHitNotifyWidget_C::DamagedPercentToDamagePercent(float* DamagedPercent, float* DamagePercent)
 {
@@ -271,11 +235,7 @@ void UHitNotifyWidget_C::DamagedPercentToDamagePercent(float* DamagedPercent, fl
 
 // Function HitNotifyWidget.HitNotifyWidget_C.PlayHitNotifySound
 // (Public, BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHitNotifyWidget_C::PlayHitNotifySound()
 {
@@ -298,11 +258,7 @@ void UHitNotifyWidget_C::PlayHitNotifySound()
 // (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // struct FVector2D               Scale                          (Parm, OutParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHitNotifyWidget_C::GetRandomScale(struct FVector2D* Scale)
 {
@@ -328,11 +284,7 @@ void UHitNotifyWidget_C::GetRandomScale(struct FVector2D* Scale)
 // (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // struct FVector2D               Translation                    (Parm, OutParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHitNotifyWidget_C::GetRandomTranslation(struct FVector2D* Translation)
 {
@@ -357,19 +309,11 @@ void UHitNotifyWidget_C::GetRandomTranslation(struct FVector2D* Translation)
 // Function HitNotifyWidget.HitNotifyWidget_C.OnHitNotify_Temp
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-<<<<<<< HEAD
 // float*                         DamagePercent                  (Parm, ZeroConstructor, IsPlainOldData)
 // EDamageTypeCategory*           DamageTypeCategory             (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void UHitNotifyWidget_C::OnHitNotify_Temp(float* DamagePercent, EDamageTypeCategory* DamageTypeCategory)
-=======
-// float                          DamagePercent                  (Parm, ZeroConstructor, IsPlainOldData)
-// EDamageTypeCategory            DamageTypeCategory             (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
-
-void UHitNotifyWidget_C::OnHitNotify_Temp(float DamagePercent, EDamageTypeCategory DamageTypeCategory)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -390,11 +334,7 @@ void UHitNotifyWidget_C::OnHitNotify_Temp(float DamagePercent, EDamageTypeCatego
 
 // Function HitNotifyWidget.HitNotifyWidget_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHitNotifyWidget_C::Construct()
 {
@@ -417,11 +357,7 @@ void UHitNotifyWidget_C::Construct()
 // (Event, Public, BlueprintEvent)
 // Parameters:
 // class UUserWidget**            Widget                         (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHitNotifyWidget_C::OnPlayBloodSpot(class UUserWidget** Widget)
 {
@@ -445,11 +381,7 @@ void UHitNotifyWidget_C::OnPlayBloodSpot(class UUserWidget** Widget)
 // ()
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UHitNotifyWidget_C::ExecuteUbergraph_HitNotifyWidget(int* EntryPoint)
 {

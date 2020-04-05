@@ -17,21 +17,13 @@ namespace SDK
 // Function EasyAntiCheatCommon.EasyAntiCheatNetComponent.ServerMessage
 struct UEasyAntiCheatNetComponent_ServerMessage_Params
 {
-<<<<<<< HEAD
 	TArray<unsigned char>*                             Message;                                                  // (ConstParm, Parm, ZeroConstructor, ReferenceParm)
-=======
-	TArray<unsigned char>                              Message;                                                  // (ConstParm, Parm, ZeroConstructor, ReferenceParm)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function EasyAntiCheatCommon.EasyAntiCheatNetComponent.ClientMessage
 struct UEasyAntiCheatNetComponent_ClientMessage_Params
 {
-<<<<<<< HEAD
 	TArray<unsigned char>*                             Message;                                                  // (ConstParm, Parm, ZeroConstructor, ReferenceParm)
-=======
-	TArray<unsigned char>                              Message;                                                  // (ConstParm, Parm, ZeroConstructor, ReferenceParm)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 }

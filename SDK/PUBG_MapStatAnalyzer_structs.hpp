@@ -7,10 +7,10 @@
 #endif
 
 #include "PUBG_Basic.hpp"
-#include "PUBG_Engine_classes.hpp"
-#include "PUBG_CoreUObject_classes.hpp"
-#include "PUBG_MapStatPositionData_classes.hpp"
 #include "PUBG_MapStatRawData_classes.hpp"
+#include "PUBG_Engine_classes.hpp"
+#include "PUBG_MapStatPositionData_classes.hpp"
+#include "PUBG_CoreUObject_classes.hpp"
 
 namespace SDK
 {

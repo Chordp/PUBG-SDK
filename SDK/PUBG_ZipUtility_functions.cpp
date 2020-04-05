@@ -15,19 +15,11 @@ namespace SDK
 // Function ZipUtility.ZipUtilityInterface.OnStartProcess
 // (Native, Event, Public, BlueprintEvent)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                archive                        (Parm, ZeroConstructor)
 // int*                           bytes                          (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71ABE8430              		 offset:2e18430                       
 
 void UZipUtilityInterface::OnStartProcess(struct FString* archive, int* bytes)
-=======
-// struct FString                 archive                        (Parm, ZeroConstructor)
-// int                            bytes                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6D97BCED0              		 offset:2dfced0                       
-
-void UZipUtilityInterface::OnStartProcess(const struct FString& archive, int bytes)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -50,21 +42,12 @@ void UZipUtilityInterface::OnStartProcess(const struct FString& archive, int byt
 // Function ZipUtility.ZipUtilityInterface.OnProgress
 // (Native, Event, Public, BlueprintEvent)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                archive                        (Parm, ZeroConstructor)
 // float*                         Percentage                     (Parm, ZeroConstructor, IsPlainOldData)
 // int*                           bytes                          (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71ABE8300              		 offset:2e18300                       
 
 void UZipUtilityInterface::OnProgress(struct FString* archive, float* Percentage, int* bytes)
-=======
-// struct FString                 archive                        (Parm, ZeroConstructor)
-// float                          Percentage                     (Parm, ZeroConstructor, IsPlainOldData)
-// int                            bytes                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6D97BCDA0              		 offset:2dfcda0                       
-
-void UZipUtilityInterface::OnProgress(const struct FString& archive, float Percentage, int bytes)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -88,21 +71,12 @@ void UZipUtilityInterface::OnProgress(const struct FString& archive, float Perce
 // Function ZipUtility.ZipUtilityInterface.OnFileFound
 // (Native, Event, Public, BlueprintEvent)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                archive                        (Parm, ZeroConstructor)
 // struct FString*                file                           (Parm, ZeroConstructor)
 // int*                           Size                           (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71ABE81C0              		 offset:2e181c0                       
 
 void UZipUtilityInterface::OnFileFound(struct FString* archive, struct FString* file, int* Size)
-=======
-// struct FString                 archive                        (Parm, ZeroConstructor)
-// struct FString                 file                           (Parm, ZeroConstructor)
-// int                            Size                           (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6D97BCC60              		 offset:2dfcc60                       
-
-void UZipUtilityInterface::OnFileFound(const struct FString& archive, const struct FString& file, int Size)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -126,19 +100,11 @@ void UZipUtilityInterface::OnFileFound(const struct FString& archive, const stru
 // Function ZipUtility.ZipUtilityInterface.OnFileDone
 // (Native, Event, Public, BlueprintEvent)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                archive                        (Parm, ZeroConstructor)
 // struct FString*                file                           (Parm, ZeroConstructor)
 // FunctionAddress:0x00007FF71ABE80C0              		 offset:2e180c0                       
 
 void UZipUtilityInterface::OnFileDone(struct FString* archive, struct FString* file)
-=======
-// struct FString                 archive                        (Parm, ZeroConstructor)
-// struct FString                 file                           (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF6D97BCB60              		 offset:2dfcb60                       
-
-void UZipUtilityInterface::OnFileDone(const struct FString& archive, const struct FString& file)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -161,19 +127,11 @@ void UZipUtilityInterface::OnFileDone(const struct FString& archive, const struc
 // Function ZipUtility.ZipUtilityInterface.OnDone
 // (Native, Event, Public, BlueprintEvent)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                archive                        (Parm, ZeroConstructor)
 // TEnumAsByte<EZipUtilityCompletionState>* CompletionState                (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71ABE7FD0              		 offset:2e17fd0                       
 
 void UZipUtilityInterface::OnDone(struct FString* archive, TEnumAsByte<EZipUtilityCompletionState>* CompletionState)
-=======
-// struct FString                 archive                        (Parm, ZeroConstructor)
-// TEnumAsByte<EZipUtilityCompletionState> CompletionState                (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6D97BCA70              		 offset:2dfca70                       
-
-void UZipUtilityInterface::OnDone(const struct FString& archive, TEnumAsByte<EZipUtilityCompletionState> CompletionState)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -196,7 +154,6 @@ void UZipUtilityInterface::OnDone(const struct FString& archive, TEnumAsByte<EZi
 // Function ZipUtility.ZipFileFunctionLibrary.Zip
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                FileOrFolderPath               (Parm, ZeroConstructor)
 // class UObject**                ZipUtilityInterfaceDelegate    (Parm, ZeroConstructor, IsPlainOldData)
 // TEnumAsByte<EZipUtilityCompressionFormat>* Format                         (Parm, ZeroConstructor, IsPlainOldData)
@@ -205,16 +162,6 @@ void UZipUtilityInterface::OnDone(const struct FString& archive, TEnumAsByte<EZi
 // FunctionAddress:0x00007FF71ABE8E80              		 offset:2e18e80                       
 
 bool UZipFileFunctionLibrary::STATIC_Zip(struct FString* FileOrFolderPath, class UObject** ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat>* Format, TEnumAsByte<EZipUtilityCompressionLevel>* Level)
-=======
-// struct FString                 FileOrFolderPath               (Parm, ZeroConstructor)
-// class UObject*                 ZipUtilityInterfaceDelegate    (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<EZipUtilityCompressionFormat> Format                         (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<EZipUtilityCompressionLevel> Level                          (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6D97BD920              		 offset:2dfd920                       
-
-bool UZipFileFunctionLibrary::STATIC_Zip(const struct FString& FileOrFolderPath, class UObject* ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat> Format, TEnumAsByte<EZipUtilityCompressionLevel> Level)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -241,7 +188,6 @@ bool UZipFileFunctionLibrary::STATIC_Zip(const struct FString& FileOrFolderPath,
 // Function ZipUtility.ZipFileFunctionLibrary.UnzipTo
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                ArchivePath                    (Parm, ZeroConstructor)
 // struct FString*                destinationPath                (Parm, ZeroConstructor)
 // class UObject**                ZipUtilityInterfaceDelegate    (Parm, ZeroConstructor, IsPlainOldData)
@@ -250,16 +196,6 @@ bool UZipFileFunctionLibrary::STATIC_Zip(const struct FString& FileOrFolderPath,
 // FunctionAddress:0x00007FF71ABE8D10              		 offset:2e18d10                       
 
 bool UZipFileFunctionLibrary::STATIC_UnzipTo(struct FString* ArchivePath, struct FString* destinationPath, class UObject** ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat>* Format)
-=======
-// struct FString                 ArchivePath                    (Parm, ZeroConstructor)
-// struct FString                 destinationPath                (Parm, ZeroConstructor)
-// class UObject*                 ZipUtilityInterfaceDelegate    (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<EZipUtilityCompressionFormat> Format                         (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6D97BD7B0              		 offset:2dfd7b0                       
-
-bool UZipFileFunctionLibrary::STATIC_UnzipTo(const struct FString& ArchivePath, const struct FString& destinationPath, class UObject* ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat> Format)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -286,7 +222,6 @@ bool UZipFileFunctionLibrary::STATIC_UnzipTo(const struct FString& ArchivePath, 
 // Function ZipUtility.ZipFileFunctionLibrary.UnzipFilesTo
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // TArray<int>*                   fileIndices                    (ConstParm, Parm, ZeroConstructor)
 // struct FString*                ArchivePath                    (Parm, ZeroConstructor)
 // struct FString*                destinationPath                (Parm, ZeroConstructor)
@@ -296,17 +231,6 @@ bool UZipFileFunctionLibrary::STATIC_UnzipTo(const struct FString& ArchivePath, 
 // FunctionAddress:0x00007FF71ABE8B10              		 offset:2e18b10                       
 
 bool UZipFileFunctionLibrary::STATIC_UnzipFilesTo(TArray<int>* fileIndices, struct FString* ArchivePath, struct FString* destinationPath, class UObject** ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat>* Format)
-=======
-// TArray<int>                    fileIndices                    (ConstParm, Parm, ZeroConstructor)
-// struct FString                 ArchivePath                    (Parm, ZeroConstructor)
-// struct FString                 destinationPath                (Parm, ZeroConstructor)
-// class UObject*                 ZipUtilityInterfaceDelegate    (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<EZipUtilityCompressionFormat> Format                         (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6D97BD5B0              		 offset:2dfd5b0                       
-
-bool UZipFileFunctionLibrary::STATIC_UnzipFilesTo(TArray<int> fileIndices, const struct FString& ArchivePath, const struct FString& destinationPath, class UObject* ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat> Format)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -334,7 +258,6 @@ bool UZipFileFunctionLibrary::STATIC_UnzipFilesTo(TArray<int> fileIndices, const
 // Function ZipUtility.ZipFileFunctionLibrary.UnzipFiles
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // TArray<int>*                   fileIndices                    (ConstParm, Parm, ZeroConstructor)
 // struct FString*                ArchivePath                    (Parm, ZeroConstructor)
 // class UObject**                ZipUtilityInterfaceDelegate    (Parm, ZeroConstructor, IsPlainOldData)
@@ -343,16 +266,6 @@ bool UZipFileFunctionLibrary::STATIC_UnzipFilesTo(TArray<int> fileIndices, const
 // FunctionAddress:0x00007FF71ABE8960              		 offset:2e18960                       
 
 bool UZipFileFunctionLibrary::STATIC_UnzipFiles(TArray<int>* fileIndices, struct FString* ArchivePath, class UObject** ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat>* Format)
-=======
-// TArray<int>                    fileIndices                    (ConstParm, Parm, ZeroConstructor)
-// struct FString                 ArchivePath                    (Parm, ZeroConstructor)
-// class UObject*                 ZipUtilityInterfaceDelegate    (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<EZipUtilityCompressionFormat> Format                         (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6D97BD400              		 offset:2dfd400                       
-
-bool UZipFileFunctionLibrary::STATIC_UnzipFiles(TArray<int> fileIndices, const struct FString& ArchivePath, class UObject* ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat> Format)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -379,7 +292,6 @@ bool UZipFileFunctionLibrary::STATIC_UnzipFiles(TArray<int> fileIndices, const s
 // Function ZipUtility.ZipFileFunctionLibrary.UnzipFileNamedTo
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                ArchivePath                    (Parm, ZeroConstructor)
 // struct FString*                Name                           (Parm, ZeroConstructor)
 // struct FString*                destinationPath                (Parm, ZeroConstructor)
@@ -389,17 +301,6 @@ bool UZipFileFunctionLibrary::STATIC_UnzipFiles(TArray<int> fileIndices, const s
 // FunctionAddress:0x00007FF71ABE87A0              		 offset:2e187a0                       
 
 bool UZipFileFunctionLibrary::STATIC_UnzipFileNamedTo(struct FString* ArchivePath, struct FString* Name, struct FString* destinationPath, class UObject** ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat>* Format)
-=======
-// struct FString                 ArchivePath                    (Parm, ZeroConstructor)
-// struct FString                 Name                           (Parm, ZeroConstructor)
-// struct FString                 destinationPath                (Parm, ZeroConstructor)
-// class UObject*                 ZipUtilityInterfaceDelegate    (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<EZipUtilityCompressionFormat> Format                         (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6D97BD240              		 offset:2dfd240                       
-
-bool UZipFileFunctionLibrary::STATIC_UnzipFileNamedTo(const struct FString& ArchivePath, const struct FString& Name, const struct FString& destinationPath, class UObject* ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat> Format)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -427,7 +328,6 @@ bool UZipFileFunctionLibrary::STATIC_UnzipFileNamedTo(const struct FString& Arch
 // Function ZipUtility.ZipFileFunctionLibrary.UnzipFileNamed
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                ArchivePath                    (Parm, ZeroConstructor)
 // struct FString*                Name                           (Parm, ZeroConstructor)
 // class UObject**                ZipUtilityInterfaceDelegate    (Parm, ZeroConstructor, IsPlainOldData)
@@ -436,16 +336,6 @@ bool UZipFileFunctionLibrary::STATIC_UnzipFileNamedTo(const struct FString& Arch
 // FunctionAddress:0x00007FF71ABE8630              		 offset:2e18630                       
 
 bool UZipFileFunctionLibrary::STATIC_UnzipFileNamed(struct FString* ArchivePath, struct FString* Name, class UObject** ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat>* Format)
-=======
-// struct FString                 ArchivePath                    (Parm, ZeroConstructor)
-// struct FString                 Name                           (Parm, ZeroConstructor)
-// class UObject*                 ZipUtilityInterfaceDelegate    (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<EZipUtilityCompressionFormat> Format                         (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6D97BD0D0              		 offset:2dfd0d0                       
-
-bool UZipFileFunctionLibrary::STATIC_UnzipFileNamed(const struct FString& ArchivePath, const struct FString& Name, class UObject* ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat> Format)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -472,7 +362,6 @@ bool UZipFileFunctionLibrary::STATIC_UnzipFileNamed(const struct FString& Archiv
 // Function ZipUtility.ZipFileFunctionLibrary.Unzip
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                ArchivePath                    (Parm, ZeroConstructor)
 // class UObject**                ZipUtilityInterfaceDelegate    (Parm, ZeroConstructor, IsPlainOldData)
 // TEnumAsByte<EZipUtilityCompressionFormat>* Format                         (Parm, ZeroConstructor, IsPlainOldData)
@@ -480,15 +369,6 @@ bool UZipFileFunctionLibrary::STATIC_UnzipFileNamed(const struct FString& Archiv
 // FunctionAddress:0x00007FF71ABE8510              		 offset:2e18510                       
 
 bool UZipFileFunctionLibrary::STATIC_Unzip(struct FString* ArchivePath, class UObject** ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat>* Format)
-=======
-// struct FString                 ArchivePath                    (Parm, ZeroConstructor)
-// class UObject*                 ZipUtilityInterfaceDelegate    (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<EZipUtilityCompressionFormat> Format                         (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6D97BCFB0              		 offset:2dfcfb0                       
-
-bool UZipFileFunctionLibrary::STATIC_Unzip(const struct FString& ArchivePath, class UObject* ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat> Format)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -514,7 +394,6 @@ bool UZipFileFunctionLibrary::STATIC_Unzip(const struct FString& ArchivePath, cl
 // Function ZipUtility.ZipFileFunctionLibrary.ListFilesInArchive
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                ArchivePath                    (Parm, ZeroConstructor)
 // class UObject**                ZipUtilityInterfaceDelegate    (Parm, ZeroConstructor, IsPlainOldData)
 // TEnumAsByte<EZipUtilityCompressionFormat>* Format                         (Parm, ZeroConstructor, IsPlainOldData)
@@ -522,15 +401,6 @@ bool UZipFileFunctionLibrary::STATIC_Unzip(const struct FString& ArchivePath, cl
 // FunctionAddress:0x00007FF71ABE7EB0              		 offset:2e17eb0                       
 
 bool UZipFileFunctionLibrary::STATIC_ListFilesInArchive(struct FString* ArchivePath, class UObject** ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat>* Format)
-=======
-// struct FString                 ArchivePath                    (Parm, ZeroConstructor)
-// class UObject*                 ZipUtilityInterfaceDelegate    (Parm, ZeroConstructor, IsPlainOldData)
-// TEnumAsByte<EZipUtilityCompressionFormat> Format                         (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6D97BC950              		 offset:2dfc950                       
-
-bool UZipFileFunctionLibrary::STATIC_ListFilesInArchive(const struct FString& ArchivePath, class UObject* ZipUtilityInterfaceDelegate, TEnumAsByte<EZipUtilityCompressionFormat> Format)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 

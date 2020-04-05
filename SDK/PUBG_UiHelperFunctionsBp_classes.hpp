@@ -46,11 +46,7 @@ public:
 	void STATIC_GetSpectatorColor(bool* bISpectator, class UObject** __WorldContext, struct FLinearColor* Color);
 	void STATIC_GetCharacterStateIcon(int* State, class UObject** __WorldContext, class UTexture2D** NewParam);
 	void STATIC_GetTslCharacters_Bp(class UObject** WorldContextObject, class UObject** __WorldContext, TArray<class ATslCharacter*>* OutActors);
-<<<<<<< HEAD
 	void STATIC_NotifyWidgetShowed(class UUserWidget** Widget, struct FString* WidgetName, bool* bShow, class UObject** __WorldContext);
-=======
-	void STATIC_NotifyWidgetShowed(class UUserWidget* Widget, const struct FString& WidgetName, bool bShow, class UObject* __WorldContext);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	void STATIC_GetTeamMarkerColor(int* MemberNumber, class UObject** __WorldContext, struct FLinearColor* NewParam);
 	void STATIC_CreateAndSetMaterial(class UWidget** Widget, class UMaterialInstance** Material, class UObject** __WorldContext, class UMaterialInstanceDynamic** DynamicMaterial);
 	void STATIC_GetDynamicMaterial(class UWidget** Widget, class UObject** __WorldContext, class UMaterialInstanceDynamic** DynamicMaterial);

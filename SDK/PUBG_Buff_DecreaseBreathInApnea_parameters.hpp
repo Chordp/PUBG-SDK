@@ -17,11 +17,7 @@ namespace SDK
 // Function Buff_DecreaseBreathInApnea.Buff_DecreaseBreathInApnea_C.DecreaseHealth
 struct ABuff_DecreaseBreathInApnea_C_DecreaseHealth_Params
 {
-<<<<<<< HEAD
 	class ATslCharacter**                              Character;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-=======
-	class ATslCharacter*                               Character;                                                // (Parm, ZeroConstructor, IsPlainOldData)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function Buff_DecreaseBreathInApnea.Buff_DecreaseBreathInApnea_C.UserConstructionScript
@@ -37,11 +33,7 @@ struct ABuff_DecreaseBreathInApnea_C_TickBuff_Params
 // Function Buff_DecreaseBreathInApnea.Buff_DecreaseBreathInApnea_C.ExecuteUbergraph_Buff_DecreaseBreathInApnea
 struct ABuff_DecreaseBreathInApnea_C_ExecuteUbergraph_Buff_DecreaseBreathInApnea_Params
 {
-<<<<<<< HEAD
 	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-=======
-	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 }

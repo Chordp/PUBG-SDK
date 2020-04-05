@@ -15,19 +15,11 @@ namespace SDK
 // Function PrefabAsset.PrefabActor.SetPrefab
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // class UPrefabAsset**           NewPrefab                      (Parm, ZeroConstructor, IsPlainOldData)
 // bool*                          bForceRevertEvenDisconnected   (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71C62BA60              		 offset:485ba60                       
 
 void APrefabActor::SetPrefab(class UPrefabAsset** NewPrefab, bool* bForceRevertEvenDisconnected)
-=======
-// class UPrefabAsset*            NewPrefab                      (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bForceRevertEvenDisconnected   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAC1ED30              		 offset:425ed30                       
-
-void APrefabActor::SetPrefab(class UPrefabAsset* NewPrefab, bool bForceRevertEvenDisconnected)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -50,17 +42,10 @@ void APrefabActor::SetPrefab(class UPrefabAsset* NewPrefab, bool bForceRevertEve
 // Function PrefabAsset.PrefabActor.SetMobility
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // TEnumAsByte<EComponentMobility>* InMobility                     (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71C62B9E0              		 offset:485b9e0                       
 
 void APrefabActor::SetMobility(TEnumAsByte<EComponentMobility>* InMobility)
-=======
-// TEnumAsByte<EComponentMobility> InMobility                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAC1ECB0              		 offset:425ecb0                       
-
-void APrefabActor::SetMobility(TEnumAsByte<EComponentMobility> InMobility)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -83,11 +68,7 @@ void APrefabActor::SetMobility(TEnumAsByte<EComponentMobility> InMobility)
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class UPrefabAsset*            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C62B9B0              		 offset:485b9b0                       
-=======
-// FunctionAddress:0x00007FF6DAC1EC80              		 offset:425ec80                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 class UPrefabAsset* APrefabActor::GetPrefab()
 {
@@ -112,17 +93,10 @@ class UPrefabAsset* APrefabActor::GetPrefab()
 // Function PrefabAsset.PrefabActor.DestroyPrefabActor
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // bool*                          bDestroyAttachedChildren       (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF719A9FE00              		 offset:1ccfe00                       
 
 void APrefabActor::DestroyPrefabActor(bool* bDestroyAttachedChildren)
-=======
-// bool                           bDestroyAttachedChildren       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6D9B44FA0              		 offset:3184fa0                       
-
-void APrefabActor::DestroyPrefabActor(bool bDestroyAttachedChildren)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 

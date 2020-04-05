@@ -19,11 +19,7 @@ namespace SDK
 // TArray<float>                  NewParam1                      (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // float*                         NewParam2                      (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           NewParam3                      (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AMapStatAnalyzer_C::EqualsFloatArray(float* NewParam2, TArray<float>* NewParam, TArray<float>* NewParam1, bool* NewParam3)
 {
@@ -54,11 +50,7 @@ void AMapStatAnalyzer_C::EqualsFloatArray(float* NewParam2, TArray<float>* NewPa
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 int AMapStatAnalyzer_C::DelayTimeToDelayFrames()
 {
@@ -83,11 +75,7 @@ int AMapStatAnalyzer_C::DelayTimeToDelayFrames()
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 struct FString AMapStatAnalyzer_C::GetAltSharedPresetDir()
 {
@@ -112,11 +100,7 @@ struct FString AMapStatAnalyzer_C::GetAltSharedPresetDir()
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // float                          NewParam                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AMapStatAnalyzer_C::GetCurrentLevelSize(float* NewParam)
 {
@@ -143,11 +127,7 @@ void AMapStatAnalyzer_C::GetCurrentLevelSize(float* NewParam)
 // Parameters:
 // float*                         MapStride                      (Parm, ZeroConstructor, IsPlainOldData)
 // float                          NewParam                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AMapStatAnalyzer_C::GetExpectedMapSize(float* MapStride, float* NewParam)
 {
@@ -174,11 +154,7 @@ void AMapStatAnalyzer_C::GetExpectedMapSize(float* MapStride, float* NewParam)
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 struct FString AMapStatAnalyzer_C::GetSharedPresetDir()
 {
@@ -203,11 +179,7 @@ struct FString AMapStatAnalyzer_C::GetSharedPresetDir()
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 struct FString AMapStatAnalyzer_C::GetSavedDir()
 {
@@ -234,11 +206,7 @@ struct FString AMapStatAnalyzer_C::GetSavedDir()
 // struct FString*                FullFilePath                   (Parm, ZeroConstructor)
 // bool                           bSuccess                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // struct FString                 NewVar                         (Parm, OutParm, ZeroConstructor)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AMapStatAnalyzer_C::LoadStringFromFile(struct FString* FullFilePath, bool* bSuccess, struct FString* NewVar)
 {
@@ -268,11 +236,7 @@ void AMapStatAnalyzer_C::LoadStringFromFile(struct FString* FullFilePath, bool* 
 // Parameters:
 // struct FString*                PresetDir                      (Parm, ZeroConstructor)
 // struct FString                 NewParam                       (Parm, OutParm, ZeroConstructor)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AMapStatAnalyzer_C::GetCurrentLevelMinimapURL(struct FString* PresetDir, struct FString* NewParam)
 {
@@ -301,11 +265,7 @@ void AMapStatAnalyzer_C::GetCurrentLevelMinimapURL(struct FString* PresetDir, st
 // TArray<float>                  Array                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // struct FString*                NewLinedString                 (Parm, ZeroConstructor)
 // struct FString                 NewVar                         (Parm, OutParm, ZeroConstructor)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AMapStatAnalyzer_C::FloatArrayToNewlinedString(struct FString* NewLinedString, TArray<float>* Array, struct FString* NewVar)
 {
@@ -336,11 +296,7 @@ void AMapStatAnalyzer_C::FloatArrayToNewlinedString(struct FString* NewLinedStri
 // TArray<struct FString>         Array                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // struct FString*                NewLinedString                 (Parm, ZeroConstructor)
 // struct FString                 NewVar                         (Parm, OutParm, ZeroConstructor)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AMapStatAnalyzer_C::StingArrayToNewlinedString(struct FString* NewLinedString, TArray<struct FString>* Array, struct FString* NewVar)
 {
@@ -369,11 +325,7 @@ void AMapStatAnalyzer_C::StingArrayToNewlinedString(struct FString* NewLinedStri
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // TArray<float>                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 TArray<float> AMapStatAnalyzer_C::HitchFrameStatsThreshold()
 {
@@ -401,11 +353,7 @@ TArray<float> AMapStatAnalyzer_C::HitchFrameStatsThreshold()
 // float                          OutAvg                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // float                          OutMin                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // float                          OutMax                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AMapStatAnalyzer_C::GetAvgOnArray(TArray<float>* NewParam, float* OutAvg, float* OutMin, float* OutMax)
 {
@@ -438,11 +386,7 @@ void AMapStatAnalyzer_C::GetAvgOnArray(TArray<float>* NewParam, float* OutAvg, f
 // Parameters:
 // struct FDateTime*              NewParam                       (Parm)
 // struct FString                 NewParam1                      (Parm, OutParm, ZeroConstructor)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AMapStatAnalyzer_C::DateTimeToString(struct FDateTime* NewParam, struct FString* NewParam1)
 {
@@ -470,11 +414,7 @@ void AMapStatAnalyzer_C::DateTimeToString(struct FDateTime* NewParam, struct FSt
 // Parameters:
 // struct FVector*                Min                            (Parm, IsPlainOldData)
 // struct FVector*                Max                            (Parm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AMapStatAnalyzer_C::ComputeWorldSize(struct FVector* Min, struct FVector* Max)
 {
@@ -497,11 +437,7 @@ void AMapStatAnalyzer_C::ComputeWorldSize(struct FVector* Min, struct FVector* M
 
 // Function MapStatAnalyzer.MapStatAnalyzer_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AMapStatAnalyzer_C::UserConstructionScript()
 {
@@ -522,11 +458,7 @@ void AMapStatAnalyzer_C::UserConstructionScript()
 
 // Function MapStatAnalyzer.MapStatAnalyzer_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AMapStatAnalyzer_C::ReceiveBeginPlay()
 {
@@ -549,11 +481,7 @@ void AMapStatAnalyzer_C::ReceiveBeginPlay()
 // (Event, Public, BlueprintEvent)
 // Parameters:
 // TEnumAsByte<EEndPlayReason>*   EndPlayReason                  (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AMapStatAnalyzer_C::ReceiveEndPlay(TEnumAsByte<EEndPlayReason>* EndPlayReason)
 {
@@ -577,11 +505,7 @@ void AMapStatAnalyzer_C::ReceiveEndPlay(TEnumAsByte<EEndPlayReason>* EndPlayReas
 // (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void AMapStatAnalyzer_C::ExecuteUbergraph_MapStatAnalyzer(int* EntryPoint)
 {

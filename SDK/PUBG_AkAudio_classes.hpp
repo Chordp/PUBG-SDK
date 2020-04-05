@@ -33,7 +33,6 @@ public:
 
 
 // Class AkAudio.AkAmbientSound
-<<<<<<< HEAD
 // 0x0020 (0x0400 - 0x03E0)
 class AAkAmbientSound : public AActor
 {
@@ -43,17 +42,6 @@ public:
 	bool                                               AutoPost;                                                 // 0x03F8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x03F9(0x0003) MISSED OFFSET
 	float                                              AutoPlayDistance;                                         // 0x03FC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-=======
-// 0x0020 (0x0420 - 0x0400)
-class AAkAmbientSound : public AActor
-{
-public:
-	unsigned char                                      UnknownData00[0x10];                                      // 0x0400(0x0010) MISSED OFFSET
-	class UAkComponent*                                AkComponent;                                              // 0x0410(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
-	bool                                               AutoPost;                                                 // 0x0418(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x0419(0x0003) MISSED OFFSET
-	float                                              AutoPlayDistance;                                         // 0x041C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -165,7 +153,6 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	void UseVolumesForRTPCs(bool* inUseVolumesForRTPCs);
 	void UseReverbVolumes(bool* inUseReverbVolumes);
 	void UseIndoorCheck(bool* inUseIndoorCheck);
@@ -186,28 +173,6 @@ public:
 	bool IsCurrentlyPlaying();
 	float GetAttenuationRadius();
 	void CalculateRelativeSpeed(float* DeltaTime);
-=======
-	void UseVolumesForRTPCs(bool inUseVolumesForRTPCs);
-	void UseReverbVolumes(bool inUseReverbVolumes);
-	void UseIndoorCheck(bool inUseIndoorCheck);
-	void StopPlayingID(int PlayingID);
-	void Stop();
-	void SetSwitch(const struct FString& SwitchGroup, const struct FString& SwitchState);
-	void SetStopWhenOwnerDestroyed(bool bStopWhenOwnerDestroyed);
-	void SetRTPCValue(const struct FString& RTPC, float Value, int InterpolationTimeMs);
-	void SetOutputBusVolume(float BusVolume);
-	void SetMinVolumeRTPCUpdateInterval(float Interval);
-	void SetAttenuationScalingFactor(float Value);
-	void SetActiveListeners(int in_uListenerMask);
-	void PostTrigger(const struct FString& Trigger);
-	int PostAssociatedAkEvent();
-	int PostAkEventByName(const struct FString& in_EventName);
-	int PostAkEvent(class UAkAudioEvent* AkEvent, const struct FString& in_EventName);
-	bool IsUsingVolumesForRTPCs();
-	bool IsCurrentlyPlaying();
-	float GetAttenuationRadius();
-	void CalculateRelativeSpeed(float DeltaTime);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -227,7 +192,6 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	void STATIC_UseReverbVolumes(bool* inUseReverbVolumes, class AActor** Actor);
 	void STATIC_UnloadBankByName(struct FString* BankName);
 	void STATIC_UnloadBank(class UAkAudioBank** Bank, struct FString* BankName);
@@ -257,42 +221,10 @@ public:
 	class UAkComponent* STATIC_GetAkComponent(class USceneComponent** AttachToComponent, struct FName* AttachPointName, struct FVector* Location, TEnumAsByte<EAttachLocation>* LocationType);
 	void STATIC_ClearBanks();
 	void STATIC_AddOutputCaptureMarker(struct FString* MarkerText);
-=======
-	void STATIC_UseReverbVolumes(bool inUseReverbVolumes, class AActor* Actor);
-	void STATIC_UnloadBankByName(const struct FString& BankName);
-	void STATIC_UnloadBank(class UAkAudioBank* Bank, const struct FString& BankName);
-	void STATIC_StopProfilerCapture();
-	void STATIC_StopOutputCapture();
-	void STATIC_StopAllAmbientSounds(class UObject* WorldContextObject);
-	void STATIC_StopAll();
-	void STATIC_StopActor(class AActor* Actor);
-	void STATIC_StartProfilerCapture(const struct FString& Filename);
-	void STATIC_StartOutputCapture(const struct FString& Filename);
-	void STATIC_StartAllAmbientSounds(class UObject* WorldContextObject);
-	class UAkComponent* STATIC_SpawnAkComponentAtLocation(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, const struct FVector& Location, const struct FRotator& Orientation, bool AutoPost, const struct FString& EventName, bool AutoDestroy);
-	void STATIC_SetSwitch(const struct FName& SwitchGroup, const struct FName& SwitchState, class AActor* Actor);
-	void STATIC_SetState(const struct FName& StateGroup, const struct FName& State);
-	void STATIC_SetRTPCValue(const struct FName& RTPC, float Value, int InterpolationTimeMs, class AActor* Actor);
-	void STATIC_SetOutputBusVolume(float BusVolume, class AActor* Actor);
-	void STATIC_PostTrigger(const struct FName& Trigger, class AActor* Actor);
-	void STATIC_PostEventByName(const struct FString& EventName, class AActor* Actor, bool bStopWhenAttachedToDestroyed);
-	int STATIC_PostEventAttached(class UAkAudioEvent* AkEvent, class AActor* Actor, const struct FName& AttachPointName, bool bStopWhenAttachedToDestroyed, const struct FString& EventName);
-	void STATIC_PostEventAtLocationByName(const struct FString& EventName, const struct FVector& Location, const struct FRotator& Orientation, class UObject* WorldContextObject, bool UseReverb);
-	int STATIC_PostEventAtLocation(class UAkAudioEvent* AkEvent, const struct FVector& Location, const struct FRotator& Orientation, const struct FString& EventName, class UObject* WorldContextObject, bool UseReverb);
-	int STATIC_PostEvent(class UAkAudioEvent* AkEvent, class AActor* Actor, bool bStopWhenAttachedToDestroyed, const struct FString& EventName);
-	void STATIC_LoadInitBank();
-	void STATIC_LoadBanks(TArray<class UAkAudioBank*> SoundBanks, bool SynchronizeSoundBanks);
-	void STATIC_LoadBankByName(const struct FString& BankName);
-	void STATIC_LoadBank(class UAkAudioBank* Bank, const struct FString& BankName);
-	class UAkComponent* STATIC_GetAkComponent(class USceneComponent* AttachToComponent, const struct FName& AttachPointName, const struct FVector& Location, TEnumAsByte<EAttachLocation> LocationType);
-	void STATIC_ClearBanks();
-	void STATIC_AddOutputCaptureMarker(const struct FString& MarkerText);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
 // Class AkAudio.AkReverbVolume
-<<<<<<< HEAD
 // 0x0038 (0x0450 - 0x0418)
 class AAkReverbVolume : public AVolume
 {
@@ -306,21 +238,6 @@ public:
 	float                                              Priority;                                                 // 0x0440(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData01[0x4];                                       // 0x0444(0x0004) MISSED OFFSET
 	class AAkReverbVolume*                             NextLowerPriorityAkReverbVolume;                          // 0x0448(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
-=======
-// 0x0038 (0x0470 - 0x0438)
-class AAkReverbVolume : public AVolume
-{
-public:
-	unsigned char                                      bEnabled : 1;                                             // 0x0438(0x0001) (Edit, BlueprintVisible, Net)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0439(0x0007) MISSED OFFSET
-	class UAkAuxBus*                                   AuxBus;                                                   // 0x0440(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	struct FString                                     AuxBusName;                                               // 0x0448(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	float                                              SendLevel;                                                // 0x0458(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              FadeRate;                                                 // 0x045C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              Priority;                                                 // 0x0460(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x0464(0x0004) MISSED OFFSET
-	class AAkReverbVolume*                             NextLowerPriorityAkReverbVolume;                          // 0x0468(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -360,19 +277,11 @@ public:
 
 
 // Class AkAudio.AkSoundVolume
-<<<<<<< HEAD
 // 0x0008 (0x03E8 - 0x03E0)
 class AAkSoundVolume : public AActor
 {
 public:
 	class UAkSoundVolumeComponent*                     SoundVolumeComponent;                                     // 0x03E0(0x0008) (Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
-=======
-// 0x0008 (0x0408 - 0x0400)
-class AAkSoundVolume : public AActor
-{
-public:
-	class UAkSoundVolumeComponent*                     SoundVolumeComponent;                                     // 0x0400(0x0008) (Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -460,19 +369,11 @@ public:
 
 
 // Class AkAudio.AkSoundVolumePortal
-<<<<<<< HEAD
 // 0x0008 (0x03E8 - 0x03E0)
 class AAkSoundVolumePortal : public AActor
 {
 public:
 	class UAkSoundVolumePortalComponent*               SoundVolumePortalComponent;                               // 0x03E0(0x0008) (Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
-=======
-// 0x0008 (0x0408 - 0x0400)
-class AAkSoundVolumePortal : public AActor
-{
-public:
-	class UAkSoundVolumePortalComponent*               SoundVolumePortalComponent;                               // 0x0400(0x0008) (Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{

@@ -15,17 +15,10 @@ namespace SDK
 // Function BP_Console_Icon_A.BP_Console_Icon_A_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-<<<<<<< HEAD
 // bool*                          IsDesignTime                   (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void UBP_Console_Icon_A_C::PreConstruct(bool* IsDesignTime)
-=======
-// bool                           IsDesignTime                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
-
-void UBP_Console_Icon_A_C::PreConstruct(bool IsDesignTime)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -45,11 +38,7 @@ void UBP_Console_Icon_A_C::PreConstruct(bool IsDesignTime)
 
 // Function BP_Console_Icon_A.BP_Console_Icon_A_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UBP_Console_Icon_A_C::Construct()
 {
@@ -71,17 +60,10 @@ void UBP_Console_Icon_A_C::Construct()
 // Function BP_Console_Icon_A.BP_Console_Icon_A_C.ExecuteUbergraph_BP_Console_Icon_A
 // ()
 // Parameters:
-<<<<<<< HEAD
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void UBP_Console_Icon_A_C::ExecuteUbergraph_BP_Console_Icon_A(int* EntryPoint)
-=======
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
-
-void UBP_Console_Icon_A_C::ExecuteUbergraph_BP_Console_Icon_A(int EntryPoint)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 

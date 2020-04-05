@@ -16,11 +16,7 @@ namespace SDK
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // struct FText                   ReturnValue                    (Parm, OutParm, ReturnParm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 struct FText UPopupWidgetForReplay_C::Get_TextCancel_Text()
 {
@@ -43,11 +39,7 @@ struct FText UPopupWidgetForReplay_C::Get_TextCancel_Text()
 
 // Function PopupWidgetForReplay.PopupWidgetForReplay_C.BndEvt__ButtonOK_K2Node_ComponentBoundEvent_85_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UPopupWidgetForReplay_C::BndEvt__ButtonOK_K2Node_ComponentBoundEvent_85_OnButtonClickedEvent__DelegateSignature()
 {
@@ -68,11 +60,7 @@ void UPopupWidgetForReplay_C::BndEvt__ButtonOK_K2Node_ComponentBoundEvent_85_OnB
 
 // Function PopupWidgetForReplay.PopupWidgetForReplay_C.BndEvt__ButtonCancel_K2Node_ComponentBoundEvent_107_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UPopupWidgetForReplay_C::BndEvt__ButtonCancel_K2Node_ComponentBoundEvent_107_OnButtonClickedEvent__DelegateSignature()
 {
@@ -93,11 +81,7 @@ void UPopupWidgetForReplay_C::BndEvt__ButtonCancel_K2Node_ComponentBoundEvent_10
 
 // Function PopupWidgetForReplay.PopupWidgetForReplay_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UPopupWidgetForReplay_C::Construct()
 {
@@ -118,11 +102,7 @@ void UPopupWidgetForReplay_C::Construct()
 
 // Function PopupWidgetForReplay.PopupWidgetForReplay_C.Custom Event
 // (BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UPopupWidgetForReplay_C::Custom_Event()
 {
@@ -143,11 +123,7 @@ void UPopupWidgetForReplay_C::Custom_Event()
 
 // Function PopupWidgetForReplay.PopupWidgetForReplay_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UPopupWidgetForReplay_C::Destruct()
 {
@@ -168,11 +144,7 @@ void UPopupWidgetForReplay_C::Destruct()
 
 // Function PopupWidgetForReplay.PopupWidgetForReplay_C.XBoxOneOk
 // (BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UPopupWidgetForReplay_C::XBoxOneOk()
 {
@@ -198,11 +170,7 @@ void UPopupWidgetForReplay_C::XBoxOneOk()
 // struct FText*                  Title                          (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FText*                  Message                        (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FScriptDelegate*        PressedDelegate                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UPopupWidgetForReplay_C::SetPopup(EPopupStyle* PopupStyle, struct FText* Title, struct FText* Message, struct FScriptDelegate* PressedDelegate)
 {
@@ -230,11 +198,7 @@ void UPopupWidgetForReplay_C::SetPopup(EPopupStyle* PopupStyle, struct FText* Ti
 // Parameters:
 // struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
 // float*                         InDeltaTime                    (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UPopupWidgetForReplay_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
@@ -259,11 +223,7 @@ void UPopupWidgetForReplay_C::Tick(struct FGeometry* MyGeometry, float* InDeltaT
 // (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UPopupWidgetForReplay_C::ExecuteUbergraph_PopupWidgetForReplay(int* EntryPoint)
 {
@@ -285,11 +245,7 @@ void UPopupWidgetForReplay_C::ExecuteUbergraph_PopupWidgetForReplay(int* EntryPo
 
 // Function PopupWidgetForReplay.PopupWidgetForReplay_C.HideMyself__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UPopupWidgetForReplay_C::HideMyself__DelegateSignature()
 {
@@ -311,17 +267,10 @@ void UPopupWidgetForReplay_C::HideMyself__DelegateSignature()
 // Function PopupWidgetForReplay.PopupWidgetForReplay_C.ButtonClickDispatcher__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-<<<<<<< HEAD
 // EPopupButtonID*                NewParam                       (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void UPopupWidgetForReplay_C::ButtonClickDispatcher__DelegateSignature(EPopupButtonID* NewParam)
-=======
-// EPopupButtonID                 NewParam                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
-
-void UPopupWidgetForReplay_C::ButtonClickDispatcher__DelegateSignature(EPopupButtonID NewParam)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 

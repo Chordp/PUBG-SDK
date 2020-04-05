@@ -16,11 +16,7 @@ namespace SDK
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // TScriptInterface<class USlotInterface> SlotItem                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackageItemSlotWidget_C::GetSlotItem(TScriptInterface<class USlotInterface>* SlotItem)
 {
@@ -46,11 +42,7 @@ void UCarePackageItemSlotWidget_C::GetSlotItem(TScriptInterface<class USlotInter
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // TScriptInterface<class USlotContainerInterface> SlotContainer                  (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackageItemSlotWidget_C::GetSlotContainer(TScriptInterface<class USlotContainerInterface>* SlotContainer)
 {
@@ -76,11 +68,7 @@ void UCarePackageItemSlotWidget_C::GetSlotContainer(TScriptInterface<class USlot
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int*                           ItemCount                      (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackageItemSlotWidget_C::SetItemCount(int* ItemCount)
 {
@@ -104,11 +92,7 @@ void UCarePackageItemSlotWidget_C::SetItemCount(int* ItemCount)
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UTexture**               ItemIcon                       (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackageItemSlotWidget_C::SetItemIcon(class UTexture** ItemIcon)
 {
@@ -132,11 +116,7 @@ void UCarePackageItemSlotWidget_C::SetItemIcon(class UTexture** ItemIcon)
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FText*                  ItemName                       (Parm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCarePackageItemSlotWidget_C::SetItemName(struct FText* ItemName)
 {

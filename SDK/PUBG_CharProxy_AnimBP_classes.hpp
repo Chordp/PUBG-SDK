@@ -15,11 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // AnimBlueprintGeneratedClass CharProxy_AnimBP.CharProxy_AnimBP_C
-<<<<<<< HEAD
 // 0x6331 (0x6891 - 0x0560)
-=======
-// 0x6251 (0x67B1 - 0x0560)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 class UCharProxy_AnimBP_C : public UTslInventoryAnimInstance
 {
 public:
@@ -136,7 +132,6 @@ public:
 	struct FAnimNode_BlendListByEnum                   AnimGraphNode_BlendListByEnum_A50437FC42EBAFCE394BF6B0A50A57E2;// 0x6510(0x00E0)
 	struct FAnimNode_SequencePlayer                    AnimGraphNode_SequencePlayer_8AE019434ED53F35CBE569BF7BDBC106;// 0x65F0(0x0070)
 	struct FAnimNode_SequencePlayer                    AnimGraphNode_SequencePlayer_8097202E431F22442C132CB2787BD89C;// 0x6660(0x0070)
-<<<<<<< HEAD
 	struct FAnimNode_SequencePlayer                    AnimGraphNode_SequencePlayer_C3833E7F4F5CED3C7DCF5385E0BFE33C;// 0x66D0(0x0070)
 	struct FAnimNode_SequencePlayer                    AnimGraphNode_SequencePlayer_FB62FE64461BE757B0AE46ADF7A89846;// 0x6740(0x0070)
 	EAnimWeaponType                                    AnimWeaponType;                                           // 0x67B0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData)
@@ -175,44 +170,6 @@ public:
 	float                                              AdjustedIKRH;                                             // 0x6888(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	float                                              AD_BlendIn;                                               // 0x688C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 	EThrownWeaponType                                  ThrownClass;                                              // 0x6890(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData)
-=======
-	EAnimWeaponType                                    AnimWeaponType;                                           // 0x66D0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x7];                                       // 0x66D1(0x0007) MISSED OFFSET
-	class UBlendSpaceBase*                             GripBlendspace;                                           // 0x66D8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              BlendTime;                                                // 0x66E0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	struct FVector                                     PistolOffset;                                             // 0x66E4(0x000C) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
-	float                                              GripType;                                                 // 0x66F0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              BlinkAlpha;                                               // 0x66F4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData)
-	EWeaponClass                                       WeaponClassEnum;                                          // 0x66F8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x3];                                       // 0x66F9(0x0003) MISSED OFFSET
-	float                                              LH_GripIndex;                                             // 0x66FC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	class UBlendSpaceBase*                             LH_GripBS;                                                // 0x6700(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	bool                                               IsLobbyReady;                                             // 0x6708(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData04[0x3];                                       // 0x6709(0x0003) MISSED OFFSET
-	struct FVector                                     Wind;                                                     // 0x670C(0x000C) (Edit, BlueprintVisible, Transient, DisableEditOnInstance, IsPlainOldData)
-	struct FVector                                     InitialWind;                                              // 0x6718(0x000C) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData05[0x4];                                       // 0x6724(0x0004) MISSED OFFSET
-	class UCurveFloat*                                 Curve;                                                    // 0x6728(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	struct FVector                                     AxisFix;                                                  // 0x6730(0x000C) (Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData06[0x4];                                       // 0x673C(0x0004) MISSED OFFSET
-	class UCurveFloat*                                 LobbyAdjust;                                              // 0x6740(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	class UAnimSequence*                               AnimWeapon_Default;                                       // 0x6748(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	class UAnimSequence*                               AnimWeapon_Pistol;                                        // 0x6750(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	class UAnimSequence*                               AnimWeapon_SR;                                            // 0x6758(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	class UAnimSequence*                               AnimWeapon_Shotgun;                                       // 0x6760(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	class UAnimSequence*                               AnimWeapon_SMG;                                           // 0x6768(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	class UAnimSequence*                               AnimWeapon_LMG;                                           // 0x6770(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	class UAnimSequence*                               AnimWeapon_Melee;                                         // 0x6778(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	class UAnimSequence*                               AnimWeapon_DMR;                                           // 0x6780(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	class UAnimSequence*                               AnimWeapon_Carbine;                                       // 0x6788(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	class UAnimSequence*                               AnimWeapon_Rifle;                                         // 0x6790(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              AdjustedIKLH;                                             // 0x6798(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData07[0x4];                                       // 0x679C(0x0004) MISSED OFFSET
-	class UAnimSequence*                               AnimUnarmed;                                              // 0x67A0(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              AdjustedIKRH;                                             // 0x67A8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              AD_BlendIn;                                               // 0x67AC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	EThrownWeaponType                                  ThrownClass;                                              // 0x67B0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{

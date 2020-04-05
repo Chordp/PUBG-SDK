@@ -16,11 +16,7 @@ namespace SDK
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8B4400              		 offset:4ae4400                       
-=======
-// FunctionAddress:0x00007FF6DAEA7FC0              		 offset:44e7fc0                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 bool ULocationServices::STATIC_StopLocationServices()
 {
@@ -46,11 +42,7 @@ bool ULocationServices::STATIC_StopLocationServices()
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8B43D0              		 offset:4ae43d0                       
-=======
-// FunctionAddress:0x00007FF6DAEA7F90              		 offset:44e7f90                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 bool ULocationServices::STATIC_StartLocationServices()
 {
@@ -75,19 +67,11 @@ bool ULocationServices::STATIC_StartLocationServices()
 // Function LocationServicesBPLibrary.LocationServices.IsLocationAccuracyAvailable
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // ELocationAccuracy*             Accuracy                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF71C8B4350              		 offset:4ae4350                       
 
 bool ULocationServices::STATIC_IsLocationAccuracyAvailable(ELocationAccuracy* Accuracy)
-=======
-// ELocationAccuracy              Accuracy                       (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAEA7F10              		 offset:44e7f10                       
-
-bool ULocationServices::STATIC_IsLocationAccuracyAvailable(ELocationAccuracy Accuracy)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -111,7 +95,6 @@ bool ULocationServices::STATIC_IsLocationAccuracyAvailable(ELocationAccuracy Acc
 // Function LocationServicesBPLibrary.LocationServices.InitLocationServices
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // ELocationAccuracy*             Accuracy                       (Parm, ZeroConstructor, IsPlainOldData)
 // float*                         UpdateFrequency                (Parm, ZeroConstructor, IsPlainOldData)
 // float*                         MinDistanceFilter              (Parm, ZeroConstructor, IsPlainOldData)
@@ -119,15 +102,6 @@ bool ULocationServices::STATIC_IsLocationAccuracyAvailable(ELocationAccuracy Acc
 // FunctionAddress:0x00007FF71C8B4250              		 offset:4ae4250                       
 
 bool ULocationServices::STATIC_InitLocationServices(ELocationAccuracy* Accuracy, float* UpdateFrequency, float* MinDistanceFilter)
-=======
-// ELocationAccuracy              Accuracy                       (Parm, ZeroConstructor, IsPlainOldData)
-// float                          UpdateFrequency                (Parm, ZeroConstructor, IsPlainOldData)
-// float                          MinDistanceFilter              (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAEA7E10              		 offset:44e7e10                       
-
-bool ULocationServices::STATIC_InitLocationServices(ELocationAccuracy Accuracy, float UpdateFrequency, float MinDistanceFilter)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -154,11 +128,7 @@ bool ULocationServices::STATIC_InitLocationServices(ELocationAccuracy Accuracy, 
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // class ULocationServicesImpl*   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8B4230              		 offset:4ae4230                       
-=======
-// FunctionAddress:0x00007FF6DAEA7DF0              		 offset:44e7df0                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 class ULocationServicesImpl* ULocationServices::STATIC_GetLocationServicesImpl()
 {
@@ -184,11 +154,7 @@ class ULocationServicesImpl* ULocationServices::STATIC_GetLocationServicesImpl()
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // struct FLocationServicesData   ReturnValue                    (Parm, OutParm, ReturnParm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8B41F0              		 offset:4ae41f0                       
-=======
-// FunctionAddress:0x00007FF6DAEA7DB0              		 offset:44e7db0                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 struct FLocationServicesData ULocationServices::STATIC_GetLastKnownLocation()
 {
@@ -214,11 +180,7 @@ struct FLocationServicesData ULocationServices::STATIC_GetLastKnownLocation()
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8B41C0              		 offset:4ae41c0                       
-=======
-// FunctionAddress:0x00007FF6DAEA7D80              		 offset:44e7d80                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 bool ULocationServices::STATIC_AreLocationServicesEnabled()
 {

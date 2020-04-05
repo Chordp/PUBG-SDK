@@ -17,11 +17,7 @@ namespace SDK
 // Parameters:
 // struct FString*                RegionName                     (Parm, ZeroConstructor)
 // int                            Array_Index                    (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::GetIndexFromRegionName(struct FString* RegionName, int* Array_Index)
 {
@@ -48,11 +44,7 @@ void UUiReplayList_C::GetIndexFromRegionName(struct FString* RegionName, int* Ar
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FString*                RegionOrLocal                  (Parm, ZeroConstructor)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::UpdateReplayList_Impl(struct FString* RegionOrLocal)
 {
@@ -76,11 +68,7 @@ void UUiReplayList_C::UpdateReplayList_Impl(struct FString* RegionOrLocal)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int*                           Index_                         (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::UpdateRegionButtonColors(int* Index_)
 {
@@ -102,11 +90,7 @@ void UUiReplayList_C::UpdateRegionButtonColors(int* Index_)
 
 // Function UiReplayList.UiReplayList_C.ChangeCloseButtonForTest
 // (Public, BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::ChangeCloseButtonForTest()
 {
@@ -127,11 +111,7 @@ void UUiReplayList_C::ChangeCloseButtonForTest()
 
 // Function UiReplayList.UiReplayList_C.ResetRecorderStatistics
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::ResetRecorderStatistics()
 {
@@ -152,11 +132,7 @@ void UUiReplayList_C::ResetRecorderStatistics()
 
 // Function UiReplayList.UiReplayList_C.ResetSummary
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::ResetSummary()
 {
@@ -179,11 +155,7 @@ void UUiReplayList_C::ResetSummary()
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                           bIsReplayBusy                  (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::CheckReplayBusyStatus(bool* bIsReplayBusy)
 {
@@ -209,11 +181,7 @@ void UUiReplayList_C::CheckReplayBusyStatus(bool* bIsReplayBusy)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FTslReplaySummary*      inReplaySummary                (Parm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::UpdateRecorderStatistics(struct FTslReplaySummary* inReplaySummary)
 {
@@ -237,11 +205,7 @@ void UUiReplayList_C::UpdateRecorderStatistics(struct FTslReplaySummary* inRepla
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FTslReplaySummary*      inReplaySummary                (Parm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::UpdateTeamText(struct FTslReplaySummary* inReplaySummary)
 {
@@ -265,11 +229,7 @@ void UUiReplayList_C::UpdateTeamText(struct FTslReplaySummary* inReplaySummary)
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool*                          bShouldKeep                    (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::SetShouldKeep(bool* bShouldKeep)
 {
@@ -293,11 +253,7 @@ void UUiReplayList_C::SetShouldKeep(bool* bShouldKeep)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FTslReplaySummary*      ReplaySummary                  (Parm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::UpdateReplaySummary(struct FTslReplaySummary* ReplaySummary)
 {
@@ -322,11 +278,7 @@ void UUiReplayList_C::UpdateReplaySummary(struct FTslReplaySummary* ReplaySummar
 // Parameters:
 // struct FString*                RegionOrLocal                  (Parm, ZeroConstructor)
 // struct FReplayItem*            inReplayItem                   (Parm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::SetReplayItemToProcess(struct FString* RegionOrLocal, struct FReplayItem* inReplayItem)
 {
@@ -349,11 +301,7 @@ void UUiReplayList_C::SetReplayItemToProcess(struct FString* RegionOrLocal, stru
 
 // Function UiReplayList.UiReplayList_C.HidePageWidget
 // (Public, BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::HidePageWidget()
 {
@@ -374,11 +322,7 @@ void UUiReplayList_C::HidePageWidget()
 
 // Function UiReplayList.UiReplayList_C.ShowPageWidget
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::ShowPageWidget()
 {
@@ -399,11 +343,7 @@ void UUiReplayList_C::ShowPageWidget()
 
 // Function UiReplayList.UiReplayList_C.ClearReplayList
 // (Public, BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::ClearReplayList()
 {
@@ -424,11 +364,7 @@ void UUiReplayList_C::ClearReplayList()
 
 // Function UiReplayList.UiReplayList_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::Construct()
 {
@@ -449,11 +385,7 @@ void UUiReplayList_C::Construct()
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_262_K2Node_ComponentBoundEvent_40_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::BndEvt__Button_262_K2Node_ComponentBoundEvent_40_OnButtonClickedEvent__DelegateSignature()
 {
@@ -474,11 +406,7 @@ void UUiReplayList_C::BndEvt__Button_262_K2Node_ComponentBoundEvent_40_OnButtonC
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_AS_K2Node_ComponentBoundEvent_538_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::BndEvt__Button_AS_K2Node_ComponentBoundEvent_538_OnButtonClickedEvent__DelegateSignature()
 {
@@ -499,11 +427,7 @@ void UUiReplayList_C::BndEvt__Button_AS_K2Node_ComponentBoundEvent_538_OnButtonC
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_EU_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::BndEvt__Button_EU_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature()
 {
@@ -524,11 +448,7 @@ void UUiReplayList_C::BndEvt__Button_EU_K2Node_ComponentBoundEvent_6_OnButtonCli
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_NA_K2Node_ComponentBoundEvent_36_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::BndEvt__Button_NA_K2Node_ComponentBoundEvent_36_OnButtonClickedEvent__DelegateSignature()
 {
@@ -549,11 +469,7 @@ void UUiReplayList_C::BndEvt__Button_NA_K2Node_ComponentBoundEvent_36_OnButtonCl
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_SA_K2Node_ComponentBoundEvent_57_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::BndEvt__Button_SA_K2Node_ComponentBoundEvent_57_OnButtonClickedEvent__DelegateSignature()
 {
@@ -574,11 +490,7 @@ void UUiReplayList_C::BndEvt__Button_SA_K2Node_ComponentBoundEvent_57_OnButtonCl
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_SEA_K2Node_ComponentBoundEvent_79_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::BndEvt__Button_SEA_K2Node_ComponentBoundEvent_79_OnButtonClickedEvent__DelegateSignature()
 {
@@ -599,11 +511,7 @@ void UUiReplayList_C::BndEvt__Button_SEA_K2Node_ComponentBoundEvent_79_OnButtonC
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_OC_K2Node_ComponentBoundEvent_102_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::BndEvt__Button_OC_K2Node_ComponentBoundEvent_102_OnButtonClickedEvent__DelegateSignature()
 {
@@ -624,11 +532,7 @@ void UUiReplayList_C::BndEvt__Button_OC_K2Node_ComponentBoundEvent_102_OnButtonC
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_Local_K2Node_ComponentBoundEvent_130_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::BndEvt__Button_Local_K2Node_ComponentBoundEvent_130_OnButtonClickedEvent__DelegateSignature()
 {
@@ -649,11 +553,7 @@ void UUiReplayList_C::BndEvt__Button_Local_K2Node_ComponentBoundEvent_130_OnButt
 
 // Function UiReplayList.UiReplayList_C.BndEvt__PrevButton_K2Node_ComponentBoundEvent_670_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::BndEvt__PrevButton_K2Node_ComponentBoundEvent_670_OnButtonClickedEvent__DelegateSignature()
 {
@@ -674,11 +574,7 @@ void UUiReplayList_C::BndEvt__PrevButton_K2Node_ComponentBoundEvent_670_OnButton
 
 // Function UiReplayList.UiReplayList_C.BndEvt__NexButton_K2Node_ComponentBoundEvent_696_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::BndEvt__NexButton_K2Node_ComponentBoundEvent_696_OnButtonClickedEvent__DelegateSignature()
 {
@@ -699,11 +595,7 @@ void UUiReplayList_C::BndEvt__NexButton_K2Node_ComponentBoundEvent_696_OnButtonC
 
 // Function UiReplayList.UiReplayList_C.BndEvt__ButtonGo_K2Node_ComponentBoundEvent_217_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::BndEvt__ButtonGo_K2Node_ComponentBoundEvent_217_OnButtonClickedEvent__DelegateSignature()
 {
@@ -724,11 +616,7 @@ void UUiReplayList_C::BndEvt__ButtonGo_K2Node_ComponentBoundEvent_217_OnButtonCl
 
 // Function UiReplayList.UiReplayList_C.BndEvt__ButtonExit_K2Node_ComponentBoundEvent_211_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::BndEvt__ButtonExit_K2Node_ComponentBoundEvent_211_OnButtonClickedEvent__DelegateSignature()
 {
@@ -749,11 +637,7 @@ void UUiReplayList_C::BndEvt__ButtonExit_K2Node_ComponentBoundEvent_211_OnButton
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_Play_K2Node_ComponentBoundEvent_233_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::BndEvt__Button_Play_K2Node_ComponentBoundEvent_233_OnButtonClickedEvent__DelegateSignature()
 {
@@ -774,11 +658,7 @@ void UUiReplayList_C::BndEvt__Button_Play_K2Node_ComponentBoundEvent_233_OnButto
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_Delete_K2Node_ComponentBoundEvent_810_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::BndEvt__Button_Delete_K2Node_ComponentBoundEvent_810_OnButtonClickedEvent__DelegateSignature()
 {
@@ -799,11 +679,7 @@ void UUiReplayList_C::BndEvt__Button_Delete_K2Node_ComponentBoundEvent_810_OnBut
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_DeleteOlds_K2Node_ComponentBoundEvent_271_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::BndEvt__Button_DeleteOlds_K2Node_ComponentBoundEvent_271_OnButtonClickedEvent__DelegateSignature()
 {
@@ -826,11 +702,7 @@ void UUiReplayList_C::BndEvt__Button_DeleteOlds_K2Node_ComponentBoundEvent_271_O
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int*                           Remains                        (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::OnKeepAndDeleteOldestReplaysDoneEvent(int* Remains)
 {
@@ -854,11 +726,7 @@ void UUiReplayList_C::OnKeepAndDeleteOldestReplaysDoneEvent(int* Remains)
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FTslReplaySummary*      ReplaySummary                  (Parm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::OnGetReplaySummaryEvent(struct FTslReplaySummary* ReplaySummary)
 {
@@ -880,11 +748,7 @@ void UUiReplayList_C::OnGetReplaySummaryEvent(struct FTslReplaySummary* ReplaySu
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_JP_K2Node_ComponentBoundEvent_485_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::BndEvt__Button_JP_K2Node_ComponentBoundEvent_485_OnButtonClickedEvent__DelegateSignature()
 {
@@ -907,11 +771,7 @@ void UUiReplayList_C::BndEvt__Button_JP_K2Node_ComponentBoundEvent_485_OnButtonC
 // (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::ExecuteUbergraph_UiReplayList(int* EntryPoint)
 {
@@ -933,11 +793,7 @@ void UUiReplayList_C::ExecuteUbergraph_UiReplayList(int* EntryPoint)
 
 // Function UiReplayList.UiReplayList_C.DeleteReplayEvent__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::DeleteReplayEvent__DelegateSignature()
 {
@@ -958,11 +814,7 @@ void UUiReplayList_C::DeleteReplayEvent__DelegateSignature()
 
 // Function UiReplayList.UiReplayList_C.QuitApplicationEvent__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::QuitApplicationEvent__DelegateSignature()
 {
@@ -983,11 +835,7 @@ void UUiReplayList_C::QuitApplicationEvent__DelegateSignature()
 
 // Function UiReplayList.UiReplayList_C.GoPageEvent__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::GoPageEvent__DelegateSignature()
 {
@@ -1008,11 +856,7 @@ void UUiReplayList_C::GoPageEvent__DelegateSignature()
 
 // Function UiReplayList.UiReplayList_C.PrevPageEvent__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::PrevPageEvent__DelegateSignature()
 {
@@ -1033,11 +877,7 @@ void UUiReplayList_C::PrevPageEvent__DelegateSignature()
 
 // Function UiReplayList.UiReplayList_C.NextPageEvent__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UUiReplayList_C::NextPageEvent__DelegateSignature()
 {
@@ -1059,17 +899,10 @@ void UUiReplayList_C::NextPageEvent__DelegateSignature()
 // Function UiReplayList.UiReplayList_C.UpdateReplayList__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                RegionOrLocal                  (Parm, ZeroConstructor)
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void UUiReplayList_C::UpdateReplayList__DelegateSignature(struct FString* RegionOrLocal)
-=======
-// struct FString                 RegionOrLocal                  (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
-
-void UUiReplayList_C::UpdateReplayList__DelegateSignature(const struct FString& RegionOrLocal)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 

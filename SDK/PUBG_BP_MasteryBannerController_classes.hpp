@@ -15,11 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_MasteryBannerController.BP_MasteryBannerController_C
-<<<<<<< HEAD
 // 0x0000 (0x0468 - 0x0468)
-=======
-// 0x0000 (0x0488 - 0x0488)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 class ABP_MasteryBannerController_C : public AMasteryBannerController
 {
 public:

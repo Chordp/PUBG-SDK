@@ -69,17 +69,10 @@ bool UObject::IsA(UClass* cmp) const
 // Function CoreUObject.Object.ExecuteUbergraph
 // (Event, Public, BlueprintEvent)
 // Parameters:
-<<<<<<< HEAD
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void UObject::ExecuteUbergraph(int* EntryPoint)
-=======
-// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
-
-void UObject::ExecuteUbergraph(int EntryPoint)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 

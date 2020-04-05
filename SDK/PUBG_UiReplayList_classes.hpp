@@ -122,11 +122,7 @@ public:
 	void GoPageEvent__DelegateSignature();
 	void PrevPageEvent__DelegateSignature();
 	void NextPageEvent__DelegateSignature();
-<<<<<<< HEAD
 	void UpdateReplayList__DelegateSignature(struct FString* RegionOrLocal);
-=======
-	void UpdateReplayList__DelegateSignature(const struct FString& RegionOrLocal);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

@@ -231,11 +231,7 @@ struct UUiReplayList_C_NextPageEvent__DelegateSignature_Params
 // Function UiReplayList.UiReplayList_C.UpdateReplayList__DelegateSignature
 struct UUiReplayList_C_UpdateReplayList__DelegateSignature_Params
 {
-<<<<<<< HEAD
 	struct FString*                                    RegionOrLocal;                                            // (Parm, ZeroConstructor)
-=======
-	struct FString                                     RegionOrLocal;                                            // (Parm, ZeroConstructor)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 }

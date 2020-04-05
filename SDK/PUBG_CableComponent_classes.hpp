@@ -15,19 +15,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Class CableComponent.CableActor
-<<<<<<< HEAD
 // 0x0008 (0x03E8 - 0x03E0)
 class ACableActor : public AActor
 {
 public:
 	class UCableComponent*                             CableComponent;                                           // 0x03E0(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
-=======
-// 0x0008 (0x0408 - 0x0400)
-class ACableActor : public AActor
-{
-public:
-	class UCableComponent*                             CableComponent;                                           // 0x0400(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -77,11 +69,7 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	void SetAttachEndTo(class AActor** Actor, struct FName* ComponentProperty, struct FName* SocketName);
-=======
-	void SetAttachEndTo(class AActor* Actor, const struct FName& ComponentProperty, const struct FName& SocketName);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	void GetCableParticleLocations(TArray<struct FVector>* Locations);
 	class USceneComponent* GetAttachedComponent();
 	class AActor* GetAttachedActor();

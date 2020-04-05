@@ -14,11 +14,7 @@ namespace SDK
 
 // Function GameplayTasks.GameplayTask.ReadyForActivation
 // (Final, Native, Public, BlueprintCallable)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF1D730              		 offset:414d730                       
-=======
-// FunctionAddress:0x00007FF6D747D090              		 offset:abd090                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UGameplayTask::ReadyForActivation()
 {
@@ -40,11 +36,7 @@ void UGameplayTask::ReadyForActivation()
 
 // DelegateFunction GameplayTasks.GameplayTask.GenericGameplayTaskDelegate__DelegateSignature
 // (MulticastDelegate, Public, Delegate)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UGameplayTask::GenericGameplayTaskDelegate__DelegateSignature()
 {
@@ -65,11 +57,7 @@ void UGameplayTask::GenericGameplayTaskDelegate__DelegateSignature()
 
 // Function GameplayTasks.GameplayTask.EndTask
 // (Final, Native, Public, BlueprintCallable)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF1D3E0              		 offset:414d3e0                       
-=======
-// FunctionAddress:0x00007FF6D747CD40              		 offset:abcd40                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UGameplayTask::EndTask()
 {
@@ -92,7 +80,6 @@ void UGameplayTask::EndTask()
 // Function GameplayTasks.GameplayTask_ClaimResource.ClaimResources
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // TScriptInterface<class UGameplayTaskOwnerInterface>* InTaskOwner                    (Parm, ZeroConstructor, IsPlainOldData)
 // TArray<class UClass*>*         ResourceClasses                (Parm, ZeroConstructor)
 // unsigned char*                 Priority                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
@@ -101,16 +88,6 @@ void UGameplayTask::EndTask()
 // FunctionAddress:0x00007FF71BF1D230              		 offset:414d230                       
 
 class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::STATIC_ClaimResources(TScriptInterface<class UGameplayTaskOwnerInterface>* InTaskOwner, TArray<class UClass*>* ResourceClasses, unsigned char* Priority, struct FName* TaskInstanceName)
-=======
-// TScriptInterface<class UGameplayTaskOwnerInterface> InTaskOwner                    (Parm, ZeroConstructor, IsPlainOldData)
-// TArray<class UClass*>          ResourceClasses                (Parm, ZeroConstructor)
-// unsigned char                  Priority                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// struct FName                   TaskInstanceName               (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// class UGameplayTask_ClaimResource* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6D747CB90              		 offset:abcb90                        
-
-class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::STATIC_ClaimResources(const TScriptInterface<class UGameplayTaskOwnerInterface>& InTaskOwner, TArray<class UClass*> ResourceClasses, unsigned char Priority, const struct FName& TaskInstanceName)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -137,7 +114,6 @@ class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::STATIC_ClaimReso
 // Function GameplayTasks.GameplayTask_ClaimResource.ClaimResource
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // TScriptInterface<class UGameplayTaskOwnerInterface>* InTaskOwner                    (Parm, ZeroConstructor, IsPlainOldData)
 // class UClass**                 ResourceClass                  (Parm, ZeroConstructor, IsPlainOldData)
 // unsigned char*                 Priority                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
@@ -146,16 +122,6 @@ class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::STATIC_ClaimReso
 // FunctionAddress:0x00007FF71BF1D0E0              		 offset:414d0e0                       
 
 class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::STATIC_ClaimResource(TScriptInterface<class UGameplayTaskOwnerInterface>* InTaskOwner, class UClass** ResourceClass, unsigned char* Priority, struct FName* TaskInstanceName)
-=======
-// TScriptInterface<class UGameplayTaskOwnerInterface> InTaskOwner                    (Parm, ZeroConstructor, IsPlainOldData)
-// class UClass*                  ResourceClass                  (Parm, ZeroConstructor, IsPlainOldData)
-// unsigned char                  Priority                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// struct FName                   TaskInstanceName               (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// class UGameplayTask_ClaimResource* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6D747CA40              		 offset:abca40                        
-
-class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::STATIC_ClaimResource(const TScriptInterface<class UGameplayTaskOwnerInterface>& InTaskOwner, class UClass* ResourceClass, unsigned char Priority, const struct FName& TaskInstanceName)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -182,7 +148,6 @@ class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::STATIC_ClaimReso
 // Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor
 // (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // TScriptInterface<class UGameplayTaskOwnerInterface>* TaskOwner                      (Parm, ZeroConstructor, IsPlainOldData)
 // struct FVector*                SpawnLocation                  (Parm, IsPlainOldData)
 // struct FRotator*               SpawnRotation                  (Parm, IsPlainOldData)
@@ -192,17 +157,6 @@ class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::STATIC_ClaimReso
 // FunctionAddress:0x00007FF71BF1D750              		 offset:414d750                       
 
 class UGameplayTask_SpawnActor* UGameplayTask_SpawnActor::STATIC_SpawnActor(TScriptInterface<class UGameplayTaskOwnerInterface>* TaskOwner, struct FVector* SpawnLocation, struct FRotator* SpawnRotation, class UClass** Class, bool* bSpawnOnlyOnAuthority)
-=======
-// TScriptInterface<class UGameplayTaskOwnerInterface> TaskOwner                      (Parm, ZeroConstructor, IsPlainOldData)
-// struct FVector                 SpawnLocation                  (Parm, IsPlainOldData)
-// struct FRotator                SpawnRotation                  (Parm, IsPlainOldData)
-// class UClass*                  Class                          (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bSpawnOnlyOnAuthority          (Parm, ZeroConstructor, IsPlainOldData)
-// class UGameplayTask_SpawnActor* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6D747D0B0              		 offset:abd0b0                        
-
-class UGameplayTask_SpawnActor* UGameplayTask_SpawnActor::STATIC_SpawnActor(const TScriptInterface<class UGameplayTaskOwnerInterface>& TaskOwner, const struct FVector& SpawnLocation, const struct FRotator& SpawnRotation, class UClass* Class, bool bSpawnOnlyOnAuthority)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -230,19 +184,11 @@ class UGameplayTask_SpawnActor* UGameplayTask_SpawnActor::STATIC_SpawnActor(cons
 // Function GameplayTasks.GameplayTask_SpawnActor.FinishSpawningActor
 // (Native, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // class UObject**                WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // class AActor**                 SpawnedActor                   (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71BF1D400              		 offset:414d400                       
 
 void UGameplayTask_SpawnActor::FinishSpawningActor(class UObject** WorldContextObject, class AActor** SpawnedActor)
-=======
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
-// class AActor*                  SpawnedActor                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6D747CD60              		 offset:abcd60                        
-
-void UGameplayTask_SpawnActor::FinishSpawningActor(class UObject* WorldContextObject, class AActor* SpawnedActor)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -265,21 +211,12 @@ void UGameplayTask_SpawnActor::FinishSpawningActor(class UObject* WorldContextOb
 // Function GameplayTasks.GameplayTask_SpawnActor.BeginSpawningActor
 // (Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // class UObject**                WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // class AActor*                  SpawnedActor                   (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF71BF1D000              		 offset:414d000                       
 
 bool UGameplayTask_SpawnActor::BeginSpawningActor(class UObject** WorldContextObject, class AActor** SpawnedActor)
-=======
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
-// class AActor*                  SpawnedActor                   (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6D747C960              		 offset:abc960                        
-
-bool UGameplayTask_SpawnActor::BeginSpawningActor(class UObject* WorldContextObject, class AActor** SpawnedActor)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -305,11 +242,7 @@ bool UGameplayTask_SpawnActor::BeginSpawningActor(class UObject* WorldContextObj
 
 // DelegateFunction GameplayTasks.GameplayTask_TimeLimitedExecution.TaskFinishDelegate__DelegateSignature
 // (MulticastDelegate, Public, Delegate)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UGameplayTask_TimeLimitedExecution::TaskFinishDelegate__DelegateSignature()
 {
@@ -331,7 +264,6 @@ void UGameplayTask_TimeLimitedExecution::TaskFinishDelegate__DelegateSignature()
 // Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // TScriptInterface<class UGameplayTaskOwnerInterface>* TaskOwner                      (Parm, ZeroConstructor, IsPlainOldData)
 // float*                         Time                           (Parm, ZeroConstructor, IsPlainOldData)
 // unsigned char*                 Priority                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
@@ -339,15 +271,6 @@ void UGameplayTask_TimeLimitedExecution::TaskFinishDelegate__DelegateSignature()
 // FunctionAddress:0x00007FF71BF1D900              		 offset:414d900                       
 
 class UGameplayTask_WaitDelay* UGameplayTask_WaitDelay::STATIC_TaskWaitDelay(TScriptInterface<class UGameplayTaskOwnerInterface>* TaskOwner, float* Time, unsigned char* Priority)
-=======
-// TScriptInterface<class UGameplayTaskOwnerInterface> TaskOwner                      (Parm, ZeroConstructor, IsPlainOldData)
-// float                          Time                           (Parm, ZeroConstructor, IsPlainOldData)
-// unsigned char                  Priority                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// class UGameplayTask_WaitDelay* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6D747D260              		 offset:abd260                        
-
-class UGameplayTask_WaitDelay* UGameplayTask_WaitDelay::STATIC_TaskWaitDelay(const TScriptInterface<class UGameplayTaskOwnerInterface>& TaskOwner, float Time, unsigned char Priority)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -372,11 +295,7 @@ class UGameplayTask_WaitDelay* UGameplayTask_WaitDelay::STATIC_TaskWaitDelay(con
 
 // DelegateFunction GameplayTasks.GameplayTask_WaitDelay.TaskDelayDelegate__DelegateSignature
 // (MulticastDelegate, Public, Delegate)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UGameplayTask_WaitDelay::TaskDelayDelegate__DelegateSignature()
 {
@@ -397,11 +316,7 @@ void UGameplayTask_WaitDelay::TaskDelayDelegate__DelegateSignature()
 
 // Function GameplayTasks.GameplayTasksComponent.OnRep_SimulatedTasks
 // (Final, Native, Public)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF1D710              		 offset:414d710                       
-=======
-// FunctionAddress:0x00007FF6D747D070              		 offset:abd070                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UGameplayTasksComponent::OnRep_SimulatedTasks()
 {
@@ -424,7 +339,6 @@ void UGameplayTasksComponent::OnRep_SimulatedTasks()
 // Function GameplayTasks.GameplayTasksComponent.K2_RunGameplayTask
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // TScriptInterface<class UGameplayTaskOwnerInterface>* TaskOwner                      (Parm, ZeroConstructor, IsPlainOldData)
 // class UGameplayTask**          Task                           (Parm, ZeroConstructor, IsPlainOldData)
 // unsigned char*                 Priority                       (Parm, ZeroConstructor, IsPlainOldData)
@@ -434,17 +348,6 @@ void UGameplayTasksComponent::OnRep_SimulatedTasks()
 // FunctionAddress:0x00007FF71BF1D4D0              		 offset:414d4d0                       
 
 EGameplayTaskRunResult UGameplayTasksComponent::STATIC_K2_RunGameplayTask(TScriptInterface<class UGameplayTaskOwnerInterface>* TaskOwner, class UGameplayTask** Task, unsigned char* Priority, TArray<class UClass*>* AdditionalRequiredResources, TArray<class UClass*>* AdditionalClaimedResources)
-=======
-// TScriptInterface<class UGameplayTaskOwnerInterface> TaskOwner                      (Parm, ZeroConstructor, IsPlainOldData)
-// class UGameplayTask*           Task                           (Parm, ZeroConstructor, IsPlainOldData)
-// unsigned char                  Priority                       (Parm, ZeroConstructor, IsPlainOldData)
-// TArray<class UClass*>          AdditionalRequiredResources    (Parm, ZeroConstructor)
-// TArray<class UClass*>          AdditionalClaimedResources     (Parm, ZeroConstructor)
-// EGameplayTaskRunResult         ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6D747CE30              		 offset:abce30                        
-
-EGameplayTaskRunResult UGameplayTasksComponent::STATIC_K2_RunGameplayTask(const TScriptInterface<class UGameplayTaskOwnerInterface>& TaskOwner, class UGameplayTask* Task, unsigned char Priority, TArray<class UClass*> AdditionalRequiredResources, TArray<class UClass*> AdditionalClaimedResources)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 

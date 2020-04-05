@@ -31,15 +31,9 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	bool SetCustomMeshTriangles(TArray<struct FCustomMeshTriangle>* Triangles);
 	void ClearCustomMeshTriangles();
 	void AddCustomMeshTriangles(TArray<struct FCustomMeshTriangle>* Triangles);
-=======
-	bool SetCustomMeshTriangles(TArray<struct FCustomMeshTriangle> Triangles);
-	void ClearCustomMeshTriangles();
-	void AddCustomMeshTriangles(TArray<struct FCustomMeshTriangle> Triangles);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

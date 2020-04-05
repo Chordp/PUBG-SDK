@@ -14,27 +14,6 @@ namespace SDK
 //Classes
 //---------------------------------------------------------------------------
 
-<<<<<<< HEAD
-=======
-// Class GameplayTasks.GameplayTaskOwnerInterface
-// 0x0000 (0x0028 - 0x0028)
-class UGameplayTaskOwnerInterface : public UInterface
-{
-public:
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class GameplayTasks.GameplayTaskOwnerInterface"));
-
-		return ptr;
-	}
-
-};
-
-
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 // Class GameplayTasks.GameplayTask
 // 0x0040 (0x0068 - 0x0028)
 class UGameplayTask : public UObject
@@ -86,7 +65,6 @@ public:
 };
 
 
-<<<<<<< HEAD
 // Class GameplayTasks.GameplayTaskOwnerInterface
 // 0x0000 (0x0028 - 0x0028)
 class UGameplayTaskOwnerInterface : public UInterface
@@ -105,8 +83,6 @@ public:
 };
 
 
-=======
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 // Class GameplayTasks.GameplayTask_ClaimResource
 // 0x0000 (0x0068 - 0x0068)
 class UGameplayTask_ClaimResource : public UGameplayTask
@@ -123,13 +99,8 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	class UGameplayTask_ClaimResource* STATIC_ClaimResources(TScriptInterface<class UGameplayTaskOwnerInterface>* InTaskOwner, TArray<class UClass*>* ResourceClasses, unsigned char* Priority, struct FName* TaskInstanceName);
 	class UGameplayTask_ClaimResource* STATIC_ClaimResource(TScriptInterface<class UGameplayTaskOwnerInterface>* InTaskOwner, class UClass** ResourceClass, unsigned char* Priority, struct FName* TaskInstanceName);
-=======
-	class UGameplayTask_ClaimResource* STATIC_ClaimResources(const TScriptInterface<class UGameplayTaskOwnerInterface>& InTaskOwner, TArray<class UClass*> ResourceClasses, unsigned char Priority, const struct FName& TaskInstanceName);
-	class UGameplayTask_ClaimResource* STATIC_ClaimResource(const TScriptInterface<class UGameplayTaskOwnerInterface>& InTaskOwner, class UClass* ResourceClass, unsigned char Priority, const struct FName& TaskInstanceName);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -153,15 +124,9 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	class UGameplayTask_SpawnActor* STATIC_SpawnActor(TScriptInterface<class UGameplayTaskOwnerInterface>* TaskOwner, struct FVector* SpawnLocation, struct FRotator* SpawnRotation, class UClass** Class, bool* bSpawnOnlyOnAuthority);
 	void FinishSpawningActor(class UObject** WorldContextObject, class AActor** SpawnedActor);
 	bool BeginSpawningActor(class UObject** WorldContextObject, class AActor** SpawnedActor);
-=======
-	class UGameplayTask_SpawnActor* STATIC_SpawnActor(const TScriptInterface<class UGameplayTaskOwnerInterface>& TaskOwner, const struct FVector& SpawnLocation, const struct FRotator& SpawnRotation, class UClass* Class, bool bSpawnOnlyOnAuthority);
-	void FinishSpawningActor(class UObject* WorldContextObject, class AActor* SpawnedActor);
-	bool BeginSpawningActor(class UObject* WorldContextObject, class AActor** SpawnedActor);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -206,11 +171,7 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	class UGameplayTask_WaitDelay* STATIC_TaskWaitDelay(TScriptInterface<class UGameplayTaskOwnerInterface>* TaskOwner, float* Time, unsigned char* Priority);
-=======
-	class UGameplayTask_WaitDelay* STATIC_TaskWaitDelay(const TScriptInterface<class UGameplayTaskOwnerInterface>& TaskOwner, float Time, unsigned char Priority);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	void TaskDelayDelegate__DelegateSignature();
 };
 
@@ -240,11 +201,7 @@ public:
 
 
 	void OnRep_SimulatedTasks();
-<<<<<<< HEAD
 	EGameplayTaskRunResult STATIC_K2_RunGameplayTask(TScriptInterface<class UGameplayTaskOwnerInterface>* TaskOwner, class UGameplayTask** Task, unsigned char* Priority, TArray<class UClass*>* AdditionalRequiredResources, TArray<class UClass*>* AdditionalClaimedResources);
-=======
-	EGameplayTaskRunResult STATIC_K2_RunGameplayTask(const TScriptInterface<class UGameplayTaskOwnerInterface>& TaskOwner, class UGameplayTask* Task, unsigned char Priority, TArray<class UClass*> AdditionalRequiredResources, TArray<class UClass*> AdditionalClaimedResources);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

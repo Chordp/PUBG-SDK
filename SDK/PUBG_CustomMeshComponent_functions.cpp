@@ -15,19 +15,11 @@ namespace SDK
 // Function CustomMeshComponent.CustomMeshComponent.SetCustomMeshTriangles
 // (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // TArray<struct FCustomMeshTriangle>* Triangles                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF71C8A0560              		 offset:4ad0560                       
 
 bool UCustomMeshComponent::SetCustomMeshTriangles(TArray<struct FCustomMeshTriangle>* Triangles)
-=======
-// TArray<struct FCustomMeshTriangle> Triangles                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6DAE94060              		 offset:44d4060                       
-
-bool UCustomMeshComponent::SetCustomMeshTriangles(TArray<struct FCustomMeshTriangle> Triangles)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -50,11 +42,7 @@ bool UCustomMeshComponent::SetCustomMeshTriangles(TArray<struct FCustomMeshTrian
 
 // Function CustomMeshComponent.CustomMeshComponent.ClearCustomMeshTriangles
 // (Final, Native, Public, BlueprintCallable)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C8A0540              		 offset:4ad0540                       
-=======
-// FunctionAddress:0x00007FF6DAE94040              		 offset:44d4040                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCustomMeshComponent::ClearCustomMeshTriangles()
 {
@@ -77,17 +65,10 @@ void UCustomMeshComponent::ClearCustomMeshTriangles()
 // Function CustomMeshComponent.CustomMeshComponent.AddCustomMeshTriangles
 // (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // TArray<struct FCustomMeshTriangle>* Triangles                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // FunctionAddress:0x00007FF71C8A0490              		 offset:4ad0490                       
 
 void UCustomMeshComponent::AddCustomMeshTriangles(TArray<struct FCustomMeshTriangle>* Triangles)
-=======
-// TArray<struct FCustomMeshTriangle> Triangles                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// FunctionAddress:0x00007FF6DAE93F90              		 offset:44d3f90                       
-
-void UCustomMeshComponent::AddCustomMeshTriangles(TArray<struct FCustomMeshTriangle> Triangles)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 

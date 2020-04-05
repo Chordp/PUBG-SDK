@@ -15,11 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass LobbyCharacterFemale_v2.LobbyCharacterFemale_v2_C
-<<<<<<< HEAD
 // 0x0000 (0x09D0 - 0x09D0)
-=======
-// 0x0000 (0x09E0 - 0x09E0)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 class ALobbyCharacterFemale_v2_C : public ALobbyCharacterBase_v2_C
 {
 public:

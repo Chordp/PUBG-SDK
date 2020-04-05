@@ -15,21 +15,12 @@ namespace SDK
 // Function WindowsFileUtility.WFUFileListInterface.OnListFileFound
 // (Native, Event, Public, BlueprintEvent)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                Filename                       (Parm, ZeroConstructor)
 // int*                           ByteCount                      (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString*                FilePath                       (Parm, ZeroConstructor)
 // FunctionAddress:0x00007FF7195C23E0              		 offset:17f23e0                       
 
 void UWFUFileListInterface::OnListFileFound(struct FString* Filename, int* ByteCount, struct FString* FilePath)
-=======
-// struct FString                 Filename                       (Parm, ZeroConstructor)
-// int                            ByteCount                      (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 FilePath                       (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF6D8B95B20              		 offset:21d5b20                       
-
-void UWFUFileListInterface::OnListFileFound(const struct FString& Filename, int ByteCount, const struct FString& FilePath)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -53,21 +44,12 @@ void UWFUFileListInterface::OnListFileFound(const struct FString& Filename, int 
 // Function WindowsFileUtility.WFUFileListInterface.OnListDone
 // (Native, Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                DirectoryPath                  (Parm, ZeroConstructor)
 // TArray<struct FString>*        Files                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // TArray<struct FString>*        Folders                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // FunctionAddress:0x00007FF7195C2220              		 offset:17f2220                       
 
 void UWFUFileListInterface::OnListDone(struct FString* DirectoryPath, TArray<struct FString>* Files, TArray<struct FString>* Folders)
-=======
-// struct FString                 DirectoryPath                  (Parm, ZeroConstructor)
-// TArray<struct FString>         Files                          (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<struct FString>         Folders                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// FunctionAddress:0x00007FF6D8B95960              		 offset:21d5960                       
-
-void UWFUFileListInterface::OnListDone(const struct FString& DirectoryPath, TArray<struct FString> Files, TArray<struct FString> Folders)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -91,19 +73,11 @@ void UWFUFileListInterface::OnListDone(const struct FString& DirectoryPath, TArr
 // Function WindowsFileUtility.WFUFileListInterface.OnListDirectoryFound
 // (Native, Event, Public, BlueprintEvent)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                DirectoryName                  (Parm, ZeroConstructor)
 // struct FString*                FilePath                       (Parm, ZeroConstructor)
 // FunctionAddress:0x00007FF7195C2120              		 offset:17f2120                       
 
 void UWFUFileListInterface::OnListDirectoryFound(struct FString* DirectoryName, struct FString* FilePath)
-=======
-// struct FString                 DirectoryName                  (Parm, ZeroConstructor)
-// struct FString                 FilePath                       (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF6D8B95860              		 offset:21d5860                       
-
-void UWFUFileListInterface::OnListDirectoryFound(const struct FString& DirectoryName, const struct FString& FilePath)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -126,19 +100,11 @@ void UWFUFileListInterface::OnListDirectoryFound(const struct FString& Directory
 // Function WindowsFileUtility.WFUFolderWatchInterface.OnFileChanged
 // (Native, Event, Public, BlueprintEvent)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                Filename                       (Parm, ZeroConstructor)
 // struct FString*                FilePath                       (Parm, ZeroConstructor)
 // FunctionAddress:0x00007FF7195C2020              		 offset:17f2020                       
 
 void UWFUFolderWatchInterface::OnFileChanged(struct FString* Filename, struct FString* FilePath)
-=======
-// struct FString                 Filename                       (Parm, ZeroConstructor)
-// struct FString                 FilePath                       (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF6D8B95760              		 offset:21d5760                       
-
-void UWFUFolderWatchInterface::OnFileChanged(const struct FString& Filename, const struct FString& FilePath)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -161,19 +127,11 @@ void UWFUFolderWatchInterface::OnFileChanged(const struct FString& Filename, con
 // Function WindowsFileUtility.WFUFolderWatchInterface.OnDirectoryChanged
 // (Native, Event, Public, BlueprintEvent)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                DirectoryName                  (Parm, ZeroConstructor)
 // struct FString*                DirectoryPath                  (Parm, ZeroConstructor)
 // FunctionAddress:0x00007FF7195C1F20              		 offset:17f1f20                       
 
 void UWFUFolderWatchInterface::OnDirectoryChanged(struct FString* DirectoryName, struct FString* DirectoryPath)
-=======
-// struct FString                 DirectoryName                  (Parm, ZeroConstructor)
-// struct FString                 DirectoryPath                  (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF6D8B95660              		 offset:21d5660                       
-
-void UWFUFolderWatchInterface::OnDirectoryChanged(const struct FString& DirectoryName, const struct FString& DirectoryPath)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -196,19 +154,11 @@ void UWFUFolderWatchInterface::OnDirectoryChanged(const struct FString& Director
 // Function WindowsFileUtility.WindowsFileUtilityFunctionLibrary.WatchFolder
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                FullPath                       (Parm, ZeroConstructor)
 // class UObject**                WatcherDelegate                (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF7195C25F0              		 offset:17f25f0                       
 
 void UWindowsFileUtilityFunctionLibrary::STATIC_WatchFolder(struct FString* FullPath, class UObject** WatcherDelegate)
-=======
-// struct FString                 FullPath                       (Parm, ZeroConstructor)
-// class UObject*                 WatcherDelegate                (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6D8B95D30              		 offset:21d5d30                       
-
-void UWindowsFileUtilityFunctionLibrary::STATIC_WatchFolder(const struct FString& FullPath, class UObject* WatcherDelegate)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -231,19 +181,11 @@ void UWindowsFileUtilityFunctionLibrary::STATIC_WatchFolder(const struct FString
 // Function WindowsFileUtility.WindowsFileUtilityFunctionLibrary.StopWatchingFolder
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                FullPath                       (Parm, ZeroConstructor)
 // class UObject**                WatcherDelegate                (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF7195C2520              		 offset:17f2520                       
 
 void UWindowsFileUtilityFunctionLibrary::STATIC_StopWatchingFolder(struct FString* FullPath, class UObject** WatcherDelegate)
-=======
-// struct FString                 FullPath                       (Parm, ZeroConstructor)
-// class UObject*                 WatcherDelegate                (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6D8B95C60              		 offset:21d5c60                       
-
-void UWindowsFileUtilityFunctionLibrary::STATIC_StopWatchingFolder(const struct FString& FullPath, class UObject* WatcherDelegate)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -266,21 +208,12 @@ void UWindowsFileUtilityFunctionLibrary::STATIC_StopWatchingFolder(const struct 
 // Function WindowsFileUtility.WindowsFileUtilityFunctionLibrary.MoveFileTo
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                From                           (Parm, ZeroConstructor)
 // struct FString*                To                             (Parm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF7195C1E20              		 offset:17f1e20                       
 
 bool UWindowsFileUtilityFunctionLibrary::STATIC_MoveFileTo(struct FString* From, struct FString* To)
-=======
-// struct FString                 From                           (Parm, ZeroConstructor)
-// struct FString                 To                             (Parm, ZeroConstructor)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6D8B95560              		 offset:21d5560                       
-
-bool UWindowsFileUtilityFunctionLibrary::STATIC_MoveFileTo(const struct FString& From, const struct FString& To)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -305,19 +238,11 @@ bool UWindowsFileUtilityFunctionLibrary::STATIC_MoveFileTo(const struct FString&
 // Function WindowsFileUtility.WindowsFileUtilityFunctionLibrary.ListContentsOfFolder
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                FullPath                       (Parm, ZeroConstructor)
 // class UObject**                ListDelegate                   (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF7195C1D50              		 offset:17f1d50                       
 
 void UWindowsFileUtilityFunctionLibrary::STATIC_ListContentsOfFolder(struct FString* FullPath, class UObject** ListDelegate)
-=======
-// struct FString                 FullPath                       (Parm, ZeroConstructor)
-// class UObject*                 ListDelegate                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6D8B95490              		 offset:21d5490                       
-
-void UWindowsFileUtilityFunctionLibrary::STATIC_ListContentsOfFolder(const struct FString& FullPath, class UObject* ListDelegate)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -340,19 +265,11 @@ void UWindowsFileUtilityFunctionLibrary::STATIC_ListContentsOfFolder(const struc
 // Function WindowsFileUtility.WindowsFileUtilityFunctionLibrary.DeleteFolderRecursively
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                FullPath                       (Parm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF7195C1CB0              		 offset:17f1cb0                       
 
 bool UWindowsFileUtilityFunctionLibrary::STATIC_DeleteFolderRecursively(struct FString* FullPath)
-=======
-// struct FString                 FullPath                       (Parm, ZeroConstructor)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6D8B953F0              		 offset:21d53f0                       
-
-bool UWindowsFileUtilityFunctionLibrary::STATIC_DeleteFolderRecursively(const struct FString& FullPath)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -376,19 +293,11 @@ bool UWindowsFileUtilityFunctionLibrary::STATIC_DeleteFolderRecursively(const st
 // Function WindowsFileUtility.WindowsFileUtilityFunctionLibrary.DeleteFileAt
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                FullPath                       (Parm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF7195C1C10              		 offset:17f1c10                       
 
 bool UWindowsFileUtilityFunctionLibrary::STATIC_DeleteFileAt(struct FString* FullPath)
-=======
-// struct FString                 FullPath                       (Parm, ZeroConstructor)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6D8B95350              		 offset:21d5350                       
-
-bool UWindowsFileUtilityFunctionLibrary::STATIC_DeleteFileAt(const struct FString& FullPath)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -412,19 +321,11 @@ bool UWindowsFileUtilityFunctionLibrary::STATIC_DeleteFileAt(const struct FStrin
 // Function WindowsFileUtility.WindowsFileUtilityFunctionLibrary.DeleteEmptyFolder
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                FullPath                       (Parm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF7195C1B70              		 offset:17f1b70                       
 
 bool UWindowsFileUtilityFunctionLibrary::STATIC_DeleteEmptyFolder(struct FString* FullPath)
-=======
-// struct FString                 FullPath                       (Parm, ZeroConstructor)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6D8B952B0              		 offset:21d52b0                       
-
-bool UWindowsFileUtilityFunctionLibrary::STATIC_DeleteEmptyFolder(const struct FString& FullPath)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -448,19 +349,11 @@ bool UWindowsFileUtilityFunctionLibrary::STATIC_DeleteEmptyFolder(const struct F
 // Function WindowsFileUtility.WindowsFileUtilityFunctionLibrary.CreateDirectoryAt
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                FullPath                       (Parm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF7195C1AD0              		 offset:17f1ad0                       
 
 bool UWindowsFileUtilityFunctionLibrary::STATIC_CreateDirectoryAt(struct FString* FullPath)
-=======
-// struct FString                 FullPath                       (Parm, ZeroConstructor)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6D8B95210              		 offset:21d5210                       
-
-bool UWindowsFileUtilityFunctionLibrary::STATIC_CreateDirectoryAt(const struct FString& FullPath)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 

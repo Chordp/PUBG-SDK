@@ -18,11 +18,7 @@ namespace SDK
 // struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
 // struct FKeyEvent*              InKeyEvent                     (Parm)
 // struct FEventReply             ReturnValue                    (Parm, OutParm, ReturnParm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 struct FEventReply ULobbyWebView_C::OnKeyDown(struct FGeometry* MyGeometry, struct FKeyEvent* InKeyEvent)
 {
@@ -51,11 +47,7 @@ struct FEventReply ULobbyWebView_C::OnKeyDown(struct FGeometry* MyGeometry, stru
 // struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
 // struct FPointerEvent*          MouseEvent                     (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FEventReply             ReturnValue                    (Parm, OutParm, ReturnParm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 struct FEventReply ULobbyWebView_C::OnPreviewMouseButtonDown(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
@@ -82,11 +74,7 @@ struct FEventReply ULobbyWebView_C::OnPreviewMouseButtonDown(struct FGeometry* M
 // (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
 // class UCoherentUIGTWidget*     ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 class UCoherentUIGTWidget* ULobbyWebView_C::GetMainCoherentWidget()
 {
@@ -113,11 +101,7 @@ class UCoherentUIGTWidget* ULobbyWebView_C::GetMainCoherentWidget()
 // struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
 // struct FKeyEvent*              InKeyEvent                     (Parm)
 // struct FEventReply             ReturnValue                    (Parm, OutParm, ReturnParm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 struct FEventReply ULobbyWebView_C::OnPreviewKeyDown(struct FGeometry* MyGeometry, struct FKeyEvent* InKeyEvent)
 {
@@ -145,11 +129,7 @@ struct FEventReply ULobbyWebView_C::OnPreviewKeyDown(struct FGeometry* MyGeometr
 // Parameters:
 // struct FString*                EventName                      (Parm, ZeroConstructor)
 // struct FString*                Parameter                      (Parm, ZeroConstructor)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebView_C::WebViewBroadcast(struct FString* EventName, struct FString* Parameter)
 {
@@ -174,11 +154,7 @@ void ULobbyWebView_C::WebViewBroadcast(struct FString* EventName, struct FString
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int*                           ViewIndex                      (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebView_C::WebViewUnload(int* ViewIndex)
 {
@@ -203,11 +179,7 @@ void ULobbyWebView_C::WebViewUnload(int* ViewIndex)
 // Parameters:
 // int*                           VeiwIndex                      (Parm, ZeroConstructor, IsPlainOldData)
 // bool*                          visible                        (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebView_C::WebViewShow(int* VeiwIndex, bool* visible)
 {
@@ -232,11 +204,7 @@ void ULobbyWebView_C::WebViewShow(int* VeiwIndex, bool* visible)
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UCoherentUIGTJSPayload** payload                        (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebView_C::HandleEventFromWeb(class UCoherentUIGTJSPayload** payload)
 {
@@ -260,11 +228,7 @@ void ULobbyWebView_C::HandleEventFromWeb(class UCoherentUIGTJSPayload** payload)
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int*                           ViewIndex                      (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebView_C::WebViewInputFocus(int* ViewIndex)
 {
@@ -289,11 +253,7 @@ void ULobbyWebView_C::WebViewInputFocus(int* ViewIndex)
 // Parameters:
 // int*                           ViewIndex                      (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString*                URL                            (Parm, ZeroConstructor)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebView_C::WebViewLoad(int* ViewIndex, struct FString* URL)
 {
@@ -318,11 +278,7 @@ void ULobbyWebView_C::WebViewLoad(int* ViewIndex, struct FString* URL)
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UCoherentUIGTJSPayload** payload                        (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebView_C::J(class UCoherentUIGTJSPayload** payload)
 {
@@ -344,11 +300,7 @@ void ULobbyWebView_C::J(class UCoherentUIGTJSPayload** payload)
 
 // Function LobbyWebView.LobbyWebView_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebView_C::Construct()
 {
@@ -372,11 +324,7 @@ void ULobbyWebView_C::Construct()
 // Parameters:
 // struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
 // float*                         InDeltaTime                    (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebView_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
@@ -399,11 +347,7 @@ void ULobbyWebView_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 
 // Function LobbyWebView.LobbyWebView_C.BndEvt__CoherentUIGTWidget_0_K2Node_ComponentBoundEvent_383_UIGTReadyForBindingsSignature__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebView_C::BndEvt__CoherentUIGTWidget_0_K2Node_ComponentBoundEvent_383_UIGTReadyForBindingsSignature__DelegateSignature()
 {
@@ -424,11 +368,7 @@ void ULobbyWebView_C::BndEvt__CoherentUIGTWidget_0_K2Node_ComponentBoundEvent_38
 
 // Function LobbyWebView.LobbyWebView_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebView_C::Destruct()
 {
@@ -449,11 +389,7 @@ void ULobbyWebView_C::Destruct()
 
 // Function LobbyWebView.LobbyWebView_C.BndEvt__WebView_0_K2Node_ComponentBoundEvent_2_UIGTBindingsReleasedSignature__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebView_C::BndEvt__WebView_0_K2Node_ComponentBoundEvent_2_UIGTBindingsReleasedSignature__DelegateSignature()
 {
@@ -476,11 +412,7 @@ void ULobbyWebView_C::BndEvt__WebView_0_K2Node_ComponentBoundEvent_2_UIGTBinding
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float*                         Scale                          (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebView_C::CustomEvent(float* Scale)
 {
@@ -504,11 +436,7 @@ void ULobbyWebView_C::CustomEvent(float* Scale)
 // (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void ULobbyWebView_C::ExecuteUbergraph_LobbyWebView(int* EntryPoint)
 {

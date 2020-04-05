@@ -15,19 +15,11 @@ namespace SDK
 // Function MK3DPublisher.CaptureFunctionLibrary.VideoSaveFileDialog
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                TempPath                       (Parm, ZeroConstructor)
 // TArray<struct FString>         OutFiles                       (Parm, OutParm, ZeroConstructor)
 // FunctionAddress:0x00007FF71C6E14F0              		 offset:49114f0                       
 
 void UCaptureFunctionLibrary::STATIC_VideoSaveFileDialog(struct FString* TempPath, TArray<struct FString>* OutFiles)
-=======
-// struct FString                 TempPath                       (Parm, ZeroConstructor)
-// TArray<struct FString>         OutFiles                       (Parm, OutParm, ZeroConstructor)
-// FunctionAddress:0x00007FF6DACD4270              		 offset:4314270                       
-
-void UCaptureFunctionLibrary::STATIC_VideoSaveFileDialog(const struct FString& TempPath, TArray<struct FString>* OutFiles)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -53,11 +45,7 @@ void UCaptureFunctionLibrary::STATIC_VideoSaveFileDialog(const struct FString& T
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6E1460              		 offset:4911460                       
-=======
-// FunctionAddress:0x00007FF6DACD41E0              		 offset:43141e0                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 struct FString UCaptureFunctionLibrary::STATIC_TimeStampFileNameWebM()
 {
@@ -82,19 +70,11 @@ struct FString UCaptureFunctionLibrary::STATIC_TimeStampFileNameWebM()
 // Function MK3DPublisher.CaptureFunctionLibrary.TimeSecondsToStringHHMMDD
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // float*                         InSeconds                      (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
 // FunctionAddress:0x00007FF71C6E1390              		 offset:4911390                       
 
 struct FString UCaptureFunctionLibrary::STATIC_TimeSecondsToStringHHMMDD(float* InSeconds)
-=======
-// float                          InSeconds                      (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF6DACD4110              		 offset:4314110                       
-
-struct FString UCaptureFunctionLibrary::STATIC_TimeSecondsToStringHHMMDD(float InSeconds)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -118,19 +98,11 @@ struct FString UCaptureFunctionLibrary::STATIC_TimeSecondsToStringHHMMDD(float I
 // Function MK3DPublisher.CaptureFunctionLibrary.TimeSecondsToStringAboutMinute
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // float*                         InSeconds                      (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
 // FunctionAddress:0x00007FF71C6E12C0              		 offset:49112c0                       
 
 struct FString UCaptureFunctionLibrary::STATIC_TimeSecondsToStringAboutMinute(float* InSeconds)
-=======
-// float                          InSeconds                      (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF6DACD4040              		 offset:4314040                       
-
-struct FString UCaptureFunctionLibrary::STATIC_TimeSecondsToStringAboutMinute(float InSeconds)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -153,11 +125,7 @@ struct FString UCaptureFunctionLibrary::STATIC_TimeSecondsToStringAboutMinute(fl
 
 // Function MK3DPublisher.CaptureFunctionLibrary.StopAudioCapture
 // (Final, Native, Static, Public, BlueprintCallable)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6E12A0              		 offset:49112a0                       
-=======
-// FunctionAddress:0x00007FF6DACD4020              		 offset:4314020                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCaptureFunctionLibrary::STATIC_StopAudioCapture()
 {
@@ -180,7 +148,6 @@ void UCaptureFunctionLibrary::STATIC_StopAudioCapture()
 // Function MK3DPublisher.CaptureFunctionLibrary.StartRenderTake
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // int*                           Width                          (Parm, ZeroConstructor, IsPlainOldData)
 // int*                           Height                         (Parm, ZeroConstructor, IsPlainOldData)
 // int*                           Frame                          (Parm, ZeroConstructor, IsPlainOldData)
@@ -190,17 +157,6 @@ void UCaptureFunctionLibrary::STATIC_StopAudioCapture()
 // FunctionAddress:0x00007FF71C6E1080              		 offset:4911080                       
 
 void UCaptureFunctionLibrary::STATIC_StartRenderTake(int* Width, int* Height, int* Frame, int* VideoBitrate, struct FString* outputPath, bool* includeFileName)
-=======
-// int                            Width                          (Parm, ZeroConstructor, IsPlainOldData)
-// int                            Height                         (Parm, ZeroConstructor, IsPlainOldData)
-// int                            Frame                          (Parm, ZeroConstructor, IsPlainOldData)
-// int                            VideoBitrate                   (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 outputPath                     (Parm, ZeroConstructor)
-// bool                           includeFileName                (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6DACD3E00              		 offset:4313e00                       
-
-void UCaptureFunctionLibrary::STATIC_StartRenderTake(int Width, int Height, int Frame, int VideoBitrate, const struct FString& outputPath, bool includeFileName)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -227,7 +183,6 @@ void UCaptureFunctionLibrary::STATIC_StartRenderTake(int Width, int Height, int 
 // Function MK3DPublisher.CaptureFunctionLibrary.StartRender
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // int*                           Width                          (Parm, ZeroConstructor, IsPlainOldData)
 // int*                           Height                         (Parm, ZeroConstructor, IsPlainOldData)
 // int*                           Frame                          (Parm, ZeroConstructor, IsPlainOldData)
@@ -237,17 +192,6 @@ void UCaptureFunctionLibrary::STATIC_StartRenderTake(int Width, int Height, int 
 // FunctionAddress:0x00007FF71C6E0E60              		 offset:4910e60                       
 
 void UCaptureFunctionLibrary::STATIC_StartRender(int* Width, int* Height, int* Frame, int* VideoBitrate, struct FString* outputPath, bool* includeFileName)
-=======
-// int                            Width                          (Parm, ZeroConstructor, IsPlainOldData)
-// int                            Height                         (Parm, ZeroConstructor, IsPlainOldData)
-// int                            Frame                          (Parm, ZeroConstructor, IsPlainOldData)
-// int                            VideoBitrate                   (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 outputPath                     (Parm, ZeroConstructor)
-// bool                           includeFileName                (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6DACD3BE0              		 offset:4313be0                       
-
-void UCaptureFunctionLibrary::STATIC_StartRender(int Width, int Height, int Frame, int VideoBitrate, const struct FString& outputPath, bool includeFileName)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -273,11 +217,7 @@ void UCaptureFunctionLibrary::STATIC_StartRender(int Width, int Height, int Fram
 
 // Function MK3DPublisher.CaptureFunctionLibrary.StartDefinedRender
 // (Final, Native, Static, Public, BlueprintCallable)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6E0E40              		 offset:4910e40                       
-=======
-// FunctionAddress:0x00007FF6DACD3BC0              		 offset:4313bc0                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCaptureFunctionLibrary::STATIC_StartDefinedRender()
 {
@@ -299,11 +239,7 @@ void UCaptureFunctionLibrary::STATIC_StartDefinedRender()
 
 // Function MK3DPublisher.CaptureFunctionLibrary.StartAudioCapture
 // (Final, Native, Static, Public, BlueprintCallable)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6E0E20              		 offset:4910e20                       
-=======
-// FunctionAddress:0x00007FF6DACD3BA0              		 offset:4313ba0                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCaptureFunctionLibrary::STATIC_StartAudioCapture()
 {
@@ -326,24 +262,14 @@ void UCaptureFunctionLibrary::STATIC_StartAudioCapture()
 // Function MK3DPublisher.CaptureFunctionLibrary.SettingVideoResolutionByString
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FString*                Str                            (Parm, ZeroConstructor)
-=======
-// struct FString                 Str                            (Parm, ZeroConstructor)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 // int                            Width                          (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // int                            Height                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // int                            VideoBitrate                   (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6E0C40              		 offset:4910c40                       
 
 bool UCaptureFunctionLibrary::STATIC_SettingVideoResolutionByString(struct FString* Str, int* Width, int* Height, int* VideoBitrate)
-=======
-// FunctionAddress:0x00007FF6DACD39C0              		 offset:43139c0                       
-
-bool UCaptureFunctionLibrary::STATIC_SettingVideoResolutionByString(const struct FString& Str, int* Width, int* Height, int* VideoBitrate)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -374,24 +300,14 @@ bool UCaptureFunctionLibrary::STATIC_SettingVideoResolutionByString(const struct
 // Function MK3DPublisher.CaptureFunctionLibrary.SettingVideoResolutionByIndex
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // int*                           Index                          (Parm, ZeroConstructor, IsPlainOldData)
-=======
-// int                            Index                          (Parm, ZeroConstructor, IsPlainOldData)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 // int                            Width                          (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // int                            Height                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // int                            VideoBitrate                   (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6E0AD0              		 offset:4910ad0                       
 
 bool UCaptureFunctionLibrary::STATIC_SettingVideoResolutionByIndex(int* Index, int* Width, int* Height, int* VideoBitrate)
-=======
-// FunctionAddress:0x00007FF6DACD3850              		 offset:4313850                       
-
-bool UCaptureFunctionLibrary::STATIC_SettingVideoResolutionByIndex(int Index, int* Width, int* Height, int* VideoBitrate)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -422,17 +338,10 @@ bool UCaptureFunctionLibrary::STATIC_SettingVideoResolutionByIndex(int Index, in
 // Function MK3DPublisher.CaptureFunctionLibrary.SetRecordingTime
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // int*                           TotalTimeMS                    (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71C6E0A60              		 offset:4910a60                       
 
 void UCaptureFunctionLibrary::STATIC_SetRecordingTime(int* TotalTimeMS)
-=======
-// int                            TotalTimeMS                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6DACD37E0              		 offset:43137e0                       
-
-void UCaptureFunctionLibrary::STATIC_SetRecordingTime(int TotalTimeMS)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -454,17 +363,10 @@ void UCaptureFunctionLibrary::STATIC_SetRecordingTime(int TotalTimeMS)
 // Function MK3DPublisher.CaptureFunctionLibrary.SetNoCapture
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // bool*                          bNoCapture                     (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71C6E09E0              		 offset:49109e0                       
 
 void UCaptureFunctionLibrary::STATIC_SetNoCapture(bool* bNoCapture)
-=======
-// bool                           bNoCapture                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6DACD3760              		 offset:4313760                       
-
-void UCaptureFunctionLibrary::STATIC_SetNoCapture(bool bNoCapture)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -485,11 +387,7 @@ void UCaptureFunctionLibrary::STATIC_SetNoCapture(bool bNoCapture)
 
 // Function MK3DPublisher.CaptureFunctionLibrary.ResumeAudio
 // (Final, Native, Static, Public, BlueprintCallable)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6E09C0              		 offset:49109c0                       
-=======
-// FunctionAddress:0x00007FF6DACD3740              		 offset:4313740                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCaptureFunctionLibrary::STATIC_ResumeAudio()
 {
@@ -511,11 +409,7 @@ void UCaptureFunctionLibrary::STATIC_ResumeAudio()
 
 // Function MK3DPublisher.CaptureFunctionLibrary.PauseAudio
 // (Final, Native, Static, Public, BlueprintCallable)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6E09A0              		 offset:49109a0                       
-=======
-// FunctionAddress:0x00007FF6DACD3720              		 offset:4313720                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCaptureFunctionLibrary::STATIC_PauseAudio()
 {
@@ -538,17 +432,10 @@ void UCaptureFunctionLibrary::STATIC_PauseAudio()
 // Function MK3DPublisher.CaptureFunctionLibrary.OnFixedFrameRateSetting
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // float*                         Fps                            (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71C6E0930              		 offset:4910930                       
 
 void UCaptureFunctionLibrary::STATIC_OnFixedFrameRateSetting(float* Fps)
-=======
-// float                          Fps                            (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6DACD36B0              		 offset:43136b0                       
-
-void UCaptureFunctionLibrary::STATIC_OnFixedFrameRateSetting(float Fps)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -569,11 +456,7 @@ void UCaptureFunctionLibrary::STATIC_OnFixedFrameRateSetting(float Fps)
 
 // Function MK3DPublisher.CaptureFunctionLibrary.OnConsoleVariableSetting
 // (Final, Native, Static, Public, BlueprintCallable)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6E0910              		 offset:4910910                       
-=======
-// FunctionAddress:0x00007FF6DACD3690              		 offset:4313690                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCaptureFunctionLibrary::STATIC_OnConsoleVariableSetting()
 {
@@ -595,11 +478,7 @@ void UCaptureFunctionLibrary::STATIC_OnConsoleVariableSetting()
 
 // Function MK3DPublisher.CaptureFunctionLibrary.OffFixedFrameRateSetting
 // (Final, Native, Static, Public, BlueprintCallable)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6E08F0              		 offset:49108f0                       
-=======
-// FunctionAddress:0x00007FF6DACD3670              		 offset:4313670                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCaptureFunctionLibrary::STATIC_OffFixedFrameRateSetting()
 {
@@ -621,11 +500,7 @@ void UCaptureFunctionLibrary::STATIC_OffFixedFrameRateSetting()
 
 // Function MK3DPublisher.CaptureFunctionLibrary.OffConsoleVariableSetting
 // (Final, Native, Static, Public, BlueprintCallable)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6E08D0              		 offset:49108d0                       
-=======
-// FunctionAddress:0x00007FF6DACD3650              		 offset:4313650                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCaptureFunctionLibrary::STATIC_OffConsoleVariableSetting()
 {
@@ -649,11 +524,7 @@ void UCaptureFunctionLibrary::STATIC_OffConsoleVariableSetting()
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6E08A0              		 offset:49108a0                       
-=======
-// FunctionAddress:0x00007FF6DACD3620              		 offset:4313620                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 bool UCaptureFunctionLibrary::STATIC_IsReplayJumpingByCaptureManager()
 {
@@ -679,11 +550,7 @@ bool UCaptureFunctionLibrary::STATIC_IsReplayJumpingByCaptureManager()
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6E0870              		 offset:4910870                       
-=======
-// FunctionAddress:0x00007FF6DACD35F0              		 offset:43135f0                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 bool UCaptureFunctionLibrary::STATIC_IsRecordingComplete()
 {
@@ -709,11 +576,7 @@ bool UCaptureFunctionLibrary::STATIC_IsRecordingComplete()
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6E0840              		 offset:4910840                       
-=======
-// FunctionAddress:0x00007FF6DACD35C0              		 offset:43135c0                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 bool UCaptureFunctionLibrary::STATIC_IsCapturing()
 {
@@ -738,17 +601,10 @@ bool UCaptureFunctionLibrary::STATIC_IsCapturing()
 // Function MK3DPublisher.CaptureFunctionLibrary.InputRenderTakes
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // TArray<float>*                 InArr                          (Parm, ZeroConstructor)
 // FunctionAddress:0x00007FF71C6E0750              		 offset:4910750                       
 
 void UCaptureFunctionLibrary::STATIC_InputRenderTakes(TArray<float>* InArr)
-=======
-// TArray<float>                  InArr                          (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF6DACD34D0              		 offset:43134d0                       
-
-void UCaptureFunctionLibrary::STATIC_InputRenderTakes(TArray<float> InArr)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -771,11 +627,7 @@ void UCaptureFunctionLibrary::STATIC_InputRenderTakes(TArray<float> InArr)
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
 // TArray<struct FString>         Array                          (Parm, OutParm, ZeroConstructor)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6E0680              		 offset:4910680                       
-=======
-// FunctionAddress:0x00007FF6DACD3400              		 offset:4313400                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCaptureFunctionLibrary::STATIC_InitArrayVideoQualityString(TArray<struct FString>* Array)
 {
@@ -802,11 +654,7 @@ void UCaptureFunctionLibrary::STATIC_InitArrayVideoQualityString(TArray<struct F
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
 // TArray<struct FString>         Array                          (Parm, OutParm, ZeroConstructor)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6E05B0              		 offset:49105b0                       
-=======
-// FunctionAddress:0x00007FF6DACD3330              		 offset:4313330                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCaptureFunctionLibrary::STATIC_InitArrayResolutionString(TArray<struct FString>* Array)
 {
@@ -833,11 +681,7 @@ void UCaptureFunctionLibrary::STATIC_InitArrayResolutionString(TArray<struct FSt
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
 // TArray<int>                    Array                          (Parm, OutParm, ZeroConstructor)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6E0510              		 offset:4910510                       
-=======
-// FunctionAddress:0x00007FF6DACD3290              		 offset:4313290                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCaptureFunctionLibrary::STATIC_InitArrayFrameRateString(TArray<int>* Array)
 {
@@ -864,11 +708,7 @@ void UCaptureFunctionLibrary::STATIC_InitArrayFrameRateString(TArray<int>* Array
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6E0480              		 offset:4910480                       
-=======
-// FunctionAddress:0x00007FF6DACD3200              		 offset:4313200                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 struct FString UCaptureFunctionLibrary::STATIC_GetVideoOutputPath()
 {
@@ -894,11 +734,7 @@ struct FString UCaptureFunctionLibrary::STATIC_GetVideoOutputPath()
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6E0450              		 offset:4910450                       
-=======
-// FunctionAddress:0x00007FF6DACD31D0              		 offset:43131d0                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 float UCaptureFunctionLibrary::STATIC_GetProgressPercentFloat()
 {
@@ -924,11 +760,7 @@ float UCaptureFunctionLibrary::STATIC_GetProgressPercentFloat()
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6E0420              		 offset:4910420                       
-=======
-// FunctionAddress:0x00007FF6DACD31A0              		 offset:43131a0                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 int UCaptureFunctionLibrary::STATIC_GetProgressPercent()
 {
@@ -954,11 +786,7 @@ int UCaptureFunctionLibrary::STATIC_GetProgressPercent()
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6E03F0              		 offset:49103f0                       
-=======
-// FunctionAddress:0x00007FF6DACD3170              		 offset:4313170                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 int UCaptureFunctionLibrary::STATIC_GetCapturerModeToInt()
 {
@@ -983,21 +811,12 @@ int UCaptureFunctionLibrary::STATIC_GetCapturerModeToInt()
 // Function MK3DPublisher.CaptureFunctionLibrary.GetArrayItemVideoQualityString
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // int*                           inIdx                          (Parm, ZeroConstructor, IsPlainOldData)
 // int                            outIdx                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
 // FunctionAddress:0x00007FF71C6E02D0              		 offset:49102d0                       
 
 struct FString UCaptureFunctionLibrary::STATIC_GetArrayItemVideoQualityString(int* inIdx, int* outIdx)
-=======
-// int                            inIdx                          (Parm, ZeroConstructor, IsPlainOldData)
-// int                            outIdx                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF6DACD3050              		 offset:4313050                       
-
-struct FString UCaptureFunctionLibrary::STATIC_GetArrayItemVideoQualityString(int inIdx, int* outIdx)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -1024,21 +843,12 @@ struct FString UCaptureFunctionLibrary::STATIC_GetArrayItemVideoQualityString(in
 // Function MK3DPublisher.CaptureFunctionLibrary.GetArrayItemVideoQualityRatio
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // int*                           inIdx                          (Parm, ZeroConstructor, IsPlainOldData)
 // int                            outIdx                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF71C6E0200              		 offset:4910200                       
 
 float UCaptureFunctionLibrary::STATIC_GetArrayItemVideoQualityRatio(int* inIdx, int* outIdx)
-=======
-// int                            inIdx                          (Parm, ZeroConstructor, IsPlainOldData)
-// int                            outIdx                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6DACD2F80              		 offset:4312f80                       
-
-float UCaptureFunctionLibrary::STATIC_GetArrayItemVideoQualityRatio(int inIdx, int* outIdx)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -1065,21 +875,12 @@ float UCaptureFunctionLibrary::STATIC_GetArrayItemVideoQualityRatio(int inIdx, i
 // Function MK3DPublisher.CaptureFunctionLibrary.GetArrayItemResolutions
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // int*                           inIdx                          (Parm, ZeroConstructor, IsPlainOldData)
 // int                            outIdx                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
 // FunctionAddress:0x00007FF71C6E00E0              		 offset:49100e0                       
 
 struct FString UCaptureFunctionLibrary::STATIC_GetArrayItemResolutions(int* inIdx, int* outIdx)
-=======
-// int                            inIdx                          (Parm, ZeroConstructor, IsPlainOldData)
-// int                            outIdx                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF6DACD2E60              		 offset:4312e60                       
-
-struct FString UCaptureFunctionLibrary::STATIC_GetArrayItemResolutions(int inIdx, int* outIdx)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -1106,21 +907,12 @@ struct FString UCaptureFunctionLibrary::STATIC_GetArrayItemResolutions(int inIdx
 // Function MK3DPublisher.CaptureFunctionLibrary.GetArrayItemFrameRates
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // int*                           inIdx                          (Parm, ZeroConstructor, IsPlainOldData)
 // int                            outIdx                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF71C6E0010              		 offset:4910010                       
 
 int UCaptureFunctionLibrary::STATIC_GetArrayItemFrameRates(int* inIdx, int* outIdx)
-=======
-// int                            inIdx                          (Parm, ZeroConstructor, IsPlainOldData)
-// int                            outIdx                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6DACD2D90              		 offset:4312d90                       
-
-int UCaptureFunctionLibrary::STATIC_GetArrayItemFrameRates(int inIdx, int* outIdx)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -1146,11 +938,7 @@ int UCaptureFunctionLibrary::STATIC_GetArrayItemFrameRates(int inIdx, int* outId
 
 // Function MK3DPublisher.CaptureFunctionLibrary.CancelRender
 // (Final, Native, Static, Public, BlueprintCallable)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6DFFF0              		 offset:490fff0                       
-=======
-// FunctionAddress:0x00007FF6DACD2D70              		 offset:4312d70                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCaptureFunctionLibrary::STATIC_CancelRender()
 {
@@ -1173,19 +961,11 @@ void UCaptureFunctionLibrary::STATIC_CancelRender()
 // Function MK3DPublisher.CaptureFunctionLibrary.CalculateVideoQuality
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // int*                           InHeight                       (Parm, ZeroConstructor, IsPlainOldData)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF71C6DFF70              		 offset:490ff70                       
 
 int UCaptureFunctionLibrary::STATIC_CalculateVideoQuality(int* InHeight)
-=======
-// int                            InHeight                       (Parm, ZeroConstructor, IsPlainOldData)
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6DACD2CF0              		 offset:4312cf0                       
-
-int UCaptureFunctionLibrary::STATIC_CalculateVideoQuality(int InHeight)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -1209,19 +989,11 @@ int UCaptureFunctionLibrary::STATIC_CalculateVideoQuality(int InHeight)
 // Function MK3DPublisher.CaptureFunctionLibrary.CalcProgressPercentFloat
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // int*                           TotalTimeMS                    (Parm, ZeroConstructor, IsPlainOldData)
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF71C6DFEF0              		 offset:490fef0                       
 
 float UCaptureFunctionLibrary::STATIC_CalcProgressPercentFloat(int* TotalTimeMS)
-=======
-// int                            TotalTimeMS                    (Parm, ZeroConstructor, IsPlainOldData)
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6DACD2C70              		 offset:4312c70                       
-
-float UCaptureFunctionLibrary::STATIC_CalcProgressPercentFloat(int TotalTimeMS)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -1246,11 +1018,7 @@ float UCaptureFunctionLibrary::STATIC_CalcProgressPercentFloat(int TotalTimeMS)
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6DFEC0              		 offset:490fec0                       
-=======
-// FunctionAddress:0x00007FF6DACD2C40              		 offset:4312c40                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 float UCaptureFunctionLibrary::STATIC_CalcProgressPercentEx()
 {
@@ -1275,19 +1043,11 @@ float UCaptureFunctionLibrary::STATIC_CalcProgressPercentEx()
 // Function MK3DPublisher.CaptureFunctionLibrary.CalcProgressPercent
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // int*                           TotalTimeMS                    (Parm, ZeroConstructor, IsPlainOldData)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF71C6DFE40              		 offset:490fe40                       
 
 int UCaptureFunctionLibrary::STATIC_CalcProgressPercent(int* TotalTimeMS)
-=======
-// int                            TotalTimeMS                    (Parm, ZeroConstructor, IsPlainOldData)
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6DACD2BC0              		 offset:4312bc0                       
-
-int UCaptureFunctionLibrary::STATIC_CalcProgressPercent(int TotalTimeMS)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -1313,11 +1073,7 @@ int UCaptureFunctionLibrary::STATIC_CalcProgressPercent(int TotalTimeMS)
 // Parameters:
 // int                            OutTotalCount                  (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // int                            OutCurrentNum                  (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71C6DFD60              		 offset:490fd60                       
-=======
-// FunctionAddress:0x00007FF6DACD2AE0              		 offset:4312ae0                       
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UCaptureFunctionLibrary::STATIC_CalcProgressCount(int* OutTotalCount, int* OutCurrentNum)
 {
@@ -1345,7 +1101,6 @@ void UCaptureFunctionLibrary::STATIC_CalcProgressCount(int* OutTotalCount, int* 
 // Function MK3DPublisher.CaptureFunctionLibrary.CalcCaptureAboutMinute
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // int*                           Width                          (Parm, ZeroConstructor, IsPlainOldData)
 // int*                           Height                         (Parm, ZeroConstructor, IsPlainOldData)
 // int*                           pageCount                      (Parm, ZeroConstructor, IsPlainOldData)
@@ -1353,15 +1108,6 @@ void UCaptureFunctionLibrary::STATIC_CalcProgressCount(int* OutTotalCount, int* 
 // FunctionAddress:0x00007FF71C6DFC70              		 offset:490fc70                       
 
 int UCaptureFunctionLibrary::STATIC_CalcCaptureAboutMinute(int* Width, int* Height, int* pageCount)
-=======
-// int                            Width                          (Parm, ZeroConstructor, IsPlainOldData)
-// int                            Height                         (Parm, ZeroConstructor, IsPlainOldData)
-// int                            pageCount                      (Parm, ZeroConstructor, IsPlainOldData)
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6DACD29F0              		 offset:43129f0                       
-
-int UCaptureFunctionLibrary::STATIC_CalcCaptureAboutMinute(int Width, int Height, int pageCount)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -1387,17 +1133,10 @@ int UCaptureFunctionLibrary::STATIC_CalcCaptureAboutMinute(int Width, int Height
 // Function MK3DPublisher.CaptureFunctionLibrary.BindFunctionLibraryReturnCodeDelegate
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FScriptDelegate*        InDelegate                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // FunctionAddress:0x00007FF71C6DFBC0              		 offset:490fbc0                       
 
 void UCaptureFunctionLibrary::STATIC_BindFunctionLibraryReturnCodeDelegate(struct FScriptDelegate* InDelegate)
-=======
-// struct FScriptDelegate         InDelegate                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// FunctionAddress:0x00007FF6DACD2940              		 offset:4312940                       
-
-void UCaptureFunctionLibrary::STATIC_BindFunctionLibraryReturnCodeDelegate(const struct FScriptDelegate& InDelegate)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -1419,17 +1158,10 @@ void UCaptureFunctionLibrary::STATIC_BindFunctionLibraryReturnCodeDelegate(const
 // Function MK3DPublisher.CaptureFunctionLibrary.BindFunctionLibraryReplayJumpDelegate
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FScriptDelegate*        InDelegate                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // FunctionAddress:0x00007FF71C6DFB10              		 offset:490fb10                       
 
 void UCaptureFunctionLibrary::STATIC_BindFunctionLibraryReplayJumpDelegate(struct FScriptDelegate* InDelegate)
-=======
-// struct FScriptDelegate         InDelegate                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// FunctionAddress:0x00007FF6DACD2890              		 offset:4312890                       
-
-void UCaptureFunctionLibrary::STATIC_BindFunctionLibraryReplayJumpDelegate(const struct FScriptDelegate& InDelegate)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -1451,17 +1183,10 @@ void UCaptureFunctionLibrary::STATIC_BindFunctionLibraryReplayJumpDelegate(const
 // Function MK3DPublisher.CaptureFunctionLibrary.BindFunctionLibraryRederCompleteDelegate
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FScriptDelegate*        InDelegate                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // FunctionAddress:0x00007FF71C6DFA60              		 offset:490fa60                       
 
 void UCaptureFunctionLibrary::STATIC_BindFunctionLibraryRederCompleteDelegate(struct FScriptDelegate* InDelegate)
-=======
-// struct FScriptDelegate         InDelegate                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// FunctionAddress:0x00007FF6DACD27E0              		 offset:43127e0                       
-
-void UCaptureFunctionLibrary::STATIC_BindFunctionLibraryRederCompleteDelegate(const struct FScriptDelegate& InDelegate)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -1483,17 +1208,10 @@ void UCaptureFunctionLibrary::STATIC_BindFunctionLibraryRederCompleteDelegate(co
 // Function MK3DPublisher.CaptureFunctionLibrary.BindFunctionLibraryOnPauseDelegate
 // (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // struct FScriptDelegate*        InDelegate                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // FunctionAddress:0x00007FF71C6DF9B0              		 offset:490f9b0                       
 
 void UCaptureFunctionLibrary::STATIC_BindFunctionLibraryOnPauseDelegate(struct FScriptDelegate* InDelegate)
-=======
-// struct FScriptDelegate         InDelegate                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// FunctionAddress:0x00007FF6DACD2730              		 offset:4312730                       
-
-void UCaptureFunctionLibrary::STATIC_BindFunctionLibraryOnPauseDelegate(const struct FScriptDelegate& InDelegate)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 
@@ -1515,19 +1233,11 @@ void UCaptureFunctionLibrary::STATIC_BindFunctionLibraryOnPauseDelegate(const st
 // Function MK3DPublisher.CaptureFunctionLibrary.AddCaptureWidget
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
-<<<<<<< HEAD
 // class UUserWidget**            InWidget                       (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 // FunctionAddress:0x00007FF71C6DF930              		 offset:490f930                       
 
 bool UCaptureFunctionLibrary::STATIC_AddCaptureWidget(class UUserWidget** InWidget)
-=======
-// class UUserWidget*             InWidget                       (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6DACD26B0              		 offset:43126b0                       
-
-bool UCaptureFunctionLibrary::STATIC_AddCaptureWidget(class UUserWidget* InWidget)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 

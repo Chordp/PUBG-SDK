@@ -8,8 +8,8 @@
 
 #include "PUBG_Basic.hpp"
 #include "PUBG_UMG_classes.hpp"
-#include "PUBG_Engine_classes.hpp"
 #include "PUBG_BP_Console_Type_classes.hpp"
+#include "PUBG_Engine_classes.hpp"
 
 namespace SDK
 {

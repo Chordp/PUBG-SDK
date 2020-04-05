@@ -82,11 +82,7 @@ public:
 	void AddWebPopup(class UWebPopup_C** Widget);
 	void CanShowWebPopup(struct FString* PopupId, bool* Result);
 	void ShowWebPopupImpl(struct FWebPopupParam* Param);
-<<<<<<< HEAD
 	void On_SystemMenuButton_Prepass(class UWidget** BoundWidget);
-=======
-	void On_SystemMenuButton_Prepass(class UWidget* BoundWidget);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	void OnReload();
 	void GetMainCoherentWidget(class UCoherentUIGTWidget** Browser);
 	void OnKey_SystemMenuOrEscape();

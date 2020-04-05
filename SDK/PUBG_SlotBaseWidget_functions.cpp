@@ -16,11 +16,7 @@ namespace SDK
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // bool                           bIsPickup                      (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void USlotBaseWidget_C::IsPlayCharacterPickupAnim(bool* bIsPickup)
 {
@@ -46,11 +42,7 @@ void USlotBaseWidget_C::IsPlayCharacterPickupAnim(bool* bIsPickup)
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // bool                           IsCasting                      (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void USlotBaseWidget_C::IsCharacterCasting(bool* IsCasting)
 {
@@ -76,11 +68,7 @@ void USlotBaseWidget_C::IsCharacterCasting(bool* IsCasting)
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UAkAudioEvent**          SoundAk                        (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void USlotBaseWidget_C::PlaySoundAk(class UAkAudioEvent** SoundAk)
 {
@@ -102,11 +90,7 @@ void USlotBaseWidget_C::PlaySoundAk(class UAkAudioEvent** SoundAk)
 
 // Function SlotBaseWidget.SlotBaseWidget_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void USlotBaseWidget_C::Construct()
 {
@@ -130,11 +114,7 @@ void USlotBaseWidget_C::Construct()
 // Parameters:
 // struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
 // struct FPointerEvent*          MouseEvent                     (ConstParm, Parm, OutParm, ReferenceParm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void USlotBaseWidget_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
@@ -159,11 +139,7 @@ void USlotBaseWidget_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPoint
 // (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void USlotBaseWidget_C::ExecuteUbergraph_SlotBaseWidget(int* EntryPoint)
 {

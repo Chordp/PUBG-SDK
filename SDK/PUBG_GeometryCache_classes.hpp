@@ -37,19 +37,11 @@ public:
 
 
 // Class GeometryCache.GeometryCacheActor
-<<<<<<< HEAD
 // 0x0008 (0x03E8 - 0x03E0)
 class AGeometryCacheActor : public AActor
 {
 public:
 	class UGeometryCacheComponent*                     GeometryCacheComponent;                                   // 0x03E0(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
-=======
-// 0x0008 (0x0408 - 0x0400)
-class AGeometryCacheActor : public AActor
-{
-public:
-	class UGeometryCacheComponent*                     GeometryCacheComponent;                                   // 0x0400(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 	static UClass* StaticClass()
 	{
@@ -91,17 +83,10 @@ public:
 
 
 	void Stop();
-<<<<<<< HEAD
 	void SetStartTimeOffset(float* NewStartTimeOffset);
 	void SetPlaybackSpeed(float* NewPlaybackSpeed);
 	void SetLooping(bool* bNewLooping);
 	bool SetGeometryCache(class UGeometryCache** NewGeomCache);
-=======
-	void SetStartTimeOffset(float NewStartTimeOffset);
-	void SetPlaybackSpeed(float NewPlaybackSpeed);
-	void SetLooping(bool bNewLooping);
-	bool SetGeometryCache(class UGeometryCache* NewGeomCache);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 	void PlayReversedFromEnd();
 	void PlayReversed();
 	void PlayFromStart();
@@ -152,11 +137,7 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	void AddMeshSample(struct FGeometryCacheMeshData* MeshData, float* SampleTime);
-=======
-	void AddMeshSample(const struct FGeometryCacheMeshData& MeshData, float SampleTime);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -177,11 +158,7 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	void SetMesh(struct FGeometryCacheMeshData* NewMeshData);
-=======
-	void SetMesh(const struct FGeometryCacheMeshData& NewMeshData);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 
@@ -202,11 +179,7 @@ public:
 	}
 
 
-<<<<<<< HEAD
 	void SetMesh(struct FGeometryCacheMeshData* NewMeshData);
-=======
-	void SetMesh(const struct FGeometryCacheMeshData& NewMeshData);
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 

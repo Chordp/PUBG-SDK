@@ -16,11 +16,7 @@ namespace SDK
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FWebPopupParam*         WebPopupParam                  (ConstParm, Parm, OutParm, ReferenceParm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UWebPopup_C::UpdateButtonGroupVisibility_BP(struct FWebPopupParam* WebPopupParam)
 {
@@ -44,11 +40,7 @@ void UWebPopup_C::UpdateButtonGroupVisibility_BP(struct FWebPopupParam* WebPopup
 // (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FWebPopupParam*         WebPopupParam                  (ConstParm, Parm, OutParm, ReferenceParm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UWebPopup_C::UpdateBackgroundColor_BP(struct FWebPopupParam* WebPopupParam)
 {
@@ -72,11 +64,7 @@ void UWebPopup_C::UpdateBackgroundColor_BP(struct FWebPopupParam* WebPopupParam)
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FWebPopupParam*         Param                          (Parm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UWebPopup_C::PreSetting_BP(struct FWebPopupParam* Param)
 {
@@ -104,11 +92,7 @@ void UWebPopup_C::PreSetting_BP(struct FWebPopupParam* Param)
 // bool*                          UseBackgroundColor             (Parm, ZeroConstructor, IsPlainOldData)
 // struct FLinearColor*           BackgroundColor                (Parm, IsPlainOldData)
 // bool*                          bShowButtonGroup               (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UWebPopup_C::SetPopupData(struct FString* PopupId, struct FString* Uri, bool* UseBackgroundColor, struct FLinearColor* BackgroundColor, bool* bShowButtonGroup)
 {
@@ -134,11 +118,7 @@ void UWebPopup_C::SetPopupData(struct FString* PopupId, struct FString* Uri, boo
 
 // Function WebPopup.WebPopup_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UWebPopup_C::Destruct()
 {
@@ -159,11 +139,7 @@ void UWebPopup_C::Destruct()
 
 // Function WebPopup.WebPopup_C.BndEvt__Button_Exit_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UWebPopup_C::BndEvt__Button_Exit_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
 {
@@ -184,11 +160,7 @@ void UWebPopup_C::BndEvt__Button_Exit_K2Node_ComponentBoundEvent_0_OnButtonClick
 
 // Function WebPopup.WebPopup_C.BndEvt__Button_Reload_K2Node_ComponentBoundEvent_18_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UWebPopup_C::BndEvt__Button_Reload_K2Node_ComponentBoundEvent_18_OnButtonClickedEvent__DelegateSignature()
 {
@@ -209,11 +181,7 @@ void UWebPopup_C::BndEvt__Button_Reload_K2Node_ComponentBoundEvent_18_OnButtonCl
 
 // Function WebPopup.WebPopup_C.BndEvt__Button_Back_K2Node_ComponentBoundEvent_37_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UWebPopup_C::BndEvt__Button_Back_K2Node_ComponentBoundEvent_37_OnButtonClickedEvent__DelegateSignature()
 {
@@ -237,11 +205,7 @@ void UWebPopup_C::BndEvt__Button_Back_K2Node_ComponentBoundEvent_37_OnButtonClic
 // Parameters:
 // struct FString*                path                           (Parm, ZeroConstructor)
 // bool*                          isMainFrame                    (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UWebPopup_C::BndEvt__WebView_K2Node_ComponentBoundEvent_18_UIGTFinishLoadSignature__DelegateSignature(struct FString* path, bool* isMainFrame)
 {
@@ -266,11 +230,7 @@ void UWebPopup_C::BndEvt__WebView_K2Node_ComponentBoundEvent_18_UIGTFinishLoadSi
 // (Event, Public, BlueprintEvent)
 // Parameters:
 // struct FWebPopupParam*         WebPopupParam                  (Parm)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UWebPopup_C::OnUpdateWebPopup(struct FWebPopupParam* WebPopupParam)
 {
@@ -295,11 +255,7 @@ void UWebPopup_C::OnUpdateWebPopup(struct FWebPopupParam* WebPopupParam)
 // Parameters:
 // struct FString*                path                           (Parm, ZeroConstructor)
 // bool*                          isMainFrame                    (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UWebPopup_C::BndEvt__WebView_K2Node_ComponentBoundEvent_49_UIGTStartLoadingSignature__DelegateSignature(struct FString* path, bool* isMainFrame)
 {
@@ -326,11 +282,7 @@ void UWebPopup_C::BndEvt__WebView_K2Node_ComponentBoundEvent_49_UIGTStartLoading
 // struct FString*                path                           (Parm, ZeroConstructor)
 // struct FString*                Error                          (Parm, ZeroConstructor)
 // bool*                          isMainFrame                    (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UWebPopup_C::BndEvt__WebView_K2Node_ComponentBoundEvent_67_UIGTFailLoadSignature__DelegateSignature(struct FString* path, struct FString* Error, bool* isMainFrame)
 {
@@ -356,11 +308,7 @@ void UWebPopup_C::BndEvt__WebView_K2Node_ComponentBoundEvent_67_UIGTFailLoadSign
 // (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-<<<<<<< HEAD
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-=======
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 
 void UWebPopup_C::ExecuteUbergraph_WebPopup(int* EntryPoint)
 {
@@ -383,17 +331,10 @@ void UWebPopup_C::ExecuteUbergraph_WebPopup(int* EntryPoint)
 // Function WebPopup.WebPopup_C.OnClosePopup__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-<<<<<<< HEAD
 // class UWebPopup_C**            Widget                         (Parm, ZeroConstructor, IsPlainOldData)
 // FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
 
 void UWebPopup_C::OnClosePopup__DelegateSignature(class UWebPopup_C** Widget)
-=======
-// class UWebPopup_C*             Widget                         (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6D718D9B0              		 offset:7cd9b0                        
-
-void UWebPopup_C::OnClosePopup__DelegateSignature(class UWebPopup_C* Widget)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 {
 	static UFunction* fn;
 

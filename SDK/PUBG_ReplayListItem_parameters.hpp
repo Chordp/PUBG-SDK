@@ -274,61 +274,36 @@ struct UReplayListItem_C_ExecuteUbergraph_ReplayListItem_Params
 // Function ReplayListItem.ReplayListItem_C.EventOnUpdateItem__DelegateSignature
 struct UReplayListItem_C_EventOnUpdateItem__DelegateSignature_Params
 {
-<<<<<<< HEAD
 	struct FReplayItem*                                inReplayItem;                                             // (Parm)
-=======
-	struct FReplayItem                                 inReplayItem;                                             // (Parm)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function ReplayListItem.ReplayListItem_C.EventOnUpdateShouldKeep__DelegateSignature
 struct UReplayListItem_C_EventOnUpdateShouldKeep__DelegateSignature_Params
 {
-<<<<<<< HEAD
 	struct FString*                                    RegionOrLocal;                                            // (Parm, ZeroConstructor)
 	struct FReplayItem*                                inReplayItem;                                             // (Parm)
 	struct FReplayItem*                                bShoudUpdate;                                             // (Parm)
-=======
-	struct FString                                     RegionOrLocal;                                            // (Parm, ZeroConstructor)
-	struct FReplayItem                                 inReplayItem;                                             // (Parm)
-	struct FReplayItem                                 bShoudUpdate;                                             // (Parm)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function ReplayListItem.ReplayListItem_C.EventOnCancelDownloading__DelegateSignature
 struct UReplayListItem_C_EventOnCancelDownloading__DelegateSignature_Params
 {
-<<<<<<< HEAD
 	struct FString*                                    Name;                                                     // (Parm, ZeroConstructor)
 	class UWidget**                                    Widget;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-=======
-	struct FString                                     Name;                                                     // (Parm, ZeroConstructor)
-	class UWidget*                                     Widget;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function ReplayListItem.ReplayListItem_C.EventOnDownload__DelegateSignature
 struct UReplayListItem_C_EventOnDownload__DelegateSignature_Params
 {
-<<<<<<< HEAD
 	struct FString*                                    Name;                                                     // (Parm, ZeroConstructor)
 	class UWidget**                                    Widget;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-=======
-	struct FString                                     Name;                                                     // (Parm, ZeroConstructor)
-	class UWidget*                                     Widget;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 // Function ReplayListItem.ReplayListItem_C.EventOnItemClicked__DelegateSignature
 struct UReplayListItem_C_EventOnItemClicked__DelegateSignature_Params
 {
-<<<<<<< HEAD
 	struct FString*                                    inRegionOrLocal;                                          // (Parm, ZeroConstructor)
 	struct FReplayItem*                                inReplayItem;                                             // (Parm)
-=======
-	struct FString                                     inRegionOrLocal;                                          // (Parm, ZeroConstructor)
-	struct FReplayItem                                 inReplayItem;                                             // (Parm)
->>>>>>> 365df962e7a70abd9703cbaa62487bbf1539bbf3
 };
 
 }
