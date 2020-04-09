@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -337,14 +337,16 @@ struct FMovieSceneAudioSectionTemplate : public FMovieSceneEvalTemplate
 // 0x0000 (0x0018 - 0x0018)
 struct FMovieSceneAdditiveCameraAnimationTrackTemplate : public FMovieSceneEvalTemplate
 {
-
+	EMovieSceneCompletionMode                          CompletionMode;                                           // 0x0010(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0011(0x0007) MISSED OFFSET
 };
 
 // ScriptStruct MovieSceneTracks.MovieSceneAdditiveCameraAnimationTemplate
 // 0x0000 (0x0018 - 0x0018)
 struct FMovieSceneAdditiveCameraAnimationTemplate : public FMovieSceneEvalTemplate
 {
-
+	EMovieSceneCompletionMode                          CompletionMode;                                           // 0x0010(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0011(0x0007) MISSED OFFSET
 };
 
 // ScriptStruct MovieSceneTracks.MovieSceneCameraShakeSectionTemplate
@@ -426,7 +428,9 @@ struct FMovieSceneMaterialParameterCollectionTemplate : public FMovieSceneParame
 // 0x0000 (0x0048 - 0x0048)
 struct FMovieSceneParticleParameterSectionTemplate : public FMovieSceneParameterSectionTemplate
 {
-
+	TArray<struct FScalarParameterNameAndCurve>        Scalars;                                                  // 0x0018(0x0010) (ZeroConstructor)
+	TArray<struct FVectorParameterNameAndCurves>       Vectors;                                                  // 0x0028(0x0010) (ZeroConstructor)
+	TArray<struct FColorParameterNameAndCurves>        Colors;                                                   // 0x0038(0x0010) (ZeroConstructor)
 };
 
 // ScriptStruct MovieSceneTracks.MovieSceneParticleSectionTemplate
@@ -508,7 +512,8 @@ struct FMovieSceneBoolPropertySectionTemplate : public FMovieSceneEvalTemplate
 // 0x0000 (0x0018 - 0x0018)
 struct FMovieSceneSkeletalAnimationSharedTrack : public FMovieSceneEvalTemplate
 {
-
+	EMovieSceneCompletionMode                          CompletionMode;                                           // 0x0010(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0011(0x0007) MISSED OFFSET
 };
 
 // ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimationSectionTemplateParameters

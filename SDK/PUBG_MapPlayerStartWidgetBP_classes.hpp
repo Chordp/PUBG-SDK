@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass MapPlayerStartWidgetBP.MapPlayerStartWidgetBP_C
-// 0x0000 (0x0600 - 0x0600)
+// 0x0000 (0x0608 - 0x0608)
 class UMapPlayerStartWidgetBP_C : public UMapPlayerStartWidget
 {
 public:
@@ -29,6 +29,9 @@ public:
 		return ptr;
 	}
 
+
+	void STATIC_OnRespawnButtonDown();
+	void STATIC_OnPlayerRespawnSpotChanged(const struct FName& RespawnSpotName);
 };
 
 

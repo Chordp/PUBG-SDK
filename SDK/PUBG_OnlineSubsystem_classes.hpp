@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,13 +15,13 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Class OnlineSubsystem.NamedInterfaces
-// 0x0098 (0x00C0 - 0x0028)
+// 0x0090 (0x00C0 - 0x0030)
 class UNamedInterfaces : public UObject
 {
 public:
-	TArray<struct FNamedInterface>                     NamedInterfaces;                                          // 0x0028(0x0010) (ZeroConstructor)
-	TArray<struct FNamedInterfaceDef>                  NamedInterfaceDefs;                                       // 0x0038(0x0010) (ZeroConstructor, Config)
-	unsigned char                                      UnknownData00[0x78];                                      // 0x0048(0x0078) MISSED OFFSET
+	TArray<struct FNamedInterface>                     NamedInterfaces;                                          // 0x0030(0x0010) (ZeroConstructor)
+	TArray<struct FNamedInterfaceDef>                  NamedInterfaceDefs;                                       // 0x0040(0x0010) (ZeroConstructor, Config)
+	unsigned char                                      UnknownData00[0x70];                                      // 0x0050(0x0070) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -36,7 +36,7 @@ public:
 
 
 // Class OnlineSubsystem.TurnBasedMatchInterface
-// 0x0000 (0x0028 - 0x0028)
+// 0x0000 (0x0030 - 0x0030)
 class UTurnBasedMatchInterface : public UInterface
 {
 public:
@@ -50,9 +50,6 @@ public:
 		return ptr;
 	}
 
-
-	void OnMatchReceivedTurn(struct FString* Match, bool* bDidBecomeActive);
-	void OnMatchEnded(struct FString* Match);
 };
 
 

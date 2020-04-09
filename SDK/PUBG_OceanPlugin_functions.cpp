@@ -1,4 +1,4 @@
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,12 +13,12 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function OceanPlugin.OceanManager.LoadLandscapeHeightmap
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// class UTexture2D**             Tex2D                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71C79FC80              		 offset:49cfc80                       
+// class UTexture2D*              Tex2D                          (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63B8B3690              		 offset:45c3690                       
 
-void AOceanManager::LoadLandscapeHeightmap(class UTexture2D** Tex2D)
+void AOceanManager::STATIC_LoadLandscapeHeightmap(class UTexture2D* Tex2D)
 {
 	static UFunction* fn;
 
@@ -38,17 +38,17 @@ void AOceanManager::LoadLandscapeHeightmap(class UTexture2D** Tex2D)
 
 
 // Function OceanPlugin.OceanManager.GetWaveHeightValue
-// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Private, Protected, Delegate)
 // Parameters:
-// struct FVector*                Location                       (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// class UWorld**                 World                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// bool*                          HeightOnly                     (Parm, ZeroConstructor, IsPlainOldData)
-// bool*                          TwoIterations                  (Parm, ZeroConstructor, IsPlainOldData)
-// bool*                          InClientOnly                   (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 Location                       (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+// class UWorld*                  World                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// bool                           HeightOnly                     (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           TwoIterations                  (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           InClientOnly                   (Parm, ZeroConstructor, IsPlainOldData)
 // struct FVector                 ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C79F8D0              		 offset:49cf8d0                       
+// FunctionAddress:0x00007FF63B8B32E0              		 offset:45c32e0                       
 
-struct FVector AOceanManager::GetWaveHeightValue(struct FVector* Location, class UWorld** World, bool* HeightOnly, bool* TwoIterations, bool* InClientOnly)
+struct FVector AOceanManager::STATIC_GetWaveHeightValue(const struct FVector& Location, class UWorld* World, bool HeightOnly, bool TwoIterations, bool InClientOnly)
 {
 	static UFunction* fn;
 
@@ -74,14 +74,14 @@ struct FVector AOceanManager::GetWaveHeightValue(struct FVector* Location, class
 
 
 // Function OceanPlugin.OceanManager.GetHeightmapPixel
-// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected)
 // Parameters:
-// float*                         U                              (Parm, ZeroConstructor, IsPlainOldData)
-// float*                         V                              (Parm, ZeroConstructor, IsPlainOldData)
+// float                          U                              (Parm, ZeroConstructor, IsPlainOldData)
+// float                          V                              (Parm, ZeroConstructor, IsPlainOldData)
 // struct FLinearColor            ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C79F6B0              		 offset:49cf6b0                       
+// FunctionAddress:0x00007FF63B8B30C0              		 offset:45c30c0                       
 
-struct FLinearColor AOceanManager::GetHeightmapPixel(float* U, float* V)
+struct FLinearColor AOceanManager::STATIC_GetHeightmapPixel(float U, float V)
 {
 	static UFunction* fn;
 
@@ -104,15 +104,15 @@ struct FLinearColor AOceanManager::GetHeightmapPixel(float* U, float* V)
 
 
 // Function OceanPlugin.AdvancedBuoyancyComponent.TriangleArea
-// (Final, Native, Public, HasDefaults, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Private, NetServer)
 // Parameters:
-// struct FVector*                A                              (Parm, IsPlainOldData)
-// struct FVector*                B                              (Parm, IsPlainOldData)
-// struct FVector*                C                              (Parm, IsPlainOldData)
+// struct FVector                 A                              (Parm, IsPlainOldData)
+// struct FVector                 B                              (Parm, IsPlainOldData)
+// struct FVector                 C                              (Parm, IsPlainOldData)
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C7A04E0              		 offset:49d04e0                       
+// FunctionAddress:0x00007FF63B8B3EF0              		 offset:45c3ef0                       
 
-float UAdvancedBuoyancyComponent::TriangleArea(struct FVector* A, struct FVector* B, struct FVector* C)
+float UAdvancedBuoyancyComponent::STATIC_TriangleArea(const struct FVector& A, const struct FVector& B, const struct FVector& C)
 {
 	static UFunction* fn;
 
@@ -136,16 +136,16 @@ float UAdvancedBuoyancyComponent::TriangleArea(struct FVector* A, struct FVector
 
 
 // Function OceanPlugin.AdvancedBuoyancyComponent.SplitTriangle
-// (Final, Native, Public, HasDefaults, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, HasOutParms)
 // Parameters:
-// struct FBuoyancyVertex*        H                              (Parm)
-// struct FBuoyancyVertex*        M                              (Parm)
-// struct FBuoyancyVertex*        L                              (Parm)
-// struct FVector*                InArrow                        (Parm, IsPlainOldData)
+// struct FBuoyancyVertex         H                              (Parm)
+// struct FBuoyancyVertex         M                              (Parm)
+// struct FBuoyancyVertex         L                              (Parm)
+// struct FVector                 InArrow                        (Parm, IsPlainOldData)
 // TArray<struct FForceTriangle>  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF71C7A02C0              		 offset:49d02c0                       
+// FunctionAddress:0x00007FF63B8B3CD0              		 offset:45c3cd0                       
 
-TArray<struct FForceTriangle> UAdvancedBuoyancyComponent::SplitTriangle(struct FBuoyancyVertex* H, struct FBuoyancyVertex* M, struct FBuoyancyVertex* L, struct FVector* InArrow)
+TArray<struct FForceTriangle> UAdvancedBuoyancyComponent::STATIC_SplitTriangle(const struct FBuoyancyVertex& H, const struct FBuoyancyVertex& M, const struct FBuoyancyVertex& L, const struct FVector& InArrow)
 {
 	static UFunction* fn;
 
@@ -170,13 +170,13 @@ TArray<struct FForceTriangle> UAdvancedBuoyancyComponent::SplitTriangle(struct F
 
 
 // Function OceanPlugin.AdvancedBuoyancyComponent.SetMeshDensity
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// float*                         NewDensity                     (Parm, ZeroConstructor, IsPlainOldData)
-// float*                         NewWaterDensity                (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71C7A0200              		 offset:49d0200                       
+// float                          NewDensity                     (Parm, ZeroConstructor, IsPlainOldData)
+// float                          NewWaterDensity                (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63B8B3C10              		 offset:45c3c10                       
 
-void UAdvancedBuoyancyComponent::SetMeshDensity(float* NewDensity, float* NewWaterDensity)
+void UAdvancedBuoyancyComponent::STATIC_SetMeshDensity(float NewDensity, float NewWaterDensity)
 {
 	static UFunction* fn;
 
@@ -197,14 +197,14 @@ void UAdvancedBuoyancyComponent::SetMeshDensity(float* NewDensity, float* NewWat
 
 
 // Function OceanPlugin.AdvancedBuoyancyComponent.GetOceanDepthFromGrid
-// (Final, Native, Public, HasDefaults, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
 // Parameters:
-// struct FVector*                Position                       (Parm, IsPlainOldData)
-// bool*                          bJustGetHeightAtLocation       (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 Position                       (Parm, IsPlainOldData)
+// bool                           bJustGetHeightAtLocation       (Parm, ZeroConstructor, IsPlainOldData)
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C79F7E0              		 offset:49cf7e0                       
+// FunctionAddress:0x00007FF63B8B31F0              		 offset:45c31f0                       
 
-float UAdvancedBuoyancyComponent::GetOceanDepthFromGrid(struct FVector* Position, bool* bJustGetHeightAtLocation)
+float UAdvancedBuoyancyComponent::STATIC_GetOceanDepthFromGrid(const struct FVector& Position, bool bJustGetHeightAtLocation)
 {
 	static UFunction* fn;
 
@@ -227,10 +227,10 @@ float UAdvancedBuoyancyComponent::GetOceanDepthFromGrid(struct FVector* Position
 
 
 // Function OceanPlugin.AdvancedBuoyancyComponent.GetOcean
-// (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF71C79F7C0              		 offset:49cf7c0                       
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF63B8B31D0              		 offset:45c31d0                       
 
-void UAdvancedBuoyancyComponent::GetOcean()
+void UAdvancedBuoyancyComponent::STATIC_GetOcean()
 {
 	static UFunction* fn;
 
@@ -249,13 +249,13 @@ void UAdvancedBuoyancyComponent::GetOcean()
 
 
 // Function OceanPlugin.AdvancedBuoyancyComponent.DrawDebugStuff
-// (Final, Native, Public, HasDefaults, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FForceTriangle*         TriForce                       (Parm)
-// struct FColor*                 DebugColor                     (Parm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C79F240              		 offset:49cf240                       
+// struct FForceTriangle          TriForce                       (Parm)
+// struct FColor                  DebugColor                     (Parm, IsPlainOldData)
+// FunctionAddress:0x00007FF63B8B2C70              		 offset:45c2c70                       
 
-void UAdvancedBuoyancyComponent::DrawDebugStuff(struct FForceTriangle* TriForce, struct FColor* DebugColor)
+void UAdvancedBuoyancyComponent::STATIC_DrawDebugStuff(const struct FForceTriangle& TriForce, const struct FColor& DebugColor)
 {
 	static UFunction* fn;
 
@@ -276,13 +276,13 @@ void UAdvancedBuoyancyComponent::DrawDebugStuff(struct FForceTriangle* TriForce,
 
 
 // Function OceanPlugin.AdvancedBuoyancyComponent.ApplySlamForce
-// (Final, Native, Public, HasDefaults, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FVector*                SlamForce                      (Parm, IsPlainOldData)
-// struct FVector*                TriCenter                      (Parm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C79F090              		 offset:49cf090                       
+// struct FVector                 SlamForce                      (Parm, IsPlainOldData)
+// struct FVector                 TriCenter                      (Parm, IsPlainOldData)
+// FunctionAddress:0x00007FF63B8B2AC0              		 offset:45c2ac0                       
 
-void UAdvancedBuoyancyComponent::ApplySlamForce(struct FVector* SlamForce, struct FVector* TriCenter)
+void UAdvancedBuoyancyComponent::STATIC_ApplySlamForce(const struct FVector& SlamForce, const struct FVector& TriCenter)
 {
 	static UFunction* fn;
 
@@ -303,12 +303,12 @@ void UAdvancedBuoyancyComponent::ApplySlamForce(struct FVector* SlamForce, struc
 
 
 // Function OceanPlugin.AdvancedBuoyancyComponent.ApplyForce
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FForceTriangle*         TriForce                       (Parm)
-// FunctionAddress:0x00007FF71C79EF70              		 offset:49cef70                       
+// struct FForceTriangle          TriForce                       (Parm)
+// FunctionAddress:0x00007FF63B8B29A0              		 offset:45c29a0                       
 
-void UAdvancedBuoyancyComponent::ApplyForce(struct FForceTriangle* TriForce)
+void UAdvancedBuoyancyComponent::STATIC_ApplyForce(const struct FForceTriangle& TriForce)
 {
 	static UFunction* fn;
 
@@ -328,12 +328,12 @@ void UAdvancedBuoyancyComponent::ApplyForce(struct FForceTriangle* TriForce)
 
 
 // Function OceanPlugin.CustomVehicleController.GetIsDriving
-// (Native, Public, BlueprintCallable, BlueprintPure)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C79F790              		 offset:49cf790                       
+// FunctionAddress:0x00007FF63B8B31A0              		 offset:45c31a0                       
 
-bool ACustomVehicleController::GetIsDriving()
+bool ACustomVehicleController::STATIC_GetIsDriving()
 {
 	static UFunction* fn;
 
@@ -354,10 +354,10 @@ bool ACustomVehicleController::GetIsDriving()
 
 
 // Function OceanPlugin.CustomVehicleController.ExitVehicle
-// (Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF71C79F440              		 offset:49cf440                       
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF63863E730              		 offset:134e730                       
 
-void ACustomVehicleController::ExitVehicle()
+void ACustomVehicleController::STATIC_ExitVehicle()
 {
 	static UFunction* fn;
 
@@ -376,12 +376,12 @@ void ACustomVehicleController::ExitVehicle()
 
 
 // Function OceanPlugin.CustomVehicleController.EnterVehicle
-// (Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// class APawn**                  Vehicle                        (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71C79F3B0              		 offset:49cf3b0                       
+// class APawn*                   Vehicle                        (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63B8B2DE0              		 offset:45c2de0                       
 
-void ACustomVehicleController::EnterVehicle(class APawn** Vehicle)
+void ACustomVehicleController::STATIC_EnterVehicle(class APawn* Vehicle)
 {
 	static UFunction* fn;
 
@@ -401,10 +401,10 @@ void ACustomVehicleController::EnterVehicle(class APawn** Vehicle)
 
 
 // Function OceanPlugin.CustomVehicleController.EnableBuoyancy
-// (Exec, Native, Public)
-// FunctionAddress:0x00007FF71C79F390              		 offset:49cf390                       
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF63B8B2DC0              		 offset:45c2dc0                       
 
-void ACustomVehicleController::EnableBuoyancy()
+void ACustomVehicleController::STATIC_EnableBuoyancy()
 {
 	static UFunction* fn;
 
@@ -423,10 +423,10 @@ void ACustomVehicleController::EnableBuoyancy()
 
 
 // Function OceanPlugin.CustomVehicleController.DrawBuoyancyPoints
-// (Exec, Native, Public)
-// FunctionAddress:0x00007FF71C79F220              		 offset:49cf220                       
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF63B8B2C50              		 offset:45c2c50                       
 
-void ACustomVehicleController::DrawBuoyancyPoints()
+void ACustomVehicleController::STATIC_DrawBuoyancyPoints()
 {
 	static UFunction* fn;
 
@@ -445,15 +445,15 @@ void ACustomVehicleController::DrawBuoyancyPoints()
 
 
 // Function OceanPlugin.FlockFish.OnEndOverlap
-// (Final, Native, Protected)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// class UPrimitiveComponent**    activatedComp                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// class AActor**                 OtherActor                     (Parm, ZeroConstructor, IsPlainOldData)
-// class UPrimitiveComponent**    OtherComp                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// int*                           OtherBodyIndex                 (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71C79FEF0              		 offset:49cfef0                       
+// class UPrimitiveComponent*     activatedComp                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// class AActor*                  OtherActor                     (Parm, ZeroConstructor, IsPlainOldData)
+// class UPrimitiveComponent*     OtherComp                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// int                            OtherBodyIndex                 (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63B8B3900              		 offset:45c3900                       
 
-void AFlockFish::OnEndOverlap(class UPrimitiveComponent** activatedComp, class AActor** OtherActor, class UPrimitiveComponent** OtherComp, int* OtherBodyIndex)
+void AFlockFish::STATIC_OnEndOverlap(class UPrimitiveComponent* activatedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
 	static UFunction* fn;
 
@@ -476,17 +476,17 @@ void AFlockFish::OnEndOverlap(class UPrimitiveComponent** activatedComp, class A
 
 
 // Function OceanPlugin.FlockFish.OnBeginOverlap
-// (Final, Native, Protected, HasOutParms)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// class UPrimitiveComponent**    activatedComp                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// class AActor**                 OtherActor                     (Parm, ZeroConstructor, IsPlainOldData)
-// class UPrimitiveComponent**    OtherComp                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// int*                           OtherBodyIndex                 (Parm, ZeroConstructor, IsPlainOldData)
-// bool*                          bFromSweep                     (Parm, ZeroConstructor, IsPlainOldData)
-// struct FHitResult*             SweepResult                    (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C79FD00              		 offset:49cfd00                       
+// class UPrimitiveComponent*     activatedComp                  (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// class AActor*                  OtherActor                     (Parm, ZeroConstructor, IsPlainOldData)
+// class UPrimitiveComponent*     OtherComp                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// int                            OtherBodyIndex                 (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bFromSweep                     (Parm, ZeroConstructor, IsPlainOldData)
+// struct FHitResult              SweepResult                    (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+// FunctionAddress:0x00007FF63B8B3710              		 offset:45c3710                       
 
-void AFlockFish::OnBeginOverlap(class UPrimitiveComponent** activatedComp, class AActor** OtherActor, class UPrimitiveComponent** OtherComp, int* OtherBodyIndex, bool* bFromSweep, struct FHitResult* SweepResult)
+void AFlockFish::STATIC_OnBeginOverlap(class UPrimitiveComponent* activatedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
 	static UFunction* fn;
 
@@ -511,13 +511,13 @@ void AFlockFish::OnBeginOverlap(class UPrimitiveComponent** activatedComp, class
 
 
 // Function OceanPlugin.OceanMeshComponent.SetLODTransitionRange
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// float*                         InLODTransitionStart           (Parm, ZeroConstructor, IsPlainOldData)
-// float*                         InLODTransitionEnd             (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71C7A0140              		 offset:49d0140                       
+// float                          InLODTransitionStart           (Parm, ZeroConstructor, IsPlainOldData)
+// float                          InLODTransitionEnd             (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63B8B3B50              		 offset:45c3b50                       
 
-void UOceanMeshComponent::SetLODTransitionRange(float* InLODTransitionStart, float* InLODTransitionEnd)
+void UOceanMeshComponent::STATIC_SetLODTransitionRange(float InLODTransitionStart, float InLODTransitionEnd)
 {
 	static UFunction* fn;
 
@@ -538,12 +538,12 @@ void UOceanMeshComponent::SetLODTransitionRange(float* InLODTransitionStart, flo
 
 
 // Function OceanPlugin.OceanMeshComponent.SetBoundsExtent
-// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FVector*                Extent                         (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C7A0030              		 offset:49d0030                       
+// struct FVector                 Extent                         (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+// FunctionAddress:0x00007FF63B8B3A40              		 offset:45c3a40                       
 
-void UOceanMeshComponent::SetBoundsExtent(struct FVector* Extent)
+void UOceanMeshComponent::STATIC_SetBoundsExtent(const struct FVector& Extent)
 {
 	static UFunction* fn;
 
@@ -563,12 +563,12 @@ void UOceanMeshComponent::SetBoundsExtent(struct FVector* Extent)
 
 
 // Function OceanPlugin.TimeManager.SetCurrentLocalTime
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// float*                         Time                           (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71C7A00C0              		 offset:49d00c0                       
+// float                          Time                           (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63B8B3AD0              		 offset:45c3ad0                       
 
-void ATimeManager::SetCurrentLocalTime(float* Time)
+void ATimeManager::STATIC_SetCurrentLocalTime(float Time)
 {
 	static UFunction* fn;
 
@@ -588,13 +588,13 @@ void ATimeManager::SetCurrentLocalTime(float* Time)
 
 
 // Function OceanPlugin.TimeManager.IsLeapYear
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Private)
 // Parameters:
-// int*                           Year                           (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Year                           (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C79FBF0              		 offset:49cfbf0                       
+// FunctionAddress:0x00007FF63B8B3600              		 offset:45c3600                       
 
-bool ATimeManager::IsLeapYear(int* Year)
+bool ATimeManager::STATIC_IsLeapYear(int Year)
 {
 	static UFunction* fn;
 
@@ -616,12 +616,12 @@ bool ATimeManager::IsLeapYear(int* Year)
 
 
 // Function OceanPlugin.TimeManager.InitializeCalendar
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FTimeDate*              Time                           (Parm)
-// FunctionAddress:0x00007FF71C79FB60              		 offset:49cfb60                       
+// struct FTimeDate               Time                           (Parm)
+// FunctionAddress:0x00007FF63B8B3570              		 offset:45c3570                       
 
-void ATimeManager::InitializeCalendar(struct FTimeDate* Time)
+void ATimeManager::STATIC_InitializeCalendar(const struct FTimeDate& Time)
 {
 	static UFunction* fn;
 
@@ -641,12 +641,12 @@ void ATimeManager::InitializeCalendar(struct FTimeDate* Time)
 
 
 // Function OceanPlugin.TimeManager.IncrementTime
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// float*                         DeltaSeconds                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71C79FAE0              		 offset:49cfae0                       
+// float                          DeltaSeconds                   (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63B8B34F0              		 offset:45c34f0                       
 
-void ATimeManager::IncrementTime(float* DeltaSeconds)
+void ATimeManager::STATIC_IncrementTime(float DeltaSeconds)
 {
 	static UFunction* fn;
 
@@ -666,12 +666,12 @@ void ATimeManager::IncrementTime(float* DeltaSeconds)
 
 
 // Function OceanPlugin.TimeManager.GetYearPhase
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C79FAB0              		 offset:49cfab0                       
+// FunctionAddress:0x00007FF63B8B34C0              		 offset:45c34c0                       
 
-float ATimeManager::GetYearPhase()
+float ATimeManager::STATIC_GetYearPhase()
 {
 	static UFunction* fn;
 
@@ -692,12 +692,12 @@ float ATimeManager::GetYearPhase()
 
 
 // Function OceanPlugin.TimeManager.GetElapsedDayInMinutes
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C79F680              		 offset:49cf680                       
+// FunctionAddress:0x00007FF63B8B3090              		 offset:45c3090                       
 
-float ATimeManager::GetElapsedDayInMinutes()
+float ATimeManager::STATIC_GetElapsedDayInMinutes()
 {
 	static UFunction* fn;
 
@@ -718,13 +718,13 @@ float ATimeManager::GetElapsedDayInMinutes()
 
 
 // Function OceanPlugin.TimeManager.GetDaysInYear
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Private)
 // Parameters:
-// int*                           Year                           (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Year                           (Parm, ZeroConstructor, IsPlainOldData)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C79F5F0              		 offset:49cf5f0                       
+// FunctionAddress:0x00007FF63B8B3000              		 offset:45c3000                       
 
-int ATimeManager::GetDaysInYear(int* Year)
+int ATimeManager::STATIC_GetDaysInYear(int Year)
 {
 	static UFunction* fn;
 
@@ -746,14 +746,14 @@ int ATimeManager::GetDaysInYear(int* Year)
 
 
 // Function OceanPlugin.TimeManager.GetDaysInMonth
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected)
 // Parameters:
-// int*                           Year                           (Parm, ZeroConstructor, IsPlainOldData)
-// int*                           Month                          (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Year                           (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Month                          (Parm, ZeroConstructor, IsPlainOldData)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C79F530              		 offset:49cf530                       
+// FunctionAddress:0x00007FF63B8B2F40              		 offset:45c2f40                       
 
-int ATimeManager::GetDaysInMonth(int* Year, int* Month)
+int ATimeManager::STATIC_GetDaysInMonth(int Year, int Month)
 {
 	static UFunction* fn;
 
@@ -776,12 +776,12 @@ int ATimeManager::GetDaysInMonth(int* Year, int* Month)
 
 
 // Function OceanPlugin.TimeManager.GetDayPhase
-// (Final, Native, Public, BlueprintCallable, BlueprintPure)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C79F500              		 offset:49cf500                       
+// FunctionAddress:0x00007FF63B8B2F10              		 offset:45c2f10                       
 
-float ATimeManager::GetDayPhase()
+float ATimeManager::STATIC_GetDayPhase()
 {
 	static UFunction* fn;
 
@@ -802,13 +802,13 @@ float ATimeManager::GetDayPhase()
 
 
 // Function OceanPlugin.TimeManager.GetDayOfYear
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Private, Protected, Delegate)
 // Parameters:
-// struct FTimeDate*              Time                           (Parm)
+// struct FTimeDate               Time                           (Parm)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C79F460              		 offset:49cf460                       
+// FunctionAddress:0x00007FF63B8B2E70              		 offset:45c2e70                       
 
-int ATimeManager::GetDayOfYear(struct FTimeDate* Time)
+int ATimeManager::STATIC_GetDayOfYear(const struct FTimeDate& Time)
 {
 	static UFunction* fn;
 
@@ -830,12 +830,12 @@ int ATimeManager::GetDayOfYear(struct FTimeDate* Time)
 
 
 // Function OceanPlugin.TimeManager.CalculateSunAngle
-// (Final, Native, Public, HasDefaults, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
 // Parameters:
 // struct FRotator                ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C79F1E0              		 offset:49cf1e0                       
+// FunctionAddress:0x00007FF63B8B2C10              		 offset:45c2c10                       
 
-struct FRotator ATimeManager::CalculateSunAngle()
+struct FRotator ATimeManager::STATIC_CalculateSunAngle()
 {
 	static UFunction* fn;
 
@@ -856,12 +856,12 @@ struct FRotator ATimeManager::CalculateSunAngle()
 
 
 // Function OceanPlugin.TimeManager.CalculateMoonPhase
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C79F1B0              		 offset:49cf1b0                       
+// FunctionAddress:0x00007FF63B8B2BE0              		 offset:45c2be0                       
 
-float ATimeManager::CalculateMoonPhase()
+float ATimeManager::STATIC_CalculateMoonPhase()
 {
 	static UFunction* fn;
 
@@ -882,12 +882,12 @@ float ATimeManager::CalculateMoonPhase()
 
 
 // Function OceanPlugin.TimeManager.CalculateMoonAngle
-// (Final, Native, Public, HasDefaults, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
 // Parameters:
 // struct FRotator                ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C79F170              		 offset:49cf170                       
+// FunctionAddress:0x00007FF63B8B2BA0              		 offset:45c2ba0                       
 
-struct FRotator ATimeManager::CalculateMoonAngle()
+struct FRotator ATimeManager::STATIC_CalculateMoonAngle()
 {
 	static UFunction* fn;
 

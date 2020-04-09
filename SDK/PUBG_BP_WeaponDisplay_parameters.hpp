@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -22,7 +22,7 @@ struct ABP_WeaponDisplay_C_UserConstructionScript_Params
 // Function BP_WeaponDisplay.BP_WeaponDisplay_C.AddStaticMeshAsyncEvent
 struct ABP_WeaponDisplay_C_AddStaticMeshAsyncEvent_Params
 {
-	bool*                                              indexMatch;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               indexMatch;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_WeaponDisplay.BP_WeaponDisplay_C.ExecuteUbergraph_BP_WeaponDisplay

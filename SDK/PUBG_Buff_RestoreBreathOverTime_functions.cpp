@@ -1,4 +1,4 @@
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,10 +13,10 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function Buff_RestoreBreathOverTime.Buff_RestoreBreathOverTime_C.CanApplyBuff
-// (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// ()
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 bool ABuff_RestoreBreathOverTime_C::CanApplyBuff()
 {
@@ -38,8 +38,8 @@ bool ABuff_RestoreBreathOverTime_C::CanApplyBuff()
 
 
 // Function Buff_RestoreBreathOverTime.Buff_RestoreBreathOverTime_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ABuff_RestoreBreathOverTime_C::UserConstructionScript()
 {
@@ -59,8 +59,8 @@ void ABuff_RestoreBreathOverTime_C::UserConstructionScript()
 
 
 // Function Buff_RestoreBreathOverTime.Buff_RestoreBreathOverTime_C.TickBuff
-// (Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ABuff_RestoreBreathOverTime_C::TickBuff()
 {
@@ -80,8 +80,8 @@ void ABuff_RestoreBreathOverTime_C::TickBuff()
 
 
 // Function Buff_RestoreBreathOverTime.Buff_RestoreBreathOverTime_C.AfterDelay
-// (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ABuff_RestoreBreathOverTime_C::AfterDelay()
 {
@@ -101,8 +101,8 @@ void ABuff_RestoreBreathOverTime_C::AfterDelay()
 
 
 // Function Buff_RestoreBreathOverTime.Buff_RestoreBreathOverTime_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ABuff_RestoreBreathOverTime_C::ReceiveBeginPlay()
 {
@@ -122,10 +122,10 @@ void ABuff_RestoreBreathOverTime_C::ReceiveBeginPlay()
 
 
 // Function Buff_RestoreBreathOverTime.Buff_RestoreBreathOverTime_C.ExecuteUbergraph_Buff_RestoreBreathOverTime
-// (HasDefaults)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ABuff_RestoreBreathOverTime_C::ExecuteUbergraph_Buff_RestoreBreathOverTime(int* EntryPoint)
 {

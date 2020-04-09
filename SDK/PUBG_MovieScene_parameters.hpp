@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -27,20 +27,20 @@ struct UMovieSceneSequencePlayer_StartPlayingNextTick_Params
 // Function MovieScene.MovieSceneSequencePlayer.SetPlayRate
 struct UMovieSceneSequencePlayer_SetPlayRate_Params
 {
-	float*                                             PlayRate;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              PlayRate;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function MovieScene.MovieSceneSequencePlayer.SetPlaybackRange
 struct UMovieSceneSequencePlayer_SetPlaybackRange_Params
 {
-	float*                                             NewStartTime;                                             // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-	float*                                             NewEndTime;                                               // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	float                                              NewStartTime;                                             // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	float                                              NewEndTime;                                               // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function MovieScene.MovieSceneSequencePlayer.SetPlaybackPosition
 struct UMovieSceneSequencePlayer_SetPlaybackPosition_Params
 {
-	float*                                             NewPlaybackPosition;                                      // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              NewPlaybackPosition;                                      // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function MovieScene.MovieSceneSequencePlayer.PlayReverse
@@ -51,7 +51,7 @@ struct UMovieSceneSequencePlayer_PlayReverse_Params
 // Function MovieScene.MovieSceneSequencePlayer.PlayLooping
 struct UMovieSceneSequencePlayer_PlayLooping_Params
 {
-	int*                                               NumLoops;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                NumLoops;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function MovieScene.MovieSceneSequencePlayer.Play
@@ -103,7 +103,7 @@ struct UMovieSceneSequencePlayer_GetLength_Params
 // Function MovieScene.MovieSceneSequencePlayer.GetBoundObjects
 struct UMovieSceneSequencePlayer_GetBoundObjects_Params
 {
-	struct FMovieSceneObjectBindingID*                 ObjectBinding;                                            // (Parm)
+	struct FMovieSceneObjectBindingID                  ObjectBinding;                                            // (Parm)
 	TArray<class UObject*>                             ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 

@@ -1,4 +1,4 @@
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -11,55 +11,6 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Functions
 //---------------------------------------------------------------------------
-
-// Function DebugInfoCanvasWidget.DebugInfoCanvasWidget_C.OnPrepass
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWidget**                BoundWidget                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-
-void UDebugInfoCanvasWidget_C::OnPrepass(class UWidget** BoundWidget)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function DebugInfoCanvasWidget.DebugInfoCanvasWidget_C.OnPrepass"));
-
-	UDebugInfoCanvasWidget_C_OnPrepass_Params params;
-	params.BoundWidget = BoundWidget;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function DebugInfoCanvasWidget.DebugInfoCanvasWidget_C.GetDebugText
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FText                   ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-
-struct FText UDebugInfoCanvasWidget_C::GetDebugText()
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function DebugInfoCanvasWidget.DebugInfoCanvasWidget_C.GetDebugText"));
-
-	UDebugInfoCanvasWidget_C_GetDebugText_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
 
 }
 

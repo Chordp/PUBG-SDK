@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -78,7 +78,7 @@ struct UReplayListItem_C_SetRegionOrLocal_Params
 // Function ReplayListItem.ReplayListItem_C.SetShouldKeep
 struct UReplayListItem_C_SetShouldKeep_Params
 {
-	bool*                                              bShouldKeep;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bShouldKeep;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function ReplayListItem.ReplayListItem_C.SetCorrupt
@@ -126,15 +126,15 @@ struct UReplayListItem_C_SetActionMessageDecompressPercent_Params
 // Function ReplayListItem.ReplayListItem_C.SetActionMessage
 struct UReplayListItem_C_SetActionMessage_Params
 {
-	bool*                                              bIsDownloading;                                           // (Parm, ZeroConstructor, IsPlainOldData)
-	bool*                                              bIsUnzipping;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bIsDownloading;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bIsUnzipping;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function ReplayListItem.ReplayListItem_C.SetDownloadCancelBtns
 struct UReplayListItem_C_SetDownloadCancelBtns_Params
 {
-	bool*                                              bIsDownloading;                                           // (Parm, ZeroConstructor, IsPlainOldData)
-	bool*                                              bIsUnzipping;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bIsDownloading;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bIsUnzipping;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function ReplayListItem.ReplayListItem_C.SetDate
@@ -203,7 +203,7 @@ struct UReplayListItem_C_BndEvt__Cancel_K2Node_ComponentBoundEvent_92_OnButtonCl
 // Function ReplayListItem.ReplayListItem_C.BndEvt__CheckBoxShouldKeep_K2Node_ComponentBoundEvent_548_OnCheckBoxComponentStateChanged__DelegateSignature
 struct UReplayListItem_C_BndEvt__CheckBoxShouldKeep_K2Node_ComponentBoundEvent_548_OnCheckBoxComponentStateChanged__DelegateSignature_Params
 {
-	bool*                                              bIsChecked;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bIsChecked;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function ReplayListItem.ReplayListItem_C.UnzipEvent

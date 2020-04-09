@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,11 +15,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Class MobilePatchingUtils.MobileInstalledContent
-// 0x0020 (0x0048 - 0x0028)
+// 0x0020 (0x0050 - 0x0030)
 class UMobileInstalledContent : public UObject
 {
 public:
-	unsigned char                                      UnknownData00[0x20];                                      // 0x0028(0x0020) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x20];                                      // 0x0030(0x0020) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -30,19 +30,15 @@ public:
 		return ptr;
 	}
 
-
-	bool Mount(int* PakOrder, struct FString* MountPoint);
-	float GetInstalledContentSize();
-	float GetDiskFreeSpace();
 };
 
 
 // Class MobilePatchingUtils.MobilePendingContent
-// 0x0040 (0x0088 - 0x0048)
+// 0x0040 (0x0090 - 0x0050)
 class UMobilePendingContent : public UMobileInstalledContent
 {
 public:
-	unsigned char                                      UnknownData00[0x40];                                      // 0x0048(0x0040) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x40];                                      // 0x0050(0x0040) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -53,19 +49,11 @@ public:
 		return ptr;
 	}
 
-
-	void StartInstall(struct FScriptDelegate* OnSucceeded, struct FScriptDelegate* OnFailed);
-	float GetTotalDownloadedSize();
-	float GetRequiredDiskSpace();
-	float GetInstallProgress();
-	struct FText GetDownloadStatusText();
-	float GetDownloadSpeed();
-	float GetDownloadSize();
 };
 
 
 // Class MobilePatchingUtils.MobilePatchingLibrary
-// 0x0000 (0x0028 - 0x0028)
+// 0x0000 (0x0030 - 0x0030)
 class UMobilePatchingLibrary : public UBlueprintFunctionLibrary
 {
 public:
@@ -79,12 +67,6 @@ public:
 		return ptr;
 	}
 
-
-	void STATIC_RequestContent(struct FString* RemoteManifestURL, struct FString* CloudURL, struct FString* InstallDirectory, struct FScriptDelegate* OnSucceeded, struct FScriptDelegate* OnFailed);
-	bool STATIC_HasActiveWiFiConnection();
-	TArray<struct FString> STATIC_GetSupportedPlatformNames();
-	class UMobileInstalledContent* STATIC_GetInstalledContent(struct FString* InstallDirectory);
-	struct FString STATIC_GetActiveDeviceProfileName();
 };
 
 

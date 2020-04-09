@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -692,7 +692,7 @@ struct FStringAssetReference
 // 0x0000 (0x0010 - 0x0010)
 struct FStringClassReference : public FStringAssetReference
 {
-
+	struct FString                                     AssetLongPathname;                                        // 0x0000(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 };
 
 // ScriptStruct CoreUObject.PrimaryAssetType

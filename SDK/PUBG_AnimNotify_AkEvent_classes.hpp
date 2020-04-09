@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass AnimNotify_AkEvent.AnimNotify_AkEvent_C
-// 0x0000 (0x0050 - 0x0050)
+// 0x0000 (0x0058 - 0x0058)
 class UAnimNotify_AkEvent_C : public UAnimNotify_AkEvent
 {
 public:
@@ -29,6 +29,8 @@ public:
 		return ptr;
 	}
 
+
+	void STATIC_PlayPreviewEditor(class USkeletalMeshComponent* MeshComp);
 };
 
 

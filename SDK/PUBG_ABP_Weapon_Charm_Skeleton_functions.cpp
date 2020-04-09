@@ -1,4 +1,4 @@
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,8 +13,8 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function ABP_Weapon_Charm_Skeleton.ABP_Weapon_Charm_Skeleton_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Charm_Skeleton_AnimGraphNode_ModifyBone_4EE4C47546E12E947412C59A9A168182
-// (BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UABP_Weapon_Charm_Skeleton_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Charm_Skeleton_AnimGraphNode_ModifyBone_4EE4C47546E12E947412C59A9A168182()
 {
@@ -34,8 +34,8 @@ void UABP_Weapon_Charm_Skeleton_C::EvaluateGraphExposedInputs_ExecuteUbergraph_A
 
 
 // Function ABP_Weapon_Charm_Skeleton.ABP_Weapon_Charm_Skeleton_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Charm_Skeleton_AnimGraphNode_RigidBody_8568CC1447E38623765165B831AB16EF
-// (BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UABP_Weapon_Charm_Skeleton_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Charm_Skeleton_AnimGraphNode_RigidBody_8568CC1447E38623765165B831AB16EF()
 {
@@ -55,10 +55,10 @@ void UABP_Weapon_Charm_Skeleton_C::EvaluateGraphExposedInputs_ExecuteUbergraph_A
 
 
 // Function ABP_Weapon_Charm_Skeleton.ABP_Weapon_Charm_Skeleton_C.ExecuteUbergraph_ABP_Weapon_Charm_Skeleton
-// ()
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UABP_Weapon_Charm_Skeleton_C::ExecuteUbergraph_ABP_Weapon_Charm_Skeleton(int* EntryPoint)
 {

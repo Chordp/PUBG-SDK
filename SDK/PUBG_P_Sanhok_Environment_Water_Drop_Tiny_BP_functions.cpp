@@ -1,4 +1,4 @@
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -11,27 +11,6 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Functions
 //---------------------------------------------------------------------------
-
-// Function P_Sanhok_Environment_Water_Drop_Tiny_BP.P_Sanhok_Environment_Water_Drop_Tiny_BP_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
-
-void AP_Sanhok_Environment_Water_Drop_Tiny_BP_C::UserConstructionScript()
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function P_Sanhok_Environment_Water_Drop_Tiny_BP.P_Sanhok_Environment_Water_Drop_Tiny_BP_C.UserConstructionScript"));
-
-	AP_Sanhok_Environment_Water_Drop_Tiny_BP_C_UserConstructionScript_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
 
 }
 

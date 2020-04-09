@@ -1,4 +1,4 @@
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,8 +13,8 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function BP_WeaponDisplay.BP_WeaponDisplay_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ABP_WeaponDisplay_C::UserConstructionScript()
 {
@@ -34,12 +34,12 @@ void ABP_WeaponDisplay_C::UserConstructionScript()
 
 
 // Function BP_WeaponDisplay.BP_WeaponDisplay_C.AddStaticMeshAsyncEvent
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// bool*                          indexMatch                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// bool                           indexMatch                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
-void ABP_WeaponDisplay_C::AddStaticMeshAsyncEvent(bool* indexMatch)
+void ABP_WeaponDisplay_C::AddStaticMeshAsyncEvent(bool indexMatch)
 {
 	static UFunction* fn;
 
@@ -58,10 +58,10 @@ void ABP_WeaponDisplay_C::AddStaticMeshAsyncEvent(bool* indexMatch)
 
 
 // Function BP_WeaponDisplay.BP_WeaponDisplay_C.ExecuteUbergraph_BP_WeaponDisplay
-// (HasDefaults)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ABP_WeaponDisplay_C::ExecuteUbergraph_BP_WeaponDisplay(int* EntryPoint)
 {

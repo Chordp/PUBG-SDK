@@ -1,4 +1,4 @@
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,12 +13,12 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function KeyImageWIdgetBP.KeyImageWIdgetBP_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// bool*                          IsDesignTime                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// bool                           IsDesignTime                   (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
-void UKeyImageWIdgetBP_C::PreConstruct(bool* IsDesignTime)
+void UKeyImageWIdgetBP_C::PreConstruct(bool IsDesignTime)
 {
 	static UFunction* fn;
 
@@ -37,10 +37,10 @@ void UKeyImageWIdgetBP_C::PreConstruct(bool* IsDesignTime)
 
 
 // Function KeyImageWIdgetBP.KeyImageWIdgetBP_C.ExecuteUbergraph_KeyImageWIdgetBP
-// (HasDefaults)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UKeyImageWIdgetBP_C::ExecuteUbergraph_KeyImageWIdgetBP(int* EntryPoint)
 {

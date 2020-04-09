@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -23,7 +23,7 @@ struct UInGameReplayMenu_C_SetHUD_Params
 // Function InGameReplayMenu.InGameReplayMenu_C.GotoReplayList
 struct UInGameReplayMenu_C_GotoReplayList_Params
 {
-	EPopupButtonID*                                    ButtonID;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	EPopupButtonID                                     ButtonID;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function InGameReplayMenu.InGameReplayMenu_C.QuitReplay

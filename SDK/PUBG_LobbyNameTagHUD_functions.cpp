@@ -1,4 +1,4 @@
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -12,23 +12,24 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
-// Function LobbyNameTagHUD.LobbyNameTagHUD_C.CleanUpNameTagWidget
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function TslGame.TslLobbyNameTagHudWidget.UpdateNameTagWidget_Internal
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// int*                           SlotIndex                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// int                            SlotIndex                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63A3D0140              		 offset:30e0140                       
 
-void ULobbyNameTagHUD_C::CleanUpNameTagWidget(int* SlotIndex)
+void ULobbyNameTagHUD_C::STATIC_UpdateNameTagWidget_Internal(int SlotIndex)
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function LobbyNameTagHUD.LobbyNameTagHUD_C.CleanUpNameTagWidget"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function TslGame.TslLobbyNameTagHudWidget.UpdateNameTagWidget_Internal"));
 
-	ULobbyNameTagHUD_C_CleanUpNameTagWidget_Params params;
+	ULobbyNameTagHUD_C_UpdateNameTagWidget_Internal_Params params;
 	params.SlotIndex = SlotIndex;
 
 	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -36,23 +37,24 @@ void ULobbyNameTagHUD_C::CleanUpNameTagWidget(int* SlotIndex)
 }
 
 
-// Function LobbyNameTagHUD.LobbyNameTagHUD_C.SetupNameTagWidget
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function TslGame.TslLobbyNameTagHudWidget.SetNameTagWidget_Internal
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// int*                           SlotIndex                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// int                            SlotIndex                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63A3CD410              		 offset:30dd410                       
 
-void ULobbyNameTagHUD_C::SetupNameTagWidget(int* SlotIndex)
+void ULobbyNameTagHUD_C::STATIC_SetNameTagWidget_Internal(int SlotIndex)
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function LobbyNameTagHUD.LobbyNameTagHUD_C.SetupNameTagWidget"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function TslGame.TslLobbyNameTagHudWidget.SetNameTagWidget_Internal"));
 
-	ULobbyNameTagHUD_C_SetupNameTagWidget_Params params;
+	ULobbyNameTagHUD_C_SetNameTagWidget_Internal_Params params;
 	params.SlotIndex = SlotIndex;
 
 	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -60,31 +62,56 @@ void ULobbyNameTagHUD_C::SetupNameTagWidget(int* SlotIndex)
 }
 
 
-// Function LobbyNameTagHUD.LobbyNameTagHUD_C.GetNameTagWidget
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// Function TslGame.TslLobbyNameTagHudWidget.ResetNameTagWidget_Internal
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// int*                           SlotIndex                      (Parm, ZeroConstructor, IsPlainOldData)
-// class UTslLobbyNameTagWidget*  Widget                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// int                            SlotIndex                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63A3C98E0              		 offset:30d98e0                       
 
-void ULobbyNameTagHUD_C::GetNameTagWidget(int* SlotIndex, class UTslLobbyNameTagWidget** Widget)
+void ULobbyNameTagHUD_C::STATIC_ResetNameTagWidget_Internal(int SlotIndex)
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function LobbyNameTagHUD.LobbyNameTagHUD_C.GetNameTagWidget"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function TslGame.TslLobbyNameTagHudWidget.ResetNameTagWidget_Internal"));
 
-	ULobbyNameTagHUD_C_GetNameTagWidget_Params params;
+	ULobbyNameTagHUD_C_ResetNameTagWidget_Internal_Params params;
 	params.SlotIndex = SlotIndex;
 
 	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function TslGame.TslLobbyNameTagHudWidget.GetNameTagWidget_Internal
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected)
+// Parameters:
+// int                            SlotIndex                      (Parm, ZeroConstructor, IsPlainOldData)
+// class UTslLobbyNameTagWidget*  ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+// FunctionAddress:0x00007FF63A3BE0F0              		 offset:30ce0f0                       
+
+class UTslLobbyNameTagWidget* ULobbyNameTagHUD_C::STATIC_GetNameTagWidget_Internal(int SlotIndex)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function TslGame.TslLobbyNameTagHudWidget.GetNameTagWidget_Internal"));
+
+	ULobbyNameTagHUD_C_GetNameTagWidget_Internal_Params params;
+	params.SlotIndex = SlotIndex;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
 
-	if (Widget != nullptr)
-		*Widget = params.Widget;
+	return params.ReturnValue;
 }
 
 

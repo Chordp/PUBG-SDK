@@ -1,4 +1,4 @@
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,10 +13,10 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function SlotBaseWidget.SlotBaseWidget_C.IsPlayCharacterPickupAnim
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // bool                           bIsPickup                      (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void USlotBaseWidget_C::IsPlayCharacterPickupAnim(bool* bIsPickup)
 {
@@ -39,10 +39,10 @@ void USlotBaseWidget_C::IsPlayCharacterPickupAnim(bool* bIsPickup)
 
 
 // Function SlotBaseWidget.SlotBaseWidget_C.IsCharacterCasting
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // bool                           IsCasting                      (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void USlotBaseWidget_C::IsCharacterCasting(bool* IsCasting)
 {
@@ -65,10 +65,10 @@ void USlotBaseWidget_C::IsCharacterCasting(bool* IsCasting)
 
 
 // Function SlotBaseWidget.SlotBaseWidget_C.PlaySoundAk
-// (Public, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // class UAkAudioEvent**          SoundAk                        (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void USlotBaseWidget_C::PlaySoundAk(class UAkAudioEvent** SoundAk)
 {
@@ -89,8 +89,8 @@ void USlotBaseWidget_C::PlaySoundAk(class UAkAudioEvent** SoundAk)
 
 
 // Function SlotBaseWidget.SlotBaseWidget_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void USlotBaseWidget_C::Construct()
 {
@@ -110,11 +110,11 @@ void USlotBaseWidget_C::Construct()
 
 
 // Function SlotBaseWidget.SlotBaseWidget_C.OnMouseEnter
-// (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
 // struct FPointerEvent*          MouseEvent                     (ConstParm, Parm, OutParm, ReferenceParm)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void USlotBaseWidget_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
@@ -136,10 +136,10 @@ void USlotBaseWidget_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPoint
 
 
 // Function SlotBaseWidget.SlotBaseWidget_C.ExecuteUbergraph_SlotBaseWidget
-// (HasDefaults)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void USlotBaseWidget_C::ExecuteUbergraph_SlotBaseWidget(int* EntryPoint)
 {

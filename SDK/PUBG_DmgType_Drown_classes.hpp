@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass DmgType_Drown.DmgType_Drown_C
-// 0x0000 (0x00F0 - 0x00F0)
+// 0x0000 (0x00F8 - 0x00F8)
 class UDmgType_Drown_C : public UTslDamageType
 {
 public:

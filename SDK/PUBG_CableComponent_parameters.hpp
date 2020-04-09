@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,9 +17,9 @@ namespace SDK
 // Function CableComponent.CableComponent.SetAttachEndTo
 struct UCableComponent_SetAttachEndTo_Params
 {
-	class AActor**                                     Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FName*                                      ComponentProperty;                                        // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FName*                                      SocketName;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FName                                       ComponentProperty;                                        // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FName                                       SocketName;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function CableComponent.CableComponent.GetCableParticleLocations

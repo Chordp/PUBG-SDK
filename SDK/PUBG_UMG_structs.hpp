@@ -1,18 +1,18 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
 #endif
 
 #include "PUBG_Basic.hpp"
-#include "PUBG_MovieSceneTracks_classes.hpp"
-#include "PUBG_SlateCore_classes.hpp"
-#include "PUBG_CoreUObject_classes.hpp"
-#include "PUBG_Slate_classes.hpp"
-#include "PUBG_MovieScene_classes.hpp"
 #include "PUBG_Engine_classes.hpp"
+#include "PUBG_CoreUObject_classes.hpp"
+#include "PUBG_MovieScene_classes.hpp"
+#include "PUBG_SlateCore_classes.hpp"
+#include "PUBG_MovieSceneTracks_classes.hpp"
+#include "PUBG_Slate_classes.hpp"
 #include "PUBG_InputCore_classes.hpp"
 
 namespace SDK
@@ -46,51 +46,13 @@ enum class EVirtualKeyboardType : uint8_t
 };
 
 
-// Enum UMG.EWidgetGeometryMode
-enum class EWidgetGeometryMode : uint8_t
+// Enum UMG.EUMGSequencePlayMode
+enum class EUMGSequencePlayMode : uint8_t
 {
-	Plane                          = 0,
-	Cylinder                       = 1,
-	EWidgetGeometryMode_MAX        = 2
-};
-
-
-// Enum UMG.EWidgetBlendMode
-enum class EWidgetBlendMode : uint8_t
-{
-	Opaque                         = 0,
-	Masked                         = 1,
-	Transparent                    = 2,
-	EWidgetBlendMode_MAX           = 3
-};
-
-
-// Enum UMG.EWidgetTimingPolicy
-enum class EWidgetTimingPolicy : uint8_t
-{
-	RealTime                       = 0,
-	GameTime                       = 1,
-	EWidgetTimingPolicy_MAX        = 2
-};
-
-
-// Enum UMG.EWidgetSpace
-enum class EWidgetSpace : uint8_t
-{
-	World                          = 0,
-	Screen                         = 1,
-	EWidgetSpace_MAX               = 2
-};
-
-
-// Enum UMG.EWidgetInteractionSource
-enum class EWidgetInteractionSource : uint8_t
-{
-	World                          = 0,
-	Mouse                          = 1,
-	CenterScreen                   = 2,
-	Custom                         = 3,
-	EWidgetInteractionSource_MAX   = 4
+	Forward                        = 0,
+	Reverse                        = 1,
+	PingPong                       = 2,
+	EUMGSequencePlayMode_MAX       = 3
 };
 
 
@@ -152,13 +114,51 @@ enum class EDesignPreviewSizeMode : uint8_t
 };
 
 
-// Enum UMG.EUMGSequencePlayMode
-enum class EUMGSequencePlayMode : uint8_t
+// Enum UMG.EWidgetGeometryMode
+enum class EWidgetGeometryMode : uint8_t
 {
-	Forward                        = 0,
-	Reverse                        = 1,
-	PingPong                       = 2,
-	EUMGSequencePlayMode_MAX       = 3
+	Plane                          = 0,
+	Cylinder                       = 1,
+	EWidgetGeometryMode_MAX        = 2
+};
+
+
+// Enum UMG.EWidgetBlendMode
+enum class EWidgetBlendMode : uint8_t
+{
+	Opaque                         = 0,
+	Masked                         = 1,
+	Transparent                    = 2,
+	EWidgetBlendMode_MAX           = 3
+};
+
+
+// Enum UMG.EWidgetTimingPolicy
+enum class EWidgetTimingPolicy : uint8_t
+{
+	RealTime                       = 0,
+	GameTime                       = 1,
+	EWidgetTimingPolicy_MAX        = 2
+};
+
+
+// Enum UMG.EWidgetSpace
+enum class EWidgetSpace : uint8_t
+{
+	World                          = 0,
+	Screen                         = 1,
+	EWidgetSpace_MAX               = 2
+};
+
+
+// Enum UMG.EWidgetInteractionSource
+enum class EWidgetInteractionSource : uint8_t
+{
+	World                          = 0,
+	Mouse                          = 1,
+	CenterScreen                   = 2,
+	Custom                         = 3,
+	EWidgetInteractionSource_MAX   = 4
 };
 
 
@@ -166,81 +166,6 @@ enum class EUMGSequencePlayMode : uint8_t
 //---------------------------------------------------------------------------
 //Script Structs
 //---------------------------------------------------------------------------
-
-// ScriptStruct UMG.AnchorData
-// 0x0028
-struct FAnchorData
-{
-	struct FMargin                                     Offsets;                                                  // 0x0000(0x0010) (Edit, BlueprintVisible)
-	struct FAnchors                                    Anchors;                                                  // 0x0010(0x0010) (Edit, BlueprintVisible)
-	struct FVector2D                                   Alignment;                                                // 0x0020(0x0008) (Edit, BlueprintVisible, IsPlainOldData)
-};
-
-// ScriptStruct UMG.SlateChildSize
-// 0x0008
-struct FSlateChildSize
-{
-	float                                              Value;                                                    // 0x0000(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESlateSizeRule>                        SizeRule;                                                 // 0x0004(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x0005(0x0003) MISSED OFFSET
-};
-
-// ScriptStruct UMG.WidgetTransform
-// 0x001C
-struct FWidgetTransform
-{
-	struct FVector2D                                   Translation;                                              // 0x0000(0x0008) (Edit, BlueprintVisible, IsPlainOldData)
-	struct FVector2D                                   Scale;                                                    // 0x0008(0x0008) (Edit, BlueprintVisible, IsPlainOldData)
-	struct FVector2D                                   Shear;                                                    // 0x0010(0x0008) (Edit, BlueprintVisible, IsPlainOldData)
-	float                                              Angle;                                                    // 0x0018(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-};
-
-// ScriptStruct UMG.EventReply
-// 0x00B8
-struct FEventReply
-{
-	unsigned char                                      UnknownData00[0xB8];                                      // 0x0000(0x00B8) MISSED OFFSET
-};
-
-// ScriptStruct UMG.ShapedTextOptions
-// 0x0008
-struct FShapedTextOptions
-{
-	unsigned char                                      bOverride_TextShapingMethod : 1;                          // 0x0000(0x0001) (Edit)
-	unsigned char                                      bOverride_TextFlowDirection : 1;                          // 0x0000(0x0001) (Edit)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
-	ETextShapingMethod                                 TextShapingMethod;                                        // 0x0004(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	ETextFlowDirection                                 TextFlowDirection;                                        // 0x0005(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x2];                                       // 0x0006(0x0002) MISSED OFFSET
-};
-
-// ScriptStruct UMG.WidgetAnimationBinding
-// 0x0028
-struct FWidgetAnimationBinding
-{
-	struct FName                                       WidgetName;                                               // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData)
-	struct FName                                       SlotWidgetName;                                           // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData)
-	struct FGuid                                       AnimationGuid;                                            // 0x0010(0x0010) (IsPlainOldData)
-	bool                                               bIsRootWidget;                                            // 0x0020(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0021(0x0007) MISSED OFFSET
-};
-
-// ScriptStruct UMG.PaintContext
-// 0x0030
-struct FPaintContext
-{
-	unsigned char                                      UnknownData00[0x30];                                      // 0x0000(0x0030) MISSED OFFSET
-};
-
-// ScriptStruct UMG.WidgetNavigationData
-// 0x0018
-struct FWidgetNavigationData
-{
-	EUINavigationRule                                  Rule;                                                     // 0x0000(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
-	struct FName                                       WidgetToFocus;                                            // 0x0008(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	TWeakObjectPtr<class UWidget>                      Widget;                                                   // 0x0010(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
-};
 
 // ScriptStruct UMG.PropertyPathSegment
 // 0x0020
@@ -274,6 +199,23 @@ struct FSlateMeshVertex
 	struct FVector2D                                   UV5;                                                      // 0x0034(0x0008) (IsPlainOldData)
 };
 
+// ScriptStruct UMG.WidgetTransform
+// 0x001C
+struct FWidgetTransform
+{
+	struct FVector2D                                   Translation;                                              // 0x0000(0x0008) (Edit, BlueprintVisible, IsPlainOldData)
+	struct FVector2D                                   Scale;                                                    // 0x0008(0x0008) (Edit, BlueprintVisible, IsPlainOldData)
+	struct FVector2D                                   Shear;                                                    // 0x0010(0x0008) (Edit, BlueprintVisible, IsPlainOldData)
+	float                                              Angle;                                                    // 0x0018(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct UMG.EventReply
+// 0x00B8
+struct FEventReply
+{
+	unsigned char                                      UnknownData00[0xB8];                                      // 0x0000(0x00B8) MISSED OFFSET
+};
+
 // ScriptStruct UMG.DelegateRuntimeBinding
 // 0x0038
 struct FDelegateRuntimeBinding
@@ -292,6 +234,64 @@ struct FNamedSlotBinding
 {
 	struct FName                                       Name;                                                     // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData)
 	class UWidget*                                     Content;                                                  // 0x0008(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+};
+
+// ScriptStruct UMG.PaintContext
+// 0x0030
+struct FPaintContext
+{
+	unsigned char                                      UnknownData00[0x30];                                      // 0x0000(0x0030) MISSED OFFSET
+};
+
+// ScriptStruct UMG.AnchorData
+// 0x0028
+struct FAnchorData
+{
+	struct FMargin                                     Offsets;                                                  // 0x0000(0x0010) (Edit, BlueprintVisible)
+	struct FAnchors                                    Anchors;                                                  // 0x0010(0x0010) (Edit, BlueprintVisible)
+	struct FVector2D                                   Alignment;                                                // 0x0020(0x0008) (Edit, BlueprintVisible, IsPlainOldData)
+};
+
+// ScriptStruct UMG.SlateChildSize
+// 0x0008
+struct FSlateChildSize
+{
+	float                                              Value;                                                    // 0x0000(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ESlateSizeRule>                        SizeRule;                                                 // 0x0004(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0005(0x0003) MISSED OFFSET
+};
+
+// ScriptStruct UMG.ShapedTextOptions
+// 0x0008
+struct FShapedTextOptions
+{
+	unsigned char                                      bOverride_TextShapingMethod : 1;                          // 0x0000(0x0001) (Edit)
+	unsigned char                                      bOverride_TextFlowDirection : 1;                          // 0x0000(0x0001) (Edit)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
+	ETextShapingMethod                                 TextShapingMethod;                                        // 0x0004(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	ETextFlowDirection                                 TextFlowDirection;                                        // 0x0005(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x2];                                       // 0x0006(0x0002) MISSED OFFSET
+};
+
+// ScriptStruct UMG.WidgetAnimationBinding
+// 0x0028
+struct FWidgetAnimationBinding
+{
+	struct FName                                       WidgetName;                                               // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData)
+	struct FName                                       SlotWidgetName;                                           // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData)
+	struct FGuid                                       AnimationGuid;                                            // 0x0010(0x0010) (IsPlainOldData)
+	bool                                               bIsRootWidget;                                            // 0x0020(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0021(0x0007) MISSED OFFSET
+};
+
+// ScriptStruct UMG.WidgetNavigationData
+// 0x0018
+struct FWidgetNavigationData
+{
+	EUINavigationRule                                  Rule;                                                     // 0x0000(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
+	struct FName                                       WidgetToFocus;                                            // 0x0008(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TWeakObjectPtr<class UWidget>                      Widget;                                                   // 0x0010(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
 };
 
 // ScriptStruct UMG.MovieScene2DTransformSectionTemplate

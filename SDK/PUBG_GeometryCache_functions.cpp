@@ -1,4 +1,4 @@
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,12 +13,12 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function GeometryCache.GeometryCacheActor.GetGeometryCacheComponent
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
 // Parameters:
 // class UGeometryCacheComponent* ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
-// FunctionAddress:0x00007FF71A1DC5B0              		 offset:240c5b0                       
+// FunctionAddress:0x00007FF638028390              		 offset:d38390                        
 
-class UGeometryCacheComponent* AGeometryCacheActor::GetGeometryCacheComponent()
+class UGeometryCacheComponent* AGeometryCacheActor::STATIC_GetGeometryCacheComponent()
 {
 	static UFunction* fn;
 
@@ -39,10 +39,10 @@ class UGeometryCacheComponent* AGeometryCacheActor::GetGeometryCacheComponent()
 
 
 // Function GeometryCache.GeometryCacheComponent.Stop
-// (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF71A1DCB40              		 offset:240cb40                       
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638028920              		 offset:d38920                        
 
-void UGeometryCacheComponent::Stop()
+void UGeometryCacheComponent::STATIC_Stop()
 {
 	static UFunction* fn;
 
@@ -61,12 +61,12 @@ void UGeometryCacheComponent::Stop()
 
 
 // Function GeometryCache.GeometryCacheComponent.SetStartTimeOffset
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// float*                         NewStartTimeOffset             (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71A1DCAC0              		 offset:240cac0                       
+// float                          NewStartTimeOffset             (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF6380288A0              		 offset:d388a0                        
 
-void UGeometryCacheComponent::SetStartTimeOffset(float* NewStartTimeOffset)
+void UGeometryCacheComponent::STATIC_SetStartTimeOffset(float NewStartTimeOffset)
 {
 	static UFunction* fn;
 
@@ -86,12 +86,12 @@ void UGeometryCacheComponent::SetStartTimeOffset(float* NewStartTimeOffset)
 
 
 // Function GeometryCache.GeometryCacheComponent.SetPlaybackSpeed
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// float*                         NewPlaybackSpeed               (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71A1DCA40              		 offset:240ca40                       
+// float                          NewPlaybackSpeed               (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF638028820              		 offset:d38820                        
 
-void UGeometryCacheComponent::SetPlaybackSpeed(float* NewPlaybackSpeed)
+void UGeometryCacheComponent::STATIC_SetPlaybackSpeed(float NewPlaybackSpeed)
 {
 	static UFunction* fn;
 
@@ -111,12 +111,12 @@ void UGeometryCacheComponent::SetPlaybackSpeed(float* NewPlaybackSpeed)
 
 
 // Function GeometryCache.GeometryCacheComponent.SetLooping
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// bool*                          bNewLooping                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71A1DC770              		 offset:240c770                       
+// bool                           bNewLooping                    (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF638028550              		 offset:d38550                        
 
-void UGeometryCacheComponent::SetLooping(bool* bNewLooping)
+void UGeometryCacheComponent::STATIC_SetLooping(bool bNewLooping)
 {
 	static UFunction* fn;
 
@@ -136,13 +136,13 @@ void UGeometryCacheComponent::SetLooping(bool* bNewLooping)
 
 
 // Function GeometryCache.GeometryCacheComponent.SetGeometryCache
-// (Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected)
 // Parameters:
-// class UGeometryCache**         NewGeomCache                   (Parm, ZeroConstructor, IsPlainOldData)
+// class UGeometryCache*          NewGeomCache                   (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C658DF0              		 offset:4888df0                       
+// FunctionAddress:0x00007FF63B76B250              		 offset:447b250                       
 
-bool UGeometryCacheComponent::SetGeometryCache(class UGeometryCache** NewGeomCache)
+bool UGeometryCacheComponent::STATIC_SetGeometryCache(class UGeometryCache* NewGeomCache)
 {
 	static UFunction* fn;
 
@@ -164,10 +164,10 @@ bool UGeometryCacheComponent::SetGeometryCache(class UGeometryCache** NewGeomCac
 
 
 // Function GeometryCache.GeometryCacheComponent.PlayReversedFromEnd
-// (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF71A1DC750              		 offset:240c750                       
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638028530              		 offset:d38530                        
 
-void UGeometryCacheComponent::PlayReversedFromEnd()
+void UGeometryCacheComponent::STATIC_PlayReversedFromEnd()
 {
 	static UFunction* fn;
 
@@ -186,10 +186,10 @@ void UGeometryCacheComponent::PlayReversedFromEnd()
 
 
 // Function GeometryCache.GeometryCacheComponent.PlayReversed
-// (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF71A1DC730              		 offset:240c730                       
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638028510              		 offset:d38510                        
 
-void UGeometryCacheComponent::PlayReversed()
+void UGeometryCacheComponent::STATIC_PlayReversed()
 {
 	static UFunction* fn;
 
@@ -208,10 +208,10 @@ void UGeometryCacheComponent::PlayReversed()
 
 
 // Function GeometryCache.GeometryCacheComponent.PlayFromStart
-// (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF71A1DC710              		 offset:240c710                       
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF6380284F0              		 offset:d384f0                        
 
-void UGeometryCacheComponent::PlayFromStart()
+void UGeometryCacheComponent::STATIC_PlayFromStart()
 {
 	static UFunction* fn;
 
@@ -230,10 +230,10 @@ void UGeometryCacheComponent::PlayFromStart()
 
 
 // Function GeometryCache.GeometryCacheComponent.Play
-// (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF71A1DC6F0              		 offset:240c6f0                       
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF6380284D0              		 offset:d384d0                        
 
-void UGeometryCacheComponent::Play()
+void UGeometryCacheComponent::STATIC_Play()
 {
 	static UFunction* fn;
 
@@ -252,10 +252,10 @@ void UGeometryCacheComponent::Play()
 
 
 // Function GeometryCache.GeometryCacheComponent.Pause
-// (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF71A1DC6D0              		 offset:240c6d0                       
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF6380284B0              		 offset:d384b0                        
 
-void UGeometryCacheComponent::Pause()
+void UGeometryCacheComponent::STATIC_Pause()
 {
 	static UFunction* fn;
 
@@ -274,12 +274,12 @@ void UGeometryCacheComponent::Pause()
 
 
 // Function GeometryCache.GeometryCacheComponent.IsPlayingReversed
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71A1DC6A0              		 offset:240c6a0                       
+// FunctionAddress:0x00007FF638028480              		 offset:d38480                        
 
-bool UGeometryCacheComponent::IsPlayingReversed()
+bool UGeometryCacheComponent::STATIC_IsPlayingReversed()
 {
 	static UFunction* fn;
 
@@ -300,12 +300,12 @@ bool UGeometryCacheComponent::IsPlayingReversed()
 
 
 // Function GeometryCache.GeometryCacheComponent.IsPlaying
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71A1DC670              		 offset:240c670                       
+// FunctionAddress:0x00007FF638028450              		 offset:d38450                        
 
-bool UGeometryCacheComponent::IsPlaying()
+bool UGeometryCacheComponent::STATIC_IsPlaying()
 {
 	static UFunction* fn;
 
@@ -326,12 +326,12 @@ bool UGeometryCacheComponent::IsPlaying()
 
 
 // Function GeometryCache.GeometryCacheComponent.IsLooping
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71A1DC640              		 offset:240c640                       
+// FunctionAddress:0x00007FF638028420              		 offset:d38420                        
 
-bool UGeometryCacheComponent::IsLooping()
+bool UGeometryCacheComponent::STATIC_IsLooping()
 {
 	static UFunction* fn;
 
@@ -352,12 +352,12 @@ bool UGeometryCacheComponent::IsLooping()
 
 
 // Function GeometryCache.GeometryCacheComponent.GetStartTimeOffset
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71A1DC610              		 offset:240c610                       
+// FunctionAddress:0x00007FF6380283F0              		 offset:d383f0                        
 
-float UGeometryCacheComponent::GetStartTimeOffset()
+float UGeometryCacheComponent::STATIC_GetStartTimeOffset()
 {
 	static UFunction* fn;
 
@@ -378,12 +378,12 @@ float UGeometryCacheComponent::GetStartTimeOffset()
 
 
 // Function GeometryCache.GeometryCacheComponent.GetPlaybackSpeed
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71A1DC5E0              		 offset:240c5e0                       
+// FunctionAddress:0x00007FF6380283C0              		 offset:d383c0                        
 
-float UGeometryCacheComponent::GetPlaybackSpeed()
+float UGeometryCacheComponent::STATIC_GetPlaybackSpeed()
 {
 	static UFunction* fn;
 
@@ -404,13 +404,13 @@ float UGeometryCacheComponent::GetPlaybackSpeed()
 
 
 // Function GeometryCache.GeometryCacheTrack_FlipbookAnimation.AddMeshSample
-// (Final, Native, Public, HasOutParms)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FGeometryCacheMeshData* MeshData                       (ConstParm, Parm, OutParm, ReferenceParm)
-// float*                         SampleTime                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71A1DC440              		 offset:240c440                       
+// struct FGeometryCacheMeshData  MeshData                       (ConstParm, Parm, OutParm, ReferenceParm)
+// float                          SampleTime                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF638028220              		 offset:d38220                        
 
-void UGeometryCacheTrack_FlipbookAnimation::AddMeshSample(struct FGeometryCacheMeshData* MeshData, float* SampleTime)
+void UGeometryCacheTrack_FlipbookAnimation::STATIC_AddMeshSample(const struct FGeometryCacheMeshData& MeshData, float SampleTime)
 {
 	static UFunction* fn;
 
@@ -420,56 +420,6 @@ void UGeometryCacheTrack_FlipbookAnimation::AddMeshSample(struct FGeometryCacheM
 	UGeometryCacheTrack_FlipbookAnimation_AddMeshSample_Params params;
 	params.MeshData = MeshData;
 	params.SampleTime = SampleTime;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function GeometryCache.GeometryCacheTrack_TransformAnimation.SetMesh
-// (Final, Native, Public, HasOutParms)
-// Parameters:
-// struct FGeometryCacheMeshData* NewMeshData                    (ConstParm, Parm, OutParm, ReferenceParm)
-// FunctionAddress:0x00007FF71A1DC800              		 offset:240c800                       
-
-void UGeometryCacheTrack_TransformAnimation::SetMesh(struct FGeometryCacheMeshData* NewMeshData)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function GeometryCache.GeometryCacheTrack_TransformAnimation.SetMesh"));
-
-	UGeometryCacheTrack_TransformAnimation_SetMesh_Params params;
-	params.NewMeshData = NewMeshData;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function GeometryCache.GeometryCacheTrack_TransformGroupAnimation.SetMesh
-// (Final, Native, Public, HasOutParms)
-// Parameters:
-// struct FGeometryCacheMeshData* NewMeshData                    (ConstParm, Parm, OutParm, ReferenceParm)
-// FunctionAddress:0x00007FF71A1DC920              		 offset:240c920                       
-
-void UGeometryCacheTrack_TransformGroupAnimation::SetMesh(struct FGeometryCacheMeshData* NewMeshData)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function GeometryCache.GeometryCacheTrack_TransformGroupAnimation.SetMesh"));
-
-	UGeometryCacheTrack_TransformGroupAnimation_SetMesh_Params params;
-	params.NewMeshData = NewMeshData;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;

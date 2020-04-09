@@ -1,4 +1,4 @@
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,14 +13,14 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function CableComponent.CableComponent.SetAttachEndTo
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// class AActor**                 Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// struct FName*                  ComponentProperty              (Parm, ZeroConstructor, IsPlainOldData)
-// struct FName*                  SocketName                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71C832EB0              		 offset:4a62eb0                       
+// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
+// struct FName                   ComponentProperty              (Parm, ZeroConstructor, IsPlainOldData)
+// struct FName                   SocketName                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63B947F30              		 offset:4657f30                       
 
-void UCableComponent::SetAttachEndTo(class AActor** Actor, struct FName* ComponentProperty, struct FName* SocketName)
+void UCableComponent::STATIC_SetAttachEndTo(class AActor* Actor, const struct FName& ComponentProperty, const struct FName& SocketName)
 {
 	static UFunction* fn;
 
@@ -42,12 +42,12 @@ void UCableComponent::SetAttachEndTo(class AActor** Actor, struct FName* Compone
 
 
 // Function CableComponent.CableComponent.GetCableParticleLocations
-// (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // TArray<struct FVector>         Locations                      (Parm, OutParm, ZeroConstructor)
-// FunctionAddress:0x00007FF71C832E00              		 offset:4a62e00                       
+// FunctionAddress:0x00007FF63B947E80              		 offset:4657e80                       
 
-void UCableComponent::GetCableParticleLocations(TArray<struct FVector>* Locations)
+void UCableComponent::STATIC_GetCableParticleLocations(TArray<struct FVector>* Locations)
 {
 	static UFunction* fn;
 
@@ -69,12 +69,12 @@ void UCableComponent::GetCableParticleLocations(TArray<struct FVector>* Location
 
 
 // Function CableComponent.CableComponent.GetAttachedComponent
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
 // Parameters:
 // class USceneComponent*         ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
-// FunctionAddress:0x00007FF71C832DD0              		 offset:4a62dd0                       
+// FunctionAddress:0x00007FF63B947E50              		 offset:4657e50                       
 
-class USceneComponent* UCableComponent::GetAttachedComponent()
+class USceneComponent* UCableComponent::STATIC_GetAttachedComponent()
 {
 	static UFunction* fn;
 
@@ -95,12 +95,12 @@ class USceneComponent* UCableComponent::GetAttachedComponent()
 
 
 // Function CableComponent.CableComponent.GetAttachedActor
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
 // Parameters:
 // class AActor*                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C832DA0              		 offset:4a62da0                       
+// FunctionAddress:0x00007FF63B947E20              		 offset:4657e20                       
 
-class AActor* UCableComponent::GetAttachedActor()
+class AActor* UCableComponent::STATIC_GetAttachedActor()
 {
 	static UFunction* fn;
 

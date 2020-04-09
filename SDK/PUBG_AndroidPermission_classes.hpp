@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,12 +15,12 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Class AndroidPermission.AndroidPermissionCallbackProxy
-// 0x0058 (0x0080 - 0x0028)
+// 0x0050 (0x0080 - 0x0030)
 class UAndroidPermissionCallbackProxy : public UObject
 {
 public:
-	struct FScriptMulticastDelegate                    OnPermissionsGrantedDynamicDelegate;                      // 0x0028(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData00[0x48];                                      // 0x0038(0x0048) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnPermissionsGrantedDynamicDelegate;                      // 0x0030(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	unsigned char                                      UnknownData00[0x40];                                      // 0x0040(0x0040) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -35,7 +35,7 @@ public:
 
 
 // Class AndroidPermission.AndroidPermissionFunctionLibrary
-// 0x0000 (0x0028 - 0x0028)
+// 0x0000 (0x0030 - 0x0030)
 class UAndroidPermissionFunctionLibrary : public UBlueprintFunctionLibrary
 {
 public:
@@ -49,9 +49,6 @@ public:
 		return ptr;
 	}
 
-
-	bool STATIC_CheckPermission(struct FString* permission);
-	class UAndroidPermissionCallbackProxy* STATIC_AcquirePermissions(TArray<struct FString>* Permissions);
 };
 
 

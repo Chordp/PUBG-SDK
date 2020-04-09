@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -311,7 +311,7 @@ struct UCharProxy_AnimBP_C_BlueprintInitializeAnimation_Params
 // Function CharProxy_AnimBP.CharProxy_AnimBP_C.OnReady_Event
 struct UCharProxy_AnimBP_C_OnReady_Event_Params
 {
-	bool*                                              bReady;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bReady;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function CharProxy_AnimBP.CharProxy_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_CharProxy_AnimBP_AnimGraphNode_BlendListByBool_DE260CEA407C68776D9118B2960C17E9

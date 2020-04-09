@@ -1,4 +1,4 @@
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,10 +13,10 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function ReplayListItem.ReplayListItem_C.SetMK3DReplayVersion
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // int*                           MK3DReplayVersion              (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::SetMK3DReplayVersion(int* MK3DReplayVersion)
 {
@@ -37,10 +37,10 @@ void UReplayListItem_C::SetMK3DReplayVersion(int* MK3DReplayVersion)
 
 
 // Function ReplayListItem.ReplayListItem_C.SetHaveCameraEvent
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // bool*                          bHaveCameraEvent               (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::SetHaveCameraEvent(bool* bHaveCameraEvent)
 {
@@ -61,10 +61,10 @@ void UReplayListItem_C::SetHaveCameraEvent(bool* bHaveCameraEvent)
 
 
 // Function ReplayListItem.ReplayListItem_C.SetGameVersion
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                GameVersion                    (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::SetGameVersion(struct FString* GameVersion)
 {
@@ -85,10 +85,10 @@ void UReplayListItem_C::SetGameVersion(struct FString* GameVersion)
 
 
 // Function ReplayListItem.ReplayListItem_C.SetAllDeadOrWin
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // bool*                          bAllDeadOrWin                  (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::SetAllDeadOrWin(bool* bAllDeadOrWin)
 {
@@ -109,10 +109,10 @@ void UReplayListItem_C::SetAllDeadOrWin(bool* bAllDeadOrWin)
 
 
 // Function ReplayListItem.ReplayListItem_C.SetSeverRecording
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // bool*                          bIsServerRecording             (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::SetSeverRecording(bool* bIsServerRecording)
 {
@@ -133,10 +133,10 @@ void UReplayListItem_C::SetSeverRecording(bool* bIsServerRecording)
 
 
 // Function ReplayListItem.ReplayListItem_C.SetActionMessageDownloadPercent
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // float*                         fPercent                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::SetActionMessageDownloadPercent(float* fPercent)
 {
@@ -157,12 +157,12 @@ void UReplayListItem_C::SetActionMessageDownloadPercent(float* fPercent)
 
 
 // Function ReplayListItem.ReplayListItem_C.ShowDownloadPercent
-// (Public, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                strFileName                    (Parm, ZeroConstructor)
 // int*                           nReceived                      (Parm, ZeroConstructor, IsPlainOldData)
 // int*                           nTotal                         (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::ShowDownloadPercent(struct FString* strFileName, int* nReceived, int* nTotal)
 {
@@ -185,8 +185,8 @@ void UReplayListItem_C::ShowDownloadPercent(struct FString* strFileName, int* nR
 
 
 // Function ReplayListItem.ReplayListItem_C.DisableDownload
-// (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::DisableDownload()
 {
@@ -206,10 +206,10 @@ void UReplayListItem_C::DisableDownload()
 
 
 // Function ReplayListItem.ReplayListItem_C.SetArchived
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // bool*                          IsArchived                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::SetArchived(bool* IsArchived)
 {
@@ -230,10 +230,10 @@ void UReplayListItem_C::SetArchived(bool* IsArchived)
 
 
 // Function ReplayListItem.ReplayListItem_C.SetRegionOrLocal
-// (Public, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                inRegionOrLocal                (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::SetRegionOrLocal(struct FString* inRegionOrLocal)
 {
@@ -254,12 +254,12 @@ void UReplayListItem_C::SetRegionOrLocal(struct FString* inRegionOrLocal)
 
 
 // Function ReplayListItem.ReplayListItem_C.SetShouldKeep
-// (Public, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// bool*                          bShouldKeep                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// bool                           bShouldKeep                    (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
-void UReplayListItem_C::SetShouldKeep(bool* bShouldKeep)
+void UReplayListItem_C::SetShouldKeep(bool bShouldKeep)
 {
 	static UFunction* fn;
 
@@ -278,10 +278,10 @@ void UReplayListItem_C::SetShouldKeep(bool* bShouldKeep)
 
 
 // Function ReplayListItem.ReplayListItem_C.SetCorrupt
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // bool*                          bIsCorrupt                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::SetCorrupt(bool* bIsCorrupt)
 {
@@ -302,10 +302,10 @@ void UReplayListItem_C::SetCorrupt(bool* bIsCorrupt)
 
 
 // Function ReplayListItem.ReplayListItem_C.SetInComplete
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // bool*                          bIncomplete                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::SetInComplete(bool* bIncomplete)
 {
@@ -326,10 +326,10 @@ void UReplayListItem_C::SetInComplete(bool* bIncomplete)
 
 
 // Function ReplayListItem.ReplayListItem_C.SetVersionCompatible
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // bool*                          bIsVersionCompatible           (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::SetVersionCompatible(bool* bIsVersionCompatible)
 {
@@ -350,10 +350,10 @@ void UReplayListItem_C::SetVersionCompatible(bool* bIsVersionCompatible)
 
 
 // Function ReplayListItem.ReplayListItem_C.SetMode
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                Mode                           (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::SetMode(struct FString* Mode)
 {
@@ -374,10 +374,10 @@ void UReplayListItem_C::SetMode(struct FString* Mode)
 
 
 // Function ReplayListItem.ReplayListItem_C.SetLength
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // int*                           LengthInMS                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::SetLength(int* LengthInMS)
 {
@@ -398,10 +398,10 @@ void UReplayListItem_C::SetLength(int* LengthInMS)
 
 
 // Function ReplayListItem.ReplayListItem_C.SetActionMessageSimple
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                Message                        (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::SetActionMessageSimple(struct FString* Message)
 {
@@ -422,10 +422,10 @@ void UReplayListItem_C::SetActionMessageSimple(struct FString* Message)
 
 
 // Function ReplayListItem.ReplayListItem_C.SetActionMessageDecompressPercent
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // float*                         fPercent                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::SetActionMessageDecompressPercent(float* fPercent)
 {
@@ -446,13 +446,13 @@ void UReplayListItem_C::SetActionMessageDecompressPercent(float* fPercent)
 
 
 // Function ReplayListItem.ReplayListItem_C.SetActionMessage
-// (Public, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// bool*                          bIsDownloading                 (Parm, ZeroConstructor, IsPlainOldData)
-// bool*                          bIsUnzipping                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// bool                           bIsDownloading                 (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bIsUnzipping                   (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
-void UReplayListItem_C::SetActionMessage(bool* bIsDownloading, bool* bIsUnzipping)
+void UReplayListItem_C::SetActionMessage(bool bIsDownloading, bool bIsUnzipping)
 {
 	static UFunction* fn;
 
@@ -472,13 +472,13 @@ void UReplayListItem_C::SetActionMessage(bool* bIsDownloading, bool* bIsUnzippin
 
 
 // Function ReplayListItem.ReplayListItem_C.SetDownloadCancelBtns
-// (Public, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// bool*                          bIsDownloading                 (Parm, ZeroConstructor, IsPlainOldData)
-// bool*                          bIsUnzipping                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// bool                           bIsDownloading                 (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bIsUnzipping                   (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
-void UReplayListItem_C::SetDownloadCancelBtns(bool* bIsDownloading, bool* bIsUnzipping)
+void UReplayListItem_C::SetDownloadCancelBtns(bool bIsDownloading, bool bIsUnzipping)
 {
 	static UFunction* fn;
 
@@ -498,10 +498,10 @@ void UReplayListItem_C::SetDownloadCancelBtns(bool* bIsDownloading, bool* bIsUnz
 
 
 // Function ReplayListItem.ReplayListItem_C.SetDate
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FDateTime*              Date                           (Parm)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::SetDate(struct FDateTime* Date)
 {
@@ -522,10 +522,10 @@ void UReplayListItem_C::SetDate(struct FDateTime* Date)
 
 
 // Function ReplayListItem.ReplayListItem_C.SetLive
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // bool*                          IsLive                         (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::SetLive(bool* IsLive)
 {
@@ -546,10 +546,10 @@ void UReplayListItem_C::SetLive(bool* IsLive)
 
 
 // Function ReplayListItem.ReplayListItem_C.SetSize
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // int*                           SizeInBytes                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::SetSize(int* SizeInBytes)
 {
@@ -570,10 +570,10 @@ void UReplayListItem_C::SetSize(int* SizeInBytes)
 
 
 // Function ReplayListItem.ReplayListItem_C.SetFriendlyName
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                FriendlyName                   (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::SetFriendlyName(struct FString* FriendlyName)
 {
@@ -594,10 +594,10 @@ void UReplayListItem_C::SetFriendlyName(struct FString* FriendlyName)
 
 
 // Function ReplayListItem.ReplayListItem_C.SetReplayItem
-// (Public, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FReplayItem*            ReplayItem                     (Parm)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::SetReplayItem(struct FReplayItem* ReplayItem)
 {
@@ -618,10 +618,10 @@ void UReplayListItem_C::SetReplayItem(struct FReplayItem* ReplayItem)
 
 
 // Function ReplayListItem.ReplayListItem_C.SetSessionName
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                Text                           (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::SetSessionName(struct FString* Text)
 {
@@ -642,12 +642,12 @@ void UReplayListItem_C::SetSessionName(struct FString* Text)
 
 
 // Function ReplayListItem.ReplayListItem_C.OnProgress
-// (Event, Public, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                archive                        (Parm, ZeroConstructor)
 // float*                         Percentage                     (Parm, ZeroConstructor, IsPlainOldData)
 // int*                           bytes                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::OnProgress(struct FString* archive, float* Percentage, int* bytes)
 {
@@ -670,11 +670,11 @@ void UReplayListItem_C::OnProgress(struct FString* archive, float* Percentage, i
 
 
 // Function ReplayListItem.ReplayListItem_C.OnFileDone
-// (Event, Public, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                archive                        (Parm, ZeroConstructor)
 // struct FString*                file                           (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::OnFileDone(struct FString* archive, struct FString* file)
 {
@@ -696,11 +696,11 @@ void UReplayListItem_C::OnFileDone(struct FString* archive, struct FString* file
 
 
 // Function ReplayListItem.ReplayListItem_C.OnDone
-// (Event, Public, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                archive                        (Parm, ZeroConstructor)
 // TEnumAsByte<EZipUtilityCompletionState>* CompletionState                (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::OnDone(struct FString* archive, TEnumAsByte<EZipUtilityCompletionState>* CompletionState)
 {
@@ -722,8 +722,8 @@ void UReplayListItem_C::OnDone(struct FString* archive, TEnumAsByte<EZipUtilityC
 
 
 // Function ReplayListItem.ReplayListItem_C.BndEvt__Cancel_K2Node_ComponentBoundEvent_92_OnButtonClickedEvent__DelegateSignature
-// (BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::BndEvt__Cancel_K2Node_ComponentBoundEvent_92_OnButtonClickedEvent__DelegateSignature()
 {
@@ -743,12 +743,12 @@ void UReplayListItem_C::BndEvt__Cancel_K2Node_ComponentBoundEvent_92_OnButtonCli
 
 
 // Function ReplayListItem.ReplayListItem_C.BndEvt__CheckBoxShouldKeep_K2Node_ComponentBoundEvent_548_OnCheckBoxComponentStateChanged__DelegateSignature
-// (BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// bool*                          bIsChecked                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// bool                           bIsChecked                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
-void UReplayListItem_C::BndEvt__CheckBoxShouldKeep_K2Node_ComponentBoundEvent_548_OnCheckBoxComponentStateChanged__DelegateSignature(bool* bIsChecked)
+void UReplayListItem_C::BndEvt__CheckBoxShouldKeep_K2Node_ComponentBoundEvent_548_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked)
 {
 	static UFunction* fn;
 
@@ -767,11 +767,11 @@ void UReplayListItem_C::BndEvt__CheckBoxShouldKeep_K2Node_ComponentBoundEvent_54
 
 
 // Function ReplayListItem.ReplayListItem_C.UnzipEvent
-// (BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                strFullPath                    (Parm, ZeroConstructor)
 // struct FString*                strToExtract                   (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::UnzipEvent(struct FString* strFullPath, struct FString* strToExtract)
 {
@@ -793,12 +793,12 @@ void UReplayListItem_C::UnzipEvent(struct FString* strFullPath, struct FString* 
 
 
 // Function ReplayListItem.ReplayListItem_C.ShowUnzipPercent
-// (BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                archive                        (Parm, ZeroConstructor)
 // float*                         Percentage                     (Parm, ZeroConstructor, IsPlainOldData)
 // int*                           bytes                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::ShowUnzipPercent(struct FString* archive, float* Percentage, int* bytes)
 {
@@ -821,8 +821,8 @@ void UReplayListItem_C::ShowUnzipPercent(struct FString* archive, float* Percent
 
 
 // Function ReplayListItem.ReplayListItem_C.BndEvt__ButtonReplay_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
-// (BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::BndEvt__ButtonReplay_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
 {
@@ -842,11 +842,11 @@ void UReplayListItem_C::BndEvt__ButtonReplay_K2Node_ComponentBoundEvent_0_OnButt
 
 
 // Function ReplayListItem.ReplayListItem_C.OnStartProcess
-// (Event, Public, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                archive                        (Parm, ZeroConstructor)
 // int*                           bytes                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::OnStartProcess(struct FString* archive, int* bytes)
 {
@@ -868,12 +868,12 @@ void UReplayListItem_C::OnStartProcess(struct FString* archive, int* bytes)
 
 
 // Function ReplayListItem.ReplayListItem_C.OnFileFound
-// (Event, Public, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                archive                        (Parm, ZeroConstructor)
 // struct FString*                file                           (Parm, ZeroConstructor)
 // int*                           Size                           (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::OnFileFound(struct FString* archive, struct FString* file, int* Size)
 {
@@ -896,11 +896,11 @@ void UReplayListItem_C::OnFileFound(struct FString* archive, struct FString* fil
 
 
 // Function ReplayListItem.ReplayListItem_C.ShowUnZipFileDone
-// (BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                archive                        (Parm, ZeroConstructor)
 // struct FString*                file                           (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::ShowUnZipFileDone(struct FString* archive, struct FString* file)
 {
@@ -922,11 +922,11 @@ void UReplayListItem_C::ShowUnZipFileDone(struct FString* archive, struct FStrin
 
 
 // Function ReplayListItem.ReplayListItem_C.ShowUnzipDone
-// (BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                archive                        (Parm, ZeroConstructor)
 // TEnumAsByte<EZipUtilityCompletionState>* CompletionState                (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::ShowUnzipDone(struct FString* archive, TEnumAsByte<EZipUtilityCompletionState>* CompletionState)
 {
@@ -948,8 +948,8 @@ void UReplayListItem_C::ShowUnzipDone(struct FString* archive, TEnumAsByte<EZipU
 
 
 // Function ReplayListItem.ReplayListItem_C.BndEvt__Download_K2Node_ComponentBoundEvent_15_OnButtonClickedEvent__DelegateSignature
-// (BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::BndEvt__Download_K2Node_ComponentBoundEvent_15_OnButtonClickedEvent__DelegateSignature()
 {
@@ -969,8 +969,8 @@ void UReplayListItem_C::BndEvt__Download_K2Node_ComponentBoundEvent_15_OnButtonC
 
 
 // Function ReplayListItem.ReplayListItem_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::Construct()
 {
@@ -990,10 +990,10 @@ void UReplayListItem_C::Construct()
 
 
 // Function ReplayListItem.ReplayListItem_C.ExecuteUbergraph_ReplayListItem
-// (HasDefaults)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::ExecuteUbergraph_ReplayListItem(int* EntryPoint)
 {
@@ -1014,10 +1014,10 @@ void UReplayListItem_C::ExecuteUbergraph_ReplayListItem(int* EntryPoint)
 
 
 // Function ReplayListItem.ReplayListItem_C.EventOnUpdateItem__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FReplayItem*            inReplayItem                   (Parm)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::EventOnUpdateItem__DelegateSignature(struct FReplayItem* inReplayItem)
 {
@@ -1038,12 +1038,12 @@ void UReplayListItem_C::EventOnUpdateItem__DelegateSignature(struct FReplayItem*
 
 
 // Function ReplayListItem.ReplayListItem_C.EventOnUpdateShouldKeep__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                RegionOrLocal                  (Parm, ZeroConstructor)
 // struct FReplayItem*            inReplayItem                   (Parm)
 // struct FReplayItem*            bShoudUpdate                   (Parm)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::EventOnUpdateShouldKeep__DelegateSignature(struct FString* RegionOrLocal, struct FReplayItem* inReplayItem, struct FReplayItem* bShoudUpdate)
 {
@@ -1066,11 +1066,11 @@ void UReplayListItem_C::EventOnUpdateShouldKeep__DelegateSignature(struct FStrin
 
 
 // Function ReplayListItem.ReplayListItem_C.EventOnCancelDownloading__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                Name                           (Parm, ZeroConstructor)
 // class UWidget**                Widget                         (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::EventOnCancelDownloading__DelegateSignature(struct FString* Name, class UWidget** Widget)
 {
@@ -1092,11 +1092,11 @@ void UReplayListItem_C::EventOnCancelDownloading__DelegateSignature(struct FStri
 
 
 // Function ReplayListItem.ReplayListItem_C.EventOnDownload__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                Name                           (Parm, ZeroConstructor)
 // class UWidget**                Widget                         (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::EventOnDownload__DelegateSignature(struct FString* Name, class UWidget** Widget)
 {
@@ -1118,11 +1118,11 @@ void UReplayListItem_C::EventOnDownload__DelegateSignature(struct FString* Name,
 
 
 // Function ReplayListItem.ReplayListItem_C.EventOnItemClicked__DelegateSignature
-// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                inRegionOrLocal                (Parm, ZeroConstructor)
 // struct FReplayItem*            inReplayItem                   (Parm)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void UReplayListItem_C::EventOnItemClicked__DelegateSignature(struct FString* inRegionOrLocal, struct FReplayItem* inReplayItem)
 {

@@ -1,4 +1,4 @@
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,8 +13,8 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function BP_TslBaseLobbySceneTravel_CameraMove.BP_TslBaseLobbySceneTravel_CameraMove_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ABP_TslBaseLobbySceneTravel_CameraMove_C::UserConstructionScript()
 {
@@ -34,8 +34,8 @@ void ABP_TslBaseLobbySceneTravel_CameraMove_C::UserConstructionScript()
 
 
 // Function BP_TslBaseLobbySceneTravel_CameraMove.BP_TslBaseLobbySceneTravel_CameraMove_C.CameraMove__FinishedFunc
-// (BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ABP_TslBaseLobbySceneTravel_CameraMove_C::CameraMove__FinishedFunc()
 {
@@ -55,8 +55,8 @@ void ABP_TslBaseLobbySceneTravel_CameraMove_C::CameraMove__FinishedFunc()
 
 
 // Function BP_TslBaseLobbySceneTravel_CameraMove.BP_TslBaseLobbySceneTravel_CameraMove_C.CameraMove__UpdateFunc
-// (BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ABP_TslBaseLobbySceneTravel_CameraMove_C::CameraMove__UpdateFunc()
 {
@@ -76,8 +76,8 @@ void ABP_TslBaseLobbySceneTravel_CameraMove_C::CameraMove__UpdateFunc()
 
 
 // Function BP_TslBaseLobbySceneTravel_CameraMove.BP_TslBaseLobbySceneTravel_CameraMove_C.OnStartTravel
-// (Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ABP_TslBaseLobbySceneTravel_CameraMove_C::OnStartTravel()
 {
@@ -97,10 +97,10 @@ void ABP_TslBaseLobbySceneTravel_CameraMove_C::OnStartTravel()
 
 
 // Function BP_TslBaseLobbySceneTravel_CameraMove.BP_TslBaseLobbySceneTravel_CameraMove_C.ExecuteUbergraph_BP_TslBaseLobbySceneTravel_CameraMove
-// (HasDefaults)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ABP_TslBaseLobbySceneTravel_CameraMove_C::ExecuteUbergraph_BP_TslBaseLobbySceneTravel_CameraMove(int* EntryPoint)
 {

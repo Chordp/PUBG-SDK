@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,17 +15,17 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass LobbyHUD_Default.LobbyHUD_Default_C
-// 0x004C (0x130C - 0x12C0)
+// 0x004C (0x131C - 0x12D0)
 class ALobbyHUD_Default_C : public ALobbyHUD
 {
 public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x12C0(0x0008) (Transient, DuplicateTransient)
-	class ABP_MasteryPose_C*                           PoseActor;                                                // 0x12C8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData)
-	class UDataTable*                                  MasteryPoseData;                                          // 0x12D0(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	struct FString                                     DefaultPose;                                              // 0x12D8(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	struct FString                                     CurrentPose;                                              // 0x12E8(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	struct FString                                     InputPose;                                                // 0x12F8(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	float                                              PoseDelayTime;                                            // 0x1308(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x12D0(0x0008) (Transient, DuplicateTransient)
+	class ABP_MasteryPose_C*                           PoseActor;                                                // 0x12D8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData)
+	class UDataTable*                                  MasteryPoseData;                                          // 0x12E0(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	struct FString                                     DefaultPose;                                              // 0x12E8(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	struct FString                                     CurrentPose;                                              // 0x12F8(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	struct FString                                     InputPose;                                                // 0x1308(0x0010) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	float                                              PoseDelayTime;                                            // 0x1318(0x0004) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
@@ -42,7 +42,7 @@ public:
 	void DestroyPoseActor();
 	void UserConstructionScript();
 	void HideMasteryPose();
-	void ShowMasteryPose(struct FString* PoseId, TArray<struct FString>* ItemIDs);
+	void ShowMasteryPose(struct FString* PoseId, TArray<struct FString>* ItemIds);
 	void ReceivePostBeginPlay();
 	void ExecuteUbergraph_LobbyHUD_Default(int* EntryPoint);
 };

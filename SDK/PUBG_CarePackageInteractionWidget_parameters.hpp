@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,7 +17,7 @@ namespace SDK
 // Function CarePackageInteractionWidget.CarePackageInteractionWidget_C.ShowCarePackageInteractionWidget
 struct UCarePackageInteractionWidget_C_ShowCarePackageInteractionWidget_Params
 {
-	bool*                                              IsShow;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               IsShow;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function CarePackageInteractionWidget.CarePackageInteractionWidget_C.Tick

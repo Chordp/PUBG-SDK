@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -46,7 +46,7 @@ struct ALobbyHUD_Default_C_HideMasteryPose_Params
 struct ALobbyHUD_Default_C_ShowMasteryPose_Params
 {
 	struct FString*                                    PoseId;                                                   // (Parm, ZeroConstructor)
-	TArray<struct FString>*                            ItemIDs;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<struct FString>*                            ItemIds;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
 
 // Function LobbyHUD_Default.LobbyHUD_Default_C.ReceivePostBeginPlay

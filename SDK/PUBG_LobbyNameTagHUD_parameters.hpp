@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,23 +14,29 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
-// Function LobbyNameTagHUD.LobbyNameTagHUD_C.CleanUpNameTagWidget
-struct ULobbyNameTagHUD_C_CleanUpNameTagWidget_Params
+// Function TslGame.TslLobbyNameTagHudWidget.UpdateNameTagWidget_Internal
+struct ULobbyNameTagHUD_C_UpdateNameTagWidget_Internal_Params
 {
-	int*                                               SlotIndex;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                SlotIndex;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function LobbyNameTagHUD.LobbyNameTagHUD_C.SetupNameTagWidget
-struct ULobbyNameTagHUD_C_SetupNameTagWidget_Params
+// Function TslGame.TslLobbyNameTagHudWidget.SetNameTagWidget_Internal
+struct ULobbyNameTagHUD_C_SetNameTagWidget_Internal_Params
 {
-	int*                                               SlotIndex;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                SlotIndex;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function LobbyNameTagHUD.LobbyNameTagHUD_C.GetNameTagWidget
-struct ULobbyNameTagHUD_C_GetNameTagWidget_Params
+// Function TslGame.TslLobbyNameTagHudWidget.ResetNameTagWidget_Internal
+struct ULobbyNameTagHUD_C_ResetNameTagWidget_Internal_Params
 {
-	int*                                               SlotIndex;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	class UTslLobbyNameTagWidget*                      Widget;                                                   // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+	int                                                SlotIndex;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function TslGame.TslLobbyNameTagHudWidget.GetNameTagWidget_Internal
+struct ULobbyNameTagHUD_C_GetNameTagWidget_Internal_Params
+{
+	int                                                SlotIndex;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	class UTslLobbyNameTagWidget*                      ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
 };
 
 }

@@ -1,4 +1,4 @@
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,12 +13,12 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function CustomizableObject.CustomizableSkeletalComponent.UpdateSkeletalMeshAsync
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// bool*                          bNeverSkipUpdate               (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71C781330              		 offset:49b1330                       
+// bool                           bNeverSkipUpdate               (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63B894E60              		 offset:45a4e60                       
 
-void UCustomizableSkeletalComponent::UpdateSkeletalMeshAsync(bool* bNeverSkipUpdate)
+void UCustomizableSkeletalComponent::STATIC_UpdateSkeletalMeshAsync(bool bNeverSkipUpdate)
 {
 	static UFunction* fn;
 
@@ -38,13 +38,13 @@ void UCustomizableSkeletalComponent::UpdateSkeletalMeshAsync(bool* bNeverSkipUpd
 
 
 // Function CustomizableObject.CustomizableObjectInstance.UpdateSkeletalMeshAsync
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// bool*                          bIgnoreCloseDist               (Parm, ZeroConstructor, IsPlainOldData)
-// bool*                          bForceHighPriority             (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71C781260              		 offset:49b1260                       
+// bool                           bIgnoreCloseDist               (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bForceHighPriority             (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63B894D90              		 offset:45a4d90                       
 
-void UCustomizableObjectInstance::UpdateSkeletalMeshAsync(bool* bIgnoreCloseDist, bool* bForceHighPriority)
+void UCustomizableObjectInstance::STATIC_UpdateSkeletalMeshAsync(bool bIgnoreCloseDist, bool bForceHighPriority)
 {
 	static UFunction* fn;
 
@@ -65,13 +65,13 @@ void UCustomizableObjectInstance::UpdateSkeletalMeshAsync(bool* bIgnoreCloseDist
 
 
 // Function CustomizableObject.CustomizableObjectInstance.SetVectorParameterSelectedOption
-// (Final, Native, Public, HasDefaults, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FString*                VectorParamName                (Parm, ZeroConstructor)
-// struct FLinearColor*           VectorValue                    (Parm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C781170              		 offset:49b1170                       
+// struct FString                 VectorParamName                (Parm, ZeroConstructor)
+// struct FLinearColor            VectorValue                    (Parm, IsPlainOldData)
+// FunctionAddress:0x00007FF63B894CA0              		 offset:45a4ca0                       
 
-void UCustomizableObjectInstance::SetVectorParameterSelectedOption(struct FString* VectorParamName, struct FLinearColor* VectorValue)
+void UCustomizableObjectInstance::STATIC_SetVectorParameterSelectedOption(const struct FString& VectorParamName, const struct FLinearColor& VectorValue)
 {
 	static UFunction* fn;
 
@@ -92,10 +92,10 @@ void UCustomizableObjectInstance::SetVectorParameterSelectedOption(struct FStrin
 
 
 // Function CustomizableObject.CustomizableObjectInstance.SetRandomValues
-// (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF71C781150              		 offset:49b1150                       
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF63B894C80              		 offset:45a4c80                       
 
-void UCustomizableObjectInstance::SetRandomValues()
+void UCustomizableObjectInstance::STATIC_SetRandomValues()
 {
 	static UFunction* fn;
 
@@ -114,26 +114,26 @@ void UCustomizableObjectInstance::SetRandomValues()
 
 
 // Function CustomizableObject.CustomizableObjectInstance.SetProjectorValue
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FString*                ProjectorParamName             (Parm, ZeroConstructor)
-// float*                         posX                           (Parm, ZeroConstructor, IsPlainOldData)
-// float*                         posY                           (Parm, ZeroConstructor, IsPlainOldData)
-// float*                         posZ                           (Parm, ZeroConstructor, IsPlainOldData)
-// float*                         dirX                           (Parm, ZeroConstructor, IsPlainOldData)
-// float*                         dirY                           (Parm, ZeroConstructor, IsPlainOldData)
-// float*                         dirZ                           (Parm, ZeroConstructor, IsPlainOldData)
-// float*                         upX                            (Parm, ZeroConstructor, IsPlainOldData)
-// float*                         upY                            (Parm, ZeroConstructor, IsPlainOldData)
-// float*                         upZ                            (Parm, ZeroConstructor, IsPlainOldData)
-// float*                         ScaleX                         (Parm, ZeroConstructor, IsPlainOldData)
-// float*                         ScaleY                         (Parm, ZeroConstructor, IsPlainOldData)
-// float*                         ScaleZ                         (Parm, ZeroConstructor, IsPlainOldData)
-// float*                         Angle                          (Parm, ZeroConstructor, IsPlainOldData)
-// ECustomizableObjectProjectorType* ProjectionType                 (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71C780CE0              		 offset:49b0ce0                       
+// struct FString                 ProjectorParamName             (Parm, ZeroConstructor)
+// float                          posX                           (Parm, ZeroConstructor, IsPlainOldData)
+// float                          posY                           (Parm, ZeroConstructor, IsPlainOldData)
+// float                          posZ                           (Parm, ZeroConstructor, IsPlainOldData)
+// float                          dirX                           (Parm, ZeroConstructor, IsPlainOldData)
+// float                          dirY                           (Parm, ZeroConstructor, IsPlainOldData)
+// float                          dirZ                           (Parm, ZeroConstructor, IsPlainOldData)
+// float                          upX                            (Parm, ZeroConstructor, IsPlainOldData)
+// float                          upY                            (Parm, ZeroConstructor, IsPlainOldData)
+// float                          upZ                            (Parm, ZeroConstructor, IsPlainOldData)
+// float                          ScaleX                         (Parm, ZeroConstructor, IsPlainOldData)
+// float                          ScaleY                         (Parm, ZeroConstructor, IsPlainOldData)
+// float                          ScaleZ                         (Parm, ZeroConstructor, IsPlainOldData)
+// float                          Angle                          (Parm, ZeroConstructor, IsPlainOldData)
+// ECustomizableObjectProjectorType ProjectionType                 (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63B894810              		 offset:45a4810                       
 
-void UCustomizableObjectInstance::SetProjectorValue(struct FString* ProjectorParamName, float* posX, float* posY, float* posZ, float* dirX, float* dirY, float* dirZ, float* upX, float* upY, float* upZ, float* ScaleX, float* ScaleY, float* ScaleZ, float* Angle, ECustomizableObjectProjectorType* ProjectionType)
+void UCustomizableObjectInstance::STATIC_SetProjectorValue(const struct FString& ProjectorParamName, float posX, float posY, float posZ, float dirX, float dirY, float dirZ, float upX, float upY, float upZ, float ScaleX, float ScaleY, float ScaleZ, float Angle, ECustomizableObjectProjectorType ProjectionType)
 {
 	static UFunction* fn;
 
@@ -167,13 +167,13 @@ void UCustomizableObjectInstance::SetProjectorValue(struct FString* ProjectorPar
 
 
 // Function CustomizableObject.CustomizableObjectInstance.SetProjectorParameterType
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FString*                ParamName                      (Parm, ZeroConstructor)
-// ECustomizableObjectProjectorType* Type                           (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71C780BF0              		 offset:49b0bf0                       
+// struct FString                 ParamName                      (Parm, ZeroConstructor)
+// ECustomizableObjectProjectorType Type                           (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63B894720              		 offset:45a4720                       
 
-void UCustomizableObjectInstance::SetProjectorParameterType(struct FString* ParamName, ECustomizableObjectProjectorType* Type)
+void UCustomizableObjectInstance::STATIC_SetProjectorParameterType(const struct FString& ParamName, ECustomizableObjectProjectorType Type)
 {
 	static UFunction* fn;
 
@@ -194,13 +194,13 @@ void UCustomizableObjectInstance::SetProjectorParameterType(struct FString* Para
 
 
 // Function CustomizableObject.CustomizableObjectInstance.SetIntParameterSelectedOption
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FString*                ParamName                      (Parm, ZeroConstructor)
-// struct FString*                SelectedOptionName             (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF71C780AF0              		 offset:49b0af0                       
+// struct FString                 ParamName                      (Parm, ZeroConstructor)
+// struct FString                 SelectedOptionName             (Parm, ZeroConstructor)
+// FunctionAddress:0x00007FF63B894620              		 offset:45a4620                       
 
-void UCustomizableObjectInstance::SetIntParameterSelectedOption(struct FString* ParamName, struct FString* SelectedOptionName)
+void UCustomizableObjectInstance::STATIC_SetIntParameterSelectedOption(const struct FString& ParamName, const struct FString& SelectedOptionName)
 {
 	static UFunction* fn;
 
@@ -221,13 +221,13 @@ void UCustomizableObjectInstance::SetIntParameterSelectedOption(struct FString* 
 
 
 // Function CustomizableObject.CustomizableObjectInstance.SetFloatParameterSelectedOption
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FString*                FloatParamName                 (Parm, ZeroConstructor)
-// float*                         FloatValue                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71C780A00              		 offset:49b0a00                       
+// struct FString                 FloatParamName                 (Parm, ZeroConstructor)
+// float                          FloatValue                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63B894530              		 offset:45a4530                       
 
-void UCustomizableObjectInstance::SetFloatParameterSelectedOption(struct FString* FloatParamName, float* FloatValue)
+void UCustomizableObjectInstance::STATIC_SetFloatParameterSelectedOption(const struct FString& FloatParamName, float FloatValue)
 {
 	static UFunction* fn;
 
@@ -248,12 +248,12 @@ void UCustomizableObjectInstance::SetFloatParameterSelectedOption(struct FString
 
 
 // Function CustomizableObject.CustomizableObjectInstance.SetCurrentState
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FString*                StateName                      (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF71C780960              		 offset:49b0960                       
+// struct FString                 StateName                      (Parm, ZeroConstructor)
+// FunctionAddress:0x00007FF63B894490              		 offset:45a4490                       
 
-void UCustomizableObjectInstance::SetCurrentState(struct FString* StateName)
+void UCustomizableObjectInstance::STATIC_SetCurrentState(const struct FString& StateName)
 {
 	static UFunction* fn;
 
@@ -273,13 +273,13 @@ void UCustomizableObjectInstance::SetCurrentState(struct FString* StateName)
 
 
 // Function CustomizableObject.CustomizableObjectInstance.SetBoolParameterSelectedOption
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FString*                BoolParamName                  (Parm, ZeroConstructor)
-// bool*                          BoolValue                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71C780870              		 offset:49b0870                       
+// struct FString                 BoolParamName                  (Parm, ZeroConstructor)
+// bool                           BoolValue                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63B8943A0              		 offset:45a43a0                       
 
-void UCustomizableObjectInstance::SetBoolParameterSelectedOption(struct FString* BoolParamName, bool* BoolValue)
+void UCustomizableObjectInstance::STATIC_SetBoolParameterSelectedOption(const struct FString& BoolParamName, bool BoolValue)
 {
 	static UFunction* fn;
 
@@ -300,13 +300,13 @@ void UCustomizableObjectInstance::SetBoolParameterSelectedOption(struct FString*
 
 
 // Function CustomizableObject.CustomizableObjectInstance.IsParameterRelevant
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
 // Parameters:
-// struct FString*                ParamName                      (Parm, ZeroConstructor)
+// struct FString                 ParamName                      (Parm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C7807C0              		 offset:49b07c0                       
+// FunctionAddress:0x00007FF63B8942F0              		 offset:45a42f0                       
 
-bool UCustomizableObjectInstance::IsParameterRelevant(struct FString* ParamName)
+bool UCustomizableObjectInstance::STATIC_IsParameterRelevant(const struct FString& ParamName)
 {
 	static UFunction* fn;
 
@@ -328,13 +328,13 @@ bool UCustomizableObjectInstance::IsParameterRelevant(struct FString* ParamName)
 
 
 // Function CustomizableObject.CustomizableObjectInstance.GetProjectorParameterType
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
 // Parameters:
-// struct FString*                ParamName                      (Parm, ZeroConstructor)
+// struct FString                 ParamName                      (Parm, ZeroConstructor)
 // ECustomizableObjectProjectorType ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C780220              		 offset:49b0220                       
+// FunctionAddress:0x00007FF63B893D50              		 offset:45a3d50                       
 
-ECustomizableObjectProjectorType UCustomizableObjectInstance::GetProjectorParameterType(struct FString* ParamName)
+ECustomizableObjectProjectorType UCustomizableObjectInstance::STATIC_GetProjectorParameterType(const struct FString& ParamName)
 {
 	static UFunction* fn;
 
@@ -356,14 +356,14 @@ ECustomizableObjectProjectorType UCustomizableObjectInstance::GetProjectorParame
 
 
 // Function CustomizableObject.CustomizableObjectInstance.GetParameterDescription
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected, Delegate)
 // Parameters:
-// struct FString*                ParamName                      (Parm, ZeroConstructor)
-// int*                           DescIndex                      (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 ParamName                      (Parm, ZeroConstructor)
+// int                            DescIndex                      (Parm, ZeroConstructor, IsPlainOldData)
 // class UTexture2D*              ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C77FC60              		 offset:49afc60                       
+// FunctionAddress:0x00007FF63B893790              		 offset:45a3790                       
 
-class UTexture2D* UCustomizableObjectInstance::GetParameterDescription(struct FString* ParamName, int* DescIndex)
+class UTexture2D* UCustomizableObjectInstance::STATIC_GetParameterDescription(const struct FString& ParamName, int DescIndex)
 {
 	static UFunction* fn;
 
@@ -386,13 +386,13 @@ class UTexture2D* UCustomizableObjectInstance::GetParameterDescription(struct FS
 
 
 // Function CustomizableObject.CustomizableObjectInstance.GetIntParameterSelectedOption
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
 // Parameters:
-// struct FString*                ParamName                      (Parm, ZeroConstructor)
+// struct FString                 ParamName                      (Parm, ZeroConstructor)
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF71C77FB40              		 offset:49afb40                       
+// FunctionAddress:0x00007FF63B893670              		 offset:45a3670                       
 
-struct FString UCustomizableObjectInstance::GetIntParameterSelectedOption(struct FString* ParamName)
+struct FString UCustomizableObjectInstance::STATIC_GetIntParameterSelectedOption(const struct FString& ParamName)
 {
 	static UFunction* fn;
 
@@ -414,13 +414,13 @@ struct FString UCustomizableObjectInstance::GetIntParameterSelectedOption(struct
 
 
 // Function CustomizableObject.CustomizableObjectInstance.GetFloatParameterSelectedOption
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
 // Parameters:
-// struct FString*                FloatParamName                 (Parm, ZeroConstructor)
+// struct FString                 FloatParamName                 (Parm, ZeroConstructor)
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C77F8F0              		 offset:49af8f0                       
+// FunctionAddress:0x00007FF63B893420              		 offset:45a3420                       
 
-float UCustomizableObjectInstance::GetFloatParameterSelectedOption(struct FString* FloatParamName)
+float UCustomizableObjectInstance::STATIC_GetFloatParameterSelectedOption(const struct FString& FloatParamName)
 {
 	static UFunction* fn;
 
@@ -442,12 +442,12 @@ float UCustomizableObjectInstance::GetFloatParameterSelectedOption(struct FStrin
 
 
 // Function CustomizableObject.CustomizableObjectInstance.GetCurrentState
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
 // Parameters:
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF71C77F860              		 offset:49af860                       
+// FunctionAddress:0x00007FF63B893390              		 offset:45a3390                       
 
-struct FString UCustomizableObjectInstance::GetCurrentState()
+struct FString UCustomizableObjectInstance::STATIC_GetCurrentState()
 {
 	static UFunction* fn;
 
@@ -468,13 +468,13 @@ struct FString UCustomizableObjectInstance::GetCurrentState()
 
 
 // Function CustomizableObject.CustomizableObjectInstance.GetBoolParameterSelectedOption
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
 // Parameters:
-// struct FString*                BoolParamName                  (Parm, ZeroConstructor)
+// struct FString                 BoolParamName                  (Parm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C77F7B0              		 offset:49af7b0                       
+// FunctionAddress:0x00007FF63B8932E0              		 offset:45a32e0                       
 
-bool UCustomizableObjectInstance::GetBoolParameterSelectedOption(struct FString* BoolParamName)
+bool UCustomizableObjectInstance::STATIC_GetBoolParameterSelectedOption(const struct FString& BoolParamName)
 {
 	static UFunction* fn;
 
@@ -496,13 +496,13 @@ bool UCustomizableObjectInstance::GetBoolParameterSelectedOption(struct FString*
 
 
 // Function CustomizableObject.CustomizableObjectInstance.FindVectorParameterNameIndex
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
 // Parameters:
-// struct FString*                ParamName                      (Parm, ZeroConstructor)
+// struct FString                 ParamName                      (Parm, ZeroConstructor)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C77F700              		 offset:49af700                       
+// FunctionAddress:0x00007FF63B893230              		 offset:45a3230                       
 
-int UCustomizableObjectInstance::FindVectorParameterNameIndex(struct FString* ParamName)
+int UCustomizableObjectInstance::STATIC_FindVectorParameterNameIndex(const struct FString& ParamName)
 {
 	static UFunction* fn;
 
@@ -524,13 +524,13 @@ int UCustomizableObjectInstance::FindVectorParameterNameIndex(struct FString* Pa
 
 
 // Function CustomizableObject.CustomizableObjectInstance.FindProjectorParameterNameIndex
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
 // Parameters:
-// struct FString*                ParamName                      (Parm, ZeroConstructor)
+// struct FString                 ParamName                      (Parm, ZeroConstructor)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C77F650              		 offset:49af650                       
+// FunctionAddress:0x00007FF63B893180              		 offset:45a3180                       
 
-int UCustomizableObjectInstance::FindProjectorParameterNameIndex(struct FString* ParamName)
+int UCustomizableObjectInstance::STATIC_FindProjectorParameterNameIndex(const struct FString& ParamName)
 {
 	static UFunction* fn;
 
@@ -552,13 +552,13 @@ int UCustomizableObjectInstance::FindProjectorParameterNameIndex(struct FString*
 
 
 // Function CustomizableObject.CustomizableObjectInstance.FindIntParameterNameIndex
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
 // Parameters:
-// struct FString*                ParamName                      (Parm, ZeroConstructor)
+// struct FString                 ParamName                      (Parm, ZeroConstructor)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C77F4F0              		 offset:49af4f0                       
+// FunctionAddress:0x00007FF63B893020              		 offset:45a3020                       
 
-int UCustomizableObjectInstance::FindIntParameterNameIndex(struct FString* ParamName)
+int UCustomizableObjectInstance::STATIC_FindIntParameterNameIndex(const struct FString& ParamName)
 {
 	static UFunction* fn;
 
@@ -580,13 +580,13 @@ int UCustomizableObjectInstance::FindIntParameterNameIndex(struct FString* Param
 
 
 // Function CustomizableObject.CustomizableObjectInstance.FindFloatParameterNameIndex
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
 // Parameters:
-// struct FString*                ParamName                      (Parm, ZeroConstructor)
+// struct FString                 ParamName                      (Parm, ZeroConstructor)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C77F440              		 offset:49af440                       
+// FunctionAddress:0x00007FF63B892F70              		 offset:45a2f70                       
 
-int UCustomizableObjectInstance::FindFloatParameterNameIndex(struct FString* ParamName)
+int UCustomizableObjectInstance::STATIC_FindFloatParameterNameIndex(const struct FString& ParamName)
 {
 	static UFunction* fn;
 
@@ -608,13 +608,13 @@ int UCustomizableObjectInstance::FindFloatParameterNameIndex(struct FString* Par
 
 
 // Function CustomizableObject.CustomizableObjectInstance.FindBoolParameterNameIndex
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
 // Parameters:
-// struct FString*                ParamName                      (Parm, ZeroConstructor)
+// struct FString                 ParamName                      (Parm, ZeroConstructor)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C77F390              		 offset:49af390                       
+// FunctionAddress:0x00007FF63B892EC0              		 offset:45a2ec0                       
 
-int UCustomizableObjectInstance::FindBoolParameterNameIndex(struct FString* ParamName)
+int UCustomizableObjectInstance::STATIC_FindBoolParameterNameIndex(const struct FString& ParamName)
 {
 	static UFunction* fn;
 
@@ -636,13 +636,13 @@ int UCustomizableObjectInstance::FindBoolParameterNameIndex(struct FString* Para
 
 
 // Function CustomizableObject.CustomizableObject.GetStateUIMetadataFromIndex
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected)
 // Parameters:
-// int*                           StateIndex                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            StateIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // struct FParameterUIData        ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF71C7806D0              		 offset:49b06d0                       
+// FunctionAddress:0x00007FF63B894200              		 offset:45a4200                       
 
-struct FParameterUIData UCustomizableObject::GetStateUIMetadataFromIndex(int* StateIndex)
+struct FParameterUIData UCustomizableObject::STATIC_GetStateUIMetadataFromIndex(int StateIndex)
 {
 	static UFunction* fn;
 
@@ -664,13 +664,13 @@ struct FParameterUIData UCustomizableObject::GetStateUIMetadataFromIndex(int* St
 
 
 // Function CustomizableObject.CustomizableObject.GetStateUIMetadata
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
 // Parameters:
-// struct FString*                StateName                      (Parm, ZeroConstructor)
+// struct FString                 StateName                      (Parm, ZeroConstructor)
 // struct FParameterUIData        ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF71C7805C0              		 offset:49b05c0                       
+// FunctionAddress:0x00007FF63B8940F0              		 offset:45a40f0                       
 
-struct FParameterUIData UCustomizableObject::GetStateUIMetadata(struct FString* StateName)
+struct FParameterUIData UCustomizableObject::STATIC_GetStateUIMetadata(const struct FString& StateName)
 {
 	static UFunction* fn;
 
@@ -692,14 +692,14 @@ struct FParameterUIData UCustomizableObject::GetStateUIMetadata(struct FString* 
 
 
 // Function CustomizableObject.CustomizableObject.GetStateParameterName
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected, Delegate)
 // Parameters:
-// struct FString*                StateName                      (Parm, ZeroConstructor)
-// int*                           ParameterIndex                 (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 StateName                      (Parm, ZeroConstructor)
+// int                            ParameterIndex                 (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF71C780490              		 offset:49b0490                       
+// FunctionAddress:0x00007FF63B893FC0              		 offset:45a3fc0                       
 
-struct FString UCustomizableObject::GetStateParameterName(struct FString* StateName, int* ParameterIndex)
+struct FString UCustomizableObject::STATIC_GetStateParameterName(const struct FString& StateName, int ParameterIndex)
 {
 	static UFunction* fn;
 
@@ -722,13 +722,13 @@ struct FString UCustomizableObject::GetStateParameterName(struct FString* StateN
 
 
 // Function CustomizableObject.CustomizableObject.GetStateParameterCount
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
 // Parameters:
-// struct FString*                StateName                      (Parm, ZeroConstructor)
+// struct FString                 StateName                      (Parm, ZeroConstructor)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C7803E0              		 offset:49b03e0                       
+// FunctionAddress:0x00007FF63B893F10              		 offset:45a3f10                       
 
-int UCustomizableObject::GetStateParameterCount(struct FString* StateName)
+int UCustomizableObject::STATIC_GetStateParameterCount(const struct FString& StateName)
 {
 	static UFunction* fn;
 
@@ -750,13 +750,13 @@ int UCustomizableObject::GetStateParameterCount(struct FString* StateName)
 
 
 // Function CustomizableObject.CustomizableObject.GetStateName
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected)
 // Parameters:
-// int*                           StateIndex                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            StateIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF71C780300              		 offset:49b0300                       
+// FunctionAddress:0x00007FF63B893E30              		 offset:45a3e30                       
 
-struct FString UCustomizableObject::GetStateName(int* StateIndex)
+struct FString UCustomizableObject::STATIC_GetStateName(int StateIndex)
 {
 	static UFunction* fn;
 
@@ -778,12 +778,12 @@ struct FString UCustomizableObject::GetStateName(int* StateIndex)
 
 
 // Function CustomizableObject.CustomizableObject.GetStateCount
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C7802D0              		 offset:49b02d0                       
+// FunctionAddress:0x00007FF63B893E00              		 offset:45a3e00                       
 
-int UCustomizableObject::GetStateCount()
+int UCustomizableObject::STATIC_GetStateCount()
 {
 	static UFunction* fn;
 
@@ -804,13 +804,13 @@ int UCustomizableObject::GetStateCount()
 
 
 // Function CustomizableObject.CustomizableObject.GetParameterUIMetadataFromIndex
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected)
 // Parameters:
-// int*                           ParamIndex                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            ParamIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // struct FParameterUIData        ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF71C780130              		 offset:49b0130                       
+// FunctionAddress:0x00007FF63B893C60              		 offset:45a3c60                       
 
-struct FParameterUIData UCustomizableObject::GetParameterUIMetadataFromIndex(int* ParamIndex)
+struct FParameterUIData UCustomizableObject::STATIC_GetParameterUIMetadataFromIndex(int ParamIndex)
 {
 	static UFunction* fn;
 
@@ -832,13 +832,13 @@ struct FParameterUIData UCustomizableObject::GetParameterUIMetadataFromIndex(int
 
 
 // Function CustomizableObject.CustomizableObject.GetParameterUIMetadata
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
 // Parameters:
-// struct FString*                ParamName                      (Parm, ZeroConstructor)
+// struct FString                 ParamName                      (Parm, ZeroConstructor)
 // struct FParameterUIData        ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF71C780020              		 offset:49b0020                       
+// FunctionAddress:0x00007FF63B893B50              		 offset:45a3b50                       
 
-struct FParameterUIData UCustomizableObject::GetParameterUIMetadata(struct FString* ParamName)
+struct FParameterUIData UCustomizableObject::STATIC_GetParameterUIMetadata(const struct FString& ParamName)
 {
 	static UFunction* fn;
 
@@ -860,13 +860,13 @@ struct FParameterUIData UCustomizableObject::GetParameterUIMetadata(struct FStri
 
 
 // Function CustomizableObject.CustomizableObject.GetParameterTypeByName
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
 // Parameters:
-// struct FString*                Name                           (Parm, ZeroConstructor)
+// struct FString                 Name                           (Parm, ZeroConstructor)
 // EMutableParameterType          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C77FF70              		 offset:49aff70                       
+// FunctionAddress:0x00007FF63B893AA0              		 offset:45a3aa0                       
 
-EMutableParameterType UCustomizableObject::GetParameterTypeByName(struct FString* Name)
+EMutableParameterType UCustomizableObject::STATIC_GetParameterTypeByName(const struct FString& Name)
 {
 	static UFunction* fn;
 
@@ -888,13 +888,13 @@ EMutableParameterType UCustomizableObject::GetParameterTypeByName(struct FString
 
 
 // Function CustomizableObject.CustomizableObject.GetParameterType
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Private)
 // Parameters:
-// int*                           ParamIndex                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            ParamIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // EMutableParameterType          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C77FEE0              		 offset:49afee0                       
+// FunctionAddress:0x00007FF63B893A10              		 offset:45a3a10                       
 
-EMutableParameterType UCustomizableObject::GetParameterType(int* ParamIndex)
+EMutableParameterType UCustomizableObject::STATIC_GetParameterType(int ParamIndex)
 {
 	static UFunction* fn;
 
@@ -916,13 +916,13 @@ EMutableParameterType UCustomizableObject::GetParameterType(int* ParamIndex)
 
 
 // Function CustomizableObject.CustomizableObject.GetParameterName
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected)
 // Parameters:
-// int*                           ParamIndex                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            ParamIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF71C77FE00              		 offset:49afe00                       
+// FunctionAddress:0x00007FF63B893930              		 offset:45a3930                       
 
-struct FString UCustomizableObject::GetParameterName(int* ParamIndex)
+struct FString UCustomizableObject::STATIC_GetParameterName(int ParamIndex)
 {
 	static UFunction* fn;
 
@@ -944,13 +944,13 @@ struct FString UCustomizableObject::GetParameterName(int* ParamIndex)
 
 
 // Function CustomizableObject.CustomizableObject.GetParameterDescriptionCount
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
 // Parameters:
-// struct FString*                ParamName                      (Parm, ZeroConstructor)
+// struct FString                 ParamName                      (Parm, ZeroConstructor)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C77FD50              		 offset:49afd50                       
+// FunctionAddress:0x00007FF63B893880              		 offset:45a3880                       
 
-int UCustomizableObject::GetParameterDescriptionCount(struct FString* ParamName)
+int UCustomizableObject::STATIC_GetParameterDescriptionCount(const struct FString& ParamName)
 {
 	static UFunction* fn;
 
@@ -972,12 +972,12 @@ int UCustomizableObject::GetParameterDescriptionCount(struct FString* ParamName)
 
 
 // Function CustomizableObject.CustomizableObject.GetParameterCount
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C77FC30              		 offset:49afc30                       
+// FunctionAddress:0x00007FF63B893760              		 offset:45a3760                       
 
-int UCustomizableObject::GetParameterCount()
+int UCustomizableObject::STATIC_GetParameterCount()
 {
 	static UFunction* fn;
 
@@ -998,13 +998,13 @@ int UCustomizableObject::GetParameterCount()
 
 
 // Function CustomizableObject.CustomizableObject.GetIntParameterNumOptions
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Private)
 // Parameters:
-// int*                           ParamIndex                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            ParamIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C77FAB0              		 offset:49afab0                       
+// FunctionAddress:0x00007FF63B8935E0              		 offset:45a35e0                       
 
-int UCustomizableObject::GetIntParameterNumOptions(int* ParamIndex)
+int UCustomizableObject::STATIC_GetIntParameterNumOptions(int ParamIndex)
 {
 	static UFunction* fn;
 
@@ -1026,14 +1026,14 @@ int UCustomizableObject::GetIntParameterNumOptions(int* ParamIndex)
 
 
 // Function CustomizableObject.CustomizableObject.GetIntParameterAvailableOption
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected)
 // Parameters:
-// int*                           ParamIndex                     (Parm, ZeroConstructor, IsPlainOldData)
-// int*                           K                              (Parm, ZeroConstructor, IsPlainOldData)
+// int                            ParamIndex                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            K                              (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF71C77F9A0              		 offset:49af9a0                       
+// FunctionAddress:0x00007FF63B8934D0              		 offset:45a34d0                       
 
-struct FString UCustomizableObject::GetIntParameterAvailableOption(int* ParamIndex, int* K)
+struct FString UCustomizableObject::STATIC_GetIntParameterAvailableOption(int ParamIndex, int K)
 {
 	static UFunction* fn;
 
@@ -1056,13 +1056,13 @@ struct FString UCustomizableObject::GetIntParameterAvailableOption(int* ParamInd
 
 
 // Function CustomizableObject.CustomizableObject.FindParameter
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
 // Parameters:
-// struct FString*                Name                           (Parm, ZeroConstructor)
+// struct FString                 Name                           (Parm, ZeroConstructor)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71C77F5A0              		 offset:49af5a0                       
+// FunctionAddress:0x00007FF63B8930D0              		 offset:45a30d0                       
 
-int UCustomizableObject::FindParameter(struct FString* Name)
+int UCustomizableObject::STATIC_FindParameter(const struct FString& Name)
 {
 	static UFunction* fn;
 
@@ -1080,28 +1080,6 @@ int UCustomizableObject::FindParameter(struct FString* Name)
 	fn->FunctionFlags = flags;
 
 	return params.ReturnValue;
-}
-
-
-// Function CustomizableObject.InstanceUpdatedHelper.DelegatedCallback
-// (Final, Native, Public)
-// FunctionAddress:0x00007FF71C77F370              		 offset:49af370                       
-
-void UInstanceUpdatedHelper::DelegatedCallback()
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function CustomizableObject.InstanceUpdatedHelper.DelegatedCallback"));
-
-	UInstanceUpdatedHelper_DelegatedCallback_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
 }
 
 

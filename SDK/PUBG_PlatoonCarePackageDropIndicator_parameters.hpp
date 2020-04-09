@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,13 +17,13 @@ namespace SDK
 // Function PlatoonCarePackageDropIndicator.PlatoonCarePackageDropIndicator_C.BP_UpdateIconType
 struct UPlatoonCarePackageDropIndicator_C_BP_UpdateIconType_Params
 {
-	EPlatoonCarePackageType*                           Type;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
+	EPlatoonCarePackageType                            Type;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function PlatoonCarePackageDropIndicator.PlatoonCarePackageDropIndicator_C.BP_UpdateIconImage
 struct UPlatoonCarePackageDropIndicator_C_BP_UpdateIconImage_Params
 {
-	EPlatoonSupportRequestEventType*                   IconType;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	EPlatoonSupportRequestEventType                    IconType;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function PlatoonCarePackageDropIndicator.PlatoonCarePackageDropIndicator_C.ExecuteUbergraph_PlatoonCarePackageDropIndicator

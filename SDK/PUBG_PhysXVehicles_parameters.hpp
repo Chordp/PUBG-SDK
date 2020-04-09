@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -53,109 +53,109 @@ struct UVehicleWheel_GetLateralSlip_Params
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetUseAutoGears
 struct UWheeledVehicleMovementComponent_SetUseAutoGears_Params
 {
-	bool*                                              bUseAuto;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bUseAuto;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetThrottleInput
 struct UWheeledVehicleMovementComponent_SetThrottleInput_Params
 {
-	float*                                             Throttle;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              Throttle;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetTargetGear
 struct UWheeledVehicleMovementComponent_SetTargetGear_Params
 {
-	int*                                               GearNum;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	bool*                                              bImmediate;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                GearNum;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bImmediate;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetSteeringInput
 struct UWheeledVehicleMovementComponent_SetSteeringInput_Params
 {
-	float*                                             Steering;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              Steering;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetHandbrakeInput
 struct UWheeledVehicleMovementComponent_SetHandbrakeInput_Params
 {
-	bool*                                              bNewHandbrake;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bNewHandbrake;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnoreMask
 struct UWheeledVehicleMovementComponent_SetGroupsToIgnoreMask_Params
 {
-	struct FNavAvoidanceMask*                          GroupMask;                                                // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+	struct FNavAvoidanceMask                           GroupMask;                                                // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 };
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnore
 struct UWheeledVehicleMovementComponent_SetGroupsToIgnore_Params
 {
-	int*                                               GroupFlags;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                GroupFlags;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoidMask
 struct UWheeledVehicleMovementComponent_SetGroupsToAvoidMask_Params
 {
-	struct FNavAvoidanceMask*                          GroupMask;                                                // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+	struct FNavAvoidanceMask                           GroupMask;                                                // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 };
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoid
 struct UWheeledVehicleMovementComponent_SetGroupsToAvoid_Params
 {
-	int*                                               GroupFlags;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                GroupFlags;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGearUp
 struct UWheeledVehicleMovementComponent_SetGearUp_Params
 {
-	bool*                                              bNewGearUp;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bNewGearUp;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGearDown
 struct UWheeledVehicleMovementComponent_SetGearDown_Params
 {
-	bool*                                              bNewGearDown;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bNewGearDown;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetBrakeInput
 struct UWheeledVehicleMovementComponent_SetBrakeInput_Params
 {
-	float*                                             Brake;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              Brake;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroupMask
 struct UWheeledVehicleMovementComponent_SetAvoidanceGroupMask_Params
 {
-	struct FNavAvoidanceMask*                          GroupMask;                                                // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+	struct FNavAvoidanceMask                           GroupMask;                                                // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 };
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroup
 struct UWheeledVehicleMovementComponent_SetAvoidanceGroup_Params
 {
-	int*                                               GroupFlags;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                GroupFlags;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceEnabled
 struct UWheeledVehicleMovementComponent_SetAvoidanceEnabled_Params
 {
-	bool*                                              bEnable;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bEnable;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.ServerUpdateState
 struct UWheeledVehicleMovementComponent_ServerUpdateState_Params
 {
-	float*                                             InSteeringInput;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	float*                                             InThrottleInput;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	float*                                             InBrakeInput;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	float*                                             InHandbrakeInput;                                         // (Parm, ZeroConstructor, IsPlainOldData)
-	int*                                               CurrentGear;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	uint32_t*                                          Checksum;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              InSteeringInput;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              InThrottleInput;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              InBrakeInput;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              InHandbrakeInput;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                CurrentGear;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	uint32_t                                           Checksum;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.OnRep_TirePunctured
 struct UWheeledVehicleMovementComponent_OnRep_TirePunctured_Params
 {
-	TArray<bool>*                                      LastTirePunctured;                                        // (Parm, ZeroConstructor)
+	TArray<bool>                                       LastTirePunctured;                                        // (Parm, ZeroConstructor)
 };
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.GetUseAutoGears
@@ -206,25 +206,154 @@ struct UVehicleAnimInstance_GetVehicle_Params
 	class AWheeledVehicle*                             ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
-// Function PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetSteerAngle
-struct USimpleWheeledVehicleMovementComponent_SetSteerAngle_Params
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetUseAutoGears
+struct USimpleWheeledVehicleMovementComponent_SetUseAutoGears_Params
 {
-	float*                                             SteerAngle;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	int*                                               WheelIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bUseAuto;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetDriveTorque
-struct USimpleWheeledVehicleMovementComponent_SetDriveTorque_Params
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetThrottleInput
+struct USimpleWheeledVehicleMovementComponent_SetThrottleInput_Params
 {
-	float*                                             DriveTorque;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	int*                                               WheelIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              Throttle;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetBrakeTorque
-struct USimpleWheeledVehicleMovementComponent_SetBrakeTorque_Params
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetTargetGear
+struct USimpleWheeledVehicleMovementComponent_SetTargetGear_Params
 {
-	float*                                             BrakeTorque;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	int*                                               WheelIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                GearNum;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bImmediate;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetSteeringInput
+struct USimpleWheeledVehicleMovementComponent_SetSteeringInput_Params
+{
+	float                                              Steering;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetHandbrakeInput
+struct USimpleWheeledVehicleMovementComponent_SetHandbrakeInput_Params
+{
+	bool                                               bNewHandbrake;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnoreMask
+struct USimpleWheeledVehicleMovementComponent_SetGroupsToIgnoreMask_Params
+{
+	struct FNavAvoidanceMask                           GroupMask;                                                // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+};
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnore
+struct USimpleWheeledVehicleMovementComponent_SetGroupsToIgnore_Params
+{
+	int                                                GroupFlags;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoidMask
+struct USimpleWheeledVehicleMovementComponent_SetGroupsToAvoidMask_Params
+{
+	struct FNavAvoidanceMask                           GroupMask;                                                // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+};
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoid
+struct USimpleWheeledVehicleMovementComponent_SetGroupsToAvoid_Params
+{
+	int                                                GroupFlags;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetGearUp
+struct USimpleWheeledVehicleMovementComponent_SetGearUp_Params
+{
+	bool                                               bNewGearUp;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetGearDown
+struct USimpleWheeledVehicleMovementComponent_SetGearDown_Params
+{
+	bool                                               bNewGearDown;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetBrakeInput
+struct USimpleWheeledVehicleMovementComponent_SetBrakeInput_Params
+{
+	float                                              Brake;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroupMask
+struct USimpleWheeledVehicleMovementComponent_SetAvoidanceGroupMask_Params
+{
+	struct FNavAvoidanceMask                           GroupMask;                                                // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+};
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroup
+struct USimpleWheeledVehicleMovementComponent_SetAvoidanceGroup_Params
+{
+	int                                                GroupFlags;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceEnabled
+struct USimpleWheeledVehicleMovementComponent_SetAvoidanceEnabled_Params
+{
+	bool                                               bEnable;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.ServerUpdateState
+struct USimpleWheeledVehicleMovementComponent_ServerUpdateState_Params
+{
+	float                                              InSteeringInput;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              InThrottleInput;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              InBrakeInput;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              InHandbrakeInput;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                CurrentGear;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	uint32_t                                           Checksum;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.OnRep_TirePunctured
+struct USimpleWheeledVehicleMovementComponent_OnRep_TirePunctured_Params
+{
+	TArray<bool>                                       LastTirePunctured;                                        // (Parm, ZeroConstructor)
+};
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.GetUseAutoGears
+struct USimpleWheeledVehicleMovementComponent_GetUseAutoGears_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.GetTargetGear
+struct USimpleWheeledVehicleMovementComponent_GetTargetGear_Params
+{
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.GetSideSpeed
+struct USimpleWheeledVehicleMovementComponent_GetSideSpeed_Params
+{
+	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.GetForwardSpeed
+struct USimpleWheeledVehicleMovementComponent_GetForwardSpeed_Params
+{
+	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.GetEngineRotationSpeed
+struct USimpleWheeledVehicleMovementComponent_GetEngineRotationSpeed_Params
+{
+	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.GetEngineMaxRotationSpeed
+struct USimpleWheeledVehicleMovementComponent_GetEngineMaxRotationSpeed_Params
+{
+	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function PhysXVehicles.WheeledVehicleMovementComponent.GetCurrentGear
+struct USimpleWheeledVehicleMovementComponent_GetCurrentGear_Params
+{
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 }

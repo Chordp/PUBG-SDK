@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -80,7 +80,7 @@ struct UPopupWidgetForReplay_C_HideMyself__DelegateSignature_Params
 // Function PopupWidgetForReplay.PopupWidgetForReplay_C.ButtonClickDispatcher__DelegateSignature
 struct UPopupWidgetForReplay_C_ButtonClickDispatcher__DelegateSignature_Params
 {
-	EPopupButtonID*                                    NewParam;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	EPopupButtonID                                     NewParam;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

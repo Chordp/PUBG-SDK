@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -69,7 +69,7 @@ struct UUiReplayList_C_UpdateTeamText_Params
 // Function UiReplayList.UiReplayList_C.SetShouldKeep
 struct UUiReplayList_C_SetShouldKeep_Params
 {
-	bool*                                              bShouldKeep;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bShouldKeep;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UiReplayList.UiReplayList_C.UpdateReplaySummary

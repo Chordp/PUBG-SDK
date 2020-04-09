@@ -1,4 +1,4 @@
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,12 +13,12 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function LobbyWebView.LobbyWebView_C.OnKeyDown
-// (BlueprintCosmetic, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Protected, Delegate, NetServer, HasOutParms)
 // Parameters:
 // struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
 // struct FKeyEvent*              InKeyEvent                     (Parm)
 // struct FEventReply             ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 struct FEventReply ULobbyWebView_C::OnKeyDown(struct FGeometry* MyGeometry, struct FKeyEvent* InKeyEvent)
 {
@@ -42,12 +42,12 @@ struct FEventReply ULobbyWebView_C::OnKeyDown(struct FGeometry* MyGeometry, stru
 
 
 // Function LobbyWebView.LobbyWebView_C.OnPreviewMouseButtonDown
-// (BlueprintCosmetic, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Delegate, NetServer, HasDefaults)
 // Parameters:
 // struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
 // struct FPointerEvent*          MouseEvent                     (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FEventReply             ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 struct FEventReply ULobbyWebView_C::OnPreviewMouseButtonDown(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
@@ -71,10 +71,10 @@ struct FEventReply ULobbyWebView_C::OnPreviewMouseButtonDown(struct FGeometry* M
 
 
 // Function LobbyWebView.LobbyWebView_C.GetMainCoherentWidget
-// (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, Const)
+// ()
 // Parameters:
 // class UCoherentUIGTWidget*     ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 class UCoherentUIGTWidget* ULobbyWebView_C::GetMainCoherentWidget()
 {
@@ -96,12 +96,12 @@ class UCoherentUIGTWidget* ULobbyWebView_C::GetMainCoherentWidget()
 
 
 // Function LobbyWebView.LobbyWebView_C.OnPreviewKeyDown
-// (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Protected, Delegate, NetServer, HasOutParms)
 // Parameters:
 // struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
 // struct FKeyEvent*              InKeyEvent                     (Parm)
 // struct FEventReply             ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 struct FEventReply ULobbyWebView_C::OnPreviewKeyDown(struct FGeometry* MyGeometry, struct FKeyEvent* InKeyEvent)
 {
@@ -125,11 +125,11 @@ struct FEventReply ULobbyWebView_C::OnPreviewKeyDown(struct FGeometry* MyGeometr
 
 
 // Function LobbyWebView.LobbyWebView_C.WebViewBroadcast
-// (Public, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                EventName                      (Parm, ZeroConstructor)
 // struct FString*                Parameter                      (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ULobbyWebView_C::WebViewBroadcast(struct FString* EventName, struct FString* Parameter)
 {
@@ -151,10 +151,10 @@ void ULobbyWebView_C::WebViewBroadcast(struct FString* EventName, struct FString
 
 
 // Function LobbyWebView.LobbyWebView_C.WebViewUnload
-// (Public, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // int*                           ViewIndex                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ULobbyWebView_C::WebViewUnload(int* ViewIndex)
 {
@@ -175,11 +175,11 @@ void ULobbyWebView_C::WebViewUnload(int* ViewIndex)
 
 
 // Function LobbyWebView.LobbyWebView_C.WebViewShow
-// (Public, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // int*                           VeiwIndex                      (Parm, ZeroConstructor, IsPlainOldData)
 // bool*                          visible                        (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ULobbyWebView_C::WebViewShow(int* VeiwIndex, bool* visible)
 {
@@ -201,10 +201,10 @@ void ULobbyWebView_C::WebViewShow(int* VeiwIndex, bool* visible)
 
 
 // Function LobbyWebView.LobbyWebView_C.HandleEventFromWeb
-// (Public, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // class UCoherentUIGTJSPayload** payload                        (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ULobbyWebView_C::HandleEventFromWeb(class UCoherentUIGTJSPayload** payload)
 {
@@ -225,10 +225,10 @@ void ULobbyWebView_C::HandleEventFromWeb(class UCoherentUIGTJSPayload** payload)
 
 
 // Function LobbyWebView.LobbyWebView_C.WebViewInputFocus
-// (Public, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // int*                           ViewIndex                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ULobbyWebView_C::WebViewInputFocus(int* ViewIndex)
 {
@@ -249,11 +249,11 @@ void ULobbyWebView_C::WebViewInputFocus(int* ViewIndex)
 
 
 // Function LobbyWebView.LobbyWebView_C.WebViewLoad
-// (Public, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // int*                           ViewIndex                      (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString*                URL                            (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ULobbyWebView_C::WebViewLoad(int* ViewIndex, struct FString* URL)
 {
@@ -275,10 +275,10 @@ void ULobbyWebView_C::WebViewLoad(int* ViewIndex, struct FString* URL)
 
 
 // Function LobbyWebView.LobbyWebView_C.J
-// (BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // class UCoherentUIGTJSPayload** payload                        (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ULobbyWebView_C::J(class UCoherentUIGTJSPayload** payload)
 {
@@ -299,8 +299,8 @@ void ULobbyWebView_C::J(class UCoherentUIGTJSPayload** payload)
 
 
 // Function LobbyWebView.LobbyWebView_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ULobbyWebView_C::Construct()
 {
@@ -320,11 +320,11 @@ void ULobbyWebView_C::Construct()
 
 
 // Function LobbyWebView.LobbyWebView_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
 // float*                         InDeltaTime                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ULobbyWebView_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
@@ -346,8 +346,8 @@ void ULobbyWebView_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 
 
 // Function LobbyWebView.LobbyWebView_C.BndEvt__CoherentUIGTWidget_0_K2Node_ComponentBoundEvent_383_UIGTReadyForBindingsSignature__DelegateSignature
-// (BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ULobbyWebView_C::BndEvt__CoherentUIGTWidget_0_K2Node_ComponentBoundEvent_383_UIGTReadyForBindingsSignature__DelegateSignature()
 {
@@ -367,8 +367,8 @@ void ULobbyWebView_C::BndEvt__CoherentUIGTWidget_0_K2Node_ComponentBoundEvent_38
 
 
 // Function LobbyWebView.LobbyWebView_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ULobbyWebView_C::Destruct()
 {
@@ -388,8 +388,8 @@ void ULobbyWebView_C::Destruct()
 
 
 // Function LobbyWebView.LobbyWebView_C.BndEvt__WebView_0_K2Node_ComponentBoundEvent_2_UIGTBindingsReleasedSignature__DelegateSignature
-// (BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ULobbyWebView_C::BndEvt__WebView_0_K2Node_ComponentBoundEvent_2_UIGTBindingsReleasedSignature__DelegateSignature()
 {
@@ -409,10 +409,10 @@ void ULobbyWebView_C::BndEvt__WebView_0_K2Node_ComponentBoundEvent_2_UIGTBinding
 
 
 // Function LobbyWebView.LobbyWebView_C.CustomEvent
-// (BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // float*                         Scale                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ULobbyWebView_C::CustomEvent(float* Scale)
 {
@@ -433,10 +433,10 @@ void ULobbyWebView_C::CustomEvent(float* Scale)
 
 
 // Function LobbyWebView.LobbyWebView_C.ExecuteUbergraph_LobbyWebView
-// (HasDefaults)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ULobbyWebView_C::ExecuteUbergraph_LobbyWebView(int* EntryPoint)
 {

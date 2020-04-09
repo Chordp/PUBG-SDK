@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -10,6 +10,7 @@
 #include "PUBG_UMG_classes.hpp"
 #include "PUBG_Engine_classes.hpp"
 #include "PUBG_CoreUObject_classes.hpp"
+#include "PUBG_InputCore_classes.hpp"
 
 namespace SDK
 {

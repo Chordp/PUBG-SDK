@@ -1,4 +1,4 @@
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,12 +13,12 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function AudioMixer.SubmixEffectDynamicsProcessorPreset.SetSettings
-// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FSubmixEffectDynamicsProcessorSettings* InSettings                     (ConstParm, Parm, OutParm, ReferenceParm)
-// FunctionAddress:0x00007FF71A7BC870              		 offset:29ec870                       
+// struct FSubmixEffectDynamicsProcessorSettings InSettings                     (ConstParm, Parm, OutParm, ReferenceParm)
+// FunctionAddress:0x00007FF63AE07AA0              		 offset:3b17aa0                       
 
-void USubmixEffectDynamicsProcessorPreset::SetSettings(struct FSubmixEffectDynamicsProcessorSettings* InSettings)
+void USubmixEffectDynamicsProcessorPreset::STATIC_SetSettings(const struct FSubmixEffectDynamicsProcessorSettings& InSettings)
 {
 	static UFunction* fn;
 
@@ -37,212 +37,14 @@ void USubmixEffectDynamicsProcessorPreset::SetSettings(struct FSubmixEffectDynam
 }
 
 
-// Function AudioMixer.AudioMixerBlueprintLibrary.SetBypassSourceEffectChainEntry
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UObject**                WorldContextObject             (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// class USoundEffectSourcePresetChain** PresetChain                    (Parm, ZeroConstructor, IsPlainOldData)
-// int*                           EntryIndex                     (Parm, ZeroConstructor, IsPlainOldData)
-// bool*                          bBypassed                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71A7BC740              		 offset:29ec740                       
-
-void UAudioMixerBlueprintLibrary::STATIC_SetBypassSourceEffectChainEntry(class UObject** WorldContextObject, class USoundEffectSourcePresetChain** PresetChain, int* EntryIndex, bool* bBypassed)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.AudioMixerBlueprintLibrary.SetBypassSourceEffectChainEntry"));
-
-	UAudioMixerBlueprintLibrary_SetBypassSourceEffectChainEntry_Params params;
-	params.WorldContextObject = WorldContextObject;
-	params.PresetChain = PresetChain;
-	params.EntryIndex = EntryIndex;
-	params.bBypassed = bBypassed;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AudioMixer.AudioMixerBlueprintLibrary.RemoveSourceEffectFromPresetChain
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UObject**                WorldContextObject             (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// class USoundEffectSourcePresetChain** PresetChain                    (Parm, ZeroConstructor, IsPlainOldData)
-// int*                           EntryIndex                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71A7BC650              		 offset:29ec650                       
-
-void UAudioMixerBlueprintLibrary::STATIC_RemoveSourceEffectFromPresetChain(class UObject** WorldContextObject, class USoundEffectSourcePresetChain** PresetChain, int* EntryIndex)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.AudioMixerBlueprintLibrary.RemoveSourceEffectFromPresetChain"));
-
-	UAudioMixerBlueprintLibrary_RemoveSourceEffectFromPresetChain_Params params;
-	params.WorldContextObject = WorldContextObject;
-	params.PresetChain = PresetChain;
-	params.EntryIndex = EntryIndex;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AudioMixer.AudioMixerBlueprintLibrary.RemoveMasterSubmixEffect
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UObject**                WorldContextObject             (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// class USoundEffectSubmixPreset** SubmixEffectPreset             (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71A7BC5A0              		 offset:29ec5a0                       
-
-void UAudioMixerBlueprintLibrary::STATIC_RemoveMasterSubmixEffect(class UObject** WorldContextObject, class USoundEffectSubmixPreset** SubmixEffectPreset)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.AudioMixerBlueprintLibrary.RemoveMasterSubmixEffect"));
-
-	UAudioMixerBlueprintLibrary_RemoveMasterSubmixEffect_Params params;
-	params.WorldContextObject = WorldContextObject;
-	params.SubmixEffectPreset = SubmixEffectPreset;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AudioMixer.AudioMixerBlueprintLibrary.GetNumberOfEntriesInSourceEffectChain
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UObject**                WorldContextObject             (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// class USoundEffectSourcePresetChain** PresetChain                    (Parm, ZeroConstructor, IsPlainOldData)
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71A7BC4B0              		 offset:29ec4b0                       
-
-int UAudioMixerBlueprintLibrary::STATIC_GetNumberOfEntriesInSourceEffectChain(class UObject** WorldContextObject, class USoundEffectSourcePresetChain** PresetChain)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.AudioMixerBlueprintLibrary.GetNumberOfEntriesInSourceEffectChain"));
-
-	UAudioMixerBlueprintLibrary_GetNumberOfEntriesInSourceEffectChain_Params params;
-	params.WorldContextObject = WorldContextObject;
-	params.PresetChain = PresetChain;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function AudioMixer.AudioMixerBlueprintLibrary.ClearMasterSubmixEffects
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UObject**                WorldContextObject             (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71A7BC440              		 offset:29ec440                       
-
-void UAudioMixerBlueprintLibrary::STATIC_ClearMasterSubmixEffects(class UObject** WorldContextObject)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.AudioMixerBlueprintLibrary.ClearMasterSubmixEffects"));
-
-	UAudioMixerBlueprintLibrary_ClearMasterSubmixEffects_Params params;
-	params.WorldContextObject = WorldContextObject;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AudioMixer.AudioMixerBlueprintLibrary.AddSourceEffectToPresetChain
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UObject**                WorldContextObject             (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// class USoundEffectSourcePresetChain** PresetChain                    (Parm, ZeroConstructor, IsPlainOldData)
-// struct FSourceEffectChainEntry* Entry                          (Parm, IsPlainOldData)
-// FunctionAddress:0x00007FF71A7BC340              		 offset:29ec340                       
-
-void UAudioMixerBlueprintLibrary::STATIC_AddSourceEffectToPresetChain(class UObject** WorldContextObject, class USoundEffectSourcePresetChain** PresetChain, struct FSourceEffectChainEntry* Entry)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.AudioMixerBlueprintLibrary.AddSourceEffectToPresetChain"));
-
-	UAudioMixerBlueprintLibrary_AddSourceEffectToPresetChain_Params params;
-	params.WorldContextObject = WorldContextObject;
-	params.PresetChain = PresetChain;
-	params.Entry = Entry;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AudioMixer.AudioMixerBlueprintLibrary.AddMasterSubmixEffect
-// (Final, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UObject**                WorldContextObject             (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// class USoundEffectSubmixPreset** SubmixEffectPreset             (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71A7BC290              		 offset:29ec290                       
-
-void UAudioMixerBlueprintLibrary::STATIC_AddMasterSubmixEffect(class UObject** WorldContextObject, class USoundEffectSubmixPreset** SubmixEffectPreset)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AudioMixer.AudioMixerBlueprintLibrary.AddMasterSubmixEffect"));
-
-	UAudioMixerBlueprintLibrary_AddMasterSubmixEffect_Params params;
-	params.WorldContextObject = WorldContextObject;
-	params.SubmixEffectPreset = SubmixEffectPreset;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function AudioMixer.SubmixEffectReverbPreset.SetSettingsWithReverbEffect
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// class UReverbEffect**          InReverbEffect                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// float*                         WetLevel                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71A7BCA90              		 offset:29eca90                       
+// class UReverbEffect*           InReverbEffect                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// float                          WetLevel                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63AE07CC0              		 offset:3b17cc0                       
 
-void USubmixEffectReverbPreset::SetSettingsWithReverbEffect(class UReverbEffect** InReverbEffect, float* WetLevel)
+void USubmixEffectReverbPreset::STATIC_SetSettingsWithReverbEffect(class UReverbEffect* InReverbEffect, float WetLevel)
 {
 	static UFunction* fn;
 
@@ -263,12 +65,12 @@ void USubmixEffectReverbPreset::SetSettingsWithReverbEffect(class UReverbEffect*
 
 
 // Function AudioMixer.SubmixEffectReverbPreset.SetSettings
-// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FSubmixEffectReverbSettings* InSettings                     (ConstParm, Parm, OutParm, ReferenceParm)
-// FunctionAddress:0x00007FF71A7BC920              		 offset:29ec920                       
+// struct FSubmixEffectReverbSettings InSettings                     (ConstParm, Parm, OutParm, ReferenceParm)
+// FunctionAddress:0x00007FF63AE07B50              		 offset:3b17b50                       
 
-void USubmixEffectReverbPreset::SetSettings(struct FSubmixEffectReverbSettings* InSettings)
+void USubmixEffectReverbPreset::STATIC_SetSettings(const struct FSubmixEffectReverbSettings& InSettings)
 {
 	static UFunction* fn;
 
@@ -288,12 +90,12 @@ void USubmixEffectReverbPreset::SetSettings(struct FSubmixEffectReverbSettings* 
 
 
 // Function AudioMixer.SubmixEffectSubmixEQPreset.SetSettings
-// (Final, Native, Public, HasOutParms, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FSubmixEffectSubmixEQSettings* InSettings                     (ConstParm, Parm, OutParm, ReferenceParm)
-// FunctionAddress:0x00007FF71A7BC9E0              		 offset:29ec9e0                       
+// struct FSubmixEffectSubmixEQSettings InSettings                     (ConstParm, Parm, OutParm, ReferenceParm)
+// FunctionAddress:0x00007FF63AE07C10              		 offset:3b17c10                       
 
-void USubmixEffectSubmixEQPreset::SetSettings(struct FSubmixEffectSubmixEQSettings* InSettings)
+void USubmixEffectSubmixEQPreset::STATIC_SetSettings(const struct FSubmixEffectSubmixEQSettings& InSettings)
 {
 	static UFunction* fn;
 
@@ -313,10 +115,10 @@ void USubmixEffectSubmixEQPreset::SetSettings(struct FSubmixEffectSubmixEQSettin
 
 
 // Function AudioMixer.SynthComponent.Stop
-// (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF71A7BCC50              		 offset:29ecc50                       
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF63AE07E80              		 offset:3b17e80                       
 
-void USynthComponent::Stop()
+void USynthComponent::STATIC_Stop()
 {
 	static UFunction* fn;
 
@@ -335,10 +137,10 @@ void USynthComponent::Stop()
 
 
 // Function AudioMixer.SynthComponent.Start
-// (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF71A7BCC30              		 offset:29ecc30                       
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF63AE07E60              		 offset:3b17e60                       
 
-void USynthComponent::Start()
+void USynthComponent::STATIC_Start()
 {
 	static UFunction* fn;
 
@@ -357,13 +159,13 @@ void USynthComponent::Start()
 
 
 // Function AudioMixer.SynthComponent.SetSubmixSend
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// class USoundSubmix**           Submix                         (Parm, ZeroConstructor, IsPlainOldData)
-// float*                         SendLevel                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71A7BCB60              		 offset:29ecb60                       
+// class USoundSubmix*            Submix                         (Parm, ZeroConstructor, IsPlainOldData)
+// float                          SendLevel                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63AE07D90              		 offset:3b17d90                       
 
-void USynthComponent::SetSubmixSend(class USoundSubmix** Submix, float* SendLevel)
+void USynthComponent::STATIC_SetSubmixSend(class USoundSubmix* Submix, float SendLevel)
 {
 	static UFunction* fn;
 
@@ -384,12 +186,12 @@ void USynthComponent::SetSubmixSend(class USoundSubmix** Submix, float* SendLeve
 
 
 // Function AudioMixer.SynthComponent.IsPlaying
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71A7BC570              		 offset:29ec570                       
+// FunctionAddress:0x00007FF63AE077A0              		 offset:3b177a0                       
 
-bool USynthComponent::IsPlaying()
+bool USynthComponent::STATIC_IsPlaying()
 {
 	static UFunction* fn;
 

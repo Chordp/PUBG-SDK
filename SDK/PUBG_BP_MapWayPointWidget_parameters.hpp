@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,7 +17,7 @@ namespace SDK
 // Function BP_MapWayPointWidget.BP_MapWayPointWidget_C.PreConstruct
 struct UBP_MapWayPointWidget_C_PreConstruct_Params
 {
-	bool*                                              IsDesignTime;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               IsDesignTime;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_MapWayPointWidget.BP_MapWayPointWidget_C.ExecuteUbergraph_BP_MapWayPointWidget

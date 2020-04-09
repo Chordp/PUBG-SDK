@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -24,7 +24,7 @@ struct UBP_FlaregunUiWidget_C_IsCarePackageComming_Params
 // Function BP_FlaregunUiWidget.BP_FlaregunUiWidget_C.ShowTitle
 struct UBP_FlaregunUiWidget_C_ShowTitle_Params
 {
-	bool*                                              bShow;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bShow;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_FlaregunUiWidget.BP_FlaregunUiWidget_C.IsCharacterInWhiteZone

@@ -1,4 +1,4 @@
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,12 +13,12 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function Niagara.NiagaraComponent.SetRenderingEnabled
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// bool*                          bInRenderingEnabled            (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71AFA5BB0              		 offset:31d5bb0                       
+// bool                           bInRenderingEnabled            (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63909B1E0              		 offset:1dab1e0                       
 
-void UNiagaraComponent::SetRenderingEnabled(bool* bInRenderingEnabled)
+void UNiagaraComponent::STATIC_SetRenderingEnabled(bool bInRenderingEnabled)
 {
 	static UFunction* fn;
 
@@ -38,13 +38,13 @@ void UNiagaraComponent::SetRenderingEnabled(bool* bInRenderingEnabled)
 
 
 // Function Niagara.NiagaraComponent.SetNiagaraVariableVec4
-// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FString*                InVariableName                 (Parm, ZeroConstructor)
-// struct FVector4*               InValue                        (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// FunctionAddress:0x00007FF71AFA5AB0              		 offset:31d5ab0                       
+// struct FString                 InVariableName                 (Parm, ZeroConstructor)
+// struct FVector4                InValue                        (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+// FunctionAddress:0x00007FF63909B0E0              		 offset:1dab0e0                       
 
-void UNiagaraComponent::SetNiagaraVariableVec4(struct FString* InVariableName, struct FVector4* InValue)
+void UNiagaraComponent::STATIC_SetNiagaraVariableVec4(const struct FString& InVariableName, const struct FVector4& InValue)
 {
 	static UFunction* fn;
 
@@ -65,13 +65,13 @@ void UNiagaraComponent::SetNiagaraVariableVec4(struct FString* InVariableName, s
 
 
 // Function Niagara.NiagaraComponent.SetNiagaraVariableVec3
-// (Final, Native, Public, HasDefaults, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FString*                InVariableName                 (Parm, ZeroConstructor)
-// struct FVector*                InValue                        (Parm, IsPlainOldData)
-// FunctionAddress:0x00007FF71AFA59C0              		 offset:31d59c0                       
+// struct FString                 InVariableName                 (Parm, ZeroConstructor)
+// struct FVector                 InValue                        (Parm, IsPlainOldData)
+// FunctionAddress:0x00007FF63909AFF0              		 offset:1daaff0                       
 
-void UNiagaraComponent::SetNiagaraVariableVec3(struct FString* InVariableName, struct FVector* InValue)
+void UNiagaraComponent::STATIC_SetNiagaraVariableVec3(const struct FString& InVariableName, const struct FVector& InValue)
 {
 	static UFunction* fn;
 
@@ -92,13 +92,13 @@ void UNiagaraComponent::SetNiagaraVariableVec3(struct FString* InVariableName, s
 
 
 // Function Niagara.NiagaraComponent.SetNiagaraVariableVec2
-// (Final, Native, Public, HasDefaults, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FString*                InVariableName                 (Parm, ZeroConstructor)
-// struct FVector2D*              InValue                        (Parm, IsPlainOldData)
-// FunctionAddress:0x00007FF71AFA58E0              		 offset:31d58e0                       
+// struct FString                 InVariableName                 (Parm, ZeroConstructor)
+// struct FVector2D               InValue                        (Parm, IsPlainOldData)
+// FunctionAddress:0x00007FF63909AF10              		 offset:1daaf10                       
 
-void UNiagaraComponent::SetNiagaraVariableVec2(struct FString* InVariableName, struct FVector2D* InValue)
+void UNiagaraComponent::STATIC_SetNiagaraVariableVec2(const struct FString& InVariableName, const struct FVector2D& InValue)
 {
 	static UFunction* fn;
 
@@ -119,13 +119,13 @@ void UNiagaraComponent::SetNiagaraVariableVec2(struct FString* InVariableName, s
 
 
 // Function Niagara.NiagaraComponent.SetNiagaraVariableFloat
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FString*                InVariableName                 (Parm, ZeroConstructor)
-// float*                         InValue                        (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71AFA57F0              		 offset:31d57f0                       
+// struct FString                 InVariableName                 (Parm, ZeroConstructor)
+// float                          InValue                        (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63909AE20              		 offset:1daae20                       
 
-void UNiagaraComponent::SetNiagaraVariableFloat(struct FString* InVariableName, float* InValue)
+void UNiagaraComponent::STATIC_SetNiagaraVariableFloat(const struct FString& InVariableName, float InValue)
 {
 	static UFunction* fn;
 
@@ -146,13 +146,13 @@ void UNiagaraComponent::SetNiagaraVariableFloat(struct FString* InVariableName, 
 
 
 // Function Niagara.NiagaraComponent.SetNiagaraVariableBool
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FString*                InVariableName                 (Parm, ZeroConstructor)
-// bool*                          InValue                        (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71AFA5700              		 offset:31d5700                       
+// struct FString                 InVariableName                 (Parm, ZeroConstructor)
+// bool                           InValue                        (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63909AD30              		 offset:1daad30                       
 
-void UNiagaraComponent::SetNiagaraVariableBool(struct FString* InVariableName, bool* InValue)
+void UNiagaraComponent::STATIC_SetNiagaraVariableBool(const struct FString& InVariableName, bool InValue)
 {
 	static UFunction* fn;
 
@@ -173,13 +173,13 @@ void UNiagaraComponent::SetNiagaraVariableBool(struct FString* InVariableName, b
 
 
 // Function Niagara.NiagaraComponent.SetNiagaraStaticMeshDataInterfaceActor
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FString*                InVariableName                 (Parm, ZeroConstructor)
-// class AActor**                 InSource                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71AFA5620              		 offset:31d5620                       
+// struct FString                 InVariableName                 (Parm, ZeroConstructor)
+// class AActor*                  InSource                       (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63909AC50              		 offset:1daac50                       
 
-void UNiagaraComponent::SetNiagaraStaticMeshDataInterfaceActor(struct FString* InVariableName, class AActor** InSource)
+void UNiagaraComponent::STATIC_SetNiagaraStaticMeshDataInterfaceActor(const struct FString& InVariableName, class AActor* InSource)
 {
 	static UFunction* fn;
 
@@ -200,13 +200,13 @@ void UNiagaraComponent::SetNiagaraStaticMeshDataInterfaceActor(struct FString* I
 
 
 // Function Niagara.NiagaraComponent.SetNiagaraEmitterSpawnRate
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FString*                InEmitterName                  (Parm, ZeroConstructor)
-// float*                         InValue                        (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71AFA5530              		 offset:31d5530                       
+// struct FString                 InEmitterName                  (Parm, ZeroConstructor)
+// float                          InValue                        (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF63909AB60              		 offset:1daab60                       
 
-void UNiagaraComponent::SetNiagaraEmitterSpawnRate(struct FString* InEmitterName, float* InValue)
+void UNiagaraComponent::STATIC_SetNiagaraEmitterSpawnRate(const struct FString& InEmitterName, float InValue)
 {
 	static UFunction* fn;
 
@@ -227,10 +227,10 @@ void UNiagaraComponent::SetNiagaraEmitterSpawnRate(struct FString* InEmitterName
 
 
 // Function Niagara.NiagaraComponent.ResetEffect
-// (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF71AFA5510              		 offset:31d5510                       
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF63909AB40              		 offset:1daab40                       
 
-void UNiagaraComponent::ResetEffect()
+void UNiagaraComponent::STATIC_ResetEffect()
 {
 	static UFunction* fn;
 
@@ -249,10 +249,10 @@ void UNiagaraComponent::ResetEffect()
 
 
 // Function Niagara.NiagaraComponent.ReinitializeEffect
-// (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF71AFA54F0              		 offset:31d54f0                       
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF63909AB20              		 offset:1daab20                       
 
-void UNiagaraComponent::ReinitializeEffect()
+void UNiagaraComponent::STATIC_ReinitializeEffect()
 {
 	static UFunction* fn;
 
@@ -267,82 +267,6 @@ void UNiagaraComponent::ReinitializeEffect()
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
-}
-
-
-// Function Niagara.NiagaraFunctionLibrary.SpawnEffectAttached
-// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
-// Parameters:
-// class UNiagaraEffect**         EffectTemplate                 (Parm, ZeroConstructor, IsPlainOldData)
-// class USceneComponent**        AttachToComponent              (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// struct FName*                  AttachPointName                (Parm, ZeroConstructor, IsPlainOldData)
-// struct FVector*                Location                       (Parm, IsPlainOldData)
-// struct FRotator*               Rotation                       (Parm, IsPlainOldData)
-// TEnumAsByte<EAttachLocation>*  LocationType                   (Parm, ZeroConstructor, IsPlainOldData)
-// bool*                          bAutoDestroy                   (Parm, ZeroConstructor, IsPlainOldData)
-// class UNiagaraComponent*       ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
-// FunctionAddress:0x00007FF71AFA5DD0              		 offset:31d5dd0                       
-
-class UNiagaraComponent* UNiagaraFunctionLibrary::STATIC_SpawnEffectAttached(class UNiagaraEffect** EffectTemplate, class USceneComponent** AttachToComponent, struct FName* AttachPointName, struct FVector* Location, struct FRotator* Rotation, TEnumAsByte<EAttachLocation>* LocationType, bool* bAutoDestroy)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function Niagara.NiagaraFunctionLibrary.SpawnEffectAttached"));
-
-	UNiagaraFunctionLibrary_SpawnEffectAttached_Params params;
-	params.EffectTemplate = EffectTemplate;
-	params.AttachToComponent = AttachToComponent;
-	params.AttachPointName = AttachPointName;
-	params.Location = Location;
-	params.Rotation = Rotation;
-	params.LocationType = LocationType;
-	params.bAutoDestroy = bAutoDestroy;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Niagara.NiagaraFunctionLibrary.SpawnEffectAtLocation
-// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
-// Parameters:
-// class UObject**                WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
-// class UNiagaraEffect**         EffectTemplate                 (Parm, ZeroConstructor, IsPlainOldData)
-// struct FVector*                Location                       (Parm, IsPlainOldData)
-// struct FRotator*               Rotation                       (Parm, IsPlainOldData)
-// bool*                          bAutoDestroy                   (Parm, ZeroConstructor, IsPlainOldData)
-// class UNiagaraComponent*       ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
-// FunctionAddress:0x00007FF71AFA5C40              		 offset:31d5c40                       
-
-class UNiagaraComponent* UNiagaraFunctionLibrary::STATIC_SpawnEffectAtLocation(class UObject** WorldContextObject, class UNiagaraEffect** EffectTemplate, struct FVector* Location, struct FRotator* Rotation, bool* bAutoDestroy)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function Niagara.NiagaraFunctionLibrary.SpawnEffectAtLocation"));
-
-	UNiagaraFunctionLibrary_SpawnEffectAtLocation_Params params;
-	params.WorldContextObject = WorldContextObject;
-	params.EffectTemplate = EffectTemplate;
-	params.Location = Location;
-	params.Rotation = Rotation;
-	params.bAutoDestroy = bAutoDestroy;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
 }
 
 

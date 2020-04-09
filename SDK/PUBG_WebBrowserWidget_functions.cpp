@@ -1,4 +1,4 @@
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,12 +13,12 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // DelegateFunction WebBrowserWidget.WebBrowser.OnUrlChanged__DelegateSignature
-// (MulticastDelegate, Public, Delegate, HasOutParms)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FText*                  Text                           (ConstParm, Parm, OutParm, ReferenceParm)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// struct FText                   Text                           (ConstParm, Parm, OutParm, ReferenceParm)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
-void UWebBrowser::OnUrlChanged__DelegateSignature(struct FText* Text)
+void UWebBrowser::STATIC_OnUrlChanged__DelegateSignature(const struct FText& Text)
 {
 	static UFunction* fn;
 
@@ -29,6 +29,7 @@ void UWebBrowser::OnUrlChanged__DelegateSignature(struct FText* Text)
 	params.Text = Text;
 
 	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -37,12 +38,12 @@ void UWebBrowser::OnUrlChanged__DelegateSignature(struct FText* Text)
 
 
 // Function WebBrowserWidget.WebBrowser.LoadURL
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FString*                NewURL                         (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF71C8FFCA0              		 offset:4b2fca0                       
+// struct FString                 NewURL                         (Parm, ZeroConstructor)
+// FunctionAddress:0x00007FF63BA16B60              		 offset:4726b60                       
 
-void UWebBrowser::LoadURL(struct FString* NewURL)
+void UWebBrowser::STATIC_LoadURL(const struct FString& NewURL)
 {
 	static UFunction* fn;
 
@@ -62,13 +63,13 @@ void UWebBrowser::LoadURL(struct FString* NewURL)
 
 
 // Function WebBrowserWidget.WebBrowser.LoadString
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FString*                Contents                       (Parm, ZeroConstructor)
-// struct FString*                DummyURL                       (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF71C8FFB10              		 offset:4b2fb10                       
+// struct FString                 Contents                       (Parm, ZeroConstructor)
+// struct FString                 DummyURL                       (Parm, ZeroConstructor)
+// FunctionAddress:0x00007FF63BA169D0              		 offset:47269d0                       
 
-void UWebBrowser::LoadString(struct FString* Contents, struct FString* DummyURL)
+void UWebBrowser::STATIC_LoadString(const struct FString& Contents, const struct FString& DummyURL)
 {
 	static UFunction* fn;
 
@@ -89,12 +90,12 @@ void UWebBrowser::LoadString(struct FString* Contents, struct FString* DummyURL)
 
 
 // Function WebBrowserWidget.WebBrowser.GetUrl
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
 // Parameters:
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF71C8FFA80              		 offset:4b2fa80                       
+// FunctionAddress:0x00007FF63BA16940              		 offset:4726940                       
 
-struct FString UWebBrowser::GetUrl()
+struct FString UWebBrowser::STATIC_GetUrl()
 {
 	static UFunction* fn;
 
@@ -115,12 +116,12 @@ struct FString UWebBrowser::GetUrl()
 
 
 // Function WebBrowserWidget.WebBrowser.GetTitleText
-// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
 // Parameters:
 // struct FText                   ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF71C8FF9F0              		 offset:4b2f9f0                       
+// FunctionAddress:0x00007FF63BA168B0              		 offset:47268b0                       
 
-struct FText UWebBrowser::GetTitleText()
+struct FText UWebBrowser::STATIC_GetTitleText()
 {
 	static UFunction* fn;
 
@@ -141,12 +142,12 @@ struct FText UWebBrowser::GetTitleText()
 
 
 // Function WebBrowserWidget.WebBrowser.ExecuteJavascript
-// (Final, Native, Public, BlueprintCallable)
+// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
-// struct FString*                ScriptText                     (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF71C8FF950              		 offset:4b2f950                       
+// struct FString                 ScriptText                     (Parm, ZeroConstructor)
+// FunctionAddress:0x00007FF63BA16810              		 offset:4726810                       
 
-void UWebBrowser::ExecuteJavascript(struct FString* ScriptText)
+void UWebBrowser::STATIC_ExecuteJavascript(const struct FString& ScriptText)
 {
 	static UFunction* fn;
 

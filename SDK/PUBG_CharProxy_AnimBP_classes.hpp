@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -239,7 +239,7 @@ public:
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_CharProxy_AnimBP_AnimGraphNode_Fabrik_217FCB10470A39214309EBB1129EC727();
 	void BlueprintUpdateAnimation(float* DeltaTimeX);
 	void BlueprintInitializeAnimation();
-	void OnReady_Event(bool* bReady);
+	void OnReady_Event(bool bReady);
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_CharProxy_AnimBP_AnimGraphNode_BlendListByBool_DE260CEA407C68776D9118B2960C17E9();
 	void OnLobbyEmotePlay_Event(struct FName* EmoteName);
 	void ExecuteUbergraph_CharProxy_AnimBP(int* EntryPoint);

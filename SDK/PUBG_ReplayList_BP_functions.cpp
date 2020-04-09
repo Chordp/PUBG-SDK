@@ -1,4 +1,4 @@
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,10 +13,10 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function ReplayList_BP.ReplayList_BP_C.OnUpdateItem
-// (Public, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FReplayItem*            inReplayItem                   (Parm)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void AReplayList_BP_C::OnUpdateItem(struct FReplayItem* inReplayItem)
 {
@@ -37,10 +37,10 @@ void AReplayList_BP_C::OnUpdateItem(struct FReplayItem* inReplayItem)
 
 
 // Function ReplayList_BP.ReplayList_BP_C.UpdateReplayList
-// (Public, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                inRegionOrLocal                (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void AReplayList_BP_C::UpdateReplayList(struct FString* inRegionOrLocal)
 {
@@ -61,10 +61,10 @@ void AReplayList_BP_C::UpdateReplayList(struct FString* inRegionOrLocal)
 
 
 // Function ReplayList_BP.ReplayList_BP_C.CheckReplayBusyStatus
-// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // bool                           bIsReplayBusy                  (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void AReplayList_BP_C::CheckReplayBusyStatus(bool* bIsReplayBusy)
 {
@@ -87,8 +87,8 @@ void AReplayList_BP_C::CheckReplayBusyStatus(bool* bIsReplayBusy)
 
 
 // Function ReplayList_BP.ReplayList_BP_C.OnGoPageBtn
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void AReplayList_BP_C::OnGoPageBtn()
 {
@@ -108,8 +108,8 @@ void AReplayList_BP_C::OnGoPageBtn()
 
 
 // Function ReplayList_BP.ReplayList_BP_C.OnNextPageBtn
-// (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void AReplayList_BP_C::OnNextPageBtn()
 {
@@ -129,8 +129,8 @@ void AReplayList_BP_C::OnNextPageBtn()
 
 
 // Function ReplayList_BP.ReplayList_BP_C.OnPrevPageBtn
-// (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void AReplayList_BP_C::OnPrevPageBtn()
 {
@@ -150,8 +150,8 @@ void AReplayList_BP_C::OnPrevPageBtn()
 
 
 // Function ReplayList_BP.ReplayList_BP_C.ClearReplayList
-// (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void AReplayList_BP_C::ClearReplayList()
 {
@@ -171,8 +171,8 @@ void AReplayList_BP_C::ClearReplayList()
 
 
 // Function ReplayList_BP.ReplayList_BP_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void AReplayList_BP_C::UserConstructionScript()
 {
@@ -192,8 +192,8 @@ void AReplayList_BP_C::UserConstructionScript()
 
 
 // Function ReplayList_BP.ReplayList_BP_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void AReplayList_BP_C::ReceiveBeginPlay()
 {
@@ -213,8 +213,8 @@ void AReplayList_BP_C::ReceiveBeginPlay()
 
 
 // Function ReplayList_BP.ReplayList_BP_C.CreateReplayListEvent
-// (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void AReplayList_BP_C::CreateReplayListEvent()
 {
@@ -234,8 +234,8 @@ void AReplayList_BP_C::CreateReplayListEvent()
 
 
 // Function ReplayList_BP.ReplayList_BP_C.PrevPageEvent
-// (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void AReplayList_BP_C::PrevPageEvent()
 {
@@ -255,8 +255,8 @@ void AReplayList_BP_C::PrevPageEvent()
 
 
 // Function ReplayList_BP.ReplayList_BP_C.NextPageEvent
-// (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void AReplayList_BP_C::NextPageEvent()
 {
@@ -276,8 +276,8 @@ void AReplayList_BP_C::NextPageEvent()
 
 
 // Function ReplayList_BP.ReplayList_BP_C.GoPageEvent
-// (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void AReplayList_BP_C::GoPageEvent()
 {
@@ -297,11 +297,11 @@ void AReplayList_BP_C::GoPageEvent()
 
 
 // Function ReplayList_BP.ReplayList_BP_C.OnItemClicked
-// (BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                RegionOrLocal                  (Parm, ZeroConstructor)
 // struct FReplayItem*            inReplayItem                   (Parm)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void AReplayList_BP_C::OnItemClicked(struct FString* RegionOrLocal, struct FReplayItem* inReplayItem)
 {
@@ -323,10 +323,10 @@ void AReplayList_BP_C::OnItemClicked(struct FString* RegionOrLocal, struct FRepl
 
 
 // Function ReplayList_BP.ReplayList_BP_C.ExecuteUbergraph_ReplayList_BP
-// (HasDefaults)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void AReplayList_BP_C::ExecuteUbergraph_ReplayList_BP(int* EntryPoint)
 {

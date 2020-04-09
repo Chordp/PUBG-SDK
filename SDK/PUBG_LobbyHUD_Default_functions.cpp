@@ -1,4 +1,4 @@
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,10 +13,10 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function LobbyHUD_Default.LobbyHUD_Default_C.ChangeScene
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                PoseId                         (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ALobbyHUD_Default_C::ChangeScene(struct FString* PoseId)
 {
@@ -37,11 +37,11 @@ void ALobbyHUD_Default_C::ChangeScene(struct FString* PoseId)
 
 
 // Function LobbyHUD_Default.LobbyHUD_Default_C.ShowPoseActor
-// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                SourceString                   (Parm, ZeroConstructor)
 // TArray<struct FString>         SkinIDs                        (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ALobbyHUD_Default_C::ShowPoseActor(struct FString* SourceString, TArray<struct FString>* SkinIDs)
 {
@@ -65,8 +65,8 @@ void ALobbyHUD_Default_C::ShowPoseActor(struct FString* SourceString, TArray<str
 
 
 // Function LobbyHUD_Default.LobbyHUD_Default_C.DestroyPoseActor
-// (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ALobbyHUD_Default_C::DestroyPoseActor()
 {
@@ -86,8 +86,8 @@ void ALobbyHUD_Default_C::DestroyPoseActor()
 
 
 // Function LobbyHUD_Default.LobbyHUD_Default_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ALobbyHUD_Default_C::UserConstructionScript()
 {
@@ -107,8 +107,8 @@ void ALobbyHUD_Default_C::UserConstructionScript()
 
 
 // Function LobbyHUD_Default.LobbyHUD_Default_C.HideMasteryPose
-// (Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ALobbyHUD_Default_C::HideMasteryPose()
 {
@@ -128,13 +128,13 @@ void ALobbyHUD_Default_C::HideMasteryPose()
 
 
 // Function LobbyHUD_Default.LobbyHUD_Default_C.ShowMasteryPose
-// (Event, Public, HasOutParms, BlueprintEvent)
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // struct FString*                PoseId                         (Parm, ZeroConstructor)
-// TArray<struct FString>*        ItemIDs                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// TArray<struct FString>*        ItemIds                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
-void ALobbyHUD_Default_C::ShowMasteryPose(struct FString* PoseId, TArray<struct FString>* ItemIDs)
+void ALobbyHUD_Default_C::ShowMasteryPose(struct FString* PoseId, TArray<struct FString>* ItemIds)
 {
 	static UFunction* fn;
 
@@ -143,7 +143,7 @@ void ALobbyHUD_Default_C::ShowMasteryPose(struct FString* PoseId, TArray<struct 
 
 	ALobbyHUD_Default_C_ShowMasteryPose_Params params;
 	params.PoseId = PoseId;
-	params.ItemIDs = ItemIDs;
+	params.ItemIds = ItemIds;
 
 	auto flags = fn->FunctionFlags;
 
@@ -154,8 +154,8 @@ void ALobbyHUD_Default_C::ShowMasteryPose(struct FString* PoseId, TArray<struct 
 
 
 // Function LobbyHUD_Default.LobbyHUD_Default_C.ReceivePostBeginPlay
-// (Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ALobbyHUD_Default_C::ReceivePostBeginPlay()
 {
@@ -175,10 +175,10 @@ void ALobbyHUD_Default_C::ReceivePostBeginPlay()
 
 
 // Function LobbyHUD_Default.LobbyHUD_Default_C.ExecuteUbergraph_LobbyHUD_Default
-// ()
+// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF71BF88F00              		 offset:41b8f00                       
+// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
 
 void ALobbyHUD_Default_C::ExecuteUbergraph_LobbyHUD_Default(int* EntryPoint)
 {

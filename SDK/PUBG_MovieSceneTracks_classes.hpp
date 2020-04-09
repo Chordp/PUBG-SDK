@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,6 +13,45 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Classes
 //---------------------------------------------------------------------------
+
+// Class MovieSceneTracks.MovieScenePropertyTrack
+// 0x0020 (0x00E0 - 0x00C0)
+class UMovieScenePropertyTrack : public UMovieSceneNameableTrack
+{
+public:
+	struct FString                                     PropertyPath;                                             // 0x00C0(0x0010) (ZeroConstructor)
+	TArray<class UMovieSceneSection*>                  Sections;                                                 // 0x00D0(0x0010) (ExportObject, ZeroConstructor)
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class MovieSceneTracks.MovieScenePropertyTrack"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class MovieSceneTracks.MovieSceneMaterialTrack
+// 0x0010 (0x00D0 - 0x00C0)
+class UMovieSceneMaterialTrack : public UMovieSceneNameableTrack
+{
+public:
+	unsigned char                                      UnknownData00[0x10];                                      // 0x00C0(0x0010) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class MovieSceneTracks.MovieSceneMaterialTrack"));
+
+		return ptr;
+	}
+
+};
+
 
 // Class MovieSceneTracks.MovieScene3DConstraintSection
 // 0x0010 (0x00E0 - 0x00D0)
@@ -634,26 +673,6 @@ public:
 };
 
 
-// Class MovieSceneTracks.MovieScenePropertyTrack
-// 0x0020 (0x00E0 - 0x00C0)
-class UMovieScenePropertyTrack : public UMovieSceneNameableTrack
-{
-public:
-	struct FString                                     PropertyPath;                                             // 0x00C0(0x0010) (ZeroConstructor)
-	TArray<class UMovieSceneSection*>                  Sections;                                                 // 0x00D0(0x0010) (ExportObject, ZeroConstructor)
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class MovieSceneTracks.MovieScenePropertyTrack"));
-
-		return ptr;
-	}
-
-};
-
-
 // Class MovieSceneTracks.MovieSceneLevelVisibilityTrack
 // 0x0010 (0x00D0 - 0x00C0)
 class UMovieSceneLevelVisibilityTrack : public UMovieSceneNameableTrack
@@ -687,25 +706,6 @@ public:
 		static UClass* ptr;
 		if(!ptr)
 			ptr = UObject::FindClass(_xor_("Class MovieSceneTracks.MovieSceneParameterSection"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class MovieSceneTracks.MovieSceneMaterialTrack
-// 0x0010 (0x00D0 - 0x00C0)
-class UMovieSceneMaterialTrack : public UMovieSceneNameableTrack
-{
-public:
-	unsigned char                                      UnknownData00[0x10];                                      // 0x00C0(0x0010) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class MovieSceneTracks.MovieSceneMaterialTrack"));
 
 		return ptr;
 	}

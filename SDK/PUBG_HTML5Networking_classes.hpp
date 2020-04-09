@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,11 +15,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Class HTML5Networking.WebSocketConnection
-// 0x0010 (0x65840 - 0x65830)
+// 0x0010 (0x65848 - 0x65838)
 class UWebSocketConnection : public UNetConnection
 {
 public:
-	unsigned char                                      UnknownData00[0x10];                                      // 0x65830(0x0010) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x10];                                      // 0x65838(0x0010) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -34,12 +34,12 @@ public:
 
 
 // Class HTML5Networking.WebSocketNetDriver
-// 0x0010 (0x04C0 - 0x04B0)
+// 0x0010 (0x04C8 - 0x04B8)
 class UWebSocketNetDriver : public UNetDriver
 {
 public:
-	int                                                WebSocketPort;                                            // 0x04B0(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	unsigned char                                      UnknownData00[0xC];                                       // 0x04B4(0x000C) MISSED OFFSET
+	int                                                WebSocketPort;                                            // 0x04B8(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData00[0xC];                                       // 0x04BC(0x000C) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{

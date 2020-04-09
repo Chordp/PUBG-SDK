@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,20 +17,20 @@ namespace SDK
 // DelegateFunction WebBrowserWidget.WebBrowser.OnUrlChanged__DelegateSignature
 struct UWebBrowser_OnUrlChanged__DelegateSignature_Params
 {
-	struct FText*                                      Text;                                                     // (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FText                                       Text;                                                     // (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
 // Function WebBrowserWidget.WebBrowser.LoadURL
 struct UWebBrowser_LoadURL_Params
 {
-	struct FString*                                    NewURL;                                                   // (Parm, ZeroConstructor)
+	struct FString                                     NewURL;                                                   // (Parm, ZeroConstructor)
 };
 
 // Function WebBrowserWidget.WebBrowser.LoadString
 struct UWebBrowser_LoadString_Params
 {
-	struct FString*                                    Contents;                                                 // (Parm, ZeroConstructor)
-	struct FString*                                    DummyURL;                                                 // (Parm, ZeroConstructor)
+	struct FString                                     Contents;                                                 // (Parm, ZeroConstructor)
+	struct FString                                     DummyURL;                                                 // (Parm, ZeroConstructor)
 };
 
 // Function WebBrowserWidget.WebBrowser.GetUrl
@@ -48,7 +48,7 @@ struct UWebBrowser_GetTitleText_Params
 // Function WebBrowserWidget.WebBrowser.ExecuteJavascript
 struct UWebBrowser_ExecuteJavascript_Params
 {
-	struct FString*                                    ScriptText;                                               // (Parm, ZeroConstructor)
+	struct FString                                     ScriptText;                                               // (Parm, ZeroConstructor)
 };
 
 }

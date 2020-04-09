@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Class WindowsFileUtility.WFUFileListInterface
-// 0x0000 (0x0028 - 0x0028)
+// 0x0000 (0x0030 - 0x0030)
 class UWFUFileListInterface : public UInterface
 {
 public:
@@ -29,19 +29,15 @@ public:
 		return ptr;
 	}
 
-
-	void OnListFileFound(struct FString* Filename, int* ByteCount, struct FString* FilePath);
-	void OnListDone(struct FString* DirectoryPath, TArray<struct FString>* Files, TArray<struct FString>* Folders);
-	void OnListDirectoryFound(struct FString* DirectoryName, struct FString* FilePath);
 };
 
 
 // Class WindowsFileUtility.WFUFileListLambdaDelegate
-// 0x0058 (0x0080 - 0x0028)
+// 0x0060 (0x0090 - 0x0030)
 class UWFUFileListLambdaDelegate : public UObject
 {
 public:
-	unsigned char                                      UnknownData00[0x58];                                      // 0x0028(0x0058) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x60];                                      // 0x0030(0x0060) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -56,7 +52,7 @@ public:
 
 
 // Class WindowsFileUtility.WFUFolderWatchInterface
-// 0x0000 (0x0028 - 0x0028)
+// 0x0000 (0x0030 - 0x0030)
 class UWFUFolderWatchInterface : public UInterface
 {
 public:
@@ -70,18 +66,15 @@ public:
 		return ptr;
 	}
 
-
-	void OnFileChanged(struct FString* Filename, struct FString* FilePath);
-	void OnDirectoryChanged(struct FString* DirectoryName, struct FString* DirectoryPath);
 };
 
 
 // Class WindowsFileUtility.WFUFolderWatchLambdaDelegate
-// 0x0058 (0x0080 - 0x0028)
+// 0x0060 (0x0090 - 0x0030)
 class UWFUFolderWatchLambdaDelegate : public UObject
 {
 public:
-	unsigned char                                      UnknownData00[0x58];                                      // 0x0028(0x0058) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x60];                                      // 0x0030(0x0060) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -96,7 +89,7 @@ public:
 
 
 // Class WindowsFileUtility.WindowsFileUtilityFunctionLibrary
-// 0x0000 (0x0028 - 0x0028)
+// 0x0000 (0x0030 - 0x0030)
 class UWindowsFileUtilityFunctionLibrary : public UBlueprintFunctionLibrary
 {
 public:
@@ -110,15 +103,6 @@ public:
 		return ptr;
 	}
 
-
-	void STATIC_WatchFolder(struct FString* FullPath, class UObject** WatcherDelegate);
-	void STATIC_StopWatchingFolder(struct FString* FullPath, class UObject** WatcherDelegate);
-	bool STATIC_MoveFileTo(struct FString* From, struct FString* To);
-	void STATIC_ListContentsOfFolder(struct FString* FullPath, class UObject** ListDelegate);
-	bool STATIC_DeleteFolderRecursively(struct FString* FullPath);
-	bool STATIC_DeleteFileAt(struct FString* FullPath);
-	bool STATIC_DeleteEmptyFolder(struct FString* FullPath);
-	bool STATIC_CreateDirectoryAt(struct FString* FullPath);
 };
 
 

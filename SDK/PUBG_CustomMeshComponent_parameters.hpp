@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,22 +14,44 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
-// Function CustomMeshComponent.CustomMeshComponent.SetCustomMeshTriangles
-struct UCustomMeshComponent_SetCustomMeshTriangles_Params
+// Function Engine.MeshComponent.SetVectorParameterValueOnMaterials
+struct UCustomMeshComponent_SetVectorParameterValueOnMaterials_Params
 {
-	TArray<struct FCustomMeshTriangle>*                Triangles;                                                // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	struct FName                                       ParameterName;                                            // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     ParameterValue;                                           // (ConstParm, Parm, IsPlainOldData)
+};
+
+// Function Engine.MeshComponent.SetScalarParameterValueOnMaterials
+struct UCustomMeshComponent_SetScalarParameterValueOnMaterials_Params
+{
+	struct FName                                       ParameterName;                                            // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	float                                              ParameterValue;                                           // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.MeshComponent.IsMaterialSlotNameValid
+struct UCustomMeshComponent_IsMaterialSlotNameValid_Params
+{
+	struct FName                                       MaterialSlotName;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
-// Function CustomMeshComponent.CustomMeshComponent.ClearCustomMeshTriangles
-struct UCustomMeshComponent_ClearCustomMeshTriangles_Params
+// Function Engine.MeshComponent.GetMaterialSlotNames
+struct UCustomMeshComponent_GetMaterialSlotNames_Params
 {
+	TArray<struct FName>                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
-// Function CustomMeshComponent.CustomMeshComponent.AddCustomMeshTriangles
-struct UCustomMeshComponent_AddCustomMeshTriangles_Params
+// Function Engine.MeshComponent.GetMaterials
+struct UCustomMeshComponent_GetMaterials_Params
 {
-	TArray<struct FCustomMeshTriangle>*                Triangles;                                                // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<class UMaterialInterface*>                  ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
+// Function Engine.MeshComponent.GetMaterialIndex
+struct UCustomMeshComponent_GetMaterialIndex_Params
+{
+	struct FName                                       MaterialSlotName;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 }

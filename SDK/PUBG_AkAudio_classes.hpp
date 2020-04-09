@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Class AkAudio.AkAutoPlayInterface
-// 0x0000 (0x0028 - 0x0028)
+// 0x0000 (0x0030 - 0x0030)
 class UAkAutoPlayInterface : public UInterface
 {
 public:
@@ -33,15 +33,15 @@ public:
 
 
 // Class AkAudio.AkAmbientSound
-// 0x0020 (0x0400 - 0x03E0)
+// 0x0020 (0x0408 - 0x03E8)
 class AAkAmbientSound : public AActor
 {
 public:
-	unsigned char                                      UnknownData00[0x10];                                      // 0x03E0(0x0010) MISSED OFFSET
-	class UAkComponent*                                AkComponent;                                              // 0x03F0(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
-	bool                                               AutoPost;                                                 // 0x03F8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x03F9(0x0003) MISSED OFFSET
-	float                                              AutoPlayDistance;                                         // 0x03FC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x10];                                      // 0x03E8(0x0010) MISSED OFFSET
+	class UAkComponent*                                AkComponent;                                              // 0x03F8(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
+	bool                                               AutoPost;                                                 // 0x0400(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x0401(0x0003) MISSED OFFSET
+	float                                              AutoPlayDistance;                                         // 0x0404(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
@@ -53,19 +53,19 @@ public:
 	}
 
 
-	void StopAmbientSound();
-	void StartAmbientSound();
-	bool IsCurrentlyPlaying();
+	void STATIC_StopAmbientSound();
+	void STATIC_StartAmbientSound();
+	bool STATIC_IsCurrentlyPlaying();
 };
 
 
 // Class AkAudio.AkAudioBank
-// 0x0008 (0x0030 - 0x0028)
+// 0x0008 (0x0038 - 0x0030)
 class UAkAudioBank : public UObject
 {
 public:
-	bool                                               AutoLoad;                                                 // 0x0028(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0029(0x0007) MISSED OFFSET
+	bool                                               AutoLoad;                                                 // 0x0030(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0031(0x0007) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -80,16 +80,16 @@ public:
 
 
 // Class AkAudio.AkAudioEvent
-// 0x0018 (0x0040 - 0x0028)
+// 0x0018 (0x0048 - 0x0030)
 class UAkAudioEvent : public UObject
 {
 public:
-	class UAkAudioBank*                                RequiredBank;                                             // 0x0028(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              MaxAttenuationRadius;                                     // 0x0030(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               IsInfinite;                                               // 0x0034(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x0035(0x0003) MISSED OFFSET
-	float                                              MinimumDuration;                                          // 0x0038(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	float                                              MaximumDuration;                                          // 0x003C(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	class UAkAudioBank*                                RequiredBank;                                             // 0x0030(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              MaxAttenuationRadius;                                     // 0x0038(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               IsInfinite;                                               // 0x003C(0x0001) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x003D(0x0003) MISSED OFFSET
+	float                                              MinimumDuration;                                          // 0x0040(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	float                                              MaximumDuration;                                          // 0x0044(0x0004) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
@@ -104,12 +104,12 @@ public:
 
 
 // Class AkAudio.AkAuxBus
-// 0x0010 (0x0038 - 0x0028)
+// 0x0010 (0x0040 - 0x0030)
 class UAkAuxBus : public UObject
 {
 public:
-	class UAkAudioBank*                                RequiredBank;                                             // 0x0028(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0030(0x0008) MISSED OFFSET
+	class UAkAudioBank*                                RequiredBank;                                             // 0x0030(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0038(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -124,24 +124,24 @@ public:
 
 
 // Class AkAudio.AkComponent
-// 0x0210 (0x06B0 - 0x04A0)
+// 0x0210 (0x06C0 - 0x04B0)
 class UAkComponent : public USceneComponent
 {
 public:
-	unsigned char                                      UnknownData00[0x10];                                      // 0x04A0(0x0010) MISSED OFFSET
-	bool                                               StopWhenOwnerDestroyed;                                   // 0x04B0(0x0001) (ZeroConstructor, IsPlainOldData)
-	bool                                               bUseDoppler;                                              // 0x04B1(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x2];                                       // 0x04B2(0x0002) MISSED OFFSET
-	float                                              AttenuationScalingFactor;                                 // 0x04B4(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	class UAkAudioEvent*                               AkAudioEvent;                                             // 0x04B8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	struct FString                                     EventName;                                                // 0x04C0(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	unsigned char                                      UnknownData02[0x4];                                       // 0x04D0(0x0004) MISSED OFFSET
-	bool                                               bUseReverbVolumes;                                        // 0x04D4(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x87];                                      // 0x04D5(0x0087) MISSED OFFSET
-	struct FAkOcclusionSettings                        OcclusionSettings;                                        // 0x055C(0x0014) (Edit)
-	unsigned char                                      UnknownData04[0xA4];                                      // 0x0570(0x00A4) MISSED OFFSET
-	float                                              LastRelativeSpeed;                                        // 0x0614(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
-	unsigned char                                      UnknownData05[0x98];                                      // 0x0618(0x0098) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x10];                                      // 0x04B0(0x0010) MISSED OFFSET
+	bool                                               StopWhenOwnerDestroyed;                                   // 0x04C0(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               bUseDoppler;                                              // 0x04C1(0x0001) (Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x2];                                       // 0x04C2(0x0002) MISSED OFFSET
+	float                                              AttenuationScalingFactor;                                 // 0x04C4(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	class UAkAudioEvent*                               AkAudioEvent;                                             // 0x04C8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	struct FString                                     EventName;                                                // 0x04D0(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x04E0(0x0004) MISSED OFFSET
+	bool                                               bUseReverbVolumes;                                        // 0x04E4(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x87];                                      // 0x04E5(0x0087) MISSED OFFSET
+	struct FAkOcclusionSettings                        OcclusionSettings;                                        // 0x056C(0x0014) (Edit)
+	unsigned char                                      UnknownData04[0xA4];                                      // 0x0580(0x00A4) MISSED OFFSET
+	float                                              LastRelativeSpeed;                                        // 0x0624(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
+	unsigned char                                      UnknownData05[0x98];                                      // 0x0628(0x0098) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -153,31 +153,31 @@ public:
 	}
 
 
-	void UseVolumesForRTPCs(bool* inUseVolumesForRTPCs);
-	void UseReverbVolumes(bool* inUseReverbVolumes);
-	void UseIndoorCheck(bool* inUseIndoorCheck);
-	void StopPlayingID(int* PlayingID);
-	void Stop();
-	void SetSwitch(struct FString* SwitchGroup, struct FString* SwitchState);
-	void SetStopWhenOwnerDestroyed(bool* bStopWhenOwnerDestroyed);
-	void SetRTPCValue(struct FString* RTPC, float* Value, int* InterpolationTimeMs);
-	void SetOutputBusVolume(float* BusVolume);
-	void SetMinVolumeRTPCUpdateInterval(float* Interval);
-	void SetAttenuationScalingFactor(float* Value);
-	void SetActiveListeners(int* in_uListenerMask);
-	void PostTrigger(struct FString* Trigger);
-	int PostAssociatedAkEvent();
-	int PostAkEventByName(struct FString* in_EventName);
-	int PostAkEvent(class UAkAudioEvent** AkEvent, struct FString* in_EventName);
-	bool IsUsingVolumesForRTPCs();
-	bool IsCurrentlyPlaying();
-	float GetAttenuationRadius();
-	void CalculateRelativeSpeed(float* DeltaTime);
+	void STATIC_UseVolumesForRTPCs(bool inUseVolumesForRTPCs);
+	void STATIC_UseReverbVolumes(bool inUseReverbVolumes);
+	void STATIC_UseIndoorCheck(bool inUseIndoorCheck);
+	void STATIC_StopPlayingID(int PlayingID);
+	void STATIC_Stop();
+	void STATIC_SetSwitch(const struct FString& SwitchGroup, const struct FString& SwitchState);
+	void STATIC_SetStopWhenOwnerDestroyed(bool bStopWhenOwnerDestroyed);
+	void STATIC_SetRTPCValue(const struct FString& RTPC, float Value, int InterpolationTimeMs);
+	void STATIC_SetOutputBusVolume(float BusVolume);
+	void STATIC_SetMinVolumeRTPCUpdateInterval(float Interval);
+	void STATIC_SetAttenuationScalingFactor(float Value);
+	void STATIC_SetActiveListeners(int in_uListenerMask);
+	void STATIC_PostTrigger(const struct FString& Trigger);
+	int STATIC_PostAssociatedAkEvent();
+	int STATIC_PostAkEventByName(const struct FString& in_EventName);
+	int STATIC_PostAkEvent(class UAkAudioEvent* AkEvent, const struct FString& in_EventName);
+	bool STATIC_IsUsingVolumesForRTPCs();
+	bool STATIC_IsCurrentlyPlaying();
+	float STATIC_GetAttenuationRadius();
+	void STATIC_CalculateRelativeSpeed(float DeltaTime);
 };
 
 
 // Class AkAudio.AkGameplayStatics
-// 0x0000 (0x0028 - 0x0028)
+// 0x0000 (0x0030 - 0x0030)
 class UAkGameplayStatics : public UBlueprintFunctionLibrary
 {
 public:
@@ -191,53 +191,23 @@ public:
 		return ptr;
 	}
 
-
-	void STATIC_UseReverbVolumes(bool* inUseReverbVolumes, class AActor** Actor);
-	void STATIC_UnloadBankByName(struct FString* BankName);
-	void STATIC_UnloadBank(class UAkAudioBank** Bank, struct FString* BankName);
-	void STATIC_StopProfilerCapture();
-	void STATIC_StopOutputCapture();
-	void STATIC_StopAllAmbientSounds(class UObject** WorldContextObject);
-	void STATIC_StopAll();
-	void STATIC_StopActor(class AActor** Actor);
-	void STATIC_StartProfilerCapture(struct FString* Filename);
-	void STATIC_StartOutputCapture(struct FString* Filename);
-	void STATIC_StartAllAmbientSounds(class UObject** WorldContextObject);
-	class UAkComponent* STATIC_SpawnAkComponentAtLocation(class UObject** WorldContextObject, class UAkAudioEvent** AkEvent, struct FVector* Location, struct FRotator* Orientation, bool* AutoPost, struct FString* EventName, bool* AutoDestroy);
-	void STATIC_SetSwitch(struct FName* SwitchGroup, struct FName* SwitchState, class AActor** Actor);
-	void STATIC_SetState(struct FName* StateGroup, struct FName* State);
-	void STATIC_SetRTPCValue(struct FName* RTPC, float* Value, int* InterpolationTimeMs, class AActor** Actor);
-	void STATIC_SetOutputBusVolume(float* BusVolume, class AActor** Actor);
-	void STATIC_PostTrigger(struct FName* Trigger, class AActor** Actor);
-	void STATIC_PostEventByName(struct FString* EventName, class AActor** Actor, bool* bStopWhenAttachedToDestroyed);
-	int STATIC_PostEventAttached(class UAkAudioEvent** AkEvent, class AActor** Actor, struct FName* AttachPointName, bool* bStopWhenAttachedToDestroyed, struct FString* EventName);
-	void STATIC_PostEventAtLocationByName(struct FString* EventName, struct FVector* Location, struct FRotator* Orientation, class UObject** WorldContextObject, bool* UseReverb);
-	int STATIC_PostEventAtLocation(class UAkAudioEvent** AkEvent, struct FVector* Location, struct FRotator* Orientation, struct FString* EventName, class UObject** WorldContextObject, bool* UseReverb);
-	int STATIC_PostEvent(class UAkAudioEvent** AkEvent, class AActor** Actor, bool* bStopWhenAttachedToDestroyed, struct FString* EventName);
-	void STATIC_LoadInitBank();
-	void STATIC_LoadBanks(TArray<class UAkAudioBank*>* SoundBanks, bool* SynchronizeSoundBanks);
-	void STATIC_LoadBankByName(struct FString* BankName);
-	void STATIC_LoadBank(class UAkAudioBank** Bank, struct FString* BankName);
-	class UAkComponent* STATIC_GetAkComponent(class USceneComponent** AttachToComponent, struct FName* AttachPointName, struct FVector* Location, TEnumAsByte<EAttachLocation>* LocationType);
-	void STATIC_ClearBanks();
-	void STATIC_AddOutputCaptureMarker(struct FString* MarkerText);
 };
 
 
 // Class AkAudio.AkReverbVolume
-// 0x0038 (0x0450 - 0x0418)
+// 0x0038 (0x0458 - 0x0420)
 class AAkReverbVolume : public AVolume
 {
 public:
-	unsigned char                                      bEnabled : 1;                                             // 0x0418(0x0001) (Edit, BlueprintVisible, Net)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0419(0x0007) MISSED OFFSET
-	class UAkAuxBus*                                   AuxBus;                                                   // 0x0420(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	struct FString                                     AuxBusName;                                               // 0x0428(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	float                                              SendLevel;                                                // 0x0438(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              FadeRate;                                                 // 0x043C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              Priority;                                                 // 0x0440(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x0444(0x0004) MISSED OFFSET
-	class AAkReverbVolume*                             NextLowerPriorityAkReverbVolume;                          // 0x0448(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
+	unsigned char                                      bEnabled : 1;                                             // 0x0420(0x0001) (Edit, BlueprintVisible, Net)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0421(0x0007) MISSED OFFSET
+	class UAkAuxBus*                                   AuxBus;                                                   // 0x0428(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	struct FString                                     AuxBusName;                                               // 0x0430(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	float                                              SendLevel;                                                // 0x0440(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              FadeRate;                                                 // 0x0444(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              Priority;                                                 // 0x0448(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x044C(0x0004) MISSED OFFSET
+	class AAkReverbVolume*                             NextLowerPriorityAkReverbVolume;                          // 0x0450(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
@@ -252,17 +222,17 @@ public:
 
 
 // Class AkAudio.AkSettings
-// 0x0078 (0x00A0 - 0x0028)
+// 0x0078 (0x00A8 - 0x0030)
 class UAkSettings : public UObject
 {
 public:
-	unsigned char                                      MaxSimultaneousReverbVolumes;                             // 0x0028(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0029(0x0007) MISSED OFFSET
-	struct FFilePath                                   WwiseProjectPath;                                         // 0x0030(0x0010) (Edit, Config)
-	struct FDirectoryPath                              WwiseWindowsInstallationPath;                             // 0x0040(0x0010) (Edit, Config)
-	struct FFilePath                                   WwiseMacInstallationPath;                                 // 0x0050(0x0010) (Edit, Config)
-	bool                                               SuppressWwiseProjectPathWarnings;                         // 0x0060(0x0001) (ZeroConstructor, Config, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3F];                                      // 0x0061(0x003F) MISSED OFFSET
+	unsigned char                                      MaxSimultaneousReverbVolumes;                             // 0x0030(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0031(0x0007) MISSED OFFSET
+	struct FFilePath                                   WwiseProjectPath;                                         // 0x0038(0x0010) (Edit, Config)
+	struct FDirectoryPath                              WwiseWindowsInstallationPath;                             // 0x0048(0x0010) (Edit, Config)
+	struct FFilePath                                   WwiseMacInstallationPath;                                 // 0x0058(0x0010) (Edit, Config)
+	bool                                               SuppressWwiseProjectPathWarnings;                         // 0x0068(0x0001) (ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x3F];                                      // 0x0069(0x003F) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -277,11 +247,11 @@ public:
 
 
 // Class AkAudio.AkSoundVolume
-// 0x0008 (0x03E8 - 0x03E0)
+// 0x0008 (0x03F0 - 0x03E8)
 class AAkSoundVolume : public AActor
 {
 public:
-	class UAkSoundVolumeComponent*                     SoundVolumeComponent;                                     // 0x03E0(0x0008) (Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
+	class UAkSoundVolumeComponent*                     SoundVolumeComponent;                                     // 0x03E8(0x0008) (Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
@@ -296,17 +266,17 @@ public:
 
 
 // Class AkAudio.AkSoundVolumeComponentBase
-// 0x0030 (0x04D0 - 0x04A0)
+// 0x0030 (0x04E0 - 0x04B0)
 class UAkSoundVolumeComponentBase : public USceneComponent
 {
 public:
-	ESoundVolumeShape                                  Shape;                                                    // 0x04A0(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x04A1(0x0003) MISSED OFFSET
-	struct FVector                                     BoxExtents;                                               // 0x04A4(0x000C) (Edit, IsPlainOldData)
-	float                                              Radius;                                                   // 0x04B0(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	float                                              CapsuleHalfHeight;                                        // 0x04B4(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	class UShapeComponent*                             ShapeComponent;                                           // 0x04B8(0x0008) (ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x10];                                      // 0x04C0(0x0010) MISSED OFFSET
+	ESoundVolumeShape                                  Shape;                                                    // 0x04B0(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x04B1(0x0003) MISSED OFFSET
+	struct FVector                                     BoxExtents;                                               // 0x04B4(0x000C) (Edit, IsPlainOldData)
+	float                                              Radius;                                                   // 0x04C0(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              CapsuleHalfHeight;                                        // 0x04C4(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	class UShapeComponent*                             ShapeComponent;                                           // 0x04C8(0x0008) (ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x10];                                      // 0x04D0(0x0010) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -321,19 +291,19 @@ public:
 
 
 // Class AkAudio.AkSoundVolumeComponent
-// 0x00D0 (0x05A0 - 0x04D0)
+// 0x00D0 (0x05B0 - 0x04E0)
 class UAkSoundVolumeComponent : public UAkSoundVolumeComponentBase
 {
 public:
-	unsigned char                                      UnknownData00[0x48];                                      // 0x04D0(0x0048) MISSED OFFSET
-	class UAkSoundVolumeRTPCs*                         RTPCs;                                                    // 0x0518(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-	int                                                Priority;                                                 // 0x0520(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	float                                              RolloffDistance;                                          // 0x0524(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	bool                                               NoVerticalRolloff;                                        // 0x0528(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x0529(0x0003) MISSED OFFSET
-	float                                              IndoorsAmount;                                            // 0x052C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	EAkIgnoreRolloffDirection                          IgnoreRolloffDir;                                         // 0x0530(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x6F];                                      // 0x0531(0x006F) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x48];                                      // 0x04E0(0x0048) MISSED OFFSET
+	class UAkSoundVolumeRTPCs*                         RTPCs;                                                    // 0x0528(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	int                                                Priority;                                                 // 0x0530(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              RolloffDistance;                                          // 0x0534(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	bool                                               NoVerticalRolloff;                                        // 0x0538(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x0539(0x0003) MISSED OFFSET
+	float                                              IndoorsAmount;                                            // 0x053C(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	EAkIgnoreRolloffDirection                          IgnoreRolloffDir;                                         // 0x0540(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x6F];                                      // 0x0541(0x006F) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -348,13 +318,13 @@ public:
 
 
 // Class AkAudio.AkSoundVolumePortalComponent
-// 0x0050 (0x0520 - 0x04D0)
+// 0x0050 (0x0530 - 0x04E0)
 class UAkSoundVolumePortalComponent : public UAkSoundVolumeComponentBase
 {
 public:
-	float                                              RolloffDistance;                                          // 0x04D0(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	float                                              Directionality;                                           // 0x04D4(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x48];                                      // 0x04D8(0x0048) MISSED OFFSET
+	float                                              RolloffDistance;                                          // 0x04E0(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              Directionality;                                           // 0x04E4(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x48];                                      // 0x04E8(0x0048) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -369,11 +339,11 @@ public:
 
 
 // Class AkAudio.AkSoundVolumePortal
-// 0x0008 (0x03E8 - 0x03E0)
+// 0x0008 (0x03F0 - 0x03E8)
 class AAkSoundVolumePortal : public AActor
 {
 public:
-	class UAkSoundVolumePortalComponent*               SoundVolumePortalComponent;                               // 0x03E0(0x0008) (Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
+	class UAkSoundVolumePortalComponent*               SoundVolumePortalComponent;                               // 0x03E8(0x0008) (Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
@@ -388,11 +358,11 @@ public:
 
 
 // Class AkAudio.AkSoundVolumeRTPCs
-// 0x0010 (0x0040 - 0x0030)
+// 0x0010 (0x0048 - 0x0038)
 class UAkSoundVolumeRTPCs : public UDataAsset
 {
 public:
-	TArray<struct FAkSoundVolumeRTPC>                  RTPCData;                                                 // 0x0030(0x0010) (Edit, ZeroConstructor)
+	TArray<struct FAkSoundVolumeRTPC>                  RTPCData;                                                 // 0x0038(0x0010) (Edit, ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
@@ -407,13 +377,13 @@ public:
 
 
 // Class AkAudio.InterpTrackAkAudioEvent
-// 0x0018 (0x00A8 - 0x0090)
+// 0x0018 (0x00B0 - 0x0098)
 class UInterpTrackAkAudioEvent : public UInterpTrackVectorBase
 {
 public:
-	TArray<struct FAkAudioEventTrackKey>               Events;                                                   // 0x0090(0x0010) (ZeroConstructor)
-	unsigned char                                      bContinueEventOnMatineeEnd : 1;                           // 0x00A0(0x0001) (Edit, BlueprintVisible)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x00A1(0x0007) MISSED OFFSET
+	TArray<struct FAkAudioEventTrackKey>               Events;                                                   // 0x0098(0x0010) (ZeroConstructor)
+	unsigned char                                      bContinueEventOnMatineeEnd : 1;                           // 0x00A8(0x0001) (Edit, BlueprintVisible)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x00A9(0x0007) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -428,14 +398,14 @@ public:
 
 
 // Class AkAudio.InterpTrackAkAudioRTPC
-// 0x0018 (0x00A8 - 0x0090)
+// 0x0018 (0x00B0 - 0x0098)
 class UInterpTrackAkAudioRTPC : public UInterpTrackFloatBase
 {
 public:
-	struct FString                                     Param;                                                    // 0x0090(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	unsigned char                                      bPlayOnReverse : 1;                                       // 0x00A0(0x0001) (Edit, BlueprintVisible)
-	unsigned char                                      bContinueRTPCOnMatineeEnd : 1;                            // 0x00A0(0x0001) (Edit, BlueprintVisible)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x00A1(0x0007) MISSED OFFSET
+	struct FString                                     Param;                                                    // 0x0098(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	unsigned char                                      bPlayOnReverse : 1;                                       // 0x00A8(0x0001) (Edit, BlueprintVisible)
+	unsigned char                                      bContinueRTPCOnMatineeEnd : 1;                            // 0x00A8(0x0001) (Edit, BlueprintVisible)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x00A9(0x0007) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -450,12 +420,12 @@ public:
 
 
 // Class AkAudio.InterpTrackInstAkAudioEvent
-// 0x0008 (0x0030 - 0x0028)
+// 0x0008 (0x0038 - 0x0030)
 class UInterpTrackInstAkAudioEvent : public UInterpTrackInst
 {
 public:
-	float                                              LastUpdatePosition;                                       // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x002C(0x0004) MISSED OFFSET
+	float                                              LastUpdatePosition;                                       // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0034(0x0004) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -470,12 +440,12 @@ public:
 
 
 // Class AkAudio.InterpTrackInstAkAudioRTPC
-// 0x0008 (0x0030 - 0x0028)
+// 0x0008 (0x0038 - 0x0030)
 class UInterpTrackInstAkAudioRTPC : public UInterpTrackInst
 {
 public:
-	float                                              LastUpdatePosition;                                       // 0x0028(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x002C(0x0004) MISSED OFFSET
+	float                                              LastUpdatePosition;                                       // 0x0030(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0034(0x0004) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{

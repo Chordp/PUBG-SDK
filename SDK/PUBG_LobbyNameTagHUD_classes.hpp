@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass LobbyNameTagHUD.LobbyNameTagHUD_C
-// 0x0000 (0x0430 - 0x0430)
+// 0x0000 (0x0438 - 0x0438)
 class ULobbyNameTagHUD_C : public UTslLobbyNameTagHudWidget
 {
 public:
@@ -30,9 +30,10 @@ public:
 	}
 
 
-	void CleanUpNameTagWidget(int* SlotIndex);
-	void SetupNameTagWidget(int* SlotIndex);
-	void GetNameTagWidget(int* SlotIndex, class UTslLobbyNameTagWidget** Widget);
+	void STATIC_UpdateNameTagWidget_Internal(int SlotIndex);
+	void STATIC_SetNameTagWidget_Internal(int SlotIndex);
+	void STATIC_ResetNameTagWidget_Internal(int SlotIndex);
+	class UTslLobbyNameTagWidget* STATIC_GetNameTagWidget_Internal(int SlotIndex);
 };
 
 

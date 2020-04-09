@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.1.6.5) SDK
+// PUBG (7.2.8.10) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,12 +15,12 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass TslLobby_Summerland_01_Main.TslLobby_Summerland_01_Main_C
-// 0x0010 (0x03F8 - 0x03E8)
+// 0x0010 (0x0400 - 0x03F0)
 class ATslLobby_Summerland_01_Main_C : public ATslLobbyLevelScriptActor
 {
 public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x03E8(0x0008) (Transient, DuplicateTransient)
-	class AActor*                                      None_ExecuteUbergraph_TslLobby_Summerland_01_Main_RefProperty;// 0x03F0(0x0008) (ZeroConstructor, IsPlainOldData)
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x03F0(0x0008) (Transient, DuplicateTransient)
+	class AActor*                                      None_ExecuteUbergraph_TslLobby_Summerland_01_Main_RefProperty;// 0x03F8(0x0008) (ZeroConstructor, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
