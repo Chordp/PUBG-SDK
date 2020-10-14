@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,10 +13,10 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function CarePackageInteractionWidget.CarePackageInteractionWidget_C.ShowCarePackageInteractionWidget
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                           IsShow                         (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UCarePackageInteractionWidget_C::ShowCarePackageInteractionWidget(bool IsShow)
 {
@@ -37,11 +37,11 @@ void UCarePackageInteractionWidget_C::ShowCarePackageInteractionWidget(bool IsSh
 
 
 // Function CarePackageInteractionWidget.CarePackageInteractionWidget_C.Tick
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 // struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
 // float*                         InDeltaTime                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UCarePackageInteractionWidget_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
@@ -63,8 +63,8 @@ void UCarePackageInteractionWidget_C::Tick(struct FGeometry* MyGeometry, float* 
 
 
 // Function CarePackageInteractionWidget.CarePackageInteractionWidget_C.Construct
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UCarePackageInteractionWidget_C::Construct()
 {
@@ -84,8 +84,8 @@ void UCarePackageInteractionWidget_C::Construct()
 
 
 // Function CarePackageInteractionWidget.CarePackageInteractionWidget_C.BndEvt__Vanishing_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UCarePackageInteractionWidget_C::BndEvt__Vanishing_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
@@ -105,8 +105,8 @@ void UCarePackageInteractionWidget_C::BndEvt__Vanishing_K2Node_ComponentBoundEve
 
 
 // Function CarePackageInteractionWidget.CarePackageInteractionWidget_C.CustomTick
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UCarePackageInteractionWidget_C::CustomTick()
 {
@@ -126,8 +126,8 @@ void UCarePackageInteractionWidget_C::CustomTick()
 
 
 // Function CarePackageInteractionWidget.CarePackageInteractionWidget_C.TimerCheckCarePackage
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UCarePackageInteractionWidget_C::TimerCheckCarePackage()
 {
@@ -147,10 +147,10 @@ void UCarePackageInteractionWidget_C::TimerCheckCarePackage()
 
 
 // Function CarePackageInteractionWidget.CarePackageInteractionWidget_C.ExecuteUbergraph_CarePackageInteractionWidget
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UCarePackageInteractionWidget_C::ExecuteUbergraph_CarePackageInteractionWidget(int* EntryPoint)
 {

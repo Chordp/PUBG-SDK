@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass BP_PcOptionKeyBinderWidget.BP_PcOptionKeyBinderWidget_C
-// 0x0000 (0x0598 - 0x0598)
+// 0x0000 (0x0700 - 0x0700)
 class UBP_PcOptionKeyBinderWidget_C : public UTslGameOptionItemKeyBinderWidget
 {
 public:
@@ -29,8 +29,6 @@ public:
 		return ptr;
 	}
 
-
-	void STATIC_OnKeyBinderSlotValueChanged(int SlotIndex, const struct FTslInputKey& InputKey);
 };
 
 

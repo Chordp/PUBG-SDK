@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,12 +13,12 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function CinematicCamera.CineCameraActor.GetCineCameraComponent
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // class UCineCameraComponent*    ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
-// FunctionAddress:0x00007FF63AA5AE20              		 offset:376ae20                       
+// FunctionAddress:0x00007FF62A325320              		 offset:1855320                       
 
-class UCineCameraComponent* ACineCameraActor::STATIC_GetCineCameraComponent()
+class UCineCameraComponent* ACineCameraActor::GetCineCameraComponent()
 {
 	static UFunction* fn;
 
@@ -39,12 +39,12 @@ class UCineCameraComponent* ACineCameraActor::STATIC_GetCineCameraComponent()
 
 
 // Function CinematicCamera.CineCameraComponent.GetVerticalFieldOfView
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63AA5AE70              		 offset:376ae70                       
+// FunctionAddress:0x00007FF62D7695D0              		 offset:4c995d0                       
 
-float UCineCameraComponent::STATIC_GetVerticalFieldOfView()
+float UCineCameraComponent::GetVerticalFieldOfView()
 {
 	static UFunction* fn;
 
@@ -65,12 +65,12 @@ float UCineCameraComponent::STATIC_GetVerticalFieldOfView()
 
 
 // Function CinematicCamera.CineCameraComponent.GetHorizontalFieldOfView
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63AA5AE40              		 offset:376ae40                       
+// FunctionAddress:0x00007FF629FDEA50              		 offset:150ea50                       
 
-float UCineCameraComponent::STATIC_GetHorizontalFieldOfView()
+float UCineCameraComponent::GetHorizontalFieldOfView()
 {
 	static UFunction* fn;
 

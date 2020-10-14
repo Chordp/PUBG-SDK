@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,8 +13,8 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function BP_MasteryPose_VehicleLean.BP_MasteryPose_VehicleLean_C.UserConstructionScript
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void ABP_MasteryPose_VehicleLean_C::UserConstructionScript()
 {
@@ -34,8 +34,8 @@ void ABP_MasteryPose_VehicleLean_C::UserConstructionScript()
 
 
 // Function BP_MasteryPose_VehicleLean.BP_MasteryPose_VehicleLean_C.ShowLobbyEffects
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void ABP_MasteryPose_VehicleLean_C::ShowLobbyEffects()
 {
@@ -55,10 +55,10 @@ void ABP_MasteryPose_VehicleLean_C::ShowLobbyEffects()
 
 
 // Function BP_MasteryPose_VehicleLean.BP_MasteryPose_VehicleLean_C.ReceiveTick
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Event, Public, BlueprintEvent)
 // Parameters:
 // float*                         DeltaSeconds                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void ABP_MasteryPose_VehicleLean_C::ReceiveTick(float* DeltaSeconds)
 {
@@ -79,8 +79,8 @@ void ABP_MasteryPose_VehicleLean_C::ReceiveTick(float* DeltaSeconds)
 
 
 // Function BP_MasteryPose_VehicleLean.BP_MasteryPose_VehicleLean_C.ReceiveBeginPlay
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Event, Protected, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void ABP_MasteryPose_VehicleLean_C::ReceiveBeginPlay()
 {
@@ -100,10 +100,10 @@ void ABP_MasteryPose_VehicleLean_C::ReceiveBeginPlay()
 
 
 // Function BP_MasteryPose_VehicleLean.BP_MasteryPose_VehicleLean_C.ExecuteUbergraph_BP_MasteryPose_VehicleLean
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// ()
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void ABP_MasteryPose_VehicleLean_C::ExecuteUbergraph_BP_MasteryPose_VehicleLean(int* EntryPoint)
 {

@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -65,6 +65,30 @@ bool UObject::IsA(UClass* cmp) const
 
 	return false;
 }
+
+// Function CoreUObject.Object.ExecuteUbergraph
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+
+void UObject::ExecuteUbergraph(int EntryPoint)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function CoreUObject.Object.ExecuteUbergraph"));
+
+	UObject_ExecuteUbergraph_Params params;
+	params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
 
 }
 

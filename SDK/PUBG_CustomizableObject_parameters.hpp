@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -57,12 +57,14 @@ struct UCustomizableObjectInstance_SetProjectorValue_Params
 	float                                              ScaleZ;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              Angle;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 	ECustomizableObjectProjectorType                   ProjectionType;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                RangeIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function CustomizableObject.CustomizableObjectInstance.SetProjectorParameterType
 struct UCustomizableObjectInstance_SetProjectorParameterType_Params
 {
 	struct FString                                     ParamName;                                                // (Parm, ZeroConstructor)
+	int                                                RangeIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	ECustomizableObjectProjectorType                   Type;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -71,6 +73,7 @@ struct UCustomizableObjectInstance_SetIntParameterSelectedOption_Params
 {
 	struct FString                                     ParamName;                                                // (Parm, ZeroConstructor)
 	struct FString                                     SelectedOptionName;                                       // (Parm, ZeroConstructor)
+	int                                                RangeIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function CustomizableObject.CustomizableObjectInstance.SetFloatParameterSelectedOption
@@ -78,12 +81,20 @@ struct UCustomizableObjectInstance_SetFloatParameterSelectedOption_Params
 {
 	struct FString                                     FloatParamName;                                           // (Parm, ZeroConstructor)
 	float                                              FloatValue;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                RangeIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function CustomizableObject.CustomizableObjectInstance.SetCurrentState
 struct UCustomizableObjectInstance_SetCurrentState_Params
 {
 	struct FString                                     StateName;                                                // (Parm, ZeroConstructor)
+};
+
+// Function CustomizableObject.CustomizableObjectInstance.SetColorParameterSelectedOption
+struct UCustomizableObjectInstance_SetColorParameterSelectedOption_Params
+{
+	struct FString                                     ColorParamName;                                           // (Parm, ZeroConstructor)
+	struct FLinearColor                                ColorValue;                                               // (Parm, IsPlainOldData)
 };
 
 // Function CustomizableObject.CustomizableObjectInstance.SetBoolParameterSelectedOption
@@ -100,11 +111,54 @@ struct UCustomizableObjectInstance_IsParameterRelevant_Params
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
+// Function CustomizableObject.CustomizableObjectInstance.GetProjectorValue
+struct UCustomizableObjectInstance_GetProjectorValue_Params
+{
+	struct FString                                     ProjectorParamName;                                       // (Parm, ZeroConstructor)
+	struct FVector                                     OutPos;                                                   // (Parm, OutParm, IsPlainOldData)
+	struct FVector                                     OutDir;                                                   // (Parm, OutParm, IsPlainOldData)
+	struct FVector                                     OutUp;                                                    // (Parm, OutParm, IsPlainOldData)
+	struct FVector                                     OutScale;                                                 // (Parm, OutParm, IsPlainOldData)
+	float                                              OutAngle;                                                 // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+	ECustomizableObjectProjectorType                   OutType;                                                  // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+	int                                                RangeIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function CustomizableObject.CustomizableObjectInstance.GetProjectorUp
+struct UCustomizableObjectInstance_GetProjectorUp_Params
+{
+	struct FString                                     ParamName;                                                // (Parm, ZeroConstructor)
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function CustomizableObject.CustomizableObjectInstance.GetProjectorScale
+struct UCustomizableObjectInstance_GetProjectorScale_Params
+{
+	struct FString                                     ParamName;                                                // (Parm, ZeroConstructor)
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function CustomizableObject.CustomizableObjectInstance.GetProjectorPosition
+struct UCustomizableObjectInstance_GetProjectorPosition_Params
+{
+	struct FString                                     ParamName;                                                // (Parm, ZeroConstructor)
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
 // Function CustomizableObject.CustomizableObjectInstance.GetProjectorParameterType
 struct UCustomizableObjectInstance_GetProjectorParameterType_Params
 {
 	struct FString                                     ParamName;                                                // (Parm, ZeroConstructor)
+	int                                                RangeIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	ECustomizableObjectProjectorType                   ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function CustomizableObject.CustomizableObjectInstance.GetProjectorDirection
+struct UCustomizableObjectInstance_GetProjectorDirection_Params
+{
+	struct FString                                     ParamName;                                                // (Parm, ZeroConstructor)
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
 // Function CustomizableObject.CustomizableObjectInstance.GetParameterDescription
@@ -119,6 +173,7 @@ struct UCustomizableObjectInstance_GetParameterDescription_Params
 struct UCustomizableObjectInstance_GetIntParameterSelectedOption_Params
 {
 	struct FString                                     ParamName;                                                // (Parm, ZeroConstructor)
+	int                                                RangeIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
@@ -126,6 +181,7 @@ struct UCustomizableObjectInstance_GetIntParameterSelectedOption_Params
 struct UCustomizableObjectInstance_GetFloatParameterSelectedOption_Params
 {
 	struct FString                                     FloatParamName;                                           // (Parm, ZeroConstructor)
+	int                                                RangeIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
@@ -133,6 +189,13 @@ struct UCustomizableObjectInstance_GetFloatParameterSelectedOption_Params
 struct UCustomizableObjectInstance_GetCurrentState_Params
 {
 	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
+// Function CustomizableObject.CustomizableObjectInstance.GetColorParameterSelectedOption
+struct UCustomizableObjectInstance_GetColorParameterSelectedOption_Params
+{
+	struct FString                                     ColorParamName;                                           // (Parm, ZeroConstructor)
+	struct FLinearColor                                ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
 // Function CustomizableObject.CustomizableObjectInstance.GetBoolParameterSelectedOption
@@ -175,6 +238,22 @@ struct UCustomizableObjectInstance_FindBoolParameterNameIndex_Params
 {
 	struct FString                                     ParamName;                                                // (Parm, ZeroConstructor)
 	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function CustomizableObject.CustomizableObjectInstance.Clone
+struct UCustomizableObjectInstance_Clone_Params
+{
+	class UCustomizableObjectInstance*                 ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function CustomizableObject.CustomizableObject.UnloadMaskOutCache
+struct UCustomizableObject_UnloadMaskOutCache_Params
+{
+};
+
+// Function CustomizableObject.CustomizableObject.LoadMaskOutCache
+struct UCustomizableObject_LoadMaskOutCache_Params
+{
 };
 
 // Function CustomizableObject.CustomizableObject.GetStateUIMetadataFromIndex
@@ -287,6 +366,66 @@ struct UCustomizableObject_FindParameter_Params
 {
 	struct FString                                     Name;                                                     // (Parm, ZeroConstructor)
 	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function CustomizableObject.CustomizableObject.CreateInstance
+struct UCustomizableObject_CreateInstance_Params
+{
+	class UCustomizableObjectInstance*                 ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function CustomizableObject.CustomizableObjectSystem.GetTotalInstances
+struct UCustomizableObjectSystem_GetTotalInstances_Params
+{
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function CustomizableObject.CustomizableObjectSystem.GetTextureMemoryUsed
+struct UCustomizableObjectSystem_GetTextureMemoryUsed_Params
+{
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function CustomizableObject.CustomizableObjectSystem.GetPluginVersion
+struct UCustomizableObjectSystem_GetPluginVersion_Params
+{
+	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
+// Function CustomizableObject.CustomizableObjectSystem.GetNumPendingInstances
+struct UCustomizableObjectSystem_GetNumPendingInstances_Params
+{
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function CustomizableObject.CustomizableObjectSystem.GetNumInstances
+struct UCustomizableObjectSystem_GetNumInstances_Params
+{
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function CustomizableObject.CustomizableObjectSystem.GetInstance
+struct UCustomizableObjectSystem_GetInstance_Params
+{
+	class UCustomizableObjectSystem*                   ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function CustomizableObject.CustomizableObjectSystem.GetAverageBuildTime
+struct UCustomizableObjectSystem_GetAverageBuildTime_Params
+{
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function CustomizableObject.CustomizableObjectSystem.AreEnginePatchesPresent
+struct UCustomizableObjectSystem_AreEnginePatchesPresent_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function CustomizableObject.InstanceUpdatedHelper.DelegatedCallback
+struct UInstanceUpdatedHelper_DelegatedCallback_Params
+{
+	class UCustomizableObjectInstance*                 Instance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

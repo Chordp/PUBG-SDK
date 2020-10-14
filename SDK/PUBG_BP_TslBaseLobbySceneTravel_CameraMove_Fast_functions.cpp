@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,8 +13,8 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function BP_TslBaseLobbySceneTravel_CameraMove_Fast.BP_TslBaseLobbySceneTravel_CameraMove_Fast_C.UserConstructionScript
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void ABP_TslBaseLobbySceneTravel_CameraMove_Fast_C::UserConstructionScript()
 {
@@ -34,8 +34,8 @@ void ABP_TslBaseLobbySceneTravel_CameraMove_Fast_C::UserConstructionScript()
 
 
 // Function BP_TslBaseLobbySceneTravel_CameraMove_Fast.BP_TslBaseLobbySceneTravel_CameraMove_Fast_C.CameraMove__FinishedFunc
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void ABP_TslBaseLobbySceneTravel_CameraMove_Fast_C::CameraMove__FinishedFunc()
 {
@@ -55,8 +55,8 @@ void ABP_TslBaseLobbySceneTravel_CameraMove_Fast_C::CameraMove__FinishedFunc()
 
 
 // Function BP_TslBaseLobbySceneTravel_CameraMove_Fast.BP_TslBaseLobbySceneTravel_CameraMove_Fast_C.CameraMove__UpdateFunc
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void ABP_TslBaseLobbySceneTravel_CameraMove_Fast_C::CameraMove__UpdateFunc()
 {
@@ -76,8 +76,8 @@ void ABP_TslBaseLobbySceneTravel_CameraMove_Fast_C::CameraMove__UpdateFunc()
 
 
 // Function BP_TslBaseLobbySceneTravel_CameraMove_Fast.BP_TslBaseLobbySceneTravel_CameraMove_Fast_C.OnStartTravel
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Event, Public, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void ABP_TslBaseLobbySceneTravel_CameraMove_Fast_C::OnStartTravel()
 {
@@ -97,10 +97,10 @@ void ABP_TslBaseLobbySceneTravel_CameraMove_Fast_C::OnStartTravel()
 
 
 // Function BP_TslBaseLobbySceneTravel_CameraMove_Fast.BP_TslBaseLobbySceneTravel_CameraMove_Fast_C.ExecuteUbergraph_BP_TslBaseLobbySceneTravel_CameraMove_Fast
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void ABP_TslBaseLobbySceneTravel_CameraMove_Fast_C::ExecuteUbergraph_BP_TslBaseLobbySceneTravel_CameraMove_Fast(int* EntryPoint)
 {

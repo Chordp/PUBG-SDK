@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -31,6 +31,26 @@ struct UABP_Weapon_Kar98k_C_Handle_ReloadByOne_Start_Params
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.Handle_FireCycle
 struct UABP_Weapon_Kar98k_C_Handle_FireCycle_Params
+{
+};
+
+// Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_18C910A44F9008AC742A4E9E701EA7F8
+struct UABP_Weapon_Kar98k_C_EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_18C910A44F9008AC742A4E9E701EA7F8_Params
+{
+};
+
+// Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_033A2398482A3043781C368D6E04B471
+struct UABP_Weapon_Kar98k_C_EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_033A2398482A3043781C368D6E04B471_Params
+{
+};
+
+// Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_43A4B63640B00C90EE186E9BCF655F5A
+struct UABP_Weapon_Kar98k_C_EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_43A4B63640B00C90EE186E9BCF655F5A_Params
+{
+};
+
+// Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_291D982749D2C15B5A42458E533D3353
+struct UABP_Weapon_Kar98k_C_EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_291D982749D2C15B5A42458E533D3353_Params
 {
 };
 

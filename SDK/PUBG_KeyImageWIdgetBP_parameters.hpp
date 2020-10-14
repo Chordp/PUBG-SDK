@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,18 +13,6 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Parameters
 //---------------------------------------------------------------------------
-
-// Function KeyImageWIdgetBP.KeyImageWIdgetBP_C.PreConstruct
-struct UKeyImageWIdgetBP_C_PreConstruct_Params
-{
-	bool                                               IsDesignTime;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function KeyImageWIdgetBP.KeyImageWIdgetBP_C.ExecuteUbergraph_KeyImageWIdgetBP
-struct UKeyImageWIdgetBP_C_ExecuteUbergraph_KeyImageWIdgetBP_Params
-{
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-};
 
 }
 

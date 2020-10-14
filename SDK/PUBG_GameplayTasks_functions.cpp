@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,10 +13,10 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function GameplayTasks.GameplayTask.ReadyForActivation
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF63AA64310              		 offset:3774310                       
+// (Final, Native, Public, BlueprintCallable)
+// FunctionAddress:0x00007FF62C37E390              		 offset:38ae390                       
 
-void UGameplayTask::STATIC_ReadyForActivation()
+void UGameplayTask::ReadyForActivation()
 {
 	static UFunction* fn;
 
@@ -35,10 +35,10 @@ void UGameplayTask::STATIC_ReadyForActivation()
 
 
 // DelegateFunction GameplayTasks.GameplayTask.GenericGameplayTaskDelegate__DelegateSignature
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (MulticastDelegate, Public, Delegate)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
-void UGameplayTask::STATIC_GenericGameplayTaskDelegate__DelegateSignature()
+void UGameplayTask::GenericGameplayTaskDelegate__DelegateSignature()
 {
 	static UFunction* fn;
 
@@ -48,7 +48,6 @@ void UGameplayTask::STATIC_GenericGameplayTaskDelegate__DelegateSignature()
 	UGameplayTask_GenericGameplayTaskDelegate__DelegateSignature_Params params;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -57,10 +56,10 @@ void UGameplayTask::STATIC_GenericGameplayTaskDelegate__DelegateSignature()
 
 
 // Function GameplayTasks.GameplayTask.EndTask
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF63AA63FC0              		 offset:3773fc0                       
+// (Final, Native, Public, BlueprintCallable)
+// FunctionAddress:0x00007FF62BAE5D80              		 offset:3015d80                       
 
-void UGameplayTask::STATIC_EndTask()
+void UGameplayTask::EndTask()
 {
 	static UFunction* fn;
 
@@ -78,18 +77,28 @@ void UGameplayTask::STATIC_EndTask()
 }
 
 
-// Function GameplayTasks.GameplayTask.ReadyForActivation
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF63AA64310              		 offset:3774310                       
+// Function GameplayTasks.GameplayTask_ClaimResource.ClaimResources
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// TScriptInterface<class UGameplayTaskOwnerInterface> InTaskOwner                    (Parm, ZeroConstructor, IsPlainOldData)
+// TArray<class UClass*>          ResourceClasses                (Parm, ZeroConstructor)
+// unsigned char                  Priority                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// struct FName                   TaskInstanceName               (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// class UGameplayTask_ClaimResource* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF62BA3EA00              		 offset:2f6ea00                       
 
-void UGameplayTask_ClaimResource::STATIC_ReadyForActivation()
+class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::STATIC_ClaimResources(const TScriptInterface<class UGameplayTaskOwnerInterface>& InTaskOwner, TArray<class UClass*> ResourceClasses, unsigned char Priority, const struct FName& TaskInstanceName)
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function GameplayTasks.GameplayTask.ReadyForActivation"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function GameplayTasks.GameplayTask_ClaimResource.ClaimResources"));
 
-	UGameplayTask_ClaimResource_ReadyForActivation_Params params;
+	UGameplayTask_ClaimResource_ClaimResources_Params params;
+	params.InTaskOwner = InTaskOwner;
+	params.ResourceClasses = ResourceClasses;
+	params.Priority = Priority;
+	params.TaskInstanceName = TaskInstanceName;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -97,21 +106,33 @@ void UGameplayTask_ClaimResource::STATIC_ReadyForActivation()
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
 }
 
 
-// DelegateFunction GameplayTasks.GameplayTask.GenericGameplayTaskDelegate__DelegateSignature
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// Function GameplayTasks.GameplayTask_ClaimResource.ClaimResource
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// TScriptInterface<class UGameplayTaskOwnerInterface> InTaskOwner                    (Parm, ZeroConstructor, IsPlainOldData)
+// class UClass*                  ResourceClass                  (Parm, ZeroConstructor, IsPlainOldData)
+// unsigned char                  Priority                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// struct FName                   TaskInstanceName               (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// class UGameplayTask_ClaimResource* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF628EA7930              		 offset:3d7930                        
 
-void UGameplayTask_ClaimResource::STATIC_GenericGameplayTaskDelegate__DelegateSignature()
+class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::STATIC_ClaimResource(const TScriptInterface<class UGameplayTaskOwnerInterface>& InTaskOwner, class UClass* ResourceClass, unsigned char Priority, const struct FName& TaskInstanceName)
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("DelegateFunction GameplayTasks.GameplayTask.GenericGameplayTaskDelegate__DelegateSignature"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function GameplayTasks.GameplayTask_ClaimResource.ClaimResource"));
 
-	UGameplayTask_ClaimResource_GenericGameplayTaskDelegate__DelegateSignature_Params params;
+	UGameplayTask_ClaimResource_ClaimResource_Params params;
+	params.InTaskOwner = InTaskOwner;
+	params.ResourceClass = ResourceClass;
+	params.Priority = Priority;
+	params.TaskInstanceName = TaskInstanceName;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -119,33 +140,13 @@ void UGameplayTask_ClaimResource::STATIC_GenericGameplayTaskDelegate__DelegateSi
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
-}
 
-
-// Function GameplayTasks.GameplayTask.EndTask
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF63AA63FC0              		 offset:3773fc0                       
-
-void UGameplayTask_ClaimResource::STATIC_EndTask()
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function GameplayTasks.GameplayTask.EndTask"));
-
-	UGameplayTask_ClaimResource_EndTask_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
+	return params.ReturnValue;
 }
 
 
 // Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected, Delegate, NetServer)
+// (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
 // TScriptInterface<class UGameplayTaskOwnerInterface> TaskOwner                      (Parm, ZeroConstructor, IsPlainOldData)
 // struct FVector                 SpawnLocation                  (Parm, IsPlainOldData)
@@ -153,7 +154,7 @@ void UGameplayTask_ClaimResource::STATIC_EndTask()
 // class UClass*                  Class                          (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bSpawnOnlyOnAuthority          (Parm, ZeroConstructor, IsPlainOldData)
 // class UGameplayTask_SpawnActor* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63AA64330              		 offset:3774330                       
+// FunctionAddress:0x00007FF62A1878C0              		 offset:16b78c0                       
 
 class UGameplayTask_SpawnActor* UGameplayTask_SpawnActor::STATIC_SpawnActor(const TScriptInterface<class UGameplayTaskOwnerInterface>& TaskOwner, const struct FVector& SpawnLocation, const struct FRotator& SpawnRotation, class UClass* Class, bool bSpawnOnlyOnAuthority)
 {
@@ -181,13 +182,13 @@ class UGameplayTask_SpawnActor* UGameplayTask_SpawnActor::STATIC_SpawnActor(cons
 
 
 // Function GameplayTasks.GameplayTask_SpawnActor.FinishSpawningActor
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Native, Public, BlueprintCallable)
 // Parameters:
 // class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // class AActor*                  SpawnedActor                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63AA63FE0              		 offset:3773fe0                       
+// FunctionAddress:0x00007FF628B852E0              		 offset:b52e0                         
 
-void UGameplayTask_SpawnActor::STATIC_FinishSpawningActor(class UObject* WorldContextObject, class AActor* SpawnedActor)
+void UGameplayTask_SpawnActor::FinishSpawningActor(class UObject* WorldContextObject, class AActor* SpawnedActor)
 {
 	static UFunction* fn;
 
@@ -208,14 +209,14 @@ void UGameplayTask_SpawnActor::STATIC_FinishSpawningActor(class UObject* WorldCo
 
 
 // Function GameplayTasks.GameplayTask_SpawnActor.BeginSpawningActor
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
+// (Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
 // class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // class AActor*                  SpawnedActor                   (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63AA63BE0              		 offset:3773be0                       
+// FunctionAddress:0x00007FF629CE83E0              		 offset:12183e0                       
 
-bool UGameplayTask_SpawnActor::STATIC_BeginSpawningActor(class UObject* WorldContextObject, class AActor** SpawnedActor)
+bool UGameplayTask_SpawnActor::BeginSpawningActor(class UObject* WorldContextObject, class AActor** SpawnedActor)
 {
 	static UFunction* fn;
 
@@ -240,10 +241,10 @@ bool UGameplayTask_SpawnActor::STATIC_BeginSpawningActor(class UObject* WorldCon
 
 
 // DelegateFunction GameplayTasks.GameplayTask_TimeLimitedExecution.TaskFinishDelegate__DelegateSignature
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (MulticastDelegate, Public, Delegate)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
-void UGameplayTask_TimeLimitedExecution::STATIC_TaskFinishDelegate__DelegateSignature()
+void UGameplayTask_TimeLimitedExecution::TaskFinishDelegate__DelegateSignature()
 {
 	static UFunction* fn;
 
@@ -253,7 +254,6 @@ void UGameplayTask_TimeLimitedExecution::STATIC_TaskFinishDelegate__DelegateSign
 	UGameplayTask_TimeLimitedExecution_TaskFinishDelegate__DelegateSignature_Params params;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -262,13 +262,13 @@ void UGameplayTask_TimeLimitedExecution::STATIC_TaskFinishDelegate__DelegateSign
 
 
 // Function GameplayTasks.GameplayTask_WaitDelay.TaskWaitDelay
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected, Delegate)
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // TScriptInterface<class UGameplayTaskOwnerInterface> TaskOwner                      (Parm, ZeroConstructor, IsPlainOldData)
 // float                          Time                           (Parm, ZeroConstructor, IsPlainOldData)
 // unsigned char                  Priority                       (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 // class UGameplayTask_WaitDelay* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63AA644E0              		 offset:37744e0                       
+// FunctionAddress:0x00007FF6290C0B40              		 offset:5f0b40                        
 
 class UGameplayTask_WaitDelay* UGameplayTask_WaitDelay::STATIC_TaskWaitDelay(const TScriptInterface<class UGameplayTaskOwnerInterface>& TaskOwner, float Time, unsigned char Priority)
 {
@@ -294,10 +294,10 @@ class UGameplayTask_WaitDelay* UGameplayTask_WaitDelay::STATIC_TaskWaitDelay(con
 
 
 // DelegateFunction GameplayTasks.GameplayTask_WaitDelay.TaskDelayDelegate__DelegateSignature
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (MulticastDelegate, Public, Delegate)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
-void UGameplayTask_WaitDelay::STATIC_TaskDelayDelegate__DelegateSignature()
+void UGameplayTask_WaitDelay::TaskDelayDelegate__DelegateSignature()
 {
 	static UFunction* fn;
 
@@ -307,7 +307,6 @@ void UGameplayTask_WaitDelay::STATIC_TaskDelayDelegate__DelegateSignature()
 	UGameplayTask_WaitDelay_TaskDelayDelegate__DelegateSignature_Params params;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -316,10 +315,10 @@ void UGameplayTask_WaitDelay::STATIC_TaskDelayDelegate__DelegateSignature()
 
 
 // Function GameplayTasks.GameplayTasksComponent.OnRep_SimulatedTasks
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF63AA642F0              		 offset:37742f0                       
+// (Final, Native, Public)
+// FunctionAddress:0x00007FF62969F120              		 offset:bcf120                        
 
-void UGameplayTasksComponent::STATIC_OnRep_SimulatedTasks()
+void UGameplayTasksComponent::OnRep_SimulatedTasks()
 {
 	static UFunction* fn;
 
@@ -338,7 +337,7 @@ void UGameplayTasksComponent::STATIC_OnRep_SimulatedTasks()
 
 
 // Function GameplayTasks.GameplayTasksComponent.K2_RunGameplayTask
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, HasOutParms)
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // TScriptInterface<class UGameplayTaskOwnerInterface> TaskOwner                      (Parm, ZeroConstructor, IsPlainOldData)
 // class UGameplayTask*           Task                           (Parm, ZeroConstructor, IsPlainOldData)
@@ -346,7 +345,7 @@ void UGameplayTasksComponent::STATIC_OnRep_SimulatedTasks()
 // TArray<class UClass*>          AdditionalRequiredResources    (Parm, ZeroConstructor)
 // TArray<class UClass*>          AdditionalClaimedResources     (Parm, ZeroConstructor)
 // EGameplayTaskRunResult         ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63AA640B0              		 offset:37740b0                       
+// FunctionAddress:0x00007FF629EB0200              		 offset:13e0200                       
 
 EGameplayTaskRunResult UGameplayTasksComponent::STATIC_K2_RunGameplayTask(const TScriptInterface<class UGameplayTaskOwnerInterface>& TaskOwner, class UGameplayTask* Task, unsigned char Priority, TArray<class UClass*> AdditionalRequiredResources, TArray<class UClass*> AdditionalClaimedResources)
 {

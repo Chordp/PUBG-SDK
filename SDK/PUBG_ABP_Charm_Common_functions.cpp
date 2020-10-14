@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,8 +13,8 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function ABP_Charm_Common.ABP_Charm_Common_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Charm_Common_AnimGraphNode_ModifyBone_EE8E4B654952686C402109A27DEC775E
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UABP_Charm_Common_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Charm_Common_AnimGraphNode_ModifyBone_EE8E4B654952686C402109A27DEC775E()
 {
@@ -34,8 +34,8 @@ void UABP_Charm_Common_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Charm_
 
 
 // Function ABP_Charm_Common.ABP_Charm_Common_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Charm_Common_AnimGraphNode_RigidBody_8538612846363ECDC0868F81EE414107
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UABP_Charm_Common_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Charm_Common_AnimGraphNode_RigidBody_8538612846363ECDC0868F81EE414107()
 {
@@ -55,10 +55,10 @@ void UABP_Charm_Common_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Charm_
 
 
 // Function ABP_Charm_Common.ABP_Charm_Common_C.ExecuteUbergraph_ABP_Charm_Common
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// ()
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UABP_Charm_Common_C::ExecuteUbergraph_ABP_Charm_Common(int* EntryPoint)
 {

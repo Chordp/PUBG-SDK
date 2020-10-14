@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,11 +13,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function UiReplayList.UiReplayList_C.GetIndexFromRegionName
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FString*                RegionName                     (Parm, ZeroConstructor)
 // int                            Array_Index                    (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::GetIndexFromRegionName(struct FString* RegionName, int* Array_Index)
 {
@@ -41,10 +41,10 @@ void UUiReplayList_C::GetIndexFromRegionName(struct FString* RegionName, int* Ar
 
 
 // Function UiReplayList.UiReplayList_C.UpdateReplayList_Impl
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FString*                RegionOrLocal                  (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::UpdateReplayList_Impl(struct FString* RegionOrLocal)
 {
@@ -65,10 +65,10 @@ void UUiReplayList_C::UpdateReplayList_Impl(struct FString* RegionOrLocal)
 
 
 // Function UiReplayList.UiReplayList_C.UpdateRegionButtonColors
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int*                           Index_                         (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::UpdateRegionButtonColors(int* Index_)
 {
@@ -89,8 +89,8 @@ void UUiReplayList_C::UpdateRegionButtonColors(int* Index_)
 
 
 // Function UiReplayList.UiReplayList_C.ChangeCloseButtonForTest
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::ChangeCloseButtonForTest()
 {
@@ -110,8 +110,8 @@ void UUiReplayList_C::ChangeCloseButtonForTest()
 
 
 // Function UiReplayList.UiReplayList_C.ResetRecorderStatistics
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::ResetRecorderStatistics()
 {
@@ -131,8 +131,8 @@ void UUiReplayList_C::ResetRecorderStatistics()
 
 
 // Function UiReplayList.UiReplayList_C.ResetSummary
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::ResetSummary()
 {
@@ -152,10 +152,10 @@ void UUiReplayList_C::ResetSummary()
 
 
 // Function UiReplayList.UiReplayList_C.CheckReplayBusyStatus
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                           bIsReplayBusy                  (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::CheckReplayBusyStatus(bool* bIsReplayBusy)
 {
@@ -178,10 +178,10 @@ void UUiReplayList_C::CheckReplayBusyStatus(bool* bIsReplayBusy)
 
 
 // Function UiReplayList.UiReplayList_C.UpdateRecorderStatistics
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FTslReplaySummary*      inReplaySummary                (Parm)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::UpdateRecorderStatistics(struct FTslReplaySummary* inReplaySummary)
 {
@@ -202,10 +202,10 @@ void UUiReplayList_C::UpdateRecorderStatistics(struct FTslReplaySummary* inRepla
 
 
 // Function UiReplayList.UiReplayList_C.UpdateTeamText
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FTslReplaySummary*      inReplaySummary                (Parm)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::UpdateTeamText(struct FTslReplaySummary* inReplaySummary)
 {
@@ -226,10 +226,10 @@ void UUiReplayList_C::UpdateTeamText(struct FTslReplaySummary* inReplaySummary)
 
 
 // Function UiReplayList.UiReplayList_C.SetShouldKeep
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                           bShouldKeep                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::SetShouldKeep(bool bShouldKeep)
 {
@@ -250,10 +250,10 @@ void UUiReplayList_C::SetShouldKeep(bool bShouldKeep)
 
 
 // Function UiReplayList.UiReplayList_C.UpdateReplaySummary
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FTslReplaySummary*      ReplaySummary                  (Parm)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::UpdateReplaySummary(struct FTslReplaySummary* ReplaySummary)
 {
@@ -274,11 +274,11 @@ void UUiReplayList_C::UpdateReplaySummary(struct FTslReplaySummary* ReplaySummar
 
 
 // Function UiReplayList.UiReplayList_C.SetReplayItemToProcess
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FString*                RegionOrLocal                  (Parm, ZeroConstructor)
 // struct FReplayItem*            inReplayItem                   (Parm)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::SetReplayItemToProcess(struct FString* RegionOrLocal, struct FReplayItem* inReplayItem)
 {
@@ -300,8 +300,8 @@ void UUiReplayList_C::SetReplayItemToProcess(struct FString* RegionOrLocal, stru
 
 
 // Function UiReplayList.UiReplayList_C.HidePageWidget
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::HidePageWidget()
 {
@@ -321,8 +321,8 @@ void UUiReplayList_C::HidePageWidget()
 
 
 // Function UiReplayList.UiReplayList_C.ShowPageWidget
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::ShowPageWidget()
 {
@@ -342,8 +342,8 @@ void UUiReplayList_C::ShowPageWidget()
 
 
 // Function UiReplayList.UiReplayList_C.ClearReplayList
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::ClearReplayList()
 {
@@ -363,8 +363,8 @@ void UUiReplayList_C::ClearReplayList()
 
 
 // Function UiReplayList.UiReplayList_C.Construct
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::Construct()
 {
@@ -384,8 +384,8 @@ void UUiReplayList_C::Construct()
 
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_262_K2Node_ComponentBoundEvent_40_OnButtonClickedEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::BndEvt__Button_262_K2Node_ComponentBoundEvent_40_OnButtonClickedEvent__DelegateSignature()
 {
@@ -405,8 +405,8 @@ void UUiReplayList_C::BndEvt__Button_262_K2Node_ComponentBoundEvent_40_OnButtonC
 
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_AS_K2Node_ComponentBoundEvent_538_OnButtonClickedEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::BndEvt__Button_AS_K2Node_ComponentBoundEvent_538_OnButtonClickedEvent__DelegateSignature()
 {
@@ -426,8 +426,8 @@ void UUiReplayList_C::BndEvt__Button_AS_K2Node_ComponentBoundEvent_538_OnButtonC
 
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_EU_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::BndEvt__Button_EU_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature()
 {
@@ -447,8 +447,8 @@ void UUiReplayList_C::BndEvt__Button_EU_K2Node_ComponentBoundEvent_6_OnButtonCli
 
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_NA_K2Node_ComponentBoundEvent_36_OnButtonClickedEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::BndEvt__Button_NA_K2Node_ComponentBoundEvent_36_OnButtonClickedEvent__DelegateSignature()
 {
@@ -468,8 +468,8 @@ void UUiReplayList_C::BndEvt__Button_NA_K2Node_ComponentBoundEvent_36_OnButtonCl
 
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_SA_K2Node_ComponentBoundEvent_57_OnButtonClickedEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::BndEvt__Button_SA_K2Node_ComponentBoundEvent_57_OnButtonClickedEvent__DelegateSignature()
 {
@@ -489,8 +489,8 @@ void UUiReplayList_C::BndEvt__Button_SA_K2Node_ComponentBoundEvent_57_OnButtonCl
 
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_SEA_K2Node_ComponentBoundEvent_79_OnButtonClickedEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::BndEvt__Button_SEA_K2Node_ComponentBoundEvent_79_OnButtonClickedEvent__DelegateSignature()
 {
@@ -510,8 +510,8 @@ void UUiReplayList_C::BndEvt__Button_SEA_K2Node_ComponentBoundEvent_79_OnButtonC
 
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_OC_K2Node_ComponentBoundEvent_102_OnButtonClickedEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::BndEvt__Button_OC_K2Node_ComponentBoundEvent_102_OnButtonClickedEvent__DelegateSignature()
 {
@@ -531,8 +531,8 @@ void UUiReplayList_C::BndEvt__Button_OC_K2Node_ComponentBoundEvent_102_OnButtonC
 
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_Local_K2Node_ComponentBoundEvent_130_OnButtonClickedEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::BndEvt__Button_Local_K2Node_ComponentBoundEvent_130_OnButtonClickedEvent__DelegateSignature()
 {
@@ -552,8 +552,8 @@ void UUiReplayList_C::BndEvt__Button_Local_K2Node_ComponentBoundEvent_130_OnButt
 
 
 // Function UiReplayList.UiReplayList_C.BndEvt__PrevButton_K2Node_ComponentBoundEvent_670_OnButtonClickedEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::BndEvt__PrevButton_K2Node_ComponentBoundEvent_670_OnButtonClickedEvent__DelegateSignature()
 {
@@ -573,8 +573,8 @@ void UUiReplayList_C::BndEvt__PrevButton_K2Node_ComponentBoundEvent_670_OnButton
 
 
 // Function UiReplayList.UiReplayList_C.BndEvt__NexButton_K2Node_ComponentBoundEvent_696_OnButtonClickedEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::BndEvt__NexButton_K2Node_ComponentBoundEvent_696_OnButtonClickedEvent__DelegateSignature()
 {
@@ -594,8 +594,8 @@ void UUiReplayList_C::BndEvt__NexButton_K2Node_ComponentBoundEvent_696_OnButtonC
 
 
 // Function UiReplayList.UiReplayList_C.BndEvt__ButtonGo_K2Node_ComponentBoundEvent_217_OnButtonClickedEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::BndEvt__ButtonGo_K2Node_ComponentBoundEvent_217_OnButtonClickedEvent__DelegateSignature()
 {
@@ -615,8 +615,8 @@ void UUiReplayList_C::BndEvt__ButtonGo_K2Node_ComponentBoundEvent_217_OnButtonCl
 
 
 // Function UiReplayList.UiReplayList_C.BndEvt__ButtonExit_K2Node_ComponentBoundEvent_211_OnButtonClickedEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::BndEvt__ButtonExit_K2Node_ComponentBoundEvent_211_OnButtonClickedEvent__DelegateSignature()
 {
@@ -636,8 +636,8 @@ void UUiReplayList_C::BndEvt__ButtonExit_K2Node_ComponentBoundEvent_211_OnButton
 
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_Play_K2Node_ComponentBoundEvent_233_OnButtonClickedEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::BndEvt__Button_Play_K2Node_ComponentBoundEvent_233_OnButtonClickedEvent__DelegateSignature()
 {
@@ -657,8 +657,8 @@ void UUiReplayList_C::BndEvt__Button_Play_K2Node_ComponentBoundEvent_233_OnButto
 
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_Delete_K2Node_ComponentBoundEvent_810_OnButtonClickedEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::BndEvt__Button_Delete_K2Node_ComponentBoundEvent_810_OnButtonClickedEvent__DelegateSignature()
 {
@@ -678,8 +678,8 @@ void UUiReplayList_C::BndEvt__Button_Delete_K2Node_ComponentBoundEvent_810_OnBut
 
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_DeleteOlds_K2Node_ComponentBoundEvent_271_OnButtonClickedEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::BndEvt__Button_DeleteOlds_K2Node_ComponentBoundEvent_271_OnButtonClickedEvent__DelegateSignature()
 {
@@ -699,10 +699,10 @@ void UUiReplayList_C::BndEvt__Button_DeleteOlds_K2Node_ComponentBoundEvent_271_O
 
 
 // Function UiReplayList.UiReplayList_C.OnKeepAndDeleteOldestReplaysDoneEvent
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int*                           Remains                        (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::OnKeepAndDeleteOldestReplaysDoneEvent(int* Remains)
 {
@@ -723,10 +723,10 @@ void UUiReplayList_C::OnKeepAndDeleteOldestReplaysDoneEvent(int* Remains)
 
 
 // Function UiReplayList.UiReplayList_C.OnGetReplaySummaryEvent
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FTslReplaySummary*      ReplaySummary                  (Parm)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::OnGetReplaySummaryEvent(struct FTslReplaySummary* ReplaySummary)
 {
@@ -747,8 +747,8 @@ void UUiReplayList_C::OnGetReplaySummaryEvent(struct FTslReplaySummary* ReplaySu
 
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_JP_K2Node_ComponentBoundEvent_485_OnButtonClickedEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::BndEvt__Button_JP_K2Node_ComponentBoundEvent_485_OnButtonClickedEvent__DelegateSignature()
 {
@@ -768,10 +768,10 @@ void UUiReplayList_C::BndEvt__Button_JP_K2Node_ComponentBoundEvent_485_OnButtonC
 
 
 // Function UiReplayList.UiReplayList_C.ExecuteUbergraph_UiReplayList
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::ExecuteUbergraph_UiReplayList(int* EntryPoint)
 {
@@ -792,8 +792,8 @@ void UUiReplayList_C::ExecuteUbergraph_UiReplayList(int* EntryPoint)
 
 
 // Function UiReplayList.UiReplayList_C.DeleteReplayEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::DeleteReplayEvent__DelegateSignature()
 {
@@ -813,8 +813,8 @@ void UUiReplayList_C::DeleteReplayEvent__DelegateSignature()
 
 
 // Function UiReplayList.UiReplayList_C.QuitApplicationEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::QuitApplicationEvent__DelegateSignature()
 {
@@ -834,8 +834,8 @@ void UUiReplayList_C::QuitApplicationEvent__DelegateSignature()
 
 
 // Function UiReplayList.UiReplayList_C.GoPageEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::GoPageEvent__DelegateSignature()
 {
@@ -855,8 +855,8 @@ void UUiReplayList_C::GoPageEvent__DelegateSignature()
 
 
 // Function UiReplayList.UiReplayList_C.PrevPageEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::PrevPageEvent__DelegateSignature()
 {
@@ -876,8 +876,8 @@ void UUiReplayList_C::PrevPageEvent__DelegateSignature()
 
 
 // Function UiReplayList.UiReplayList_C.NextPageEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::NextPageEvent__DelegateSignature()
 {
@@ -897,10 +897,10 @@ void UUiReplayList_C::NextPageEvent__DelegateSignature()
 
 
 // Function UiReplayList.UiReplayList_C.UpdateReplayList__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FString*                RegionOrLocal                  (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UUiReplayList_C::UpdateReplayList__DelegateSignature(struct FString* RegionOrLocal)
 {

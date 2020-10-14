@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -633,7 +633,7 @@ struct FAnimNode_RandomPlayer : public FAnimNode_Base
 // 0x0000 (0x0030 - 0x0030)
 struct FAnimNode_MeshSpaceRefPose : public FAnimNode_Base
 {
-	struct FExposedValueHandler                        EvaluateGraphExposedInputs;                               // 0x0008(0x0028)
+
 };
 
 // ScriptStruct AnimGraphRuntime.AnimNode_RefPose

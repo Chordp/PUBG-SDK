@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -11,6 +11,27 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Functions
 //---------------------------------------------------------------------------
+
+// Function BP_MasteryPose_Drinks.BP_MasteryPose_Drinks_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+
+void ABP_MasteryPose_Drinks_C::UserConstructionScript()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function BP_MasteryPose_Drinks.BP_MasteryPose_Drinks_C.UserConstructionScript"));
+
+	ABP_MasteryPose_Drinks_C_UserConstructionScript_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
 
 }
 

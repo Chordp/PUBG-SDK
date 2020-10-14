@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -12,13 +12,100 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function MediaAssets.MediaOverlays.GetTexts
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// TArray<struct FMediaPlayerOverlay> OutTexts                       (Parm, OutParm, ZeroConstructor)
+// struct FTimespan               Time                           (Parm)
+// FunctionAddress:0x00007FF62D8ACE10              		 offset:4ddce10                       
+
+void UMediaOverlays::GetTexts(const struct FTimespan& Time, TArray<struct FMediaPlayerOverlay>* OutTexts)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaOverlays.GetTexts"));
+
+	UMediaOverlays_GetTexts_Params params;
+	params.Time = Time;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (OutTexts != nullptr)
+		*OutTexts = params.OutTexts;
+}
+
+
+// Function MediaAssets.MediaOverlays.GetSubtitles
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// TArray<struct FMediaPlayerOverlay> OutSubtitles                   (Parm, OutParm, ZeroConstructor)
+// struct FTimespan               Time                           (Parm)
+// FunctionAddress:0x00007FF6296BD7F0              		 offset:bed7f0                        
+
+void UMediaOverlays::GetSubtitles(const struct FTimespan& Time, TArray<struct FMediaPlayerOverlay>* OutSubtitles)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaOverlays.GetSubtitles"));
+
+	UMediaOverlays_GetSubtitles_Params params;
+	params.Time = Time;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (OutSubtitles != nullptr)
+		*OutSubtitles = params.OutSubtitles;
+}
+
+
+// Function MediaAssets.MediaOverlays.GetCaptions
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// TArray<struct FMediaPlayerOverlay> OutCaptions                    (Parm, OutParm, ZeroConstructor)
+// struct FTimespan               Time                           (Parm)
+// FunctionAddress:0x00007FF629B76900              		 offset:10a6900                       
+
+void UMediaOverlays::GetCaptions(const struct FTimespan& Time, TArray<struct FMediaPlayerOverlay>* OutCaptions)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaOverlays.GetCaptions"));
+
+	UMediaOverlays_GetCaptions_Params params;
+	params.Time = Time;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (OutCaptions != nullptr)
+		*OutCaptions = params.OutCaptions;
+}
+
+
 // Function MediaAssets.MediaPlayer.SupportsSeeking
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6382172F0              		 offset:f272f0                        
+// FunctionAddress:0x00007FF62A235A20              		 offset:1765a20                       
 
-bool UMediaPlayer::STATIC_SupportsSeeking()
+bool UMediaPlayer::SupportsSeeking()
 {
 	static UFunction* fn;
 
@@ -39,12 +126,12 @@ bool UMediaPlayer::STATIC_SupportsSeeking()
 
 
 // Function MediaAssets.MediaPlayer.SupportsScrubbing
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6382172C0              		 offset:f272c0                        
+// FunctionAddress:0x00007FF62A0E4220              		 offset:1614220                       
 
-bool UMediaPlayer::STATIC_SupportsScrubbing()
+bool UMediaPlayer::SupportsScrubbing()
 {
 	static UFunction* fn;
 
@@ -65,14 +152,14 @@ bool UMediaPlayer::STATIC_SupportsScrubbing()
 
 
 // Function MediaAssets.MediaPlayer.SupportsRate
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Private)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          Rate                           (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           Unthinned                      (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6382171F0              		 offset:f271f0                        
+// FunctionAddress:0x00007FF62C8CA6F0              		 offset:3dfa6f0                       
 
-bool UMediaPlayer::STATIC_SupportsRate(float Rate, bool Unthinned)
+bool UMediaPlayer::SupportsRate(float Rate, bool Unthinned)
 {
 	static UFunction* fn;
 
@@ -95,12 +182,12 @@ bool UMediaPlayer::STATIC_SupportsRate(float Rate, bool Unthinned)
 
 
 // Function MediaAssets.MediaPlayer.SetVideoTexture
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class UMediaTexture*           NewTexture                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638217170              		 offset:f27170                        
+// FunctionAddress:0x00007FF628D60F50              		 offset:290f50                        
 
-void UMediaPlayer::STATIC_SetVideoTexture(class UMediaTexture* NewTexture)
+void UMediaPlayer::SetVideoTexture(class UMediaTexture* NewTexture)
 {
 	static UFunction* fn;
 
@@ -120,12 +207,12 @@ void UMediaPlayer::STATIC_SetVideoTexture(class UMediaTexture* NewTexture)
 
 
 // Function MediaAssets.MediaPlayer.SetSoundWave
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class UMediaSoundWave*         NewSoundWave                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6382170F0              		 offset:f270f0                        
+// FunctionAddress:0x00007FF62BC20150              		 offset:3150150                       
 
-void UMediaPlayer::STATIC_SetSoundWave(class UMediaSoundWave* NewSoundWave)
+void UMediaPlayer::SetSoundWave(class UMediaSoundWave* NewSoundWave)
 {
 	static UFunction* fn;
 
@@ -145,13 +232,13 @@ void UMediaPlayer::STATIC_SetSoundWave(class UMediaSoundWave* NewSoundWave)
 
 
 // Function MediaAssets.MediaPlayer.SetRate
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Private)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // float                          Rate                           (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638217060              		 offset:f27060                        
+// FunctionAddress:0x00007FF629A08E50              		 offset:f38e50                        
 
-bool UMediaPlayer::STATIC_SetRate(float Rate)
+bool UMediaPlayer::SetRate(float Rate)
 {
 	static UFunction* fn;
 
@@ -173,12 +260,12 @@ bool UMediaPlayer::STATIC_SetRate(float Rate)
 
 
 // Function MediaAssets.MediaPlayer.SetOverlays
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class UMediaOverlays*          NewOverlays                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638216FE0              		 offset:f26fe0                        
+// FunctionAddress:0x00007FF62A679560              		 offset:1ba9560                       
 
-void UMediaPlayer::STATIC_SetOverlays(class UMediaOverlays* NewOverlays)
+void UMediaPlayer::SetOverlays(class UMediaOverlays* NewOverlays)
 {
 	static UFunction* fn;
 
@@ -198,13 +285,13 @@ void UMediaPlayer::STATIC_SetOverlays(class UMediaOverlays* NewOverlays)
 
 
 // Function MediaAssets.MediaPlayer.SetLooping
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           Looping                        (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638216F50              		 offset:f26f50                        
+// FunctionAddress:0x00007FF62A6A4F80              		 offset:1bd4f80                       
 
-bool UMediaPlayer::STATIC_SetLooping(bool Looping)
+bool UMediaPlayer::SetLooping(bool Looping)
 {
 	static UFunction* fn;
 
@@ -226,12 +313,12 @@ bool UMediaPlayer::STATIC_SetLooping(bool Looping)
 
 
 // Function MediaAssets.MediaPlayer.SetDesiredPlayerName
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FName                   PlayerName                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638216E30              		 offset:f26e30                        
+// FunctionAddress:0x00007FF62AA4B100              		 offset:1f7b100                       
 
-void UMediaPlayer::STATIC_SetDesiredPlayerName(const struct FName& PlayerName)
+void UMediaPlayer::SetDesiredPlayerName(const struct FName& PlayerName)
 {
 	static UFunction* fn;
 
@@ -251,14 +338,14 @@ void UMediaPlayer::STATIC_SetDesiredPlayerName(const struct FName& PlayerName)
 
 
 // Function MediaAssets.MediaPlayer.SelectTrack
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // EMediaPlayerTrack              TrackType                      (Parm, ZeroConstructor, IsPlainOldData)
 // int                            TrackIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638216D70              		 offset:f26d70                        
+// FunctionAddress:0x00007FF629A1DCA0              		 offset:f4dca0                        
 
-bool UMediaPlayer::STATIC_SelectTrack(EMediaPlayerTrack TrackType, int TrackIndex)
+bool UMediaPlayer::SelectTrack(EMediaPlayerTrack TrackType, int TrackIndex)
 {
 	static UFunction* fn;
 
@@ -281,13 +368,13 @@ bool UMediaPlayer::STATIC_SelectTrack(EMediaPlayerTrack TrackType, int TrackInde
 
 
 // Function MediaAssets.MediaPlayer.Seek
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected)
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
 // struct FTimespan               Time                           (ConstParm, Parm, OutParm, ReferenceParm)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638216CD0              		 offset:f26cd0                        
+// FunctionAddress:0x00007FF629B1FF60              		 offset:104ff60                       
 
-bool UMediaPlayer::STATIC_Seek(const struct FTimespan& Time)
+bool UMediaPlayer::Seek(const struct FTimespan& Time)
 {
 	static UFunction* fn;
 
@@ -309,12 +396,12 @@ bool UMediaPlayer::STATIC_Seek(const struct FTimespan& Time)
 
 
 // Function MediaAssets.MediaPlayer.Rewind
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638216CA0              		 offset:f26ca0                        
+// FunctionAddress:0x00007FF62962BA30              		 offset:b5ba30                        
 
-bool UMediaPlayer::STATIC_Rewind()
+bool UMediaPlayer::Rewind()
 {
 	static UFunction* fn;
 
@@ -335,12 +422,12 @@ bool UMediaPlayer::STATIC_Rewind()
 
 
 // Function MediaAssets.MediaPlayer.Reopen
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638216C70              		 offset:f26c70                        
+// FunctionAddress:0x00007FF62D79A820              		 offset:4cca820                       
 
-bool UMediaPlayer::STATIC_Reopen()
+bool UMediaPlayer::Reopen()
 {
 	static UFunction* fn;
 
@@ -361,12 +448,12 @@ bool UMediaPlayer::STATIC_Reopen()
 
 
 // Function MediaAssets.MediaPlayer.Previous
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638216AF0              		 offset:f26af0                        
+// FunctionAddress:0x00007FF62D83AA20              		 offset:4d6aa20                       
 
-bool UMediaPlayer::STATIC_Previous()
+bool UMediaPlayer::Previous()
 {
 	static UFunction* fn;
 
@@ -387,12 +474,12 @@ bool UMediaPlayer::STATIC_Previous()
 
 
 // Function MediaAssets.MediaPlayer.Play
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638216AC0              		 offset:f26ac0                        
+// FunctionAddress:0x00007FF62D929070              		 offset:4e59070                       
 
-bool UMediaPlayer::STATIC_Play()
+bool UMediaPlayer::Play()
 {
 	static UFunction* fn;
 
@@ -413,12 +500,12 @@ bool UMediaPlayer::STATIC_Play()
 
 
 // Function MediaAssets.MediaPlayer.Pause
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638216A90              		 offset:f26a90                        
+// FunctionAddress:0x00007FF62C7419A0              		 offset:3c719a0                       
 
-bool UMediaPlayer::STATIC_Pause()
+bool UMediaPlayer::Pause()
 {
 	static UFunction* fn;
 
@@ -439,13 +526,13 @@ bool UMediaPlayer::STATIC_Pause()
 
 
 // Function MediaAssets.MediaPlayer.OpenUrl
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FString                 URL                            (Parm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6382169E0              		 offset:f269e0                        
+// FunctionAddress:0x00007FF629C77470              		 offset:11a7470                       
 
-bool UMediaPlayer::STATIC_OpenUrl(const struct FString& URL)
+bool UMediaPlayer::OpenUrl(const struct FString& URL)
 {
 	static UFunction* fn;
 
@@ -467,13 +554,13 @@ bool UMediaPlayer::STATIC_OpenUrl(const struct FString& URL)
 
 
 // Function MediaAssets.MediaPlayer.OpenSource
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class UMediaSource*            MediaSource                    (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638216950              		 offset:f26950                        
+// FunctionAddress:0x00007FF6292E25C0              		 offset:8125c0                        
 
-bool UMediaPlayer::STATIC_OpenSource(class UMediaSource* MediaSource)
+bool UMediaPlayer::OpenSource(class UMediaSource* MediaSource)
 {
 	static UFunction* fn;
 
@@ -495,14 +582,14 @@ bool UMediaPlayer::STATIC_OpenSource(class UMediaSource* MediaSource)
 
 
 // Function MediaAssets.MediaPlayer.OpenPlaylistIndex
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Private, Protected)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class UMediaPlaylist*          InPlaylist                     (Parm, ZeroConstructor, IsPlainOldData)
 // int                            Index                          (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638216890              		 offset:f26890                        
+// FunctionAddress:0x00007FF628B3AFF0              		 offset:6aff0                         
 
-bool UMediaPlayer::STATIC_OpenPlaylistIndex(class UMediaPlaylist* InPlaylist, int Index)
+bool UMediaPlayer::OpenPlaylistIndex(class UMediaPlaylist* InPlaylist, int Index)
 {
 	static UFunction* fn;
 
@@ -525,13 +612,13 @@ bool UMediaPlayer::STATIC_OpenPlaylistIndex(class UMediaPlaylist* InPlaylist, in
 
 
 // Function MediaAssets.MediaPlayer.OpenPlaylist
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class UMediaPlaylist*          InPlaylist                     (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6382167F0              		 offset:f267f0                        
+// FunctionAddress:0x00007FF628F24D20              		 offset:454d20                        
 
-bool UMediaPlayer::STATIC_OpenPlaylist(class UMediaPlaylist* InPlaylist)
+bool UMediaPlayer::OpenPlaylist(class UMediaPlaylist* InPlaylist)
 {
 	static UFunction* fn;
 
@@ -553,13 +640,13 @@ bool UMediaPlayer::STATIC_OpenPlaylist(class UMediaPlaylist* InPlaylist)
 
 
 // Function MediaAssets.MediaPlayer.OpenFile
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FString                 FilePath                       (Parm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638216740              		 offset:f26740                        
+// FunctionAddress:0x00007FF62C595D10              		 offset:3ac5d10                       
 
-bool UMediaPlayer::STATIC_OpenFile(const struct FString& FilePath)
+bool UMediaPlayer::OpenFile(const struct FString& FilePath)
 {
 	static UFunction* fn;
 
@@ -581,12 +668,12 @@ bool UMediaPlayer::STATIC_OpenFile(const struct FString& FilePath)
 
 
 // Function MediaAssets.MediaPlayer.Next
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6382166F0              		 offset:f266f0                        
+// FunctionAddress:0x00007FF629684F30              		 offset:bb4f30                        
 
-bool UMediaPlayer::STATIC_Next()
+bool UMediaPlayer::Next()
 {
 	static UFunction* fn;
 
@@ -607,12 +694,12 @@ bool UMediaPlayer::STATIC_Next()
 
 
 // Function MediaAssets.MediaPlayer.IsReady
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6382166C0              		 offset:f266c0                        
+// FunctionAddress:0x00007FF629BAC9A0              		 offset:10dc9a0                       
 
-bool UMediaPlayer::STATIC_IsReady()
+bool UMediaPlayer::IsReady()
 {
 	static UFunction* fn;
 
@@ -633,12 +720,12 @@ bool UMediaPlayer::STATIC_IsReady()
 
 
 // Function MediaAssets.MediaPlayer.IsPreparing
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638216690              		 offset:f26690                        
+// FunctionAddress:0x00007FF62C427CA0              		 offset:3957ca0                       
 
-bool UMediaPlayer::STATIC_IsPreparing()
+bool UMediaPlayer::IsPreparing()
 {
 	static UFunction* fn;
 
@@ -659,12 +746,12 @@ bool UMediaPlayer::STATIC_IsPreparing()
 
 
 // Function MediaAssets.MediaPlayer.IsPlaying
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638216660              		 offset:f26660                        
+// FunctionAddress:0x00007FF629EB7880              		 offset:13e7880                       
 
-bool UMediaPlayer::STATIC_IsPlaying()
+bool UMediaPlayer::IsPlaying()
 {
 	static UFunction* fn;
 
@@ -685,12 +772,12 @@ bool UMediaPlayer::STATIC_IsPlaying()
 
 
 // Function MediaAssets.MediaPlayer.IsPaused
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638216630              		 offset:f26630                        
+// FunctionAddress:0x00007FF6290B3A90              		 offset:5e3a90                        
 
-bool UMediaPlayer::STATIC_IsPaused()
+bool UMediaPlayer::IsPaused()
 {
 	static UFunction* fn;
 
@@ -711,12 +798,12 @@ bool UMediaPlayer::STATIC_IsPaused()
 
 
 // Function MediaAssets.MediaPlayer.IsLooping
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638216600              		 offset:f26600                        
+// FunctionAddress:0x00007FF62D00E310              		 offset:453e310                       
 
-bool UMediaPlayer::STATIC_IsLooping()
+bool UMediaPlayer::IsLooping()
 {
 	static UFunction* fn;
 
@@ -737,12 +824,12 @@ bool UMediaPlayer::STATIC_IsLooping()
 
 
 // Function MediaAssets.MediaPlayer.GetUrl
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF638216440              		 offset:f26440                        
+// FunctionAddress:0x00007FF628C1F340              		 offset:14f340                        
 
-struct FString UMediaPlayer::STATIC_GetUrl()
+struct FString UMediaPlayer::GetUrl()
 {
 	static UFunction* fn;
 
@@ -763,14 +850,14 @@ struct FString UMediaPlayer::STATIC_GetUrl()
 
 
 // Function MediaAssets.MediaPlayer.GetTrackLanguage
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // EMediaPlayerTrack              TrackType                      (Parm, ZeroConstructor, IsPlainOldData)
 // int                            TrackIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF638216330              		 offset:f26330                        
+// FunctionAddress:0x00007FF6290B3980              		 offset:5e3980                        
 
-struct FString UMediaPlayer::STATIC_GetTrackLanguage(EMediaPlayerTrack TrackType, int TrackIndex)
+struct FString UMediaPlayer::GetTrackLanguage(EMediaPlayerTrack TrackType, int TrackIndex)
 {
 	static UFunction* fn;
 
@@ -793,14 +880,14 @@ struct FString UMediaPlayer::STATIC_GetTrackLanguage(EMediaPlayerTrack TrackType
 
 
 // Function MediaAssets.MediaPlayer.GetTrackDisplayName
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // EMediaPlayerTrack              TrackType                      (Parm, ZeroConstructor, IsPlainOldData)
 // int                            TrackIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // struct FText                   ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF638216220              		 offset:f26220                        
+// FunctionAddress:0x00007FF62C803B30              		 offset:3d33b30                       
 
-struct FText UMediaPlayer::STATIC_GetTrackDisplayName(EMediaPlayerTrack TrackType, int TrackIndex)
+struct FText UMediaPlayer::GetTrackDisplayName(EMediaPlayerTrack TrackType, int TrackIndex)
 {
 	static UFunction* fn;
 
@@ -823,12 +910,12 @@ struct FText UMediaPlayer::STATIC_GetTrackDisplayName(EMediaPlayerTrack TrackTyp
 
 
 // Function MediaAssets.MediaPlayer.GetTime
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // struct FTimespan               ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF6382161E0              		 offset:f261e0                        
+// FunctionAddress:0x00007FF62A39CE90              		 offset:18cce90                       
 
-struct FTimespan UMediaPlayer::STATIC_GetTime()
+struct FTimespan UMediaPlayer::GetTime()
 {
 	static UFunction* fn;
 
@@ -849,13 +936,13 @@ struct FTimespan UMediaPlayer::STATIC_GetTime()
 
 
 // Function MediaAssets.MediaPlayer.GetSelectedTrack
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Private)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // EMediaPlayerTrack              TrackType                      (Parm, ZeroConstructor, IsPlainOldData)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638215EB0              		 offset:f25eb0                        
+// FunctionAddress:0x00007FF62C3E2160              		 offset:3912160                       
 
-int UMediaPlayer::STATIC_GetSelectedTrack(EMediaPlayerTrack TrackType)
+int UMediaPlayer::GetSelectedTrack(EMediaPlayerTrack TrackType)
 {
 	static UFunction* fn;
 
@@ -877,13 +964,13 @@ int UMediaPlayer::STATIC_GetSelectedTrack(EMediaPlayerTrack TrackType)
 
 
 // Function MediaAssets.MediaPlayer.GetReverseRates
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Private)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           Unthinned                      (Parm, ZeroConstructor, IsPlainOldData)
 // struct FFloatRange             ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF638215E00              		 offset:f25e00                        
+// FunctionAddress:0x00007FF6299D53C0              		 offset:f053c0                        
 
-struct FFloatRange UMediaPlayer::STATIC_GetReverseRates(bool Unthinned)
+struct FFloatRange UMediaPlayer::GetReverseRates(bool Unthinned)
 {
 	static UFunction* fn;
 
@@ -905,12 +992,12 @@ struct FFloatRange UMediaPlayer::STATIC_GetReverseRates(bool Unthinned)
 
 
 // Function MediaAssets.MediaPlayer.GetRate
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638215DD0              		 offset:f25dd0                        
+// FunctionAddress:0x00007FF62BBADDB0              		 offset:30dddb0                       
 
-float UMediaPlayer::STATIC_GetRate()
+float UMediaPlayer::GetRate()
 {
 	static UFunction* fn;
 
@@ -931,12 +1018,12 @@ float UMediaPlayer::STATIC_GetRate()
 
 
 // Function MediaAssets.MediaPlayer.GetPlayerName
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // struct FName                   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638215C50              		 offset:f25c50                        
+// FunctionAddress:0x00007FF62D713970              		 offset:4c43970                       
 
-struct FName UMediaPlayer::STATIC_GetPlayerName()
+struct FName UMediaPlayer::GetPlayerName()
 {
 	static UFunction* fn;
 
@@ -957,13 +1044,13 @@ struct FName UMediaPlayer::STATIC_GetPlayerName()
 
 
 // Function MediaAssets.MediaPlayer.GetNumTracks
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Private)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // EMediaPlayerTrack              TrackType                      (Parm, ZeroConstructor, IsPlainOldData)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638215BC0              		 offset:f25bc0                        
+// FunctionAddress:0x00007FF62B9D9990              		 offset:2f09990                       
 
-int UMediaPlayer::STATIC_GetNumTracks(EMediaPlayerTrack TrackType)
+int UMediaPlayer::GetNumTracks(EMediaPlayerTrack TrackType)
 {
 	static UFunction* fn;
 
@@ -985,13 +1072,13 @@ int UMediaPlayer::STATIC_GetNumTracks(EMediaPlayerTrack TrackType)
 
 
 // Function MediaAssets.MediaPlayer.GetForwardRates
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Private)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           Unthinned                      (Parm, ZeroConstructor, IsPlainOldData)
 // struct FFloatRange             ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF638215A40              		 offset:f25a40                        
+// FunctionAddress:0x00007FF62D234480              		 offset:4764480                       
 
-struct FFloatRange UMediaPlayer::STATIC_GetForwardRates(bool Unthinned)
+struct FFloatRange UMediaPlayer::GetForwardRates(bool Unthinned)
 {
 	static UFunction* fn;
 
@@ -1013,12 +1100,12 @@ struct FFloatRange UMediaPlayer::STATIC_GetForwardRates(bool Unthinned)
 
 
 // Function MediaAssets.MediaPlayer.GetDuration
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // struct FTimespan               ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF638215A00              		 offset:f25a00                        
+// FunctionAddress:0x00007FF628E33B10              		 offset:363b10                        
 
-struct FTimespan UMediaPlayer::STATIC_GetDuration()
+struct FTimespan UMediaPlayer::GetDuration()
 {
 	static UFunction* fn;
 
@@ -1039,12 +1126,12 @@ struct FTimespan UMediaPlayer::STATIC_GetDuration()
 
 
 // Function MediaAssets.MediaPlayer.GetDesiredPlayerName
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // struct FName                   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6382159C0              		 offset:f259c0                        
+// FunctionAddress:0x00007FF62BDC05D0              		 offset:32f05d0                       
 
-struct FName UMediaPlayer::STATIC_GetDesiredPlayerName()
+struct FName UMediaPlayer::GetDesiredPlayerName()
 {
 	static UFunction* fn;
 
@@ -1065,10 +1152,10 @@ struct FName UMediaPlayer::STATIC_GetDesiredPlayerName()
 
 
 // Function MediaAssets.MediaPlayer.Close
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638215790              		 offset:f25790                        
+// (Final, Native, Public, BlueprintCallable)
+// FunctionAddress:0x00007FF62C296010              		 offset:37c6010                       
 
-void UMediaPlayer::STATIC_Close()
+void UMediaPlayer::Close()
 {
 	static UFunction* fn;
 
@@ -1087,13 +1174,13 @@ void UMediaPlayer::STATIC_Close()
 
 
 // Function MediaAssets.MediaPlayer.CanPlayUrl
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FString                 URL                            (Parm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6382156E0              		 offset:f256e0                        
+// FunctionAddress:0x00007FF62A893030              		 offset:1dc3030                       
 
-bool UMediaPlayer::STATIC_CanPlayUrl(const struct FString& URL)
+bool UMediaPlayer::CanPlayUrl(const struct FString& URL)
 {
 	static UFunction* fn;
 
@@ -1115,13 +1202,13 @@ bool UMediaPlayer::STATIC_CanPlayUrl(const struct FString& URL)
 
 
 // Function MediaAssets.MediaPlayer.CanPlaySource
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class UMediaSource*            MediaSource                    (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638215650              		 offset:f25650                        
+// FunctionAddress:0x00007FF62C024AC0              		 offset:3554ac0                       
 
-bool UMediaPlayer::STATIC_CanPlaySource(class UMediaSource* MediaSource)
+bool UMediaPlayer::CanPlaySource(class UMediaSource* MediaSource)
 {
 	static UFunction* fn;
 
@@ -1143,12 +1230,12 @@ bool UMediaPlayer::STATIC_CanPlaySource(class UMediaSource* MediaSource)
 
 
 // Function MediaAssets.MediaPlayer.CanPause
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638215620              		 offset:f25620                        
+// FunctionAddress:0x00007FF62C024A90              		 offset:3554a90                       
 
-bool UMediaPlayer::STATIC_CanPause()
+bool UMediaPlayer::CanPause()
 {
 	static UFunction* fn;
 
@@ -1169,12 +1256,12 @@ bool UMediaPlayer::STATIC_CanPause()
 
 
 // Function MediaAssets.MediaPlaylist.RemoveAt
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // int                            Index                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638216BB0              		 offset:f26bb0                        
+// FunctionAddress:0x00007FF62C38CD10              		 offset:38bcd10                       
 
-void UMediaPlaylist::STATIC_RemoveAt(int Index)
+void UMediaPlaylist::RemoveAt(int Index)
 {
 	static UFunction* fn;
 
@@ -1194,12 +1281,12 @@ void UMediaPlaylist::STATIC_RemoveAt(int Index)
 
 
 // Function MediaAssets.MediaPlaylist.Remove
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class UMediaSource*            MediaSource                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638216B20              		 offset:f26b20                        
+// FunctionAddress:0x00007FF62B8FD610              		 offset:2e2d610                       
 
-void UMediaPlaylist::STATIC_Remove(class UMediaSource* MediaSource)
+void UMediaPlaylist::Remove(class UMediaSource* MediaSource)
 {
 	static UFunction* fn;
 
@@ -1219,12 +1306,12 @@ void UMediaPlaylist::STATIC_Remove(class UMediaSource* MediaSource)
 
 
 // Function MediaAssets.MediaPlaylist.Num
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638216720              		 offset:f26720                        
+// FunctionAddress:0x00007FF628EB9A50              		 offset:3e9a50                        
 
-int UMediaPlaylist::STATIC_Num()
+int UMediaPlaylist::Num()
 {
 	static UFunction* fn;
 
@@ -1245,13 +1332,13 @@ int UMediaPlaylist::STATIC_Num()
 
 
 // Function MediaAssets.MediaPlaylist.Insert
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class UMediaSource*            MediaSource                    (Parm, ZeroConstructor, IsPlainOldData)
 // int                            Index                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638216500              		 offset:f26500                        
+// FunctionAddress:0x00007FF628E20ED0              		 offset:350ed0                        
 
-void UMediaPlaylist::STATIC_Insert(class UMediaSource* MediaSource, int Index)
+void UMediaPlaylist::Insert(class UMediaSource* MediaSource, int Index)
 {
 	static UFunction* fn;
 
@@ -1272,13 +1359,13 @@ void UMediaPlaylist::STATIC_Insert(class UMediaSource* MediaSource, int Index)
 
 
 // Function MediaAssets.MediaPlaylist.GetRandom
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected)
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
 // int                            InOutIndex                     (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // class UMediaSource*            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638215D30              		 offset:f25d30                        
+// FunctionAddress:0x00007FF629FB9620              		 offset:14e9620                       
 
-class UMediaSource* UMediaPlaylist::STATIC_GetRandom(int* InOutIndex)
+class UMediaSource* UMediaPlaylist::GetRandom(int* InOutIndex)
 {
 	static UFunction* fn;
 
@@ -1302,13 +1389,13 @@ class UMediaSource* UMediaPlaylist::STATIC_GetRandom(int* InOutIndex)
 
 
 // Function MediaAssets.MediaPlaylist.GetPrevious
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected)
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
 // int                            InOutIndex                     (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // class UMediaSource*            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638215C90              		 offset:f25c90                        
+// FunctionAddress:0x00007FF62C7B7D40              		 offset:3ce7d40                       
 
-class UMediaSource* UMediaPlaylist::STATIC_GetPrevious(int* InOutIndex)
+class UMediaSource* UMediaPlaylist::GetPrevious(int* InOutIndex)
 {
 	static UFunction* fn;
 
@@ -1332,13 +1419,13 @@ class UMediaSource* UMediaPlaylist::STATIC_GetPrevious(int* InOutIndex)
 
 
 // Function MediaAssets.MediaPlaylist.GetNext
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected)
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
 // int                            InOutIndex                     (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // class UMediaSource*            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638215B20              		 offset:f25b20                        
+// FunctionAddress:0x00007FF62C837D90              		 offset:3d67d90                       
 
-class UMediaSource* UMediaPlaylist::STATIC_GetNext(int* InOutIndex)
+class UMediaSource* UMediaPlaylist::GetNext(int* InOutIndex)
 {
 	static UFunction* fn;
 
@@ -1362,13 +1449,13 @@ class UMediaSource* UMediaPlaylist::STATIC_GetNext(int* InOutIndex)
 
 
 // Function MediaAssets.MediaPlaylist.Get
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // int                            Index                          (Parm, ZeroConstructor, IsPlainOldData)
 // class UMediaSource*            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6382157B0              		 offset:f257b0                        
+// FunctionAddress:0x00007FF629EDE5F0              		 offset:140e5f0                       
 
-class UMediaSource* UMediaPlaylist::STATIC_Get(int Index)
+class UMediaSource* UMediaPlaylist::Get(int Index)
 {
 	static UFunction* fn;
 
@@ -1390,12 +1477,12 @@ class UMediaSource* UMediaPlaylist::STATIC_Get(int Index)
 
 
 // Function MediaAssets.MediaPlaylist.Add
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class UMediaSource*            MediaSource                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638215580              		 offset:f25580                        
+// FunctionAddress:0x00007FF629F53140              		 offset:1483140                       
 
-void UMediaPlaylist::STATIC_Add(class UMediaSource* MediaSource)
+void UMediaPlaylist::Add(class UMediaSource* MediaSource)
 {
 	static UFunction* fn;
 
@@ -1415,12 +1502,12 @@ void UMediaPlaylist::STATIC_Add(class UMediaSource* MediaSource)
 
 
 // Function MediaAssets.FileMediaSource.SetFilePath
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FString                 path                           (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF638216EB0              		 offset:f26eb0                        
+// FunctionAddress:0x00007FF629E0F2E0              		 offset:133f2e0                       
 
-void UFileMediaSource::STATIC_SetFilePath(const struct FString& path)
+void UFileMediaSource::SetFilePath(const struct FString& path)
 {
 	static UFunction* fn;
 
@@ -1440,12 +1527,12 @@ void UFileMediaSource::STATIC_SetFilePath(const struct FString& path)
 
 
 // Function MediaAssets.MediaTexture.GetWidth
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6382164D0              		 offset:f264d0                        
+// FunctionAddress:0x00007FF62CCB82B0              		 offset:41e82b0                       
 
-int UMediaTexture::STATIC_GetWidth()
+int UMediaTexture::GetWidth()
 {
 	static UFunction* fn;
 
@@ -1466,12 +1553,12 @@ int UMediaTexture::STATIC_GetWidth()
 
 
 // Function MediaAssets.MediaTexture.GetHeight
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638215AF0              		 offset:f25af0                        
+// FunctionAddress:0x00007FF62C86B840              		 offset:3d9b840                       
 
-int UMediaTexture::STATIC_GetHeight()
+int UMediaTexture::GetHeight()
 {
 	static UFunction* fn;
 
@@ -1492,12 +1579,12 @@ int UMediaTexture::STATIC_GetHeight()
 
 
 // Function MediaAssets.MediaTexture.GetAspectRatio
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638215840              		 offset:f25840                        
+// FunctionAddress:0x00007FF62B88E7B0              		 offset:2dbe7b0                       
 
-float UMediaTexture::STATIC_GetAspectRatio()
+float UMediaTexture::GetAspectRatio()
 {
 	static UFunction* fn;
 

@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -12,13 +12,94 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function OnlineSubsystemUtils.AchievementBlueprintLibrary.GetCachedAchievementProgress
+// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
+// struct FName                   AchievementID                  (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bFoundID                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// float                          Progress                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF62B362710              		 offset:2892710                       
+
+void UAchievementBlueprintLibrary::STATIC_GetCachedAchievementProgress(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FName& AchievementID, bool* bFoundID, float* Progress)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function OnlineSubsystemUtils.AchievementBlueprintLibrary.GetCachedAchievementProgress"));
+
+	UAchievementBlueprintLibrary_GetCachedAchievementProgress_Params params;
+	params.WorldContextObject = WorldContextObject;
+	params.PlayerController = PlayerController;
+	params.AchievementID = AchievementID;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (bFoundID != nullptr)
+		*bFoundID = params.bFoundID;
+	if (Progress != nullptr)
+		*Progress = params.Progress;
+}
+
+
+// Function OnlineSubsystemUtils.AchievementBlueprintLibrary.GetCachedAchievementDescription
+// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
+// struct FName                   AchievementID                  (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bFoundID                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// struct FText                   Title                          (Parm, OutParm)
+// struct FText                   LockedDescription              (Parm, OutParm)
+// struct FText                   UnlockedDescription            (Parm, OutParm)
+// bool                           bHidden                        (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF62B3623B0              		 offset:28923b0                       
+
+void UAchievementBlueprintLibrary::STATIC_GetCachedAchievementDescription(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FName& AchievementID, bool* bFoundID, struct FText* Title, struct FText* LockedDescription, struct FText* UnlockedDescription, bool* bHidden)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function OnlineSubsystemUtils.AchievementBlueprintLibrary.GetCachedAchievementDescription"));
+
+	UAchievementBlueprintLibrary_GetCachedAchievementDescription_Params params;
+	params.WorldContextObject = WorldContextObject;
+	params.PlayerController = PlayerController;
+	params.AchievementID = AchievementID;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (bFoundID != nullptr)
+		*bFoundID = params.bFoundID;
+	if (Title != nullptr)
+		*Title = params.Title;
+	if (LockedDescription != nullptr)
+		*LockedDescription = params.LockedDescription;
+	if (UnlockedDescription != nullptr)
+		*UnlockedDescription = params.UnlockedDescription;
+	if (bHidden != nullptr)
+		*bHidden = params.bHidden;
+}
+
+
 // Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievements
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
 // class UAchievementQueryCallbackProxy* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B710490              		 offset:4420490                       
+// FunctionAddress:0x00007FF62B3612D0              		 offset:28912d0                       
 
 class UAchievementQueryCallbackProxy* UAchievementQueryCallbackProxy::STATIC_CacheAchievements(class UObject* WorldContextObject, class APlayerController* PlayerController)
 {
@@ -43,12 +124,12 @@ class UAchievementQueryCallbackProxy* UAchievementQueryCallbackProxy::STATIC_Cac
 
 
 // Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievementDescriptions
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
 // class UAchievementQueryCallbackProxy* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B7103D0              		 offset:44203d0                       
+// FunctionAddress:0x00007FF62B361210              		 offset:2891210                       
 
 class UAchievementQueryCallbackProxy* UAchievementQueryCallbackProxy::STATIC_CacheAchievementDescriptions(class UObject* WorldContextObject, class APlayerController* PlayerController)
 {
@@ -73,7 +154,7 @@ class UAchievementQueryCallbackProxy* UAchievementQueryCallbackProxy::STATIC_Cac
 
 
 // Function OnlineSubsystemUtils.AchievementWriteCallbackProxy.WriteAchievementProgress
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, NetServer)
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
@@ -81,7 +162,7 @@ class UAchievementQueryCallbackProxy* UAchievementQueryCallbackProxy::STATIC_Cac
 // float                          Progress                       (Parm, ZeroConstructor, IsPlainOldData)
 // int                            UserTag                        (Parm, ZeroConstructor, IsPlainOldData)
 // class UAchievementWriteCallbackProxy* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B712D80              		 offset:4422d80                       
+// FunctionAddress:0x00007FF62B363BA0              		 offset:2893ba0                       
 
 class UAchievementWriteCallbackProxy* UAchievementWriteCallbackProxy::STATIC_WriteAchievementProgress(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FName& AchievementName, float Progress, int UserTag)
 {
@@ -109,12 +190,12 @@ class UAchievementWriteCallbackProxy* UAchievementWriteCallbackProxy::STATIC_Wri
 
 
 // Function OnlineSubsystemUtils.ConnectionCallbackProxy.ConnectToService
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
 // class UConnectionCallbackProxy* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B710720              		 offset:4420720                       
+// FunctionAddress:0x00007FF62B361540              		 offset:2891540                       
 
 class UConnectionCallbackProxy* UConnectionCallbackProxy::STATIC_ConnectToService(class UObject* WorldContextObject, class APlayerController* PlayerController)
 {
@@ -139,14 +220,14 @@ class UConnectionCallbackProxy* UConnectionCallbackProxy::STATIC_ConnectToServic
 
 
 // Function OnlineSubsystemUtils.CreateSessionCallbackProxy.CreateSession
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected, Delegate)
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
 // int                            PublicConnections              (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bUseLAN                        (Parm, ZeroConstructor, IsPlainOldData)
 // class UCreateSessionCallbackProxy* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B710C90              		 offset:4420c90                       
+// FunctionAddress:0x00007FF62B361AB0              		 offset:2891ab0                       
 
 class UCreateSessionCallbackProxy* UCreateSessionCallbackProxy::STATIC_CreateSession(class UObject* WorldContextObject, class APlayerController* PlayerController, int PublicConnections, bool bUseLAN)
 {
@@ -173,12 +254,12 @@ class UCreateSessionCallbackProxy* UCreateSessionCallbackProxy::STATIC_CreateSes
 
 
 // Function OnlineSubsystemUtils.DestroySessionCallbackProxy.DestroySession
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
 // class UDestroySessionCallbackProxy* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B710DC0              		 offset:4420dc0                       
+// FunctionAddress:0x00007FF62B361BE0              		 offset:2891be0                       
 
 class UDestroySessionCallbackProxy* UDestroySessionCallbackProxy::STATIC_DestroySession(class UObject* WorldContextObject, class APlayerController* PlayerController)
 {
@@ -203,7 +284,7 @@ class UDestroySessionCallbackProxy* UDestroySessionCallbackProxy::STATIC_Destroy
 
 
 // Function OnlineSubsystemUtils.EndMatchCallbackProxy.EndMatch
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected, Delegate, NetServer)
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
@@ -212,7 +293,7 @@ class UDestroySessionCallbackProxy* UDestroySessionCallbackProxy::STATIC_Destroy
 // TEnumAsByte<EMPMatchOutcome>   LocalPlayerOutcome             (Parm, ZeroConstructor, IsPlainOldData)
 // TEnumAsByte<EMPMatchOutcome>   OtherPlayersOutcome            (Parm, ZeroConstructor, IsPlainOldData)
 // class UEndMatchCallbackProxy*  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B710E80              		 offset:4420e80                       
+// FunctionAddress:0x00007FF62B361CA0              		 offset:2891ca0                       
 
 class UEndMatchCallbackProxy* UEndMatchCallbackProxy::STATIC_EndMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, const TScriptInterface<class UTurnBasedMatchInterface>& MatchActor, const struct FString& MatchId, TEnumAsByte<EMPMatchOutcome> LocalPlayerOutcome, TEnumAsByte<EMPMatchOutcome> OtherPlayersOutcome)
 {
@@ -241,14 +322,14 @@ class UEndMatchCallbackProxy* UEndMatchCallbackProxy::STATIC_EndMatch(class UObj
 
 
 // Function OnlineSubsystemUtils.EndTurnCallbackProxy.EndTurn
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate, NetServer)
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 MatchId                        (Parm, ZeroConstructor)
 // TScriptInterface<class UTurnBasedMatchInterface> TurnBasedMatchInterface        (Parm, ZeroConstructor, IsPlainOldData)
 // class UEndTurnCallbackProxy*   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B7110B0              		 offset:44210b0                       
+// FunctionAddress:0x00007FF62B361ED0              		 offset:2891ed0                       
 
 class UEndTurnCallbackProxy* UEndTurnCallbackProxy::STATIC_EndTurn(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FString& MatchId, const TScriptInterface<class UTurnBasedMatchInterface>& TurnBasedMatchInterface)
 {
@@ -275,11 +356,11 @@ class UEndTurnCallbackProxy* UEndTurnCallbackProxy::STATIC_EndTurn(class UObject
 
 
 // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetServerName
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected, Delegate, NetServer, HasDefaults)
+// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
 // struct FBlueprintSessionResult Result                         (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF63B712290              		 offset:4422290                       
+// FunctionAddress:0x00007FF62B3630B0              		 offset:28930b0                       
 
 struct FString UFindSessionsCallbackProxy::STATIC_GetServerName(const struct FBlueprintSessionResult& Result)
 {
@@ -303,11 +384,11 @@ struct FString UFindSessionsCallbackProxy::STATIC_GetServerName(const struct FBl
 
 
 // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetPingInMs
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected, Delegate, NetServer, HasDefaults)
+// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
 // struct FBlueprintSessionResult Result                         (ConstParm, Parm, OutParm, ReferenceParm)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B711FB0              		 offset:4421fb0                       
+// FunctionAddress:0x00007FF62B362DD0              		 offset:2892dd0                       
 
 int UFindSessionsCallbackProxy::STATIC_GetPingInMs(const struct FBlueprintSessionResult& Result)
 {
@@ -331,11 +412,11 @@ int UFindSessionsCallbackProxy::STATIC_GetPingInMs(const struct FBlueprintSessio
 
 
 // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetMaxPlayers
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected, Delegate, NetServer, HasDefaults)
+// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
 // struct FBlueprintSessionResult Result                         (ConstParm, Parm, OutParm, ReferenceParm)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B711D20              		 offset:4421d20                       
+// FunctionAddress:0x00007FF62B362B40              		 offset:2892b40                       
 
 int UFindSessionsCallbackProxy::STATIC_GetMaxPlayers(const struct FBlueprintSessionResult& Result)
 {
@@ -359,11 +440,11 @@ int UFindSessionsCallbackProxy::STATIC_GetMaxPlayers(const struct FBlueprintSess
 
 
 // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.GetCurrentPlayers
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected, Delegate, NetServer, HasDefaults)
+// (Final, Native, Static, Public, HasOutParms, BlueprintCallable, BlueprintPure)
 // Parameters:
 // struct FBlueprintSessionResult Result                         (ConstParm, Parm, OutParm, ReferenceParm)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B711A90              		 offset:4421a90                       
+// FunctionAddress:0x00007FF62B3628B0              		 offset:28928b0                       
 
 int UFindSessionsCallbackProxy::STATIC_GetCurrentPlayers(const struct FBlueprintSessionResult& Result)
 {
@@ -387,14 +468,14 @@ int UFindSessionsCallbackProxy::STATIC_GetCurrentPlayers(const struct FBlueprint
 
 
 // Function OnlineSubsystemUtils.FindSessionsCallbackProxy.FindSessions
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected, Delegate)
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
 // int                            MaxResults                     (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bUseLAN                        (Parm, ZeroConstructor, IsPlainOldData)
 // class UFindSessionsCallbackProxy* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B711250              		 offset:4421250                       
+// FunctionAddress:0x00007FF62B362070              		 offset:2892070                       
 
 class UFindSessionsCallbackProxy* UFindSessionsCallbackProxy::STATIC_FindSessions(class UObject* WorldContextObject, class APlayerController* PlayerController, int MaxResults, bool bUseLAN)
 {
@@ -421,7 +502,7 @@ class UFindSessionsCallbackProxy* UFindSessionsCallbackProxy::STATIC_FindSession
 
 
 // Function OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy.FindTurnBasedMatch
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate, NetServer)
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
@@ -431,7 +512,7 @@ class UFindSessionsCallbackProxy* UFindSessionsCallbackProxy::STATIC_FindSession
 // int                            PlayerGroup                    (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ShowExistingMatches            (Parm, ZeroConstructor, IsPlainOldData)
 // class UFindTurnBasedMatchCallbackProxy* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B711380              		 offset:4421380                       
+// FunctionAddress:0x00007FF62B3621A0              		 offset:28921a0                       
 
 class UFindTurnBasedMatchCallbackProxy* UFindTurnBasedMatchCallbackProxy::STATIC_FindTurnBasedMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, const TScriptInterface<class UTurnBasedMatchInterface>& MatchActor, int MinPlayers, int MaxPlayers, int PlayerGroup, bool ShowExistingMatches)
 {
@@ -461,12 +542,12 @@ class UFindTurnBasedMatchCallbackProxy* UFindTurnBasedMatchCallbackProxy::STATIC
 
 
 // Function OnlineSubsystemUtils.InAppPurchaseCallbackProxy.CreateProxyObjectForInAppPurchase
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, NetServer)
+// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
 // class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
 // struct FInAppPurchaseProductRequest ProductRequest                 (ConstParm, Parm, OutParm, ReferenceParm)
 // class UInAppPurchaseCallbackProxy* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B7108A0              		 offset:44208a0                       
+// FunctionAddress:0x00007FF62B3616C0              		 offset:28916c0                       
 
 class UInAppPurchaseCallbackProxy* UInAppPurchaseCallbackProxy::STATIC_CreateProxyObjectForInAppPurchase(class APlayerController* PlayerController, const struct FInAppPurchaseProductRequest& ProductRequest)
 {
@@ -491,12 +572,12 @@ class UInAppPurchaseCallbackProxy* UInAppPurchaseCallbackProxy::STATIC_CreatePro
 
 
 // Function OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy.CreateProxyObjectForInAppPurchaseQuery
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected, Delegate)
+// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
 // class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
 // TArray<struct FString>         ProductIdentifiers             (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // class UInAppPurchaseQueryCallbackProxy* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B710990              		 offset:4420990                       
+// FunctionAddress:0x00007FF62B3617B0              		 offset:28917b0                       
 
 class UInAppPurchaseQueryCallbackProxy* UInAppPurchaseQueryCallbackProxy::STATIC_CreateProxyObjectForInAppPurchaseQuery(class APlayerController* PlayerController, TArray<struct FString> ProductIdentifiers)
 {
@@ -521,12 +602,12 @@ class UInAppPurchaseQueryCallbackProxy* UInAppPurchaseQueryCallbackProxy::STATIC
 
 
 // Function OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy.CreateProxyObjectForInAppPurchaseRestore
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected, Delegate)
+// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
 // TArray<struct FInAppPurchaseProductRequest> ConsumableProductFlags         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
 // class UInAppPurchaseRestoreCallbackProxy* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B710AB0              		 offset:4420ab0                       
+// FunctionAddress:0x00007FF62B3618D0              		 offset:28918d0                       
 
 class UInAppPurchaseRestoreCallbackProxy* UInAppPurchaseRestoreCallbackProxy::STATIC_CreateProxyObjectForInAppPurchaseRestore(TArray<struct FInAppPurchaseProductRequest> ConsumableProductFlags, class APlayerController* PlayerController)
 {
@@ -551,13 +632,13 @@ class UInAppPurchaseRestoreCallbackProxy* UInAppPurchaseRestoreCallbackProxy::ST
 
 
 // Function OnlineSubsystemUtils.JoinSessionCallbackProxy.JoinSession
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected, HasOutParms, HasDefaults)
+// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
 // Parameters:
 // class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
 // struct FBlueprintSessionResult SearchResult                   (ConstParm, Parm, OutParm, ReferenceParm)
 // class UJoinSessionCallbackProxy* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B7123B0              		 offset:44223b0                       
+// FunctionAddress:0x00007FF62B3631D0              		 offset:28931d0                       
 
 class UJoinSessionCallbackProxy* UJoinSessionCallbackProxy::STATIC_JoinSession(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FBlueprintSessionResult& SearchResult)
 {
@@ -582,13 +663,45 @@ class UJoinSessionCallbackProxy* UJoinSessionCallbackProxy::STATIC_JoinSession(c
 }
 
 
+// Function OnlineSubsystemUtils.LeaderboardBlueprintLibrary.WriteLeaderboardInteger
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
+// struct FName                   StatName                       (Parm, ZeroConstructor, IsPlainOldData)
+// int                            StatValue                      (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF62B363D20              		 offset:2893d20                       
+
+bool ULeaderboardBlueprintLibrary::STATIC_WriteLeaderboardInteger(class APlayerController* PlayerController, const struct FName& StatName, int StatValue)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function OnlineSubsystemUtils.LeaderboardBlueprintLibrary.WriteLeaderboardInteger"));
+
+	ULeaderboardBlueprintLibrary_WriteLeaderboardInteger_Params params;
+	params.PlayerController = PlayerController;
+	params.StatName = StatName;
+	params.StatValue = StatValue;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function OnlineSubsystemUtils.LeaderboardFlushCallbackProxy.CreateProxyObjectForFlush
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
 // struct FName                   SessionName                    (Parm, ZeroConstructor, IsPlainOldData)
 // class ULeaderboardFlushCallbackProxy* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B7107E0              		 offset:44207e0                       
+// FunctionAddress:0x00007FF62B361600              		 offset:2891600                       
 
 class ULeaderboardFlushCallbackProxy* ULeaderboardFlushCallbackProxy::STATIC_CreateProxyObjectForFlush(class APlayerController* PlayerController, const struct FName& SessionName)
 {
@@ -613,12 +726,12 @@ class ULeaderboardFlushCallbackProxy* ULeaderboardFlushCallbackProxy::STATIC_Cre
 
 
 // Function OnlineSubsystemUtils.LeaderboardQueryCallbackProxy.CreateProxyObjectForIntQuery
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
 // struct FName                   StatName                       (Parm, ZeroConstructor, IsPlainOldData)
 // class ULeaderboardQueryCallbackProxy* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B710BD0              		 offset:4420bd0                       
+// FunctionAddress:0x00007FF62B3619F0              		 offset:28919f0                       
 
 class ULeaderboardQueryCallbackProxy* ULeaderboardQueryCallbackProxy::STATIC_CreateProxyObjectForIntQuery(class APlayerController* PlayerController, const struct FName& StatName)
 {
@@ -643,12 +756,12 @@ class ULeaderboardQueryCallbackProxy* ULeaderboardQueryCallbackProxy::STATIC_Cre
 
 
 // Function OnlineSubsystemUtils.LogoutCallbackProxy.Logout
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
 // class ULogoutCallbackProxy*    ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B712510              		 offset:4422510                       
+// FunctionAddress:0x00007FF62B363330              		 offset:2893330                       
 
 class ULogoutCallbackProxy* ULogoutCallbackProxy::STATIC_Logout(class UObject* WorldContextObject, class APlayerController* PlayerController)
 {
@@ -673,10 +786,10 @@ class ULogoutCallbackProxy* ULogoutCallbackProxy::STATIC_Logout(class UObject* W
 
 
 // Function OnlineSubsystemUtils.OnlineBeaconClient.ClientOnConnected
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638ABC240              		 offset:17cc240                       
+// (Final, Net, NetReliable, Native, Event, Private, NetClient)
+// FunctionAddress:0x00007FF62B361410              		 offset:2891410                       
 
-void AOnlineBeaconClient::STATIC_ClientOnConnected()
+void AOnlineBeaconClient::ClientOnConnected()
 {
 	static UFunction* fn;
 
@@ -695,13 +808,13 @@ void AOnlineBeaconClient::STATIC_ClientOnConnected()
 
 
 // Function OnlineSubsystemUtils.PartyBeaconClient.ServerUpdateReservationRequest
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 // Parameters:
 // struct FString                 SessionId                      (Parm, ZeroConstructor)
 // struct FPartyReservation       ReservationUpdate              (ConstParm, Parm, ReferenceParm)
-// FunctionAddress:0x00007FF63B712B50              		 offset:4422b50                       
+// FunctionAddress:0x00007FF62B363970              		 offset:2893970                       
 
-void APartyBeaconClient::STATIC_ServerUpdateReservationRequest(const struct FString& SessionId, const struct FPartyReservation& ReservationUpdate)
+void APartyBeaconClient::ServerUpdateReservationRequest(const struct FString& SessionId, const struct FPartyReservation& ReservationUpdate)
 {
 	static UFunction* fn;
 
@@ -722,13 +835,13 @@ void APartyBeaconClient::STATIC_ServerUpdateReservationRequest(const struct FStr
 
 
 // Function OnlineSubsystemUtils.PartyBeaconClient.ServerReservationRequest
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 // Parameters:
 // struct FString                 SessionId                      (Parm, ZeroConstructor)
 // struct FPartyReservation       Reservation                    (ConstParm, Parm, ReferenceParm)
-// FunctionAddress:0x00007FF63B7129E0              		 offset:44229e0                       
+// FunctionAddress:0x00007FF62B363800              		 offset:2893800                       
 
-void APartyBeaconClient::STATIC_ServerReservationRequest(const struct FString& SessionId, const struct FPartyReservation& Reservation)
+void APartyBeaconClient::ServerReservationRequest(const struct FString& SessionId, const struct FPartyReservation& Reservation)
 {
 	static UFunction* fn;
 
@@ -749,12 +862,12 @@ void APartyBeaconClient::STATIC_ServerReservationRequest(const struct FString& S
 
 
 // Function OnlineSubsystemUtils.PartyBeaconClient.ServerCancelReservationRequest
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 // Parameters:
 // struct FUniqueNetIdRepl        PartyLeader                    (ConstParm, Parm, ReferenceParm)
-// FunctionAddress:0x00007FF63B712890              		 offset:4422890                       
+// FunctionAddress:0x00007FF62B3636B0              		 offset:28936b0                       
 
-void APartyBeaconClient::STATIC_ServerCancelReservationRequest(const struct FUniqueNetIdRepl& PartyLeader)
+void APartyBeaconClient::ServerCancelReservationRequest(const struct FUniqueNetIdRepl& PartyLeader)
 {
 	static UFunction* fn;
 
@@ -774,12 +887,12 @@ void APartyBeaconClient::STATIC_ServerCancelReservationRequest(const struct FUni
 
 
 // Function OnlineSubsystemUtils.PartyBeaconClient.ClientSendReservationUpdates
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Net, NetReliable, Native, Event, Public, NetClient)
 // Parameters:
 // int                            NumRemainingReservations       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B710690              		 offset:4420690                       
+// FunctionAddress:0x00007FF62B3614B0              		 offset:28914b0                       
 
-void APartyBeaconClient::STATIC_ClientSendReservationUpdates(int NumRemainingReservations)
+void APartyBeaconClient::ClientSendReservationUpdates(int NumRemainingReservations)
 {
 	static UFunction* fn;
 
@@ -799,10 +912,10 @@ void APartyBeaconClient::STATIC_ClientSendReservationUpdates(int NumRemainingRes
 
 
 // Function OnlineSubsystemUtils.PartyBeaconClient.ClientSendReservationFull
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF63B710670              		 offset:4420670                       
+// (Net, NetReliable, Native, Event, Public, NetClient)
+// FunctionAddress:0x00007FF62A9EDD50              		 offset:1f1dd50                       
 
-void APartyBeaconClient::STATIC_ClientSendReservationFull()
+void APartyBeaconClient::ClientSendReservationFull()
 {
 	static UFunction* fn;
 
@@ -821,12 +934,12 @@ void APartyBeaconClient::STATIC_ClientSendReservationFull()
 
 
 // Function OnlineSubsystemUtils.PartyBeaconClient.ClientReservationResponse
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Net, NetReliable, Native, Event, Public, NetClient)
 // Parameters:
 // TEnumAsByte<EPartyReservationResult> ReservationResponse            (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B7105F0              		 offset:44205f0                       
+// FunctionAddress:0x00007FF62B361430              		 offset:2891430                       
 
-void APartyBeaconClient::STATIC_ClientReservationResponse(TEnumAsByte<EPartyReservationResult> ReservationResponse)
+void APartyBeaconClient::ClientReservationResponse(TEnumAsByte<EPartyReservationResult> ReservationResponse)
 {
 	static UFunction* fn;
 
@@ -846,12 +959,12 @@ void APartyBeaconClient::STATIC_ClientReservationResponse(TEnumAsByte<EPartyRese
 
 
 // Function OnlineSubsystemUtils.PartyBeaconClient.ClientCancelReservationResponse
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Net, NetReliable, Native, Event, Public, NetClient)
 // Parameters:
 // TEnumAsByte<EPartyReservationResult> ReservationResponse            (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B710550              		 offset:4420550                       
+// FunctionAddress:0x00007FF62B361390              		 offset:2891390                       
 
-void APartyBeaconClient::STATIC_ClientCancelReservationResponse(TEnumAsByte<EPartyReservationResult> ReservationResponse)
+void APartyBeaconClient::ClientCancelReservationResponse(TEnumAsByte<EPartyReservationResult> ReservationResponse)
 {
 	static UFunction* fn;
 
@@ -870,18 +983,40 @@ void APartyBeaconClient::STATIC_ClientCancelReservationResponse(TEnumAsByte<EPar
 }
 
 
-// Function OnlineSubsystemUtils.OnlineBeaconClient.ClientOnConnected
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638ABC240              		 offset:17cc240                       
+// Function OnlineSubsystemUtils.TestBeaconClient.ServerPong
+// (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
+// FunctionAddress:0x00007FF62B3637B0              		 offset:28937b0                       
 
-void ATestBeaconClient::STATIC_ClientOnConnected()
+void ATestBeaconClient::ServerPong()
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function OnlineSubsystemUtils.OnlineBeaconClient.ClientOnConnected"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function OnlineSubsystemUtils.TestBeaconClient.ServerPong"));
 
-	ATestBeaconClient_ClientOnConnected_Params params;
+	ATestBeaconClient_ServerPong_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function OnlineSubsystemUtils.TestBeaconClient.ClientPing
+// (Net, NetReliable, Native, Event, Public, NetClient)
+// FunctionAddress:0x00007FF62A815710              		 offset:1d45710                       
+
+void ATestBeaconClient::ClientPing()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function OnlineSubsystemUtils.TestBeaconClient.ClientPing"));
+
+	ATestBeaconClient_ClientPing_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -893,7 +1028,7 @@ void ATestBeaconClient::STATIC_ClientOnConnected()
 
 
 // Function OnlineSubsystemUtils.QuitMatchCallbackProxy.QuitMatch
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected, NetServer)
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
@@ -901,7 +1036,7 @@ void ATestBeaconClient::STATIC_ClientOnConnected()
 // TEnumAsByte<EMPMatchOutcome>   Outcome                        (Parm, ZeroConstructor, IsPlainOldData)
 // int                            TurnTimeoutInSeconds           (Parm, ZeroConstructor, IsPlainOldData)
 // class UQuitMatchCallbackProxy* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B7125D0              		 offset:44225d0                       
+// FunctionAddress:0x00007FF62B3633F0              		 offset:28933f0                       
 
 class UQuitMatchCallbackProxy* UQuitMatchCallbackProxy::STATIC_QuitMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FString& MatchId, TEnumAsByte<EMPMatchOutcome> Outcome, int TurnTimeoutInSeconds)
 {
@@ -929,12 +1064,12 @@ class UQuitMatchCallbackProxy* UQuitMatchCallbackProxy::STATIC_QuitMatch(class U
 
 
 // Function OnlineSubsystemUtils.ShowLoginUICallbackProxy.ShowExternalLoginUI
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // class APlayerController*       InPlayerController             (Parm, ZeroConstructor, IsPlainOldData)
 // class UShowLoginUICallbackProxy* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B712CC0              		 offset:4422cc0                       
+// FunctionAddress:0x00007FF62B363AE0              		 offset:2893ae0                       
 
 class UShowLoginUICallbackProxy* UShowLoginUICallbackProxy::STATIC_ShowExternalLoginUI(class UObject* WorldContextObject, class APlayerController* InPlayerController)
 {
@@ -955,6 +1090,136 @@ class UShowLoginUICallbackProxy* UShowLoginUICallbackProxy::STATIC_ShowExternalL
 	fn->FunctionFlags = flags;
 
 	return params.ReturnValue;
+}
+
+
+// Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.RegisterTurnBasedMatchInterfaceObject
+// (Final, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
+// class UObject*                 Object                         (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF62B3635C0              		 offset:28935c0                       
+
+void UTurnBasedBlueprintLibrary::STATIC_RegisterTurnBasedMatchInterfaceObject(class UObject* WorldContextObject, class APlayerController* PlayerController, class UObject* Object)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.RegisterTurnBasedMatchInterfaceObject"));
+
+	UTurnBasedBlueprintLibrary_RegisterTurnBasedMatchInterfaceObject_Params params;
+	params.WorldContextObject = WorldContextObject;
+	params.PlayerController = PlayerController;
+	params.Object = Object;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetPlayerDisplayName
+// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 MatchId                        (Parm, ZeroConstructor)
+// int                            PlayerIndex                    (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 PlayerDisplayName              (Parm, OutParm, ZeroConstructor)
+// FunctionAddress:0x00007FF62B362EB0              		 offset:2892eb0                       
+
+void UTurnBasedBlueprintLibrary::STATIC_GetPlayerDisplayName(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FString& MatchId, int PlayerIndex, struct FString* PlayerDisplayName)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetPlayerDisplayName"));
+
+	UTurnBasedBlueprintLibrary_GetPlayerDisplayName_Params params;
+	params.WorldContextObject = WorldContextObject;
+	params.PlayerController = PlayerController;
+	params.MatchId = MatchId;
+	params.PlayerIndex = PlayerIndex;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (PlayerDisplayName != nullptr)
+		*PlayerDisplayName = params.PlayerDisplayName;
+}
+
+
+// Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetMyPlayerIndex
+// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 MatchId                        (Parm, ZeroConstructor)
+// int                            PlayerIndex                    (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF62B362C20              		 offset:2892c20                       
+
+void UTurnBasedBlueprintLibrary::STATIC_GetMyPlayerIndex(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FString& MatchId, int* PlayerIndex)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetMyPlayerIndex"));
+
+	UTurnBasedBlueprintLibrary_GetMyPlayerIndex_Params params;
+	params.WorldContextObject = WorldContextObject;
+	params.PlayerController = PlayerController;
+	params.MatchId = MatchId;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (PlayerIndex != nullptr)
+		*PlayerIndex = params.PlayerIndex;
+}
+
+
+// Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetIsMyTurn
+// (Final, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// class APlayerController*       PlayerController               (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 MatchId                        (Parm, ZeroConstructor)
+// bool                           bIsMyTurn                      (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF62B362990              		 offset:2892990                       
+
+void UTurnBasedBlueprintLibrary::STATIC_GetIsMyTurn(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FString& MatchId, bool* bIsMyTurn)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetIsMyTurn"));
+
+	UTurnBasedBlueprintLibrary_GetIsMyTurn_Params params;
+	params.WorldContextObject = WorldContextObject;
+	params.PlayerController = PlayerController;
+	params.MatchId = MatchId;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (bIsMyTurn != nullptr)
+		*bIsMyTurn = params.bIsMyTurn;
 }
 
 

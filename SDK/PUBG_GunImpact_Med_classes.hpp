@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,11 +15,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass GunImpact_Med.GunImpact_Med_C
-// 0x0008 (0x0DD8 - 0x0DD0)
+// 0x0008 (0x0DF0 - 0x0DE8)
 class AGunImpact_Med_C : public ATslImpactEffect
 {
 public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x0DD0(0x0008) (Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x0DE8(0x0008) (Transient, DuplicateTransient)
 
 	static UClass* StaticClass()
 	{

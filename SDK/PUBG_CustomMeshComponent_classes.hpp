@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,11 +15,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Class CustomMeshComponent.CustomMeshComponent
-// 0x0010 (0x0AD0 - 0x0AC0)
+// 0x0010 (0x0AE0 - 0x0AD0)
 class UCustomMeshComponent : public UMeshComponent
 {
 public:
-	unsigned char                                      UnknownData00[0x10];                                      // 0x0AC0(0x0010) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x10];                                      // 0x0AD0(0x0010) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -31,12 +31,9 @@ public:
 	}
 
 
-	void STATIC_SetVectorParameterValueOnMaterials(const struct FName& ParameterName, const struct FVector& ParameterValue);
-	void STATIC_SetScalarParameterValueOnMaterials(const struct FName& ParameterName, float ParameterValue);
-	bool STATIC_IsMaterialSlotNameValid(const struct FName& MaterialSlotName);
-	TArray<struct FName> STATIC_GetMaterialSlotNames();
-	TArray<class UMaterialInterface*> STATIC_GetMaterials();
-	int STATIC_GetMaterialIndex(const struct FName& MaterialSlotName);
+	bool SetCustomMeshTriangles(TArray<struct FCustomMeshTriangle> Triangles);
+	void ClearCustomMeshTriangles();
+	void AddCustomMeshTriangles(TArray<struct FCustomMeshTriangle> Triangles);
 };
 
 

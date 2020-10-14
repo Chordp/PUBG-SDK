@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,10 +13,10 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function MovieScene.MovieSceneSequencePlayer.Stop
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF63ADFCDD0              		 offset:3b0cdd0                       
+// (Final, Native, Public, BlueprintCallable)
+// FunctionAddress:0x00007FF6298692E0              		 offset:d992e0                        
 
-void UMovieSceneSequencePlayer::STATIC_Stop()
+void UMovieSceneSequencePlayer::Stop()
 {
 	static UFunction* fn;
 
@@ -35,10 +35,10 @@ void UMovieSceneSequencePlayer::STATIC_Stop()
 
 
 // Function MovieScene.MovieSceneSequencePlayer.StartPlayingNextTick
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF63ADFCDB0              		 offset:3b0cdb0                       
+// (Final, Native, Public, BlueprintCallable)
+// FunctionAddress:0x00007FF62D8B2D00              		 offset:4de2d00                       
 
-void UMovieSceneSequencePlayer::STATIC_StartPlayingNextTick()
+void UMovieSceneSequencePlayer::StartPlayingNextTick()
 {
 	static UFunction* fn;
 
@@ -57,12 +57,12 @@ void UMovieSceneSequencePlayer::STATIC_StartPlayingNextTick()
 
 
 // Function MovieScene.MovieSceneSequencePlayer.SetPlayRate
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // float                          PlayRate                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63ADFCBF0              		 offset:3b0cbf0                       
+// FunctionAddress:0x00007FF629E2CCE0              		 offset:135cce0                       
 
-void UMovieSceneSequencePlayer::STATIC_SetPlayRate(float PlayRate)
+void UMovieSceneSequencePlayer::SetPlayRate(float PlayRate)
 {
 	static UFunction* fn;
 
@@ -82,13 +82,13 @@ void UMovieSceneSequencePlayer::STATIC_SetPlayRate(float PlayRate)
 
 
 // Function MovieScene.MovieSceneSequencePlayer.SetPlaybackRange
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // float                          NewStartTime                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 // float                          NewEndTime                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63ADFCCF0              		 offset:3b0ccf0                       
+// FunctionAddress:0x00007FF62A27A7E0              		 offset:17aa7e0                       
 
-void UMovieSceneSequencePlayer::STATIC_SetPlaybackRange(float NewStartTime, float NewEndTime)
+void UMovieSceneSequencePlayer::SetPlaybackRange(float NewStartTime, float NewEndTime)
 {
 	static UFunction* fn;
 
@@ -109,12 +109,12 @@ void UMovieSceneSequencePlayer::STATIC_SetPlaybackRange(float NewStartTime, floa
 
 
 // Function MovieScene.MovieSceneSequencePlayer.SetPlaybackPosition
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // float                          NewPlaybackPosition            (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63ADFCC70              		 offset:3b0cc70                       
+// FunctionAddress:0x00007FF62C8FA7E0              		 offset:3e2a7e0                       
 
-void UMovieSceneSequencePlayer::STATIC_SetPlaybackPosition(float NewPlaybackPosition)
+void UMovieSceneSequencePlayer::SetPlaybackPosition(float NewPlaybackPosition)
 {
 	static UFunction* fn;
 
@@ -134,10 +134,10 @@ void UMovieSceneSequencePlayer::STATIC_SetPlaybackPosition(float NewPlaybackPosi
 
 
 // Function MovieScene.MovieSceneSequencePlayer.PlayReverse
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF63ADFCBD0              		 offset:3b0cbd0                       
+// (Final, Native, Public, BlueprintCallable)
+// FunctionAddress:0x00007FF62CEA31D0              		 offset:43d31d0                       
 
-void UMovieSceneSequencePlayer::STATIC_PlayReverse()
+void UMovieSceneSequencePlayer::PlayReverse()
 {
 	static UFunction* fn;
 
@@ -156,12 +156,12 @@ void UMovieSceneSequencePlayer::STATIC_PlayReverse()
 
 
 // Function MovieScene.MovieSceneSequencePlayer.PlayLooping
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // int                            NumLoops                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63ADFCB50              		 offset:3b0cb50                       
+// FunctionAddress:0x00007FF62928F0A0              		 offset:7bf0a0                        
 
-void UMovieSceneSequencePlayer::STATIC_PlayLooping(int NumLoops)
+void UMovieSceneSequencePlayer::PlayLooping(int NumLoops)
 {
 	static UFunction* fn;
 
@@ -181,10 +181,10 @@ void UMovieSceneSequencePlayer::STATIC_PlayLooping(int NumLoops)
 
 
 // Function MovieScene.MovieSceneSequencePlayer.Play
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF63ADFCB30              		 offset:3b0cb30                       
+// (Final, Native, Public, BlueprintCallable)
+// FunctionAddress:0x00007FF62B948190              		 offset:2e78190                       
 
-void UMovieSceneSequencePlayer::STATIC_Play()
+void UMovieSceneSequencePlayer::Play()
 {
 	static UFunction* fn;
 
@@ -203,10 +203,10 @@ void UMovieSceneSequencePlayer::STATIC_Play()
 
 
 // Function MovieScene.MovieSceneSequencePlayer.Pause
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF63ADFCB10              		 offset:3b0cb10                       
+// (Final, Native, Public, BlueprintCallable)
+// FunctionAddress:0x00007FF62C871D70              		 offset:3da1d70                       
 
-void UMovieSceneSequencePlayer::STATIC_Pause()
+void UMovieSceneSequencePlayer::Pause()
 {
 	static UFunction* fn;
 
@@ -225,12 +225,12 @@ void UMovieSceneSequencePlayer::STATIC_Pause()
 
 
 // Function MovieScene.MovieSceneSequencePlayer.IsPlaying
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63ADFCAE0              		 offset:3b0cae0                       
+// FunctionAddress:0x00007FF62A9F1EE0              		 offset:1f21ee0                       
 
-bool UMovieSceneSequencePlayer::STATIC_IsPlaying()
+bool UMovieSceneSequencePlayer::IsPlaying()
 {
 	static UFunction* fn;
 
@@ -251,12 +251,12 @@ bool UMovieSceneSequencePlayer::STATIC_IsPlaying()
 
 
 // Function MovieScene.MovieSceneSequencePlayer.GetPlayRate
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63ADFCA70              		 offset:3b0ca70                       
+// FunctionAddress:0x00007FF62C37BF70              		 offset:38abf70                       
 
-float UMovieSceneSequencePlayer::STATIC_GetPlayRate()
+float UMovieSceneSequencePlayer::GetPlayRate()
 {
 	static UFunction* fn;
 
@@ -277,12 +277,12 @@ float UMovieSceneSequencePlayer::STATIC_GetPlayRate()
 
 
 // Function MovieScene.MovieSceneSequencePlayer.GetPlaybackStart
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63ADFCAC0              		 offset:3b0cac0                       
+// FunctionAddress:0x00007FF629CBC130              		 offset:11ec130                       
 
-float UMovieSceneSequencePlayer::STATIC_GetPlaybackStart()
+float UMovieSceneSequencePlayer::GetPlaybackStart()
 {
 	static UFunction* fn;
 
@@ -303,12 +303,12 @@ float UMovieSceneSequencePlayer::STATIC_GetPlaybackStart()
 
 
 // Function MovieScene.MovieSceneSequencePlayer.GetPlaybackPosition
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF639CA7E50              		 offset:29b7e50                       
+// FunctionAddress:0x00007FF62BB13730              		 offset:3043730                       
 
-float UMovieSceneSequencePlayer::STATIC_GetPlaybackPosition()
+float UMovieSceneSequencePlayer::GetPlaybackPosition()
 {
 	static UFunction* fn;
 
@@ -329,12 +329,12 @@ float UMovieSceneSequencePlayer::STATIC_GetPlaybackPosition()
 
 
 // Function MovieScene.MovieSceneSequencePlayer.GetPlaybackEnd
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63ADFCAA0              		 offset:3b0caa0                       
+// FunctionAddress:0x00007FF62C8FA7C0              		 offset:3e2a7c0                       
 
-float UMovieSceneSequencePlayer::STATIC_GetPlaybackEnd()
+float UMovieSceneSequencePlayer::GetPlaybackEnd()
 {
 	static UFunction* fn;
 
@@ -355,12 +355,12 @@ float UMovieSceneSequencePlayer::STATIC_GetPlaybackEnd()
 
 
 // Function MovieScene.MovieSceneSequencePlayer.GetLength
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63ADFCA40              		 offset:3b0ca40                       
+// FunctionAddress:0x00007FF629342840              		 offset:872840                        
 
-float UMovieSceneSequencePlayer::STATIC_GetLength()
+float UMovieSceneSequencePlayer::GetLength()
 {
 	static UFunction* fn;
 
@@ -381,13 +381,13 @@ float UMovieSceneSequencePlayer::STATIC_GetLength()
 
 
 // Function MovieScene.MovieSceneSequencePlayer.GetBoundObjects
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected, Delegate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FMovieSceneObjectBindingID ObjectBinding                  (Parm)
 // TArray<class UObject*>         ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF63ADFC930              		 offset:3b0c930                       
+// FunctionAddress:0x00007FF62C5DD400              		 offset:3b0d400                       
 
-TArray<class UObject*> UMovieSceneSequencePlayer::STATIC_GetBoundObjects(const struct FMovieSceneObjectBindingID& ObjectBinding)
+TArray<class UObject*> UMovieSceneSequencePlayer::GetBoundObjects(const struct FMovieSceneObjectBindingID& ObjectBinding)
 {
 	static UFunction* fn;
 
@@ -409,10 +409,10 @@ TArray<class UObject*> UMovieSceneSequencePlayer::STATIC_GetBoundObjects(const s
 
 
 // Function MovieScene.MovieSceneSequencePlayer.ChangePlaybackDirection
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF63ADFC910              		 offset:3b0c910                       
+// (Final, Native, Public, BlueprintCallable)
+// FunctionAddress:0x00007FF62A0A5780              		 offset:15d5780                       
 
-void UMovieSceneSequencePlayer::STATIC_ChangePlaybackDirection()
+void UMovieSceneSequencePlayer::ChangePlaybackDirection()
 {
 	static UFunction* fn;
 

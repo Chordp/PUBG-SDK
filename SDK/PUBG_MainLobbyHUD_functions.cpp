@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,10 +13,10 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function MainLobbyHUD.MainLobbyHUD_C.HasChildren
-// ()
+// (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 bool UMainLobbyHUD_C::HasChildren()
 {
@@ -38,8 +38,8 @@ bool UMainLobbyHUD_C::HasChildren()
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.ToggleSystemMenu
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::ToggleSystemMenu()
 {
@@ -59,10 +59,10 @@ void UMainLobbyHUD_C::ToggleSystemMenu()
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.CloseWebPopupImpl
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FString*                PopupId                        (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::CloseWebPopupImpl(struct FString* PopupId)
 {
@@ -83,8 +83,8 @@ void UMainLobbyHUD_C::CloseWebPopupImpl(struct FString* PopupId)
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.HideCurtain
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::HideCurtain()
 {
@@ -104,8 +104,8 @@ void UMainLobbyHUD_C::HideCurtain()
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.ShowCurtain
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::ShowCurtain()
 {
@@ -125,8 +125,8 @@ void UMainLobbyHUD_C::ShowCurtain()
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.OnKey_LobbySystemMenu
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::OnKey_LobbySystemMenu()
 {
@@ -146,12 +146,12 @@ void UMainLobbyHUD_C::OnKey_LobbySystemMenu()
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.OnKeyDown
-// (Protected, Delegate, NetServer, HasOutParms)
+// (BlueprintCosmetic, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
 // struct FKeyEvent*              InKeyEvent                     (Parm)
 // struct FEventReply             ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 struct FEventReply UMainLobbyHUD_C::OnKeyDown(struct FGeometry* MyGeometry, struct FKeyEvent* InKeyEvent)
 {
@@ -175,10 +175,10 @@ struct FEventReply UMainLobbyHUD_C::OnKeyDown(struct FGeometry* MyGeometry, stru
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.OnPrepass_isShipping
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWidget**                BoundWidget                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::OnPrepass_isShipping(class UWidget** BoundWidget)
 {
@@ -199,10 +199,10 @@ void UMainLobbyHUD_C::OnPrepass_isShipping(class UWidget** BoundWidget)
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.CleanUpNameTagWidget
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int*                           SlotIndex                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::CleanUpNameTagWidget(int* SlotIndex)
 {
@@ -223,10 +223,10 @@ void UMainLobbyHUD_C::CleanUpNameTagWidget(int* SlotIndex)
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.SetupNameTagWidget
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int*                           SlotIndex                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::SetupNameTagWidget(int* SlotIndex)
 {
@@ -247,11 +247,11 @@ void UMainLobbyHUD_C::SetupNameTagWidget(int* SlotIndex)
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.GetNameTagWidget
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int*                           SlotIndex                      (Parm, ZeroConstructor, IsPlainOldData)
 // class UTslLobbyNameTagWidget*  Widget                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::GetNameTagWidget(int* SlotIndex, class UTslLobbyNameTagWidget** Widget)
 {
@@ -275,10 +275,10 @@ void UMainLobbyHUD_C::GetNameTagWidget(int* SlotIndex, class UTslLobbyNameTagWid
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.OnDestroyCharacter
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int*                           SlotIndex                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::OnDestroyCharacter(int* SlotIndex)
 {
@@ -299,10 +299,10 @@ void UMainLobbyHUD_C::OnDestroyCharacter(int* SlotIndex)
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.OnCreateCharacter
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int*                           SlotIndex                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::OnCreateCharacter(int* SlotIndex)
 {
@@ -323,10 +323,10 @@ void UMainLobbyHUD_C::OnCreateCharacter(int* SlotIndex)
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.CloseWebPopupByID
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FString*                WebPopupID                     (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::CloseWebPopupByID(struct FString* WebPopupID)
 {
@@ -347,10 +347,10 @@ void UMainLobbyHUD_C::CloseWebPopupByID(struct FString* WebPopupID)
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.RemoveWebPopup
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWebPopup_C**            Widget                         (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::RemoveWebPopup(class UWebPopup_C** Widget)
 {
@@ -371,10 +371,10 @@ void UMainLobbyHUD_C::RemoveWebPopup(class UWebPopup_C** Widget)
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.AddWebPopup
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UWebPopup_C**            Widget                         (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::AddWebPopup(class UWebPopup_C** Widget)
 {
@@ -395,11 +395,11 @@ void UMainLobbyHUD_C::AddWebPopup(class UWebPopup_C** Widget)
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.CanShowWebPopup
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FString*                PopupId                        (Parm, ZeroConstructor)
 // bool                           Result                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::CanShowWebPopup(struct FString* PopupId, bool* Result)
 {
@@ -423,10 +423,10 @@ void UMainLobbyHUD_C::CanShowWebPopup(struct FString* PopupId, bool* Result)
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.ShowWebPopupImpl
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FWebPopupParam*         Param                          (Parm)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::ShowWebPopupImpl(struct FWebPopupParam* Param)
 {
@@ -446,33 +446,9 @@ void UMainLobbyHUD_C::ShowWebPopupImpl(struct FWebPopupParam* Param)
 }
 
 
-// Function MainLobbyHUD.MainLobbyHUD_C.On_SystemMenuButton_Prepass
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// Parameters:
-// class UWidget**                BoundWidget                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
-
-void UMainLobbyHUD_C::On_SystemMenuButton_Prepass(class UWidget** BoundWidget)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function MainLobbyHUD.MainLobbyHUD_C.On_SystemMenuButton_Prepass"));
-
-	UMainLobbyHUD_C_On_SystemMenuButton_Prepass_Params params;
-	params.BoundWidget = BoundWidget;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function MainLobbyHUD.MainLobbyHUD_C.OnReload
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::OnReload()
 {
@@ -492,10 +468,10 @@ void UMainLobbyHUD_C::OnReload()
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.GetMainCoherentWidget
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UCoherentUIGTWidget*     Browser                        (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::GetMainCoherentWidget(class UCoherentUIGTWidget** Browser)
 {
@@ -518,8 +494,8 @@ void UMainLobbyHUD_C::GetMainCoherentWidget(class UCoherentUIGTWidget** Browser)
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.OnKey_SystemMenuOrEscape
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::OnKey_SystemMenuOrEscape()
 {
@@ -539,8 +515,8 @@ void UMainLobbyHUD_C::OnKey_SystemMenuOrEscape()
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.InitializeHUD
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::InitializeHUD()
 {
@@ -560,8 +536,8 @@ void UMainLobbyHUD_C::InitializeHUD()
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.BndEvt__Button_Setting_K2Node_ComponentBoundEvent_190_OnButtonClickedEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::BndEvt__Button_Setting_K2Node_ComponentBoundEvent_190_OnButtonClickedEvent__DelegateSignature()
 {
@@ -581,8 +557,8 @@ void UMainLobbyHUD_C::BndEvt__Button_Setting_K2Node_ComponentBoundEvent_190_OnBu
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.BndEvt__Button_Reload_K2Node_ComponentBoundEvent_210_OnButtonClickedEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::BndEvt__Button_Reload_K2Node_ComponentBoundEvent_210_OnButtonClickedEvent__DelegateSignature()
 {
@@ -602,8 +578,8 @@ void UMainLobbyHUD_C::BndEvt__Button_Reload_K2Node_ComponentBoundEvent_210_OnBut
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.BndEvt__Button_Quit_K2Node_ComponentBoundEvent_229_OnButtonClickedEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::BndEvt__Button_Quit_K2Node_ComponentBoundEvent_229_OnButtonClickedEvent__DelegateSignature()
 {
@@ -623,10 +599,10 @@ void UMainLobbyHUD_C::BndEvt__Button_Quit_K2Node_ComponentBoundEvent_229_OnButto
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.ShowWebPopup
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FWebPopupParam*         Param                          (ConstParm, Parm, OutParm, ReferenceParm)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::ShowWebPopup(struct FWebPopupParam* Param)
 {
@@ -647,8 +623,8 @@ void UMainLobbyHUD_C::ShowWebPopup(struct FWebPopupParam* Param)
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.Construct
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::Construct()
 {
@@ -668,10 +644,10 @@ void UMainLobbyHUD_C::Construct()
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.PreloadWebPopup
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // TArray<struct FWebPopupParam>* WebPopupParams                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::PreloadWebPopup(TArray<struct FWebPopupParam>* WebPopupParams)
 {
@@ -692,8 +668,8 @@ void UMainLobbyHUD_C::PreloadWebPopup(TArray<struct FWebPopupParam>* WebPopupPar
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.BndEvt__Button_0_K2Node_ComponentBoundEvent_35_OnButtonClickedEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::BndEvt__Button_0_K2Node_ComponentBoundEvent_35_OnButtonClickedEvent__DelegateSignature()
 {
@@ -713,8 +689,8 @@ void UMainLobbyHUD_C::BndEvt__Button_0_K2Node_ComponentBoundEvent_35_OnButtonCli
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.BndEvt__Button_NewSystemMenu_K2Node_ComponentBoundEvent_90_OnButtonClickedEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::BndEvt__Button_NewSystemMenu_K2Node_ComponentBoundEvent_90_OnButtonClickedEvent__DelegateSignature()
 {
@@ -734,10 +710,10 @@ void UMainLobbyHUD_C::BndEvt__Button_NewSystemMenu_K2Node_ComponentBoundEvent_90
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.CloseWebPopup
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FString*                PopupId                        (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::CloseWebPopup(struct FString* PopupId)
 {
@@ -758,8 +734,8 @@ void UMainLobbyHUD_C::CloseWebPopup(struct FString* PopupId)
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.InitializeMainUMGHUD
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::InitializeMainUMGHUD()
 {
@@ -779,10 +755,10 @@ void UMainLobbyHUD_C::InitializeMainUMGHUD()
 
 
 // Function MainLobbyHUD.MainLobbyHUD_C.ExecuteUbergraph_MainLobbyHUD
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UMainLobbyHUD_C::ExecuteUbergraph_MainLobbyHUD(int* EntryPoint)
 {

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -9,7 +9,6 @@
 #include "PUBG_Basic.hpp"
 #include "PUBG_Engine_classes.hpp"
 #include "PUBG_CoreUObject_classes.hpp"
-#include "PUBG_InputCore_classes.hpp"
 
 namespace SDK
 {
@@ -32,11 +31,11 @@ enum class EPrefabVisualizerType : uint8_t
 //---------------------------------------------------------------------------
 
 // ScriptStruct PrefabAsset.PrefabOverride
-// 0x0018
+// 0x0020
 struct FPrefabOverride
 {
-	class AActor*                                      ActorReference;                                           // 0x0000(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TArray<class UMaterialInterface*>                  OverrideMaterials;                                        // 0x0008(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	TArray<class UMaterialInterface*>                  OverrideMaterials;                                        // 0x0000(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	struct FString                                     ParentPrefab;                                             // 0x0010(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 };
 
 }

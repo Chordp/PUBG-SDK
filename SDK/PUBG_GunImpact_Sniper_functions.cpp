@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,10 +13,10 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function GunImpact_Sniper.GunImpact_Sniper_C.GetAdjustedDecalEffectDataSet_BP
-// ()
+// (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // struct FDecalEffectDataSet     ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 struct FDecalEffectDataSet AGunImpact_Sniper_C::GetAdjustedDecalEffectDataSet_BP()
 {
@@ -38,8 +38,8 @@ struct FDecalEffectDataSet AGunImpact_Sniper_C::GetAdjustedDecalEffectDataSet_BP
 
 
 // Function GunImpact_Sniper.GunImpact_Sniper_C.UserConstructionScript
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void AGunImpact_Sniper_C::UserConstructionScript()
 {
@@ -59,10 +59,10 @@ void AGunImpact_Sniper_C::UserConstructionScript()
 
 
 // Function GunImpact_Sniper.GunImpact_Sniper_C.PreWakeUp_BP
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FTransform*             InitialTransform               (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void AGunImpact_Sniper_C::PreWakeUp_BP(struct FTransform* InitialTransform)
 {
@@ -83,8 +83,8 @@ void AGunImpact_Sniper_C::PreWakeUp_BP(struct FTransform* InitialTransform)
 
 
 // Function GunImpact_Sniper.GunImpact_Sniper_C.AdjustDecalEffectDataSet_BP
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void AGunImpact_Sniper_C::AdjustDecalEffectDataSet_BP()
 {
@@ -104,10 +104,10 @@ void AGunImpact_Sniper_C::AdjustDecalEffectDataSet_BP()
 
 
 // Function GunImpact_Sniper.GunImpact_Sniper_C.ExecuteUbergraph_GunImpact_Sniper
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void AGunImpact_Sniper_C::ExecuteUbergraph_GunImpact_Sniper(int* EntryPoint)
 {

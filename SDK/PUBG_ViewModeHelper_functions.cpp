@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,8 +13,8 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function ViewModeHelper.ViewModeHelper_C.OnMouseDown
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UViewModeHelper_C::OnMouseDown()
 {
@@ -34,8 +34,8 @@ void UViewModeHelper_C::OnMouseDown()
 
 
 // Function ViewModeHelper.ViewModeHelper_C.OnMouseUp
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UViewModeHelper_C::OnMouseUp()
 {
@@ -55,10 +55,10 @@ void UViewModeHelper_C::OnMouseUp()
 
 
 // Function ViewModeHelper.ViewModeHelper_C.AddX
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float*                         Scale                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UViewModeHelper_C::AddX(float* Scale)
 {
@@ -79,10 +79,10 @@ void UViewModeHelper_C::AddX(float* Scale)
 
 
 // Function ViewModeHelper.ViewModeHelper_C.AddY
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float*                         Scale                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UViewModeHelper_C::AddY(float* Scale)
 {
@@ -103,10 +103,10 @@ void UViewModeHelper_C::AddY(float* Scale)
 
 
 // Function ViewModeHelper.ViewModeHelper_C.ViewModeZoomInOrOut
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float*                         Scale                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UViewModeHelper_C::ViewModeZoomInOrOut(float* Scale)
 {
@@ -127,8 +127,8 @@ void UViewModeHelper_C::ViewModeZoomInOrOut(float* Scale)
 
 
 // Function ViewModeHelper.ViewModeHelper_C.ViewModeReset
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UViewModeHelper_C::ViewModeReset()
 {
@@ -148,8 +148,8 @@ void UViewModeHelper_C::ViewModeReset()
 
 
 // Function ViewModeHelper.ViewModeHelper_C.Construct
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UViewModeHelper_C::Construct()
 {
@@ -169,10 +169,10 @@ void UViewModeHelper_C::Construct()
 
 
 // Function ViewModeHelper.ViewModeHelper_C.ExecuteUbergraph_ViewModeHelper
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UViewModeHelper_C::ExecuteUbergraph_ViewModeHelper(int* EntryPoint)
 {

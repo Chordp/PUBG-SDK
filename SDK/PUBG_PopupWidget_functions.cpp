@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -12,21 +12,18 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
-// Function PopupWidget.PopupWidget_C.OnGamepadButtonVisibilityPrepass
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// Parameters:
-// class UWidget**                BoundWidget                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// Function PopupWidget.PopupWidget_C.HandleCompetitive
+// (Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
-void UPopupWidget_C::OnGamepadButtonVisibilityPrepass(class UWidget** BoundWidget)
+void UPopupWidget_C::HandleCompetitive()
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PopupWidget.PopupWidget_C.OnGamepadButtonVisibilityPrepass"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function PopupWidget.PopupWidget_C.HandleCompetitive"));
 
-	UPopupWidget_C_OnGamepadButtonVisibilityPrepass_Params params;
-	params.BoundWidget = BoundWidget;
+	UPopupWidget_C_HandleCompetitive_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -37,13 +34,13 @@ void UPopupWidget_C::OnGamepadButtonVisibilityPrepass(class UWidget** BoundWidge
 
 
 // Function PopupWidget.PopupWidget_C.SetPopup
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EPopupStyle*                   PopupStyle                     (Parm, ZeroConstructor, IsPlainOldData)
 // struct FText*                  Title                          (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FText*                  Message                        (ConstParm, Parm, OutParm, ReferenceParm)
 // struct FScriptDelegate*        PressedDelegate                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UPopupWidget_C::SetPopup(EPopupStyle* PopupStyle, struct FText* Title, struct FText* Message, struct FScriptDelegate* PressedDelegate)
 {
@@ -67,8 +64,8 @@ void UPopupWidget_C::SetPopup(EPopupStyle* PopupStyle, struct FText* Title, stru
 
 
 // Function PopupWidget.PopupWidget_C.Construct
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UPopupWidget_C::Construct()
 {
@@ -88,8 +85,8 @@ void UPopupWidget_C::Construct()
 
 
 // Function PopupWidget.PopupWidget_C.Destruct
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UPopupWidget_C::Destruct()
 {
@@ -109,8 +106,8 @@ void UPopupWidget_C::Destruct()
 
 
 // Function PopupWidget.PopupWidget_C.CustomEvent
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UPopupWidget_C::CustomEvent()
 {
@@ -130,10 +127,10 @@ void UPopupWidget_C::CustomEvent()
 
 
 // Function PopupWidget.PopupWidget_C.ExecuteUbergraph_PopupWidget
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UPopupWidget_C::ExecuteUbergraph_PopupWidget(int* EntryPoint)
 {

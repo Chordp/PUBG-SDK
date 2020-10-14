@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_UnderwaterBulletTrailEffectShort.BP_UnderwaterBulletTrailEffectShort_C
-// 0x0000 (0x04B8 - 0x04B8)
+// 0x0000 (0x04D0 - 0x04D0)
 class ABP_UnderwaterBulletTrailEffectShort_C : public ATslParticleBulletTrail
 {
 public:

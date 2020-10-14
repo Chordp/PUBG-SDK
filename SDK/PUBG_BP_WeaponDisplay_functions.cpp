@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,8 +13,8 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function BP_WeaponDisplay.BP_WeaponDisplay_C.UserConstructionScript
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void ABP_WeaponDisplay_C::UserConstructionScript()
 {
@@ -34,10 +34,10 @@ void ABP_WeaponDisplay_C::UserConstructionScript()
 
 
 // Function BP_WeaponDisplay.BP_WeaponDisplay_C.AddStaticMeshAsyncEvent
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                           indexMatch                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void ABP_WeaponDisplay_C::AddStaticMeshAsyncEvent(bool indexMatch)
 {
@@ -58,10 +58,10 @@ void ABP_WeaponDisplay_C::AddStaticMeshAsyncEvent(bool indexMatch)
 
 
 // Function BP_WeaponDisplay.BP_WeaponDisplay_C.ExecuteUbergraph_BP_WeaponDisplay
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void ABP_WeaponDisplay_C::ExecuteUbergraph_BP_WeaponDisplay(int* EntryPoint)
 {

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -267,6 +267,15 @@ struct UPaperGroupedSpriteComponent_AddInstance_Params
 	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
+// Function Paper2D.PaperSpriteBlueprintLibrary.MakeBrushFromSprite
+struct UPaperSpriteBlueprintLibrary_MakeBrushFromSprite_Params
+{
+	class UPaperSprite*                                Sprite;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                Width;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                Height;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FSlateBrush                                 ReturnValue;                                              // (Parm, OutParm, ReturnParm)
+};
+
 // Function Paper2D.PaperSpriteComponent.SetSpriteColor
 struct UPaperSpriteComponent_SetSpriteColor_Params
 {
@@ -290,629 +299,6 @@ struct UPaperSpriteComponent_GetSprite_Params
 struct UPaperTerrainComponent_SetTerrainColor_Params
 {
 	struct FLinearColor                                NewColor;                                                 // (Parm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.UpdateSpline
-struct UPaperTerrainSplineComponent_UpdateSpline_Params
-{
-};
-
-// Function Engine.SplineComponent.SetWorldLocationAtSplinePoint
-struct UPaperTerrainSplineComponent_SetWorldLocationAtSplinePoint_Params
-{
-	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     InLocation;                                               // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.SetUpVectorAtSplinePoint
-struct UPaperTerrainSplineComponent_SetUpVectorAtSplinePoint_Params
-{
-	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     InUpVector;                                               // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUpdateSpline;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.SetUnselectedSplineSegmentColor
-struct UPaperTerrainSplineComponent_SetUnselectedSplineSegmentColor_Params
-{
-	struct FLinearColor                                SegmentColor;                                             // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.SetTangentsAtSplinePoint
-struct UPaperTerrainSplineComponent_SetTangentsAtSplinePoint_Params
-{
-	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     InArriveTangent;                                          // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	struct FVector                                     InLeaveTangent;                                           // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUpdateSpline;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.SetTangentAtSplinePoint
-struct UPaperTerrainSplineComponent_SetTangentAtSplinePoint_Params
-{
-	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     InTangent;                                                // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUpdateSpline;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.SetSplineWorldPoints
-struct UPaperTerrainSplineComponent_SetSplineWorldPoints_Params
-{
-	TArray<struct FVector>                             Points;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-};
-
-// Function Engine.SplineComponent.SetSplinePointType
-struct UPaperTerrainSplineComponent_SetSplinePointType_Params
-{
-	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplinePointType>                      Type;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUpdateSpline;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.SetSplinePoints
-struct UPaperTerrainSplineComponent_SetSplinePoints_Params
-{
-	TArray<struct FVector>                             Points;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUpdateSpline;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.SetSplineLocalPoints
-struct UPaperTerrainSplineComponent_SetSplineLocalPoints_Params
-{
-	TArray<struct FVector>                             Points;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-};
-
-// Function Engine.SplineComponent.SetSelectedSplineSegmentColor
-struct UPaperTerrainSplineComponent_SetSelectedSplineSegmentColor_Params
-{
-	struct FLinearColor                                SegmentColor;                                             // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.SetLocationAtSplinePoint
-struct UPaperTerrainSplineComponent_SetLocationAtSplinePoint_Params
-{
-	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     InLocation;                                               // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUpdateSpline;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.SetDrawDebug
-struct UPaperTerrainSplineComponent_SetDrawDebug_Params
-{
-	bool                                               bShow;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.SetDefaultUpVector
-struct UPaperTerrainSplineComponent_SetDefaultUpVector_Params
-{
-	struct FVector                                     UpVector;                                                 // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.SetClosedLoopAtPosition
-struct UPaperTerrainSplineComponent_SetClosedLoopAtPosition_Params
-{
-	bool                                               bInClosedLoop;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              Key;                                                      // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUpdateSpline;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.SetClosedLoop
-struct UPaperTerrainSplineComponent_SetClosedLoop_Params
-{
-	bool                                               bInClosedLoop;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUpdateSpline;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.RemoveSplinePoint
-struct UPaperTerrainSplineComponent_RemoveSplinePoint_Params
-{
-	int                                                Index;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUpdateSpline;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.IsClosedLoop
-struct UPaperTerrainSplineComponent_IsClosedLoop_Params
-{
-	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetWorldTangentAtDistanceAlongSpline
-struct UPaperTerrainSplineComponent_GetWorldTangentAtDistanceAlongSpline_Params
-{
-	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetWorldRotationAtTime
-struct UPaperTerrainSplineComponent_GetWorldRotationAtTime_Params
-{
-	float                                              Time;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseConstantVelocity;                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FRotator                                    ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetWorldRotationAtDistanceAlongSpline
-struct UPaperTerrainSplineComponent_GetWorldRotationAtDistanceAlongSpline_Params
-{
-	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FRotator                                    ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetWorldLocationAtTime
-struct UPaperTerrainSplineComponent_GetWorldLocationAtTime_Params
-{
-	float                                              Time;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseConstantVelocity;                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetWorldLocationAtSplinePoint
-struct UPaperTerrainSplineComponent_GetWorldLocationAtSplinePoint_Params
-{
-	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetWorldLocationAtDistanceAlongSpline
-struct UPaperTerrainSplineComponent_GetWorldLocationAtDistanceAlongSpline_Params
-{
-	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetWorldDirectionAtTime
-struct UPaperTerrainSplineComponent_GetWorldDirectionAtTime_Params
-{
-	float                                              Time;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseConstantVelocity;                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetWorldDirectionAtDistanceAlongSpline
-struct UPaperTerrainSplineComponent_GetWorldDirectionAtDistanceAlongSpline_Params
-{
-	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetUpVectorAtTime
-struct UPaperTerrainSplineComponent_GetUpVectorAtTime_Params
-{
-	float                                              Time;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseConstantVelocity;                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetUpVectorAtSplinePoint
-struct UPaperTerrainSplineComponent_GetUpVectorAtSplinePoint_Params
-{
-	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetUpVectorAtDistanceAlongSpline
-struct UPaperTerrainSplineComponent_GetUpVectorAtDistanceAlongSpline_Params
-{
-	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetTransformAtTime
-struct UPaperTerrainSplineComponent_GetTransformAtTime_Params
-{
-	float                                              Time;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseConstantVelocity;                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseScale;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FTransform                                  ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetTransformAtSplinePoint
-struct UPaperTerrainSplineComponent_GetTransformAtSplinePoint_Params
-{
-	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseScale;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FTransform                                  ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetTransformAtDistanceAlongSpline
-struct UPaperTerrainSplineComponent_GetTransformAtDistanceAlongSpline_Params
-{
-	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseScale;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FTransform                                  ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetTangentAtTime
-struct UPaperTerrainSplineComponent_GetTangentAtTime_Params
-{
-	float                                              Time;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseConstantVelocity;                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetTangentAtSplinePoint
-struct UPaperTerrainSplineComponent_GetTangentAtSplinePoint_Params
-{
-	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetTangentAtDistanceAlongSpline
-struct UPaperTerrainSplineComponent_GetTangentAtDistanceAlongSpline_Params
-{
-	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetSplinePointType
-struct UPaperTerrainSplineComponent_GetSplinePointType_Params
-{
-	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplinePointType>                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetSplineLength
-struct UPaperTerrainSplineComponent_GetSplineLength_Params
-{
-	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetScaleAtTime
-struct UPaperTerrainSplineComponent_GetScaleAtTime_Params
-{
-	float                                              Time;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseConstantVelocity;                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetScaleAtSplinePoint
-struct UPaperTerrainSplineComponent_GetScaleAtSplinePoint_Params
-{
-	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetScaleAtDistanceAlongSpline
-struct UPaperTerrainSplineComponent_GetScaleAtDistanceAlongSpline_Params
-{
-	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetRotationAtTime
-struct UPaperTerrainSplineComponent_GetRotationAtTime_Params
-{
-	float                                              Time;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseConstantVelocity;                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FRotator                                    ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetRotationAtSplinePoint
-struct UPaperTerrainSplineComponent_GetRotationAtSplinePoint_Params
-{
-	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FRotator                                    ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetRotationAtDistanceAlongSpline
-struct UPaperTerrainSplineComponent_GetRotationAtDistanceAlongSpline_Params
-{
-	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FRotator                                    ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetRollAtTime
-struct UPaperTerrainSplineComponent_GetRollAtTime_Params
-{
-	float                                              Time;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseConstantVelocity;                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetRollAtSplinePoint
-struct UPaperTerrainSplineComponent_GetRollAtSplinePoint_Params
-{
-	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetRollAtDistanceAlongSpline
-struct UPaperTerrainSplineComponent_GetRollAtDistanceAlongSpline_Params
-{
-	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetRightVectorAtTime
-struct UPaperTerrainSplineComponent_GetRightVectorAtTime_Params
-{
-	float                                              Time;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseConstantVelocity;                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetRightVectorAtSplinePoint
-struct UPaperTerrainSplineComponent_GetRightVectorAtSplinePoint_Params
-{
-	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetRightVectorAtDistanceAlongSpline
-struct UPaperTerrainSplineComponent_GetRightVectorAtDistanceAlongSpline_Params
-{
-	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetNumberOfSplinePoints
-struct UPaperTerrainSplineComponent_GetNumberOfSplinePoints_Params
-{
-	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetLocationAtTime
-struct UPaperTerrainSplineComponent_GetLocationAtTime_Params
-{
-	float                                              Time;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseConstantVelocity;                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetLocationAtSplinePoint
-struct UPaperTerrainSplineComponent_GetLocationAtSplinePoint_Params
-{
-	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetLocationAtDistanceAlongSpline
-struct UPaperTerrainSplineComponent_GetLocationAtDistanceAlongSpline_Params
-{
-	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetLocationAndTangentAtSplinePoint
-struct UPaperTerrainSplineComponent_GetLocationAndTangentAtSplinePoint_Params
-{
-	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     Location;                                                 // (Parm, OutParm, IsPlainOldData)
-	struct FVector                                     Tangent;                                                  // (Parm, OutParm, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetLocalLocationAndTangentAtSplinePoint
-struct UPaperTerrainSplineComponent_GetLocalLocationAndTangentAtSplinePoint_Params
-{
-	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     LocalLocation;                                            // (Parm, OutParm, IsPlainOldData)
-	struct FVector                                     LocalTangent;                                             // (Parm, OutParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetLengthInRange
-struct UPaperTerrainSplineComponent_GetLengthInRange_Params
-{
-	int                                                StartIndex;                                               // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-	int                                                EndIndex;                                                 // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetLeaveTangentAtSplinePoint
-struct UPaperTerrainSplineComponent_GetLeaveTangentAtSplinePoint_Params
-{
-	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetInputKeyAtDistanceAlongSpline
-struct UPaperTerrainSplineComponent_GetInputKeyAtDistanceAlongSpline_Params
-{
-	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetDistanceAlongSplineAtSplinePoint
-struct UPaperTerrainSplineComponent_GetDistanceAlongSplineAtSplinePoint_Params
-{
-	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetDirectionAtTime
-struct UPaperTerrainSplineComponent_GetDirectionAtTime_Params
-{
-	float                                              Time;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseConstantVelocity;                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetDirectionAtSplinePoint
-struct UPaperTerrainSplineComponent_GetDirectionAtSplinePoint_Params
-{
-	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetDirectionAtDistanceAlongSpline
-struct UPaperTerrainSplineComponent_GetDirectionAtDistanceAlongSpline_Params
-{
-	float                                              Distance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetDefaultUpVector
-struct UPaperTerrainSplineComponent_GetDefaultUpVector_Params
-{
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.GetArriveTangentAtSplinePoint
-struct UPaperTerrainSplineComponent_GetArriveTangentAtSplinePoint_Params
-{
-	int                                                PointIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.FindUpVectorClosestToWorldLocation
-struct UPaperTerrainSplineComponent_FindUpVectorClosestToWorldLocation_Params
-{
-	struct FVector                                     WorldLocation;                                            // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.FindTransformClosestToWorldLocation
-struct UPaperTerrainSplineComponent_FindTransformClosestToWorldLocation_Params
-{
-	struct FVector                                     WorldLocation;                                            // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUseScale;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FTransform                                  ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.FindTangentClosestToWorldLocation
-struct UPaperTerrainSplineComponent_FindTangentClosestToWorldLocation_Params
-{
-	struct FVector                                     WorldLocation;                                            // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.FindScaleClosestToWorldLocation
-struct UPaperTerrainSplineComponent_FindScaleClosestToWorldLocation_Params
-{
-	struct FVector                                     WorldLocation;                                            // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.FindRotationClosestToWorldLocation
-struct UPaperTerrainSplineComponent_FindRotationClosestToWorldLocation_Params
-{
-	struct FVector                                     WorldLocation;                                            // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FRotator                                    ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.FindRollClosestToWorldLocation
-struct UPaperTerrainSplineComponent_FindRollClosestToWorldLocation_Params
-{
-	struct FVector                                     WorldLocation;                                            // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.FindRightVectorClosestToWorldLocation
-struct UPaperTerrainSplineComponent_FindRightVectorClosestToWorldLocation_Params
-{
-	struct FVector                                     WorldLocation;                                            // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.FindLocationClosestToWorldLocation
-struct UPaperTerrainSplineComponent_FindLocationClosestToWorldLocation_Params
-{
-	struct FVector                                     WorldLocation;                                            // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.FindInputKeyClosestToWorldLocation
-struct UPaperTerrainSplineComponent_FindInputKeyClosestToWorldLocation_Params
-{
-	struct FVector                                     WorldLocation;                                            // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.FindDirectionClosestToWorldLocation
-struct UPaperTerrainSplineComponent_FindDirectionClosestToWorldLocation_Params
-{
-	struct FVector                                     WorldLocation;                                            // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.ClearSplinePoints
-struct UPaperTerrainSplineComponent_ClearSplinePoints_Params
-{
-	bool                                               bUpdateSpline;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.AddSplineWorldPoint
-struct UPaperTerrainSplineComponent_AddSplineWorldPoint_Params
-{
-	struct FVector                                     Position;                                                 // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.AddSplinePointAtIndex
-struct UPaperTerrainSplineComponent_AddSplinePointAtIndex_Params
-{
-	struct FVector                                     Position;                                                 // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	int                                                Index;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUpdateSpline;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.AddSplinePoint
-struct UPaperTerrainSplineComponent_AddSplinePoint_Params
-{
-	struct FVector                                     Position;                                                 // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TEnumAsByte<ESplineCoordinateSpace>                CoordinateSpace;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUpdateSpline;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.AddSplineLocalPoint
-struct UPaperTerrainSplineComponent_AddSplineLocalPoint_Params
-{
-	struct FVector                                     Position;                                                 // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.AddPoints
-struct UPaperTerrainSplineComponent_AddPoints_Params
-{
-	TArray<struct FSplinePoint>                        Points;                                                   // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	bool                                               bUpdateSpline;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function Engine.SplineComponent.AddPoint
-struct UPaperTerrainSplineComponent_AddPoint_Params
-{
-	struct FSplinePoint                                Point;                                                    // (ConstParm, Parm, OutParm, ReferenceParm)
-	bool                                               bUpdateSpline;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function Paper2D.PaperTileMapComponent.SetTileMapColor
@@ -1061,6 +447,42 @@ struct UPaperTileMapComponent_CreateNewTileMap_Params
 struct UPaperTileMapComponent_AddNewLayer_Params
 {
 	class UPaperTileLayer*                             ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Paper2D.TileMapBlueprintLibrary.MakeTile
+struct UTileMapBlueprintLibrary_MakeTile_Params
+{
+	int                                                TileIndex;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	class UPaperTileSet*                               TileSet;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bFlipH;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bFlipV;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bFlipD;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FPaperTileInfo                              ReturnValue;                                              // (Parm, OutParm, ReturnParm)
+};
+
+// Function Paper2D.TileMapBlueprintLibrary.GetTileUserData
+struct UTileMapBlueprintLibrary_GetTileUserData_Params
+{
+	struct FPaperTileInfo                              Tile;                                                     // (Parm)
+	struct FName                                       ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Paper2D.TileMapBlueprintLibrary.GetTileTransform
+struct UTileMapBlueprintLibrary_GetTileTransform_Params
+{
+	struct FPaperTileInfo                              Tile;                                                     // (Parm)
+	struct FTransform                                  ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function Paper2D.TileMapBlueprintLibrary.BreakTile
+struct UTileMapBlueprintLibrary_BreakTile_Params
+{
+	struct FPaperTileInfo                              Tile;                                                     // (Parm)
+	int                                                TileIndex;                                                // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+	class UPaperTileSet*                               TileSet;                                                  // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+	bool                                               bFlipH;                                                   // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+	bool                                               bFlipV;                                                   // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+	bool                                               bFlipD;                                                   // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 };
 
 }

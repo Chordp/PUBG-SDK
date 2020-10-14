@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,13 +15,13 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Class WmfMediaFactory.WmfMediaSettings
-// 0x0008 (0x0038 - 0x0030)
+// 0x0008 (0x0048 - 0x0040)
 class UWmfMediaSettings : public UObject
 {
 public:
-	bool                                               AllowNonStandardCodecs;                                   // 0x0030(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData)
-	bool                                               NativeAudioOut;                                           // 0x0031(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x6];                                       // 0x0032(0x0006) MISSED OFFSET
+	bool                                               AllowNonStandardCodecs;                                   // 0x0040(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData)
+	bool                                               NativeAudioOut;                                           // 0x0041(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x6];                                       // 0x0042(0x0006) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{

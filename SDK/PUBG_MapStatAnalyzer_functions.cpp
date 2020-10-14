@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,13 +13,13 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function MapStatAnalyzer.MapStatAnalyzer_C.EqualsFloatArray
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // TArray<float>                  NewParam                       (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // TArray<float>                  NewParam1                      (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // float*                         NewParam2                      (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           NewParam3                      (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void AMapStatAnalyzer_C::EqualsFloatArray(float* NewParam2, TArray<float>* NewParam, TArray<float>* NewParam1, bool* NewParam3)
 {
@@ -47,10 +47,10 @@ void AMapStatAnalyzer_C::EqualsFloatArray(float* NewParam2, TArray<float>* NewPa
 
 
 // Function MapStatAnalyzer.MapStatAnalyzer_C.DelayTimeToDelayFrames
-// ()
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 int AMapStatAnalyzer_C::DelayTimeToDelayFrames()
 {
@@ -72,10 +72,10 @@ int AMapStatAnalyzer_C::DelayTimeToDelayFrames()
 
 
 // Function MapStatAnalyzer.MapStatAnalyzer_C.GetAltSharedPresetDir
-// ()
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 struct FString AMapStatAnalyzer_C::GetAltSharedPresetDir()
 {
@@ -97,10 +97,10 @@ struct FString AMapStatAnalyzer_C::GetAltSharedPresetDir()
 
 
 // Function MapStatAnalyzer.MapStatAnalyzer_C.GetCurrentLevelSize
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // float                          NewParam                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void AMapStatAnalyzer_C::GetCurrentLevelSize(float* NewParam)
 {
@@ -123,11 +123,11 @@ void AMapStatAnalyzer_C::GetCurrentLevelSize(float* NewParam)
 
 
 // Function MapStatAnalyzer.MapStatAnalyzer_C.GetExpectedMapSize
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // float*                         MapStride                      (Parm, ZeroConstructor, IsPlainOldData)
 // float                          NewParam                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void AMapStatAnalyzer_C::GetExpectedMapSize(float* MapStride, float* NewParam)
 {
@@ -151,10 +151,10 @@ void AMapStatAnalyzer_C::GetExpectedMapSize(float* MapStride, float* NewParam)
 
 
 // Function MapStatAnalyzer.MapStatAnalyzer_C.GetSharedPresetDir
-// ()
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 struct FString AMapStatAnalyzer_C::GetSharedPresetDir()
 {
@@ -176,10 +176,10 @@ struct FString AMapStatAnalyzer_C::GetSharedPresetDir()
 
 
 // Function MapStatAnalyzer.MapStatAnalyzer_C.GetSavedDir
-// ()
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 struct FString AMapStatAnalyzer_C::GetSavedDir()
 {
@@ -201,12 +201,12 @@ struct FString AMapStatAnalyzer_C::GetSavedDir()
 
 
 // Function MapStatAnalyzer.MapStatAnalyzer_C.LoadStringFromFile
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FString*                FullFilePath                   (Parm, ZeroConstructor)
 // bool                           bSuccess                       (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // struct FString                 NewVar                         (Parm, OutParm, ZeroConstructor)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void AMapStatAnalyzer_C::LoadStringFromFile(struct FString* FullFilePath, bool* bSuccess, struct FString* NewVar)
 {
@@ -232,11 +232,11 @@ void AMapStatAnalyzer_C::LoadStringFromFile(struct FString* FullFilePath, bool* 
 
 
 // Function MapStatAnalyzer.MapStatAnalyzer_C.GetCurrentLevelMinimapURL
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // struct FString*                PresetDir                      (Parm, ZeroConstructor)
 // struct FString                 NewParam                       (Parm, OutParm, ZeroConstructor)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void AMapStatAnalyzer_C::GetCurrentLevelMinimapURL(struct FString* PresetDir, struct FString* NewParam)
 {
@@ -260,14 +260,14 @@ void AMapStatAnalyzer_C::GetCurrentLevelMinimapURL(struct FString* PresetDir, st
 
 
 // Function MapStatAnalyzer.MapStatAnalyzer_C.FloatArrayToNewlinedString
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // TArray<float>                  Array                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// struct FString*                NewLinedString                 (Parm, ZeroConstructor)
+// struct FString*                NewlinedString                 (Parm, ZeroConstructor)
 // struct FString                 NewVar                         (Parm, OutParm, ZeroConstructor)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
-void AMapStatAnalyzer_C::FloatArrayToNewlinedString(struct FString* NewLinedString, TArray<float>* Array, struct FString* NewVar)
+void AMapStatAnalyzer_C::FloatArrayToNewlinedString(struct FString* NewlinedString, TArray<float>* Array, struct FString* NewVar)
 {
 	static UFunction* fn;
 
@@ -275,7 +275,7 @@ void AMapStatAnalyzer_C::FloatArrayToNewlinedString(struct FString* NewLinedStri
 		fn = UObject::FindObject<UFunction>(_xor_("Function MapStatAnalyzer.MapStatAnalyzer_C.FloatArrayToNewlinedString"));
 
 	AMapStatAnalyzer_C_FloatArrayToNewlinedString_Params params;
-	params.NewLinedString = NewLinedString;
+	params.NewlinedString = NewlinedString;
 
 	auto flags = fn->FunctionFlags;
 
@@ -291,14 +291,14 @@ void AMapStatAnalyzer_C::FloatArrayToNewlinedString(struct FString* NewLinedStri
 
 
 // Function MapStatAnalyzer.MapStatAnalyzer_C.StingArrayToNewlinedString
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // TArray<struct FString>         Array                          (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// struct FString*                NewLinedString                 (Parm, ZeroConstructor)
+// struct FString*                NewlinedString                 (Parm, ZeroConstructor)
 // struct FString                 NewVar                         (Parm, OutParm, ZeroConstructor)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
-void AMapStatAnalyzer_C::StingArrayToNewlinedString(struct FString* NewLinedString, TArray<struct FString>* Array, struct FString* NewVar)
+void AMapStatAnalyzer_C::StingArrayToNewlinedString(struct FString* NewlinedString, TArray<struct FString>* Array, struct FString* NewVar)
 {
 	static UFunction* fn;
 
@@ -306,7 +306,7 @@ void AMapStatAnalyzer_C::StingArrayToNewlinedString(struct FString* NewLinedStri
 		fn = UObject::FindObject<UFunction>(_xor_("Function MapStatAnalyzer.MapStatAnalyzer_C.StingArrayToNewlinedString"));
 
 	AMapStatAnalyzer_C_StingArrayToNewlinedString_Params params;
-	params.NewLinedString = NewLinedString;
+	params.NewlinedString = NewlinedString;
 
 	auto flags = fn->FunctionFlags;
 
@@ -322,10 +322,10 @@ void AMapStatAnalyzer_C::StingArrayToNewlinedString(struct FString* NewLinedStri
 
 
 // Function MapStatAnalyzer.MapStatAnalyzer_C.HitchFrameStatsThreshold
-// ()
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // TArray<float>                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 TArray<float> AMapStatAnalyzer_C::HitchFrameStatsThreshold()
 {
@@ -347,13 +347,13 @@ TArray<float> AMapStatAnalyzer_C::HitchFrameStatsThreshold()
 
 
 // Function MapStatAnalyzer.MapStatAnalyzer_C.GetAvgOnArray
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // TArray<float>                  NewParam                       (Parm, OutParm, ZeroConstructor, ReferenceParm)
 // float                          OutAvg                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // float                          OutMin                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // float                          OutMax                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void AMapStatAnalyzer_C::GetAvgOnArray(TArray<float>* NewParam, float* OutAvg, float* OutMin, float* OutMax)
 {
@@ -382,11 +382,11 @@ void AMapStatAnalyzer_C::GetAvgOnArray(TArray<float>* NewParam, float* OutAvg, f
 
 
 // Function MapStatAnalyzer.MapStatAnalyzer_C.DateTimeToString
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // struct FDateTime*              NewParam                       (Parm)
 // struct FString                 NewParam1                      (Parm, OutParm, ZeroConstructor)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void AMapStatAnalyzer_C::DateTimeToString(struct FDateTime* NewParam, struct FString* NewParam1)
 {
@@ -410,11 +410,11 @@ void AMapStatAnalyzer_C::DateTimeToString(struct FDateTime* NewParam, struct FSt
 
 
 // Function MapStatAnalyzer.MapStatAnalyzer_C.ComputeWorldSize
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FVector*                Min                            (Parm, IsPlainOldData)
 // struct FVector*                Max                            (Parm, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void AMapStatAnalyzer_C::ComputeWorldSize(struct FVector* Min, struct FVector* Max)
 {
@@ -436,8 +436,8 @@ void AMapStatAnalyzer_C::ComputeWorldSize(struct FVector* Min, struct FVector* M
 
 
 // Function MapStatAnalyzer.MapStatAnalyzer_C.UserConstructionScript
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void AMapStatAnalyzer_C::UserConstructionScript()
 {
@@ -457,8 +457,8 @@ void AMapStatAnalyzer_C::UserConstructionScript()
 
 
 // Function MapStatAnalyzer.MapStatAnalyzer_C.ReceiveBeginPlay
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Event, Protected, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void AMapStatAnalyzer_C::ReceiveBeginPlay()
 {
@@ -478,10 +478,10 @@ void AMapStatAnalyzer_C::ReceiveBeginPlay()
 
 
 // Function MapStatAnalyzer.MapStatAnalyzer_C.ReceiveEndPlay
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Event, Public, BlueprintEvent)
 // Parameters:
 // TEnumAsByte<EEndPlayReason>    EndPlayReason                  (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void AMapStatAnalyzer_C::ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason)
 {
@@ -502,10 +502,10 @@ void AMapStatAnalyzer_C::ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReaso
 
 
 // Function MapStatAnalyzer.MapStatAnalyzer_C.ExecuteUbergraph_MapStatAnalyzer
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void AMapStatAnalyzer_C::ExecuteUbergraph_MapStatAnalyzer(int* EntryPoint)
 {

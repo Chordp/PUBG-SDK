@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,13 +13,13 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected, Delegate, NetServer)
+// (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
 // class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
 // class ULevelSequence*          LevelSequence                  (Parm, ZeroConstructor, IsPlainOldData)
 // struct FMovieSceneSequencePlaybackSettings Settings                       (Parm)
 // class ULevelSequencePlayer*    ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF639D89660              		 offset:2a99660                       
+// FunctionAddress:0x00007FF62A4B3310              		 offset:19e3310                       
 
 class ULevelSequencePlayer* ULevelSequencePlayer::STATIC_CreateLevelSequencePlayer(class UObject* WorldContextObject, class ULevelSequence* LevelSequence, const struct FMovieSceneSequencePlaybackSettings& Settings)
 {
@@ -45,12 +45,12 @@ class ULevelSequencePlayer* ULevelSequencePlayer::STATIC_CreateLevelSequencePlay
 
 
 // Function LevelSequence.LevelSequenceActor.SetSequence
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class ULevelSequence*          InSequence                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF639D89DB0              		 offset:2a99db0                       
+// FunctionAddress:0x00007FF628C997F0              		 offset:1c97f0                        
 
-void ALevelSequenceActor::STATIC_SetSequence(class ULevelSequence* InSequence)
+void ALevelSequenceActor::SetSequence(class ULevelSequence* InSequence)
 {
 	static UFunction* fn;
 
@@ -70,12 +70,12 @@ void ALevelSequenceActor::STATIC_SetSequence(class ULevelSequence* InSequence)
 
 
 // Function LevelSequence.LevelSequenceActor.SetEventReceivers
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // TArray<class AActor*>          AdditionalReceivers            (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF639D89CB0              		 offset:2a99cb0                       
+// FunctionAddress:0x00007FF62BE75030              		 offset:33a5030                       
 
-void ALevelSequenceActor::STATIC_SetEventReceivers(TArray<class AActor*> AdditionalReceivers)
+void ALevelSequenceActor::SetEventReceivers(TArray<class AActor*> AdditionalReceivers)
 {
 	static UFunction* fn;
 
@@ -95,14 +95,14 @@ void ALevelSequenceActor::STATIC_SetEventReceivers(TArray<class AActor*> Additio
 
 
 // Function LevelSequence.LevelSequenceActor.SetBinding
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
 // struct FMovieSceneObjectBindingID Binding                        (Parm)
 // TArray<class AActor*>          Actors                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // bool                           bAllowBindingsFromAsset        (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF639D89AB0              		 offset:2a99ab0                       
+// FunctionAddress:0x00007FF62C52DF10              		 offset:3a5df10                       
 
-void ALevelSequenceActor::STATIC_SetBinding(const struct FMovieSceneObjectBindingID& Binding, TArray<class AActor*> Actors, bool bAllowBindingsFromAsset)
+void ALevelSequenceActor::SetBinding(const struct FMovieSceneObjectBindingID& Binding, TArray<class AActor*> Actors, bool bAllowBindingsFromAsset)
 {
 	static UFunction* fn;
 
@@ -124,10 +124,10 @@ void ALevelSequenceActor::STATIC_SetBinding(const struct FMovieSceneObjectBindin
 
 
 // Function LevelSequence.LevelSequenceActor.ResetBindings
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF639D89A60              		 offset:2a99a60                       
+// (Final, Native, Public, BlueprintCallable)
+// FunctionAddress:0x00007FF628DC2580              		 offset:2f2580                        
 
-void ALevelSequenceActor::STATIC_ResetBindings()
+void ALevelSequenceActor::ResetBindings()
 {
 	static UFunction* fn;
 
@@ -146,12 +146,12 @@ void ALevelSequenceActor::STATIC_ResetBindings()
 
 
 // Function LevelSequence.LevelSequenceActor.ResetBinding
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FMovieSceneObjectBindingID Binding                        (Parm)
-// FunctionAddress:0x00007FF639D89970              		 offset:2a99970                       
+// FunctionAddress:0x00007FF62978A0F0              		 offset:cba0f0                        
 
-void ALevelSequenceActor::STATIC_ResetBinding(const struct FMovieSceneObjectBindingID& Binding)
+void ALevelSequenceActor::ResetBinding(const struct FMovieSceneObjectBindingID& Binding)
 {
 	static UFunction* fn;
 
@@ -171,13 +171,13 @@ void ALevelSequenceActor::STATIC_ResetBinding(const struct FMovieSceneObjectBind
 
 
 // Function LevelSequence.LevelSequenceActor.RemoveBinding
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FMovieSceneObjectBindingID Binding                        (Parm)
 // class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF639D89860              		 offset:2a99860                       
+// FunctionAddress:0x00007FF6294CD720              		 offset:9fd720                        
 
-void ALevelSequenceActor::STATIC_RemoveBinding(const struct FMovieSceneObjectBindingID& Binding, class AActor* Actor)
+void ALevelSequenceActor::RemoveBinding(const struct FMovieSceneObjectBindingID& Binding, class AActor* Actor)
 {
 	static UFunction* fn;
 
@@ -198,13 +198,13 @@ void ALevelSequenceActor::STATIC_RemoveBinding(const struct FMovieSceneObjectBin
 
 
 // Function LevelSequence.LevelSequenceActor.GetSequence
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           Load                           (Parm, ZeroConstructor, IsPlainOldData)
 // class ULevelSequence*          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF639D897C0              		 offset:2a997c0                       
+// FunctionAddress:0x00007FF62AA2A870              		 offset:1f5a870                       
 
-class ULevelSequence* ALevelSequenceActor::STATIC_GetSequence(bool Load)
+class ULevelSequence* ALevelSequenceActor::GetSequence(bool Load)
 {
 	static UFunction* fn;
 
@@ -226,14 +226,14 @@ class ULevelSequence* ALevelSequenceActor::STATIC_GetSequence(bool Load)
 
 
 // Function LevelSequence.LevelSequenceActor.AddBinding
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FMovieSceneObjectBindingID Binding                        (Parm)
 // class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bAllowBindingsFromAsset        (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF639D89510              		 offset:2a99510                       
+// FunctionAddress:0x00007FF62D430D60              		 offset:4960d60                       
 
-void ALevelSequenceActor::STATIC_AddBinding(const struct FMovieSceneObjectBindingID& Binding, class AActor* Actor, bool bAllowBindingsFromAsset)
+void ALevelSequenceActor::AddBinding(const struct FMovieSceneObjectBindingID& Binding, class AActor* Actor, bool bAllowBindingsFromAsset)
 {
 	static UFunction* fn;
 
@@ -255,12 +255,12 @@ void ALevelSequenceActor::STATIC_AddBinding(const struct FMovieSceneObjectBindin
 
 
 // Function LevelSequence.LevelSequenceBurnIn.SetSettings
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Event, Public, BlueprintEvent)
 // Parameters:
 // class UObject*                 InSettings                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
-void ULevelSequenceBurnIn::STATIC_SetSettings(class UObject* InSettings)
+void ULevelSequenceBurnIn::SetSettings(class UObject* InSettings)
 {
 	static UFunction* fn;
 
@@ -271,7 +271,6 @@ void ULevelSequenceBurnIn::STATIC_SetSettings(class UObject* InSettings)
 	params.InSettings = InSettings;
 
 	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -280,12 +279,12 @@ void ULevelSequenceBurnIn::STATIC_SetSettings(class UObject* InSettings)
 
 
 // Function LevelSequence.LevelSequenceBurnIn.GetSettingsClass
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Native, Event, Public, BlueprintEvent, Const)
 // Parameters:
 // class UClass*                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF637CB8F20              		 offset:9c8f20                        
+// FunctionAddress:0x00007FF6292167D0              		 offset:7467d0                        
 
-class UClass* ULevelSequenceBurnIn::STATIC_GetSettingsClass()
+class UClass* ULevelSequenceBurnIn::GetSettingsClass()
 {
 	static UFunction* fn;
 

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,6 +13,27 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Parameters
 //---------------------------------------------------------------------------
+
+// Function MediaAssets.MediaOverlays.GetTexts
+struct UMediaOverlays_GetTexts_Params
+{
+	TArray<struct FMediaPlayerOverlay>                 OutTexts;                                                 // (Parm, OutParm, ZeroConstructor)
+	struct FTimespan                                   Time;                                                     // (Parm)
+};
+
+// Function MediaAssets.MediaOverlays.GetSubtitles
+struct UMediaOverlays_GetSubtitles_Params
+{
+	TArray<struct FMediaPlayerOverlay>                 OutSubtitles;                                             // (Parm, OutParm, ZeroConstructor)
+	struct FTimespan                                   Time;                                                     // (Parm)
+};
+
+// Function MediaAssets.MediaOverlays.GetCaptions
+struct UMediaOverlays_GetCaptions_Params
+{
+	TArray<struct FMediaPlayerOverlay>                 OutCaptions;                                              // (Parm, OutParm, ZeroConstructor)
+	struct FTimespan                                   Time;                                                     // (Parm)
+};
 
 // Function MediaAssets.MediaPlayer.SupportsSeeking
 struct UMediaPlayer_SupportsSeeking_Params

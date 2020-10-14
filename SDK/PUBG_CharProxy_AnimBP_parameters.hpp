@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -23,12 +23,6 @@ struct UCharProxy_AnimBP_C_ProcessLobbyCharacter_Params
 // Function CharProxy_AnimBP.CharProxy_AnimBP_C.UpdateBlink
 struct UCharProxy_AnimBP_C_UpdateBlink_Params
 {
-};
-
-// Function CharProxy_AnimBP.CharProxy_AnimBP_C.GetAnimWeaponIKLeft
-struct UCharProxy_AnimBP_C_GetAnimWeaponIKLeft_Params
-{
-	struct FTransform                                  IKLeft;                                                   // (Parm, OutParm, IsPlainOldData)
 };
 
 // Function CharProxy_AnimBP.CharProxy_AnimBP_C.GetAnimWeaponType

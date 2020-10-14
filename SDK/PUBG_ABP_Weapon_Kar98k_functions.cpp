@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,8 +13,8 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.Handle_ReloadByOne_Stop
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UABP_Weapon_Kar98k_C::Handle_ReloadByOne_Stop()
 {
@@ -34,8 +34,8 @@ void UABP_Weapon_Kar98k_C::Handle_ReloadByOne_Stop()
 
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.Handle_ReloadByOne_Single
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UABP_Weapon_Kar98k_C::Handle_ReloadByOne_Single()
 {
@@ -55,8 +55,8 @@ void UABP_Weapon_Kar98k_C::Handle_ReloadByOne_Single()
 
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.Handle_ReloadByOne_Start
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UABP_Weapon_Kar98k_C::Handle_ReloadByOne_Start()
 {
@@ -76,8 +76,8 @@ void UABP_Weapon_Kar98k_C::Handle_ReloadByOne_Start()
 
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.Handle_FireCycle
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UABP_Weapon_Kar98k_C::Handle_FireCycle()
 {
@@ -96,9 +96,93 @@ void UABP_Weapon_Kar98k_C::Handle_FireCycle()
 }
 
 
+// Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_18C910A44F9008AC742A4E9E701EA7F8
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+
+void UABP_Weapon_Kar98k_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_18C910A44F9008AC742A4E9E701EA7F8()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_18C910A44F9008AC742A4E9E701EA7F8"));
+
+	UABP_Weapon_Kar98k_C_EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_18C910A44F9008AC742A4E9E701EA7F8_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_033A2398482A3043781C368D6E04B471
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+
+void UABP_Weapon_Kar98k_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_033A2398482A3043781C368D6E04B471()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_033A2398482A3043781C368D6E04B471"));
+
+	UABP_Weapon_Kar98k_C_EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_033A2398482A3043781C368D6E04B471_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_43A4B63640B00C90EE186E9BCF655F5A
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+
+void UABP_Weapon_Kar98k_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_43A4B63640B00C90EE186E9BCF655F5A()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_43A4B63640B00C90EE186E9BCF655F5A"));
+
+	UABP_Weapon_Kar98k_C_EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_43A4B63640B00C90EE186E9BCF655F5A_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_291D982749D2C15B5A42458E533D3353
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+
+void UABP_Weapon_Kar98k_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_291D982749D2C15B5A42458E533D3353()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_291D982749D2C15B5A42458E533D3353"));
+
+	UABP_Weapon_Kar98k_C_EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_291D982749D2C15B5A42458E533D3353_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_F04618AC46C758D4557155A3D6C5281B
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UABP_Weapon_Kar98k_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_F04618AC46C758D4557155A3D6C5281B()
 {
@@ -118,8 +202,8 @@ void UABP_Weapon_Kar98k_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapo
 
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_535B35864D6D73BE83E3B0B9F7682E1B
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UABP_Weapon_Kar98k_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_535B35864D6D73BE83E3B0B9F7682E1B()
 {
@@ -139,10 +223,10 @@ void UABP_Weapon_Kar98k_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapo
 
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.BlueprintUpdateAnimation
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Event, Public, BlueprintEvent)
 // Parameters:
 // float*                         DeltaTimeX                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UABP_Weapon_Kar98k_C::BlueprintUpdateAnimation(float* DeltaTimeX)
 {
@@ -163,8 +247,8 @@ void UABP_Weapon_Kar98k_C::BlueprintUpdateAnimation(float* DeltaTimeX)
 
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.BlueprintInitializeAnimation
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Event, Public, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UABP_Weapon_Kar98k_C::BlueprintInitializeAnimation()
 {
@@ -184,8 +268,8 @@ void UABP_Weapon_Kar98k_C::BlueprintInitializeAnimation()
 
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.WeaponFireCycle_Event
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UABP_Weapon_Kar98k_C::WeaponFireCycle_Event()
 {
@@ -205,8 +289,8 @@ void UABP_Weapon_Kar98k_C::WeaponFireCycle_Event()
 
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.AnimNotify_ClipShow
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UABP_Weapon_Kar98k_C::AnimNotify_ClipShow()
 {
@@ -226,8 +310,8 @@ void UABP_Weapon_Kar98k_C::AnimNotify_ClipShow()
 
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.AnimNotify_ClipHide
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UABP_Weapon_Kar98k_C::AnimNotify_ClipHide()
 {
@@ -247,8 +331,8 @@ void UABP_Weapon_Kar98k_C::AnimNotify_ClipHide()
 
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.Reload2_Event
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UABP_Weapon_Kar98k_C::Reload2_Event()
 {
@@ -268,10 +352,10 @@ void UABP_Weapon_Kar98k_C::Reload2_Event()
 
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.ReloadByOneStart_Event
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int*                           AmmoToReload                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UABP_Weapon_Kar98k_C::ReloadByOneStart_Event(int* AmmoToReload)
 {
@@ -292,8 +376,8 @@ void UABP_Weapon_Kar98k_C::ReloadByOneStart_Event(int* AmmoToReload)
 
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.ReloadByOneSingle_Event
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UABP_Weapon_Kar98k_C::ReloadByOneSingle_Event()
 {
@@ -313,8 +397,8 @@ void UABP_Weapon_Kar98k_C::ReloadByOneSingle_Event()
 
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.ReloadByOneEnd_Event
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UABP_Weapon_Kar98k_C::ReloadByOneEnd_Event()
 {
@@ -334,8 +418,8 @@ void UABP_Weapon_Kar98k_C::ReloadByOneEnd_Event()
 
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.AnimNotify_ShellEject
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UABP_Weapon_Kar98k_C::AnimNotify_ShellEject()
 {
@@ -355,8 +439,8 @@ void UABP_Weapon_Kar98k_C::AnimNotify_ShellEject()
 
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.CancelReload_Event
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UABP_Weapon_Kar98k_C::CancelReload_Event()
 {
@@ -376,10 +460,10 @@ void UABP_Weapon_Kar98k_C::CancelReload_Event()
 
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.ExecuteUbergraph_ABP_Weapon_Kar98k
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UABP_Weapon_Kar98k_C::ExecuteUbergraph_ABP_Weapon_Kar98k(int* EntryPoint)
 {

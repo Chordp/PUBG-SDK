@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -21,7 +21,8 @@ enum class ECustomizableObjectProjectorType : uint8_t
 {
 	Planar                         = 0,
 	Cylindrical                    = 1,
-	ECustomizableObjectProjectorType_MAX = 2
+	Wrapping                       = 2,
+	ECustomizableObjectProjectorType_MAX = 3
 };
 
 
@@ -87,22 +88,24 @@ struct FCustomizableObjectBoolParameterValue
 };
 
 // ScriptStruct CustomizableObject.CustomizableObjectIntParameterValue
-// 0x0030
+// 0x0040
 struct FCustomizableObjectIntParameterValue
 {
 	struct FString                                     ParameterName;                                            // 0x0000(0x0010) (Edit, ZeroConstructor, EditConst)
 	struct FString                                     ParameterValueName;                                       // 0x0010(0x0010) (ZeroConstructor)
 	struct FString                                     Uid;                                                      // 0x0020(0x0010) (Edit, ZeroConstructor, EditConst)
+	TArray<struct FString>                             ParameterRangeValueNames;                                 // 0x0030(0x0010) (ZeroConstructor)
 };
 
 // ScriptStruct CustomizableObject.CustomizableObjectFloatParameterValue
-// 0x0028
+// 0x0038
 struct FCustomizableObjectFloatParameterValue
 {
 	struct FString                                     ParameterName;                                            // 0x0000(0x0010) (Edit, ZeroConstructor, EditConst)
 	float                                              ParameterValue;                                           // 0x0010(0x0004) (Edit, ZeroConstructor, EditConst, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x4];                                       // 0x0014(0x0004) MISSED OFFSET
 	struct FString                                     Uid;                                                      // 0x0018(0x0010) (Edit, ZeroConstructor, EditConst)
+	TArray<float>                                      ParameterRangeValues;                                     // 0x0028(0x0010) (Edit, ZeroConstructor, EditConst)
 };
 
 // ScriptStruct CustomizableObject.CustomizableObjectTextureParameterValue
@@ -137,12 +140,13 @@ struct FCustomizableObjectProjector
 };
 
 // ScriptStruct CustomizableObject.CustomizableObjectProjectorParameterValue
-// 0x0058
+// 0x0068
 struct FCustomizableObjectProjectorParameterValue
 {
 	struct FString                                     ParameterName;                                            // 0x0000(0x0010) (Edit, ZeroConstructor, EditConst)
 	struct FCustomizableObjectProjector                Value;                                                    // 0x0010(0x0038) (Edit, EditConst)
 	struct FString                                     Uid;                                                      // 0x0048(0x0010) (Edit, ZeroConstructor, EditConst)
+	TArray<struct FCustomizableObjectProjector>        RangeValues;                                              // 0x0058(0x0010) (Edit, ZeroConstructor, EditConst)
 };
 
 // ScriptStruct CustomizableObject.GeneratedTexture
@@ -178,8 +182,17 @@ struct FParameterDecorations
 	TArray<class UTexture2D*>                          Images;                                                   // 0x0000(0x0010) (ZeroConstructor, Transient)
 };
 
+// ScriptStruct CustomizableObject.MaskOutTexture
+// 0x0018
+struct FMaskOutTexture
+{
+	int                                                SizeX;                                                    // 0x0000(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                SizeY;                                                    // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData)
+	TArray<uint32_t>                                   Data;                                                     // 0x0008(0x0010) (ZeroConstructor)
+};
+
 // ScriptStruct CustomizableObject.MutableModelImageProperties
-// 0x0020
+// 0x0028
 struct FMutableModelImageProperties
 {
 	struct FString                                     TextureParameterName;                                     // 0x0000(0x0010) (ZeroConstructor)
@@ -192,6 +205,8 @@ struct FMutableModelImageProperties
 	int                                                LODBias;                                                  // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
 	TEnumAsByte<ETextureMipGenSettings>                MipGenSettings;                                           // 0x001C(0x0001) (ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData02[0x3];                                       // 0x001D(0x0003) MISSED OFFSET
+	int                                                MaxTextureSize;                                           // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x4];                                       // 0x0024(0x0004) MISSED OFFSET
 };
 
 // ScriptStruct CustomizableObject.CustomizableObjectIdPair
@@ -206,11 +221,12 @@ struct FCustomizableObjectIdPair
 // 0x0020
 struct FCompilationOptions
 {
-	bool                                               bPackaging;                                               // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
-	bool                                               bTextureCompression;                                      // 0x0001(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x2];                                       // 0x0002(0x0002) MISSED OFFSET
+	bool                                               bTextureCompression;                                      // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
 	int                                                OptimizationLevel;                                        // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x18];                                      // 0x0008(0x0018) MISSED OFFSET
+	bool                                               bUseParallelCompilation;                                  // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               bUseDiskCompilation;                                      // 0x0009(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x16];                                      // 0x000A(0x0016) MISSED OFFSET
 };
 
 // ScriptStruct CustomizableObject.CustomizableObjectExportOptions
@@ -273,8 +289,9 @@ struct FParameterUIData
 	EMutableParameterType                              Type;                                                     // 0x00F8(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x7];                                       // 0x00F9(0x0007) MISSED OFFSET
 	TArray<struct FIntegerParameterUIData>             ArrayIntegerParameterOption;                              // 0x0100(0x0010) (BlueprintVisible, ZeroConstructor)
-	TEnumAsByte<ECustomizableObjectGroupType>          IntegerParameterGroupType;                                // 0x0110(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x7];                                       // 0x0111(0x0007) MISSED OFFSET
+	ECustomizableObjectGroupType                       IntegerParameterGroupType;                                // 0x0110(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bDontCompressRuntimeTextures;                             // 0x0111(0x0001) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x6];                                       // 0x0112(0x0006) MISSED OFFSET
 };
 
 // ScriptStruct CustomizableObject.PendingReleaseSkeletalMeshInfo

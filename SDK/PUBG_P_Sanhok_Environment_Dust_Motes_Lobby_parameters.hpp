@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,6 +13,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Parameters
 //---------------------------------------------------------------------------
+
+// Function P_Sanhok_Environment_Dust_Motes_Lobby.P_Sanhok_Environment_Dust_Motes_Lobby_C.UserConstructionScript
+struct AP_Sanhok_Environment_Dust_Motes_Lobby_C_UserConstructionScript_Params
+{
+};
 
 }
 

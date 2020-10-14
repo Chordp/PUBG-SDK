@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,10 +15,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass BP_PcOptionCloudSavingAlertWidget.BP_PcOptionCloudSavingAlertWidget_C
-// 0x0000 (0x0478 - 0x0478)
+// 0x0008 (0x04C0 - 0x04B8)
 class UBP_PcOptionCloudSavingAlertWidget_C : public UTslGameOptionCloudPopupWidget
 {
 public:
+	class UImage*                                      ArrowImage;                                               // 0x04B8(0x0008) (BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, RepNotify, Interp, NonTransactional, EditorOnly, NoDestructor, AutoWeak, ContainsInstancedReference, AssetRegistrySearchable, SimpleDisplay, AdvancedDisplay, Protected, BlueprintCallable, BlueprintAuthorityOnly, TextExportTransient, NonPIEDuplicateTransient, ExposeOnSpawn, PersistentInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic, NativeAccessSpecifierProtected, NativeAccessSpecifierPrivate)
 
 	static UClass* StaticClass()
 	{
@@ -29,15 +30,6 @@ public:
 		return ptr;
 	}
 
-
-	void STATIC_OnUploadButtonUnhovered();
-	void STATIC_OnUploadButtonHovered();
-	void STATIC_OnUploadButtonClicked();
-	void STATIC_OnSavePopupButtonPressed(EPopupButtonID ButtonID);
-	void STATIC_OnLoadPopupButtonPressed(EPopupButtonID ButtonID);
-	void STATIC_OnDownloadButtonUnhovered();
-	void STATIC_OnDownloadButtonHovered();
-	void STATIC_OnDownloadButtonClicked();
 };
 
 

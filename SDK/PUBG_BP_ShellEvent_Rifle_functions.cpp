@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,7 +13,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function BP_ShellEvent_Rifle.BP_ShellEvent_Rifle_C.RunEvent
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
 // struct FVector*                InCollideDirection             (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 // struct FVector*                InHitLocation                  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
@@ -21,7 +21,7 @@ namespace SDK
 // struct FName*                  InBoneName                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
 // class UWorld**                 InWorld                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 // class AActor**                 InActor                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_ShellEvent_Rifle_C::RunEvent(struct FVector* InCollideDirection, struct FVector* InHitLocation, struct FVector* InHitNormal, struct FName* InBoneName, class UWorld** InWorld, class AActor** InActor)
 {
@@ -47,10 +47,10 @@ void UBP_ShellEvent_Rifle_C::RunEvent(struct FVector* InCollideDirection, struct
 
 
 // Function BP_ShellEvent_Rifle.BP_ShellEvent_Rifle_C.ExecuteUbergraph_BP_ShellEvent_Rifle
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_ShellEvent_Rifle_C::ExecuteUbergraph_BP_ShellEvent_Rifle(int* EntryPoint)
 {

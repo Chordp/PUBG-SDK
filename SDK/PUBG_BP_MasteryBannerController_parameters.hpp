@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,20 +13,6 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Parameters
 //---------------------------------------------------------------------------
-
-// Function TslGame.MasteryBannerController.SpawnBanner
-struct ABP_MasteryBannerController_C_SpawnBanner_Params
-{
-	struct FString                                     BannerId;                                                 // (Parm, ZeroConstructor)
-	int                                                SurvivalMasteryLevel;                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               PlayAnimation;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               ShowBackgroundScene;                                      // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function TslGame.MasteryBannerController.DespawnBanner
-struct ABP_MasteryBannerController_C_DespawnBanner_Params
-{
-};
 
 }
 

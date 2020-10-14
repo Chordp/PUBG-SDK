@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -171,6 +171,59 @@ struct FMovieSceneSkeletalAnimationParams
 	struct FRichCurve                                  Weight;                                                   // 0x0020(0x0070) (Edit)
 };
 
+// ScriptStruct MovieSceneTracks.MovieSceneFloatPropertySectionTemplate
+// 0x0098 (0x00B0 - 0x0018)
+struct FMovieSceneFloatPropertySectionTemplate : public FMovieSceneEvalTemplate
+{
+	struct FMovieScenePropertySectionData              PropertyData;                                             // 0x0018(0x0028)
+	struct FRichCurve                                  FloatCurve;                                               // 0x0040(0x0070)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneBoolPropertySectionTemplate
+// 0x0098 (0x00B0 - 0x0018)
+struct FMovieSceneBoolPropertySectionTemplate : public FMovieSceneEvalTemplate
+{
+	struct FMovieScenePropertySectionData              PropertyData;                                             // 0x0018(0x0028)
+	struct FIntegralCurve                              BoolCurve;                                                // 0x0040(0x0070)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimationSharedTrack
+// 0x0000 (0x0018 - 0x0018)
+struct FMovieSceneSkeletalAnimationSharedTrack : public FMovieSceneEvalTemplate
+{
+
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimationSectionTemplateParameters
+// 0x0008 (0x0098 - 0x0090)
+struct FMovieSceneSkeletalAnimationSectionTemplateParameters : public FMovieSceneSkeletalAnimationParams
+{
+	float                                              SectionStartTime;                                         // 0x0090(0x0004) (ZeroConstructor, IsPlainOldData)
+	float                                              SectionEndTime;                                           // 0x0094(0x0004) (ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimationSectionTemplate
+// 0x0098 (0x00B0 - 0x0018)
+struct FMovieSceneSkeletalAnimationSectionTemplate : public FMovieSceneEvalTemplate
+{
+	struct FMovieSceneSkeletalAnimationSectionTemplateParameters Params;                                                   // 0x0018(0x0098)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneSlomoSectionTemplate
+// 0x0070 (0x0088 - 0x0018)
+struct FMovieSceneSlomoSectionTemplate : public FMovieSceneEvalTemplate
+{
+	struct FRichCurve                                  SlomoCurve;                                               // 0x0018(0x0070)
+};
+
+// ScriptStruct MovieSceneTracks.MovieSceneVisibilitySectionTemplate
+// 0x0008 (0x00B8 - 0x00B0)
+struct FMovieSceneVisibilitySectionTemplate : public FMovieSceneBoolPropertySectionTemplate
+{
+	bool                                               bTemporarilyHiddenInGame;                                 // 0x00B0(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x00B1(0x0007) MISSED OFFSET
+};
+
 // ScriptStruct MovieSceneTracks.MovieSceneParameterSectionTemplate
 // 0x0030 (0x0048 - 0x0018)
 struct FMovieSceneParameterSectionTemplate : public FMovieSceneEvalTemplate
@@ -337,16 +390,14 @@ struct FMovieSceneAudioSectionTemplate : public FMovieSceneEvalTemplate
 // 0x0000 (0x0018 - 0x0018)
 struct FMovieSceneAdditiveCameraAnimationTrackTemplate : public FMovieSceneEvalTemplate
 {
-	EMovieSceneCompletionMode                          CompletionMode;                                           // 0x0010(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0011(0x0007) MISSED OFFSET
+
 };
 
 // ScriptStruct MovieSceneTracks.MovieSceneAdditiveCameraAnimationTemplate
 // 0x0000 (0x0018 - 0x0018)
 struct FMovieSceneAdditiveCameraAnimationTemplate : public FMovieSceneEvalTemplate
 {
-	EMovieSceneCompletionMode                          CompletionMode;                                           // 0x0010(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0011(0x0007) MISSED OFFSET
+
 };
 
 // ScriptStruct MovieSceneTracks.MovieSceneCameraShakeSectionTemplate
@@ -428,9 +479,7 @@ struct FMovieSceneMaterialParameterCollectionTemplate : public FMovieSceneParame
 // 0x0000 (0x0048 - 0x0048)
 struct FMovieSceneParticleParameterSectionTemplate : public FMovieSceneParameterSectionTemplate
 {
-	TArray<struct FScalarParameterNameAndCurve>        Scalars;                                                  // 0x0018(0x0010) (ZeroConstructor)
-	TArray<struct FVectorParameterNameAndCurves>       Vectors;                                                  // 0x0028(0x0010) (ZeroConstructor)
-	TArray<struct FColorParameterNameAndCurves>        Colors;                                                   // 0x0038(0x0010) (ZeroConstructor)
+
 };
 
 // ScriptStruct MovieSceneTracks.MovieSceneParticleSectionTemplate
@@ -490,60 +539,6 @@ struct FMovieSceneBytePropertySectionTemplate : public FMovieSceneEvalTemplate
 {
 	struct FMovieScenePropertySectionData              PropertyData;                                             // 0x0018(0x0028)
 	struct FIntegralCurve                              ByteCurve;                                                // 0x0040(0x0070)
-};
-
-// ScriptStruct MovieSceneTracks.MovieSceneFloatPropertySectionTemplate
-// 0x0098 (0x00B0 - 0x0018)
-struct FMovieSceneFloatPropertySectionTemplate : public FMovieSceneEvalTemplate
-{
-	struct FMovieScenePropertySectionData              PropertyData;                                             // 0x0018(0x0028)
-	struct FRichCurve                                  FloatCurve;                                               // 0x0040(0x0070)
-};
-
-// ScriptStruct MovieSceneTracks.MovieSceneBoolPropertySectionTemplate
-// 0x0098 (0x00B0 - 0x0018)
-struct FMovieSceneBoolPropertySectionTemplate : public FMovieSceneEvalTemplate
-{
-	struct FMovieScenePropertySectionData              PropertyData;                                             // 0x0018(0x0028)
-	struct FIntegralCurve                              BoolCurve;                                                // 0x0040(0x0070)
-};
-
-// ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimationSharedTrack
-// 0x0000 (0x0018 - 0x0018)
-struct FMovieSceneSkeletalAnimationSharedTrack : public FMovieSceneEvalTemplate
-{
-	EMovieSceneCompletionMode                          CompletionMode;                                           // 0x0010(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0011(0x0007) MISSED OFFSET
-};
-
-// ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimationSectionTemplateParameters
-// 0x0008 (0x0098 - 0x0090)
-struct FMovieSceneSkeletalAnimationSectionTemplateParameters : public FMovieSceneSkeletalAnimationParams
-{
-	float                                              SectionStartTime;                                         // 0x0090(0x0004) (ZeroConstructor, IsPlainOldData)
-	float                                              SectionEndTime;                                           // 0x0094(0x0004) (ZeroConstructor, IsPlainOldData)
-};
-
-// ScriptStruct MovieSceneTracks.MovieSceneSkeletalAnimationSectionTemplate
-// 0x0098 (0x00B0 - 0x0018)
-struct FMovieSceneSkeletalAnimationSectionTemplate : public FMovieSceneEvalTemplate
-{
-	struct FMovieSceneSkeletalAnimationSectionTemplateParameters Params;                                                   // 0x0018(0x0098)
-};
-
-// ScriptStruct MovieSceneTracks.MovieSceneSlomoSectionTemplate
-// 0x0070 (0x0088 - 0x0018)
-struct FMovieSceneSlomoSectionTemplate : public FMovieSceneEvalTemplate
-{
-	struct FRichCurve                                  SlomoCurve;                                               // 0x0018(0x0070)
-};
-
-// ScriptStruct MovieSceneTracks.MovieSceneVisibilitySectionTemplate
-// 0x0008 (0x00B8 - 0x00B0)
-struct FMovieSceneVisibilitySectionTemplate : public FMovieSceneBoolPropertySectionTemplate
-{
-	bool                                               bTemporarilyHiddenInGame;                                 // 0x00B0(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x00B1(0x0007) MISSED OFFSET
 };
 
 }

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,10 +14,9 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
-// Function PopupWidget.PopupWidget_C.OnGamepadButtonVisibilityPrepass
-struct UPopupWidget_C_OnGamepadButtonVisibilityPrepass_Params
+// Function PopupWidget.PopupWidget_C.HandleCompetitive
+struct UPopupWidget_C_HandleCompetitive_Params
 {
-	class UWidget**                                    BoundWidget;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function PopupWidget.PopupWidget_C.SetPopup

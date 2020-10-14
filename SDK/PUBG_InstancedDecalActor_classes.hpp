@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass InstancedDecalActor.InstancedDecalActor_C
-// 0x0000 (0x03F0 - 0x03F0)
+// 0x0000 (0x0408 - 0x0408)
 class AInstancedDecalActor_C : public ADecalActor
 {
 public:
@@ -29,10 +29,6 @@ public:
 		return ptr;
 	}
 
-
-	void STATIC_SetDecalMaterial(class UMaterialInterface* NewDecalMaterial);
-	class UMaterialInterface* STATIC_GetDecalMaterial();
-	class UMaterialInstanceDynamic* STATIC_CreateDynamicMaterialInstance();
 };
 
 

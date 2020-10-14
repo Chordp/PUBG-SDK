@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_DefaultTslSingleton.BP_DefaultTslSingleton_C
-// 0x0000 (0x01A0 - 0x01A0)
+// 0x0000 (0x0240 - 0x0240)
 class UBP_DefaultTslSingleton_C : public UTslSingleton
 {
 public:
@@ -29,8 +29,6 @@ public:
 		return ptr;
 	}
 
-
-	class UClass* STATIC_GetCharmAnimInstance();
 };
 
 

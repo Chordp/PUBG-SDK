@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_RadioMessageManager.BP_RadioMessageManager_C
-// 0x0000 (0x0410 - 0x0410)
+// 0x0000 (0x0420 - 0x0420)
 class UBP_RadioMessageManager_C : public UTslRadioMessageManager
 {
 public:

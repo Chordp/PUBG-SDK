@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,10 +13,10 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function PlatoonCarePackageDropIndicator.PlatoonCarePackageDropIndicator_C.BP_UpdateIconType
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Event, Public, BlueprintEvent)
 // Parameters:
 // EPlatoonCarePackageType        Type                           (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UPlatoonCarePackageDropIndicator_C::BP_UpdateIconType(EPlatoonCarePackageType Type)
 {
@@ -37,10 +37,10 @@ void UPlatoonCarePackageDropIndicator_C::BP_UpdateIconType(EPlatoonCarePackageTy
 
 
 // Function PlatoonCarePackageDropIndicator.PlatoonCarePackageDropIndicator_C.BP_UpdateIconImage
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Event, Public, BlueprintEvent)
 // Parameters:
 // EPlatoonSupportRequestEventType IconType                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UPlatoonCarePackageDropIndicator_C::BP_UpdateIconImage(EPlatoonSupportRequestEventType IconType)
 {
@@ -61,10 +61,10 @@ void UPlatoonCarePackageDropIndicator_C::BP_UpdateIconImage(EPlatoonSupportReque
 
 
 // Function PlatoonCarePackageDropIndicator.PlatoonCarePackageDropIndicator_C.ExecuteUbergraph_PlatoonCarePackageDropIndicator
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UPlatoonCarePackageDropIndicator_C::ExecuteUbergraph_PlatoonCarePackageDropIndicator(int* EntryPoint)
 {

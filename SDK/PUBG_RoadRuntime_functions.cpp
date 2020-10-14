@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,7 +13,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function RoadRuntime.CrossActor.UpdateSideMesh
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, HasDefaults)
 // Parameters:
 // class UStaticMesh*             InPrototype                    (Parm, ZeroConstructor, IsPlainOldData)
 // struct FVector                 MeshRelativeLocation           (Parm, IsPlainOldData)
@@ -22,9 +22,9 @@ namespace SDK
 // int                            SocketIndex                    (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsEnable                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsNormalized                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B938780              		 offset:4648780                       
+// FunctionAddress:0x00007FF62B591920              		 offset:2ac1920                       
 
-void ACrossActor::STATIC_UpdateSideMesh(class UStaticMesh* InPrototype, const struct FVector& MeshRelativeLocation, const struct FRotator& MeshRelativeRotation, const struct FVector& MeshRelativeScale, int SocketIndex, bool IsEnable, bool IsNormalized)
+void ACrossActor::UpdateSideMesh(class UStaticMesh* InPrototype, const struct FVector& MeshRelativeLocation, const struct FRotator& MeshRelativeRotation, const struct FVector& MeshRelativeScale, int SocketIndex, bool IsEnable, bool IsNormalized)
 {
 	static UFunction* fn;
 
@@ -50,7 +50,7 @@ void ACrossActor::STATIC_UpdateSideMesh(class UStaticMesh* InPrototype, const st
 
 
 // Function RoadRuntime.CrossActor.UpdateSideActor
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, HasDefaults)
 // Parameters:
 // class UClass*                  InPrototype                    (Parm, ZeroConstructor, IsPlainOldData)
 // struct FVector                 ActorRelativeLocation          (Parm, IsPlainOldData)
@@ -59,9 +59,9 @@ void ACrossActor::STATIC_UpdateSideMesh(class UStaticMesh* InPrototype, const st
 // int                            SocketIndex                    (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsEnable                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsNormalized                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9382A0              		 offset:46482a0                       
+// FunctionAddress:0x00007FF62B591440              		 offset:2ac1440                       
 
-void ACrossActor::STATIC_UpdateSideActor(class UClass* InPrototype, const struct FVector& ActorRelativeLocation, const struct FRotator& ActorRelativeRotation, const struct FVector& ActorRelativeScale, int SocketIndex, bool IsEnable, bool IsNormalized)
+void ACrossActor::UpdateSideActor(class UClass* InPrototype, const struct FVector& ActorRelativeLocation, const struct FRotator& ActorRelativeRotation, const struct FVector& ActorRelativeScale, int SocketIndex, bool IsEnable, bool IsNormalized)
 {
 	static UFunction* fn;
 
@@ -87,7 +87,7 @@ void ACrossActor::STATIC_UpdateSideActor(class UClass* InPrototype, const struct
 
 
 // Function RoadRuntime.CrossActor.PushSideMesh
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, HasDefaults)
 // Parameters:
 // class UStaticMesh*             InPrototype                    (Parm, ZeroConstructor, IsPlainOldData)
 // struct FVector                 MeshRelativeLocation           (Parm, IsPlainOldData)
@@ -96,9 +96,9 @@ void ACrossActor::STATIC_UpdateSideActor(class UClass* InPrototype, const struct
 // int                            SocketIndex                    (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsEnable                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsNormalized                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B937C70              		 offset:4647c70                       
+// FunctionAddress:0x00007FF62B590E10              		 offset:2ac0e10                       
 
-void ACrossActor::STATIC_PushSideMesh(class UStaticMesh* InPrototype, const struct FVector& MeshRelativeLocation, const struct FRotator& MeshRelativeRotation, const struct FVector& MeshRelativeScale, int SocketIndex, bool IsEnable, bool IsNormalized)
+void ACrossActor::PushSideMesh(class UStaticMesh* InPrototype, const struct FVector& MeshRelativeLocation, const struct FRotator& MeshRelativeRotation, const struct FVector& MeshRelativeScale, int SocketIndex, bool IsEnable, bool IsNormalized)
 {
 	static UFunction* fn;
 
@@ -124,7 +124,7 @@ void ACrossActor::STATIC_PushSideMesh(class UStaticMesh* InPrototype, const stru
 
 
 // Function RoadRuntime.CrossActor.PushSideActor
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, HasDefaults)
 // Parameters:
 // class UClass*                  InPrototype                    (Parm, ZeroConstructor, IsPlainOldData)
 // struct FVector                 ActorRelativeLocation          (Parm, IsPlainOldData)
@@ -133,9 +133,9 @@ void ACrossActor::STATIC_PushSideMesh(class UStaticMesh* InPrototype, const stru
 // int                            SocketIndex                    (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsEnable                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsNormalized                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B937790              		 offset:4647790                       
+// FunctionAddress:0x00007FF62B590930              		 offset:2ac0930                       
 
-void ACrossActor::STATIC_PushSideActor(class UClass* InPrototype, const struct FVector& ActorRelativeLocation, const struct FRotator& ActorRelativeRotation, const struct FVector& ActorRelativeScale, int SocketIndex, bool IsEnable, bool IsNormalized)
+void ACrossActor::PushSideActor(class UClass* InPrototype, const struct FVector& ActorRelativeLocation, const struct FRotator& ActorRelativeRotation, const struct FVector& ActorRelativeScale, int SocketIndex, bool IsEnable, bool IsNormalized)
 {
 	static UFunction* fn;
 
@@ -161,10 +161,10 @@ void ACrossActor::STATIC_PushSideActor(class UClass* InPrototype, const struct F
 
 
 // Function RoadRuntime.CrossActor.DestroySideObjects
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF63B9374B0              		 offset:46474b0                       
+// (Final, Native, Public)
+// FunctionAddress:0x00007FF62B590650              		 offset:2ac0650                       
 
-void ACrossActor::STATIC_DestroySideObjects()
+void ACrossActor::DestroySideObjects()
 {
 	static UFunction* fn;
 
@@ -183,12 +183,12 @@ void ACrossActor::STATIC_DestroySideObjects()
 
 
 // Function RoadRuntime.RoadActor.UpdateSplineMesh
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public)
 // Parameters:
 // int                            MeshIndex                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B938C60              		 offset:4648c60                       
+// FunctionAddress:0x00007FF62B591E00              		 offset:2ac1e00                       
 
-void ARoadActor::STATIC_UpdateSplineMesh(int MeshIndex)
+void ARoadActor::UpdateSplineMesh(int MeshIndex)
 {
 	static UFunction* fn;
 
@@ -208,7 +208,7 @@ void ARoadActor::STATIC_UpdateSplineMesh(int MeshIndex)
 
 
 // Function RoadRuntime.RoadActor.UpdateSideMeshes
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, HasDefaults)
 // Parameters:
 // class UStaticMesh*             InPrototype                    (Parm, ZeroConstructor, IsPlainOldData)
 // struct FVector                 MeshRelativeLocation           (Parm, IsPlainOldData)
@@ -219,9 +219,9 @@ void ARoadActor::STATIC_UpdateSplineMesh(int MeshIndex)
 // int                            InSpacing                      (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsEnable                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsNormalized                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9389B0              		 offset:46489b0                       
+// FunctionAddress:0x00007FF62B591B50              		 offset:2ac1b50                       
 
-void ARoadActor::STATIC_UpdateSideMeshes(class UStaticMesh* InPrototype, const struct FVector& MeshRelativeLocation, const struct FRotator& MeshRelativeRotation, const struct FVector& MeshRelativeScale, int SocketIndex, int InShift, int InSpacing, bool IsEnable, bool IsNormalized)
+void ARoadActor::UpdateSideMeshes(class UStaticMesh* InPrototype, const struct FVector& MeshRelativeLocation, const struct FRotator& MeshRelativeRotation, const struct FVector& MeshRelativeScale, int SocketIndex, int InShift, int InSpacing, bool IsEnable, bool IsNormalized)
 {
 	static UFunction* fn;
 
@@ -249,7 +249,7 @@ void ARoadActor::STATIC_UpdateSideMeshes(class UStaticMesh* InPrototype, const s
 
 
 // Function RoadRuntime.RoadActor.UpdateSideActor
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, HasDefaults)
 // Parameters:
 // class UClass*                  InPrototype                    (Parm, ZeroConstructor, IsPlainOldData)
 // struct FVector                 ActorRelativeLocation          (Parm, IsPlainOldData)
@@ -260,9 +260,9 @@ void ARoadActor::STATIC_UpdateSideMeshes(class UStaticMesh* InPrototype, const s
 // int                            InSpacing                      (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsEnable                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsNormalized                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9384D0              		 offset:46484d0                       
+// FunctionAddress:0x00007FF62B591670              		 offset:2ac1670                       
 
-void ARoadActor::STATIC_UpdateSideActor(class UClass* InPrototype, const struct FVector& ActorRelativeLocation, const struct FRotator& ActorRelativeRotation, const struct FVector& ActorRelativeScale, int SocketIndex, int InShift, int InSpacing, bool IsEnable, bool IsNormalized)
+void ARoadActor::UpdateSideActor(class UClass* InPrototype, const struct FVector& ActorRelativeLocation, const struct FRotator& ActorRelativeRotation, const struct FVector& ActorRelativeScale, int SocketIndex, int InShift, int InSpacing, bool IsEnable, bool IsNormalized)
 {
 	static UFunction* fn;
 
@@ -290,15 +290,15 @@ void ARoadActor::STATIC_UpdateSideActor(class UClass* InPrototype, const struct 
 
 
 // Function RoadRuntime.RoadActor.UpdateSegment
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public)
 // Parameters:
 // int                            SegmentIndex                   (Parm, ZeroConstructor, IsPlainOldData)
 // class USplineComponent*        SplineComponent                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 // class UStaticMesh*             StaticMesh                     (Parm, ZeroConstructor, IsPlainOldData)
 // TEnumAsByte<ESplineMeshAxis>   InAxis                         (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B938150              		 offset:4648150                       
+// FunctionAddress:0x00007FF62B5912F0              		 offset:2ac12f0                       
 
-void ARoadActor::STATIC_UpdateSegment(int SegmentIndex, class USplineComponent* SplineComponent, class UStaticMesh* StaticMesh, TEnumAsByte<ESplineMeshAxis> InAxis)
+void ARoadActor::UpdateSegment(int SegmentIndex, class USplineComponent* SplineComponent, class UStaticMesh* StaticMesh, TEnumAsByte<ESplineMeshAxis> InAxis)
 {
 	static UFunction* fn;
 
@@ -321,7 +321,7 @@ void ARoadActor::STATIC_UpdateSegment(int SegmentIndex, class USplineComponent* 
 
 
 // Function RoadRuntime.RoadActor.PushSideMesh
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, HasDefaults)
 // Parameters:
 // class UStaticMesh*             InPrototype                    (Parm, ZeroConstructor, IsPlainOldData)
 // struct FVector                 MeshRelativeLocation           (Parm, IsPlainOldData)
@@ -332,9 +332,9 @@ void ARoadActor::STATIC_UpdateSegment(int SegmentIndex, class USplineComponent* 
 // int                            InSpacing                      (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsEnable                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsNormalized                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B937EA0              		 offset:4647ea0                       
+// FunctionAddress:0x00007FF62B591040              		 offset:2ac1040                       
 
-void ARoadActor::STATIC_PushSideMesh(class UStaticMesh* InPrototype, const struct FVector& MeshRelativeLocation, const struct FRotator& MeshRelativeRotation, const struct FVector& MeshRelativeScale, int SocketIndex, int InShift, int InSpacing, bool IsEnable, bool IsNormalized)
+void ARoadActor::PushSideMesh(class UStaticMesh* InPrototype, const struct FVector& MeshRelativeLocation, const struct FRotator& MeshRelativeRotation, const struct FVector& MeshRelativeScale, int SocketIndex, int InShift, int InSpacing, bool IsEnable, bool IsNormalized)
 {
 	static UFunction* fn;
 
@@ -362,7 +362,7 @@ void ARoadActor::STATIC_PushSideMesh(class UStaticMesh* InPrototype, const struc
 
 
 // Function RoadRuntime.RoadActor.PushSideActor
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, HasDefaults)
 // Parameters:
 // class UClass*                  InPrototype                    (Parm, ZeroConstructor, IsPlainOldData)
 // struct FVector                 ActorRelativeLocation          (Parm, IsPlainOldData)
@@ -373,9 +373,9 @@ void ARoadActor::STATIC_PushSideMesh(class UStaticMesh* InPrototype, const struc
 // int                            InSpacing                      (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsEnable                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsNormalized                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9379C0              		 offset:46479c0                       
+// FunctionAddress:0x00007FF62B590B60              		 offset:2ac0b60                       
 
-void ARoadActor::STATIC_PushSideActor(class UClass* InPrototype, const struct FVector& ActorRelativeLocation, const struct FRotator& ActorRelativeRotation, const struct FVector& ActorRelativeScale, int SocketIndex, int InShift, int InSpacing, bool IsEnable, bool IsNormalized)
+void ARoadActor::PushSideActor(class UClass* InPrototype, const struct FVector& ActorRelativeLocation, const struct FRotator& ActorRelativeRotation, const struct FVector& ActorRelativeScale, int SocketIndex, int InShift, int InSpacing, bool IsEnable, bool IsNormalized)
 {
 	static UFunction* fn;
 
@@ -403,7 +403,7 @@ void ARoadActor::STATIC_PushSideActor(class UClass* InPrototype, const struct FV
 
 
 // Function RoadRuntime.RoadActor.PushCurbsMeshes
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, HasDefaults)
 // Parameters:
 // class UStaticMesh*             InPrototype                    (Parm, ZeroConstructor, IsPlainOldData)
 // class UStaticMesh*             InStartPrototype               (Parm, ZeroConstructor, IsPlainOldData)
@@ -414,9 +414,9 @@ void ARoadActor::STATIC_PushSideActor(class UClass* InPrototype, const struct FV
 // bool                           IsEnable                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           InStartEnable                  (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           InEndEnable                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9374F0              		 offset:46474f0                       
+// FunctionAddress:0x00007FF62B590690              		 offset:2ac0690                       
 
-void ARoadActor::STATIC_PushCurbsMeshes(class UStaticMesh* InPrototype, class UStaticMesh* InStartPrototype, class UStaticMesh* InEndPrototype, const struct FVector& MeshRelativeLocation, const struct FVector& MeshRelativeScale, int SocketIndex, bool IsEnable, bool InStartEnable, bool InEndEnable)
+void ARoadActor::PushCurbsMeshes(class UStaticMesh* InPrototype, class UStaticMesh* InStartPrototype, class UStaticMesh* InEndPrototype, const struct FVector& MeshRelativeLocation, const struct FVector& MeshRelativeScale, int SocketIndex, bool IsEnable, bool InStartEnable, bool InEndEnable)
 {
 	static UFunction* fn;
 
@@ -444,10 +444,10 @@ void ARoadActor::STATIC_PushCurbsMeshes(class UStaticMesh* InPrototype, class US
 
 
 // Function RoadRuntime.RoadActor.DestroySideObjects
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF63B9374D0              		 offset:46474d0                       
+// (Final, Native, Public)
+// FunctionAddress:0x00007FF62B590670              		 offset:2ac0670                       
 
-void ARoadActor::STATIC_DestroySideObjects()
+void ARoadActor::DestroySideObjects()
 {
 	static UFunction* fn;
 
@@ -466,10 +466,10 @@ void ARoadActor::STATIC_DestroySideObjects()
 
 
 // Function RoadRuntime.RoadActor.DestroySideCurbs
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF63B937490              		 offset:4647490                       
+// (Final, Native, Public)
+// FunctionAddress:0x00007FF62B590630              		 offset:2ac0630                       
 
-void ARoadActor::STATIC_DestroySideCurbs()
+void ARoadActor::DestroySideCurbs()
 {
 	static UFunction* fn;
 
@@ -488,10 +488,10 @@ void ARoadActor::STATIC_DestroySideCurbs()
 
 
 // Function RoadRuntime.RoadActor.ClearSplineMeshes
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF63B937470              		 offset:4647470                       
+// (Final, Native, Public)
+// FunctionAddress:0x00007FF62B590610              		 offset:2ac0610                       
 
-void ARoadActor::STATIC_ClearSplineMeshes()
+void ARoadActor::ClearSplineMeshes()
 {
 	static UFunction* fn;
 
@@ -510,14 +510,14 @@ void ARoadActor::STATIC_ClearSplineMeshes()
 
 
 // Function RoadRuntime.RoadActor.ApproxLength
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Private, NetServer)
+// (Final, Native, Static, Public, HasOutParms)
 // Parameters:
 // struct FInterpCurveVector      SplineInfo                     (ConstParm, Parm, OutParm, ReferenceParm)
 // float                          Start                          (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 // float                          End                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 // int                            ApproxSections                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9372F0              		 offset:46472f0                       
+// FunctionAddress:0x00007FF62B590490              		 offset:2ac0490                       
 
 float ARoadActor::STATIC_ApproxLength(const struct FInterpCurveVector& SplineInfo, float Start, float End, int ApproxSections)
 {
@@ -544,12 +544,12 @@ float ARoadActor::STATIC_ApproxLength(const struct FInterpCurveVector& SplineInf
 
 
 // Function RoadRuntime.RoadActor.AddSplineMesh
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public)
 // Parameters:
 // int                            MeshIndex                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B937270              		 offset:4647270                       
+// FunctionAddress:0x00007FF62B590410              		 offset:2ac0410                       
 
-void ARoadActor::STATIC_AddSplineMesh(int MeshIndex)
+void ARoadActor::AddSplineMesh(int MeshIndex)
 {
 	static UFunction* fn;
 

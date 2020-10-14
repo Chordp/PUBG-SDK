@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -12,13 +12,39 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function PhysXVehicles.VehicleAnimInstance.GetVehicle
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class AWheeledVehicle*         ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF62B646A80              		 offset:2b76a80                       
+
+class AWheeledVehicle* UVehicleAnimInstance::GetVehicle()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.VehicleAnimInstance.GetVehicle"));
+
+	UVehicleAnimInstance_GetVehicle_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function PhysXVehicles.VehicleWheel.IsInAir
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA1D0              		 offset:470a1d0                       
+// FunctionAddress:0x00007FF62B646AB0              		 offset:2b76ab0                       
 
-bool UVehicleWheel::STATIC_IsInAir()
+bool UVehicleWheel::IsInAir()
 {
 	static UFunction* fn;
 
@@ -39,12 +65,12 @@ bool UVehicleWheel::STATIC_IsInAir()
 
 
 // Function PhysXVehicles.VehicleWheel.GetSuspensionOffset
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA110              		 offset:470a110                       
+// FunctionAddress:0x00007FF62B6469F0              		 offset:2b769f0                       
 
-float UVehicleWheel::STATIC_GetSuspensionOffset()
+float UVehicleWheel::GetSuspensionOffset()
 {
 	static UFunction* fn;
 
@@ -65,12 +91,12 @@ float UVehicleWheel::STATIC_GetSuspensionOffset()
 
 
 // Function PhysXVehicles.VehicleWheel.GetSteerAngle
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA0E0              		 offset:470a0e0                       
+// FunctionAddress:0x00007FF62B6469C0              		 offset:2b769c0                       
 
-float UVehicleWheel::STATIC_GetSteerAngle()
+float UVehicleWheel::GetSteerAngle()
 {
 	static UFunction* fn;
 
@@ -91,12 +117,12 @@ float UVehicleWheel::STATIC_GetSteerAngle()
 
 
 // Function PhysXVehicles.VehicleWheel.GetRotationAngle
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA080              		 offset:470a080                       
+// FunctionAddress:0x00007FF62B646960              		 offset:2b76960                       
 
-float UVehicleWheel::STATIC_GetRotationAngle()
+float UVehicleWheel::GetRotationAngle()
 {
 	static UFunction* fn;
 
@@ -117,12 +143,12 @@ float UVehicleWheel::STATIC_GetRotationAngle()
 
 
 // Function PhysXVehicles.VehicleWheel.GetLongitudinalSlip
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA050              		 offset:470a050                       
+// FunctionAddress:0x00007FF62B646930              		 offset:2b76930                       
 
-float UVehicleWheel::STATIC_GetLongitudinalSlip()
+float UVehicleWheel::GetLongitudinalSlip()
 {
 	static UFunction* fn;
 
@@ -143,12 +169,12 @@ float UVehicleWheel::STATIC_GetLongitudinalSlip()
 
 
 // Function PhysXVehicles.VehicleWheel.GetLateralSlip
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA020              		 offset:470a020                       
+// FunctionAddress:0x00007FF62B646900              		 offset:2b76900                       
 
-float UVehicleWheel::STATIC_GetLateralSlip()
+float UVehicleWheel::GetLateralSlip()
 {
 	static UFunction* fn;
 
@@ -169,12 +195,12 @@ float UVehicleWheel::STATIC_GetLateralSlip()
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetUseAutoGears
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           bUseAuto                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FAF40              		 offset:470af40                       
+// FunctionAddress:0x00007FF62B647820              		 offset:2b77820                       
 
-void UWheeledVehicleMovementComponent::STATIC_SetUseAutoGears(bool bUseAuto)
+void UWheeledVehicleMovementComponent::SetUseAutoGears(bool bUseAuto)
 {
 	static UFunction* fn;
 
@@ -194,12 +220,12 @@ void UWheeledVehicleMovementComponent::STATIC_SetUseAutoGears(bool bUseAuto)
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetThrottleInput
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // float                          Throttle                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FAEC0              		 offset:470aec0                       
+// FunctionAddress:0x00007FF62B6477A0              		 offset:2b777a0                       
 
-void UWheeledVehicleMovementComponent::STATIC_SetThrottleInput(float Throttle)
+void UWheeledVehicleMovementComponent::SetThrottleInput(float Throttle)
 {
 	static UFunction* fn;
 
@@ -219,13 +245,13 @@ void UWheeledVehicleMovementComponent::STATIC_SetThrottleInput(float Throttle)
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetTargetGear
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // int                            GearNum                        (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bImmediate                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FAE00              		 offset:470ae00                       
+// FunctionAddress:0x00007FF62B6476E0              		 offset:2b776e0                       
 
-void UWheeledVehicleMovementComponent::STATIC_SetTargetGear(int GearNum, bool bImmediate)
+void UWheeledVehicleMovementComponent::SetTargetGear(int GearNum, bool bImmediate)
 {
 	static UFunction* fn;
 
@@ -246,12 +272,12 @@ void UWheeledVehicleMovementComponent::STATIC_SetTargetGear(int GearNum, bool bI
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetSteeringInput
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // float                          Steering                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FAD80              		 offset:470ad80                       
+// FunctionAddress:0x00007FF62B647660              		 offset:2b77660                       
 
-void UWheeledVehicleMovementComponent::STATIC_SetSteeringInput(float Steering)
+void UWheeledVehicleMovementComponent::SetSteeringInput(float Steering)
 {
 	static UFunction* fn;
 
@@ -271,12 +297,12 @@ void UWheeledVehicleMovementComponent::STATIC_SetSteeringInput(float Steering)
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetHandbrakeInput
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           bNewHandbrake                  (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FAC20              		 offset:470ac20                       
+// FunctionAddress:0x00007FF62B647500              		 offset:2b77500                       
 
-void UWheeledVehicleMovementComponent::STATIC_SetHandbrakeInput(bool bNewHandbrake)
+void UWheeledVehicleMovementComponent::SetHandbrakeInput(bool bNewHandbrake)
 {
 	static UFunction* fn;
 
@@ -296,12 +322,12 @@ void UWheeledVehicleMovementComponent::STATIC_SetHandbrakeInput(bool bNewHandbra
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnoreMask
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
 // struct FNavAvoidanceMask       GroupMask                      (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FAB90              		 offset:470ab90                       
+// FunctionAddress:0x00007FF62B647470              		 offset:2b77470                       
 
-void UWheeledVehicleMovementComponent::STATIC_SetGroupsToIgnoreMask(const struct FNavAvoidanceMask& GroupMask)
+void UWheeledVehicleMovementComponent::SetGroupsToIgnoreMask(const struct FNavAvoidanceMask& GroupMask)
 {
 	static UFunction* fn;
 
@@ -321,12 +347,12 @@ void UWheeledVehicleMovementComponent::STATIC_SetGroupsToIgnoreMask(const struct
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnore
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // int                            GroupFlags                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FAB10              		 offset:470ab10                       
+// FunctionAddress:0x00007FF62B6473F0              		 offset:2b773f0                       
 
-void UWheeledVehicleMovementComponent::STATIC_SetGroupsToIgnore(int GroupFlags)
+void UWheeledVehicleMovementComponent::SetGroupsToIgnore(int GroupFlags)
 {
 	static UFunction* fn;
 
@@ -346,12 +372,12 @@ void UWheeledVehicleMovementComponent::STATIC_SetGroupsToIgnore(int GroupFlags)
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoidMask
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
 // struct FNavAvoidanceMask       GroupMask                      (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FAA80              		 offset:470aa80                       
+// FunctionAddress:0x00007FF62B647360              		 offset:2b77360                       
 
-void UWheeledVehicleMovementComponent::STATIC_SetGroupsToAvoidMask(const struct FNavAvoidanceMask& GroupMask)
+void UWheeledVehicleMovementComponent::SetGroupsToAvoidMask(const struct FNavAvoidanceMask& GroupMask)
 {
 	static UFunction* fn;
 
@@ -371,12 +397,12 @@ void UWheeledVehicleMovementComponent::STATIC_SetGroupsToAvoidMask(const struct 
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoid
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // int                            GroupFlags                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FAA00              		 offset:470aa00                       
+// FunctionAddress:0x00007FF62B6472E0              		 offset:2b772e0                       
 
-void UWheeledVehicleMovementComponent::STATIC_SetGroupsToAvoid(int GroupFlags)
+void UWheeledVehicleMovementComponent::SetGroupsToAvoid(int GroupFlags)
 {
 	static UFunction* fn;
 
@@ -396,12 +422,12 @@ void UWheeledVehicleMovementComponent::STATIC_SetGroupsToAvoid(int GroupFlags)
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGearUp
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           bNewGearUp                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA970              		 offset:470a970                       
+// FunctionAddress:0x00007FF62B647250              		 offset:2b77250                       
 
-void UWheeledVehicleMovementComponent::STATIC_SetGearUp(bool bNewGearUp)
+void UWheeledVehicleMovementComponent::SetGearUp(bool bNewGearUp)
 {
 	static UFunction* fn;
 
@@ -421,12 +447,12 @@ void UWheeledVehicleMovementComponent::STATIC_SetGearUp(bool bNewGearUp)
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGearDown
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           bNewGearDown                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA8E0              		 offset:470a8e0                       
+// FunctionAddress:0x00007FF62B6471C0              		 offset:2b771c0                       
 
-void UWheeledVehicleMovementComponent::STATIC_SetGearDown(bool bNewGearDown)
+void UWheeledVehicleMovementComponent::SetGearDown(bool bNewGearDown)
 {
 	static UFunction* fn;
 
@@ -446,12 +472,12 @@ void UWheeledVehicleMovementComponent::STATIC_SetGearDown(bool bNewGearDown)
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetBrakeInput
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // float                          Brake                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA6C0              		 offset:470a6c0                       
+// FunctionAddress:0x00007FF62B646FA0              		 offset:2b76fa0                       
 
-void UWheeledVehicleMovementComponent::STATIC_SetBrakeInput(float Brake)
+void UWheeledVehicleMovementComponent::SetBrakeInput(float Brake)
 {
 	static UFunction* fn;
 
@@ -471,12 +497,12 @@ void UWheeledVehicleMovementComponent::STATIC_SetBrakeInput(float Brake)
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroupMask
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
 // struct FNavAvoidanceMask       GroupMask                      (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA630              		 offset:470a630                       
+// FunctionAddress:0x00007FF62B646F10              		 offset:2b76f10                       
 
-void UWheeledVehicleMovementComponent::STATIC_SetAvoidanceGroupMask(const struct FNavAvoidanceMask& GroupMask)
+void UWheeledVehicleMovementComponent::SetAvoidanceGroupMask(const struct FNavAvoidanceMask& GroupMask)
 {
 	static UFunction* fn;
 
@@ -496,12 +522,12 @@ void UWheeledVehicleMovementComponent::STATIC_SetAvoidanceGroupMask(const struct
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroup
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // int                            GroupFlags                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA5B0              		 offset:470a5b0                       
+// FunctionAddress:0x00007FF62B646E90              		 offset:2b76e90                       
 
-void UWheeledVehicleMovementComponent::STATIC_SetAvoidanceGroup(int GroupFlags)
+void UWheeledVehicleMovementComponent::SetAvoidanceGroup(int GroupFlags)
 {
 	static UFunction* fn;
 
@@ -521,12 +547,12 @@ void UWheeledVehicleMovementComponent::STATIC_SetAvoidanceGroup(int GroupFlags)
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceEnabled
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           bEnable                        (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA520              		 offset:470a520                       
+// FunctionAddress:0x00007FF62B646E00              		 offset:2b76e00                       
 
-void UWheeledVehicleMovementComponent::STATIC_SetAvoidanceEnabled(bool bEnable)
+void UWheeledVehicleMovementComponent::SetAvoidanceEnabled(bool bEnable)
 {
 	static UFunction* fn;
 
@@ -546,17 +572,17 @@ void UWheeledVehicleMovementComponent::STATIC_SetAvoidanceEnabled(bool bEnable)
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.ServerUpdateState
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Net, Native, Event, Protected, NetServer, NetValidate)
 // Parameters:
 // float                          InSteeringInput                (Parm, ZeroConstructor, IsPlainOldData)
 // float                          InThrottleInput                (Parm, ZeroConstructor, IsPlainOldData)
 // float                          InBrakeInput                   (Parm, ZeroConstructor, IsPlainOldData)
 // float                          InHandbrakeInput               (Parm, ZeroConstructor, IsPlainOldData)
 // int                            CurrentGear                    (Parm, ZeroConstructor, IsPlainOldData)
-// uint32_t                       Checksum                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA300              		 offset:470a300                       
+// uint32_t                       checksum                       (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF62B646BE0              		 offset:2b76be0                       
 
-void UWheeledVehicleMovementComponent::STATIC_ServerUpdateState(float InSteeringInput, float InThrottleInput, float InBrakeInput, float InHandbrakeInput, int CurrentGear, uint32_t Checksum)
+void UWheeledVehicleMovementComponent::ServerUpdateState(float InSteeringInput, float InThrottleInput, float InBrakeInput, float InHandbrakeInput, int CurrentGear, uint32_t checksum)
 {
 	static UFunction* fn;
 
@@ -569,7 +595,7 @@ void UWheeledVehicleMovementComponent::STATIC_ServerUpdateState(float InSteering
 	params.InBrakeInput = InBrakeInput;
 	params.InHandbrakeInput = InHandbrakeInput;
 	params.CurrentGear = CurrentGear;
-	params.Checksum = Checksum;
+	params.checksum = checksum;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -581,12 +607,12 @@ void UWheeledVehicleMovementComponent::STATIC_ServerUpdateState(float InSteering
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.OnRep_TirePunctured
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Native, Public)
 // Parameters:
 // TArray<bool>                   LastTirePunctured              (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF63B9FA200              		 offset:470a200                       
+// FunctionAddress:0x00007FF62B646AE0              		 offset:2b76ae0                       
 
-void UWheeledVehicleMovementComponent::STATIC_OnRep_TirePunctured(TArray<bool> LastTirePunctured)
+void UWheeledVehicleMovementComponent::OnRep_TirePunctured(TArray<bool> LastTirePunctured)
 {
 	static UFunction* fn;
 
@@ -606,12 +632,12 @@ void UWheeledVehicleMovementComponent::STATIC_OnRep_TirePunctured(TArray<bool> L
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.GetUseAutoGears
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA170              		 offset:470a170                       
+// FunctionAddress:0x00007FF62B646A50              		 offset:2b76a50                       
 
-bool UWheeledVehicleMovementComponent::STATIC_GetUseAutoGears()
+bool UWheeledVehicleMovementComponent::GetUseAutoGears()
 {
 	static UFunction* fn;
 
@@ -632,12 +658,12 @@ bool UWheeledVehicleMovementComponent::STATIC_GetUseAutoGears()
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.GetTargetGear
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA140              		 offset:470a140                       
+// FunctionAddress:0x00007FF62B646A20              		 offset:2b76a20                       
 
-int UWheeledVehicleMovementComponent::STATIC_GetTargetGear()
+int UWheeledVehicleMovementComponent::GetTargetGear()
 {
 	static UFunction* fn;
 
@@ -658,12 +684,12 @@ int UWheeledVehicleMovementComponent::STATIC_GetTargetGear()
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.GetSideSpeed
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA0B0              		 offset:470a0b0                       
+// FunctionAddress:0x00007FF62B646990              		 offset:2b76990                       
 
-float UWheeledVehicleMovementComponent::STATIC_GetSideSpeed()
+float UWheeledVehicleMovementComponent::GetSideSpeed()
 {
 	static UFunction* fn;
 
@@ -684,12 +710,12 @@ float UWheeledVehicleMovementComponent::STATIC_GetSideSpeed()
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.GetForwardSpeed
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9F9FF0              		 offset:4709ff0                       
+// FunctionAddress:0x00007FF62B6468D0              		 offset:2b768d0                       
 
-float UWheeledVehicleMovementComponent::STATIC_GetForwardSpeed()
+float UWheeledVehicleMovementComponent::GetForwardSpeed()
 {
 	static UFunction* fn;
 
@@ -710,12 +736,12 @@ float UWheeledVehicleMovementComponent::STATIC_GetForwardSpeed()
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.GetEngineRotationSpeed
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9F9FC0              		 offset:4709fc0                       
+// FunctionAddress:0x00007FF62B6468A0              		 offset:2b768a0                       
 
-float UWheeledVehicleMovementComponent::STATIC_GetEngineRotationSpeed()
+float UWheeledVehicleMovementComponent::GetEngineRotationSpeed()
 {
 	static UFunction* fn;
 
@@ -736,12 +762,12 @@ float UWheeledVehicleMovementComponent::STATIC_GetEngineRotationSpeed()
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.GetEngineMaxRotationSpeed
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9F9F90              		 offset:4709f90                       
+// FunctionAddress:0x00007FF62B646870              		 offset:2b76870                       
 
-float UWheeledVehicleMovementComponent::STATIC_GetEngineMaxRotationSpeed()
+float UWheeledVehicleMovementComponent::GetEngineMaxRotationSpeed()
 {
 	static UFunction* fn;
 
@@ -762,12 +788,12 @@ float UWheeledVehicleMovementComponent::STATIC_GetEngineMaxRotationSpeed()
 
 
 // Function PhysXVehicles.WheeledVehicleMovementComponent.GetCurrentGear
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9F9F60              		 offset:4709f60                       
+// FunctionAddress:0x00007FF62B646840              		 offset:2b76840                       
 
-int UWheeledVehicleMovementComponent::STATIC_GetCurrentGear()
+int UWheeledVehicleMovementComponent::GetCurrentGear()
 {
 	static UFunction* fn;
 
@@ -787,47 +813,23 @@ int UWheeledVehicleMovementComponent::STATIC_GetCurrentGear()
 }
 
 
-// Function PhysXVehicles.VehicleAnimInstance.GetVehicle
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// Function PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetSteerAngle
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class AWheeledVehicle*         ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA1A0              		 offset:470a1a0                       
+// float                          SteerAngle                     (Parm, ZeroConstructor, IsPlainOldData)
+// int                            WheelIndex                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF62B647590              		 offset:2b77590                       
 
-class AWheeledVehicle* UVehicleAnimInstance::STATIC_GetVehicle()
+void USimpleWheeledVehicleMovementComponent::SetSteerAngle(float SteerAngle, int WheelIndex)
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.VehicleAnimInstance.GetVehicle"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetSteerAngle"));
 
-	UVehicleAnimInstance_GetVehicle_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function PhysXVehicles.WheeledVehicleMovementComponent.SetUseAutoGears
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// Parameters:
-// bool                           bUseAuto                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FAF40              		 offset:470af40                       
-
-void USimpleWheeledVehicleMovementComponent::STATIC_SetUseAutoGears(bool bUseAuto)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetUseAutoGears"));
-
-	USimpleWheeledVehicleMovementComponent_SetUseAutoGears_Params params;
-	params.bUseAuto = bUseAuto;
+	USimpleWheeledVehicleMovementComponent_SetSteerAngle_Params params;
+	params.SteerAngle = SteerAngle;
+	params.WheelIndex = WheelIndex;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -838,21 +840,23 @@ void USimpleWheeledVehicleMovementComponent::STATIC_SetUseAutoGears(bool bUseAut
 }
 
 
-// Function PhysXVehicles.WheeledVehicleMovementComponent.SetThrottleInput
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// Function PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetDriveTorque
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// float                          Throttle                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FAEC0              		 offset:470aec0                       
+// float                          DriveTorque                    (Parm, ZeroConstructor, IsPlainOldData)
+// int                            WheelIndex                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF62B6470F0              		 offset:2b770f0                       
 
-void USimpleWheeledVehicleMovementComponent::STATIC_SetThrottleInput(float Throttle)
+void USimpleWheeledVehicleMovementComponent::SetDriveTorque(float DriveTorque, int WheelIndex)
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetThrottleInput"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetDriveTorque"));
 
-	USimpleWheeledVehicleMovementComponent_SetThrottleInput_Params params;
-	params.Throttle = Throttle;
+	USimpleWheeledVehicleMovementComponent_SetDriveTorque_Params params;
+	params.DriveTorque = DriveTorque;
+	params.WheelIndex = WheelIndex;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -863,23 +867,23 @@ void USimpleWheeledVehicleMovementComponent::STATIC_SetThrottleInput(float Throt
 }
 
 
-// Function PhysXVehicles.WheeledVehicleMovementComponent.SetTargetGear
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// Function PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetBrakeTorque
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// int                            GearNum                        (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bImmediate                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FAE00              		 offset:470ae00                       
+// float                          BrakeTorque                    (Parm, ZeroConstructor, IsPlainOldData)
+// int                            WheelIndex                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF62B647020              		 offset:2b77020                       
 
-void USimpleWheeledVehicleMovementComponent::STATIC_SetTargetGear(int GearNum, bool bImmediate)
+void USimpleWheeledVehicleMovementComponent::SetBrakeTorque(float BrakeTorque, int WheelIndex)
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetTargetGear"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetBrakeTorque"));
 
-	USimpleWheeledVehicleMovementComponent_SetTargetGear_Params params;
-	params.GearNum = GearNum;
-	params.bImmediate = bImmediate;
+	USimpleWheeledVehicleMovementComponent_SetBrakeTorque_Params params;
+	params.BrakeTorque = BrakeTorque;
+	params.WheelIndex = WheelIndex;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -887,548 +891,6 @@ void USimpleWheeledVehicleMovementComponent::STATIC_SetTargetGear(int GearNum, b
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
-}
-
-
-// Function PhysXVehicles.WheeledVehicleMovementComponent.SetSteeringInput
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// Parameters:
-// float                          Steering                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FAD80              		 offset:470ad80                       
-
-void USimpleWheeledVehicleMovementComponent::STATIC_SetSteeringInput(float Steering)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetSteeringInput"));
-
-	USimpleWheeledVehicleMovementComponent_SetSteeringInput_Params params;
-	params.Steering = Steering;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function PhysXVehicles.WheeledVehicleMovementComponent.SetHandbrakeInput
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// Parameters:
-// bool                           bNewHandbrake                  (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FAC20              		 offset:470ac20                       
-
-void USimpleWheeledVehicleMovementComponent::STATIC_SetHandbrakeInput(bool bNewHandbrake)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetHandbrakeInput"));
-
-	USimpleWheeledVehicleMovementComponent_SetHandbrakeInput_Params params;
-	params.bNewHandbrake = bNewHandbrake;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnoreMask
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// Parameters:
-// struct FNavAvoidanceMask       GroupMask                      (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FAB90              		 offset:470ab90                       
-
-void USimpleWheeledVehicleMovementComponent::STATIC_SetGroupsToIgnoreMask(const struct FNavAvoidanceMask& GroupMask)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnoreMask"));
-
-	USimpleWheeledVehicleMovementComponent_SetGroupsToIgnoreMask_Params params;
-	params.GroupMask = GroupMask;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnore
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// Parameters:
-// int                            GroupFlags                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FAB10              		 offset:470ab10                       
-
-void USimpleWheeledVehicleMovementComponent::STATIC_SetGroupsToIgnore(int GroupFlags)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnore"));
-
-	USimpleWheeledVehicleMovementComponent_SetGroupsToIgnore_Params params;
-	params.GroupFlags = GroupFlags;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoidMask
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// Parameters:
-// struct FNavAvoidanceMask       GroupMask                      (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FAA80              		 offset:470aa80                       
-
-void USimpleWheeledVehicleMovementComponent::STATIC_SetGroupsToAvoidMask(const struct FNavAvoidanceMask& GroupMask)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoidMask"));
-
-	USimpleWheeledVehicleMovementComponent_SetGroupsToAvoidMask_Params params;
-	params.GroupMask = GroupMask;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoid
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// Parameters:
-// int                            GroupFlags                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FAA00              		 offset:470aa00                       
-
-void USimpleWheeledVehicleMovementComponent::STATIC_SetGroupsToAvoid(int GroupFlags)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoid"));
-
-	USimpleWheeledVehicleMovementComponent_SetGroupsToAvoid_Params params;
-	params.GroupFlags = GroupFlags;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function PhysXVehicles.WheeledVehicleMovementComponent.SetGearUp
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// Parameters:
-// bool                           bNewGearUp                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA970              		 offset:470a970                       
-
-void USimpleWheeledVehicleMovementComponent::STATIC_SetGearUp(bool bNewGearUp)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGearUp"));
-
-	USimpleWheeledVehicleMovementComponent_SetGearUp_Params params;
-	params.bNewGearUp = bNewGearUp;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function PhysXVehicles.WheeledVehicleMovementComponent.SetGearDown
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// Parameters:
-// bool                           bNewGearDown                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA8E0              		 offset:470a8e0                       
-
-void USimpleWheeledVehicleMovementComponent::STATIC_SetGearDown(bool bNewGearDown)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetGearDown"));
-
-	USimpleWheeledVehicleMovementComponent_SetGearDown_Params params;
-	params.bNewGearDown = bNewGearDown;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function PhysXVehicles.WheeledVehicleMovementComponent.SetBrakeInput
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// Parameters:
-// float                          Brake                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA6C0              		 offset:470a6c0                       
-
-void USimpleWheeledVehicleMovementComponent::STATIC_SetBrakeInput(float Brake)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetBrakeInput"));
-
-	USimpleWheeledVehicleMovementComponent_SetBrakeInput_Params params;
-	params.Brake = Brake;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroupMask
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// Parameters:
-// struct FNavAvoidanceMask       GroupMask                      (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA630              		 offset:470a630                       
-
-void USimpleWheeledVehicleMovementComponent::STATIC_SetAvoidanceGroupMask(const struct FNavAvoidanceMask& GroupMask)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroupMask"));
-
-	USimpleWheeledVehicleMovementComponent_SetAvoidanceGroupMask_Params params;
-	params.GroupMask = GroupMask;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroup
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// Parameters:
-// int                            GroupFlags                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA5B0              		 offset:470a5b0                       
-
-void USimpleWheeledVehicleMovementComponent::STATIC_SetAvoidanceGroup(int GroupFlags)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroup"));
-
-	USimpleWheeledVehicleMovementComponent_SetAvoidanceGroup_Params params;
-	params.GroupFlags = GroupFlags;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceEnabled
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// Parameters:
-// bool                           bEnable                        (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA520              		 offset:470a520                       
-
-void USimpleWheeledVehicleMovementComponent::STATIC_SetAvoidanceEnabled(bool bEnable)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceEnabled"));
-
-	USimpleWheeledVehicleMovementComponent_SetAvoidanceEnabled_Params params;
-	params.bEnable = bEnable;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function PhysXVehicles.WheeledVehicleMovementComponent.ServerUpdateState
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// Parameters:
-// float                          InSteeringInput                (Parm, ZeroConstructor, IsPlainOldData)
-// float                          InThrottleInput                (Parm, ZeroConstructor, IsPlainOldData)
-// float                          InBrakeInput                   (Parm, ZeroConstructor, IsPlainOldData)
-// float                          InHandbrakeInput               (Parm, ZeroConstructor, IsPlainOldData)
-// int                            CurrentGear                    (Parm, ZeroConstructor, IsPlainOldData)
-// uint32_t                       Checksum                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA300              		 offset:470a300                       
-
-void USimpleWheeledVehicleMovementComponent::STATIC_ServerUpdateState(float InSteeringInput, float InThrottleInput, float InBrakeInput, float InHandbrakeInput, int CurrentGear, uint32_t Checksum)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.ServerUpdateState"));
-
-	USimpleWheeledVehicleMovementComponent_ServerUpdateState_Params params;
-	params.InSteeringInput = InSteeringInput;
-	params.InThrottleInput = InThrottleInput;
-	params.InBrakeInput = InBrakeInput;
-	params.InHandbrakeInput = InHandbrakeInput;
-	params.CurrentGear = CurrentGear;
-	params.Checksum = Checksum;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function PhysXVehicles.WheeledVehicleMovementComponent.OnRep_TirePunctured
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// Parameters:
-// TArray<bool>                   LastTirePunctured              (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF63B9FA200              		 offset:470a200                       
-
-void USimpleWheeledVehicleMovementComponent::STATIC_OnRep_TirePunctured(TArray<bool> LastTirePunctured)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.OnRep_TirePunctured"));
-
-	USimpleWheeledVehicleMovementComponent_OnRep_TirePunctured_Params params;
-	params.LastTirePunctured = LastTirePunctured;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function PhysXVehicles.WheeledVehicleMovementComponent.GetUseAutoGears
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
-// Parameters:
-// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA170              		 offset:470a170                       
-
-bool USimpleWheeledVehicleMovementComponent::STATIC_GetUseAutoGears()
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.GetUseAutoGears"));
-
-	USimpleWheeledVehicleMovementComponent_GetUseAutoGears_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function PhysXVehicles.WheeledVehicleMovementComponent.GetTargetGear
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
-// Parameters:
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA140              		 offset:470a140                       
-
-int USimpleWheeledVehicleMovementComponent::STATIC_GetTargetGear()
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.GetTargetGear"));
-
-	USimpleWheeledVehicleMovementComponent_GetTargetGear_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function PhysXVehicles.WheeledVehicleMovementComponent.GetSideSpeed
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
-// Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9FA0B0              		 offset:470a0b0                       
-
-float USimpleWheeledVehicleMovementComponent::STATIC_GetSideSpeed()
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.GetSideSpeed"));
-
-	USimpleWheeledVehicleMovementComponent_GetSideSpeed_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function PhysXVehicles.WheeledVehicleMovementComponent.GetForwardSpeed
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
-// Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9F9FF0              		 offset:4709ff0                       
-
-float USimpleWheeledVehicleMovementComponent::STATIC_GetForwardSpeed()
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.GetForwardSpeed"));
-
-	USimpleWheeledVehicleMovementComponent_GetForwardSpeed_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function PhysXVehicles.WheeledVehicleMovementComponent.GetEngineRotationSpeed
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
-// Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9F9FC0              		 offset:4709fc0                       
-
-float USimpleWheeledVehicleMovementComponent::STATIC_GetEngineRotationSpeed()
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.GetEngineRotationSpeed"));
-
-	USimpleWheeledVehicleMovementComponent_GetEngineRotationSpeed_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function PhysXVehicles.WheeledVehicleMovementComponent.GetEngineMaxRotationSpeed
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
-// Parameters:
-// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9F9F90              		 offset:4709f90                       
-
-float USimpleWheeledVehicleMovementComponent::STATIC_GetEngineMaxRotationSpeed()
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.GetEngineMaxRotationSpeed"));
-
-	USimpleWheeledVehicleMovementComponent_GetEngineMaxRotationSpeed_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function PhysXVehicles.WheeledVehicleMovementComponent.GetCurrentGear
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
-// Parameters:
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B9F9F60              		 offset:4709f60                       
-
-int USimpleWheeledVehicleMovementComponent::STATIC_GetCurrentGear()
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function PhysXVehicles.WheeledVehicleMovementComponent.GetCurrentGear"));
-
-	USimpleWheeledVehicleMovementComponent_GetCurrentGear_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
 }
 
 

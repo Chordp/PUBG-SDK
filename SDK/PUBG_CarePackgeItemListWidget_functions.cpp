@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,8 +13,8 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.UpdateIconTexture
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UCarePackgeItemListWidget_C::UpdateIconTexture()
 {
@@ -34,8 +34,8 @@ void UCarePackgeItemListWidget_C::UpdateIconTexture()
 
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.FinishCarePackgeItemList
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UCarePackgeItemListWidget_C::FinishCarePackgeItemList()
 {
@@ -55,8 +55,8 @@ void UCarePackgeItemListWidget_C::FinishCarePackgeItemList()
 
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.PrepareCarePackgeItemList
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UCarePackgeItemListWidget_C::PrepareCarePackgeItemList()
 {
@@ -76,8 +76,8 @@ void UCarePackgeItemListWidget_C::PrepareCarePackgeItemList()
 
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.HideTextCarePackageEmpty
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UCarePackgeItemListWidget_C::HideTextCarePackageEmpty()
 {
@@ -97,8 +97,8 @@ void UCarePackgeItemListWidget_C::HideTextCarePackageEmpty()
 
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.SetCarePackgeItemList
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UCarePackgeItemListWidget_C::SetCarePackgeItemList()
 {
@@ -118,8 +118,8 @@ void UCarePackgeItemListWidget_C::SetCarePackgeItemList()
 
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.GetCarePackageItemIcons
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UCarePackgeItemListWidget_C::GetCarePackageItemIcons()
 {
@@ -139,8 +139,8 @@ void UCarePackgeItemListWidget_C::GetCarePackageItemIcons()
 
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.HideCarePackageItemList
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UCarePackgeItemListWidget_C::HideCarePackageItemList()
 {
@@ -160,13 +160,13 @@ void UCarePackgeItemListWidget_C::HideCarePackageItemList()
 
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.GetCarePackageItemWidget
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UTexture**               ItemIcon                       (Parm, ZeroConstructor, IsPlainOldData)
 // struct FText*                  ItemName                       (Parm)
 // int*                           ItemCount                      (Parm, ZeroConstructor, IsPlainOldData)
 // class UCarePackageItemSlotWidget_C* CarePackageItemSlotWidget      (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UCarePackgeItemListWidget_C::GetCarePackageItemWidget(class UTexture** ItemIcon, struct FText* ItemName, int* ItemCount, class UCarePackageItemSlotWidget_C** CarePackageItemSlotWidget)
 {
@@ -192,8 +192,8 @@ void UCarePackgeItemListWidget_C::GetCarePackageItemWidget(class UTexture** Item
 
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.ShowCarePackageItemList
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UCarePackgeItemListWidget_C::ShowCarePackageItemList()
 {
@@ -213,8 +213,8 @@ void UCarePackgeItemListWidget_C::ShowCarePackageItemList()
 
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.Construct
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UCarePackgeItemListWidget_C::Construct()
 {
@@ -234,8 +234,8 @@ void UCarePackgeItemListWidget_C::Construct()
 
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.ShowCarePackageItem
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UCarePackgeItemListWidget_C::ShowCarePackageItem()
 {
@@ -255,8 +255,8 @@ void UCarePackgeItemListWidget_C::ShowCarePackageItem()
 
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.CustomTick
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UCarePackgeItemListWidget_C::CustomTick()
 {
@@ -276,8 +276,8 @@ void UCarePackgeItemListWidget_C::CustomTick()
 
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.TimerCheckUpdateList
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UCarePackgeItemListWidget_C::TimerCheckUpdateList()
 {
@@ -297,10 +297,10 @@ void UCarePackgeItemListWidget_C::TimerCheckUpdateList()
 
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.ExecuteUbergraph_CarePackgeItemListWidget
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UCarePackgeItemListWidget_C::ExecuteUbergraph_CarePackgeItemListWidget(int* EntryPoint)
 {
@@ -321,8 +321,8 @@ void UCarePackgeItemListWidget_C::ExecuteUbergraph_CarePackgeItemListWidget(int*
 
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.EventDispatcher_ShowCarePackageItem__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UCarePackgeItemListWidget_C::EventDispatcher_ShowCarePackageItem__DelegateSignature()
 {

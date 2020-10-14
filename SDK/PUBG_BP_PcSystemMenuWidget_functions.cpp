@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -12,11 +12,63 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.CheckIfCompetitiveMode
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool                           IsCompetitive                  (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+
+void UBP_PcSystemMenuWidget_C::CheckIfCompetitiveMode(bool* IsCompetitive)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.CheckIfCompetitiveMode"));
+
+	UBP_PcSystemMenuWidget_C_CheckIfCompetitiveMode_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (IsCompetitive != nullptr)
+		*IsCompetitive = params.IsCompetitive;
+}
+
+
+// Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.CheckLeaveGameStatus
+// (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// bool                           IsLeaveUnsafe                  (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+
+void UBP_PcSystemMenuWidget_C::CheckLeaveGameStatus(bool* IsLeaveUnsafe)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.CheckLeaveGameStatus"));
+
+	UBP_PcSystemMenuWidget_C_CheckLeaveGameStatus_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (IsLeaveUnsafe != nullptr)
+		*IsLeaveUnsafe = params.IsLeaveUnsafe;
+}
+
+
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.QuitToDesktop
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EPopupButtonID*                NewParam                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_PcSystemMenuWidget_C::QuitToDesktop(EPopupButtonID* NewParam)
 {
@@ -36,20 +88,20 @@ void UBP_PcSystemMenuWidget_C::QuitToDesktop(EPopupButtonID* NewParam)
 }
 
 
-// Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.GoToLobby
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.GotoLobby
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // EPopupButtonID*                InPopupButtonID                (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
-void UBP_PcSystemMenuWidget_C::GoToLobby(EPopupButtonID* InPopupButtonID)
+void UBP_PcSystemMenuWidget_C::GotoLobby(EPopupButtonID* InPopupButtonID)
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.GoToLobby"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.GotoLobby"));
 
-	UBP_PcSystemMenuWidget_C_GoToLobby_Params params;
+	UBP_PcSystemMenuWidget_C_GotoLobby_Params params;
 	params.InPopupButtonID = InPopupButtonID;
 
 	auto flags = fn->FunctionFlags;
@@ -61,10 +113,10 @@ void UBP_PcSystemMenuWidget_C::GoToLobby(EPopupButtonID* InPopupButtonID)
 
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.EnableMenuButtons
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                           bEnable                        (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_PcSystemMenuWidget_C::EnableMenuButtons(bool bEnable)
 {
@@ -85,8 +137,8 @@ void UBP_PcSystemMenuWidget_C::EnableMenuButtons(bool bEnable)
 
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.OnVanishingAnimFinished
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_PcSystemMenuWidget_C::OnVanishingAnimFinished()
 {
@@ -106,8 +158,8 @@ void UBP_PcSystemMenuWidget_C::OnVanishingAnimFinished()
 
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.HideWidget
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Public, BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_PcSystemMenuWidget_C::HideWidget()
 {
@@ -126,9 +178,30 @@ void UBP_PcSystemMenuWidget_C::HideWidget()
 }
 
 
+// Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__ResumeButton_K2Node_ComponentBoundEvent_25_OnClicked__DelegateSignature
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+
+void UBP_PcSystemMenuWidget_C::BndEvt__ResumeButton_K2Node_ComponentBoundEvent_25_OnClicked__DelegateSignature()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__ResumeButton_K2Node_ComponentBoundEvent_25_OnClicked__DelegateSignature"));
+
+	UBP_PcSystemMenuWidget_C_BndEvt__ResumeButton_K2Node_ComponentBoundEvent_25_OnClicked__DelegateSignature_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__SettingsButton_K2Node_ComponentBoundEvent_30_OnClicked__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_PcSystemMenuWidget_C::BndEvt__SettingsButton_K2Node_ComponentBoundEvent_30_OnClicked__DelegateSignature()
 {
@@ -148,8 +221,8 @@ void UBP_PcSystemMenuWidget_C::BndEvt__SettingsButton_K2Node_ComponentBoundEvent
 
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__TeamManagementButton_K2Node_ComponentBoundEvent_36_OnClicked__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_PcSystemMenuWidget_C::BndEvt__TeamManagementButton_K2Node_ComponentBoundEvent_36_OnClicked__DelegateSignature()
 {
@@ -169,8 +242,8 @@ void UBP_PcSystemMenuWidget_C::BndEvt__TeamManagementButton_K2Node_ComponentBoun
 
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__RestartLobbyButton_K2Node_ComponentBoundEvent_43_OnClicked__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_PcSystemMenuWidget_C::BndEvt__RestartLobbyButton_K2Node_ComponentBoundEvent_43_OnClicked__DelegateSignature()
 {
@@ -190,8 +263,8 @@ void UBP_PcSystemMenuWidget_C::BndEvt__RestartLobbyButton_K2Node_ComponentBoundE
 
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__ExitToDesktopButton_K2Node_ComponentBoundEvent_60_OnClicked__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_PcSystemMenuWidget_C::BndEvt__ExitToDesktopButton_K2Node_ComponentBoundEvent_60_OnClicked__DelegateSignature()
 {
@@ -211,8 +284,8 @@ void UBP_PcSystemMenuWidget_C::BndEvt__ExitToDesktopButton_K2Node_ComponentBound
 
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.Construct
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_PcSystemMenuWidget_C::Construct()
 {
@@ -231,30 +304,9 @@ void UBP_PcSystemMenuWidget_C::Construct()
 }
 
 
-// Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__RatingsButton_K2Node_ComponentBoundEvent_12_OnButtonClickedEvent__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
-
-void UBP_PcSystemMenuWidget_C::BndEvt__RatingsButton_K2Node_ComponentBoundEvent_12_OnButtonClickedEvent__DelegateSignature()
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__RatingsButton_K2Node_ComponentBoundEvent_12_OnButtonClickedEvent__DelegateSignature"));
-
-	UBP_PcSystemMenuWidget_C_BndEvt__RatingsButton_K2Node_ComponentBoundEvent_12_OnButtonClickedEvent__DelegateSignature_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__KeyGuideButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_PcSystemMenuWidget_C::BndEvt__KeyGuideButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
 {
@@ -274,10 +326,10 @@ void UBP_PcSystemMenuWidget_C::BndEvt__KeyGuideButton_K2Node_ComponentBoundEvent
 
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.OnScrollMissionList
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float*                         Scale                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_PcSystemMenuWidget_C::OnScrollMissionList(float* Scale)
 {
@@ -298,8 +350,8 @@ void UBP_PcSystemMenuWidget_C::OnScrollMissionList(float* Scale)
 
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.Destruct
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_PcSystemMenuWidget_C::Destruct()
 {
@@ -319,8 +371,8 @@ void UBP_PcSystemMenuWidget_C::Destruct()
 
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__EmergingAnim_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_PcSystemMenuWidget_C::BndEvt__EmergingAnim_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
@@ -340,8 +392,8 @@ void UBP_PcSystemMenuWidget_C::BndEvt__EmergingAnim_K2Node_ComponentBoundEvent_1
 
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__EmergingAnim_K2Node_ComponentBoundEvent_2_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_PcSystemMenuWidget_C::BndEvt__EmergingAnim_K2Node_ComponentBoundEvent_2_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
@@ -361,8 +413,8 @@ void UBP_PcSystemMenuWidget_C::BndEvt__EmergingAnim_K2Node_ComponentBoundEvent_2
 
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__VanishingAnim_K2Node_ComponentBoundEvent_3_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_PcSystemMenuWidget_C::BndEvt__VanishingAnim_K2Node_ComponentBoundEvent_3_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
@@ -382,8 +434,8 @@ void UBP_PcSystemMenuWidget_C::BndEvt__VanishingAnim_K2Node_ComponentBoundEvent_
 
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__VanishingAnim_K2Node_ComponentBoundEvent_4_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_PcSystemMenuWidget_C::BndEvt__VanishingAnim_K2Node_ComponentBoundEvent_4_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
@@ -403,10 +455,10 @@ void UBP_PcSystemMenuWidget_C::BndEvt__VanishingAnim_K2Node_ComponentBoundEvent_
 
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.NotifySystemMenuEnter
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Event, Public, BlueprintEvent)
 // Parameters:
 // ESystemMenuButtonType          eType                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_PcSystemMenuWidget_C::NotifySystemMenuEnter(ESystemMenuButtonType eType)
 {
@@ -426,30 +478,9 @@ void UBP_PcSystemMenuWidget_C::NotifySystemMenuEnter(ESystemMenuButtonType eType
 }
 
 
-// Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__ResumeButton_K2Node_ComponentBoundEvent_25_OnClicked__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
-
-void UBP_PcSystemMenuWidget_C::BndEvt__ResumeButton_K2Node_ComponentBoundEvent_25_OnClicked__DelegateSignature()
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__ResumeButton_K2Node_ComponentBoundEvent_25_OnClicked__DelegateSignature"));
-
-	UBP_PcSystemMenuWidget_C_BndEvt__ResumeButton_K2Node_ComponentBoundEvent_25_OnClicked__DelegateSignature_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.Custom Event
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintCallable, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_PcSystemMenuWidget_C::Custom_Event()
 {
@@ -469,10 +500,10 @@ void UBP_PcSystemMenuWidget_C::Custom_Event()
 
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.NotifyEnableMenuButtons
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Event, Public, BlueprintEvent)
 // Parameters:
 // bool                           bEnable                        (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_PcSystemMenuWidget_C::NotifyEnableMenuButtons(bool bEnable)
 {
@@ -493,8 +524,8 @@ void UBP_PcSystemMenuWidget_C::NotifyEnableMenuButtons(bool bEnable)
 
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.NotifyHideWidget
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (Event, Public, BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_PcSystemMenuWidget_C::NotifyHideWidget()
 {
@@ -514,8 +545,8 @@ void UBP_PcSystemMenuWidget_C::NotifyHideWidget()
 
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__LeaveMatchButton_K2Node_ComponentBoundEvent_51_OnClicked__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_PcSystemMenuWidget_C::BndEvt__LeaveMatchButton_K2Node_ComponentBoundEvent_51_OnClicked__DelegateSignature()
 {
@@ -534,11 +565,32 @@ void UBP_PcSystemMenuWidget_C::BndEvt__LeaveMatchButton_K2Node_ComponentBoundEve
 }
 
 
+// Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__RatingsButton_K2Node_ComponentBoundEvent_99_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+
+void UBP_PcSystemMenuWidget_C::BndEvt__RatingsButton_K2Node_ComponentBoundEvent_99_OnButtonClickedEvent__DelegateSignature()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__RatingsButton_K2Node_ComponentBoundEvent_99_OnButtonClickedEvent__DelegateSignature"));
+
+	UBP_PcSystemMenuWidget_C_BndEvt__RatingsButton_K2Node_ComponentBoundEvent_99_OnButtonClickedEvent__DelegateSignature_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.ExecuteUbergraph_BP_PcSystemMenuWidget
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void UBP_PcSystemMenuWidget_C::ExecuteUbergraph_BP_PcSystemMenuWidget(int* EntryPoint)
 {

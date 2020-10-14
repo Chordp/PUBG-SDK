@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,10 +13,10 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function TslCaptureLobby.TslCaptureLobby_C.InpActEvt_Backslash_K2Node_InputKeyEvent
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (BlueprintEvent)
 // Parameters:
 // struct FKey*                   Key                            (Parm)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void ATslCaptureLobby_C::InpActEvt_Backslash_K2Node_InputKeyEvent(struct FKey* Key)
 {
@@ -37,10 +37,10 @@ void ATslCaptureLobby_C::InpActEvt_Backslash_K2Node_InputKeyEvent(struct FKey* K
 
 
 // Function TslCaptureLobby.TslCaptureLobby_C.InpActEvt_Left_K2Node_InputKeyEvent
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (BlueprintEvent)
 // Parameters:
 // struct FKey*                   Key                            (Parm)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void ATslCaptureLobby_C::InpActEvt_Left_K2Node_InputKeyEvent(struct FKey* Key)
 {
@@ -61,10 +61,10 @@ void ATslCaptureLobby_C::InpActEvt_Left_K2Node_InputKeyEvent(struct FKey* Key)
 
 
 // Function TslCaptureLobby.TslCaptureLobby_C.InpActEvt_Right_K2Node_InputKeyEvent
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (BlueprintEvent)
 // Parameters:
 // struct FKey*                   Key                            (Parm)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void ATslCaptureLobby_C::InpActEvt_Right_K2Node_InputKeyEvent(struct FKey* Key)
 {
@@ -85,10 +85,10 @@ void ATslCaptureLobby_C::InpActEvt_Right_K2Node_InputKeyEvent(struct FKey* Key)
 
 
 // Function TslCaptureLobby.TslCaptureLobby_C.InpActEvt_Up_K2Node_InputKeyEvent
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (BlueprintEvent)
 // Parameters:
 // struct FKey*                   Key                            (Parm)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void ATslCaptureLobby_C::InpActEvt_Up_K2Node_InputKeyEvent(struct FKey* Key)
 {
@@ -109,10 +109,10 @@ void ATslCaptureLobby_C::InpActEvt_Up_K2Node_InputKeyEvent(struct FKey* Key)
 
 
 // Function TslCaptureLobby.TslCaptureLobby_C.InpActEvt_Down_K2Node_InputKeyEvent
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (BlueprintEvent)
 // Parameters:
 // struct FKey*                   Key                            (Parm)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void ATslCaptureLobby_C::InpActEvt_Down_K2Node_InputKeyEvent(struct FKey* Key)
 {
@@ -133,10 +133,10 @@ void ATslCaptureLobby_C::InpActEvt_Down_K2Node_InputKeyEvent(struct FKey* Key)
 
 
 // Function TslCaptureLobby.TslCaptureLobby_C.InpActEvt_LeftBracket_K2Node_InputKeyEvent
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (BlueprintEvent)
 // Parameters:
 // struct FKey*                   Key                            (Parm)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void ATslCaptureLobby_C::InpActEvt_LeftBracket_K2Node_InputKeyEvent(struct FKey* Key)
 {
@@ -157,10 +157,10 @@ void ATslCaptureLobby_C::InpActEvt_LeftBracket_K2Node_InputKeyEvent(struct FKey*
 
 
 // Function TslCaptureLobby.TslCaptureLobby_C.InpActEvt_RightBracket_K2Node_InputKeyEvent
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (BlueprintEvent)
 // Parameters:
 // struct FKey*                   Key                            (Parm)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void ATslCaptureLobby_C::InpActEvt_RightBracket_K2Node_InputKeyEvent(struct FKey* Key)
 {
@@ -181,10 +181,10 @@ void ATslCaptureLobby_C::InpActEvt_RightBracket_K2Node_InputKeyEvent(struct FKey
 
 
 // Function TslCaptureLobby.TslCaptureLobby_C.ReceiveTick
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Event, Public, BlueprintEvent)
 // Parameters:
 // float*                         DeltaSeconds                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void ATslCaptureLobby_C::ReceiveTick(float* DeltaSeconds)
 {
@@ -205,10 +205,10 @@ void ATslCaptureLobby_C::ReceiveTick(float* DeltaSeconds)
 
 
 // Function TslCaptureLobby.TslCaptureLobby_C.ExecuteUbergraph_TslCaptureLobby
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (HasDefaults)
 // Parameters:
 // int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
+// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
 
 void ATslCaptureLobby_C::ExecuteUbergraph_TslCaptureLobby(int* EntryPoint)
 {

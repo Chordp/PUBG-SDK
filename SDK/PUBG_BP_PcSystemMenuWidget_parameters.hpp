@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,14 +14,26 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.CheckIfCompetitiveMode
+struct UBP_PcSystemMenuWidget_C_CheckIfCompetitiveMode_Params
+{
+	bool                                               IsCompetitive;                                            // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.CheckLeaveGameStatus
+struct UBP_PcSystemMenuWidget_C_CheckLeaveGameStatus_Params
+{
+	bool                                               IsLeaveUnsafe;                                            // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+};
+
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.QuitToDesktop
 struct UBP_PcSystemMenuWidget_C_QuitToDesktop_Params
 {
 	EPopupButtonID*                                    NewParam;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.GoToLobby
-struct UBP_PcSystemMenuWidget_C_GoToLobby_Params
+// Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.GotoLobby
+struct UBP_PcSystemMenuWidget_C_GotoLobby_Params
 {
 	EPopupButtonID*                                    InPopupButtonID;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 };
@@ -39,6 +51,11 @@ struct UBP_PcSystemMenuWidget_C_OnVanishingAnimFinished_Params
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.HideWidget
 struct UBP_PcSystemMenuWidget_C_HideWidget_Params
+{
+};
+
+// Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__ResumeButton_K2Node_ComponentBoundEvent_25_OnClicked__DelegateSignature
+struct UBP_PcSystemMenuWidget_C_BndEvt__ResumeButton_K2Node_ComponentBoundEvent_25_OnClicked__DelegateSignature_Params
 {
 };
 
@@ -64,11 +81,6 @@ struct UBP_PcSystemMenuWidget_C_BndEvt__ExitToDesktopButton_K2Node_ComponentBoun
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.Construct
 struct UBP_PcSystemMenuWidget_C_Construct_Params
-{
-};
-
-// Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__RatingsButton_K2Node_ComponentBoundEvent_12_OnButtonClickedEvent__DelegateSignature
-struct UBP_PcSystemMenuWidget_C_BndEvt__RatingsButton_K2Node_ComponentBoundEvent_12_OnButtonClickedEvent__DelegateSignature_Params
 {
 };
 
@@ -114,11 +126,6 @@ struct UBP_PcSystemMenuWidget_C_NotifySystemMenuEnter_Params
 	ESystemMenuButtonType                              eType;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__ResumeButton_K2Node_ComponentBoundEvent_25_OnClicked__DelegateSignature
-struct UBP_PcSystemMenuWidget_C_BndEvt__ResumeButton_K2Node_ComponentBoundEvent_25_OnClicked__DelegateSignature_Params
-{
-};
-
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.Custom Event
 struct UBP_PcSystemMenuWidget_C_Custom_Event_Params
 {
@@ -137,6 +144,11 @@ struct UBP_PcSystemMenuWidget_C_NotifyHideWidget_Params
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__LeaveMatchButton_K2Node_ComponentBoundEvent_51_OnClicked__DelegateSignature
 struct UBP_PcSystemMenuWidget_C_BndEvt__LeaveMatchButton_K2Node_ComponentBoundEvent_51_OnClicked__DelegateSignature_Params
+{
+};
+
+// Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__RatingsButton_K2Node_ComponentBoundEvent_99_OnButtonClickedEvent__DelegateSignature
+struct UBP_PcSystemMenuWidget_C_BndEvt__RatingsButton_K2Node_ComponentBoundEvent_99_OnButtonClickedEvent__DelegateSignature_Params
 {
 };
 

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,11 +15,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Class OnlineSubsystemUtils.IpConnection
-// 0x0020 (0x65858 - 0x65838)
+// 0x0020 (0x65868 - 0x65848)
 class UIpConnection : public UNetConnection
 {
 public:
-	unsigned char                                      UnknownData00[0x20];                                      // 0x65838(0x0020) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x20];                                      // 0x65848(0x0020) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -34,19 +34,19 @@ public:
 
 
 // Class OnlineSubsystemUtils.IpNetDriver
-// 0x0030 (0x04E8 - 0x04B8)
+// 0x0030 (0x0508 - 0x04D8)
 class UIpNetDriver : public UNetDriver
 {
 public:
-	unsigned char                                      LogPortUnreach : 1;                                       // 0x04B8(0x0001) (Config)
-	unsigned char                                      AllowPlayerPortUnreach : 1;                               // 0x04B8(0x0001) (Config)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x04B9(0x0003) MISSED OFFSET
-	uint32_t                                           MaxPortCountToTry;                                        // 0x04BC(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x18];                                      // 0x04C0(0x0018) MISSED OFFSET
-	uint32_t                                           ServerDesiredSocketReceiveBufferBytes;                    // 0x04D8(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	uint32_t                                           ServerDesiredSocketSendBufferBytes;                       // 0x04DC(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	uint32_t                                           ClientDesiredSocketReceiveBufferBytes;                    // 0x04E0(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	uint32_t                                           ClientDesiredSocketSendBufferBytes;                       // 0x04E4(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      LogPortUnreach : 1;                                       // 0x04D8(0x0001) (Config)
+	unsigned char                                      AllowPlayerPortUnreach : 1;                               // 0x04D8(0x0001) (Config)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x04D9(0x0003) MISSED OFFSET
+	uint32_t                                           MaxPortCountToTry;                                        // 0x04DC(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x18];                                      // 0x04E0(0x0018) MISSED OFFSET
+	uint32_t                                           ServerDesiredSocketReceiveBufferBytes;                    // 0x04F8(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	uint32_t                                           ServerDesiredSocketSendBufferBytes;                       // 0x04FC(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	uint32_t                                           ClientDesiredSocketReceiveBufferBytes;                    // 0x0500(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	uint32_t                                           ClientDesiredSocketSendBufferBytes;                       // 0x0504(0x0004) (ZeroConstructor, Config, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
@@ -61,7 +61,7 @@ public:
 
 
 // Class OnlineSubsystemUtils.AchievementBlueprintLibrary
-// 0x0000 (0x0030 - 0x0030)
+// 0x0000 (0x0040 - 0x0040)
 class UAchievementBlueprintLibrary : public UBlueprintFunctionLibrary
 {
 public:
@@ -75,17 +75,20 @@ public:
 		return ptr;
 	}
 
+
+	void STATIC_GetCachedAchievementProgress(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FName& AchievementID, bool* bFoundID, float* Progress);
+	void STATIC_GetCachedAchievementDescription(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FName& AchievementID, bool* bFoundID, struct FText* Title, struct FText* LockedDescription, struct FText* UnlockedDescription, bool* bHidden);
 };
 
 
 // Class OnlineSubsystemUtils.AchievementQueryCallbackProxy
-// 0x0038 (0x0068 - 0x0030)
+// 0x0038 (0x0078 - 0x0040)
 class UAchievementQueryCallbackProxy : public UOnlineBlueprintCallProxyBase
 {
 public:
-	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0030(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData00[0x18];                                      // 0x0050(0x0018) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0050(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	unsigned char                                      UnknownData00[0x18];                                      // 0x0060(0x0018) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -103,13 +106,13 @@ public:
 
 
 // Class OnlineSubsystemUtils.AchievementWriteCallbackProxy
-// 0x0050 (0x0080 - 0x0030)
+// 0x0050 (0x0090 - 0x0040)
 class UAchievementWriteCallbackProxy : public UOnlineBlueprintCallProxyBase
 {
 public:
-	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0030(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData00[0x30];                                      // 0x0050(0x0030) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0050(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	unsigned char                                      UnknownData00[0x30];                                      // 0x0060(0x0030) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -126,13 +129,13 @@ public:
 
 
 // Class OnlineSubsystemUtils.ConnectionCallbackProxy
-// 0x0080 (0x00B0 - 0x0030)
+// 0x0080 (0x00C0 - 0x0040)
 class UConnectionCallbackProxy : public UOnlineBlueprintCallProxyBase
 {
 public:
-	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0030(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData00[0x60];                                      // 0x0050(0x0060) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0050(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	unsigned char                                      UnknownData00[0x60];                                      // 0x0060(0x0060) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -149,13 +152,13 @@ public:
 
 
 // Class OnlineSubsystemUtils.CreateSessionCallbackProxy
-// 0x00D0 (0x0100 - 0x0030)
+// 0x00D0 (0x0110 - 0x0040)
 class UCreateSessionCallbackProxy : public UOnlineBlueprintCallProxyBase
 {
 public:
-	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0030(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData00[0xB0];                                      // 0x0050(0x00B0) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0050(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	unsigned char                                      UnknownData00[0xB0];                                      // 0x0060(0x00B0) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -172,13 +175,13 @@ public:
 
 
 // Class OnlineSubsystemUtils.DestroySessionCallbackProxy
-// 0x0080 (0x00B0 - 0x0030)
+// 0x0080 (0x00C0 - 0x0040)
 class UDestroySessionCallbackProxy : public UOnlineBlueprintCallProxyBase
 {
 public:
-	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0030(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData00[0x60];                                      // 0x0050(0x0060) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0050(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	unsigned char                                      UnknownData00[0x60];                                      // 0x0060(0x0060) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -195,13 +198,13 @@ public:
 
 
 // Class OnlineSubsystemUtils.EndMatchCallbackProxy
-// 0x0050 (0x0080 - 0x0030)
+// 0x0050 (0x0090 - 0x0040)
 class UEndMatchCallbackProxy : public UOnlineBlueprintCallProxyBase
 {
 public:
-	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0030(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData00[0x30];                                      // 0x0050(0x0030) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0050(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	unsigned char                                      UnknownData00[0x30];                                      // 0x0060(0x0030) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -218,13 +221,13 @@ public:
 
 
 // Class OnlineSubsystemUtils.EndTurnCallbackProxy
-// 0x0048 (0x0078 - 0x0030)
+// 0x0048 (0x0088 - 0x0040)
 class UEndTurnCallbackProxy : public UOnlineBlueprintCallProxyBase
 {
 public:
-	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0030(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData00[0x28];                                      // 0x0050(0x0028) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0050(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	unsigned char                                      UnknownData00[0x28];                                      // 0x0060(0x0028) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -241,13 +244,13 @@ public:
 
 
 // Class OnlineSubsystemUtils.FindSessionsCallbackProxy
-// 0x00A0 (0x00D0 - 0x0030)
+// 0x00A0 (0x00E0 - 0x0040)
 class UFindSessionsCallbackProxy : public UOnlineBlueprintCallProxyBase
 {
 public:
-	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0030(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData00[0x80];                                      // 0x0050(0x0080) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0050(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	unsigned char                                      UnknownData00[0x80];                                      // 0x0060(0x0080) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -268,13 +271,13 @@ public:
 
 
 // Class OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy
-// 0x0058 (0x0088 - 0x0030)
+// 0x0058 (0x0098 - 0x0040)
 class UFindTurnBasedMatchCallbackProxy : public UOnlineBlueprintCallProxyBase
 {
 public:
-	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0030(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData00[0x38];                                      // 0x0050(0x0038) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0050(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	unsigned char                                      UnknownData00[0x38];                                      // 0x0060(0x0038) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -291,13 +294,13 @@ public:
 
 
 // Class OnlineSubsystemUtils.InAppPurchaseCallbackProxy
-// 0x0090 (0x00C0 - 0x0030)
+// 0x0090 (0x00D0 - 0x0040)
 class UInAppPurchaseCallbackProxy : public UObject
 {
 public:
-	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0030(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData00[0x70];                                      // 0x0050(0x0070) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0050(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	unsigned char                                      UnknownData00[0x70];                                      // 0x0060(0x0070) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -314,13 +317,13 @@ public:
 
 
 // Class OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy
-// 0x00A0 (0x00D0 - 0x0030)
+// 0x00A0 (0x00E0 - 0x0040)
 class UInAppPurchaseQueryCallbackProxy : public UObject
 {
 public:
-	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0030(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData00[0x80];                                      // 0x0050(0x0080) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0050(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	unsigned char                                      UnknownData00[0x80];                                      // 0x0060(0x0080) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -337,13 +340,13 @@ public:
 
 
 // Class OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy
-// 0x00A0 (0x00D0 - 0x0030)
+// 0x00A0 (0x00E0 - 0x0040)
 class UInAppPurchaseRestoreCallbackProxy : public UObject
 {
 public:
-	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0030(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData00[0x80];                                      // 0x0050(0x0080) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0050(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	unsigned char                                      UnknownData00[0x80];                                      // 0x0060(0x0080) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -360,13 +363,13 @@ public:
 
 
 // Class OnlineSubsystemUtils.JoinSessionCallbackProxy
-// 0x0130 (0x0160 - 0x0030)
+// 0x0130 (0x0170 - 0x0040)
 class UJoinSessionCallbackProxy : public UOnlineBlueprintCallProxyBase
 {
 public:
-	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0030(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData00[0x110];                                     // 0x0050(0x0110) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0050(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	unsigned char                                      UnknownData00[0x110];                                     // 0x0060(0x0110) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -383,7 +386,7 @@ public:
 
 
 // Class OnlineSubsystemUtils.LeaderboardBlueprintLibrary
-// 0x0000 (0x0030 - 0x0030)
+// 0x0000 (0x0040 - 0x0040)
 class ULeaderboardBlueprintLibrary : public UBlueprintFunctionLibrary
 {
 public:
@@ -397,17 +400,19 @@ public:
 		return ptr;
 	}
 
+
+	bool STATIC_WriteLeaderboardInteger(class APlayerController* PlayerController, const struct FName& StatName, int StatValue);
 };
 
 
 // Class OnlineSubsystemUtils.LeaderboardFlushCallbackProxy
-// 0x0070 (0x00A0 - 0x0030)
+// 0x0070 (0x00B0 - 0x0040)
 class ULeaderboardFlushCallbackProxy : public UObject
 {
 public:
-	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0030(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData00[0x50];                                      // 0x0050(0x0050) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0050(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	unsigned char                                      UnknownData00[0x50];                                      // 0x0060(0x0050) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -424,13 +429,13 @@ public:
 
 
 // Class OnlineSubsystemUtils.LeaderboardQueryCallbackProxy
-// 0x00A0 (0x00D0 - 0x0030)
+// 0x00A0 (0x00E0 - 0x0040)
 class ULeaderboardQueryCallbackProxy : public UObject
 {
 public:
-	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0030(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData00[0x80];                                      // 0x0050(0x0080) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0050(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	unsigned char                                      UnknownData00[0x80];                                      // 0x0060(0x0080) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -447,13 +452,13 @@ public:
 
 
 // Class OnlineSubsystemUtils.LogoutCallbackProxy
-// 0x0038 (0x0068 - 0x0030)
+// 0x0038 (0x0078 - 0x0040)
 class ULogoutCallbackProxy : public UBlueprintAsyncActionBase
 {
 public:
-	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0030(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData00[0x18];                                      // 0x0050(0x0018) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0050(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	unsigned char                                      UnknownData00[0x18];                                      // 0x0060(0x0018) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -470,15 +475,15 @@ public:
 
 
 // Class OnlineSubsystemUtils.OnlineBeacon
-// 0x0028 (0x0410 - 0x03E8)
+// 0x0028 (0x0428 - 0x0400)
 class AOnlineBeacon : public AActor
 {
 public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x03E8(0x0008) MISSED OFFSET
-	float                                              BeaconConnectionInitialTimeout;                           // 0x03F0(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	float                                              BeaconConnectionTimeout;                                  // 0x03F4(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	class UNetDriver*                                  NetDriver;                                                // 0x03F8(0x0008) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x10];                                      // 0x0400(0x0010) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0400(0x0008) MISSED OFFSET
+	float                                              BeaconConnectionInitialTimeout;                           // 0x0408(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	float                                              BeaconConnectionTimeout;                                  // 0x040C(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	class UNetDriver*                                  NetDriver;                                                // 0x0410(0x0008) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x10];                                      // 0x0418(0x0010) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -493,14 +498,14 @@ public:
 
 
 // Class OnlineSubsystemUtils.OnlineBeaconClient
-// 0x0090 (0x04A0 - 0x0410)
+// 0x0088 (0x04B0 - 0x0428)
 class AOnlineBeaconClient : public AOnlineBeacon
 {
 public:
-	class AOnlineBeaconHostObject*                     BeaconOwner;                                              // 0x0410(0x0008) (ZeroConstructor, IsPlainOldData)
-	class UNetConnection*                              BeaconConnection;                                         // 0x0418(0x0008) (ZeroConstructor, IsPlainOldData)
-	EBeaconConnectionState                             ConnectionState;                                          // 0x0420(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7F];                                      // 0x0421(0x007F) MISSED OFFSET
+	class AOnlineBeaconHostObject*                     BeaconOwner;                                              // 0x0428(0x0008) (ZeroConstructor, IsPlainOldData)
+	class UNetConnection*                              BeaconConnection;                                         // 0x0430(0x0008) (ZeroConstructor, IsPlainOldData)
+	EBeaconConnectionState                             ConnectionState;                                          // 0x0438(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x77];                                      // 0x0439(0x0077) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -512,25 +517,25 @@ public:
 	}
 
 
-	void STATIC_ClientOnConnected();
+	void ClientOnConnected();
 };
 
 
 // Class OnlineSubsystemUtils.PartyBeaconState
-// 0x0048 (0x0078 - 0x0030)
+// 0x0048 (0x0088 - 0x0040)
 class UPartyBeaconState : public UObject
 {
 public:
-	struct FName                                       SessionName;                                              // 0x0030(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
-	int                                                NumConsumedReservations;                                  // 0x0038(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
-	int                                                MaxReservations;                                          // 0x003C(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
-	int                                                NumTeams;                                                 // 0x0040(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
-	int                                                NumPlayersPerTeam;                                        // 0x0044(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
-	struct FName                                       TeamAssignmentMethod;                                     // 0x0048(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
-	int                                                ReservedHostTeamNum;                                      // 0x0050(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
-	int                                                ForceTeamNum;                                             // 0x0054(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
-	TArray<struct FPartyReservation>                   Reservations;                                             // 0x0058(0x0010) (ZeroConstructor, Transient)
-	unsigned char                                      UnknownData00[0x10];                                      // 0x0068(0x0010) MISSED OFFSET
+	struct FName                                       SessionName;                                              // 0x0040(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
+	int                                                NumConsumedReservations;                                  // 0x0048(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
+	int                                                MaxReservations;                                          // 0x004C(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
+	int                                                NumTeams;                                                 // 0x0050(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
+	int                                                NumPlayersPerTeam;                                        // 0x0054(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
+	struct FName                                       TeamAssignmentMethod;                                     // 0x0058(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
+	int                                                ReservedHostTeamNum;                                      // 0x0060(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
+	int                                                ForceTeamNum;                                             // 0x0064(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
+	TArray<struct FPartyReservation>                   Reservations;                                             // 0x0068(0x0010) (ZeroConstructor, Transient)
+	unsigned char                                      UnknownData00[0x10];                                      // 0x0078(0x0010) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -545,17 +550,17 @@ public:
 
 
 // Class OnlineSubsystemUtils.PartyBeaconClient
-// 0x0130 (0x05D0 - 0x04A0)
+// 0x0130 (0x05E0 - 0x04B0)
 class APartyBeaconClient : public AOnlineBeaconClient
 {
 public:
-	unsigned char                                      UnknownData00[0xC0];                                      // 0x04A0(0x00C0) MISSED OFFSET
-	struct FString                                     DestSessionId;                                            // 0x0560(0x0010) (ZeroConstructor)
-	struct FPartyReservation                           PendingReservation;                                       // 0x0570(0x0030)
-	EClientRequestType                                 RequestType;                                              // 0x05A0(0x0001) (ZeroConstructor, IsPlainOldData)
-	bool                                               bPendingReservationSent;                                  // 0x05A1(0x0001) (ZeroConstructor, IsPlainOldData)
-	bool                                               bCancelReservation;                                       // 0x05A2(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x2D];                                      // 0x05A3(0x002D) MISSED OFFSET
+	unsigned char                                      UnknownData00[0xC0];                                      // 0x04B0(0x00C0) MISSED OFFSET
+	struct FString                                     DestSessionId;                                            // 0x0570(0x0010) (ZeroConstructor)
+	struct FPartyReservation                           PendingReservation;                                       // 0x0580(0x0030)
+	EClientRequestType                                 RequestType;                                              // 0x05B0(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               bPendingReservationSent;                                  // 0x05B1(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               bCancelReservation;                                       // 0x05B2(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x2D];                                      // 0x05B3(0x002D) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -567,18 +572,18 @@ public:
 	}
 
 
-	void STATIC_ServerUpdateReservationRequest(const struct FString& SessionId, const struct FPartyReservation& ReservationUpdate);
-	void STATIC_ServerReservationRequest(const struct FString& SessionId, const struct FPartyReservation& Reservation);
-	void STATIC_ServerCancelReservationRequest(const struct FUniqueNetIdRepl& PartyLeader);
-	void STATIC_ClientSendReservationUpdates(int NumRemainingReservations);
-	void STATIC_ClientSendReservationFull();
-	void STATIC_ClientReservationResponse(TEnumAsByte<EPartyReservationResult> ReservationResponse);
-	void STATIC_ClientCancelReservationResponse(TEnumAsByte<EPartyReservationResult> ReservationResponse);
+	void ServerUpdateReservationRequest(const struct FString& SessionId, const struct FPartyReservation& ReservationUpdate);
+	void ServerReservationRequest(const struct FString& SessionId, const struct FPartyReservation& Reservation);
+	void ServerCancelReservationRequest(const struct FUniqueNetIdRepl& PartyLeader);
+	void ClientSendReservationUpdates(int NumRemainingReservations);
+	void ClientSendReservationFull();
+	void ClientReservationResponse(TEnumAsByte<EPartyReservationResult> ReservationResponse);
+	void ClientCancelReservationResponse(TEnumAsByte<EPartyReservationResult> ReservationResponse);
 };
 
 
 // Class OnlineSubsystemUtils.TestBeaconClient
-// 0x0000 (0x04A0 - 0x04A0)
+// 0x0000 (0x04B0 - 0x04B0)
 class ATestBeaconClient : public AOnlineBeaconClient
 {
 public:
@@ -593,19 +598,20 @@ public:
 	}
 
 
-	void STATIC_ClientOnConnected();
+	void ServerPong();
+	void ClientPing();
 };
 
 
 // Class OnlineSubsystemUtils.OnlineBeaconHost
-// 0x00B8 (0x04C8 - 0x0410)
+// 0x00B8 (0x04E0 - 0x0428)
 class AOnlineBeaconHost : public AOnlineBeacon
 {
 public:
-	int                                                ListenPort;                                               // 0x0410(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0414(0x0004) MISSED OFFSET
-	TArray<class AOnlineBeaconClient*>                 ClientActors;                                             // 0x0418(0x0010) (ZeroConstructor)
-	unsigned char                                      UnknownData01[0xA0];                                      // 0x0428(0x00A0) MISSED OFFSET
+	int                                                ListenPort;                                               // 0x0428(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x042C(0x0004) MISSED OFFSET
+	TArray<class AOnlineBeaconClient*>                 ClientActors;                                             // 0x0430(0x0010) (ZeroConstructor)
+	unsigned char                                      UnknownData01[0xA0];                                      // 0x0440(0x00A0) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -620,13 +626,13 @@ public:
 
 
 // Class OnlineSubsystemUtils.OnlineBeaconHostObject
-// 0x0028 (0x0410 - 0x03E8)
+// 0x0028 (0x0428 - 0x0400)
 class AOnlineBeaconHostObject : public AActor
 {
 public:
-	struct FString                                     BeaconTypeName;                                           // 0x03E8(0x0010) (ZeroConstructor, Transient)
-	class UClass*                                      ClientBeaconActorClass;                                   // 0x03F8(0x0008) (ZeroConstructor, IsPlainOldData)
-	TArray<class AOnlineBeaconClient*>                 ClientActors;                                             // 0x0400(0x0010) (ZeroConstructor)
+	struct FString                                     BeaconTypeName;                                           // 0x0400(0x0010) (ZeroConstructor, Transient)
+	class UClass*                                      ClientBeaconActorClass;                                   // 0x0410(0x0008) (ZeroConstructor, IsPlainOldData)
+	TArray<class AOnlineBeaconClient*>                 ClientActors;                                             // 0x0418(0x0010) (ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
@@ -641,17 +647,17 @@ public:
 
 
 // Class OnlineSubsystemUtils.PartyBeaconHost
-// 0x0160 (0x0570 - 0x0410)
+// 0x0158 (0x0580 - 0x0428)
 class APartyBeaconHost : public AOnlineBeaconHostObject
 {
 public:
-	class UPartyBeaconState*                           State;                                                    // 0x0410(0x0008) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x148];                                     // 0x0418(0x0148) MISSED OFFSET
-	bool                                               bLogoutOnSessionTimeout;                                  // 0x0560(0x0001) (ZeroConstructor, Config, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x0561(0x0003) MISSED OFFSET
-	float                                              SessionTimeoutSecs;                                       // 0x0564(0x0004) (ZeroConstructor, Transient, Config, IsPlainOldData)
-	float                                              TravelSessionTimeoutSecs;                                 // 0x0568(0x0004) (ZeroConstructor, Transient, Config, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x4];                                       // 0x056C(0x0004) MISSED OFFSET
+	class UPartyBeaconState*                           State;                                                    // 0x0428(0x0008) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x140];                                     // 0x0430(0x0140) MISSED OFFSET
+	bool                                               bLogoutOnSessionTimeout;                                  // 0x0570(0x0001) (ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x0571(0x0003) MISSED OFFSET
+	float                                              SessionTimeoutSecs;                                       // 0x0574(0x0004) (ZeroConstructor, Transient, Config, IsPlainOldData)
+	float                                              TravelSessionTimeoutSecs;                                 // 0x0578(0x0004) (ZeroConstructor, Transient, Config, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x057C(0x0004) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -666,7 +672,7 @@ public:
 
 
 // Class OnlineSubsystemUtils.TestBeaconHost
-// 0x0000 (0x0410 - 0x0410)
+// 0x0000 (0x0428 - 0x0428)
 class ATestBeaconHost : public AOnlineBeaconHostObject
 {
 public:
@@ -684,12 +690,12 @@ public:
 
 
 // Class OnlineSubsystemUtils.OnlineEngineInterfaceImpl
-// 0x0150 (0x0180 - 0x0030)
+// 0x0150 (0x0190 - 0x0040)
 class UOnlineEngineInterfaceImpl : public UOnlineEngineInterface
 {
 public:
-	struct FName                                       VoiceSubsystemNameOverride;                               // 0x0030(0x0008) (ZeroConstructor, Config, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x148];                                     // 0x0038(0x0148) MISSED OFFSET
+	struct FName                                       VoiceSubsystemNameOverride;                               // 0x0040(0x0008) (ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x148];                                     // 0x0048(0x0148) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -704,13 +710,13 @@ public:
 
 
 // Class OnlineSubsystemUtils.OnlinePIESettings
-// 0x0018 (0x0058 - 0x0040)
+// 0x0018 (0x0068 - 0x0050)
 class UOnlinePIESettings : public UDeveloperSettings
 {
 public:
-	bool                                               bOnlinePIEEnabled;                                        // 0x0040(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0041(0x0007) MISSED OFFSET
-	TArray<struct FPIELoginSettingsInternal>           Logins;                                                   // 0x0048(0x0010) (Edit, ZeroConstructor, Config)
+	bool                                               bOnlinePIEEnabled;                                        // 0x0050(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0051(0x0007) MISSED OFFSET
+	TArray<struct FPIELoginSettingsInternal>           Logins;                                                   // 0x0058(0x0010) (Edit, ZeroConstructor, Config)
 
 	static UClass* StaticClass()
 	{
@@ -725,14 +731,14 @@ public:
 
 
 // Class OnlineSubsystemUtils.OnlineSessionClient
-// 0x0290 (0x02C0 - 0x0030)
+// 0x0290 (0x02D0 - 0x0040)
 class UOnlineSessionClient : public UOnlineSession
 {
 public:
-	unsigned char                                      UnknownData00[0x280];                                     // 0x0030(0x0280) MISSED OFFSET
-	bool                                               bIsFromInvite;                                            // 0x02B0(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
-	bool                                               bHandlingDisconnect;                                      // 0x02B1(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
-	unsigned char                                      UnknownData01[0xE];                                       // 0x02B2(0x000E) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x280];                                     // 0x0040(0x0280) MISSED OFFSET
+	bool                                               bIsFromInvite;                                            // 0x02C0(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
+	bool                                               bHandlingDisconnect;                                      // 0x02C1(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
+	unsigned char                                      UnknownData01[0xE];                                       // 0x02C2(0x000E) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -747,13 +753,13 @@ public:
 
 
 // Class OnlineSubsystemUtils.QuitMatchCallbackProxy
-// 0x0048 (0x0078 - 0x0030)
+// 0x0048 (0x0088 - 0x0040)
 class UQuitMatchCallbackProxy : public UOnlineBlueprintCallProxyBase
 {
 public:
-	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0030(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData00[0x28];                                      // 0x0050(0x0028) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0050(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	unsigned char                                      UnknownData00[0x28];                                      // 0x0060(0x0028) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -770,13 +776,13 @@ public:
 
 
 // Class OnlineSubsystemUtils.ShowLoginUICallbackProxy
-// 0x0030 (0x0060 - 0x0030)
+// 0x0030 (0x0070 - 0x0040)
 class UShowLoginUICallbackProxy : public UBlueprintAsyncActionBase
 {
 public:
-	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0030(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData00[0x10];                                      // 0x0050(0x0010) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0040(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0050(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	unsigned char                                      UnknownData00[0x10];                                      // 0x0060(0x0010) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -793,7 +799,7 @@ public:
 
 
 // Class OnlineSubsystemUtils.TurnBasedBlueprintLibrary
-// 0x0000 (0x0030 - 0x0030)
+// 0x0000 (0x0040 - 0x0040)
 class UTurnBasedBlueprintLibrary : public UBlueprintFunctionLibrary
 {
 public:
@@ -807,6 +813,11 @@ public:
 		return ptr;
 	}
 
+
+	void STATIC_RegisterTurnBasedMatchInterfaceObject(class UObject* WorldContextObject, class APlayerController* PlayerController, class UObject* Object);
+	void STATIC_GetPlayerDisplayName(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FString& MatchId, int PlayerIndex, struct FString* PlayerDisplayName);
+	void STATIC_GetMyPlayerIndex(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FString& MatchId, int* PlayerIndex);
+	void STATIC_GetIsMyTurn(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FString& MatchId, bool* bIsMyTurn);
 };
 
 

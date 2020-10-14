@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass CS_WeapGun_Sniper_762_Kar98.CS_WeapGun_Sniper_762_Kar98_C
-// 0x0000 (0x0170 - 0x0170)
+// 0x0000 (0x0180 - 0x0180)
 class UCS_WeapGun_Sniper_762_Kar98_C : public UCameraShake
 {
 public:
@@ -29,11 +29,6 @@ public:
 		return ptr;
 	}
 
-
-	void STATIC_ReceiveStopShake(bool bImmediately);
-	void STATIC_ReceivePlayShake(float Scale);
-	bool STATIC_ReceiveIsFinished();
-	void STATIC_BlueprintUpdateCameraShake(float DeltaTime, float ALPHA, const struct FMinimalViewInfo& POV, struct FMinimalViewInfo* ModifiedPOV);
 };
 
 

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass BP_PcOptionSupplementaryPreviewImageWidget.BP_PcOptionSupplementaryPreviewImageWidget_C
-// 0x0000 (0x0468 - 0x0468)
+// 0x0000 (0x0438 - 0x0438)
 class UBP_PcOptionSupplementaryPreviewImageWidget_C : public UTslGameOptionSupplementaryPreviewImageWidget
 {
 public:

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_ItemRequestProjectile.BP_ItemRequestProjectile_C
-// 0x0000 (0x05D0 - 0x05D0)
+// 0x0000 (0x0600 - 0x0600)
 class ABP_ItemRequestProjectile_C : public ATslItemRequestProjectile
 {
 public:
@@ -29,8 +29,6 @@ public:
 		return ptr;
 	}
 
-
-	void STATIC_OnRep_Target();
 };
 
 

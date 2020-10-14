@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -79,7 +79,7 @@ struct AMapStatAnalyzer_C_GetCurrentLevelMinimapURL_Params
 struct AMapStatAnalyzer_C_FloatArrayToNewlinedString_Params
 {
 	TArray<float>                                      Array;                                                    // (Parm, OutParm, ZeroConstructor, ReferenceParm)
-	struct FString*                                    NewLinedString;                                           // (Parm, ZeroConstructor)
+	struct FString*                                    NewlinedString;                                           // (Parm, ZeroConstructor)
 	struct FString                                     NewVar;                                                   // (Parm, OutParm, ZeroConstructor)
 };
 
@@ -87,7 +87,7 @@ struct AMapStatAnalyzer_C_FloatArrayToNewlinedString_Params
 struct AMapStatAnalyzer_C_StingArrayToNewlinedString_Params
 {
 	TArray<struct FString>                             Array;                                                    // (Parm, OutParm, ZeroConstructor, ReferenceParm)
-	struct FString*                                    NewLinedString;                                           // (Parm, ZeroConstructor)
+	struct FString*                                    NewlinedString;                                           // (Parm, ZeroConstructor)
 	struct FString                                     NewVar;                                                   // (Parm, OutParm, ZeroConstructor)
 };
 

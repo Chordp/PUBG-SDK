@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass BP_PcOptionTabLabelWidget.BP_PcOptionTabLabelWidget_C
-// 0x0000 (0x0480 - 0x0480)
+// 0x0000 (0x04A0 - 0x04A0)
 class UBP_PcOptionTabLabelWidget_C : public UTslGameOptionTabLabelWidget
 {
 public:
@@ -29,8 +29,6 @@ public:
 		return ptr;
 	}
 
-
-	void STATIC_OnLabelButtonClicked();
 };
 
 

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass BP_PcOptionTabContentsWidget.BP_PcOptionTabContentsWidget_C
-// 0x0000 (0x0420 - 0x0420)
+// 0x0000 (0x0440 - 0x0440)
 class UBP_PcOptionTabContentsWidget_C : public UTslGameOptionTabContentsWidget
 {
 public:

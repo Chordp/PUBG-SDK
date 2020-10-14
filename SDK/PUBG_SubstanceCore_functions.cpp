@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,13 +13,13 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function SubstanceCore.SubstanceGraphInstance.SetInputString
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FString                 Identifier                     (Parm, ZeroConstructor)
 // struct FString                 Value                          (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF63B7A5DD0              		 offset:44b5dd0                       
+// FunctionAddress:0x00007FF62B3F6D40              		 offset:2926d40                       
 
-void USubstanceGraphInstance::STATIC_SetInputString(const struct FString& Identifier, const struct FString& Value)
+void USubstanceGraphInstance::SetInputString(const struct FString& Identifier, const struct FString& Value)
 {
 	static UFunction* fn;
 
@@ -40,13 +40,13 @@ void USubstanceGraphInstance::STATIC_SetInputString(const struct FString& Identi
 
 
 // Function SubstanceCore.SubstanceGraphInstance.SetInputInt
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
 // struct FString                 Identifier                     (Parm, ZeroConstructor)
 // TArray<int>                    InputValues                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// FunctionAddress:0x00007FF63B7A5C70              		 offset:44b5c70                       
+// FunctionAddress:0x00007FF62B3F6BE0              		 offset:2926be0                       
 
-void USubstanceGraphInstance::STATIC_SetInputInt(const struct FString& Identifier, TArray<int> InputValues)
+void USubstanceGraphInstance::SetInputInt(const struct FString& Identifier, TArray<int> InputValues)
 {
 	static UFunction* fn;
 
@@ -67,14 +67,14 @@ void USubstanceGraphInstance::STATIC_SetInputInt(const struct FString& Identifie
 
 
 // Function SubstanceCore.SubstanceGraphInstance.SetInputImg
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Protected, Delegate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FString                 InputName                      (Parm, ZeroConstructor)
 // class UObject*                 Value                          (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B7A5B80              		 offset:44b5b80                       
+// FunctionAddress:0x00007FF62B3F6AF0              		 offset:2926af0                       
 
-bool USubstanceGraphInstance::STATIC_SetInputImg(const struct FString& InputName, class UObject* Value)
+bool USubstanceGraphInstance::SetInputImg(const struct FString& InputName, class UObject* Value)
 {
 	static UFunction* fn;
 
@@ -97,13 +97,13 @@ bool USubstanceGraphInstance::STATIC_SetInputImg(const struct FString& InputName
 
 
 // Function SubstanceCore.SubstanceGraphInstance.SetInputFloat
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, HasOutParms, BlueprintCallable)
 // Parameters:
 // struct FString                 Identifier                     (Parm, ZeroConstructor)
 // TArray<float>                  InputValues                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// FunctionAddress:0x00007FF63B7A5A20              		 offset:44b5a20                       
+// FunctionAddress:0x00007FF62B3F6990              		 offset:2926990                       
 
-void USubstanceGraphInstance::STATIC_SetInputFloat(const struct FString& Identifier, TArray<float> InputValues)
+void USubstanceGraphInstance::SetInputFloat(const struct FString& Identifier, TArray<float> InputValues)
 {
 	static UFunction* fn;
 
@@ -124,13 +124,13 @@ void USubstanceGraphInstance::STATIC_SetInputFloat(const struct FString& Identif
 
 
 // Function SubstanceCore.SubstanceGraphInstance.SetInputColor
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
 // struct FString                 Identifier                     (Parm, ZeroConstructor)
 // struct FLinearColor            Color                          (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B7A58D0              		 offset:44b58d0                       
+// FunctionAddress:0x00007FF62B3F6840              		 offset:2926840                       
 
-void USubstanceGraphInstance::STATIC_SetInputColor(const struct FString& Identifier, const struct FLinearColor& Color)
+void USubstanceGraphInstance::SetInputColor(const struct FString& Identifier, const struct FLinearColor& Color)
 {
 	static UFunction* fn;
 
@@ -151,13 +151,13 @@ void USubstanceGraphInstance::STATIC_SetInputColor(const struct FString& Identif
 
 
 // Function SubstanceCore.SubstanceGraphInstance.SetInputBool
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FString                 Identifier                     (Parm, ZeroConstructor)
 // bool                           Bool                           (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF63B7A5790              		 offset:44b5790                       
+// FunctionAddress:0x00007FF62B3F6700              		 offset:2926700                       
 
-void USubstanceGraphInstance::STATIC_SetInputBool(const struct FString& Identifier, bool Bool)
+void USubstanceGraphInstance::SetInputBool(const struct FString& Identifier, bool Bool)
 {
 	static UFunction* fn;
 
@@ -178,13 +178,13 @@ void USubstanceGraphInstance::STATIC_SetInputBool(const struct FString& Identifi
 
 
 // Function SubstanceCore.SubstanceGraphInstance.GetIntInputDesc
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FString                 Identifier                     (Parm, ZeroConstructor)
 // struct FSubstanceIntInputDesc  ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF63B7A5160              		 offset:44b5160                       
+// FunctionAddress:0x00007FF62B3F60D0              		 offset:29260d0                       
 
-struct FSubstanceIntInputDesc USubstanceGraphInstance::STATIC_GetIntInputDesc(const struct FString& Identifier)
+struct FSubstanceIntInputDesc USubstanceGraphInstance::GetIntInputDesc(const struct FString& Identifier)
 {
 	static UFunction* fn;
 
@@ -206,12 +206,12 @@ struct FSubstanceIntInputDesc USubstanceGraphInstance::STATIC_GetIntInputDesc(co
 
 
 // Function SubstanceCore.SubstanceGraphInstance.GetInstanceDesc
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FSubstanceInstanceDesc  ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF63B7A5020              		 offset:44b5020                       
+// FunctionAddress:0x00007FF62B3F5F90              		 offset:2925f90                       
 
-struct FSubstanceInstanceDesc USubstanceGraphInstance::STATIC_GetInstanceDesc()
+struct FSubstanceInstanceDesc USubstanceGraphInstance::GetInstanceDesc()
 {
 	static UFunction* fn;
 
@@ -232,13 +232,13 @@ struct FSubstanceInstanceDesc USubstanceGraphInstance::STATIC_GetInstanceDesc()
 
 
 // Function SubstanceCore.SubstanceGraphInstance.GetInputType
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FString                 InputName                      (Parm, ZeroConstructor)
 // TEnumAsByte<ESubstanceInputType> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B7A4F20              		 offset:44b4f20                       
+// FunctionAddress:0x00007FF62B3F5E90              		 offset:2925e90                       
 
-TEnumAsByte<ESubstanceInputType> USubstanceGraphInstance::STATIC_GetInputType(const struct FString& InputName)
+TEnumAsByte<ESubstanceInputType> USubstanceGraphInstance::GetInputType(const struct FString& InputName)
 {
 	static UFunction* fn;
 
@@ -260,13 +260,13 @@ TEnumAsByte<ESubstanceInputType> USubstanceGraphInstance::STATIC_GetInputType(co
 
 
 // Function SubstanceCore.SubstanceGraphInstance.GetInputString
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FString                 Identifier                     (Parm, ZeroConstructor)
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF63B7A4DE0              		 offset:44b4de0                       
+// FunctionAddress:0x00007FF62B3F5D50              		 offset:2925d50                       
 
-struct FString USubstanceGraphInstance::STATIC_GetInputString(const struct FString& Identifier)
+struct FString USubstanceGraphInstance::GetInputString(const struct FString& Identifier)
 {
 	static UFunction* fn;
 
@@ -288,12 +288,12 @@ struct FString USubstanceGraphInstance::STATIC_GetInputString(const struct FStri
 
 
 // Function SubstanceCore.SubstanceGraphInstance.GetInputNames
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // TArray<struct FString>         ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF63B7A4CF0              		 offset:44b4cf0                       
+// FunctionAddress:0x00007FF62B3F5C60              		 offset:2925c60                       
 
-TArray<struct FString> USubstanceGraphInstance::STATIC_GetInputNames()
+TArray<struct FString> USubstanceGraphInstance::GetInputNames()
 {
 	static UFunction* fn;
 
@@ -314,13 +314,13 @@ TArray<struct FString> USubstanceGraphInstance::STATIC_GetInputNames()
 
 
 // Function SubstanceCore.SubstanceGraphInstance.GetInputInt
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FString                 Identifier                     (Parm, ZeroConstructor)
 // TArray<int>                    ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF63B7A4BB0              		 offset:44b4bb0                       
+// FunctionAddress:0x00007FF62B3F5B20              		 offset:2925b20                       
 
-TArray<int> USubstanceGraphInstance::STATIC_GetInputInt(const struct FString& Identifier)
+TArray<int> USubstanceGraphInstance::GetInputInt(const struct FString& Identifier)
 {
 	static UFunction* fn;
 
@@ -342,13 +342,13 @@ TArray<int> USubstanceGraphInstance::STATIC_GetInputInt(const struct FString& Id
 
 
 // Function SubstanceCore.SubstanceGraphInstance.GetInputFloat
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FString                 Identifier                     (Parm, ZeroConstructor)
 // TArray<float>                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF63B7A4A70              		 offset:44b4a70                       
+// FunctionAddress:0x00007FF62B3F59E0              		 offset:29259e0                       
 
-TArray<float> USubstanceGraphInstance::STATIC_GetInputFloat(const struct FString& Identifier)
+TArray<float> USubstanceGraphInstance::GetInputFloat(const struct FString& Identifier)
 {
 	static UFunction* fn;
 
@@ -370,13 +370,13 @@ TArray<float> USubstanceGraphInstance::STATIC_GetInputFloat(const struct FString
 
 
 // Function SubstanceCore.SubstanceGraphInstance.GetInputColor
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
+// (Final, Native, Public, HasDefaults, BlueprintCallable)
 // Parameters:
 // struct FString                 Identifier                     (Parm, ZeroConstructor)
 // struct FLinearColor            ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B7A4960              		 offset:44b4960                       
+// FunctionAddress:0x00007FF62B3F58D0              		 offset:29258d0                       
 
-struct FLinearColor USubstanceGraphInstance::STATIC_GetInputColor(const struct FString& Identifier)
+struct FLinearColor USubstanceGraphInstance::GetInputColor(const struct FString& Identifier)
 {
 	static UFunction* fn;
 
@@ -398,13 +398,13 @@ struct FLinearColor USubstanceGraphInstance::STATIC_GetInputColor(const struct F
 
 
 // Function SubstanceCore.SubstanceGraphInstance.GetInputBool
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FString                 Identifier                     (Parm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B7A4860              		 offset:44b4860                       
+// FunctionAddress:0x00007FF62B3F57D0              		 offset:29257d0                       
 
-bool USubstanceGraphInstance::STATIC_GetInputBool(const struct FString& Identifier)
+bool USubstanceGraphInstance::GetInputBool(const struct FString& Identifier)
 {
 	static UFunction* fn;
 
@@ -426,13 +426,13 @@ bool USubstanceGraphInstance::STATIC_GetInputBool(const struct FString& Identifi
 
 
 // Function SubstanceCore.SubstanceGraphInstance.GetFloatInputDesc
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast, Delegate)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FString                 Identifier                     (Parm, ZeroConstructor)
 // struct FSubstanceFloatInputDesc ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF63B7A4580              		 offset:44b4580                       
+// FunctionAddress:0x00007FF62B3F54F0              		 offset:29254f0                       
 
-struct FSubstanceFloatInputDesc USubstanceGraphInstance::STATIC_GetFloatInputDesc(const struct FString& Identifier)
+struct FSubstanceFloatInputDesc USubstanceGraphInstance::GetFloatInputDesc(const struct FString& Identifier)
 {
 	static UFunction* fn;
 
@@ -454,12 +454,12 @@ struct FSubstanceFloatInputDesc USubstanceGraphInstance::STATIC_GetFloatInputDes
 
 
 // Function SubstanceCore.SubstanceTexture2D.GetChannel
-// (Final, RequiredAPI, BlueprintAuthorityOnly, BlueprintCosmetic, Net, NetReliable, NetRequest, Exec, Native, Event, NetResponse, Static, NetMulticast)
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // TEnumAsByte<ESubChannelType>   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF63B7A4480              		 offset:44b4480                       
+// FunctionAddress:0x00007FF62B3F53F0              		 offset:29253f0                       
 
-TEnumAsByte<ESubChannelType> USubstanceTexture2D::STATIC_GetChannel()
+TEnumAsByte<ESubChannelType> USubstanceTexture2D::GetChannel()
 {
 	static UFunction* fn;
 
@@ -476,6 +476,484 @@ TEnumAsByte<ESubChannelType> USubstanceTexture2D::STATIC_GetChannel()
 	fn->FunctionFlags = flags;
 
 	return params.ReturnValue;
+}
+
+
+// Function SubstanceCore.SubstanceUtility.SyncRendering
+// (Final, RequiredAPI, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class USubstanceGraphInstance* InstancesToRender              (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF62B3F6E80              		 offset:2926e80                       
+
+void USubstanceUtility::STATIC_SyncRendering(class USubstanceGraphInstance* InstancesToRender)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function SubstanceCore.SubstanceUtility.SyncRendering"));
+
+	USubstanceUtility_SyncRendering_Params params;
+	params.InstancesToRender = InstancesToRender;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function SubstanceCore.SubstanceUtility.SetGraphInstanceOutputSizeInt
+// (Final, RequiredAPI, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class USubstanceGraphInstance* GraphInstance                  (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Width                          (Parm, ZeroConstructor, IsPlainOldData)
+// int                            Height                         (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF62B3F6610              		 offset:2926610                       
+
+void USubstanceUtility::STATIC_SetGraphInstanceOutputSizeInt(class USubstanceGraphInstance* GraphInstance, int Width, int Height)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function SubstanceCore.SubstanceUtility.SetGraphInstanceOutputSizeInt"));
+
+	USubstanceUtility_SetGraphInstanceOutputSizeInt_Params params;
+	params.GraphInstance = GraphInstance;
+	params.Width = Width;
+	params.Height = Height;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function SubstanceCore.SubstanceUtility.SetGraphInstanceOutputSize
+// (Final, RequiredAPI, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class USubstanceGraphInstance* GraphInstance                  (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ESubstanceTextureSize> Width                          (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ESubstanceTextureSize> Height                         (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF62B3F6520              		 offset:2926520                       
+
+void USubstanceUtility::STATIC_SetGraphInstanceOutputSize(class USubstanceGraphInstance* GraphInstance, TEnumAsByte<ESubstanceTextureSize> Width, TEnumAsByte<ESubstanceTextureSize> Height)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function SubstanceCore.SubstanceUtility.SetGraphInstanceOutputSize"));
+
+	USubstanceUtility_SetGraphInstanceOutputSize_Params params;
+	params.GraphInstance = GraphInstance;
+	params.Width = Width;
+	params.Height = Height;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function SubstanceCore.SubstanceUtility.ResetInputParameters
+// (Final, RequiredAPI, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class USubstanceGraphInstance* GraphInstance                  (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF62B3F64B0              		 offset:29264b0                       
+
+void USubstanceUtility::STATIC_ResetInputParameters(class USubstanceGraphInstance* GraphInstance)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function SubstanceCore.SubstanceUtility.ResetInputParameters"));
+
+	USubstanceUtility_ResetInputParameters_Params params;
+	params.GraphInstance = GraphInstance;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function SubstanceCore.SubstanceUtility.GetSubstanceTextures
+// (Final, RequiredAPI, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class USubstanceGraphInstance* GraphInstance                  (Parm, ZeroConstructor, IsPlainOldData)
+// TArray<class USubstanceTexture2D*> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+// FunctionAddress:0x00007FF62B3F6310              		 offset:2926310                       
+
+TArray<class USubstanceTexture2D*> USubstanceUtility::STATIC_GetSubstanceTextures(class USubstanceGraphInstance* GraphInstance)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function SubstanceCore.SubstanceUtility.GetSubstanceTextures"));
+
+	USubstanceUtility_GetSubstanceTextures_Params params;
+	params.GraphInstance = GraphInstance;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function SubstanceCore.SubstanceUtility.GetSubstances
+// (Final, RequiredAPI, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UMaterialInterface*      Material                       (Parm, ZeroConstructor, IsPlainOldData)
+// TArray<class USubstanceGraphInstance*> ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+// FunctionAddress:0x00007FF62B3F63E0              		 offset:29263e0                       
+
+TArray<class USubstanceGraphInstance*> USubstanceUtility::STATIC_GetSubstances(class UMaterialInterface* Material)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function SubstanceCore.SubstanceUtility.GetSubstances"));
+
+	USubstanceUtility_GetSubstances_Params params;
+	params.Material = Material;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function SubstanceCore.SubstanceUtility.GetSubstanceLoadingProgress
+// (Final, RequiredAPI, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF62B3F62E0              		 offset:29262e0                       
+
+float USubstanceUtility::STATIC_GetSubstanceLoadingProgress()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function SubstanceCore.SubstanceUtility.GetSubstanceLoadingProgress"));
+
+	USubstanceUtility_GetSubstanceLoadingProgress_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function SubstanceCore.SubstanceUtility.GetGraphName
+// (Final, RequiredAPI, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class USubstanceGraphInstance* GraphInstance                  (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+// FunctionAddress:0x00007FF62B3F5700              		 offset:2925700                       
+
+struct FString USubstanceUtility::STATIC_GetGraphName(class USubstanceGraphInstance* GraphInstance)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function SubstanceCore.SubstanceUtility.GetGraphName"));
+
+	USubstanceUtility_GetGraphName_Params params;
+	params.GraphInstance = GraphInstance;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function SubstanceCore.SubstanceUtility.GetFactoryName
+// (Final, RequiredAPI, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class USubstanceGraphInstance* GraphInstance                  (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+// FunctionAddress:0x00007FF62B3F5420              		 offset:2925420                       
+
+struct FString USubstanceUtility::STATIC_GetFactoryName(class USubstanceGraphInstance* GraphInstance)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function SubstanceCore.SubstanceUtility.GetFactoryName"));
+
+	USubstanceUtility_GetFactoryName_Params params;
+	params.GraphInstance = GraphInstance;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function SubstanceCore.SubstanceUtility.EnableInstanceOutputs
+// (Final, RequiredAPI, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// class USubstanceGraphInstance* GraphInstance                  (Parm, ZeroConstructor, IsPlainOldData)
+// TArray<int>                    OutputIndices                  (Parm, ZeroConstructor)
+// FunctionAddress:0x00007FF62B3F52A0              		 offset:29252a0                       
+
+void USubstanceUtility::STATIC_EnableInstanceOutputs(class UObject* WorldContextObject, class USubstanceGraphInstance* GraphInstance, TArray<int> OutputIndices)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function SubstanceCore.SubstanceUtility.EnableInstanceOutputs"));
+
+	USubstanceUtility_EnableInstanceOutputs_Params params;
+	params.WorldContextObject = WorldContextObject;
+	params.GraphInstance = GraphInstance;
+	params.OutputIndices = OutputIndices;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function SubstanceCore.SubstanceUtility.DuplicateGraphInstance
+// (Final, RequiredAPI, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// class USubstanceGraphInstance* GraphInstance                  (Parm, ZeroConstructor, IsPlainOldData)
+// class USubstanceGraphInstance* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF62B3F51E0              		 offset:29251e0                       
+
+class USubstanceGraphInstance* USubstanceUtility::STATIC_DuplicateGraphInstance(class UObject* WorldContextObject, class USubstanceGraphInstance* GraphInstance)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function SubstanceCore.SubstanceUtility.DuplicateGraphInstance"));
+
+	USubstanceUtility_DuplicateGraphInstance_Params params;
+	params.WorldContextObject = WorldContextObject;
+	params.GraphInstance = GraphInstance;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function SubstanceCore.SubstanceUtility.DisableInstanceOutputs
+// (Final, RequiredAPI, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// class USubstanceGraphInstance* GraphInstance                  (Parm, ZeroConstructor, IsPlainOldData)
+// TArray<int>                    OutputIndices                  (Parm, ZeroConstructor)
+// FunctionAddress:0x00007FF62B3F5090              		 offset:2925090                       
+
+void USubstanceUtility::STATIC_DisableInstanceOutputs(class UObject* WorldContextObject, class USubstanceGraphInstance* GraphInstance, TArray<int> OutputIndices)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function SubstanceCore.SubstanceUtility.DisableInstanceOutputs"));
+
+	USubstanceUtility_DisableInstanceOutputs_Params params;
+	params.WorldContextObject = WorldContextObject;
+	params.GraphInstance = GraphInstance;
+	params.OutputIndices = OutputIndices;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function SubstanceCore.SubstanceUtility.CreateGraphInstance
+// (Final, RequiredAPI, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
+// class USubstanceInstanceFactory* Factory                        (Parm, ZeroConstructor, IsPlainOldData)
+// int                            GraphDescIndex                 (Parm, ZeroConstructor, IsPlainOldData)
+// struct FString                 InstanceName                   (Parm, ZeroConstructor)
+// class USubstanceGraphInstance* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF62B3F4F00              		 offset:2924f00                       
+
+class USubstanceGraphInstance* USubstanceUtility::STATIC_CreateGraphInstance(class UObject* WorldContextObject, class USubstanceInstanceFactory* Factory, int GraphDescIndex, const struct FString& InstanceName)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function SubstanceCore.SubstanceUtility.CreateGraphInstance"));
+
+	USubstanceUtility_CreateGraphInstance_Params params;
+	params.WorldContextObject = WorldContextObject;
+	params.Factory = Factory;
+	params.GraphDescIndex = GraphDescIndex;
+	params.InstanceName = InstanceName;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function SubstanceCore.SubstanceUtility.CreateAggregateSubstanceFactory
+// (Final, RequiredAPI, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Parameters:
+// class USubstanceInstanceFactory* OutputFactory                  (Parm, ZeroConstructor, IsPlainOldData)
+// int                            OutputFactoryGraphIndex        (Parm, ZeroConstructor, IsPlainOldData)
+// class USubstanceInstanceFactory* InputFactory                   (Parm, ZeroConstructor, IsPlainOldData)
+// int                            InputFactoryGraphIndex         (Parm, ZeroConstructor, IsPlainOldData)
+// TArray<struct FSubstanceConnection> Connections                    (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// class USubstanceInstanceFactory* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF62B3F4D30              		 offset:2924d30                       
+
+class USubstanceInstanceFactory* USubstanceUtility::STATIC_CreateAggregateSubstanceFactory(class USubstanceInstanceFactory* OutputFactory, int OutputFactoryGraphIndex, class USubstanceInstanceFactory* InputFactory, int InputFactoryGraphIndex, TArray<struct FSubstanceConnection> Connections)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function SubstanceCore.SubstanceUtility.CreateAggregateSubstanceFactory"));
+
+	USubstanceUtility_CreateAggregateSubstanceFactory_Params params;
+	params.OutputFactory = OutputFactory;
+	params.OutputFactoryGraphIndex = OutputFactoryGraphIndex;
+	params.InputFactory = InputFactory;
+	params.InputFactoryGraphIndex = InputFactoryGraphIndex;
+	params.Connections = Connections;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function SubstanceCore.SubstanceUtility.CopyInputParameters
+// (Final, RequiredAPI, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class USubstanceGraphInstance* SourceGraphInstance            (Parm, ZeroConstructor, IsPlainOldData)
+// class USubstanceGraphInstance* DestGraphInstance              (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF62B3F4C80              		 offset:2924c80                       
+
+void USubstanceUtility::STATIC_CopyInputParameters(class USubstanceGraphInstance* SourceGraphInstance, class USubstanceGraphInstance* DestGraphInstance)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function SubstanceCore.SubstanceUtility.CopyInputParameters"));
+
+	USubstanceUtility_CopyInputParameters_Params params;
+	params.SourceGraphInstance = SourceGraphInstance;
+	params.DestGraphInstance = DestGraphInstance;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function SubstanceCore.SubstanceUtility.ClearCache
+// (Final, RequiredAPI, Native, Static, Public, BlueprintCallable)
+// FunctionAddress:0x00007FF62B3F4C60              		 offset:2924c60                       
+
+void USubstanceUtility::STATIC_ClearCache()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function SubstanceCore.SubstanceUtility.ClearCache"));
+
+	USubstanceUtility_ClearCache_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function SubstanceCore.SubstanceUtility.AsyncRendering
+// (Final, RequiredAPI, Native, Static, Public, BlueprintCallable)
+// Parameters:
+// class USubstanceGraphInstance* InstancesToRender              (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF62B3F4BF0              		 offset:2924bf0                       
+
+void USubstanceUtility::STATIC_AsyncRendering(class USubstanceGraphInstance* InstancesToRender)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function SubstanceCore.SubstanceUtility.AsyncRendering"));
+
+	USubstanceUtility_AsyncRendering_Params params;
+	params.InstancesToRender = InstancesToRender;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
 }
 
 

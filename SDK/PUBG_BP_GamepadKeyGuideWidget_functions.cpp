@@ -1,4 +1,4 @@
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -11,96 +11,6 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Functions
 //---------------------------------------------------------------------------
-
-// Function BP_GamepadKeyGuideWidget.BP_GamepadKeyGuideWidget_C.CustomEvent
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
-
-void UBP_GamepadKeyGuideWidget_C::CustomEvent()
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function BP_GamepadKeyGuideWidget.BP_GamepadKeyGuideWidget_C.CustomEvent"));
-
-	UBP_GamepadKeyGuideWidget_C_CustomEvent_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function BP_GamepadKeyGuideWidget.BP_GamepadKeyGuideWidget_C.BndEvt__TabSelector_K2Node_ComponentBoundEvent_0_OnTabRotated__DelegateSignature
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// Parameters:
-// int*                           SelectedIndex                  (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
-
-void UBP_GamepadKeyGuideWidget_C::BndEvt__TabSelector_K2Node_ComponentBoundEvent_0_OnTabRotated__DelegateSignature(int* SelectedIndex)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function BP_GamepadKeyGuideWidget.BP_GamepadKeyGuideWidget_C.BndEvt__TabSelector_K2Node_ComponentBoundEvent_0_OnTabRotated__DelegateSignature"));
-
-	UBP_GamepadKeyGuideWidget_C_BndEvt__TabSelector_K2Node_ComponentBoundEvent_0_OnTabRotated__DelegateSignature_Params params;
-	params.SelectedIndex = SelectedIndex;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function BP_GamepadKeyGuideWidget.BP_GamepadKeyGuideWidget_C.Construct
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
-
-void UBP_GamepadKeyGuideWidget_C::Construct()
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function BP_GamepadKeyGuideWidget.BP_GamepadKeyGuideWidget_C.Construct"));
-
-	UBP_GamepadKeyGuideWidget_C_Construct_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function BP_GamepadKeyGuideWidget.BP_GamepadKeyGuideWidget_C.ExecuteUbergraph_BP_GamepadKeyGuideWidget
-// (MulticastDelegate, Public, Private, Protected, Delegate, NetServer, HasOutParms, HasDefaults, NetClient, DLLImport, BlueprintCallable, BlueprintEvent, BlueprintPure, Const, NetValidate)
-// Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF638F1BC40              		 offset:1c2bc40                       
-
-void UBP_GamepadKeyGuideWidget_C::ExecuteUbergraph_BP_GamepadKeyGuideWidget(int* EntryPoint)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function BP_GamepadKeyGuideWidget.BP_GamepadKeyGuideWidget_C.ExecuteUbergraph_BP_GamepadKeyGuideWidget"));
-
-	UBP_GamepadKeyGuideWidget_C_ExecuteUbergraph_BP_GamepadKeyGuideWidget_Params params;
-	params.EntryPoint = EntryPoint;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
 
 }
 

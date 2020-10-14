@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass ItemDataTableManager.ItemDataTableManager_C
-// 0x0000 (0x02C0 - 0x02C0)
+// 0x0000 (0x02D0 - 0x02D0)
 class UItemDataTableManager_C : public UTslItemDataTableManager
 {
 public:

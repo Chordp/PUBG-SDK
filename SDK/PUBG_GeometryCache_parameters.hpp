@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -110,6 +110,18 @@ struct UGeometryCacheTrack_FlipbookAnimation_AddMeshSample_Params
 {
 	struct FGeometryCacheMeshData                      MeshData;                                                 // (ConstParm, Parm, OutParm, ReferenceParm)
 	float                                              SampleTime;                                               // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function GeometryCache.GeometryCacheTrack_TransformAnimation.SetMesh
+struct UGeometryCacheTrack_TransformAnimation_SetMesh_Params
+{
+	struct FGeometryCacheMeshData                      NewMeshData;                                              // (ConstParm, Parm, OutParm, ReferenceParm)
+};
+
+// Function GeometryCache.GeometryCacheTrack_TransformGroupAnimation.SetMesh
+struct UGeometryCacheTrack_TransformGroupAnimation_SetMesh_Params
+{
+	struct FGeometryCacheMeshData                      NewMeshData;                                              // (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
 }

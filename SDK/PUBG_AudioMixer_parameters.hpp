@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -18,6 +18,59 @@ namespace SDK
 struct USubmixEffectDynamicsProcessorPreset_SetSettings_Params
 {
 	struct FSubmixEffectDynamicsProcessorSettings      InSettings;                                               // (ConstParm, Parm, OutParm, ReferenceParm)
+};
+
+// Function AudioMixer.AudioMixerBlueprintLibrary.SetBypassSourceEffectChainEntry
+struct UAudioMixerBlueprintLibrary_SetBypassSourceEffectChainEntry_Params
+{
+	class UObject*                                     WorldContextObject;                                       // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	class USoundEffectSourcePresetChain*               PresetChain;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bBypassed;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function AudioMixer.AudioMixerBlueprintLibrary.RemoveSourceEffectFromPresetChain
+struct UAudioMixerBlueprintLibrary_RemoveSourceEffectFromPresetChain_Params
+{
+	class UObject*                                     WorldContextObject;                                       // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	class USoundEffectSourcePresetChain*               PresetChain;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function AudioMixer.AudioMixerBlueprintLibrary.RemoveMasterSubmixEffect
+struct UAudioMixerBlueprintLibrary_RemoveMasterSubmixEffect_Params
+{
+	class UObject*                                     WorldContextObject;                                       // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	class USoundEffectSubmixPreset*                    SubmixEffectPreset;                                       // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function AudioMixer.AudioMixerBlueprintLibrary.GetNumberOfEntriesInSourceEffectChain
+struct UAudioMixerBlueprintLibrary_GetNumberOfEntriesInSourceEffectChain_Params
+{
+	class UObject*                                     WorldContextObject;                                       // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	class USoundEffectSourcePresetChain*               PresetChain;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function AudioMixer.AudioMixerBlueprintLibrary.ClearMasterSubmixEffects
+struct UAudioMixerBlueprintLibrary_ClearMasterSubmixEffects_Params
+{
+	class UObject*                                     WorldContextObject;                                       // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function AudioMixer.AudioMixerBlueprintLibrary.AddSourceEffectToPresetChain
+struct UAudioMixerBlueprintLibrary_AddSourceEffectToPresetChain_Params
+{
+	class UObject*                                     WorldContextObject;                                       // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	class USoundEffectSourcePresetChain*               PresetChain;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FSourceEffectChainEntry                     Entry;                                                    // (Parm, IsPlainOldData)
+};
+
+// Function AudioMixer.AudioMixerBlueprintLibrary.AddMasterSubmixEffect
+struct UAudioMixerBlueprintLibrary_AddMasterSubmixEffect_Params
+{
+	class UObject*                                     WorldContextObject;                                       // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	class USoundEffectSubmixPreset*                    SubmixEffectPreset;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function AudioMixer.SubmixEffectReverbPreset.SetSettingsWithReverbEffect

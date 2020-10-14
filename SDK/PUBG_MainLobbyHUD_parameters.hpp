@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -120,12 +120,6 @@ struct UMainLobbyHUD_C_CanShowWebPopup_Params
 struct UMainLobbyHUD_C_ShowWebPopupImpl_Params
 {
 	struct FWebPopupParam*                             Param;                                                    // (Parm)
-};
-
-// Function MainLobbyHUD.MainLobbyHUD_C.On_SystemMenuButton_Prepass
-struct UMainLobbyHUD_C_On_SystemMenuButton_Prepass_Params
-{
-	class UWidget**                                    BoundWidget;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function MainLobbyHUD.MainLobbyHUD_C.OnReload

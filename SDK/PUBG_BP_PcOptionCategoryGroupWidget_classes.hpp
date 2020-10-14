@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (7.2.8.10) SDK
+// PUBG (8.3.5.39) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass BP_PcOptionCategoryGroupWidget.BP_PcOptionCategoryGroupWidget_C
-// 0x0000 (0x0488 - 0x0488)
+// 0x0000 (0x04A8 - 0x04A8)
 class UBP_PcOptionCategoryGroupWidget_C : public UTslGameOptionCategoryGroupWidget
 {
 public:
@@ -29,9 +29,6 @@ public:
 		return ptr;
 	}
 
-
-	void STATIC_OnCloudOptionTooltipDeactivated();
-	void STATIC_OnCloudOptionTooltipActivated();
 };
 
 
