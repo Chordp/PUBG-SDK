@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -16,7 +16,7 @@ namespace SDK
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // class UCineCameraComponent*    ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
-// FunctionAddress:0x00007FF62A325320              		 offset:1855320                       
+// FunctionAddress:0x00007FF75DFEAB70              		 offset:45eab70                       
 
 class UCineCameraComponent* ACineCameraActor::GetCineCameraComponent()
 {
@@ -42,7 +42,7 @@ class UCineCameraComponent* ACineCameraActor::GetCineCameraComponent()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62D7695D0              		 offset:4c995d0                       
+// FunctionAddress:0x00007FF75CE54450              		 offset:3454450                       
 
 float UCineCameraComponent::GetVerticalFieldOfView()
 {
@@ -68,7 +68,7 @@ float UCineCameraComponent::GetVerticalFieldOfView()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF629FDEA50              		 offset:150ea50                       
+// FunctionAddress:0x00007FF75B36A000              		 offset:196a000                       
 
 float UCineCameraComponent::GetHorizontalFieldOfView()
 {

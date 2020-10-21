@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,7 +14,7 @@ namespace SDK
 
 // Function LobbyViewMode.LobbyViewMode_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ALobbyViewMode_C::UserConstructionScript()
 {
@@ -36,10 +36,10 @@ void ALobbyViewMode_C::UserConstructionScript()
 // Function LobbyViewMode.LobbyViewMode_C.AddYaw
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float*                         Value                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// float                          Value                          (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void ALobbyViewMode_C::AddYaw(float* Value)
+void ALobbyViewMode_C::AddYaw(float Value)
 {
 	static UFunction* fn;
 
@@ -60,10 +60,10 @@ void ALobbyViewMode_C::AddYaw(float* Value)
 // Function LobbyViewMode.LobbyViewMode_C.AddPitch
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float*                         Value                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// float                          Value                          (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void ALobbyViewMode_C::AddPitch(float* Value)
+void ALobbyViewMode_C::AddPitch(float Value)
 {
 	static UFunction* fn;
 
@@ -84,10 +84,10 @@ void ALobbyViewMode_C::AddPitch(float* Value)
 // Function LobbyViewMode.LobbyViewMode_C.AddRoll
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float*                         Value                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// float                          Value                          (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void ALobbyViewMode_C::AddRoll(float* Value)
+void ALobbyViewMode_C::AddRoll(float Value)
 {
 	static UFunction* fn;
 
@@ -108,10 +108,10 @@ void ALobbyViewMode_C::AddRoll(float* Value)
 // Function LobbyViewMode.LobbyViewMode_C.AddViewDistance
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float*                         Value                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// float                          Value                          (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void ALobbyViewMode_C::AddViewDistance(float* Value)
+void ALobbyViewMode_C::AddViewDistance(float Value)
 {
 	static UFunction* fn;
 
@@ -132,10 +132,10 @@ void ALobbyViewMode_C::AddViewDistance(float* Value)
 // Function LobbyViewMode.LobbyViewMode_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// float*                         DeltaSeconds                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// float                          DeltaSeconds                   (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void ALobbyViewMode_C::ReceiveTick(float* DeltaSeconds)
+void ALobbyViewMode_C::ReceiveTick(float DeltaSeconds)
 {
 	static UFunction* fn;
 
@@ -156,10 +156,10 @@ void ALobbyViewMode_C::ReceiveTick(float* DeltaSeconds)
 // Function LobbyViewMode.LobbyViewMode_C.SetViewModeAbleActor
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor**                 Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void ALobbyViewMode_C::SetViewModeAbleActor(class AActor** Actor)
+void ALobbyViewMode_C::SetViewModeAbleActor(class AActor* Actor)
 {
 	static UFunction* fn;
 
@@ -180,10 +180,10 @@ void ALobbyViewMode_C::SetViewModeAbleActor(class AActor** Actor)
 // Function LobbyViewMode.LobbyViewMode_C.ExecuteUbergraph_LobbyViewMode
 // (HasDefaults)
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void ALobbyViewMode_C::ExecuteUbergraph_LobbyViewMode(int* EntryPoint)
+void ALobbyViewMode_C::ExecuteUbergraph_LobbyViewMode(int EntryPoint)
 {
 	static UFunction* fn;
 

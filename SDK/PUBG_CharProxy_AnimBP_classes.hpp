@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -181,7 +181,7 @@ public:
 	}
 
 
-	void ProcessLobbyCharacter(class ALobbyCharacter** LobbyCharRef);
+	void ProcessLobbyCharacter(class ALobbyCharacter* LobbyCharRef);
 	void UpdateBlink();
 	void GetAnimWeaponType(EAnimWeaponType* AnimWeaponType);
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_CharProxy_AnimBP_AnimGraphNode_ModifyBone_138D096848F6627DCB3C9496E0576FF0();
@@ -236,12 +236,12 @@ public:
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_CharProxy_AnimBP_AnimGraphNode_Fabrik_50E1CCC144ED9B7CFB3C1890CBA2E662();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_CharProxy_AnimBP_AnimGraphNode_CopyBone_825C3AE34510DAC702F38299520320E5();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_CharProxy_AnimBP_AnimGraphNode_Fabrik_217FCB10470A39214309EBB1129EC727();
-	void BlueprintUpdateAnimation(float* DeltaTimeX);
+	void BlueprintUpdateAnimation(float DeltaTimeX);
 	void BlueprintInitializeAnimation();
 	void OnReady_Event(bool bReady);
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_CharProxy_AnimBP_AnimGraphNode_BlendListByBool_DE260CEA407C68776D9118B2960C17E9();
-	void OnLobbyEmotePlay_Event(struct FName* EmoteName);
-	void ExecuteUbergraph_CharProxy_AnimBP(int* EntryPoint);
+	void OnLobbyEmotePlay_Event(const struct FName& EmoteName);
+	void ExecuteUbergraph_CharProxy_AnimBP(int EntryPoint);
 };
 
 

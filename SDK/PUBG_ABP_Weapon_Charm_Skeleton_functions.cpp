@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,7 +14,7 @@ namespace SDK
 
 // Function ABP_Weapon_Charm_Skeleton.ABP_Weapon_Charm_Skeleton_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Charm_Skeleton_AnimGraphNode_ModifyBone_4EE4C47546E12E947412C59A9A168182
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UABP_Weapon_Charm_Skeleton_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Charm_Skeleton_AnimGraphNode_ModifyBone_4EE4C47546E12E947412C59A9A168182()
 {
@@ -35,7 +35,7 @@ void UABP_Weapon_Charm_Skeleton_C::EvaluateGraphExposedInputs_ExecuteUbergraph_A
 
 // Function ABP_Weapon_Charm_Skeleton.ABP_Weapon_Charm_Skeleton_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Charm_Skeleton_AnimGraphNode_RigidBody_8568CC1447E38623765165B831AB16EF
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UABP_Weapon_Charm_Skeleton_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Charm_Skeleton_AnimGraphNode_RigidBody_8568CC1447E38623765165B831AB16EF()
 {
@@ -57,10 +57,10 @@ void UABP_Weapon_Charm_Skeleton_C::EvaluateGraphExposedInputs_ExecuteUbergraph_A
 // Function ABP_Weapon_Charm_Skeleton.ABP_Weapon_Charm_Skeleton_C.ExecuteUbergraph_ABP_Weapon_Charm_Skeleton
 // ()
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UABP_Weapon_Charm_Skeleton_C::ExecuteUbergraph_ABP_Weapon_Charm_Skeleton(int* EntryPoint)
+void UABP_Weapon_Charm_Skeleton_C::ExecuteUbergraph_ABP_Weapon_Charm_Skeleton(int EntryPoint)
 {
 	static UFunction* fn;
 

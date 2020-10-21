@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,12 +15,12 @@ namespace SDK
 // Function StatMapLocations.StatMapLocations_C.AppendStatDataToColumnNames
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString*                Column_Names_as_String         (Parm, ZeroConstructor)
-// TArray<struct FString>*        Stat_Data                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// TArray<struct FString>*        Array                          (ConstParm, Parm, OutParm, ZeroConstructor)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// struct FString                 Column_Names_as_String         (Parm, ZeroConstructor)
+// TArray<struct FString>         Stat_Data                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// TArray<struct FString>         Array                          (ConstParm, Parm, OutParm, ZeroConstructor)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void AStatMapLocations_C::AppendStatDataToColumnNames(struct FString* Column_Names_as_String, TArray<struct FString>* Stat_Data, TArray<struct FString>* Array)
+void AStatMapLocations_C::AppendStatDataToColumnNames(const struct FString& Column_Names_as_String, TArray<struct FString> Stat_Data, TArray<struct FString> Array)
 {
 	static UFunction* fn;
 
@@ -42,7 +42,7 @@ void AStatMapLocations_C::AppendStatDataToColumnNames(struct FString* Column_Nam
 
 // Function StatMapLocations.StatMapLocations_C.GetCurrentLevelLocations
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void AStatMapLocations_C::GetCurrentLevelLocations()
 {
@@ -64,11 +64,11 @@ void AStatMapLocations_C::GetCurrentLevelLocations()
 // Function StatMapLocations.StatMapLocations_C.GetMapLocations
 // (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString*                InSection                      (Parm, ZeroConstructor)
+// struct FString                 InSection                      (Parm, ZeroConstructor)
 // TArray<struct FTransform>      MapTransformArray              (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void AStatMapLocations_C::GetMapLocations(struct FString* InSection, TArray<struct FTransform>* MapTransformArray)
+void AStatMapLocations_C::GetMapLocations(const struct FString& InSection, TArray<struct FTransform>* MapTransformArray)
 {
 	static UFunction* fn;
 
@@ -91,7 +91,7 @@ void AStatMapLocations_C::GetMapLocations(struct FString* InSection, TArray<stru
 
 // Function StatMapLocations.StatMapLocations_C.CreateStatWidget
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void AStatMapLocations_C::CreateStatWidget()
 {
@@ -114,7 +114,7 @@ void AStatMapLocations_C::CreateStatWidget()
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // TArray<struct FString>         Output                         (Parm, OutParm, ZeroConstructor)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void AStatMapLocations_C::GatherStats(TArray<struct FString>* Output)
 {
@@ -138,7 +138,7 @@ void AStatMapLocations_C::GatherStats(TArray<struct FString>* Output)
 
 // Function StatMapLocations.StatMapLocations_C.SetCurrentTransform
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void AStatMapLocations_C::SetCurrentTransform()
 {
@@ -161,7 +161,7 @@ void AStatMapLocations_C::SetCurrentTransform()
 // (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                           PlayerHasNotMoved              (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void AStatMapLocations_C::CheckPlayerTransform(bool* PlayerHasNotMoved)
 {
@@ -186,11 +186,11 @@ void AStatMapLocations_C::CheckPlayerTransform(bool* PlayerHasNotMoved)
 // Function StatMapLocations.StatMapLocations_C.MoveToDebugLocation
 // (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int*                           PointNumber                    (Parm, ZeroConstructor, IsPlainOldData)
+// int                            PointNumber                    (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 OutMoveLocation                (Parm, OutParm, ZeroConstructor)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void AStatMapLocations_C::MoveToDebugLocation(int* PointNumber, struct FString* OutMoveLocation)
+void AStatMapLocations_C::MoveToDebugLocation(int PointNumber, struct FString* OutMoveLocation)
 {
 	static UFunction* fn;
 
@@ -213,7 +213,7 @@ void AStatMapLocations_C::MoveToDebugLocation(int* PointNumber, struct FString* 
 
 // Function StatMapLocations.StatMapLocations_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void AStatMapLocations_C::UserConstructionScript()
 {
@@ -234,7 +234,7 @@ void AStatMapLocations_C::UserConstructionScript()
 
 // Function StatMapLocations.StatMapLocations_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void AStatMapLocations_C::ReceiveBeginPlay()
 {
@@ -255,7 +255,7 @@ void AStatMapLocations_C::ReceiveBeginPlay()
 
 // Function StatMapLocations.StatMapLocations_C.SetUp
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void AStatMapLocations_C::SetUp()
 {
@@ -276,7 +276,7 @@ void AStatMapLocations_C::SetUp()
 
 // Function StatMapLocations.StatMapLocations_C.StatMapLocations
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void AStatMapLocations_C::StatMapLocations()
 {
@@ -298,10 +298,10 @@ void AStatMapLocations_C::StatMapLocations()
 // Function StatMapLocations.StatMapLocations_C.ExecuteUbergraph_StatMapLocations
 // ()
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void AStatMapLocations_C::ExecuteUbergraph_StatMapLocations(int* EntryPoint)
+void AStatMapLocations_C::ExecuteUbergraph_StatMapLocations(int EntryPoint)
 {
 	static UFunction* fn;
 

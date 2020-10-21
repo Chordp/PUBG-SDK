@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,10 +15,10 @@ namespace SDK
 // Function ReplayList_BP.ReplayList_BP_C.OnUpdateItem
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FReplayItem*            inReplayItem                   (Parm)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// struct FReplayItem             inReplayItem                   (Parm)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void AReplayList_BP_C::OnUpdateItem(struct FReplayItem* inReplayItem)
+void AReplayList_BP_C::OnUpdateItem(const struct FReplayItem& inReplayItem)
 {
 	static UFunction* fn;
 
@@ -39,10 +39,10 @@ void AReplayList_BP_C::OnUpdateItem(struct FReplayItem* inReplayItem)
 // Function ReplayList_BP.ReplayList_BP_C.UpdateReplayList
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString*                inRegionOrLocal                (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// struct FString                 inRegionOrLocal                (Parm, ZeroConstructor)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void AReplayList_BP_C::UpdateReplayList(struct FString* inRegionOrLocal)
+void AReplayList_BP_C::UpdateReplayList(const struct FString& inRegionOrLocal)
 {
 	static UFunction* fn;
 
@@ -64,7 +64,7 @@ void AReplayList_BP_C::UpdateReplayList(struct FString* inRegionOrLocal)
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                           bIsReplayBusy                  (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void AReplayList_BP_C::CheckReplayBusyStatus(bool* bIsReplayBusy)
 {
@@ -88,7 +88,7 @@ void AReplayList_BP_C::CheckReplayBusyStatus(bool* bIsReplayBusy)
 
 // Function ReplayList_BP.ReplayList_BP_C.OnGoPageBtn
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void AReplayList_BP_C::OnGoPageBtn()
 {
@@ -109,7 +109,7 @@ void AReplayList_BP_C::OnGoPageBtn()
 
 // Function ReplayList_BP.ReplayList_BP_C.OnNextPageBtn
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void AReplayList_BP_C::OnNextPageBtn()
 {
@@ -130,7 +130,7 @@ void AReplayList_BP_C::OnNextPageBtn()
 
 // Function ReplayList_BP.ReplayList_BP_C.OnPrevPageBtn
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void AReplayList_BP_C::OnPrevPageBtn()
 {
@@ -151,7 +151,7 @@ void AReplayList_BP_C::OnPrevPageBtn()
 
 // Function ReplayList_BP.ReplayList_BP_C.ClearReplayList
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void AReplayList_BP_C::ClearReplayList()
 {
@@ -172,7 +172,7 @@ void AReplayList_BP_C::ClearReplayList()
 
 // Function ReplayList_BP.ReplayList_BP_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void AReplayList_BP_C::UserConstructionScript()
 {
@@ -193,7 +193,7 @@ void AReplayList_BP_C::UserConstructionScript()
 
 // Function ReplayList_BP.ReplayList_BP_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void AReplayList_BP_C::ReceiveBeginPlay()
 {
@@ -214,7 +214,7 @@ void AReplayList_BP_C::ReceiveBeginPlay()
 
 // Function ReplayList_BP.ReplayList_BP_C.CreateReplayListEvent
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void AReplayList_BP_C::CreateReplayListEvent()
 {
@@ -235,7 +235,7 @@ void AReplayList_BP_C::CreateReplayListEvent()
 
 // Function ReplayList_BP.ReplayList_BP_C.PrevPageEvent
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void AReplayList_BP_C::PrevPageEvent()
 {
@@ -256,7 +256,7 @@ void AReplayList_BP_C::PrevPageEvent()
 
 // Function ReplayList_BP.ReplayList_BP_C.NextPageEvent
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void AReplayList_BP_C::NextPageEvent()
 {
@@ -277,7 +277,7 @@ void AReplayList_BP_C::NextPageEvent()
 
 // Function ReplayList_BP.ReplayList_BP_C.GoPageEvent
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void AReplayList_BP_C::GoPageEvent()
 {
@@ -299,11 +299,11 @@ void AReplayList_BP_C::GoPageEvent()
 // Function ReplayList_BP.ReplayList_BP_C.OnItemClicked
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString*                RegionOrLocal                  (Parm, ZeroConstructor)
-// struct FReplayItem*            inReplayItem                   (Parm)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// struct FString                 RegionOrLocal                  (Parm, ZeroConstructor)
+// struct FReplayItem             inReplayItem                   (Parm)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void AReplayList_BP_C::OnItemClicked(struct FString* RegionOrLocal, struct FReplayItem* inReplayItem)
+void AReplayList_BP_C::OnItemClicked(const struct FString& RegionOrLocal, const struct FReplayItem& inReplayItem)
 {
 	static UFunction* fn;
 
@@ -325,10 +325,10 @@ void AReplayList_BP_C::OnItemClicked(struct FString* RegionOrLocal, struct FRepl
 // Function ReplayList_BP.ReplayList_BP_C.ExecuteUbergraph_ReplayList_BP
 // (HasDefaults)
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void AReplayList_BP_C::ExecuteUbergraph_ReplayList_BP(int* EntryPoint)
+void AReplayList_BP_C::ExecuteUbergraph_ReplayList_BP(int EntryPoint)
 {
 	static UFunction* fn;
 

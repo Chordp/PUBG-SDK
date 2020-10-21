@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -37,7 +37,7 @@ struct ABP_TslBaseLobbySceneTravel_CameraMove_Fast_C_OnStartTravel_Params
 // Function BP_TslBaseLobbySceneTravel_CameraMove_Fast.BP_TslBaseLobbySceneTravel_CameraMove_Fast_C.ExecuteUbergraph_BP_TslBaseLobbySceneTravel_CameraMove_Fast
 struct ABP_TslBaseLobbySceneTravel_CameraMove_Fast_C_ExecuteUbergraph_BP_TslBaseLobbySceneTravel_CameraMove_Fast_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

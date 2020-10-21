@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -16,7 +16,7 @@ namespace SDK
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // bool                           bIsPickup                      (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void USlotBaseWidget_C::IsPlayCharacterPickupAnim(bool* bIsPickup)
 {
@@ -42,7 +42,7 @@ void USlotBaseWidget_C::IsPlayCharacterPickupAnim(bool* bIsPickup)
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // bool                           IsCasting                      (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void USlotBaseWidget_C::IsCharacterCasting(bool* IsCasting)
 {
@@ -67,10 +67,10 @@ void USlotBaseWidget_C::IsCharacterCasting(bool* IsCasting)
 // Function SlotBaseWidget.SlotBaseWidget_C.PlaySoundAk
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UAkAudioEvent**          SoundAk                        (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// class UAkAudioEvent*           SoundAk                        (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void USlotBaseWidget_C::PlaySoundAk(class UAkAudioEvent** SoundAk)
+void USlotBaseWidget_C::PlaySoundAk(class UAkAudioEvent* SoundAk)
 {
 	static UFunction* fn;
 
@@ -90,7 +90,7 @@ void USlotBaseWidget_C::PlaySoundAk(class UAkAudioEvent** SoundAk)
 
 // Function SlotBaseWidget.SlotBaseWidget_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void USlotBaseWidget_C::Construct()
 {
@@ -112,11 +112,11 @@ void USlotBaseWidget_C::Construct()
 // Function SlotBaseWidget.SlotBaseWidget_C.OnMouseEnter
 // (BlueprintCosmetic, Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
-// struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
-// struct FPointerEvent*          MouseEvent                     (ConstParm, Parm, OutParm, ReferenceParm)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// struct FGeometry               MyGeometry                     (Parm, IsPlainOldData)
+// struct FPointerEvent           MouseEvent                     (ConstParm, Parm, OutParm, ReferenceParm)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void USlotBaseWidget_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
+void USlotBaseWidget_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
 	static UFunction* fn;
 
@@ -138,10 +138,10 @@ void USlotBaseWidget_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPoint
 // Function SlotBaseWidget.SlotBaseWidget_C.ExecuteUbergraph_SlotBaseWidget
 // (HasDefaults)
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void USlotBaseWidget_C::ExecuteUbergraph_SlotBaseWidget(int* EntryPoint)
+void USlotBaseWidget_C::ExecuteUbergraph_SlotBaseWidget(int EntryPoint)
 {
 	static UFunction* fn;
 

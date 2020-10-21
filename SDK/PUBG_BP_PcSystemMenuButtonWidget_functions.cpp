@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -16,7 +16,7 @@ namespace SDK
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 // bool                           IsDesignTime                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuButtonWidget_C::PreConstruct(bool IsDesignTime)
 {
@@ -38,7 +38,7 @@ void UBP_PcSystemMenuButtonWidget_C::PreConstruct(bool IsDesignTime)
 
 // Function BP_PcSystemMenuButtonWidget.BP_PcSystemMenuButtonWidget_C.BndEvt__Button_Internal_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuButtonWidget_C::BndEvt__Button_Internal_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
 {
@@ -60,10 +60,10 @@ void UBP_PcSystemMenuButtonWidget_C::BndEvt__Button_Internal_K2Node_ComponentBou
 // Function BP_PcSystemMenuButtonWidget.BP_PcSystemMenuButtonWidget_C.ExecuteUbergraph_BP_PcSystemMenuButtonWidget
 // ()
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UBP_PcSystemMenuButtonWidget_C::ExecuteUbergraph_BP_PcSystemMenuButtonWidget(int* EntryPoint)
+void UBP_PcSystemMenuButtonWidget_C::ExecuteUbergraph_BP_PcSystemMenuButtonWidget(int EntryPoint)
 {
 	static UFunction* fn;
 
@@ -83,7 +83,7 @@ void UBP_PcSystemMenuButtonWidget_C::ExecuteUbergraph_BP_PcSystemMenuButtonWidge
 
 // Function BP_PcSystemMenuButtonWidget.BP_PcSystemMenuButtonWidget_C.OnClicked__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuButtonWidget_C::OnClicked__DelegateSignature()
 {

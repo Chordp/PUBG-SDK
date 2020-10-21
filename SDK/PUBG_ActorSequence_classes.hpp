@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -73,6 +73,24 @@ public:
 		return ptr;
 	}
 
+
+	void Stop();
+	void StartPlayingNextTick();
+	void SetPlayRate(float PlayRate);
+	void SetPlaybackRange(float NewStartTime, float NewEndTime);
+	void SetPlaybackPosition(float NewPlaybackPosition);
+	void PlayReverse();
+	void PlayLooping(int NumLoops);
+	void Play();
+	void Pause();
+	bool IsPlaying();
+	float GetPlayRate();
+	float GetPlaybackStart();
+	float GetPlaybackPosition();
+	float GetPlaybackEnd();
+	float GetLength();
+	TArray<class UObject*> GetBoundObjects(const struct FMovieSceneObjectBindingID& ObjectBinding);
+	void ChangePlaybackDirection();
 };
 
 

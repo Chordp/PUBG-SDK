@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -16,7 +16,7 @@ namespace SDK
 // (Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // struct FDecalEffectDataSet     ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 struct FDecalEffectDataSet AGunImpact_Med_C::GetAdjustedDecalEffectDataSet_BP()
 {
@@ -39,7 +39,7 @@ struct FDecalEffectDataSet AGunImpact_Med_C::GetAdjustedDecalEffectDataSet_BP()
 
 // Function GunImpact_Med.GunImpact_Med_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void AGunImpact_Med_C::UserConstructionScript()
 {
@@ -61,10 +61,10 @@ void AGunImpact_Med_C::UserConstructionScript()
 // Function GunImpact_Med.GunImpact_Med_C.PreWakeUp_BP
 // (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FTransform*             InitialTransform               (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// struct FTransform              InitialTransform               (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void AGunImpact_Med_C::PreWakeUp_BP(struct FTransform* InitialTransform)
+void AGunImpact_Med_C::PreWakeUp_BP(const struct FTransform& InitialTransform)
 {
 	static UFunction* fn;
 
@@ -85,10 +85,10 @@ void AGunImpact_Med_C::PreWakeUp_BP(struct FTransform* InitialTransform)
 // Function GunImpact_Med.GunImpact_Med_C.WakeUp_BP
 // (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FTransform*             InitialTransform               (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// struct FTransform              InitialTransform               (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void AGunImpact_Med_C::WakeUp_BP(struct FTransform* InitialTransform)
+void AGunImpact_Med_C::WakeUp_BP(const struct FTransform& InitialTransform)
 {
 	static UFunction* fn;
 
@@ -108,7 +108,7 @@ void AGunImpact_Med_C::WakeUp_BP(struct FTransform* InitialTransform)
 
 // Function GunImpact_Med.GunImpact_Med_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void AGunImpact_Med_C::ReceiveBeginPlay()
 {
@@ -129,7 +129,7 @@ void AGunImpact_Med_C::ReceiveBeginPlay()
 
 // Function GunImpact_Med.GunImpact_Med_C.AdjustDecalEffectDataSet_BP
 // (Event, Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void AGunImpact_Med_C::AdjustDecalEffectDataSet_BP()
 {
@@ -151,10 +151,10 @@ void AGunImpact_Med_C::AdjustDecalEffectDataSet_BP()
 // Function GunImpact_Med.GunImpact_Med_C.ExecuteUbergraph_GunImpact_Med
 // (HasDefaults)
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void AGunImpact_Med_C::ExecuteUbergraph_GunImpact_Med(int* EntryPoint)
+void AGunImpact_Med_C::ExecuteUbergraph_GunImpact_Med(int EntryPoint)
 {
 	static UFunction* fn;
 

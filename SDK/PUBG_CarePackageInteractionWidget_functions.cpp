@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -16,7 +16,7 @@ namespace SDK
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                           IsShow                         (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UCarePackageInteractionWidget_C::ShowCarePackageInteractionWidget(bool IsShow)
 {
@@ -39,11 +39,11 @@ void UCarePackageInteractionWidget_C::ShowCarePackageInteractionWidget(bool IsSh
 // Function CarePackageInteractionWidget.CarePackageInteractionWidget_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
-// float*                         InDeltaTime                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// struct FGeometry               MyGeometry                     (Parm, IsPlainOldData)
+// float                          InDeltaTime                    (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UCarePackageInteractionWidget_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
+void UCarePackageInteractionWidget_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
 	static UFunction* fn;
 
@@ -64,7 +64,7 @@ void UCarePackageInteractionWidget_C::Tick(struct FGeometry* MyGeometry, float* 
 
 // Function CarePackageInteractionWidget.CarePackageInteractionWidget_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UCarePackageInteractionWidget_C::Construct()
 {
@@ -85,7 +85,7 @@ void UCarePackageInteractionWidget_C::Construct()
 
 // Function CarePackageInteractionWidget.CarePackageInteractionWidget_C.BndEvt__Vanishing_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UCarePackageInteractionWidget_C::BndEvt__Vanishing_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
@@ -106,7 +106,7 @@ void UCarePackageInteractionWidget_C::BndEvt__Vanishing_K2Node_ComponentBoundEve
 
 // Function CarePackageInteractionWidget.CarePackageInteractionWidget_C.CustomTick
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UCarePackageInteractionWidget_C::CustomTick()
 {
@@ -127,7 +127,7 @@ void UCarePackageInteractionWidget_C::CustomTick()
 
 // Function CarePackageInteractionWidget.CarePackageInteractionWidget_C.TimerCheckCarePackage
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UCarePackageInteractionWidget_C::TimerCheckCarePackage()
 {
@@ -149,10 +149,10 @@ void UCarePackageInteractionWidget_C::TimerCheckCarePackage()
 // Function CarePackageInteractionWidget.CarePackageInteractionWidget_C.ExecuteUbergraph_CarePackageInteractionWidget
 // (HasDefaults)
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UCarePackageInteractionWidget_C::ExecuteUbergraph_CarePackageInteractionWidget(int* EntryPoint)
+void UCarePackageInteractionWidget_C::ExecuteUbergraph_CarePackageInteractionWidget(int EntryPoint)
 {
 	static UFunction* fn;
 

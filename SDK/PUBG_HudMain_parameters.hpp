@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -62,8 +62,8 @@ struct UHudMain_C_MapIconShowBoth_Params
 // Function HudMain.HudMain_C.MapIconShow
 struct UHudMain_C_MapIconShow_Params
 {
-	bool*                                              bShowIcon;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	bool*                                              bShowName;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bShowIcon;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bShowName;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function HudMain.HudMain_C.OnToggleAnticheatCenterBar
@@ -84,36 +84,36 @@ struct UHudMain_C_OnKey_EmoteWheelPressed_Params
 // Function HudMain.HudMain_C.OnInit_Delegate
 struct UHudMain_C_OnInit_Delegate_Params
 {
-	class ATslBaseHUD**                                TslBaseHUD;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	class ATslBaseHUD*                                 TslBaseHUD;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function HudMain.HudMain_C.OnInit_Replay
 struct UHudMain_C_OnInit_Replay_Params
 {
-	class ATslBaseHUD**                                TslBaseHUD;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	class ATslBaseHUD*                                 TslBaseHUD;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function HudMain.HudMain_C.OnInit_Input
 struct UHudMain_C_OnInit_Input_Params
 {
-	class ATslBaseHUD**                                TslBaseHUD;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	class ATslBaseHUD*                                 TslBaseHUD;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function HudMain.HudMain_C.OnInit_Widget
 struct UHudMain_C_OnInit_Widget_Params
 {
-	class ATslBaseHUD**                                TslBaseHUD;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	class ATslBaseHUD*                                 TslBaseHUD;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function HudMain.HudMain_C.OnMouseMove
 struct UHudMain_C_OnMouseMove_Params
 {
-	struct FGeometry*                                  MyGeometry;                                               // (Parm, IsPlainOldData)
-	struct FPointerEvent*                              MouseEvent;                                               // (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FGeometry                                   MyGeometry;                                               // (Parm, IsPlainOldData)
+	struct FPointerEvent                               MouseEvent;                                               // (ConstParm, Parm, OutParm, ReferenceParm)
 	struct FEventReply                                 ReturnValue;                                              // (Parm, OutParm, ReturnParm)
 };
 
@@ -141,7 +141,7 @@ struct UHudMain_C_BindEventForShowReplayTimeline_Params
 // Function HudMain.HudMain_C.ShowReplayTimeLine
 struct UHudMain_C_ShowReplayTimeLine_Params
 {
-	bool*                                              bShow;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bShow;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function HudMain.HudMain_C.SetHUDForIngameReplayMenu
@@ -214,8 +214,8 @@ struct UHudMain_C_IsCharacterAlive_Params
 // Function HudMain.HudMain_C.OnNitifyHit
 struct UHudMain_C_OnNitifyHit_Params
 {
-	float*                                             DamagePercent;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	EDamageTypeCategory*                               DamageTypeCategory;                                       // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              DamagePercent;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	EDamageTypeCategory                                DamageTypeCategory;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function HudMain.HudMain_C.OnKey_SystemMenuOrEscape
@@ -256,7 +256,7 @@ struct UHudMain_C_CreateCheckReplayTimer_Params
 // Function HudMain.HudMain_C.ExecuteUbergraph_HudMain
 struct UHudMain_C_ExecuteUbergraph_HudMain_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function HudMain.HudMain_C.ButtonClickedDispatcher__DelegateSignature

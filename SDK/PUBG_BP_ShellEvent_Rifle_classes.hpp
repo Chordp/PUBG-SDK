@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -31,8 +31,8 @@ public:
 	}
 
 
-	void RunEvent(struct FVector* InCollideDirection, struct FVector* InHitLocation, struct FVector* InHitNormal, struct FName* InBoneName, class UWorld** InWorld, class AActor** InActor);
-	void ExecuteUbergraph_BP_ShellEvent_Rifle(int* EntryPoint);
+	void RunEvent(const struct FVector& InCollideDirection, const struct FVector& InHitLocation, const struct FVector& InHitNormal, const struct FName& InBoneName, class UWorld* InWorld, class AActor* InActor);
+	void ExecuteUbergraph_BP_ShellEvent_Rifle(int EntryPoint);
 };
 
 

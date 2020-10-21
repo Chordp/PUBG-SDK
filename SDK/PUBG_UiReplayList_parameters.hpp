@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,20 +17,20 @@ namespace SDK
 // Function UiReplayList.UiReplayList_C.GetIndexFromRegionName
 struct UUiReplayList_C_GetIndexFromRegionName_Params
 {
-	struct FString*                                    RegionName;                                               // (Parm, ZeroConstructor)
+	struct FString                                     RegionName;                                               // (Parm, ZeroConstructor)
 	int                                                Array_Index;                                              // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UiReplayList.UiReplayList_C.UpdateReplayList_Impl
 struct UUiReplayList_C_UpdateReplayList_Impl_Params
 {
-	struct FString*                                    RegionOrLocal;                                            // (Parm, ZeroConstructor)
+	struct FString                                     RegionOrLocal;                                            // (Parm, ZeroConstructor)
 };
 
 // Function UiReplayList.UiReplayList_C.UpdateRegionButtonColors
 struct UUiReplayList_C_UpdateRegionButtonColors_Params
 {
-	int*                                               Index_;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                Index_;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UiReplayList.UiReplayList_C.ChangeCloseButtonForTest
@@ -57,13 +57,13 @@ struct UUiReplayList_C_CheckReplayBusyStatus_Params
 // Function UiReplayList.UiReplayList_C.UpdateRecorderStatistics
 struct UUiReplayList_C_UpdateRecorderStatistics_Params
 {
-	struct FTslReplaySummary*                          inReplaySummary;                                          // (Parm)
+	struct FTslReplaySummary                           inReplaySummary;                                          // (Parm)
 };
 
 // Function UiReplayList.UiReplayList_C.UpdateTeamText
 struct UUiReplayList_C_UpdateTeamText_Params
 {
-	struct FTslReplaySummary*                          inReplaySummary;                                          // (Parm)
+	struct FTslReplaySummary                           inReplaySummary;                                          // (Parm)
 };
 
 // Function UiReplayList.UiReplayList_C.SetShouldKeep
@@ -75,14 +75,14 @@ struct UUiReplayList_C_SetShouldKeep_Params
 // Function UiReplayList.UiReplayList_C.UpdateReplaySummary
 struct UUiReplayList_C_UpdateReplaySummary_Params
 {
-	struct FTslReplaySummary*                          ReplaySummary;                                            // (Parm)
+	struct FTslReplaySummary                           ReplaySummary;                                            // (Parm)
 };
 
 // Function UiReplayList.UiReplayList_C.SetReplayItemToProcess
 struct UUiReplayList_C_SetReplayItemToProcess_Params
 {
-	struct FString*                                    RegionOrLocal;                                            // (Parm, ZeroConstructor)
-	struct FReplayItem*                                inReplayItem;                                             // (Parm)
+	struct FString                                     RegionOrLocal;                                            // (Parm, ZeroConstructor)
+	struct FReplayItem                                 inReplayItem;                                             // (Parm)
 };
 
 // Function UiReplayList.UiReplayList_C.HidePageWidget
@@ -183,13 +183,13 @@ struct UUiReplayList_C_BndEvt__Button_DeleteOlds_K2Node_ComponentBoundEvent_271_
 // Function UiReplayList.UiReplayList_C.OnKeepAndDeleteOldestReplaysDoneEvent
 struct UUiReplayList_C_OnKeepAndDeleteOldestReplaysDoneEvent_Params
 {
-	int*                                               Remains;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                Remains;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UiReplayList.UiReplayList_C.OnGetReplaySummaryEvent
 struct UUiReplayList_C_OnGetReplaySummaryEvent_Params
 {
-	struct FTslReplaySummary*                          ReplaySummary;                                            // (Parm)
+	struct FTslReplaySummary                           ReplaySummary;                                            // (Parm)
 };
 
 // Function UiReplayList.UiReplayList_C.BndEvt__Button_JP_K2Node_ComponentBoundEvent_485_OnButtonClickedEvent__DelegateSignature
@@ -200,7 +200,7 @@ struct UUiReplayList_C_BndEvt__Button_JP_K2Node_ComponentBoundEvent_485_OnButton
 // Function UiReplayList.UiReplayList_C.ExecuteUbergraph_UiReplayList
 struct UUiReplayList_C_ExecuteUbergraph_UiReplayList_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function UiReplayList.UiReplayList_C.DeleteReplayEvent__DelegateSignature
@@ -231,7 +231,7 @@ struct UUiReplayList_C_NextPageEvent__DelegateSignature_Params
 // Function UiReplayList.UiReplayList_C.UpdateReplayList__DelegateSignature
 struct UUiReplayList_C_UpdateReplayList__DelegateSignature_Params
 {
-	struct FString*                                    RegionOrLocal;                                            // (Parm, ZeroConstructor)
+	struct FString                                     RegionOrLocal;                                            // (Parm, ZeroConstructor)
 };
 
 }

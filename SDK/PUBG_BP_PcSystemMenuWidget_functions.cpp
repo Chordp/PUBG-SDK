@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -16,7 +16,7 @@ namespace SDK
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // bool                           IsCompetitive                  (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuWidget_C::CheckIfCompetitiveMode(bool* IsCompetitive)
 {
@@ -42,7 +42,7 @@ void UBP_PcSystemMenuWidget_C::CheckIfCompetitiveMode(bool* IsCompetitive)
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // bool                           IsLeaveUnsafe                  (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuWidget_C::CheckLeaveGameStatus(bool* IsLeaveUnsafe)
 {
@@ -67,10 +67,10 @@ void UBP_PcSystemMenuWidget_C::CheckLeaveGameStatus(bool* IsLeaveUnsafe)
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.QuitToDesktop
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EPopupButtonID*                NewParam                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// EPopupButtonID                 NewParam                       (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UBP_PcSystemMenuWidget_C::QuitToDesktop(EPopupButtonID* NewParam)
+void UBP_PcSystemMenuWidget_C::QuitToDesktop(EPopupButtonID NewParam)
 {
 	static UFunction* fn;
 
@@ -91,10 +91,10 @@ void UBP_PcSystemMenuWidget_C::QuitToDesktop(EPopupButtonID* NewParam)
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.GotoLobby
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EPopupButtonID*                InPopupButtonID                (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// EPopupButtonID                 InPopupButtonID                (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UBP_PcSystemMenuWidget_C::GotoLobby(EPopupButtonID* InPopupButtonID)
+void UBP_PcSystemMenuWidget_C::GotoLobby(EPopupButtonID InPopupButtonID)
 {
 	static UFunction* fn;
 
@@ -116,7 +116,7 @@ void UBP_PcSystemMenuWidget_C::GotoLobby(EPopupButtonID* InPopupButtonID)
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                           bEnable                        (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuWidget_C::EnableMenuButtons(bool bEnable)
 {
@@ -138,7 +138,7 @@ void UBP_PcSystemMenuWidget_C::EnableMenuButtons(bool bEnable)
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.OnVanishingAnimFinished
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuWidget_C::OnVanishingAnimFinished()
 {
@@ -159,7 +159,7 @@ void UBP_PcSystemMenuWidget_C::OnVanishingAnimFinished()
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.HideWidget
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuWidget_C::HideWidget()
 {
@@ -180,7 +180,7 @@ void UBP_PcSystemMenuWidget_C::HideWidget()
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__ResumeButton_K2Node_ComponentBoundEvent_25_OnClicked__DelegateSignature
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuWidget_C::BndEvt__ResumeButton_K2Node_ComponentBoundEvent_25_OnClicked__DelegateSignature()
 {
@@ -201,7 +201,7 @@ void UBP_PcSystemMenuWidget_C::BndEvt__ResumeButton_K2Node_ComponentBoundEvent_2
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__SettingsButton_K2Node_ComponentBoundEvent_30_OnClicked__DelegateSignature
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuWidget_C::BndEvt__SettingsButton_K2Node_ComponentBoundEvent_30_OnClicked__DelegateSignature()
 {
@@ -222,7 +222,7 @@ void UBP_PcSystemMenuWidget_C::BndEvt__SettingsButton_K2Node_ComponentBoundEvent
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__TeamManagementButton_K2Node_ComponentBoundEvent_36_OnClicked__DelegateSignature
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuWidget_C::BndEvt__TeamManagementButton_K2Node_ComponentBoundEvent_36_OnClicked__DelegateSignature()
 {
@@ -243,7 +243,7 @@ void UBP_PcSystemMenuWidget_C::BndEvt__TeamManagementButton_K2Node_ComponentBoun
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__RestartLobbyButton_K2Node_ComponentBoundEvent_43_OnClicked__DelegateSignature
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuWidget_C::BndEvt__RestartLobbyButton_K2Node_ComponentBoundEvent_43_OnClicked__DelegateSignature()
 {
@@ -264,7 +264,7 @@ void UBP_PcSystemMenuWidget_C::BndEvt__RestartLobbyButton_K2Node_ComponentBoundE
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__ExitToDesktopButton_K2Node_ComponentBoundEvent_60_OnClicked__DelegateSignature
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuWidget_C::BndEvt__ExitToDesktopButton_K2Node_ComponentBoundEvent_60_OnClicked__DelegateSignature()
 {
@@ -285,7 +285,7 @@ void UBP_PcSystemMenuWidget_C::BndEvt__ExitToDesktopButton_K2Node_ComponentBound
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuWidget_C::Construct()
 {
@@ -306,7 +306,7 @@ void UBP_PcSystemMenuWidget_C::Construct()
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__KeyGuideButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuWidget_C::BndEvt__KeyGuideButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature()
 {
@@ -328,10 +328,10 @@ void UBP_PcSystemMenuWidget_C::BndEvt__KeyGuideButton_K2Node_ComponentBoundEvent
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.OnScrollMissionList
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float*                         Scale                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// float                          Scale                          (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UBP_PcSystemMenuWidget_C::OnScrollMissionList(float* Scale)
+void UBP_PcSystemMenuWidget_C::OnScrollMissionList(float Scale)
 {
 	static UFunction* fn;
 
@@ -351,7 +351,7 @@ void UBP_PcSystemMenuWidget_C::OnScrollMissionList(float* Scale)
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuWidget_C::Destruct()
 {
@@ -372,7 +372,7 @@ void UBP_PcSystemMenuWidget_C::Destruct()
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__EmergingAnim_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuWidget_C::BndEvt__EmergingAnim_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
@@ -393,7 +393,7 @@ void UBP_PcSystemMenuWidget_C::BndEvt__EmergingAnim_K2Node_ComponentBoundEvent_1
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__EmergingAnim_K2Node_ComponentBoundEvent_2_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuWidget_C::BndEvt__EmergingAnim_K2Node_ComponentBoundEvent_2_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
@@ -414,7 +414,7 @@ void UBP_PcSystemMenuWidget_C::BndEvt__EmergingAnim_K2Node_ComponentBoundEvent_2
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__VanishingAnim_K2Node_ComponentBoundEvent_3_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuWidget_C::BndEvt__VanishingAnim_K2Node_ComponentBoundEvent_3_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
@@ -435,7 +435,7 @@ void UBP_PcSystemMenuWidget_C::BndEvt__VanishingAnim_K2Node_ComponentBoundEvent_
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__VanishingAnim_K2Node_ComponentBoundEvent_4_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuWidget_C::BndEvt__VanishingAnim_K2Node_ComponentBoundEvent_4_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
@@ -458,7 +458,7 @@ void UBP_PcSystemMenuWidget_C::BndEvt__VanishingAnim_K2Node_ComponentBoundEvent_
 // (Event, Public, BlueprintEvent)
 // Parameters:
 // ESystemMenuButtonType          eType                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuWidget_C::NotifySystemMenuEnter(ESystemMenuButtonType eType)
 {
@@ -480,7 +480,7 @@ void UBP_PcSystemMenuWidget_C::NotifySystemMenuEnter(ESystemMenuButtonType eType
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.Custom Event
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuWidget_C::Custom_Event()
 {
@@ -503,7 +503,7 @@ void UBP_PcSystemMenuWidget_C::Custom_Event()
 // (Event, Public, BlueprintEvent)
 // Parameters:
 // bool                           bEnable                        (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuWidget_C::NotifyEnableMenuButtons(bool bEnable)
 {
@@ -525,7 +525,7 @@ void UBP_PcSystemMenuWidget_C::NotifyEnableMenuButtons(bool bEnable)
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.NotifyHideWidget
 // (Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuWidget_C::NotifyHideWidget()
 {
@@ -546,7 +546,7 @@ void UBP_PcSystemMenuWidget_C::NotifyHideWidget()
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__LeaveMatchButton_K2Node_ComponentBoundEvent_51_OnClicked__DelegateSignature
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuWidget_C::BndEvt__LeaveMatchButton_K2Node_ComponentBoundEvent_51_OnClicked__DelegateSignature()
 {
@@ -567,7 +567,7 @@ void UBP_PcSystemMenuWidget_C::BndEvt__LeaveMatchButton_K2Node_ComponentBoundEve
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.BndEvt__RatingsButton_K2Node_ComponentBoundEvent_99_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_PcSystemMenuWidget_C::BndEvt__RatingsButton_K2Node_ComponentBoundEvent_99_OnButtonClickedEvent__DelegateSignature()
 {
@@ -589,10 +589,10 @@ void UBP_PcSystemMenuWidget_C::BndEvt__RatingsButton_K2Node_ComponentBoundEvent_
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.ExecuteUbergraph_BP_PcSystemMenuWidget
 // (HasDefaults)
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UBP_PcSystemMenuWidget_C::ExecuteUbergraph_BP_PcSystemMenuWidget(int* EntryPoint)
+void UBP_PcSystemMenuWidget_C::ExecuteUbergraph_BP_PcSystemMenuWidget(int EntryPoint)
 {
 	static UFunction* fn;
 

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -43,12 +43,12 @@ public:
 
 
 // Class PhysXVehicles.WheeledVehicle
-// 0x0010 (0x0470 - 0x0460)
+// 0x0010 (0x0480 - 0x0470)
 class AWheeledVehicle : public APawn
 {
 public:
-	class USkeletalMeshComponent*                      Mesh;                                                     // 0x0460(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, IsPlainOldData)
-	class UWheeledVehicleMovementComponent*            VehicleMovement;                                          // 0x0468(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, IsPlainOldData)
+	class USkeletalMeshComponent*                      Mesh;                                                     // 0x0470(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, IsPlainOldData)
+	class UWheeledVehicleMovementComponent*            VehicleMovement;                                          // 0x0478(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
@@ -309,9 +309,30 @@ public:
 	}
 
 
-	void SetSteerAngle(float SteerAngle, int WheelIndex);
-	void SetDriveTorque(float DriveTorque, int WheelIndex);
-	void SetBrakeTorque(float BrakeTorque, int WheelIndex);
+	void SetUseAutoGears(bool bUseAuto);
+	void SetThrottleInput(float Throttle);
+	void SetTargetGear(int GearNum, bool bImmediate);
+	void SetSteeringInput(float Steering);
+	void SetHandbrakeInput(bool bNewHandbrake);
+	void SetGroupsToIgnoreMask(const struct FNavAvoidanceMask& GroupMask);
+	void SetGroupsToIgnore(int GroupFlags);
+	void SetGroupsToAvoidMask(const struct FNavAvoidanceMask& GroupMask);
+	void SetGroupsToAvoid(int GroupFlags);
+	void SetGearUp(bool bNewGearUp);
+	void SetGearDown(bool bNewGearDown);
+	void SetBrakeInput(float Brake);
+	void SetAvoidanceGroupMask(const struct FNavAvoidanceMask& GroupMask);
+	void SetAvoidanceGroup(int GroupFlags);
+	void SetAvoidanceEnabled(bool bEnable);
+	void ServerUpdateState(float InSteeringInput, float InThrottleInput, float InBrakeInput, float InHandbrakeInput, int CurrentGear, uint32_t checksum);
+	void OnRep_TirePunctured(TArray<bool> LastTirePunctured);
+	bool GetUseAutoGears();
+	int GetTargetGear();
+	float GetSideSpeed();
+	float GetForwardSpeed();
+	float GetEngineRotationSpeed();
+	float GetEngineMaxRotationSpeed();
+	int GetCurrentGear();
 };
 
 

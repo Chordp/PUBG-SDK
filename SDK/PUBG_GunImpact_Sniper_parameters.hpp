@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -28,7 +28,7 @@ struct AGunImpact_Sniper_C_UserConstructionScript_Params
 // Function GunImpact_Sniper.GunImpact_Sniper_C.PreWakeUp_BP
 struct AGunImpact_Sniper_C_PreWakeUp_BP_Params
 {
-	struct FTransform*                                 InitialTransform;                                         // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+	struct FTransform                                  InitialTransform;                                         // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 };
 
 // Function GunImpact_Sniper.GunImpact_Sniper_C.AdjustDecalEffectDataSet_BP
@@ -39,7 +39,7 @@ struct AGunImpact_Sniper_C_AdjustDecalEffectDataSet_BP_Params
 // Function GunImpact_Sniper.GunImpact_Sniper_C.ExecuteUbergraph_GunImpact_Sniper
 struct AGunImpact_Sniper_C_ExecuteUbergraph_GunImpact_Sniper_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

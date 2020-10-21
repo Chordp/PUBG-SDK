@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,9 +14,11 @@ namespace SDK
 
 // Function PopupWidget.PopupWidget_C.HandleCompetitive
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// Parameters:
+// EPopupStyle                    Style                          (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UPopupWidget_C::HandleCompetitive()
+void UPopupWidget_C::HandleCompetitive(EPopupStyle Style)
 {
 	static UFunction* fn;
 
@@ -24,6 +26,7 @@ void UPopupWidget_C::HandleCompetitive()
 		fn = UObject::FindObject<UFunction>(_xor_("Function PopupWidget.PopupWidget_C.HandleCompetitive"));
 
 	UPopupWidget_C_HandleCompetitive_Params params;
+	params.Style = Style;
 
 	auto flags = fn->FunctionFlags;
 
@@ -36,13 +39,13 @@ void UPopupWidget_C::HandleCompetitive()
 // Function PopupWidget.PopupWidget_C.SetPopup
 // (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// EPopupStyle*                   PopupStyle                     (Parm, ZeroConstructor, IsPlainOldData)
-// struct FText*                  Title                          (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FText*                  Message                        (ConstParm, Parm, OutParm, ReferenceParm)
-// struct FScriptDelegate*        PressedDelegate                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// EPopupStyle                    PopupStyle                     (Parm, ZeroConstructor, IsPlainOldData)
+// struct FText                   Title                          (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FText                   Message                        (ConstParm, Parm, OutParm, ReferenceParm)
+// struct FScriptDelegate         PressedDelegate                (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UPopupWidget_C::SetPopup(EPopupStyle* PopupStyle, struct FText* Title, struct FText* Message, struct FScriptDelegate* PressedDelegate)
+void UPopupWidget_C::SetPopup(EPopupStyle PopupStyle, const struct FText& Title, const struct FText& Message, const struct FScriptDelegate& PressedDelegate)
 {
 	static UFunction* fn;
 
@@ -65,7 +68,7 @@ void UPopupWidget_C::SetPopup(EPopupStyle* PopupStyle, struct FText* Title, stru
 
 // Function PopupWidget.PopupWidget_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UPopupWidget_C::Construct()
 {
@@ -86,7 +89,7 @@ void UPopupWidget_C::Construct()
 
 // Function PopupWidget.PopupWidget_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UPopupWidget_C::Destruct()
 {
@@ -107,7 +110,7 @@ void UPopupWidget_C::Destruct()
 
 // Function PopupWidget.PopupWidget_C.CustomEvent
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UPopupWidget_C::CustomEvent()
 {
@@ -129,10 +132,10 @@ void UPopupWidget_C::CustomEvent()
 // Function PopupWidget.PopupWidget_C.ExecuteUbergraph_PopupWidget
 // (HasDefaults)
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UPopupWidget_C::ExecuteUbergraph_PopupWidget(int* EntryPoint)
+void UPopupWidget_C::ExecuteUbergraph_PopupWidget(int EntryPoint)
 {
 	static UFunction* fn;
 

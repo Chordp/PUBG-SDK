@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -43,7 +43,7 @@ struct ABuff_RestoreHoldingBreathOverTime_C_AfterDelay_Params
 // Function Buff_RestoreHoldingBreathOverTime.Buff_RestoreHoldingBreathOverTime_C.ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime
 struct ABuff_RestoreHoldingBreathOverTime_C_ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

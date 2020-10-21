@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,9 +17,9 @@ namespace SDK
 // Function StatMapLocations.StatMapLocations_C.AppendStatDataToColumnNames
 struct AStatMapLocations_C_AppendStatDataToColumnNames_Params
 {
-	struct FString*                                    Column_Names_as_String;                                   // (Parm, ZeroConstructor)
-	TArray<struct FString>*                            Stat_Data;                                                // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	TArray<struct FString>*                            Array;                                                    // (ConstParm, Parm, OutParm, ZeroConstructor)
+	struct FString                                     Column_Names_as_String;                                   // (Parm, ZeroConstructor)
+	TArray<struct FString>                             Stat_Data;                                                // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<struct FString>                             Array;                                                    // (ConstParm, Parm, OutParm, ZeroConstructor)
 };
 
 // Function StatMapLocations.StatMapLocations_C.GetCurrentLevelLocations
@@ -30,7 +30,7 @@ struct AStatMapLocations_C_GetCurrentLevelLocations_Params
 // Function StatMapLocations.StatMapLocations_C.GetMapLocations
 struct AStatMapLocations_C_GetMapLocations_Params
 {
-	struct FString*                                    InSection;                                                // (Parm, ZeroConstructor)
+	struct FString                                     InSection;                                                // (Parm, ZeroConstructor)
 	TArray<struct FTransform>                          MapTransformArray;                                        // (Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
 
@@ -59,7 +59,7 @@ struct AStatMapLocations_C_CheckPlayerTransform_Params
 // Function StatMapLocations.StatMapLocations_C.MoveToDebugLocation
 struct AStatMapLocations_C_MoveToDebugLocation_Params
 {
-	int*                                               PointNumber;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                PointNumber;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 	struct FString                                     OutMoveLocation;                                          // (Parm, OutParm, ZeroConstructor)
 };
 
@@ -86,7 +86,7 @@ struct AStatMapLocations_C_StatMapLocations_Params
 // Function StatMapLocations.StatMapLocations_C.ExecuteUbergraph_StatMapLocations
 struct AStatMapLocations_C_ExecuteUbergraph_StatMapLocations_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

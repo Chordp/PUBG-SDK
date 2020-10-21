@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -22,7 +22,7 @@ namespace SDK
 // int                            SocketIndex                    (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsEnable                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsNormalized                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B591920              		 offset:2ac1920                       
+// FunctionAddress:0x00007FF75C6FF870              		 offset:2cff870                       
 
 void ACrossActor::UpdateSideMesh(class UStaticMesh* InPrototype, const struct FVector& MeshRelativeLocation, const struct FRotator& MeshRelativeRotation, const struct FVector& MeshRelativeScale, int SocketIndex, bool IsEnable, bool IsNormalized)
 {
@@ -59,7 +59,7 @@ void ACrossActor::UpdateSideMesh(class UStaticMesh* InPrototype, const struct FV
 // int                            SocketIndex                    (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsEnable                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsNormalized                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B591440              		 offset:2ac1440                       
+// FunctionAddress:0x00007FF75C6FF390              		 offset:2cff390                       
 
 void ACrossActor::UpdateSideActor(class UClass* InPrototype, const struct FVector& ActorRelativeLocation, const struct FRotator& ActorRelativeRotation, const struct FVector& ActorRelativeScale, int SocketIndex, bool IsEnable, bool IsNormalized)
 {
@@ -96,7 +96,7 @@ void ACrossActor::UpdateSideActor(class UClass* InPrototype, const struct FVecto
 // int                            SocketIndex                    (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsEnable                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsNormalized                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B590E10              		 offset:2ac0e10                       
+// FunctionAddress:0x00007FF75C6FED60              		 offset:2cfed60                       
 
 void ACrossActor::PushSideMesh(class UStaticMesh* InPrototype, const struct FVector& MeshRelativeLocation, const struct FRotator& MeshRelativeRotation, const struct FVector& MeshRelativeScale, int SocketIndex, bool IsEnable, bool IsNormalized)
 {
@@ -133,7 +133,7 @@ void ACrossActor::PushSideMesh(class UStaticMesh* InPrototype, const struct FVec
 // int                            SocketIndex                    (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsEnable                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsNormalized                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B590930              		 offset:2ac0930                       
+// FunctionAddress:0x00007FF75C6FE880              		 offset:2cfe880                       
 
 void ACrossActor::PushSideActor(class UClass* InPrototype, const struct FVector& ActorRelativeLocation, const struct FRotator& ActorRelativeRotation, const struct FVector& ActorRelativeScale, int SocketIndex, bool IsEnable, bool IsNormalized)
 {
@@ -162,7 +162,7 @@ void ACrossActor::PushSideActor(class UClass* InPrototype, const struct FVector&
 
 // Function RoadRuntime.CrossActor.DestroySideObjects
 // (Final, Native, Public)
-// FunctionAddress:0x00007FF62B590650              		 offset:2ac0650                       
+// FunctionAddress:0x00007FF75C6FE5A0              		 offset:2cfe5a0                       
 
 void ACrossActor::DestroySideObjects()
 {
@@ -186,7 +186,7 @@ void ACrossActor::DestroySideObjects()
 // (Final, Native, Public)
 // Parameters:
 // int                            MeshIndex                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B591E00              		 offset:2ac1e00                       
+// FunctionAddress:0x00007FF75C6FFD50              		 offset:2cffd50                       
 
 void ARoadActor::UpdateSplineMesh(int MeshIndex)
 {
@@ -219,7 +219,7 @@ void ARoadActor::UpdateSplineMesh(int MeshIndex)
 // int                            InSpacing                      (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsEnable                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsNormalized                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B591B50              		 offset:2ac1b50                       
+// FunctionAddress:0x00007FF75C6FFAA0              		 offset:2cffaa0                       
 
 void ARoadActor::UpdateSideMeshes(class UStaticMesh* InPrototype, const struct FVector& MeshRelativeLocation, const struct FRotator& MeshRelativeRotation, const struct FVector& MeshRelativeScale, int SocketIndex, int InShift, int InSpacing, bool IsEnable, bool IsNormalized)
 {
@@ -260,7 +260,7 @@ void ARoadActor::UpdateSideMeshes(class UStaticMesh* InPrototype, const struct F
 // int                            InSpacing                      (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsEnable                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsNormalized                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B591670              		 offset:2ac1670                       
+// FunctionAddress:0x00007FF75C6FF5C0              		 offset:2cff5c0                       
 
 void ARoadActor::UpdateSideActor(class UClass* InPrototype, const struct FVector& ActorRelativeLocation, const struct FRotator& ActorRelativeRotation, const struct FVector& ActorRelativeScale, int SocketIndex, int InShift, int InSpacing, bool IsEnable, bool IsNormalized)
 {
@@ -296,7 +296,7 @@ void ARoadActor::UpdateSideActor(class UClass* InPrototype, const struct FVector
 // class USplineComponent*        SplineComponent                (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 // class UStaticMesh*             StaticMesh                     (Parm, ZeroConstructor, IsPlainOldData)
 // TEnumAsByte<ESplineMeshAxis>   InAxis                         (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B5912F0              		 offset:2ac12f0                       
+// FunctionAddress:0x00007FF75C6FF240              		 offset:2cff240                       
 
 void ARoadActor::UpdateSegment(int SegmentIndex, class USplineComponent* SplineComponent, class UStaticMesh* StaticMesh, TEnumAsByte<ESplineMeshAxis> InAxis)
 {
@@ -332,7 +332,7 @@ void ARoadActor::UpdateSegment(int SegmentIndex, class USplineComponent* SplineC
 // int                            InSpacing                      (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsEnable                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsNormalized                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B591040              		 offset:2ac1040                       
+// FunctionAddress:0x00007FF75C6FEF90              		 offset:2cfef90                       
 
 void ARoadActor::PushSideMesh(class UStaticMesh* InPrototype, const struct FVector& MeshRelativeLocation, const struct FRotator& MeshRelativeRotation, const struct FVector& MeshRelativeScale, int SocketIndex, int InShift, int InSpacing, bool IsEnable, bool IsNormalized)
 {
@@ -373,7 +373,7 @@ void ARoadActor::PushSideMesh(class UStaticMesh* InPrototype, const struct FVect
 // int                            InSpacing                      (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsEnable                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           IsNormalized                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B590B60              		 offset:2ac0b60                       
+// FunctionAddress:0x00007FF75C6FEAB0              		 offset:2cfeab0                       
 
 void ARoadActor::PushSideActor(class UClass* InPrototype, const struct FVector& ActorRelativeLocation, const struct FRotator& ActorRelativeRotation, const struct FVector& ActorRelativeScale, int SocketIndex, int InShift, int InSpacing, bool IsEnable, bool IsNormalized)
 {
@@ -414,7 +414,7 @@ void ARoadActor::PushSideActor(class UClass* InPrototype, const struct FVector& 
 // bool                           IsEnable                       (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           InStartEnable                  (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           InEndEnable                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B590690              		 offset:2ac0690                       
+// FunctionAddress:0x00007FF75C6FE5E0              		 offset:2cfe5e0                       
 
 void ARoadActor::PushCurbsMeshes(class UStaticMesh* InPrototype, class UStaticMesh* InStartPrototype, class UStaticMesh* InEndPrototype, const struct FVector& MeshRelativeLocation, const struct FVector& MeshRelativeScale, int SocketIndex, bool IsEnable, bool InStartEnable, bool InEndEnable)
 {
@@ -445,7 +445,7 @@ void ARoadActor::PushCurbsMeshes(class UStaticMesh* InPrototype, class UStaticMe
 
 // Function RoadRuntime.RoadActor.DestroySideObjects
 // (Final, Native, Public)
-// FunctionAddress:0x00007FF62B590670              		 offset:2ac0670                       
+// FunctionAddress:0x00007FF75C6FE5C0              		 offset:2cfe5c0                       
 
 void ARoadActor::DestroySideObjects()
 {
@@ -467,7 +467,7 @@ void ARoadActor::DestroySideObjects()
 
 // Function RoadRuntime.RoadActor.DestroySideCurbs
 // (Final, Native, Public)
-// FunctionAddress:0x00007FF62B590630              		 offset:2ac0630                       
+// FunctionAddress:0x00007FF75C6FE580              		 offset:2cfe580                       
 
 void ARoadActor::DestroySideCurbs()
 {
@@ -489,7 +489,7 @@ void ARoadActor::DestroySideCurbs()
 
 // Function RoadRuntime.RoadActor.ClearSplineMeshes
 // (Final, Native, Public)
-// FunctionAddress:0x00007FF62B590610              		 offset:2ac0610                       
+// FunctionAddress:0x00007FF75C6FE560              		 offset:2cfe560                       
 
 void ARoadActor::ClearSplineMeshes()
 {
@@ -517,7 +517,7 @@ void ARoadActor::ClearSplineMeshes()
 // float                          End                            (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 // int                            ApproxSections                 (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B590490              		 offset:2ac0490                       
+// FunctionAddress:0x00007FF75C6FE3E0              		 offset:2cfe3e0                       
 
 float ARoadActor::STATIC_ApproxLength(const struct FInterpCurveVector& SplineInfo, float Start, float End, int ApproxSections)
 {
@@ -547,7 +547,7 @@ float ARoadActor::STATIC_ApproxLength(const struct FInterpCurveVector& SplineInf
 // (Final, Native, Public)
 // Parameters:
 // int                            MeshIndex                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B590410              		 offset:2ac0410                       
+// FunctionAddress:0x00007FF75C6FE360              		 offset:2cfe360                       
 
 void ARoadActor::AddSplineMesh(int MeshIndex)
 {

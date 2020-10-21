@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,7 +14,7 @@ namespace SDK
 
 // Function PlayerCardStudioV2_Default.PlayerCardStudioV2_Default_C.UserConstructionScript
 // (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void APlayerCardStudioV2_Default_C::UserConstructionScript()
 {
@@ -35,7 +35,7 @@ void APlayerCardStudioV2_Default_C::UserConstructionScript()
 
 // Function PlayerCardStudioV2_Default.PlayerCardStudioV2_Default_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void APlayerCardStudioV2_Default_C::ReceiveBeginPlay()
 {
@@ -56,7 +56,7 @@ void APlayerCardStudioV2_Default_C::ReceiveBeginPlay()
 
 // Function PlayerCardStudioV2_Default.PlayerCardStudioV2_Default_C.ReceiveDestroyed
 // (Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void APlayerCardStudioV2_Default_C::ReceiveDestroyed()
 {
@@ -78,10 +78,10 @@ void APlayerCardStudioV2_Default_C::ReceiveDestroyed()
 // Function PlayerCardStudioV2_Default.PlayerCardStudioV2_Default_C.ExecuteUbergraph_PlayerCardStudioV2_Default
 // ()
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void APlayerCardStudioV2_Default_C::ExecuteUbergraph_PlayerCardStudioV2_Default(int* EntryPoint)
+void APlayerCardStudioV2_Default_C::ExecuteUbergraph_PlayerCardStudioV2_Default(int EntryPoint)
 {
 	static UFunction* fn;
 

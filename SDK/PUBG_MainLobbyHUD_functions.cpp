@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -16,7 +16,7 @@ namespace SDK
 // (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 bool UMainLobbyHUD_C::HasChildren()
 {
@@ -39,7 +39,7 @@ bool UMainLobbyHUD_C::HasChildren()
 
 // Function MainLobbyHUD.MainLobbyHUD_C.ToggleSystemMenu
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UMainLobbyHUD_C::ToggleSystemMenu()
 {
@@ -61,10 +61,10 @@ void UMainLobbyHUD_C::ToggleSystemMenu()
 // Function MainLobbyHUD.MainLobbyHUD_C.CloseWebPopupImpl
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString*                PopupId                        (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// struct FString                 PopupId                        (Parm, ZeroConstructor)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UMainLobbyHUD_C::CloseWebPopupImpl(struct FString* PopupId)
+void UMainLobbyHUD_C::CloseWebPopupImpl(const struct FString& PopupId)
 {
 	static UFunction* fn;
 
@@ -84,7 +84,7 @@ void UMainLobbyHUD_C::CloseWebPopupImpl(struct FString* PopupId)
 
 // Function MainLobbyHUD.MainLobbyHUD_C.HideCurtain
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UMainLobbyHUD_C::HideCurtain()
 {
@@ -105,7 +105,7 @@ void UMainLobbyHUD_C::HideCurtain()
 
 // Function MainLobbyHUD.MainLobbyHUD_C.ShowCurtain
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UMainLobbyHUD_C::ShowCurtain()
 {
@@ -126,7 +126,7 @@ void UMainLobbyHUD_C::ShowCurtain()
 
 // Function MainLobbyHUD.MainLobbyHUD_C.OnKey_LobbySystemMenu
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UMainLobbyHUD_C::OnKey_LobbySystemMenu()
 {
@@ -148,12 +148,12 @@ void UMainLobbyHUD_C::OnKey_LobbySystemMenu()
 // Function MainLobbyHUD.MainLobbyHUD_C.OnKeyDown
 // (BlueprintCosmetic, Event, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
-// struct FKeyEvent*              InKeyEvent                     (Parm)
+// struct FGeometry               MyGeometry                     (Parm, IsPlainOldData)
+// struct FKeyEvent               InKeyEvent                     (Parm)
 // struct FEventReply             ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-struct FEventReply UMainLobbyHUD_C::OnKeyDown(struct FGeometry* MyGeometry, struct FKeyEvent* InKeyEvent)
+struct FEventReply UMainLobbyHUD_C::OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent)
 {
 	static UFunction* fn;
 
@@ -177,10 +177,10 @@ struct FEventReply UMainLobbyHUD_C::OnKeyDown(struct FGeometry* MyGeometry, stru
 // Function MainLobbyHUD.MainLobbyHUD_C.OnPrepass_isShipping
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWidget**                BoundWidget                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// class UWidget*                 BoundWidget                    (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UMainLobbyHUD_C::OnPrepass_isShipping(class UWidget** BoundWidget)
+void UMainLobbyHUD_C::OnPrepass_isShipping(class UWidget* BoundWidget)
 {
 	static UFunction* fn;
 
@@ -201,10 +201,10 @@ void UMainLobbyHUD_C::OnPrepass_isShipping(class UWidget** BoundWidget)
 // Function MainLobbyHUD.MainLobbyHUD_C.CleanUpNameTagWidget
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int*                           SlotIndex                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            SlotIndex                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UMainLobbyHUD_C::CleanUpNameTagWidget(int* SlotIndex)
+void UMainLobbyHUD_C::CleanUpNameTagWidget(int SlotIndex)
 {
 	static UFunction* fn;
 
@@ -225,10 +225,10 @@ void UMainLobbyHUD_C::CleanUpNameTagWidget(int* SlotIndex)
 // Function MainLobbyHUD.MainLobbyHUD_C.SetupNameTagWidget
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int*                           SlotIndex                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            SlotIndex                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UMainLobbyHUD_C::SetupNameTagWidget(int* SlotIndex)
+void UMainLobbyHUD_C::SetupNameTagWidget(int SlotIndex)
 {
 	static UFunction* fn;
 
@@ -249,11 +249,11 @@ void UMainLobbyHUD_C::SetupNameTagWidget(int* SlotIndex)
 // Function MainLobbyHUD.MainLobbyHUD_C.GetNameTagWidget
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int*                           SlotIndex                      (Parm, ZeroConstructor, IsPlainOldData)
+// int                            SlotIndex                      (Parm, ZeroConstructor, IsPlainOldData)
 // class UTslLobbyNameTagWidget*  Widget                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UMainLobbyHUD_C::GetNameTagWidget(int* SlotIndex, class UTslLobbyNameTagWidget** Widget)
+void UMainLobbyHUD_C::GetNameTagWidget(int SlotIndex, class UTslLobbyNameTagWidget** Widget)
 {
 	static UFunction* fn;
 
@@ -277,10 +277,10 @@ void UMainLobbyHUD_C::GetNameTagWidget(int* SlotIndex, class UTslLobbyNameTagWid
 // Function MainLobbyHUD.MainLobbyHUD_C.OnDestroyCharacter
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int*                           SlotIndex                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            SlotIndex                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UMainLobbyHUD_C::OnDestroyCharacter(int* SlotIndex)
+void UMainLobbyHUD_C::OnDestroyCharacter(int SlotIndex)
 {
 	static UFunction* fn;
 
@@ -301,10 +301,10 @@ void UMainLobbyHUD_C::OnDestroyCharacter(int* SlotIndex)
 // Function MainLobbyHUD.MainLobbyHUD_C.OnCreateCharacter
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int*                           SlotIndex                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            SlotIndex                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UMainLobbyHUD_C::OnCreateCharacter(int* SlotIndex)
+void UMainLobbyHUD_C::OnCreateCharacter(int SlotIndex)
 {
 	static UFunction* fn;
 
@@ -325,10 +325,10 @@ void UMainLobbyHUD_C::OnCreateCharacter(int* SlotIndex)
 // Function MainLobbyHUD.MainLobbyHUD_C.CloseWebPopupByID
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString*                WebPopupID                     (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// struct FString                 WebPopupID                     (Parm, ZeroConstructor)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UMainLobbyHUD_C::CloseWebPopupByID(struct FString* WebPopupID)
+void UMainLobbyHUD_C::CloseWebPopupByID(const struct FString& WebPopupID)
 {
 	static UFunction* fn;
 
@@ -349,10 +349,10 @@ void UMainLobbyHUD_C::CloseWebPopupByID(struct FString* WebPopupID)
 // Function MainLobbyHUD.MainLobbyHUD_C.RemoveWebPopup
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWebPopup_C**            Widget                         (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// class UWebPopup_C*             Widget                         (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UMainLobbyHUD_C::RemoveWebPopup(class UWebPopup_C** Widget)
+void UMainLobbyHUD_C::RemoveWebPopup(class UWebPopup_C* Widget)
 {
 	static UFunction* fn;
 
@@ -373,10 +373,10 @@ void UMainLobbyHUD_C::RemoveWebPopup(class UWebPopup_C** Widget)
 // Function MainLobbyHUD.MainLobbyHUD_C.AddWebPopup
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWebPopup_C**            Widget                         (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// class UWebPopup_C*             Widget                         (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UMainLobbyHUD_C::AddWebPopup(class UWebPopup_C** Widget)
+void UMainLobbyHUD_C::AddWebPopup(class UWebPopup_C* Widget)
 {
 	static UFunction* fn;
 
@@ -397,11 +397,11 @@ void UMainLobbyHUD_C::AddWebPopup(class UWebPopup_C** Widget)
 // Function MainLobbyHUD.MainLobbyHUD_C.CanShowWebPopup
 // (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString*                PopupId                        (Parm, ZeroConstructor)
+// struct FString                 PopupId                        (Parm, ZeroConstructor)
 // bool                           Result                         (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UMainLobbyHUD_C::CanShowWebPopup(struct FString* PopupId, bool* Result)
+void UMainLobbyHUD_C::CanShowWebPopup(const struct FString& PopupId, bool* Result)
 {
 	static UFunction* fn;
 
@@ -425,10 +425,10 @@ void UMainLobbyHUD_C::CanShowWebPopup(struct FString* PopupId, bool* Result)
 // Function MainLobbyHUD.MainLobbyHUD_C.ShowWebPopupImpl
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FWebPopupParam*         Param                          (Parm)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// struct FWebPopupParam          Param                          (Parm)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UMainLobbyHUD_C::ShowWebPopupImpl(struct FWebPopupParam* Param)
+void UMainLobbyHUD_C::ShowWebPopupImpl(const struct FWebPopupParam& Param)
 {
 	static UFunction* fn;
 
@@ -448,7 +448,7 @@ void UMainLobbyHUD_C::ShowWebPopupImpl(struct FWebPopupParam* Param)
 
 // Function MainLobbyHUD.MainLobbyHUD_C.OnReload
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UMainLobbyHUD_C::OnReload()
 {
@@ -471,7 +471,7 @@ void UMainLobbyHUD_C::OnReload()
 // (Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UCoherentUIGTWidget*     Browser                        (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UMainLobbyHUD_C::GetMainCoherentWidget(class UCoherentUIGTWidget** Browser)
 {
@@ -495,7 +495,7 @@ void UMainLobbyHUD_C::GetMainCoherentWidget(class UCoherentUIGTWidget** Browser)
 
 // Function MainLobbyHUD.MainLobbyHUD_C.OnKey_SystemMenuOrEscape
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UMainLobbyHUD_C::OnKey_SystemMenuOrEscape()
 {
@@ -516,7 +516,7 @@ void UMainLobbyHUD_C::OnKey_SystemMenuOrEscape()
 
 // Function MainLobbyHUD.MainLobbyHUD_C.InitializeHUD
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UMainLobbyHUD_C::InitializeHUD()
 {
@@ -537,7 +537,7 @@ void UMainLobbyHUD_C::InitializeHUD()
 
 // Function MainLobbyHUD.MainLobbyHUD_C.BndEvt__Button_Setting_K2Node_ComponentBoundEvent_190_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UMainLobbyHUD_C::BndEvt__Button_Setting_K2Node_ComponentBoundEvent_190_OnButtonClickedEvent__DelegateSignature()
 {
@@ -558,7 +558,7 @@ void UMainLobbyHUD_C::BndEvt__Button_Setting_K2Node_ComponentBoundEvent_190_OnBu
 
 // Function MainLobbyHUD.MainLobbyHUD_C.BndEvt__Button_Reload_K2Node_ComponentBoundEvent_210_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UMainLobbyHUD_C::BndEvt__Button_Reload_K2Node_ComponentBoundEvent_210_OnButtonClickedEvent__DelegateSignature()
 {
@@ -579,7 +579,7 @@ void UMainLobbyHUD_C::BndEvt__Button_Reload_K2Node_ComponentBoundEvent_210_OnBut
 
 // Function MainLobbyHUD.MainLobbyHUD_C.BndEvt__Button_Quit_K2Node_ComponentBoundEvent_229_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UMainLobbyHUD_C::BndEvt__Button_Quit_K2Node_ComponentBoundEvent_229_OnButtonClickedEvent__DelegateSignature()
 {
@@ -601,10 +601,10 @@ void UMainLobbyHUD_C::BndEvt__Button_Quit_K2Node_ComponentBoundEvent_229_OnButto
 // Function MainLobbyHUD.MainLobbyHUD_C.ShowWebPopup
 // (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FWebPopupParam*         Param                          (ConstParm, Parm, OutParm, ReferenceParm)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// struct FWebPopupParam          Param                          (ConstParm, Parm, OutParm, ReferenceParm)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UMainLobbyHUD_C::ShowWebPopup(struct FWebPopupParam* Param)
+void UMainLobbyHUD_C::ShowWebPopup(const struct FWebPopupParam& Param)
 {
 	static UFunction* fn;
 
@@ -624,7 +624,7 @@ void UMainLobbyHUD_C::ShowWebPopup(struct FWebPopupParam* Param)
 
 // Function MainLobbyHUD.MainLobbyHUD_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UMainLobbyHUD_C::Construct()
 {
@@ -646,10 +646,10 @@ void UMainLobbyHUD_C::Construct()
 // Function MainLobbyHUD.MainLobbyHUD_C.PreloadWebPopup
 // (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<struct FWebPopupParam>* WebPopupParams                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// TArray<struct FWebPopupParam>  WebPopupParams                 (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UMainLobbyHUD_C::PreloadWebPopup(TArray<struct FWebPopupParam>* WebPopupParams)
+void UMainLobbyHUD_C::PreloadWebPopup(TArray<struct FWebPopupParam> WebPopupParams)
 {
 	static UFunction* fn;
 
@@ -669,7 +669,7 @@ void UMainLobbyHUD_C::PreloadWebPopup(TArray<struct FWebPopupParam>* WebPopupPar
 
 // Function MainLobbyHUD.MainLobbyHUD_C.BndEvt__Button_0_K2Node_ComponentBoundEvent_35_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UMainLobbyHUD_C::BndEvt__Button_0_K2Node_ComponentBoundEvent_35_OnButtonClickedEvent__DelegateSignature()
 {
@@ -690,7 +690,7 @@ void UMainLobbyHUD_C::BndEvt__Button_0_K2Node_ComponentBoundEvent_35_OnButtonCli
 
 // Function MainLobbyHUD.MainLobbyHUD_C.BndEvt__Button_NewSystemMenu_K2Node_ComponentBoundEvent_90_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UMainLobbyHUD_C::BndEvt__Button_NewSystemMenu_K2Node_ComponentBoundEvent_90_OnButtonClickedEvent__DelegateSignature()
 {
@@ -712,10 +712,10 @@ void UMainLobbyHUD_C::BndEvt__Button_NewSystemMenu_K2Node_ComponentBoundEvent_90
 // Function MainLobbyHUD.MainLobbyHUD_C.CloseWebPopup
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString*                PopupId                        (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// struct FString                 PopupId                        (Parm, ZeroConstructor)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UMainLobbyHUD_C::CloseWebPopup(struct FString* PopupId)
+void UMainLobbyHUD_C::CloseWebPopup(const struct FString& PopupId)
 {
 	static UFunction* fn;
 
@@ -735,7 +735,7 @@ void UMainLobbyHUD_C::CloseWebPopup(struct FString* PopupId)
 
 // Function MainLobbyHUD.MainLobbyHUD_C.InitializeMainUMGHUD
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UMainLobbyHUD_C::InitializeMainUMGHUD()
 {
@@ -757,10 +757,10 @@ void UMainLobbyHUD_C::InitializeMainUMGHUD()
 // Function MainLobbyHUD.MainLobbyHUD_C.ExecuteUbergraph_MainLobbyHUD
 // (HasDefaults)
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UMainLobbyHUD_C::ExecuteUbergraph_MainLobbyHUD(int* EntryPoint)
+void UMainLobbyHUD_C::ExecuteUbergraph_MainLobbyHUD(int EntryPoint)
 {
 	static UFunction* fn;
 

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -29,6 +29,19 @@ public:
 		return ptr;
 	}
 
+
+	void UnBindFakeCursor();
+	bool SetFakeMouseMouseButtonUp(const struct FVector2D& InCursorPositionInViewport);
+	bool SetFakeMouseMouseButtonDown(const struct FVector2D& InCursorPositionInViewport);
+	void RuntimeInitBP();
+	void OnFakeCursorY(float Val);
+	void OnFakeCursorX(float Val);
+	void OnFakeCursorUp();
+	void OnFakeCursorDown();
+	bool IsMouseOn();
+	void HandleMainPrepass(class UWidget* Widget);
+	bool CheckWantRequestRender();
+	void BindFakeCursor();
 };
 
 

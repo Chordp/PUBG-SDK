@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,11 +15,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass FBPBuff_GetBoostOnDeal.FBPBuff_GetBoostOnDeal_C
-// 0x0008 (0x04A0 - 0x0498)
+// 0x0008 (0x04B0 - 0x04A8)
 class AFBPBuff_GetBoostOnDeal_C : public ATslFBRBuff
 {
 public:
-	class USceneComponent*                             DefaultSceneRoot;                                         // 0x0498(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class USceneComponent*                             DefaultSceneRoot;                                         // 0x04A8(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
@@ -30,8 +30,6 @@ public:
 		return ptr;
 	}
 
-
-	void UserConstructionScript();
 };
 
 

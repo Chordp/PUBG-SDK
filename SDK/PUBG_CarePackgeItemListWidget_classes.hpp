@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -54,13 +54,13 @@ public:
 	void SetCarePackgeItemList();
 	void GetCarePackageItemIcons();
 	void HideCarePackageItemList();
-	void GetCarePackageItemWidget(class UTexture** ItemIcon, struct FText* ItemName, int* ItemCount, class UCarePackageItemSlotWidget_C** CarePackageItemSlotWidget);
+	void GetCarePackageItemWidget(class UTexture* ItemIcon, const struct FText& ItemName, int ItemCount, class UCarePackageItemSlotWidget_C** CarePackageItemSlotWidget);
 	void ShowCarePackageItemList();
 	void Construct();
 	void ShowCarePackageItem();
 	void CustomTick();
 	void TimerCheckUpdateList();
-	void ExecuteUbergraph_CarePackgeItemListWidget(int* EntryPoint);
+	void ExecuteUbergraph_CarePackgeItemListWidget(int EntryPoint);
 	void EventDispatcher_ShowCarePackageItem__DelegateSignature();
 };
 

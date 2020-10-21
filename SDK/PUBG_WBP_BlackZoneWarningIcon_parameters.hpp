@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -28,7 +28,7 @@ struct UWBP_BlackZoneWarningIcon_C_Construct_Params
 // Function WBP_BlackZoneWarningIcon.WBP_BlackZoneWarningIcon_C.ExecuteUbergraph_WBP_BlackZoneWarningIcon
 struct UWBP_BlackZoneWarningIcon_C_ExecuteUbergraph_WBP_BlackZoneWarningIcon_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

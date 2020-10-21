@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -37,16 +37,16 @@ public:
 	}
 
 
-	void SetHUD(class ATslHUD** inHUD);
+	void SetHUD(class ATslHUD* inHUD);
 	void GotoReplayList(EPopupButtonID ButtonID);
-	void QuitReplay(EPopupButtonID* ButtonID);
+	void QuitReplay(EPopupButtonID ButtonID);
 	void BndEvt__Button_ReplayList_K2Node_ComponentBoundEvent_210_OnButtonClickedEvent__DelegateSignature();
 	void BndEvt__Button_Exit_K2Node_ComponentBoundEvent_228_OnButtonClickedEvent__DelegateSignature();
 	void BndEvt__Button_Resume_K2Node_ComponentBoundEvent_247_OnButtonClickedEvent__DelegateSignature();
 	void HidePopupWidgetForReplay();
 	void OpenReplayListMap();
 	void BndEvt__Button_Option_K2Node_ComponentBoundEvent_68_OnButtonClickedEvent__DelegateSignature();
-	void ExecuteUbergraph_InGameReplayMenu(int* EntryPoint);
+	void ExecuteUbergraph_InGameReplayMenu(int EntryPoint);
 };
 
 

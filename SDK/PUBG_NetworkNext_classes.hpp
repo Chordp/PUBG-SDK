@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -29,12 +29,6 @@ public:
 		return ptr;
 	}
 
-
-	void STATIC_UpgradePlayer(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FString& UserId, ENetworkNextPlatformType Platform, const struct FString& Tag);
-	void STATIC_SetServerConfig(const struct FNetworkNextServerConfig& ServerConfig);
-	void STATIC_SetConfig(const struct FNetworkNextConfig& Config);
-	struct FNetworkNextClientStats STATIC_GetClientStats(class UObject* WorldContextObject);
-	struct FString STATIC_GetClientSessionId(class UObject* WorldContextObject);
 };
 
 

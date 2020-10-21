@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,10 +15,10 @@ namespace SDK
 // Function LobbyHUD_Default.LobbyHUD_Default_C.ChangeScene
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString*                PoseId                         (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// struct FString                 PoseId                         (Parm, ZeroConstructor)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void ALobbyHUD_Default_C::ChangeScene(struct FString* PoseId)
+void ALobbyHUD_Default_C::ChangeScene(const struct FString& PoseId)
 {
 	static UFunction* fn;
 
@@ -39,11 +39,11 @@ void ALobbyHUD_Default_C::ChangeScene(struct FString* PoseId)
 // Function LobbyHUD_Default.LobbyHUD_Default_C.ShowPoseActor
 // (Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString*                SourceString                   (Parm, ZeroConstructor)
+// struct FString                 SourceString                   (Parm, ZeroConstructor)
 // TArray<struct FString>         SkinIDs                        (Parm, OutParm, ZeroConstructor, ReferenceParm)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void ALobbyHUD_Default_C::ShowPoseActor(struct FString* SourceString, TArray<struct FString>* SkinIDs)
+void ALobbyHUD_Default_C::ShowPoseActor(const struct FString& SourceString, TArray<struct FString>* SkinIDs)
 {
 	static UFunction* fn;
 
@@ -66,7 +66,7 @@ void ALobbyHUD_Default_C::ShowPoseActor(struct FString* SourceString, TArray<str
 
 // Function LobbyHUD_Default.LobbyHUD_Default_C.DestroyPoseActor
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ALobbyHUD_Default_C::DestroyPoseActor()
 {
@@ -87,7 +87,7 @@ void ALobbyHUD_Default_C::DestroyPoseActor()
 
 // Function LobbyHUD_Default.LobbyHUD_Default_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ALobbyHUD_Default_C::UserConstructionScript()
 {
@@ -108,7 +108,7 @@ void ALobbyHUD_Default_C::UserConstructionScript()
 
 // Function LobbyHUD_Default.LobbyHUD_Default_C.HideMasteryPose
 // (Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ALobbyHUD_Default_C::HideMasteryPose()
 {
@@ -130,11 +130,11 @@ void ALobbyHUD_Default_C::HideMasteryPose()
 // Function LobbyHUD_Default.LobbyHUD_Default_C.ShowMasteryPose
 // (Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
-// struct FString*                PoseId                         (Parm, ZeroConstructor)
-// TArray<struct FString>*        ItemIds                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// struct FString                 PoseId                         (Parm, ZeroConstructor)
+// TArray<struct FString>         ItemIDs                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void ALobbyHUD_Default_C::ShowMasteryPose(struct FString* PoseId, TArray<struct FString>* ItemIds)
+void ALobbyHUD_Default_C::ShowMasteryPose(const struct FString& PoseId, TArray<struct FString> ItemIDs)
 {
 	static UFunction* fn;
 
@@ -143,7 +143,7 @@ void ALobbyHUD_Default_C::ShowMasteryPose(struct FString* PoseId, TArray<struct 
 
 	ALobbyHUD_Default_C_ShowMasteryPose_Params params;
 	params.PoseId = PoseId;
-	params.ItemIds = ItemIds;
+	params.ItemIDs = ItemIDs;
 
 	auto flags = fn->FunctionFlags;
 
@@ -155,7 +155,7 @@ void ALobbyHUD_Default_C::ShowMasteryPose(struct FString* PoseId, TArray<struct 
 
 // Function LobbyHUD_Default.LobbyHUD_Default_C.ReceivePostBeginPlay
 // (Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ALobbyHUD_Default_C::ReceivePostBeginPlay()
 {
@@ -177,10 +177,10 @@ void ALobbyHUD_Default_C::ReceivePostBeginPlay()
 // Function LobbyHUD_Default.LobbyHUD_Default_C.ExecuteUbergraph_LobbyHUD_Default
 // ()
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void ALobbyHUD_Default_C::ExecuteUbergraph_LobbyHUD_Default(int* EntryPoint)
+void ALobbyHUD_Default_C::ExecuteUbergraph_LobbyHUD_Default(int EntryPoint)
 {
 	static UFunction* fn;
 

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass JerryCan_Explosion.JerryCan_Explosion_C
-// 0x0000 (0x0C58 - 0x0C58)
+// 0x0000 (0x0C68 - 0x0C68)
 class AJerryCan_Explosion_C : public ATslExplosionEffect
 {
 public:
@@ -29,6 +29,8 @@ public:
 		return ptr;
 	}
 
+
+	void OnParticleCollide(const struct FName& EventName, float EmitterTime, int ParticleTime, const struct FVector& Location, const struct FVector& Velocity, const struct FVector& Direction, const struct FVector& Normal, const struct FName& BoneName);
 };
 
 

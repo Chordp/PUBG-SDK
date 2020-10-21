@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,6 +13,17 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Parameters
 //---------------------------------------------------------------------------
+
+// Function TslGame.MapPlayerStartWidget.OnRespawnButtonDown
+struct UMapPlayerStartWidgetBP_C_OnRespawnButtonDown_Params
+{
+};
+
+// Function TslGame.MapPlayerStartWidget.OnPlayerRespawnSpotChanged
+struct UMapPlayerStartWidgetBP_C_OnPlayerRespawnSpotChanged_Params
+{
+	struct FName                                       RespawnSpotName;                                          // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
+};
 
 }
 

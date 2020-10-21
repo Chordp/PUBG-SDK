@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,11 +15,11 @@ namespace SDK
 // Function BP_PcOptionItemDropDownListWidget.BP_PcOptionItemDropDownListWidget_C.BndEvt__ComboBox_K2Node_ComponentBoundEvent_21_OnSelectionChangedEvent__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// struct FString*                SelectedItem                   (Parm, ZeroConstructor)
-// TEnumAsByte<ESelectInfo>*      SelectionType                  (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// struct FString                 SelectedItem                   (Parm, ZeroConstructor)
+// TEnumAsByte<ESelectInfo>       SelectionType                  (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UBP_PcOptionItemDropDownListWidget_C::BndEvt__ComboBox_K2Node_ComponentBoundEvent_21_OnSelectionChangedEvent__DelegateSignature(struct FString* SelectedItem, TEnumAsByte<ESelectInfo>* SelectionType)
+void UBP_PcOptionItemDropDownListWidget_C::BndEvt__ComboBox_K2Node_ComponentBoundEvent_21_OnSelectionChangedEvent__DelegateSignature(const struct FString& SelectedItem, TEnumAsByte<ESelectInfo> SelectionType)
 {
 	static UFunction* fn;
 
@@ -41,10 +41,10 @@ void UBP_PcOptionItemDropDownListWidget_C::BndEvt__ComboBox_K2Node_ComponentBoun
 // Function BP_PcOptionItemDropDownListWidget.BP_PcOptionItemDropDownListWidget_C.ExecuteUbergraph_BP_PcOptionItemDropDownListWidget
 // ()
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UBP_PcOptionItemDropDownListWidget_C::ExecuteUbergraph_BP_PcOptionItemDropDownListWidget(int* EntryPoint)
+void UBP_PcOptionItemDropDownListWidget_C::ExecuteUbergraph_BP_PcOptionItemDropDownListWidget(int EntryPoint)
 {
 	static UFunction* fn;
 
@@ -65,11 +65,11 @@ void UBP_PcOptionItemDropDownListWidget_C::ExecuteUbergraph_BP_PcOptionItemDropD
 // Function BP_PcOptionItemDropDownListWidget.BP_PcOptionItemDropDownListWidget_C.OnSelectionChanged__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FString*                KeyStr                         (Parm, ZeroConstructor)
-// TEnumAsByte<ESelectInfo>*      SelectionType                  (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// struct FString                 KeyStr                         (Parm, ZeroConstructor)
+// TEnumAsByte<ESelectInfo>       SelectionType                  (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UBP_PcOptionItemDropDownListWidget_C::OnSelectionChanged__DelegateSignature(struct FString* KeyStr, TEnumAsByte<ESelectInfo>* SelectionType)
+void UBP_PcOptionItemDropDownListWidget_C::OnSelectionChanged__DelegateSignature(const struct FString& KeyStr, TEnumAsByte<ESelectInfo> SelectionType)
 {
 	static UFunction* fn;
 

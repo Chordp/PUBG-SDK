@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,7 +14,7 @@ namespace SDK
 
 // Function BP_TslBaseLobbySceneTravel_FadeInOut.BP_TslBaseLobbySceneTravel_FadeInOut_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABP_TslBaseLobbySceneTravel_FadeInOut_C::UserConstructionScript()
 {
@@ -35,7 +35,7 @@ void ABP_TslBaseLobbySceneTravel_FadeInOut_C::UserConstructionScript()
 
 // Function BP_TslBaseLobbySceneTravel_FadeInOut.BP_TslBaseLobbySceneTravel_FadeInOut_C.FadeInOut__FinishedFunc
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABP_TslBaseLobbySceneTravel_FadeInOut_C::FadeInOut__FinishedFunc()
 {
@@ -56,7 +56,7 @@ void ABP_TslBaseLobbySceneTravel_FadeInOut_C::FadeInOut__FinishedFunc()
 
 // Function BP_TslBaseLobbySceneTravel_FadeInOut.BP_TslBaseLobbySceneTravel_FadeInOut_C.FadeInOut__UpdateFunc
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABP_TslBaseLobbySceneTravel_FadeInOut_C::FadeInOut__UpdateFunc()
 {
@@ -77,7 +77,7 @@ void ABP_TslBaseLobbySceneTravel_FadeInOut_C::FadeInOut__UpdateFunc()
 
 // Function BP_TslBaseLobbySceneTravel_FadeInOut.BP_TslBaseLobbySceneTravel_FadeInOut_C.FadeIn__FinishedFunc
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABP_TslBaseLobbySceneTravel_FadeInOut_C::FadeIn__FinishedFunc()
 {
@@ -98,7 +98,7 @@ void ABP_TslBaseLobbySceneTravel_FadeInOut_C::FadeIn__FinishedFunc()
 
 // Function BP_TslBaseLobbySceneTravel_FadeInOut.BP_TslBaseLobbySceneTravel_FadeInOut_C.FadeIn__UpdateFunc
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABP_TslBaseLobbySceneTravel_FadeInOut_C::FadeIn__UpdateFunc()
 {
@@ -119,7 +119,7 @@ void ABP_TslBaseLobbySceneTravel_FadeInOut_C::FadeIn__UpdateFunc()
 
 // Function BP_TslBaseLobbySceneTravel_FadeInOut.BP_TslBaseLobbySceneTravel_FadeInOut_C.FadeOut__FinishedFunc
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABP_TslBaseLobbySceneTravel_FadeInOut_C::FadeOut__FinishedFunc()
 {
@@ -140,7 +140,7 @@ void ABP_TslBaseLobbySceneTravel_FadeInOut_C::FadeOut__FinishedFunc()
 
 // Function BP_TslBaseLobbySceneTravel_FadeInOut.BP_TslBaseLobbySceneTravel_FadeInOut_C.FadeOut__UpdateFunc
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABP_TslBaseLobbySceneTravel_FadeInOut_C::FadeOut__UpdateFunc()
 {
@@ -161,7 +161,7 @@ void ABP_TslBaseLobbySceneTravel_FadeInOut_C::FadeOut__UpdateFunc()
 
 // Function BP_TslBaseLobbySceneTravel_FadeInOut.BP_TslBaseLobbySceneTravel_FadeInOut_C.OnStartTravel
 // (Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABP_TslBaseLobbySceneTravel_FadeInOut_C::OnStartTravel()
 {
@@ -184,7 +184,7 @@ void ABP_TslBaseLobbySceneTravel_FadeInOut_C::OnStartTravel()
 // (Event, Public, BlueprintEvent)
 // Parameters:
 // TEnumAsByte<EEndPlayReason>    EndPlayReason                  (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABP_TslBaseLobbySceneTravel_FadeInOut_C::ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason)
 {
@@ -207,10 +207,10 @@ void ABP_TslBaseLobbySceneTravel_FadeInOut_C::ReceiveEndPlay(TEnumAsByte<EEndPla
 // Function BP_TslBaseLobbySceneTravel_FadeInOut.BP_TslBaseLobbySceneTravel_FadeInOut_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// float*                         DeltaSeconds                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// float                          DeltaSeconds                   (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void ABP_TslBaseLobbySceneTravel_FadeInOut_C::ReceiveTick(float* DeltaSeconds)
+void ABP_TslBaseLobbySceneTravel_FadeInOut_C::ReceiveTick(float DeltaSeconds)
 {
 	static UFunction* fn;
 
@@ -231,10 +231,10 @@ void ABP_TslBaseLobbySceneTravel_FadeInOut_C::ReceiveTick(float* DeltaSeconds)
 // Function BP_TslBaseLobbySceneTravel_FadeInOut.BP_TslBaseLobbySceneTravel_FadeInOut_C.ExecuteUbergraph_BP_TslBaseLobbySceneTravel_FadeInOut
 // ()
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void ABP_TslBaseLobbySceneTravel_FadeInOut_C::ExecuteUbergraph_BP_TslBaseLobbySceneTravel_FadeInOut(int* EntryPoint)
+void ABP_TslBaseLobbySceneTravel_FadeInOut_C::ExecuteUbergraph_BP_TslBaseLobbySceneTravel_FadeInOut(int EntryPoint)
 {
 	static UFunction* fn;
 

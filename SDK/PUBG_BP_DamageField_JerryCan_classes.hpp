@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_DamageField_JerryCan.BP_DamageField_JerryCan_C
-// 0x0000 (0x0498 - 0x0498)
+// 0x0000 (0x04A8 - 0x04A8)
 class ABP_DamageField_JerryCan_C : public ATslDamageField
 {
 public:
@@ -30,7 +30,8 @@ public:
 	}
 
 
-	void UserConstructionScript();
+	void OnFieldDestroyed(class AActor* DestroyedActor);
+	void OnCollision(const struct FSimpleCollisionEvent& Event);
 };
 
 

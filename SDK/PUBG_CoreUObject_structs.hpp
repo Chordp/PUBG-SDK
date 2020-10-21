@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -187,7 +187,8 @@ enum class EPixelFormat : uint8_t
 	PF_R8_UINT                     = 57,
 	PF_L8                          = 58,
 	PF_XGXR8                       = 59,
-	PF_MAX                         = 60
+	PF_R32G32_UINT                 = 60,
+	PF_MAX                         = 61
 };
 
 
@@ -424,6 +425,14 @@ struct FIntPoint
 	int                                                Y;                                                        // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData)
 };
 
+// ScriptStruct CoreUObject.IntRect
+// 0x0010
+struct FIntRect
+{
+	struct FIntPoint                                   Min;                                                      // 0x0000(0x0008) (Edit, BlueprintVisible, SaveGame, IsPlainOldData)
+	struct FIntPoint                                   Max;                                                      // 0x0008(0x0008) (Edit, BlueprintVisible, SaveGame, IsPlainOldData)
+};
+
 // ScriptStruct CoreUObject.IntVector
 // 0x000C
 struct FIntVector
@@ -431,6 +440,16 @@ struct FIntVector
 	int                                                X;                                                        // 0x0000(0x0004) (Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData)
 	int                                                Y;                                                        // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData)
 	int                                                Z;                                                        // 0x0008(0x0004) (Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData)
+};
+
+// ScriptStruct CoreUObject.IntVector4
+// 0x0010
+struct FIntVector4
+{
+	int                                                X;                                                        // 0x0000(0x0004) (Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData)
+	int                                                Y;                                                        // 0x0004(0x0004) (Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData)
+	int                                                Z;                                                        // 0x0008(0x0004) (Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData)
+	int                                                W;                                                        // 0x000C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData)
 };
 
 // ScriptStruct CoreUObject.Color
@@ -692,7 +711,7 @@ struct FStringAssetReference
 // 0x0000 (0x0010 - 0x0010)
 struct FStringClassReference : public FStringAssetReference
 {
-
+	struct FString                                     AssetLongPathname;                                        // 0x0000(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
 };
 
 // ScriptStruct CoreUObject.PrimaryAssetType

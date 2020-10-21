@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -129,131 +129,6 @@ struct USubstanceGraphInstance_GetFloatInputDesc_Params
 struct USubstanceTexture2D_GetChannel_Params
 {
 	TEnumAsByte<ESubChannelType>                       ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function SubstanceCore.SubstanceUtility.SyncRendering
-struct USubstanceUtility_SyncRendering_Params
-{
-	class USubstanceGraphInstance*                     InstancesToRender;                                        // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function SubstanceCore.SubstanceUtility.SetGraphInstanceOutputSizeInt
-struct USubstanceUtility_SetGraphInstanceOutputSizeInt_Params
-{
-	class USubstanceGraphInstance*                     GraphInstance;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	int                                                Width;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	int                                                Height;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function SubstanceCore.SubstanceUtility.SetGraphInstanceOutputSize
-struct USubstanceUtility_SetGraphInstanceOutputSize_Params
-{
-	class USubstanceGraphInstance*                     GraphInstance;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESubstanceTextureSize>                 Width;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ESubstanceTextureSize>                 Height;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function SubstanceCore.SubstanceUtility.ResetInputParameters
-struct USubstanceUtility_ResetInputParameters_Params
-{
-	class USubstanceGraphInstance*                     GraphInstance;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function SubstanceCore.SubstanceUtility.GetSubstanceTextures
-struct USubstanceUtility_GetSubstanceTextures_Params
-{
-	class USubstanceGraphInstance*                     GraphInstance;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<class USubstanceTexture2D*>                 ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
-};
-
-// Function SubstanceCore.SubstanceUtility.GetSubstances
-struct USubstanceUtility_GetSubstances_Params
-{
-	class UMaterialInterface*                          Material;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<class USubstanceGraphInstance*>             ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
-};
-
-// Function SubstanceCore.SubstanceUtility.GetSubstanceLoadingProgress
-struct USubstanceUtility_GetSubstanceLoadingProgress_Params
-{
-	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function SubstanceCore.SubstanceUtility.GetGraphName
-struct USubstanceUtility_GetGraphName_Params
-{
-	class USubstanceGraphInstance*                     GraphInstance;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
-};
-
-// Function SubstanceCore.SubstanceUtility.GetFactoryName
-struct USubstanceUtility_GetFactoryName_Params
-{
-	class USubstanceGraphInstance*                     GraphInstance;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
-};
-
-// Function SubstanceCore.SubstanceUtility.EnableInstanceOutputs
-struct USubstanceUtility_EnableInstanceOutputs_Params
-{
-	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	class USubstanceGraphInstance*                     GraphInstance;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<int>                                        OutputIndices;                                            // (Parm, ZeroConstructor)
-};
-
-// Function SubstanceCore.SubstanceUtility.DuplicateGraphInstance
-struct USubstanceUtility_DuplicateGraphInstance_Params
-{
-	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	class USubstanceGraphInstance*                     GraphInstance;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	class USubstanceGraphInstance*                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function SubstanceCore.SubstanceUtility.DisableInstanceOutputs
-struct USubstanceUtility_DisableInstanceOutputs_Params
-{
-	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	class USubstanceGraphInstance*                     GraphInstance;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<int>                                        OutputIndices;                                            // (Parm, ZeroConstructor)
-};
-
-// Function SubstanceCore.SubstanceUtility.CreateGraphInstance
-struct USubstanceUtility_CreateGraphInstance_Params
-{
-	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	class USubstanceInstanceFactory*                   Factory;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	int                                                GraphDescIndex;                                           // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FString                                     InstanceName;                                             // (Parm, ZeroConstructor)
-	class USubstanceGraphInstance*                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function SubstanceCore.SubstanceUtility.CreateAggregateSubstanceFactory
-struct USubstanceUtility_CreateAggregateSubstanceFactory_Params
-{
-	class USubstanceInstanceFactory*                   OutputFactory;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	int                                                OutputFactoryGraphIndex;                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	class USubstanceInstanceFactory*                   InputFactory;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	int                                                InputFactoryGraphIndex;                                   // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<struct FSubstanceConnection>                Connections;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	class USubstanceInstanceFactory*                   ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function SubstanceCore.SubstanceUtility.CopyInputParameters
-struct USubstanceUtility_CopyInputParameters_Params
-{
-	class USubstanceGraphInstance*                     SourceGraphInstance;                                      // (Parm, ZeroConstructor, IsPlainOldData)
-	class USubstanceGraphInstance*                     DestGraphInstance;                                        // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function SubstanceCore.SubstanceUtility.ClearCache
-struct USubstanceUtility_ClearCache_Params
-{
-};
-
-// Function SubstanceCore.SubstanceUtility.AsyncRendering
-struct USubstanceUtility_AsyncRendering_Params
-{
-	class USubstanceGraphInstance*                     InstancesToRender;                                        // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

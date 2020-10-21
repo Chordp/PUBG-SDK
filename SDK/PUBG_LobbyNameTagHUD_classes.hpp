@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -30,9 +30,11 @@ public:
 	}
 
 
-	void CleanUpNameTagWidget(int* SlotIndex);
-	void SetupNameTagWidget(int* SlotIndex);
-	void GetNameTagWidget(int* SlotIndex, class UTslLobbyNameTagWidget** Widget);
+	void UpdateNameTagWidget_Internal(int SlotIndex);
+	void UpdateNameTag(int SlotIndex);
+	void SetNameTagWidget_Internal(int SlotIndex);
+	void ResetNameTagWidget_Internal(int SlotIndex);
+	class UTslLobbyNameTagWidget* GetNameTagWidget_Internal(int SlotIndex);
 };
 
 

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,13 +17,13 @@ namespace SDK
 // Function ReplayList_BP.ReplayList_BP_C.OnUpdateItem
 struct AReplayList_BP_C_OnUpdateItem_Params
 {
-	struct FReplayItem*                                inReplayItem;                                             // (Parm)
+	struct FReplayItem                                 inReplayItem;                                             // (Parm)
 };
 
 // Function ReplayList_BP.ReplayList_BP_C.UpdateReplayList
 struct AReplayList_BP_C_UpdateReplayList_Params
 {
-	struct FString*                                    inRegionOrLocal;                                          // (Parm, ZeroConstructor)
+	struct FString                                     inRegionOrLocal;                                          // (Parm, ZeroConstructor)
 };
 
 // Function ReplayList_BP.ReplayList_BP_C.CheckReplayBusyStatus
@@ -85,14 +85,14 @@ struct AReplayList_BP_C_GoPageEvent_Params
 // Function ReplayList_BP.ReplayList_BP_C.OnItemClicked
 struct AReplayList_BP_C_OnItemClicked_Params
 {
-	struct FString*                                    RegionOrLocal;                                            // (Parm, ZeroConstructor)
-	struct FReplayItem*                                inReplayItem;                                             // (Parm)
+	struct FString                                     RegionOrLocal;                                            // (Parm, ZeroConstructor)
+	struct FReplayItem                                 inReplayItem;                                             // (Parm)
 };
 
 // Function ReplayList_BP.ReplayList_BP_C.ExecuteUbergraph_ReplayList_BP
 struct AReplayList_BP_C_ExecuteUbergraph_ReplayList_BP_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

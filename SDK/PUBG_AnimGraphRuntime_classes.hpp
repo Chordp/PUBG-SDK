@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -67,6 +67,71 @@ public:
 		return ptr;
 	}
 
+
+	void UnlockAIResources(bool bUnlockMovement, bool UnlockAILogic);
+	class APawn* TryGetPawnOwner();
+	void StopSlotAnimation(float inBlendOutTime, const struct FName& SlotNodeName);
+	void SnapshotPose(struct FPoseSnapshot* Snapshot);
+	void SetRootMotionMode(TEnumAsByte<ERootMotionMode> Value);
+	void SetMorphTarget(const struct FName& MorphTargetName, float Value);
+	void SavePoseSnapshot(const struct FName& SnapshotName);
+	class UAnimMontage* PlaySlotAnimationAsDynamicMontage(class UAnimSequenceBase* Asset, const struct FName& SlotNodeName, float BlendInTime, float BlendOutTime, float InPlayRate, int LoopCount, float BlendOutTriggerTime, float InTimeToStartMontageAt);
+	float PlaySlotAnimation(class UAnimSequenceBase* Asset, const struct FName& SlotNodeName, float BlendInTime, float BlendOutTime, float InPlayRate, int LoopCount);
+	void Montage_Stop(float inBlendOutTime, class UAnimMontage* Montage);
+	void Montage_SetPosition(class UAnimMontage* Montage, float NewPosition);
+	void Montage_SetPlayRate(class UAnimMontage* Montage, float NewPlayRate);
+	void Montage_SetNextSection(const struct FName& SectionNameToChange, const struct FName& NextSection, class UAnimMontage* Montage);
+	void Montage_Resume(class UAnimMontage* Montage);
+	float Montage_Play(class UAnimMontage* MontageToPlay, float InPlayRate, EMontagePlayReturnType ReturnValueType, float InTimeToStartMontageAt);
+	void Montage_Pause(class UAnimMontage* Montage);
+	void Montage_JumpToSectionsEnd(const struct FName& SectionName, class UAnimMontage* Montage);
+	void Montage_JumpToSection(const struct FName& SectionName, class UAnimMontage* Montage);
+	bool Montage_IsPlaying(class UAnimMontage* Montage);
+	bool Montage_IsActive(class UAnimMontage* Montage);
+	float Montage_GetPosition(class UAnimMontage* Montage);
+	float Montage_GetPlayRate(class UAnimMontage* Montage);
+	bool Montage_GetIsStopped(class UAnimMontage* Montage);
+	struct FName Montage_GetCurrentSection(class UAnimMontage* Montage);
+	float Montage_GetBlendTime(class UAnimMontage* Montage);
+	void LockAIResources(bool bLockMovement, bool LockAILogic);
+	bool IsSyncGroupBetweenMarkers(const struct FName& InSyncGroupName, const struct FName& PreviousMarker, const struct FName& NextMarker, bool bRespectMarkerOrder);
+	bool IsPlayingSlotAnimation(class UAnimSequenceBase* Asset, const struct FName& SlotNodeName);
+	bool IsAnyMontagePlaying();
+	bool HasMarkerBeenHitThisFrame(const struct FName& SyncGroup, const struct FName& MarkerName);
+	bool GetTimeToClosestMarker(const struct FName& SyncGroup, const struct FName& MarkerName, float* OutMarkerTime);
+	struct FMarkerSyncAnimPosition GetSyncGroupPosition(const struct FName& InSyncGroupName);
+	float GetStateWeight(int MachineIndex, int StateIndex);
+	float GetRelevantAnimTimeRemainingFraction(int MachineIndex, int StateIndex);
+	float GetRelevantAnimTimeRemaining(int MachineIndex, int StateIndex);
+	float GetRelevantAnimTimeFraction(int MachineIndex, int StateIndex);
+	float GetRelevantAnimTime(int MachineIndex, int StateIndex);
+	float GetRelevantAnimLength(int MachineIndex, int StateIndex);
+	class USkeletalMeshComponent* GetOwningComponent();
+	class AActor* GetOwningActor();
+	float GetInstanceTransitionTimeElapsedFraction(int MachineIndex, int TransitionIndex);
+	float GetInstanceTransitionTimeElapsed(int MachineIndex, int TransitionIndex);
+	float GetInstanceTransitionCrossfadeDuration(int MachineIndex, int TransitionIndex);
+	float GetInstanceStateWeight(int MachineIndex, int StateIndex);
+	float GetInstanceMachineWeight(int MachineIndex);
+	float GetInstanceCurrentStateElapsedTime(int MachineIndex);
+	float GetInstanceAssetPlayerTimeFromEndFraction(int AssetPlayerIndex);
+	float GetInstanceAssetPlayerTimeFromEnd(int AssetPlayerIndex);
+	float GetInstanceAssetPlayerTimeFraction(int AssetPlayerIndex);
+	float GetInstanceAssetPlayerTime(int AssetPlayerIndex);
+	float GetInstanceAssetPlayerLength(int AssetPlayerIndex);
+	float GetCurveValue(const struct FName& CurveName);
+	struct FName GetCurrentStateName(int MachineIndex);
+	float GetCurrentStateElapsedTime(int MachineIndex);
+	class UAnimMontage* GetCurrentActiveMontage();
+	float STATIC_GetAnimAssetPlayerTimeFromEndFraction(class UAnimationAsset* AnimAsset, float CurrentTime);
+	float GetAnimAssetPlayerTimeFromEnd(class UAnimationAsset* AnimAsset, float CurrentTime);
+	float STATIC_GetAnimAssetPlayerTimeFraction(class UAnimationAsset* AnimAsset, float CurrentTime);
+	float STATIC_GetAnimAssetPlayerLength(class UAnimationAsset* AnimAsset);
+	void ClearMorphTargets();
+	float CalculateDirection(const struct FVector& Velocity, const struct FRotator& BaseRotation);
+	void BlueprintUpdateAnimation(float DeltaTimeX);
+	void BlueprintPostEvaluateAnimation();
+	void BlueprintInitializeAnimation();
 };
 
 
@@ -85,9 +150,6 @@ public:
 		return ptr;
 	}
 
-
-	void STATIC_K2_TwoBoneIK(const struct FVector& RootPos, const struct FVector& JointPos, const struct FVector& EndPos, const struct FVector& JointTarget, const struct FVector& Effector, bool bAllowStretching, float StartStretchRatio, float MaxStretchScale, struct FVector* OutJointPos, struct FVector* OutEndPos);
-	struct FTransform STATIC_K2_LookAt(const struct FTransform& CurrentTransform, const struct FVector& TargetPosition, const struct FVector& LookAtVector, bool bUseUpVector, const struct FVector& UpVector, float ClampConeInDegree);
 };
 
 

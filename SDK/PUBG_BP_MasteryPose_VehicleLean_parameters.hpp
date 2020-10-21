@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -27,7 +27,7 @@ struct ABP_MasteryPose_VehicleLean_C_ShowLobbyEffects_Params
 // Function BP_MasteryPose_VehicleLean.BP_MasteryPose_VehicleLean_C.ReceiveTick
 struct ABP_MasteryPose_VehicleLean_C_ReceiveTick_Params
 {
-	float*                                             DeltaSeconds;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              DeltaSeconds;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_MasteryPose_VehicleLean.BP_MasteryPose_VehicleLean_C.ReceiveBeginPlay
@@ -38,7 +38,7 @@ struct ABP_MasteryPose_VehicleLean_C_ReceiveBeginPlay_Params
 // Function BP_MasteryPose_VehicleLean.BP_MasteryPose_VehicleLean_C.ExecuteUbergraph_BP_MasteryPose_VehicleLean
 struct ABP_MasteryPose_VehicleLean_C_ExecuteUbergraph_BP_MasteryPose_VehicleLean_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

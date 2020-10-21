@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,19 +15,19 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Class ArchVisCharacter.ArchVisCharacter
-// 0x0070 (0x08E0 - 0x0870)
+// 0x0070 (0x08F0 - 0x0880)
 class AArchVisCharacter : public ACharacter
 {
 public:
-	struct FString                                     LookUpAxisName;                                           // 0x0870(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
-	struct FString                                     LookUpAtRateAxisName;                                     // 0x0880(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
-	struct FString                                     TurnAxisName;                                             // 0x0890(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
-	struct FString                                     TurnAtRateAxisName;                                       // 0x08A0(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
-	struct FString                                     MoveForwardAxisName;                                      // 0x08B0(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
-	struct FString                                     MoveRightAxisName;                                        // 0x08C0(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
-	float                                              MouseSensitivityScale_Pitch;                              // 0x08D0(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	float                                              MouseSensitivityScale_Yaw;                                // 0x08D4(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x8];                                       // 0x08D8(0x0008) MISSED OFFSET
+	struct FString                                     LookUpAxisName;                                           // 0x0880(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
+	struct FString                                     LookUpAtRateAxisName;                                     // 0x0890(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
+	struct FString                                     TurnAxisName;                                             // 0x08A0(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
+	struct FString                                     TurnAtRateAxisName;                                       // 0x08B0(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
+	struct FString                                     MoveForwardAxisName;                                      // 0x08C0(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
+	struct FString                                     MoveRightAxisName;                                        // 0x08D0(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
+	float                                              MouseSensitivityScale_Pitch;                              // 0x08E0(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	float                                              MouseSensitivityScale_Yaw;                                // 0x08E4(0x0004) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x8];                                       // 0x08E8(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{

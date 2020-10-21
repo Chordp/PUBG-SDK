@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -37,20 +37,20 @@ public:
 	}
 
 
-	void UpdateButtonGroupVisibility_BP(struct FWebPopupParam* WebPopupParam);
-	void UpdateBackgroundColor_BP(struct FWebPopupParam* WebPopupParam);
-	void PreSetting_BP(struct FWebPopupParam* Param);
-	void SetPopupData(struct FString* PopupId, struct FString* Uri, bool* UseBackgroundColor, struct FLinearColor* BackgroundColor, bool* bShowButtonGroup);
+	void UpdateButtonGroupVisibility_BP(const struct FWebPopupParam& WebPopupParam);
+	void UpdateBackgroundColor_BP(const struct FWebPopupParam& WebPopupParam);
+	void PreSetting_BP(const struct FWebPopupParam& Param);
+	void SetPopupData(const struct FString& PopupId, const struct FString& Uri, bool UseBackgroundColor, const struct FLinearColor& BackgroundColor, bool bShowButtonGroup);
 	void Destruct();
 	void BndEvt__Button_Exit_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
 	void BndEvt__Button_Reload_K2Node_ComponentBoundEvent_18_OnButtonClickedEvent__DelegateSignature();
 	void BndEvt__Button_Back_K2Node_ComponentBoundEvent_37_OnButtonClickedEvent__DelegateSignature();
-	void BndEvt__WebView_K2Node_ComponentBoundEvent_18_UIGTFinishLoadSignature__DelegateSignature(struct FString* path, bool* isMainFrame);
-	void OnUpdateWebPopup(struct FWebPopupParam* WebPopupParam);
-	void BndEvt__WebView_K2Node_ComponentBoundEvent_49_UIGTStartLoadingSignature__DelegateSignature(struct FString* path, bool* isMainFrame);
-	void BndEvt__WebView_K2Node_ComponentBoundEvent_67_UIGTFailLoadSignature__DelegateSignature(struct FString* path, struct FString* Error, bool* isMainFrame);
-	void ExecuteUbergraph_WebPopup(int* EntryPoint);
-	void OnClosePopup__DelegateSignature(class UWebPopup_C** Widget);
+	void BndEvt__WebView_K2Node_ComponentBoundEvent_18_UIGTFinishLoadSignature__DelegateSignature(const struct FString& path, bool isMainFrame);
+	void OnUpdateWebPopup(const struct FWebPopupParam& WebPopupParam);
+	void BndEvt__WebView_K2Node_ComponentBoundEvent_49_UIGTStartLoadingSignature__DelegateSignature(const struct FString& path, bool isMainFrame);
+	void BndEvt__WebView_K2Node_ComponentBoundEvent_67_UIGTFailLoadSignature__DelegateSignature(const struct FString& path, const struct FString& Error, bool isMainFrame);
+	void ExecuteUbergraph_WebPopup(int EntryPoint);
+	void OnClosePopup__DelegateSignature(class UWebPopup_C* Widget);
 };
 
 

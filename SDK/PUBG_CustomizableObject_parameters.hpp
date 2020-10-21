@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -420,12 +420,6 @@ struct UCustomizableObjectSystem_GetAverageBuildTime_Params
 struct UCustomizableObjectSystem_AreEnginePatchesPresent_Params
 {
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function CustomizableObject.InstanceUpdatedHelper.DelegatedCallback
-struct UInstanceUpdatedHelper_DelegatedCallback_Params
-{
-	class UCustomizableObjectInstance*                 Instance;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -28,6 +28,18 @@ enum class ECoherentRenderingSettingsSeverity : uint8_t
 };
 
 
+
+//---------------------------------------------------------------------------
+//Script Structs
+//---------------------------------------------------------------------------
+
+// ScriptStruct CoherentRenderingPlugin.CohTextureUserWrapData
+// 0x0050
+struct FCohTextureUserWrapData
+{
+	unsigned char                                      UnknownData00[0x48];                                      // 0x0000(0x0048) MISSED OFFSET
+	class UTexture*                                    Texture;                                                  // 0x0048(0x0008) (ZeroConstructor, IsPlainOldData)
+};
 
 }
 

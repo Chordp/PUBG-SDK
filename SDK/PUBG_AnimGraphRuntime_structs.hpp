@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -230,6 +230,27 @@ enum class ESplineBoneAxis : uint8_t
 //Script Structs
 //---------------------------------------------------------------------------
 
+// ScriptStruct AnimGraphRuntime.AnimNode_BlendListBase
+// 0x0098 (0x00C8 - 0x0030)
+struct FAnimNode_BlendListBase : public FAnimNode_Base
+{
+	TArray<struct FPoseLink>                           BlendPose;                                                // 0x0030(0x0010) (Edit, BlueprintVisible, EditFixedSize, ZeroConstructor)
+	TArray<float>                                      BlendTime;                                                // 0x0040(0x0010) (Edit, BlueprintVisible, EditFixedSize, ZeroConstructor)
+	EAlphaBlendOption                                  BlendType;                                                // 0x0050(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0051(0x0007) MISSED OFFSET
+	class UCurveFloat*                                 CustomBlendCurve;                                         // 0x0058(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	class UBlendProfile*                               BlendProfile;                                             // 0x0060(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	TArray<struct FAlphaBlend>                         Blends;                                                   // 0x0068(0x0010) (ZeroConstructor)
+	TArray<float>                                      BlendWeights;                                             // 0x0078(0x0010) (ZeroConstructor)
+	TArray<float>                                      RemainingBlendTimes;                                      // 0x0088(0x0010) (ZeroConstructor)
+	int                                                LastActiveChildIndex;                                     // 0x0098(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x009C(0x0004) MISSED OFFSET
+	TArray<struct FBlendSampleData>                    PerBoneSampleData;                                        // 0x00A0(0x0010) (ZeroConstructor)
+	unsigned char                                      UnknownData02[0x10];                                      // 0x00B0(0x0010) MISSED OFFSET
+	bool                                               bResetChildOnActivation;                                  // 0x00C0(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x7];                                       // 0x00C1(0x0007) MISSED OFFSET
+};
+
 // ScriptStruct AnimGraphRuntime.AnimNode_SkeletalControlBase
 // 0x00C8 (0x00F8 - 0x0030)
 struct FAnimNode_SkeletalControlBase : public FAnimNode_Base
@@ -246,6 +267,33 @@ struct FAnimNode_SkeletalControlBase : public FAnimNode_Base
 	struct FName                                       AlphaCurveName;                                           // 0x00B0(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	struct FInputScaleBiasClamp                        AlphaScaleBiasClamp;                                      // 0x00B8(0x0030) (Edit, BlueprintVisible)
 	unsigned char                                      UnknownData01[0x10];                                      // 0x00E8(0x0010) MISSED OFFSET
+};
+
+// ScriptStruct AnimGraphRuntime.SocketReference
+// 0x0040
+struct FSocketReference
+{
+	struct FName                                       SocketName;                                               // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x38];                                      // 0x0008(0x0038) MISSED OFFSET
+};
+
+// ScriptStruct AnimGraphRuntime.BoneSocketTarget
+// 0x0060
+struct FBoneSocketTarget
+{
+	bool                                               bUseSocket;                                               // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
+	struct FBoneReference                              BoneReference;                                            // 0x0008(0x0018) (Edit)
+	struct FSocketReference                            SocketReference;                                          // 0x0020(0x0040) (Edit)
+};
+
+// ScriptStruct AnimGraphRuntime.AnimNode_Slot
+// 0x0040 (0x0070 - 0x0030)
+struct FAnimNode_Slot : public FAnimNode_Base
+{
+	struct FPoseLink                                   Source;                                                   // 0x0030(0x0018) (Edit, BlueprintVisible)
+	struct FName                                       SlotName;                                                 // 0x0048(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x20];                                      // 0x0050(0x0020) MISSED OFFSET
 };
 
 // ScriptStruct AnimGraphRuntime.AnimNode_Trail
@@ -372,27 +420,6 @@ struct FAnimNode_ApplyAdditive : public FAnimNode_Base
 	struct FInputAlphaBoolBlend                        AlphaBoolBlend;                                           // 0x0080(0x0050) (Edit, BlueprintVisible)
 	struct FName                                       AlphaCurveName;                                           // 0x00D0(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	struct FInputScaleBiasClamp                        AlphaScaleBiasClamp;                                      // 0x00D8(0x0030) (Edit, BlueprintVisible)
-};
-
-// ScriptStruct AnimGraphRuntime.AnimNode_BlendListBase
-// 0x0098 (0x00C8 - 0x0030)
-struct FAnimNode_BlendListBase : public FAnimNode_Base
-{
-	TArray<struct FPoseLink>                           BlendPose;                                                // 0x0030(0x0010) (Edit, BlueprintVisible, EditFixedSize, ZeroConstructor)
-	TArray<float>                                      BlendTime;                                                // 0x0040(0x0010) (Edit, BlueprintVisible, EditFixedSize, ZeroConstructor)
-	EAlphaBlendOption                                  BlendType;                                                // 0x0050(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0051(0x0007) MISSED OFFSET
-	class UCurveFloat*                                 CustomBlendCurve;                                         // 0x0058(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-	class UBlendProfile*                               BlendProfile;                                             // 0x0060(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-	TArray<struct FAlphaBlend>                         Blends;                                                   // 0x0068(0x0010) (ZeroConstructor)
-	TArray<float>                                      BlendWeights;                                             // 0x0078(0x0010) (ZeroConstructor)
-	TArray<float>                                      RemainingBlendTimes;                                      // 0x0088(0x0010) (ZeroConstructor)
-	int                                                LastActiveChildIndex;                                     // 0x0098(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x009C(0x0004) MISSED OFFSET
-	TArray<struct FBlendSampleData>                    PerBoneSampleData;                                        // 0x00A0(0x0010) (ZeroConstructor)
-	unsigned char                                      UnknownData02[0x10];                                      // 0x00B0(0x0010) MISSED OFFSET
-	bool                                               bResetChildOnActivation;                                  // 0x00C0(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x7];                                       // 0x00C1(0x0007) MISSED OFFSET
 };
 
 // ScriptStruct AnimGraphRuntime.AnimNode_BlendListByBool
@@ -633,7 +660,7 @@ struct FAnimNode_RandomPlayer : public FAnimNode_Base
 // 0x0000 (0x0030 - 0x0030)
 struct FAnimNode_MeshSpaceRefPose : public FAnimNode_Base
 {
-
+	struct FExposedValueHandler                        EvaluateGraphExposedInputs;                               // 0x0008(0x0028)
 };
 
 // ScriptStruct AnimGraphRuntime.AnimNode_RefPose
@@ -696,15 +723,6 @@ struct FAnimNode_SequenceEvaluator : public FAnimNode_AssetPlayerBase
 	unsigned char                                      UnknownData01[0x2];                                       // 0x006E(0x0002) MISSED OFFSET
 };
 
-// ScriptStruct AnimGraphRuntime.AnimNode_Slot
-// 0x0040 (0x0070 - 0x0030)
-struct FAnimNode_Slot : public FAnimNode_Base
-{
-	struct FPoseLink                                   Source;                                                   // 0x0030(0x0018) (Edit, BlueprintVisible)
-	struct FName                                       SlotName;                                                 // 0x0048(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x20];                                      // 0x0050(0x0020) MISSED OFFSET
-};
-
 // ScriptStruct AnimGraphRuntime.AnimNode_TwoWayBlend
 // 0x00D8 (0x0108 - 0x0030)
 struct FAnimNode_TwoWayBlend : public FAnimNode_Base
@@ -732,24 +750,6 @@ struct FAnimNode_TwoWayBlend : public FAnimNode_Base
 struct FAnimSequencerInstanceProxy : public FAnimInstanceProxy
 {
 	unsigned char                                      UnknownData00[0x230];                                     // 0x0510(0x0230) MISSED OFFSET
-};
-
-// ScriptStruct AnimGraphRuntime.SocketReference
-// 0x0040
-struct FSocketReference
-{
-	struct FName                                       SocketName;                                               // 0x0000(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x38];                                      // 0x0008(0x0038) MISSED OFFSET
-};
-
-// ScriptStruct AnimGraphRuntime.BoneSocketTarget
-// 0x0060
-struct FBoneSocketTarget
-{
-	bool                                               bUseSocket;                                               // 0x0000(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
-	struct FBoneReference                              BoneReference;                                            // 0x0008(0x0018) (Edit)
-	struct FSocketReference                            SocketReference;                                          // 0x0020(0x0040) (Edit)
 };
 
 // ScriptStruct AnimGraphRuntime.AnimPhysConstraintSetup

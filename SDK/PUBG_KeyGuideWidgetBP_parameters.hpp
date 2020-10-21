@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -32,14 +32,14 @@ struct UKeyGuideWidgetBP_C_EscapeEvent_Params
 // Function KeyGuideWidgetBP.KeyGuideWidgetBP_C.Tick
 struct UKeyGuideWidgetBP_C_Tick_Params
 {
-	struct FGeometry*                                  MyGeometry;                                               // (Parm, IsPlainOldData)
-	float*                                             InDeltaTime;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FGeometry                                   MyGeometry;                                               // (Parm, IsPlainOldData)
+	float                                              InDeltaTime;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function KeyGuideWidgetBP.KeyGuideWidgetBP_C.ExecuteUbergraph_KeyGuideWidgetBP
 struct UKeyGuideWidgetBP_C_ExecuteUbergraph_KeyGuideWidgetBP_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -51,20 +51,20 @@ public:
 	void MapIconShowNameOnly();
 	void MapIconShowIconOnly();
 	void MapIconShowBoth();
-	void MapIconShow(bool* bShowIcon, bool* bShowName);
+	void MapIconShow(bool bShowIcon, bool bShowName);
 	void OnToggleAnticheatCenterBar();
 	void OnKey_EmoteWheelReleased();
 	void OnKey_EmoteWheelPressed();
-	bool OnInit_Delegate(class ATslBaseHUD** TslBaseHUD);
-	bool OnInit_Replay(class ATslBaseHUD** TslBaseHUD);
-	bool OnInit_Input(class ATslBaseHUD** TslBaseHUD);
-	bool OnInit_Widget(class ATslBaseHUD** TslBaseHUD);
-	struct FEventReply OnMouseMove(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent);
+	bool OnInit_Delegate(class ATslBaseHUD* TslBaseHUD);
+	bool OnInit_Replay(class ATslBaseHUD* TslBaseHUD);
+	bool OnInit_Input(class ATslBaseHUD* TslBaseHUD);
+	bool OnInit_Widget(class ATslBaseHUD* TslBaseHUD);
+	struct FEventReply OnMouseMove(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	void SetObserverSpectatingUp();
 	void SetObserverSpectatingDown();
 	void ShouldShowReplayMenu(bool* bShow);
 	void BindEventForShowReplayTimeline();
-	void ShowReplayTimeLine(bool* bShow);
+	void ShowReplayTimeLine(bool bShow);
 	void SetHUDForIngameReplayMenu();
 	void BindEventForMapClosing();
 	void OnKey_ReplayMenuOrEscape();
@@ -78,7 +78,7 @@ public:
 	void IsShowMapOrInventory(bool* bIsShow);
 	void OnTogglePlayerList();
 	void IsCharacterAlive(bool* IsAlive);
-	void OnNitifyHit(float* DamagePercent, EDamageTypeCategory* DamageTypeCategory);
+	void OnNitifyHit(float DamagePercent, EDamageTypeCategory DamageTypeCategory);
 	void OnKey_SystemMenuOrEscape();
 	void OnToggleMap();
 	void OnPossessPawnChange();
@@ -86,7 +86,7 @@ public:
 	void HideMapForReplay();
 	void CheckReplayTimer();
 	void CreateCheckReplayTimer();
-	void ExecuteUbergraph_HudMain(int* EntryPoint);
+	void ExecuteUbergraph_HudMain(int EntryPoint);
 	void ButtonClickedDispatcher__DelegateSignature();
 };
 

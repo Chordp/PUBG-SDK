@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,11 +15,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_LobbyCharacterPivot.BP_LobbyCharacterPivot_C
-// 0x0008 (0x0428 - 0x0420)
+// 0x0008 (0x0438 - 0x0430)
 class ABP_LobbyCharacterPivot_C : public ALobbyCharacterPivot
 {
 public:
-	class USceneComponent*                             DefaultSceneRoot;                                         // 0x0420(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class USceneComponent*                             DefaultSceneRoot;                                         // 0x0430(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
@@ -30,8 +30,6 @@ public:
 		return ptr;
 	}
 
-
-	void UserConstructionScript();
 };
 
 

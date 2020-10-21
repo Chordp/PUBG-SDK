@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -22,13 +22,13 @@ struct ABP_MasteryPose_FlareHandCover_C_UserConstructionScript_Params
 // Function BP_MasteryPose_FlareHandCover.BP_MasteryPose_FlareHandCover_C.AttachObjects
 struct ABP_MasteryPose_FlareHandCover_C_AttachObjects_Params
 {
-	class ACharacter**                                 LobbyCharacter;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	class ACharacter*                                  LobbyCharacter;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_MasteryPose_FlareHandCover.BP_MasteryPose_FlareHandCover_C.ExecuteUbergraph_BP_MasteryPose_FlareHandCover
 struct ABP_MasteryPose_FlareHandCover_C_ExecuteUbergraph_BP_MasteryPose_FlareHandCover_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

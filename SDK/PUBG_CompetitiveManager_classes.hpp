@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass CompetitiveManager.CompetitiveManager_C
-// 0x0000 (0x0550 - 0x0550)
+// 0x0000 (0x0560 - 0x0560)
 class ACompetitiveManager_C : public ACompetitiveManager
 {
 public:
@@ -29,6 +29,10 @@ public:
 		return ptr;
 	}
 
+
+	void UpdateSmokeParticleColor(const struct FString& Title);
+	void ApplySmokeColorHelper(const struct FVector& ColorVector, class UTexture* Tex);
+	void ApplySmokeColor();
 };
 
 

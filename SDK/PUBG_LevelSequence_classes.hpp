@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -101,20 +101,20 @@ public:
 
 
 // Class LevelSequence.LevelSequenceActor
-// 0x0078 (0x0478 - 0x0400)
+// 0x0078 (0x0488 - 0x0410)
 class ALevelSequenceActor : public AActor
 {
 public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0400(0x0008) MISSED OFFSET
-	bool                                               bAutoPlay;                                                // 0x0408(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x7];                                       // 0x0409(0x0007) MISSED OFFSET
-	struct FMovieSceneSequencePlaybackSettings         PlaybackSettings;                                         // 0x0410(0x0028) (Edit, BlueprintVisible, BlueprintReadOnly)
-	class ULevelSequencePlayer*                        SequencePlayer;                                           // 0x0438(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData)
-	struct FStringAssetReference                       LevelSequence;                                            // 0x0440(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly)
-	TArray<class AActor*>                              AdditionalEventReceivers;                                 // 0x0450(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
-	class ULevelSequenceBurnInOptions*                 BurnInOptions;                                            // 0x0460(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
-	class UMovieSceneBindingOverrides*                 BindingOverrides;                                         // 0x0468(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
-	class ULevelSequenceBurnIn*                        BurnInInstance;                                           // 0x0470(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0410(0x0008) MISSED OFFSET
+	bool                                               bAutoPlay;                                                // 0x0418(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x0419(0x0007) MISSED OFFSET
+	struct FMovieSceneSequencePlaybackSettings         PlaybackSettings;                                         // 0x0420(0x0028) (Edit, BlueprintVisible, BlueprintReadOnly)
+	class ULevelSequencePlayer*                        SequencePlayer;                                           // 0x0448(0x0008) (BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData)
+	struct FStringAssetReference                       LevelSequence;                                            // 0x0450(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly)
+	TArray<class AActor*>                              AdditionalEventReceivers;                                 // 0x0460(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
+	class ULevelSequenceBurnInOptions*                 BurnInOptions;                                            // 0x0470(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
+	class UMovieSceneBindingOverrides*                 BindingOverrides;                                         // 0x0478(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
+	class ULevelSequenceBurnIn*                        BurnInInstance;                                           // 0x0480(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{

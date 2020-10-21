@@ -1,16 +1,16 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
 #endif
 
 #include "PUBG_Basic.hpp"
-#include "PUBG_GameplayTasks_classes.hpp"
-#include "PUBG_CoreUObject_classes.hpp"
 #include "PUBG_Engine_classes.hpp"
+#include "PUBG_GameplayTasks_classes.hpp"
 #include "PUBG_GameplayTags_classes.hpp"
+#include "PUBG_CoreUObject_classes.hpp"
 
 namespace SDK
 {
@@ -916,6 +916,9 @@ struct FGenericTeamId
 // 0x0010 (0x0030 - 0x0020)
 struct FAIDataProviderStructValue : public FAIDataProviderValue
 {
+	class UProperty*                                   CachedProperty;                                           // 0x0008(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
+	class UAIDataProvider*                             DataBinding;                                              // 0x0010(0x0008) (Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+	struct FName                                       DataField;                                                // 0x0018(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
 	unsigned char                                      UnknownData00[0x10];                                      // 0x0020(0x0010) MISSED OFFSET
 };
 

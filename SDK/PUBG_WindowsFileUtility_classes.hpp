@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -29,10 +29,6 @@ public:
 		return ptr;
 	}
 
-
-	void OnListFileFound(const struct FString& Filename, int ByteCount, const struct FString& FilePath);
-	void OnListDone(const struct FString& DirectoryPath, TArray<struct FString> Files, TArray<struct FString> Folders);
-	void OnListDirectoryFound(const struct FString& DirectoryName, const struct FString& FilePath);
 };
 
 
@@ -70,9 +66,6 @@ public:
 		return ptr;
 	}
 
-
-	void OnFileChanged(const struct FString& Filename, const struct FString& FilePath);
-	void OnDirectoryChanged(const struct FString& DirectoryName, const struct FString& DirectoryPath);
 };
 
 
@@ -110,15 +103,6 @@ public:
 		return ptr;
 	}
 
-
-	void STATIC_WatchFolder(const struct FString& FullPath, class UObject* WatcherDelegate);
-	void STATIC_StopWatchingFolder(const struct FString& FullPath, class UObject* WatcherDelegate);
-	bool STATIC_MoveFileTo(const struct FString& From, const struct FString& To);
-	void STATIC_ListContentsOfFolder(const struct FString& FullPath, class UObject* ListDelegate);
-	bool STATIC_DeleteFolderRecursively(const struct FString& FullPath);
-	bool STATIC_DeleteFileAt(const struct FString& FullPath);
-	bool STATIC_DeleteEmptyFolder(const struct FString& FullPath);
-	bool STATIC_CreateDirectoryAt(const struct FString& FullPath);
 };
 
 

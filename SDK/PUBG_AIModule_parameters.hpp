@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,6 +13,158 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Parameters
 //---------------------------------------------------------------------------
+
+// Function AIModule.AIController.UseBlackboard
+struct AAIController_UseBlackboard_Params
+{
+	class UBlackboardData*                             BlackboardAsset;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	class UBlackboardComponent*                        BlackboardComponent;                                      // (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function AIModule.AIController.UnclaimTaskResource
+struct AAIController_UnclaimTaskResource_Params
+{
+	class UClass*                                      ResourceClass;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function AIModule.AIController.SetMoveBlockDetection
+struct AAIController_SetMoveBlockDetection_Params
+{
+	bool                                               bEnable;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function AIModule.AIController.RunBehaviorTree
+struct AAIController_RunBehaviorTree_Params
+{
+	class UBehaviorTree*                               BTAsset;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function AIModule.AIController.OnUsingBlackBoard
+struct AAIController_OnUsingBlackBoard_Params
+{
+	class UBlackboardComponent*                        BlackboardComp;                                           // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+	class UBlackboardData*                             BlackboardAsset;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function AIModule.AIController.OnUnpossess
+struct AAIController_OnUnpossess_Params
+{
+	class APawn*                                       UnpossessedPawn;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function AIModule.AIController.OnPossess
+struct AAIController_OnPossess_Params
+{
+	class APawn*                                       PossessedPawn;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function AIModule.AIController.OnGameplayTaskResourcesClaimed
+struct AAIController_OnGameplayTaskResourcesClaimed_Params
+{
+	struct FGameplayResourceSet                        NewlyClaimed;                                             // (Parm)
+	struct FGameplayResourceSet                        FreshlyReleased;                                          // (Parm)
+};
+
+// Function AIModule.AIController.MoveToLocation
+struct AAIController_MoveToLocation_Params
+{
+	struct FVector                                     Dest;                                                     // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+	float                                              AcceptanceRadius;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bStopOnOverlap;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bUsePathfinding;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bProjectDestinationToNavigation;                          // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bCanStrafe;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	class UClass*                                      FilterClass;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bAllowPartialPath;                                        // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EPathFollowingRequestResult>           ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function AIModule.AIController.MoveToActor
+struct AAIController_MoveToActor_Params
+{
+	class AActor*                                      Goal;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              AcceptanceRadius;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bStopOnOverlap;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bUsePathfinding;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bCanStrafe;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	class UClass*                                      FilterClass;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bAllowPartialPath;                                        // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EPathFollowingRequestResult>           ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function AIModule.AIController.K2_SetFocus
+struct AAIController_K2_SetFocus_Params
+{
+	class AActor*                                      NewFocus;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function AIModule.AIController.K2_SetFocalPoint
+struct AAIController_K2_SetFocalPoint_Params
+{
+	struct FVector                                     FP;                                                       // (Parm, IsPlainOldData)
+};
+
+// Function AIModule.AIController.K2_ClearFocus
+struct AAIController_K2_ClearFocus_Params
+{
+};
+
+// Function AIModule.AIController.HasPartialPath
+struct AAIController_HasPartialPath_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function AIModule.AIController.GetPathFollowingComponent
+struct AAIController_GetPathFollowingComponent_Params
+{
+	class UPathFollowingComponent*                     ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+};
+
+// Function AIModule.AIController.GetMoveStatus
+struct AAIController_GetMoveStatus_Params
+{
+	TEnumAsByte<EPathFollowingStatus>                  ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function AIModule.AIController.GetImmediateMoveDestination
+struct AAIController_GetImmediateMoveDestination_Params
+{
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function AIModule.AIController.GetFocusActor
+struct AAIController_GetFocusActor_Params
+{
+	class AActor*                                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function AIModule.AIController.GetFocalPointOnActor
+struct AAIController_GetFocalPointOnActor_Params
+{
+	class AActor*                                      Actor;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function AIModule.AIController.GetFocalPoint
+struct AAIController_GetFocalPoint_Params
+{
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function AIModule.AIController.GetAIPerceptionComponent
+struct AAIController_GetAIPerceptionComponent_Params
+{
+	class UAIPerceptionComponent*                      ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+};
+
+// Function AIModule.AIController.ClaimTaskResource
+struct AAIController_ClaimTaskResource_Params
+{
+	class UClass*                                      ResourceClass;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+};
 
 // Function AIModule.AISystem.AILoggingVerbose
 struct UAISystem_AILoggingVerbose_Params
@@ -36,14 +188,6 @@ struct UAITask_MoveTo_AIMoveTo_Params
 	bool                                               bUsePathfinding;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bLockAILogic;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 	class UAITask_MoveTo*                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function AIModule.AITask_RunEQS.RunEQS
-struct UAITask_RunEQS_RunEQS_Params
-{
-	class AAIController*                               Controller;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	class UEnvQuery*                                   QueryTemplate;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	class UAITask_RunEQS*                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function AIModule.BrainComponent.StopLogic
@@ -258,215 +402,6 @@ struct UBlackboardComponent_GetLocationFromEntry_Params
 struct UBlackboardComponent_ClearValue_Params
 {
 	struct FName                                       KeyName;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.StopUsingExternalEvent
-struct UBTFunctionLibrary_StopUsingExternalEvent_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.StartUsingExternalEvent
-struct UBTFunctionLibrary_StartUsingExternalEvent_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	class AActor*                                      OwningActor;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsVector
-struct UBTFunctionLibrary_SetBlackboardValueAsVector_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FBlackboardKeySelector                      Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-	struct FVector                                     Value;                                                    // (Parm, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsString
-struct UBTFunctionLibrary_SetBlackboardValueAsString_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FBlackboardKeySelector                      Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-	struct FString                                     Value;                                                    // (Parm, ZeroConstructor)
-};
-
-// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsRotator
-struct UBTFunctionLibrary_SetBlackboardValueAsRotator_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FBlackboardKeySelector                      Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-	struct FRotator                                    Value;                                                    // (Parm, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsObject
-struct UBTFunctionLibrary_SetBlackboardValueAsObject_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FBlackboardKeySelector                      Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-	class UObject*                                     Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsName
-struct UBTFunctionLibrary_SetBlackboardValueAsName_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FBlackboardKeySelector                      Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-	struct FName                                       Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsInt
-struct UBTFunctionLibrary_SetBlackboardValueAsInt_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FBlackboardKeySelector                      Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-	int                                                Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsFloat
-struct UBTFunctionLibrary_SetBlackboardValueAsFloat_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FBlackboardKeySelector                      Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-	float                                              Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsEnum
-struct UBTFunctionLibrary_SetBlackboardValueAsEnum_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FBlackboardKeySelector                      Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-	unsigned char                                      Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsClass
-struct UBTFunctionLibrary_SetBlackboardValueAsClass_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FBlackboardKeySelector                      Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-	class UClass*                                      Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.SetBlackboardValueAsBool
-struct UBTFunctionLibrary_SetBlackboardValueAsBool_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FBlackboardKeySelector                      Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-	bool                                               Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.GetOwnersBlackboard
-struct UBTFunctionLibrary_GetOwnersBlackboard_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	class UBlackboardComponent*                        ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.GetOwnerComponent
-struct UBTFunctionLibrary_GetOwnerComponent_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	class UBehaviorTreeComponent*                      ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsVector
-struct UBTFunctionLibrary_GetBlackboardValueAsVector_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FBlackboardKeySelector                      Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsString
-struct UBTFunctionLibrary_GetBlackboardValueAsString_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FBlackboardKeySelector                      Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-	struct FString                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
-};
-
-// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsRotator
-struct UBTFunctionLibrary_GetBlackboardValueAsRotator_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FBlackboardKeySelector                      Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-	struct FRotator                                    ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsObject
-struct UBTFunctionLibrary_GetBlackboardValueAsObject_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FBlackboardKeySelector                      Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-	class UObject*                                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsName
-struct UBTFunctionLibrary_GetBlackboardValueAsName_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FBlackboardKeySelector                      Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-	struct FName                                       ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsInt
-struct UBTFunctionLibrary_GetBlackboardValueAsInt_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FBlackboardKeySelector                      Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsFloat
-struct UBTFunctionLibrary_GetBlackboardValueAsFloat_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FBlackboardKeySelector                      Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsEnum
-struct UBTFunctionLibrary_GetBlackboardValueAsEnum_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FBlackboardKeySelector                      Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-	unsigned char                                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsClass
-struct UBTFunctionLibrary_GetBlackboardValueAsClass_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FBlackboardKeySelector                      Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-	class UClass*                                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsBool
-struct UBTFunctionLibrary_GetBlackboardValueAsBool_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FBlackboardKeySelector                      Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.GetBlackboardValueAsActor
-struct UBTFunctionLibrary_GetBlackboardValueAsActor_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FBlackboardKeySelector                      Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-	class AActor*                                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function AIModule.BTFunctionLibrary.ClearBlackboardValueAsVector
-struct UBTFunctionLibrary_ClearBlackboardValueAsVector_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FBlackboardKeySelector                      Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
-};
-
-// Function AIModule.BTFunctionLibrary.ClearBlackboardValue
-struct UBTFunctionLibrary_ClearBlackboardValue_Params
-{
-	class UBTNode*                                     NodeOwner;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FBlackboardKeySelector                      Key;                                                      // (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
 // Function AIModule.BTDecorator_BlueprintBase.ReceiveTickAI
@@ -702,38 +637,6 @@ struct UBTTask_BlueprintBase_FinishAbort_Params
 {
 };
 
-// Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleLocation
-struct UEnvQueryContext_BlueprintBase_ProvideSingleLocation_Params
-{
-	class UObject*                                     QuerierObject;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	class AActor*                                      QuerierActor;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     ResultingLocation;                                        // (Parm, OutParm, IsPlainOldData)
-};
-
-// Function AIModule.EnvQueryContext_BlueprintBase.ProvideSingleActor
-struct UEnvQueryContext_BlueprintBase_ProvideSingleActor_Params
-{
-	class UObject*                                     QuerierObject;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	class AActor*                                      QuerierActor;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	class AActor*                                      ResultingActor;                                           // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AIModule.EnvQueryContext_BlueprintBase.ProvideLocationsSet
-struct UEnvQueryContext_BlueprintBase_ProvideLocationsSet_Params
-{
-	class UObject*                                     QuerierObject;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	class AActor*                                      QuerierActor;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<struct FVector>                             ResultingLocationSet;                                     // (Parm, OutParm, ZeroConstructor)
-};
-
-// Function AIModule.EnvQueryContext_BlueprintBase.ProvideActorsSet
-struct UEnvQueryContext_BlueprintBase_ProvideActorsSet_Params
-{
-	class UObject*                                     QuerierObject;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	class AActor*                                      QuerierActor;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<class AActor*>                              ResultingActorsSet;                                       // (Parm, OutParm, ZeroConstructor)
-};
-
 // Function AIModule.EnvQueryInstanceBlueprintWrapper.SetNamedParam
 struct UEnvQueryInstanceBlueprintWrapper_SetNamedParam_Params
 {
@@ -802,78 +705,613 @@ struct UEnvQueryGenerator_BlueprintBase_AddGeneratedActor_Params
 	class AActor*                                      GeneratedActor;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function AIModule.NavLocalGridManager.SetLocalNavigationGridDensity
-struct UNavLocalGridManager_SetLocalNavigationGridDensity_Params
+// Function Engine.PrimitiveComponent.WakeRigidBody
+struct UEQSRenderingComponent_WakeRigidBody_Params
 {
-	class UObject*                                     WorldContext;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              CellSize;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.WakeAllRigidBodies
+struct UEQSRenderingComponent_WakeAllRigidBodies_Params
+{
+};
+
+// Function Engine.PrimitiveComponent.SetWalkableSlopeOverride
+struct UEQSRenderingComponent_SetWalkableSlopeOverride_Params
+{
+	struct FWalkableSlopeOverride                      NewOverride;                                              // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetUseCCD
+struct UEQSRenderingComponent_SetUseCCD_Params
+{
+	bool                                               InUseCCD;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetTranslucentSortPriority
+struct UEQSRenderingComponent_SetTranslucentSortPriority_Params
+{
+	int                                                NewTranslucentSortPriority;                               // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetSimulatePhysics
+struct UEQSRenderingComponent_SetSimulatePhysics_Params
+{
+	bool                                               bSimulate;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetRenderInMono
+struct UEQSRenderingComponent_SetRenderInMono_Params
+{
+	bool                                               bValue;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetRenderInMainPass
+struct UEQSRenderingComponent_SetRenderInMainPass_Params
+{
+	bool                                               bValue;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetRenderCustomDepth
+struct UEQSRenderingComponent_SetRenderCustomDepth_Params
+{
+	bool                                               bValue;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetPhysMaterialOverride
+struct UEQSRenderingComponent_SetPhysMaterialOverride_Params
+{
+	class UPhysicalMaterial*                           NewPhysMaterial;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetPhysicsMaxAngularVelocity
+struct UEQSRenderingComponent_SetPhysicsMaxAngularVelocity_Params
+{
+	float                                              NewMaxAngVel;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bAddToCurrent;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetPhysicsLinearVelocity
+struct UEQSRenderingComponent_SetPhysicsLinearVelocity_Params
+{
+	struct FVector                                     NewVel;                                                   // (Parm, IsPlainOldData)
+	bool                                               bAddToCurrent;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetPhysicsAngularVelocity
+struct UEQSRenderingComponent_SetPhysicsAngularVelocity_Params
+{
+	struct FVector                                     NewAngVel;                                                // (Parm, IsPlainOldData)
+	bool                                               bAddToCurrent;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetOwnerNoSee
+struct UEQSRenderingComponent_SetOwnerNoSee_Params
+{
+	bool                                               bNewOwnerNoSee;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetOnlyOwnerSee
+struct UEQSRenderingComponent_SetOnlyOwnerSee_Params
+{
+	bool                                               bNewOnlyOwnerSee;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetNotifyRigidBodyCollision
+struct UEQSRenderingComponent_SetNotifyRigidBodyCollision_Params
+{
+	bool                                               bNewNotifyRigidBodyCollision;                             // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetMaterialByName
+struct UEQSRenderingComponent_SetMaterialByName_Params
+{
+	struct FName                                       MaterialSlotName;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	class UMaterialInterface*                          Material;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetMaterial
+struct UEQSRenderingComponent_SetMaterial_Params
+{
+	int                                                ElementIndex;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	class UMaterialInterface*                          Material;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetMassScale
+struct UEQSRenderingComponent_SetMassScale_Params
+{
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              InMassScale;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetMassOverrideInKg
+struct UEQSRenderingComponent_SetMassOverrideInKg_Params
+{
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              MassInKg;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bOverrideMass;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetLockedAxis
+struct UEQSRenderingComponent_SetLockedAxis_Params
+{
+	TEnumAsByte<EDOFMode>                              LockedAxis;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetLinearDamping
+struct UEQSRenderingComponent_SetLinearDamping_Params
+{
+	float                                              InDamping;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetEnableGravity
+struct UEQSRenderingComponent_SetEnableGravity_Params
+{
+	bool                                               bGravityEnabled;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetCustomDepthStencilWriteMask
+struct UEQSRenderingComponent_SetCustomDepthStencilWriteMask_Params
+{
+	ERendererStencilMask                               WriteMaskBit;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetCustomDepthStencilValue
+struct UEQSRenderingComponent_SetCustomDepthStencilValue_Params
+{
+	int                                                Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetCullDistance
+struct UEQSRenderingComponent_SetCullDistance_Params
+{
+	float                                              NewCullDistance;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetConstraintMode
+struct UEQSRenderingComponent_SetConstraintMode_Params
+{
+	TEnumAsByte<EDOFMode>                              ConstraintMode;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetCollisionResponseToChannel
+struct UEQSRenderingComponent_SetCollisionResponseToChannel_Params
+{
+	TEnumAsByte<ECollisionChannel>                     Channel;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionResponse>                    NewResponse;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetCollisionResponseToAllChannels
+struct UEQSRenderingComponent_SetCollisionResponseToAllChannels_Params
+{
+	TEnumAsByte<ECollisionResponse>                    NewResponse;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetCollisionProfileName
+struct UEQSRenderingComponent_SetCollisionProfileName_Params
+{
+	struct FName                                       InCollisionProfileName;                                   // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetCollisionObjectType
+struct UEQSRenderingComponent_SetCollisionObjectType_Params
+{
+	TEnumAsByte<ECollisionChannel>                     Channel;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetCollisionEnabled
+struct UEQSRenderingComponent_SetCollisionEnabled_Params
+{
+	TEnumAsByte<ECollisionEnabled>                     NewType;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetCenterOfMass
+struct UEQSRenderingComponent_SetCenterOfMass_Params
+{
+	struct FVector                                     CenterOfMassOffset;                                       // (Parm, IsPlainOldData)
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetCastShadow
+struct UEQSRenderingComponent_SetCastShadow_Params
+{
+	bool                                               NewCastShadow;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetBoundsScale
+struct UEQSRenderingComponent_SetBoundsScale_Params
+{
+	float                                              NewBoundsScale;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetAngularDamping
+struct UEQSRenderingComponent_SetAngularDamping_Params
+{
+	float                                              InDamping;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetAllUseCCD
+struct UEQSRenderingComponent_SetAllUseCCD_Params
+{
+	bool                                               InUseCCD;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetAllPhysicsLinearVelocity
+struct UEQSRenderingComponent_SetAllPhysicsLinearVelocity_Params
+{
+	struct FVector                                     NewVel;                                                   // (Parm, IsPlainOldData)
+	bool                                               bAddToCurrent;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetAllPhysicsAngularVelocity
+struct UEQSRenderingComponent_SetAllPhysicsAngularVelocity_Params
+{
+	struct FVector                                     NewAngVel;                                                // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+	bool                                               bAddToCurrent;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.SetAllMassScale
+struct UEQSRenderingComponent_SetAllMassScale_Params
+{
+	float                                              InMassScale;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.ScaleByMomentOfInertia
+struct UEQSRenderingComponent_ScaleByMomentOfInertia_Params
+{
+	struct FVector                                     InputVector;                                              // (Parm, IsPlainOldData)
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.PutRigidBodyToSleep
+struct UEQSRenderingComponent_PutRigidBodyToSleep_Params
+{
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.K2_LineTraceComponent
+struct UEQSRenderingComponent_K2_LineTraceComponent_Params
+{
+	struct FVector                                     TraceStart;                                               // (Parm, IsPlainOldData)
+	struct FVector                                     TraceEnd;                                                 // (Parm, IsPlainOldData)
+	bool                                               bTraceComplex;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bShowTrace;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     HitLocation;                                              // (Parm, OutParm, IsPlainOldData)
+	struct FVector                                     HitNormal;                                                // (Parm, OutParm, IsPlainOldData)
+	struct FName                                       BoneName;                                                 // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
+	struct FHitResult                                  OutHit;                                                   // (Parm, OutParm, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
-// Function AIModule.NavLocalGridManager.RemoveLocalNavigationGrid
-struct UNavLocalGridManager_RemoveLocalNavigationGrid_Params
+// Function Engine.PrimitiveComponent.K2_IsQueryCollisionEnabled
+struct UEQSRenderingComponent_K2_IsQueryCollisionEnabled_Params
 {
-	class UObject*                                     WorldContext;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	int                                                GridId;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bRebuildGrids;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AIModule.NavLocalGridManager.FindLocalNavigationGridPath
-struct UNavLocalGridManager_FindLocalNavigationGridPath_Params
-{
-	class UObject*                                     WorldContext;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     Start;                                                    // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	struct FVector                                     End;                                                      // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	TArray<struct FVector>                             PathPoints;                                               // (Parm, OutParm, ZeroConstructor)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
-// Function AIModule.NavLocalGridManager.AddLocalNavigationGridForPoints
-struct UNavLocalGridManager_AddLocalNavigationGridForPoints_Params
+// Function Engine.PrimitiveComponent.K2_IsPhysicsCollisionEnabled
+struct UEQSRenderingComponent_K2_IsPhysicsCollisionEnabled_Params
 {
-	class UObject*                                     WorldContext;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<struct FVector>                             Locations;                                                // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	int                                                Radius2D;                                                 // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-	float                                              Height;                                                   // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bRebuildGrids;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.K2_IsCollisionEnabled
+struct UEQSRenderingComponent_K2_IsCollisionEnabled_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.IsOverlappingComponent
+struct UEQSRenderingComponent_IsOverlappingComponent_Params
+{
+	class UPrimitiveComponent*                         OtherComp;                                                // (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.IsOverlappingActor
+struct UEQSRenderingComponent_IsOverlappingActor_Params
+{
+	class AActor*                                      Other;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.IsGravityEnabled
+struct UEQSRenderingComponent_IsGravityEnabled_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.IsAnyRigidBodyAwake
+struct UEQSRenderingComponent_IsAnyRigidBodyAwake_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.IgnoreComponentWhenMoving
+struct UEQSRenderingComponent_IgnoreComponentWhenMoving_Params
+{
+	class UPrimitiveComponent*                         Component;                                                // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+	bool                                               bShouldIgnore;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.IgnoreActorWhenMoving
+struct UEQSRenderingComponent_IgnoreActorWhenMoving_Params
+{
+	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bShouldIgnore;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.GetWalkableSlopeOverride
+struct UEQSRenderingComponent_GetWalkableSlopeOverride_Params
+{
+	struct FWalkableSlopeOverride                      ReturnValue;                                              // (ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.GetPhysicsLinearVelocityAtPoint
+struct UEQSRenderingComponent_GetPhysicsLinearVelocityAtPoint_Params
+{
+	struct FVector                                     Point;                                                    // (Parm, IsPlainOldData)
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.GetPhysicsLinearVelocity
+struct UEQSRenderingComponent_GetPhysicsLinearVelocity_Params
+{
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.GetPhysicsAngularVelocity
+struct UEQSRenderingComponent_GetPhysicsAngularVelocity_Params
+{
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.GetOverlappingComponents
+struct UEQSRenderingComponent_GetOverlappingComponents_Params
+{
+	TArray<class UPrimitiveComponent*>                 InOverlappingComponents;                                  // (Parm, OutParm, ZeroConstructor)
+};
+
+// Function Engine.PrimitiveComponent.GetOverlappingActors
+struct UEQSRenderingComponent_GetOverlappingActors_Params
+{
+	TArray<class AActor*>                              OverlappingActors;                                        // (Parm, OutParm, ZeroConstructor)
+	class UClass*                                      ClassFilter;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.GetOverlapInfos
+struct UEQSRenderingComponent_GetOverlapInfos_Params
+{
+	TArray<struct FOverlapInfo>                        ReturnValue;                                              // (ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm)
+};
+
+// Function Engine.PrimitiveComponent.GetNumMaterials
+struct UEQSRenderingComponent_GetNumMaterials_Params
+{
 	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
-// Function AIModule.NavLocalGridManager.AddLocalNavigationGridForPoint
-struct UNavLocalGridManager_AddLocalNavigationGridForPoint_Params
+// Function Engine.PrimitiveComponent.GetMaterialFromCollisionFaceIndex
+struct UEQSRenderingComponent_GetMaterialFromCollisionFaceIndex_Params
 {
-	class UObject*                                     WorldContext;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     Location;                                                 // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	int                                                Radius2D;                                                 // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-	float                                              Height;                                                   // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bRebuildGrids;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	int                                                FaceIndex;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	class UMaterialInterface*                          ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
-// Function AIModule.NavLocalGridManager.AddLocalNavigationGridForCapsule
-struct UNavLocalGridManager_AddLocalNavigationGridForCapsule_Params
+// Function Engine.PrimitiveComponent.GetMaterial
+struct UEQSRenderingComponent_GetMaterial_Params
 {
-	class UObject*                                     WorldContext;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     Location;                                                 // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	float                                              CapsuleRadius;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              CapsuleHalfHeight;                                        // (Parm, ZeroConstructor, IsPlainOldData)
-	int                                                Radius2D;                                                 // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-	float                                              Height;                                                   // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bRebuildGrids;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	int                                                ElementIndex;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	class UMaterialInterface*                          ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
-// Function AIModule.NavLocalGridManager.AddLocalNavigationGridForBox
-struct UNavLocalGridManager_AddLocalNavigationGridForBox_Params
+// Function Engine.PrimitiveComponent.GetMassScale
+struct UEQSRenderingComponent_GetMassScale_Params
 {
-	class UObject*                                     WorldContext;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     Location;                                                 // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	struct FVector                                     Extent;                                                   // (Parm, IsPlainOldData)
-	struct FRotator                                    Rotation;                                                 // (Parm, IsPlainOldData)
-	int                                                Radius2D;                                                 // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-	float                                              Height;                                                   // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bRebuildGrids;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.GetMass
+struct UEQSRenderingComponent_GetMass_Params
+{
+	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.GetLinearDamping
+struct UEQSRenderingComponent_GetLinearDamping_Params
+{
+	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.GetInertiaTensor
+struct UEQSRenderingComponent_GetInertiaTensor_Params
+{
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.GetCollisionResponseToChannel
+struct UEQSRenderingComponent_GetCollisionResponseToChannel_Params
+{
+	TEnumAsByte<ECollisionChannel>                     Channel;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ECollisionResponse>                    ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.GetCollisionProfileName
+struct UEQSRenderingComponent_GetCollisionProfileName_Params
+{
+	struct FName                                       ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.GetCollisionObjectType
+struct UEQSRenderingComponent_GetCollisionObjectType_Params
+{
+	TEnumAsByte<ECollisionChannel>                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.GetCollisionEnabled
+struct UEQSRenderingComponent_GetCollisionEnabled_Params
+{
+	TEnumAsByte<ECollisionEnabled>                     ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.GetClosestPointOnCollision
+struct UEQSRenderingComponent_GetClosestPointOnCollision_Params
+{
+	struct FVector                                     Point;                                                    // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+	struct FVector                                     OutPointOnBody;                                           // (Parm, OutParm, IsPlainOldData)
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.GetCenterOfMass
+struct UEQSRenderingComponent_GetCenterOfMass_Params
+{
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.GetAngularDamping
+struct UEQSRenderingComponent_GetAngularDamping_Params
+{
+	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.CreateDynamicMaterialInstance
+struct UEQSRenderingComponent_CreateDynamicMaterialInstance_Params
+{
+	int                                                ElementIndex;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	class UMaterialInterface*                          SourceMaterial;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	class UMaterialInstanceDynamic*                    ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.CreateAndSetMaterialInstanceDynamicFromMaterial
+struct UEQSRenderingComponent_CreateAndSetMaterialInstanceDynamicFromMaterial_Params
+{
+	int                                                ElementIndex;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	class UMaterialInterface*                          Parent;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	class UMaterialInstanceDynamic*                    ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.CreateAndSetMaterialInstanceDynamic
+struct UEQSRenderingComponent_CreateAndSetMaterialInstanceDynamic_Params
+{
+	int                                                ElementIndex;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	class UMaterialInstanceDynamic*                    ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.CopyArrayOfMoveIgnoreComponents
+struct UEQSRenderingComponent_CopyArrayOfMoveIgnoreComponents_Params
+{
+	TArray<class UPrimitiveComponent*>                 ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
+// Function Engine.PrimitiveComponent.CopyArrayOfMoveIgnoreActors
+struct UEQSRenderingComponent_CopyArrayOfMoveIgnoreActors_Params
+{
+	TArray<class AActor*>                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
+};
+
+// Function Engine.PrimitiveComponent.ClearMoveIgnoreComponents
+struct UEQSRenderingComponent_ClearMoveIgnoreComponents_Params
+{
+};
+
+// Function Engine.PrimitiveComponent.ClearMoveIgnoreActors
+struct UEQSRenderingComponent_ClearMoveIgnoreActors_Params
+{
+};
+
+// Function Engine.PrimitiveComponent.CanCharacterStepUp
+struct UEQSRenderingComponent_CanCharacterStepUp_Params
+{
+	class APawn*                                       Pawn;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.AddTorque
+struct UEQSRenderingComponent_AddTorque_Params
+{
+	struct FVector                                     Torque;                                                   // (Parm, IsPlainOldData)
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bAccelChange;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.AddRadialImpulse
+struct UEQSRenderingComponent_AddRadialImpulse_Params
+{
+	struct FVector                                     Origin;                                                   // (Parm, IsPlainOldData)
+	float                                              Radius;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              Strength;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ERadialImpulseFalloff>                 Falloff;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bVelChange;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.AddRadialForce
+struct UEQSRenderingComponent_AddRadialForce_Params
+{
+	struct FVector                                     Origin;                                                   // (Parm, IsPlainOldData)
+	float                                              Radius;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              Strength;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ERadialImpulseFalloff>                 Falloff;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bAccelChange;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.AddImpulseAtLocation
+struct UEQSRenderingComponent_AddImpulseAtLocation_Params
+{
+	struct FVector                                     Impulse;                                                  // (Parm, IsPlainOldData)
+	struct FVector                                     Location;                                                 // (Parm, IsPlainOldData)
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.AddImpulse
+struct UEQSRenderingComponent_AddImpulse_Params
+{
+	struct FVector                                     Impulse;                                                  // (Parm, IsPlainOldData)
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bVelChange;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.AddForceAtLocationLocal
+struct UEQSRenderingComponent_AddForceAtLocationLocal_Params
+{
+	struct FVector                                     force;                                                    // (Parm, IsPlainOldData)
+	struct FVector                                     Location;                                                 // (Parm, IsPlainOldData)
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.AddForceAtLocation
+struct UEQSRenderingComponent_AddForceAtLocation_Params
+{
+	struct FVector                                     force;                                                    // (Parm, IsPlainOldData)
+	struct FVector                                     Location;                                                 // (Parm, IsPlainOldData)
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.AddForce
+struct UEQSRenderingComponent_AddForce_Params
+{
+	struct FVector                                     force;                                                    // (Parm, IsPlainOldData)
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bAccelChange;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.PrimitiveComponent.AddAngularImpulse
+struct UEQSRenderingComponent_AddAngularImpulse_Params
+{
+	struct FVector                                     Impulse;                                                  // (Parm, IsPlainOldData)
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bVelChange;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function AIModule.PathFollowingComponent.OnNavDataRegistered
@@ -929,36 +1367,24 @@ struct UPawnAction_CreateActionInstance_Params
 	class UPawnAction*                                 ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
-// Function AIModule.PawnAction_BlueprintBase.ActionTick
-struct UPawnAction_BlueprintBase_ActionTick_Params
+// Function AIModule.PawnAction.GetActionPriority
+struct UPawnAction_BlueprintBase_GetActionPriority_Params
 {
-	class APawn*                                       ControlledPawn;                                           // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              DeltaSeconds;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAIRequestPriority>                    ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
-// Function AIModule.PawnAction_BlueprintBase.ActionStart
-struct UPawnAction_BlueprintBase_ActionStart_Params
+// Function AIModule.PawnAction.Finish
+struct UPawnAction_BlueprintBase_Finish_Params
 {
-	class APawn*                                       ControlledPawn;                                           // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AIModule.PawnAction_BlueprintBase.ActionResume
-struct UPawnAction_BlueprintBase_ActionResume_Params
-{
-	class APawn*                                       ControlledPawn;                                           // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AIModule.PawnAction_BlueprintBase.ActionPause
-struct UPawnAction_BlueprintBase_ActionPause_Params
-{
-	class APawn*                                       ControlledPawn;                                           // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AIModule.PawnAction_BlueprintBase.ActionFinished
-struct UPawnAction_BlueprintBase_ActionFinished_Params
-{
-	class APawn*                                       ControlledPawn;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 	TEnumAsByte<EPawnActionResult>                     WithResult;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function AIModule.PawnAction.CreateActionInstance
+struct UPawnAction_BlueprintBase_CreateActionInstance_Params
+{
+	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
+	class UClass*                                      ActionClass;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	class UPawnAction*                                 ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function AIModule.PawnActionsComponent.K2_PushAction
@@ -1037,8 +1463,15 @@ struct UPawnSensingComponent_GetPeripheralVisionAngle_Params
 	float                                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
+// Function AIModule.AIAsyncTaskBlueprintProxy.OnMoveCompleted
+struct UAIAsyncTaskBlueprintProxy_OnMoveCompleted_Params
+{
+	struct FAIRequestID                                RequestID;                                                // (Parm)
+	TEnumAsByte<EPathFollowingResult>                  MovementResult;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
 // Function AIModule.AIController.UseBlackboard
-struct AAIController_UseBlackboard_Params
+struct ADetourCrowdAIController_UseBlackboard_Params
 {
 	class UBlackboardData*                             BlackboardAsset;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 	class UBlackboardComponent*                        BlackboardComponent;                                      // (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData)
@@ -1046,52 +1479,52 @@ struct AAIController_UseBlackboard_Params
 };
 
 // Function AIModule.AIController.UnclaimTaskResource
-struct AAIController_UnclaimTaskResource_Params
+struct ADetourCrowdAIController_UnclaimTaskResource_Params
 {
 	class UClass*                                      ResourceClass;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function AIModule.AIController.SetMoveBlockDetection
-struct AAIController_SetMoveBlockDetection_Params
+struct ADetourCrowdAIController_SetMoveBlockDetection_Params
 {
 	bool                                               bEnable;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function AIModule.AIController.RunBehaviorTree
-struct AAIController_RunBehaviorTree_Params
+struct ADetourCrowdAIController_RunBehaviorTree_Params
 {
 	class UBehaviorTree*                               BTAsset;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function AIModule.AIController.OnUsingBlackBoard
-struct AAIController_OnUsingBlackBoard_Params
+struct ADetourCrowdAIController_OnUsingBlackBoard_Params
 {
 	class UBlackboardComponent*                        BlackboardComp;                                           // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 	class UBlackboardData*                             BlackboardAsset;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function AIModule.AIController.OnUnpossess
-struct AAIController_OnUnpossess_Params
+struct ADetourCrowdAIController_OnUnpossess_Params
 {
 	class APawn*                                       UnpossessedPawn;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function AIModule.AIController.OnPossess
-struct AAIController_OnPossess_Params
+struct ADetourCrowdAIController_OnPossess_Params
 {
 	class APawn*                                       PossessedPawn;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function AIModule.AIController.OnGameplayTaskResourcesClaimed
-struct AAIController_OnGameplayTaskResourcesClaimed_Params
+struct ADetourCrowdAIController_OnGameplayTaskResourcesClaimed_Params
 {
 	struct FGameplayResourceSet                        NewlyClaimed;                                             // (Parm)
 	struct FGameplayResourceSet                        FreshlyReleased;                                          // (Parm)
 };
 
 // Function AIModule.AIController.MoveToLocation
-struct AAIController_MoveToLocation_Params
+struct ADetourCrowdAIController_MoveToLocation_Params
 {
 	struct FVector                                     Dest;                                                     // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 	float                                              AcceptanceRadius;                                         // (Parm, ZeroConstructor, IsPlainOldData)
@@ -1105,7 +1538,7 @@ struct AAIController_MoveToLocation_Params
 };
 
 // Function AIModule.AIController.MoveToActor
-struct AAIController_MoveToActor_Params
+struct ADetourCrowdAIController_MoveToActor_Params
 {
 	class AActor*                                      Goal;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              AcceptanceRadius;                                         // (Parm, ZeroConstructor, IsPlainOldData)
@@ -1118,166 +1551,227 @@ struct AAIController_MoveToActor_Params
 };
 
 // Function AIModule.AIController.K2_SetFocus
-struct AAIController_K2_SetFocus_Params
+struct ADetourCrowdAIController_K2_SetFocus_Params
 {
 	class AActor*                                      NewFocus;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function AIModule.AIController.K2_SetFocalPoint
-struct AAIController_K2_SetFocalPoint_Params
+struct ADetourCrowdAIController_K2_SetFocalPoint_Params
 {
 	struct FVector                                     FP;                                                       // (Parm, IsPlainOldData)
 };
 
 // Function AIModule.AIController.K2_ClearFocus
-struct AAIController_K2_ClearFocus_Params
+struct ADetourCrowdAIController_K2_ClearFocus_Params
 {
 };
 
 // Function AIModule.AIController.HasPartialPath
-struct AAIController_HasPartialPath_Params
+struct ADetourCrowdAIController_HasPartialPath_Params
 {
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function AIModule.AIController.GetPathFollowingComponent
-struct AAIController_GetPathFollowingComponent_Params
+struct ADetourCrowdAIController_GetPathFollowingComponent_Params
 {
 	class UPathFollowingComponent*                     ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
 };
 
 // Function AIModule.AIController.GetMoveStatus
-struct AAIController_GetMoveStatus_Params
+struct ADetourCrowdAIController_GetMoveStatus_Params
 {
 	TEnumAsByte<EPathFollowingStatus>                  ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function AIModule.AIController.GetImmediateMoveDestination
-struct AAIController_GetImmediateMoveDestination_Params
+struct ADetourCrowdAIController_GetImmediateMoveDestination_Params
 {
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
 // Function AIModule.AIController.GetFocusActor
-struct AAIController_GetFocusActor_Params
+struct ADetourCrowdAIController_GetFocusActor_Params
 {
 	class AActor*                                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
 // Function AIModule.AIController.GetFocalPointOnActor
-struct AAIController_GetFocalPointOnActor_Params
+struct ADetourCrowdAIController_GetFocalPointOnActor_Params
 {
 	class AActor*                                      Actor;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
 // Function AIModule.AIController.GetFocalPoint
-struct AAIController_GetFocalPoint_Params
+struct ADetourCrowdAIController_GetFocalPoint_Params
 {
 	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
 // Function AIModule.AIController.GetAIPerceptionComponent
-struct AAIController_GetAIPerceptionComponent_Params
+struct ADetourCrowdAIController_GetAIPerceptionComponent_Params
 {
 	class UAIPerceptionComponent*                      ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
 };
 
 // Function AIModule.AIController.ClaimTaskResource
-struct AAIController_ClaimTaskResource_Params
+struct ADetourCrowdAIController_ClaimTaskResource_Params
 {
 	class UClass*                                      ResourceClass;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function AIModule.AIAsyncTaskBlueprintProxy.OnMoveCompleted
-struct UAIAsyncTaskBlueprintProxy_OnMoveCompleted_Params
+// Function AIModule.AIController.UseBlackboard
+struct AGridPathAIController_UseBlackboard_Params
 {
-	struct FAIRequestID                                RequestID;                                                // (Parm)
-	TEnumAsByte<EPathFollowingResult>                  MovementResult;                                           // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AIModule.AIBlueprintHelperLibrary.UnlockAIResourcesWithAnimation
-struct UAIBlueprintHelperLibrary_UnlockAIResourcesWithAnimation_Params
-{
-	class UAnimInstance*                               AnimInstance;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bUnlockMovement;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               UnlockAILogic;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AIModule.AIBlueprintHelperLibrary.SpawnAIFromClass
-struct UAIBlueprintHelperLibrary_SpawnAIFromClass_Params
-{
-	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	class UClass*                                      PawnClass;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	class UBehaviorTree*                               BehaviorTree;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     Location;                                                 // (Parm, IsPlainOldData)
-	struct FRotator                                    Rotation;                                                 // (Parm, IsPlainOldData)
-	bool                                               bNoCollisionFail;                                         // (Parm, ZeroConstructor, IsPlainOldData)
-	class APawn*                                       ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function AIModule.AIBlueprintHelperLibrary.SendAIMessage
-struct UAIBlueprintHelperLibrary_SendAIMessage_Params
-{
-	class APawn*                                       Target;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FName                                       Message;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	class UObject*                                     MessageSource;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bSuccess;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AIModule.AIBlueprintHelperLibrary.LockAIResourcesWithAnimation
-struct UAIBlueprintHelperLibrary_LockAIResourcesWithAnimation_Params
-{
-	class UAnimInstance*                               AnimInstance;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bLockMovement;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               LockAILogic;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AIModule.AIBlueprintHelperLibrary.IsValidAIRotation
-struct UAIBlueprintHelperLibrary_IsValidAIRotation_Params
-{
-	struct FRotator                                    Rotation;                                                 // (Parm, IsPlainOldData)
+	class UBlackboardData*                             BlackboardAsset;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	class UBlackboardComponent*                        BlackboardComponent;                                      // (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
-// Function AIModule.AIBlueprintHelperLibrary.IsValidAILocation
-struct UAIBlueprintHelperLibrary_IsValidAILocation_Params
+// Function AIModule.AIController.UnclaimTaskResource
+struct AGridPathAIController_UnclaimTaskResource_Params
 {
-	struct FVector                                     Location;                                                 // (Parm, IsPlainOldData)
+	class UClass*                                      ResourceClass;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function AIModule.AIController.SetMoveBlockDetection
+struct AGridPathAIController_SetMoveBlockDetection_Params
+{
+	bool                                               bEnable;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function AIModule.AIController.RunBehaviorTree
+struct AGridPathAIController_RunBehaviorTree_Params
+{
+	class UBehaviorTree*                               BTAsset;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
-// Function AIModule.AIBlueprintHelperLibrary.IsValidAIDirection
-struct UAIBlueprintHelperLibrary_IsValidAIDirection_Params
+// Function AIModule.AIController.OnUsingBlackBoard
+struct AGridPathAIController_OnUsingBlackBoard_Params
 {
-	struct FVector                                     DirectionVector;                                          // (Parm, IsPlainOldData)
-	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	class UBlackboardComponent*                        BlackboardComp;                                           // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+	class UBlackboardData*                             BlackboardAsset;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function AIModule.AIBlueprintHelperLibrary.GetBlackboard
-struct UAIBlueprintHelperLibrary_GetBlackboard_Params
+// Function AIModule.AIController.OnUnpossess
+struct AGridPathAIController_OnUnpossess_Params
 {
-	class AActor*                                      Target;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-	class UBlackboardComponent*                        ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+	class APawn*                                       UnpossessedPawn;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function AIModule.AIBlueprintHelperLibrary.GetAIController
-struct UAIBlueprintHelperLibrary_GetAIController_Params
+// Function AIModule.AIController.OnPossess
+struct AGridPathAIController_OnPossess_Params
 {
-	class AActor*                                      ControlledActor;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	class AAIController*                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	class APawn*                                       PossessedPawn;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function AIModule.AIBlueprintHelperLibrary.CreateMoveToProxyObject
-struct UAIBlueprintHelperLibrary_CreateMoveToProxyObject_Params
+// Function AIModule.AIController.OnGameplayTaskResourcesClaimed
+struct AGridPathAIController_OnGameplayTaskResourcesClaimed_Params
 {
-	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	class APawn*                                       Pawn;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     Destination;                                              // (Parm, IsPlainOldData)
-	class AActor*                                      TargetActor;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FGameplayResourceSet                        NewlyClaimed;                                             // (Parm)
+	struct FGameplayResourceSet                        FreshlyReleased;                                          // (Parm)
+};
+
+// Function AIModule.AIController.MoveToLocation
+struct AGridPathAIController_MoveToLocation_Params
+{
+	struct FVector                                     Dest;                                                     // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
 	float                                              AcceptanceRadius;                                         // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               bStopOnOverlap;                                           // (Parm, ZeroConstructor, IsPlainOldData)
-	class UAIAsyncTaskBlueprintProxy*                  ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	bool                                               bUsePathfinding;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bProjectDestinationToNavigation;                          // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bCanStrafe;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	class UClass*                                      FilterClass;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bAllowPartialPath;                                        // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EPathFollowingRequestResult>           ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function AIModule.AIController.MoveToActor
+struct AGridPathAIController_MoveToActor_Params
+{
+	class AActor*                                      Goal;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              AcceptanceRadius;                                         // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bStopOnOverlap;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bUsePathfinding;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bCanStrafe;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	class UClass*                                      FilterClass;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bAllowPartialPath;                                        // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EPathFollowingRequestResult>           ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function AIModule.AIController.K2_SetFocus
+struct AGridPathAIController_K2_SetFocus_Params
+{
+	class AActor*                                      NewFocus;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function AIModule.AIController.K2_SetFocalPoint
+struct AGridPathAIController_K2_SetFocalPoint_Params
+{
+	struct FVector                                     FP;                                                       // (Parm, IsPlainOldData)
+};
+
+// Function AIModule.AIController.K2_ClearFocus
+struct AGridPathAIController_K2_ClearFocus_Params
+{
+};
+
+// Function AIModule.AIController.HasPartialPath
+struct AGridPathAIController_HasPartialPath_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function AIModule.AIController.GetPathFollowingComponent
+struct AGridPathAIController_GetPathFollowingComponent_Params
+{
+	class UPathFollowingComponent*                     ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+};
+
+// Function AIModule.AIController.GetMoveStatus
+struct AGridPathAIController_GetMoveStatus_Params
+{
+	TEnumAsByte<EPathFollowingStatus>                  ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function AIModule.AIController.GetImmediateMoveDestination
+struct AGridPathAIController_GetImmediateMoveDestination_Params
+{
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function AIModule.AIController.GetFocusActor
+struct AGridPathAIController_GetFocusActor_Params
+{
+	class AActor*                                      ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function AIModule.AIController.GetFocalPointOnActor
+struct AGridPathAIController_GetFocalPointOnActor_Params
+{
+	class AActor*                                      Actor;                                                    // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function AIModule.AIController.GetFocalPoint
+struct AGridPathAIController_GetFocalPoint_Params
+{
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function AIModule.AIController.GetAIPerceptionComponent
+struct AGridPathAIController_GetAIPerceptionComponent_Params
+{
+	class UAIPerceptionComponent*                      ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+};
+
+// Function AIModule.AIController.ClaimTaskResource
+struct AGridPathAIController_ClaimTaskResource_Params
+{
+	class UClass*                                      ResourceClass;                                            // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function AIModule.AIPerceptionSystem.ReportPerceptionEvent

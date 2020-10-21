@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -135,16 +135,16 @@ public:
 
 
 // Class SubstanceCore.SubstanceTexture2D
-// 0x0078 (0x0170 - 0x00F8)
+// 0x0070 (0x0160 - 0x00F0)
 class USubstanceTexture2D : public UTexture2DDynamic
 {
 public:
-	unsigned char                                      UnknownData00[0x48];                                      // 0x00F8(0x0048) MISSED OFFSET
-	class USubstanceGraphInstance*                     ParentInstance;                                           // 0x0140(0x0008) (Edit, ZeroConstructor, EditConst, IsPlainOldData)
-	TEnumAsByte<ETextureAddress>                       AddressX;                                                 // 0x0148(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ETextureAddress>                       AddressY;                                                 // 0x0149(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bCooked;                                                  // 0x014A(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x25];                                      // 0x014B(0x0025) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x40];                                      // 0x00F0(0x0040) MISSED OFFSET
+	class USubstanceGraphInstance*                     ParentInstance;                                           // 0x0130(0x0008) (Edit, ZeroConstructor, EditConst, IsPlainOldData)
+	TEnumAsByte<ETextureAddress>                       AddressX;                                                 // 0x0138(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ETextureAddress>                       AddressY;                                                 // 0x0139(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bCooked;                                                  // 0x013A(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x25];                                      // 0x013B(0x0025) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -175,24 +175,6 @@ public:
 		return ptr;
 	}
 
-
-	void STATIC_SyncRendering(class USubstanceGraphInstance* InstancesToRender);
-	void STATIC_SetGraphInstanceOutputSizeInt(class USubstanceGraphInstance* GraphInstance, int Width, int Height);
-	void STATIC_SetGraphInstanceOutputSize(class USubstanceGraphInstance* GraphInstance, TEnumAsByte<ESubstanceTextureSize> Width, TEnumAsByte<ESubstanceTextureSize> Height);
-	void STATIC_ResetInputParameters(class USubstanceGraphInstance* GraphInstance);
-	TArray<class USubstanceTexture2D*> STATIC_GetSubstanceTextures(class USubstanceGraphInstance* GraphInstance);
-	TArray<class USubstanceGraphInstance*> STATIC_GetSubstances(class UMaterialInterface* Material);
-	float STATIC_GetSubstanceLoadingProgress();
-	struct FString STATIC_GetGraphName(class USubstanceGraphInstance* GraphInstance);
-	struct FString STATIC_GetFactoryName(class USubstanceGraphInstance* GraphInstance);
-	void STATIC_EnableInstanceOutputs(class UObject* WorldContextObject, class USubstanceGraphInstance* GraphInstance, TArray<int> OutputIndices);
-	class USubstanceGraphInstance* STATIC_DuplicateGraphInstance(class UObject* WorldContextObject, class USubstanceGraphInstance* GraphInstance);
-	void STATIC_DisableInstanceOutputs(class UObject* WorldContextObject, class USubstanceGraphInstance* GraphInstance, TArray<int> OutputIndices);
-	class USubstanceGraphInstance* STATIC_CreateGraphInstance(class UObject* WorldContextObject, class USubstanceInstanceFactory* Factory, int GraphDescIndex, const struct FString& InstanceName);
-	class USubstanceInstanceFactory* STATIC_CreateAggregateSubstanceFactory(class USubstanceInstanceFactory* OutputFactory, int OutputFactoryGraphIndex, class USubstanceInstanceFactory* InputFactory, int InputFactoryGraphIndex, TArray<struct FSubstanceConnection> Connections);
-	void STATIC_CopyInputParameters(class USubstanceGraphInstance* SourceGraphInstance, class USubstanceGraphInstance* DestGraphInstance);
-	void STATIC_ClearCache();
-	void STATIC_AsyncRendering(class USubstanceGraphInstance* InstancesToRender);
 };
 
 

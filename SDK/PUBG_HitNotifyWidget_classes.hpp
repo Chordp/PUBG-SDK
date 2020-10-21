@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -42,18 +42,18 @@ public:
 	void InitializeBloodSpotWidgets();
 	void InitializeKoreanRating();
 	void InitializeChineseLicensing();
-	void DamagedPercentToDamage(float* DamagedPercent, float* Damage);
+	void DamagedPercentToDamage(float DamagedPercent, float* Damage);
 	void GetPlayerHealthPercent(float* HealthPercent);
-	void PostAkEvent(class UAkAudioEvent** AkEvent);
-	void SetRTPCValue(struct FString* RTPC, float* Value);
-	void DamagedPercentToDamagePercent(float* DamagedPercent, float* DamagePercent);
+	void PostAkEvent(class UAkAudioEvent* AkEvent);
+	void SetRTPCValue(const struct FString& RTPC, float Value);
+	void DamagedPercentToDamagePercent(float DamagedPercent, float* DamagePercent);
 	void PlayHitNotifySound();
 	void GetRandomScale(struct FVector2D* Scale);
 	void GetRandomTranslation(struct FVector2D* Translation);
-	void OnHitNotify_Temp(float* DamagePercent, EDamageTypeCategory* DamageTypeCategory);
+	void OnHitNotify_Temp(float DamagePercent, EDamageTypeCategory DamageTypeCategory);
 	void Construct();
-	void OnPlayBloodSpot(class UUserWidget** Widget);
-	void ExecuteUbergraph_HitNotifyWidget(int* EntryPoint);
+	void OnPlayBloodSpot(class UUserWidget* Widget);
+	void ExecuteUbergraph_HitNotifyWidget(int EntryPoint);
 };
 
 

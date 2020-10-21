@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -52,9 +52,9 @@ struct UCarePackgeItemListWidget_C_HideCarePackageItemList_Params
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.GetCarePackageItemWidget
 struct UCarePackgeItemListWidget_C_GetCarePackageItemWidget_Params
 {
-	class UTexture**                                   ItemIcon;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FText*                                      ItemName;                                                 // (Parm)
-	int*                                               ItemCount;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	class UTexture*                                    ItemIcon;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FText                                       ItemName;                                                 // (Parm)
+	int                                                ItemCount;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	class UCarePackageItemSlotWidget_C*                CarePackageItemSlotWidget;                                // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -86,7 +86,7 @@ struct UCarePackgeItemListWidget_C_TimerCheckUpdateList_Params
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.ExecuteUbergraph_CarePackgeItemListWidget
 struct UCarePackgeItemListWidget_C_ExecuteUbergraph_CarePackgeItemListWidget_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function CarePackgeItemListWidget.CarePackgeItemListWidget_C.EventDispatcher_ShowCarePackageItem__DelegateSignature

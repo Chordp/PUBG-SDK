@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,11 +15,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass TSLAchievement_BP.TSLAchievement_BP_C
-// 0x0008 (0x0518 - 0x0510)
+// 0x0008 (0x0528 - 0x0520)
 class ATSLAchievement_BP_C : public ATslAchievement
 {
 public:
-	class USceneComponent*                             DefaultSceneRoot;                                         // 0x0510(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class USceneComponent*                             DefaultSceneRoot;                                         // 0x0520(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
@@ -30,8 +30,6 @@ public:
 		return ptr;
 	}
 
-
-	void UserConstructionScript();
 };
 
 

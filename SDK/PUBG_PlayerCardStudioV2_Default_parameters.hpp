@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -32,7 +32,7 @@ struct APlayerCardStudioV2_Default_C_ReceiveDestroyed_Params
 // Function PlayerCardStudioV2_Default.PlayerCardStudioV2_Default_C.ExecuteUbergraph_PlayerCardStudioV2_Default
 struct APlayerCardStudioV2_Default_C_ExecuteUbergraph_PlayerCardStudioV2_Default_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,15 +17,16 @@ namespace SDK
 // Function PopupWidget.PopupWidget_C.HandleCompetitive
 struct UPopupWidget_C_HandleCompetitive_Params
 {
+	EPopupStyle                                        Style;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function PopupWidget.PopupWidget_C.SetPopup
 struct UPopupWidget_C_SetPopup_Params
 {
-	EPopupStyle*                                       PopupStyle;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FText*                                      Title;                                                    // (ConstParm, Parm, OutParm, ReferenceParm)
-	struct FText*                                      Message;                                                  // (ConstParm, Parm, OutParm, ReferenceParm)
-	struct FScriptDelegate*                            PressedDelegate;                                          // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	EPopupStyle                                        PopupStyle;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FText                                       Title;                                                    // (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FText                                       Message;                                                  // (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FScriptDelegate                             PressedDelegate;                                          // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
 
 // Function PopupWidget.PopupWidget_C.Construct
@@ -46,7 +47,7 @@ struct UPopupWidget_C_CustomEvent_Params
 // Function PopupWidget.PopupWidget_C.ExecuteUbergraph_PopupWidget
 struct UPopupWidget_C_ExecuteUbergraph_PopupWidget_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,18 +17,18 @@ namespace SDK
 // Function BP_ShellEvent_Rifle.BP_ShellEvent_Rifle_C.RunEvent
 struct UBP_ShellEvent_Rifle_C_RunEvent_Params
 {
-	struct FVector*                                    InCollideDirection;                                       // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	struct FVector*                                    InHitLocation;                                            // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	struct FVector*                                    InHitNormal;                                              // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-	struct FName*                                      InBoneName;                                               // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
-	class UWorld**                                     InWorld;                                                  // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-	class AActor**                                     InActor;                                                  // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     InCollideDirection;                                       // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+	struct FVector                                     InHitLocation;                                            // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+	struct FVector                                     InHitNormal;                                              // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+	struct FName                                       InBoneName;                                               // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
+	class UWorld*                                      InWorld;                                                  // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	class AActor*                                      InActor;                                                  // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_ShellEvent_Rifle.BP_ShellEvent_Rifle_C.ExecuteUbergraph_BP_ShellEvent_Rifle
 struct UBP_ShellEvent_Rifle_C_ExecuteUbergraph_BP_ShellEvent_Rifle_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

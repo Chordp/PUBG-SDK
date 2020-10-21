@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -28,7 +28,7 @@ struct UMainLobbyHUD_C_ToggleSystemMenu_Params
 // Function MainLobbyHUD.MainLobbyHUD_C.CloseWebPopupImpl
 struct UMainLobbyHUD_C_CloseWebPopupImpl_Params
 {
-	struct FString*                                    PopupId;                                                  // (Parm, ZeroConstructor)
+	struct FString                                     PopupId;                                                  // (Parm, ZeroConstructor)
 };
 
 // Function MainLobbyHUD.MainLobbyHUD_C.HideCurtain
@@ -49,77 +49,77 @@ struct UMainLobbyHUD_C_OnKey_LobbySystemMenu_Params
 // Function MainLobbyHUD.MainLobbyHUD_C.OnKeyDown
 struct UMainLobbyHUD_C_OnKeyDown_Params
 {
-	struct FGeometry*                                  MyGeometry;                                               // (Parm, IsPlainOldData)
-	struct FKeyEvent*                                  InKeyEvent;                                               // (Parm)
+	struct FGeometry                                   MyGeometry;                                               // (Parm, IsPlainOldData)
+	struct FKeyEvent                                   InKeyEvent;                                               // (Parm)
 	struct FEventReply                                 ReturnValue;                                              // (Parm, OutParm, ReturnParm)
 };
 
 // Function MainLobbyHUD.MainLobbyHUD_C.OnPrepass_isShipping
 struct UMainLobbyHUD_C_OnPrepass_isShipping_Params
 {
-	class UWidget**                                    BoundWidget;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	class UWidget*                                     BoundWidget;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function MainLobbyHUD.MainLobbyHUD_C.CleanUpNameTagWidget
 struct UMainLobbyHUD_C_CleanUpNameTagWidget_Params
 {
-	int*                                               SlotIndex;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                SlotIndex;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function MainLobbyHUD.MainLobbyHUD_C.SetupNameTagWidget
 struct UMainLobbyHUD_C_SetupNameTagWidget_Params
 {
-	int*                                               SlotIndex;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                SlotIndex;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function MainLobbyHUD.MainLobbyHUD_C.GetNameTagWidget
 struct UMainLobbyHUD_C_GetNameTagWidget_Params
 {
-	int*                                               SlotIndex;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                SlotIndex;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	class UTslLobbyNameTagWidget*                      Widget;                                                   // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function MainLobbyHUD.MainLobbyHUD_C.OnDestroyCharacter
 struct UMainLobbyHUD_C_OnDestroyCharacter_Params
 {
-	int*                                               SlotIndex;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                SlotIndex;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function MainLobbyHUD.MainLobbyHUD_C.OnCreateCharacter
 struct UMainLobbyHUD_C_OnCreateCharacter_Params
 {
-	int*                                               SlotIndex;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                SlotIndex;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function MainLobbyHUD.MainLobbyHUD_C.CloseWebPopupByID
 struct UMainLobbyHUD_C_CloseWebPopupByID_Params
 {
-	struct FString*                                    WebPopupID;                                               // (Parm, ZeroConstructor)
+	struct FString                                     WebPopupID;                                               // (Parm, ZeroConstructor)
 };
 
 // Function MainLobbyHUD.MainLobbyHUD_C.RemoveWebPopup
 struct UMainLobbyHUD_C_RemoveWebPopup_Params
 {
-	class UWebPopup_C**                                Widget;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	class UWebPopup_C*                                 Widget;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function MainLobbyHUD.MainLobbyHUD_C.AddWebPopup
 struct UMainLobbyHUD_C_AddWebPopup_Params
 {
-	class UWebPopup_C**                                Widget;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	class UWebPopup_C*                                 Widget;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function MainLobbyHUD.MainLobbyHUD_C.CanShowWebPopup
 struct UMainLobbyHUD_C_CanShowWebPopup_Params
 {
-	struct FString*                                    PopupId;                                                  // (Parm, ZeroConstructor)
+	struct FString                                     PopupId;                                                  // (Parm, ZeroConstructor)
 	bool                                               Result;                                                   // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function MainLobbyHUD.MainLobbyHUD_C.ShowWebPopupImpl
 struct UMainLobbyHUD_C_ShowWebPopupImpl_Params
 {
-	struct FWebPopupParam*                             Param;                                                    // (Parm)
+	struct FWebPopupParam                              Param;                                                    // (Parm)
 };
 
 // Function MainLobbyHUD.MainLobbyHUD_C.OnReload
@@ -161,7 +161,7 @@ struct UMainLobbyHUD_C_BndEvt__Button_Quit_K2Node_ComponentBoundEvent_229_OnButt
 // Function MainLobbyHUD.MainLobbyHUD_C.ShowWebPopup
 struct UMainLobbyHUD_C_ShowWebPopup_Params
 {
-	struct FWebPopupParam*                             Param;                                                    // (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FWebPopupParam                              Param;                                                    // (ConstParm, Parm, OutParm, ReferenceParm)
 };
 
 // Function MainLobbyHUD.MainLobbyHUD_C.Construct
@@ -172,7 +172,7 @@ struct UMainLobbyHUD_C_Construct_Params
 // Function MainLobbyHUD.MainLobbyHUD_C.PreloadWebPopup
 struct UMainLobbyHUD_C_PreloadWebPopup_Params
 {
-	TArray<struct FWebPopupParam>*                     WebPopupParams;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<struct FWebPopupParam>                      WebPopupParams;                                           // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
 
 // Function MainLobbyHUD.MainLobbyHUD_C.BndEvt__Button_0_K2Node_ComponentBoundEvent_35_OnButtonClickedEvent__DelegateSignature
@@ -188,7 +188,7 @@ struct UMainLobbyHUD_C_BndEvt__Button_NewSystemMenu_K2Node_ComponentBoundEvent_9
 // Function MainLobbyHUD.MainLobbyHUD_C.CloseWebPopup
 struct UMainLobbyHUD_C_CloseWebPopup_Params
 {
-	struct FString*                                    PopupId;                                                  // (Parm, ZeroConstructor)
+	struct FString                                     PopupId;                                                  // (Parm, ZeroConstructor)
 };
 
 // Function MainLobbyHUD.MainLobbyHUD_C.InitializeMainUMGHUD
@@ -199,7 +199,7 @@ struct UMainLobbyHUD_C_InitializeMainUMGHUD_Params
 // Function MainLobbyHUD.MainLobbyHUD_C.ExecuteUbergraph_MainLobbyHUD
 struct UMainLobbyHUD_C_ExecuteUbergraph_MainLobbyHUD_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

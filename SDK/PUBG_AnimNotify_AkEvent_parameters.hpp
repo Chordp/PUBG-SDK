@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,6 +13,12 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Parameters
 //---------------------------------------------------------------------------
+
+// Function TslGame.AnimNotify_AkEvent.PlayPreviewEditor
+struct UAnimNotify_AkEvent_C_PlayPreviewEditor_Params
+{
+	class USkeletalMeshComponent*                      MeshComp;                                                 // (ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+};
 
 }
 

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -36,7 +36,7 @@ public:
 
 	void BP_UpdateIconType(EPlatoonCarePackageType Type);
 	void BP_UpdateIconImage(EPlatoonSupportRequestEventType IconType);
-	void ExecuteUbergraph_PlatoonCarePackageDropIndicator(int* EntryPoint);
+	void ExecuteUbergraph_PlatoonCarePackageDropIndicator(int EntryPoint);
 };
 
 

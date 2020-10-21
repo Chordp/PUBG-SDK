@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,12 +15,14 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Class CoherentRenderingPlugin.CoherentRenderingSettings
-// 0x0008 (0x0048 - 0x0040)
+// 0x0018 (0x0058 - 0x0040)
 class UCoherentRenderingSettings : public UObject
 {
 public:
 	ECoherentRenderingSettingsSeverity                 RenderingLogSeverity;                                     // 0x0040(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0041(0x0007) MISSED OFFSET
+	bool                                               ShowWarningsOnScreen;                                     // 0x0041(0x0001) (Edit, ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x6];                                       // 0x0042(0x0006) MISSED OFFSET
+	struct FString                                     DeveloperOptions;                                         // 0x0048(0x0010) (Edit, ZeroConstructor, Config)
 
 	static UClass* StaticClass()
 	{

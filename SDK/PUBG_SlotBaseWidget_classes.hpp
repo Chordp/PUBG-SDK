@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -34,10 +34,10 @@ public:
 
 	void IsPlayCharacterPickupAnim(bool* bIsPickup);
 	void IsCharacterCasting(bool* IsCasting);
-	void PlaySoundAk(class UAkAudioEvent** SoundAk);
+	void PlaySoundAk(class UAkAudioEvent* SoundAk);
 	void Construct();
-	void OnMouseEnter(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent);
-	void ExecuteUbergraph_SlotBaseWidget(int* EntryPoint);
+	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void ExecuteUbergraph_SlotBaseWidget(int EntryPoint);
 };
 
 

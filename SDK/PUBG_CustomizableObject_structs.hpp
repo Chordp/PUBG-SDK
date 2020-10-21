@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -192,21 +192,16 @@ struct FMaskOutTexture
 };
 
 // ScriptStruct CustomizableObject.MutableModelImageProperties
-// 0x0028
+// 0x0020
 struct FMutableModelImageProperties
 {
 	struct FString                                     TextureParameterName;                                     // 0x0000(0x0010) (ZeroConstructor)
-	TEnumAsByte<ETextureCompressionSettings>           CompressionSettings;                                      // 0x0010(0x0001) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ETextureFilter>                        Filter;                                                   // 0x0011(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x2];                                       // 0x0012(0x0002) MISSED OFFSET
+	TEnumAsByte<ETextureFilter>                        Filter;                                                   // 0x0010(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0011(0x0003) MISSED OFFSET
 	unsigned char                                      SRGB : 1;                                                 // 0x0014(0x0001)
-	unsigned char                                      bDitherMipMapAlpha : 1;                                   // 0x0014(0x0001)
 	unsigned char                                      UnknownData01[0x3];                                       // 0x0015(0x0003) MISSED OFFSET
 	int                                                LODBias;                                                  // 0x0018(0x0004) (ZeroConstructor, IsPlainOldData)
-	TEnumAsByte<ETextureMipGenSettings>                MipGenSettings;                                           // 0x001C(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x3];                                       // 0x001D(0x0003) MISSED OFFSET
-	int                                                MaxTextureSize;                                           // 0x0020(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x4];                                       // 0x0024(0x0004) MISSED OFFSET
+	unsigned char                                      UnknownData02[0x4];                                       // 0x001C(0x0004) MISSED OFFSET
 };
 
 // ScriptStruct CustomizableObject.CustomizableObjectIdPair
@@ -215,27 +210,6 @@ struct FCustomizableObjectIdPair
 {
 	struct FString                                     CustomizableObjectGroupName;                              // 0x0000(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
 	struct FString                                     CustomizableObjectName;                                   // 0x0010(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
-};
-
-// ScriptStruct CustomizableObject.CompilationOptions
-// 0x0020
-struct FCompilationOptions
-{
-	bool                                               bTextureCompression;                                      // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
-	int                                                OptimizationLevel;                                        // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData)
-	bool                                               bUseParallelCompilation;                                  // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData)
-	bool                                               bUseDiskCompilation;                                      // 0x0009(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x16];                                      // 0x000A(0x0016) MISSED OFFSET
-};
-
-// ScriptStruct CustomizableObject.CustomizableObjectExportOptions
-// 0x0018
-struct FCustomizableObjectExportOptions
-{
-	bool                                               bTextureCompression;                                      // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
-	struct FString                                     TargetPlatform;                                           // 0x0008(0x0010) (ZeroConstructor)
 };
 
 // ScriptStruct CustomizableObject.MutableModelParameterValue
@@ -317,6 +291,27 @@ struct FCustomizedMaterialTexture2D
 {
 	struct FName                                       Name;                                                     // 0x0000(0x0008) (Edit, ZeroConstructor, EditConst, IsPlainOldData)
 	class UTexture2D*                                  Texture;                                                  // 0x0008(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct CustomizableObject.CustomizableObjectExportOptions
+// 0x0018
+struct FCustomizableObjectExportOptions
+{
+	bool                                               bTextureCompression;                                      // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0001(0x0007) MISSED OFFSET
+	struct FString                                     TargetPlatform;                                           // 0x0008(0x0010) (ZeroConstructor)
+};
+
+// ScriptStruct CustomizableObject.CompilationOptions
+// 0x0020
+struct FCompilationOptions
+{
+	bool                                               bTextureCompression;                                      // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
+	int                                                OptimizationLevel;                                        // 0x0004(0x0004) (ZeroConstructor, IsPlainOldData)
+	bool                                               bUseParallelCompilation;                                  // 0x0008(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               bUseDiskCompilation;                                      // 0x0009(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x16];                                      // 0x000A(0x0016) MISSED OFFSET
 };
 
 }

@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,7 +14,7 @@ namespace SDK
 
 // Function BP_MasteryPose.BP_MasteryPose_C.ClearEffects
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABP_MasteryPose_C::ClearEffects()
 {
@@ -36,10 +36,10 @@ void ABP_MasteryPose_C::ClearEffects()
 // Function BP_MasteryPose.BP_MasteryPose_C.AttachObjects
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class ACharacter**             LobbyCharacter                 (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// class ACharacter*              LobbyCharacter                 (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void ABP_MasteryPose_C::AttachObjects(class ACharacter** LobbyCharacter)
+void ABP_MasteryPose_C::AttachObjects(class ACharacter* LobbyCharacter)
 {
 	static UFunction* fn;
 
@@ -59,7 +59,7 @@ void ABP_MasteryPose_C::AttachObjects(class ACharacter** LobbyCharacter)
 
 // Function BP_MasteryPose.BP_MasteryPose_C.ShowPlayerCardEffects
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABP_MasteryPose_C::ShowPlayerCardEffects()
 {
@@ -80,7 +80,7 @@ void ABP_MasteryPose_C::ShowPlayerCardEffects()
 
 // Function BP_MasteryPose.BP_MasteryPose_C.ShowLobbyEffects
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABP_MasteryPose_C::ShowLobbyEffects()
 {
@@ -101,7 +101,7 @@ void ABP_MasteryPose_C::ShowLobbyEffects()
 
 // Function BP_MasteryPose.BP_MasteryPose_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABP_MasteryPose_C::UserConstructionScript()
 {
@@ -122,7 +122,7 @@ void ABP_MasteryPose_C::UserConstructionScript()
 
 // Function BP_MasteryPose.BP_MasteryPose_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABP_MasteryPose_C::ReceiveBeginPlay()
 {
@@ -143,7 +143,7 @@ void ABP_MasteryPose_C::ReceiveBeginPlay()
 
 // Function BP_MasteryPose.BP_MasteryPose_C.ReceiveDestroyed
 // (Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABP_MasteryPose_C::ReceiveDestroyed()
 {
@@ -165,10 +165,10 @@ void ABP_MasteryPose_C::ReceiveDestroyed()
 // Function BP_MasteryPose.BP_MasteryPose_C.AttachObjectsEvent
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// class ACharacter**             Character                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// class ACharacter*              Character                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void ABP_MasteryPose_C::AttachObjectsEvent(class ACharacter** Character)
+void ABP_MasteryPose_C::AttachObjectsEvent(class ACharacter* Character)
 {
 	static UFunction* fn;
 
@@ -188,7 +188,7 @@ void ABP_MasteryPose_C::AttachObjectsEvent(class ACharacter** Character)
 
 // Function BP_MasteryPose.BP_MasteryPose_C.ClearEffectsEvent
 // (Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABP_MasteryPose_C::ClearEffectsEvent()
 {
@@ -209,7 +209,7 @@ void ABP_MasteryPose_C::ClearEffectsEvent()
 
 // Function BP_MasteryPose.BP_MasteryPose_C.ShowEffects
 // (Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABP_MasteryPose_C::ShowEffects()
 {
@@ -231,10 +231,10 @@ void ABP_MasteryPose_C::ShowEffects()
 // Function BP_MasteryPose.BP_MasteryPose_C.ExecuteUbergraph_BP_MasteryPose
 // (HasDefaults)
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void ABP_MasteryPose_C::ExecuteUbergraph_BP_MasteryPose(int* EntryPoint)
+void ABP_MasteryPose_C::ExecuteUbergraph_BP_MasteryPose(int EntryPoint)
 {
 	static UFunction* fn;
 

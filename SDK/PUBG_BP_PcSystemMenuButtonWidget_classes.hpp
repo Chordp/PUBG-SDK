@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -39,7 +39,7 @@ public:
 
 	void PreConstruct(bool IsDesignTime);
 	void BndEvt__Button_Internal_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
-	void ExecuteUbergraph_BP_PcSystemMenuButtonWidget(int* EntryPoint);
+	void ExecuteUbergraph_BP_PcSystemMenuButtonWidget(int EntryPoint);
 	void OnClicked__DelegateSignature();
 };
 

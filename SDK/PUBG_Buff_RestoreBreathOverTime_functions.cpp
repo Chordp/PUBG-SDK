@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -16,7 +16,7 @@ namespace SDK
 // (Event, Public, HasOutParms, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 bool ABuff_RestoreBreathOverTime_C::CanApplyBuff()
 {
@@ -39,7 +39,7 @@ bool ABuff_RestoreBreathOverTime_C::CanApplyBuff()
 
 // Function Buff_RestoreBreathOverTime.Buff_RestoreBreathOverTime_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABuff_RestoreBreathOverTime_C::UserConstructionScript()
 {
@@ -60,7 +60,7 @@ void ABuff_RestoreBreathOverTime_C::UserConstructionScript()
 
 // Function Buff_RestoreBreathOverTime.Buff_RestoreBreathOverTime_C.TickBuff
 // (Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABuff_RestoreBreathOverTime_C::TickBuff()
 {
@@ -81,7 +81,7 @@ void ABuff_RestoreBreathOverTime_C::TickBuff()
 
 // Function Buff_RestoreBreathOverTime.Buff_RestoreBreathOverTime_C.AfterDelay
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABuff_RestoreBreathOverTime_C::AfterDelay()
 {
@@ -102,7 +102,7 @@ void ABuff_RestoreBreathOverTime_C::AfterDelay()
 
 // Function Buff_RestoreBreathOverTime.Buff_RestoreBreathOverTime_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABuff_RestoreBreathOverTime_C::ReceiveBeginPlay()
 {
@@ -124,10 +124,10 @@ void ABuff_RestoreBreathOverTime_C::ReceiveBeginPlay()
 // Function Buff_RestoreBreathOverTime.Buff_RestoreBreathOverTime_C.ExecuteUbergraph_Buff_RestoreBreathOverTime
 // (HasDefaults)
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void ABuff_RestoreBreathOverTime_C::ExecuteUbergraph_Buff_RestoreBreathOverTime(int* EntryPoint)
+void ABuff_RestoreBreathOverTime_C::ExecuteUbergraph_Buff_RestoreBreathOverTime(int EntryPoint)
 {
 	static UFunction* fn;
 

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_FireEffectController_JerryCan.BP_FireEffectController_JerryCan_C
-// 0x0000 (0x05E0 - 0x05E0)
+// 0x0000 (0x05F0 - 0x05F0)
 class ABP_FireEffectController_JerryCan_C : public ATslEffectController
 {
 public:
@@ -29,6 +29,14 @@ public:
 		return ptr;
 	}
 
+
+	void TickDamageFields();
+	void OnTakeDamage(class AActor* DamagedActor, float Damage, class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser);
+	void EndEffect();
+	void Client_ShowDebugString(const struct FVector& InLocation, const struct FString& InText, class AActor* InActor, const struct FColor& InColor, float InTime);
+	void Client_ShowDebugSphere(const struct FVector& InLocation, float InRadius, const struct FColor& InColor, float InTime);
+	void Client_ShowDebugLine(const struct FVector& InStart, const struct FVector& InEnd, const struct FColor& InColor, float InTime);
+	void Client_ShowDebugCoordinateSystem(const struct FVector& InStart, const struct FQuat& InQuat, float InTime, float InSize);
 };
 
 

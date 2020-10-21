@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,7 +17,7 @@ namespace SDK
 // Function InGameReplayMenu.InGameReplayMenu_C.SetHUD
 struct UInGameReplayMenu_C_SetHUD_Params
 {
-	class ATslHUD**                                    inHUD;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	class ATslHUD*                                     inHUD;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function InGameReplayMenu.InGameReplayMenu_C.GotoReplayList
@@ -29,7 +29,7 @@ struct UInGameReplayMenu_C_GotoReplayList_Params
 // Function InGameReplayMenu.InGameReplayMenu_C.QuitReplay
 struct UInGameReplayMenu_C_QuitReplay_Params
 {
-	EPopupButtonID*                                    ButtonID;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	EPopupButtonID                                     ButtonID;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function InGameReplayMenu.InGameReplayMenu_C.BndEvt__Button_ReplayList_K2Node_ComponentBoundEvent_210_OnButtonClickedEvent__DelegateSignature
@@ -65,7 +65,7 @@ struct UInGameReplayMenu_C_BndEvt__Button_Option_K2Node_ComponentBoundEvent_68_O
 // Function InGameReplayMenu.InGameReplayMenu_C.ExecuteUbergraph_InGameReplayMenu
 struct UInGameReplayMenu_C_ExecuteUbergraph_InGameReplayMenu_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

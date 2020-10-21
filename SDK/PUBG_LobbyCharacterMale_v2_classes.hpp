@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass LobbyCharacterMale_v2.LobbyCharacterMale_v2_C
-// 0x0000 (0x0A40 - 0x0A40)
+// 0x0000 (0x0A60 - 0x0A60)
 class ALobbyCharacterMale_v2_C : public ALobbyCharacterBase_v2_C
 {
 public:
@@ -29,6 +29,21 @@ public:
 		return ptr;
 	}
 
+
+	void SetLobbyCharacterAnimationType(ELobbyCharacterAnimationType NewLobbyCharacterAnimationType);
+	void RemoveCustomAnimation();
+	void OnMontageEnded(class UAnimMontage* Montage, bool bInterrupted);
+	bool IsLogout();
+	bool IsInCustomizationScene();
+	int GetSlotId();
+	ERankType GetRankType();
+	int GetRankDivision();
+	struct FString GetNickName();
+	struct FString GetNetId();
+	ELobbyCharacterAnimationType GetLobbyCharacterAnimationType();
+	struct FString GetClanName();
+	EOutGamePlatformProvider GetCharacterPlatform();
+	void ApplyCustomAnimation(class UAnimationAsset* Animation);
 };
 
 

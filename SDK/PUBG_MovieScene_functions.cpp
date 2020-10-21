@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,7 +14,7 @@ namespace SDK
 
 // Function MovieScene.MovieSceneSequencePlayer.Stop
 // (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF6298692E0              		 offset:d992e0                        
+// FunctionAddress:0x00007FF75A672110              		 offset:c72110                        
 
 void UMovieSceneSequencePlayer::Stop()
 {
@@ -36,7 +36,7 @@ void UMovieSceneSequencePlayer::Stop()
 
 // Function MovieScene.MovieSceneSequencePlayer.StartPlayingNextTick
 // (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF62D8B2D00              		 offset:4de2d00                       
+// FunctionAddress:0x00007FF75CA74000              		 offset:3074000                       
 
 void UMovieSceneSequencePlayer::StartPlayingNextTick()
 {
@@ -60,7 +60,7 @@ void UMovieSceneSequencePlayer::StartPlayingNextTick()
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // float                          PlayRate                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629E2CCE0              		 offset:135cce0                       
+// FunctionAddress:0x00007FF75E9AA640              		 offset:4faa640                       
 
 void UMovieSceneSequencePlayer::SetPlayRate(float PlayRate)
 {
@@ -86,7 +86,7 @@ void UMovieSceneSequencePlayer::SetPlayRate(float PlayRate)
 // Parameters:
 // float                          NewStartTime                   (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 // float                          NewEndTime                     (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62A27A7E0              		 offset:17aa7e0                       
+// FunctionAddress:0x00007FF75EDE5710              		 offset:53e5710                       
 
 void UMovieSceneSequencePlayer::SetPlaybackRange(float NewStartTime, float NewEndTime)
 {
@@ -112,7 +112,7 @@ void UMovieSceneSequencePlayer::SetPlaybackRange(float NewStartTime, float NewEn
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // float                          NewPlaybackPosition            (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62C8FA7E0              		 offset:3e2a7e0                       
+// FunctionAddress:0x00007FF759B466C0              		 offset:1466c0                        
 
 void UMovieSceneSequencePlayer::SetPlaybackPosition(float NewPlaybackPosition)
 {
@@ -135,7 +135,7 @@ void UMovieSceneSequencePlayer::SetPlaybackPosition(float NewPlaybackPosition)
 
 // Function MovieScene.MovieSceneSequencePlayer.PlayReverse
 // (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF62CEA31D0              		 offset:43d31d0                       
+// FunctionAddress:0x00007FF75EE1E0E0              		 offset:541e0e0                       
 
 void UMovieSceneSequencePlayer::PlayReverse()
 {
@@ -159,7 +159,7 @@ void UMovieSceneSequencePlayer::PlayReverse()
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // int                            NumLoops                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62928F0A0              		 offset:7bf0a0                        
+// FunctionAddress:0x00007FF75DBFA530              		 offset:41fa530                       
 
 void UMovieSceneSequencePlayer::PlayLooping(int NumLoops)
 {
@@ -182,7 +182,7 @@ void UMovieSceneSequencePlayer::PlayLooping(int NumLoops)
 
 // Function MovieScene.MovieSceneSequencePlayer.Play
 // (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF62B948190              		 offset:2e78190                       
+// FunctionAddress:0x00007FF75CE9F270              		 offset:349f270                       
 
 void UMovieSceneSequencePlayer::Play()
 {
@@ -204,7 +204,7 @@ void UMovieSceneSequencePlayer::Play()
 
 // Function MovieScene.MovieSceneSequencePlayer.Pause
 // (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF62C871D70              		 offset:3da1d70                       
+// FunctionAddress:0x00007FF75EC7E5D0              		 offset:527e5d0                       
 
 void UMovieSceneSequencePlayer::Pause()
 {
@@ -228,7 +228,7 @@ void UMovieSceneSequencePlayer::Pause()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62A9F1EE0              		 offset:1f21ee0                       
+// FunctionAddress:0x00007FF75EDAD330              		 offset:53ad330                       
 
 bool UMovieSceneSequencePlayer::IsPlaying()
 {
@@ -254,7 +254,7 @@ bool UMovieSceneSequencePlayer::IsPlaying()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62C37BF70              		 offset:38abf70                       
+// FunctionAddress:0x00007FF75A162590              		 offset:762590                        
 
 float UMovieSceneSequencePlayer::GetPlayRate()
 {
@@ -280,7 +280,7 @@ float UMovieSceneSequencePlayer::GetPlayRate()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF629CBC130              		 offset:11ec130                       
+// FunctionAddress:0x00007FF759BE74E0              		 offset:1e74e0                        
 
 float UMovieSceneSequencePlayer::GetPlaybackStart()
 {
@@ -306,7 +306,7 @@ float UMovieSceneSequencePlayer::GetPlaybackStart()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62BB13730              		 offset:3043730                       
+// FunctionAddress:0x00007FF75BB39200              		 offset:2139200                       
 
 float UMovieSceneSequencePlayer::GetPlaybackPosition()
 {
@@ -332,7 +332,7 @@ float UMovieSceneSequencePlayer::GetPlaybackPosition()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62C8FA7C0              		 offset:3e2a7c0                       
+// FunctionAddress:0x00007FF75D669370              		 offset:3c69370                       
 
 float UMovieSceneSequencePlayer::GetPlaybackEnd()
 {
@@ -358,7 +358,7 @@ float UMovieSceneSequencePlayer::GetPlaybackEnd()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF629342840              		 offset:872840                        
+// FunctionAddress:0x00007FF75CFB8D60              		 offset:35b8d60                       
 
 float UMovieSceneSequencePlayer::GetLength()
 {
@@ -385,7 +385,7 @@ float UMovieSceneSequencePlayer::GetLength()
 // Parameters:
 // struct FMovieSceneObjectBindingID ObjectBinding                  (Parm)
 // TArray<class UObject*>         ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF62C5DD400              		 offset:3b0d400                       
+// FunctionAddress:0x00007FF75BB63510              		 offset:2163510                       
 
 TArray<class UObject*> UMovieSceneSequencePlayer::GetBoundObjects(const struct FMovieSceneObjectBindingID& ObjectBinding)
 {
@@ -410,7 +410,7 @@ TArray<class UObject*> UMovieSceneSequencePlayer::GetBoundObjects(const struct F
 
 // Function MovieScene.MovieSceneSequencePlayer.ChangePlaybackDirection
 // (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF62A0A5780              		 offset:15d5780                       
+// FunctionAddress:0x00007FF75ABBB870              		 offset:11bb870                       
 
 void UMovieSceneSequencePlayer::ChangePlaybackDirection()
 {

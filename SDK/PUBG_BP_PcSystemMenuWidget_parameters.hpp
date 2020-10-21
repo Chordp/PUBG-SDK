@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -29,13 +29,13 @@ struct UBP_PcSystemMenuWidget_C_CheckLeaveGameStatus_Params
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.QuitToDesktop
 struct UBP_PcSystemMenuWidget_C_QuitToDesktop_Params
 {
-	EPopupButtonID*                                    NewParam;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	EPopupButtonID                                     NewParam;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.GotoLobby
 struct UBP_PcSystemMenuWidget_C_GotoLobby_Params
 {
-	EPopupButtonID*                                    InPopupButtonID;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+	EPopupButtonID                                     InPopupButtonID;                                          // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.EnableMenuButtons
@@ -92,7 +92,7 @@ struct UBP_PcSystemMenuWidget_C_BndEvt__KeyGuideButton_K2Node_ComponentBoundEven
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.OnScrollMissionList
 struct UBP_PcSystemMenuWidget_C_OnScrollMissionList_Params
 {
-	float*                                             Scale;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              Scale;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.Destruct
@@ -155,7 +155,7 @@ struct UBP_PcSystemMenuWidget_C_BndEvt__RatingsButton_K2Node_ComponentBoundEvent
 // Function BP_PcSystemMenuWidget.BP_PcSystemMenuWidget_C.ExecuteUbergraph_BP_PcSystemMenuWidget
 struct UBP_PcSystemMenuWidget_C_ExecuteUbergraph_BP_PcSystemMenuWidget_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

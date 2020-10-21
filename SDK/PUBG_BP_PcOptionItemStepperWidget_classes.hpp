@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass BP_PcOptionItemStepperWidget.BP_PcOptionItemStepperWidget_C
-// 0x0000 (0x07A0 - 0x07A0)
+// 0x0000 (0x07E0 - 0x07E0)
 class UBP_PcOptionItemStepperWidget_C : public UTslGameOptionItemStepperWidget
 {
 public:
@@ -29,6 +29,9 @@ public:
 		return ptr;
 	}
 
+
+	void OnRightArrowButtonClicked();
+	void OnLeftArrowButtonClicked();
 };
 
 

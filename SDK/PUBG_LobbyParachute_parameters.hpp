@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,8 +14,13 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
-// Function LobbyParachute.LobbyParachute_C.UserConstructionScript
-struct ALobbyParachute_C_UserConstructionScript_Params
+// Function TslGame.LobbyParachute.OnRep_ReplicatedSkinParam
+struct ALobbyParachute_C_OnRep_ReplicatedSkinParam_Params
+{
+};
+
+// Function TslGame.LobbyParachute.InitializeParachuteMesh
+struct ALobbyParachute_C_InitializeParachuteMesh_Params
 {
 };
 

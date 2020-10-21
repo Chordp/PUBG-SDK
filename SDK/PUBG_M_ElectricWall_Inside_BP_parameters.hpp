@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -37,14 +37,14 @@ struct AM_ElectricWall_Inside_BP_C_Custom_Event_Params
 // Function M_ElectricWall_Inside_BP.M_ElectricWall_Inside_BP_C.OnSetEffectParameter
 struct AM_ElectricWall_Inside_BP_C_OnSetEffectParameter_Params
 {
-	struct FString*                                    ParameterName;                                            // (Parm, ZeroConstructor)
-	float*                                             Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FString                                     ParameterName;                                            // (Parm, ZeroConstructor)
+	float                                              Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function M_ElectricWall_Inside_BP.M_ElectricWall_Inside_BP_C.ExecuteUbergraph_M_ElectricWall_Inside_BP
 struct AM_ElectricWall_Inside_BP_C_ExecuteUbergraph_M_ElectricWall_Inside_BP_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

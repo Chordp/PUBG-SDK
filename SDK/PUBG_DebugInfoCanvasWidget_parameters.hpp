@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,18 +13,6 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Parameters
 //---------------------------------------------------------------------------
-
-// Function DebugInfoCanvasWidget.DebugInfoCanvasWidget_C.OnPrepass
-struct UDebugInfoCanvasWidget_C_OnPrepass_Params
-{
-	class UWidget**                                    BoundWidget;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function DebugInfoCanvasWidget.DebugInfoCanvasWidget_C.GetDebugText
-struct UDebugInfoCanvasWidget_C_GetDebugText_Params
-{
-	struct FText                                       ReturnValue;                                              // (Parm, OutParm, ReturnParm)
-};
 
 }
 

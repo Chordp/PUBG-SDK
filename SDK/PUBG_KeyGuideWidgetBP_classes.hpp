@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -53,8 +53,8 @@ public:
 	void Construct();
 	void BndEvt__ButtonBack_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature();
 	void EscapeEvent();
-	void Tick(struct FGeometry* MyGeometry, float* InDeltaTime);
-	void ExecuteUbergraph_KeyGuideWidgetBP(int* EntryPoint);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void ExecuteUbergraph_KeyGuideWidgetBP(int EntryPoint);
 };
 
 

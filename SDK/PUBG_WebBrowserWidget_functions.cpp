@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -16,7 +16,7 @@ namespace SDK
 // (MulticastDelegate, Public, Delegate, HasOutParms)
 // Parameters:
 // struct FText                   Text                           (ConstParm, Parm, OutParm, ReferenceParm)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UWebBrowser::OnUrlChanged__DelegateSignature(const struct FText& Text)
 {
@@ -40,7 +40,7 @@ void UWebBrowser::OnUrlChanged__DelegateSignature(const struct FText& Text)
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FString                 NewURL                         (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF62B661E30              		 offset:2b91e30                       
+// FunctionAddress:0x00007FF75C7DEE10              		 offset:2ddee10                       
 
 void UWebBrowser::LoadURL(const struct FString& NewURL)
 {
@@ -66,7 +66,7 @@ void UWebBrowser::LoadURL(const struct FString& NewURL)
 // Parameters:
 // struct FString                 Contents                       (Parm, ZeroConstructor)
 // struct FString                 DummyURL                       (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF62B661CA0              		 offset:2b91ca0                       
+// FunctionAddress:0x00007FF75C7DEC80              		 offset:2ddec80                       
 
 void UWebBrowser::LoadString(const struct FString& Contents, const struct FString& DummyURL)
 {
@@ -92,7 +92,7 @@ void UWebBrowser::LoadString(const struct FString& Contents, const struct FStrin
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF62B661C10              		 offset:2b91c10                       
+// FunctionAddress:0x00007FF75C7DEBF0              		 offset:2ddebf0                       
 
 struct FString UWebBrowser::GetUrl()
 {
@@ -118,7 +118,7 @@ struct FString UWebBrowser::GetUrl()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // struct FText                   ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF62B661B80              		 offset:2b91b80                       
+// FunctionAddress:0x00007FF75C7DEB60              		 offset:2ddeb60                       
 
 struct FText UWebBrowser::GetTitleText()
 {
@@ -144,7 +144,7 @@ struct FText UWebBrowser::GetTitleText()
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FString                 ScriptText                     (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF62B661AE0              		 offset:2b91ae0                       
+// FunctionAddress:0x00007FF75C7DEAC0              		 offset:2ddeac0                       
 
 void UWebBrowser::ExecuteJavascript(const struct FString& ScriptText)
 {

@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -19,7 +19,7 @@ namespace SDK
 // class ULevelSequence*          LevelSequence                  (Parm, ZeroConstructor, IsPlainOldData)
 // struct FMovieSceneSequencePlaybackSettings Settings                       (Parm)
 // class ULevelSequencePlayer*    ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62A4B3310              		 offset:19e3310                       
+// FunctionAddress:0x00007FF75AEBE2E0              		 offset:14be2e0                       
 
 class ULevelSequencePlayer* ULevelSequencePlayer::STATIC_CreateLevelSequencePlayer(class UObject* WorldContextObject, class ULevelSequence* LevelSequence, const struct FMovieSceneSequencePlaybackSettings& Settings)
 {
@@ -48,7 +48,7 @@ class ULevelSequencePlayer* ULevelSequencePlayer::STATIC_CreateLevelSequencePlay
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class ULevelSequence*          InSequence                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF628C997F0              		 offset:1c97f0                        
+// FunctionAddress:0x00007FF75AC7F7E0              		 offset:127f7e0                       
 
 void ALevelSequenceActor::SetSequence(class ULevelSequence* InSequence)
 {
@@ -73,7 +73,7 @@ void ALevelSequenceActor::SetSequence(class ULevelSequence* InSequence)
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // TArray<class AActor*>          AdditionalReceivers            (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF62BE75030              		 offset:33a5030                       
+// FunctionAddress:0x00007FF75CA4C340              		 offset:304c340                       
 
 void ALevelSequenceActor::SetEventReceivers(TArray<class AActor*> AdditionalReceivers)
 {
@@ -100,7 +100,7 @@ void ALevelSequenceActor::SetEventReceivers(TArray<class AActor*> AdditionalRece
 // struct FMovieSceneObjectBindingID Binding                        (Parm)
 // TArray<class AActor*>          Actors                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // bool                           bAllowBindingsFromAsset        (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62C52DF10              		 offset:3a5df10                       
+// FunctionAddress:0x00007FF759E95A20              		 offset:495a20                        
 
 void ALevelSequenceActor::SetBinding(const struct FMovieSceneObjectBindingID& Binding, TArray<class AActor*> Actors, bool bAllowBindingsFromAsset)
 {
@@ -125,7 +125,7 @@ void ALevelSequenceActor::SetBinding(const struct FMovieSceneObjectBindingID& Bi
 
 // Function LevelSequence.LevelSequenceActor.ResetBindings
 // (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF628DC2580              		 offset:2f2580                        
+// FunctionAddress:0x00007FF759C85A00              		 offset:285a00                        
 
 void ALevelSequenceActor::ResetBindings()
 {
@@ -149,7 +149,7 @@ void ALevelSequenceActor::ResetBindings()
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FMovieSceneObjectBindingID Binding                        (Parm)
-// FunctionAddress:0x00007FF62978A0F0              		 offset:cba0f0                        
+// FunctionAddress:0x00007FF75CCC6C80              		 offset:32c6c80                       
 
 void ALevelSequenceActor::ResetBinding(const struct FMovieSceneObjectBindingID& Binding)
 {
@@ -175,7 +175,7 @@ void ALevelSequenceActor::ResetBinding(const struct FMovieSceneObjectBindingID& 
 // Parameters:
 // struct FMovieSceneObjectBindingID Binding                        (Parm)
 // class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF6294CD720              		 offset:9fd720                        
+// FunctionAddress:0x00007FF75CB0D250              		 offset:310d250                       
 
 void ALevelSequenceActor::RemoveBinding(const struct FMovieSceneObjectBindingID& Binding, class AActor* Actor)
 {
@@ -202,7 +202,7 @@ void ALevelSequenceActor::RemoveBinding(const struct FMovieSceneObjectBindingID&
 // Parameters:
 // bool                           Load                           (Parm, ZeroConstructor, IsPlainOldData)
 // class ULevelSequence*          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62AA2A870              		 offset:1f5a870                       
+// FunctionAddress:0x00007FF75AE70C90              		 offset:1470c90                       
 
 class ULevelSequence* ALevelSequenceActor::GetSequence(bool Load)
 {
@@ -231,7 +231,7 @@ class ULevelSequence* ALevelSequenceActor::GetSequence(bool Load)
 // struct FMovieSceneObjectBindingID Binding                        (Parm)
 // class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bAllowBindingsFromAsset        (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62D430D60              		 offset:4960d60                       
+// FunctionAddress:0x00007FF75CB61340              		 offset:3161340                       
 
 void ALevelSequenceActor::AddBinding(const struct FMovieSceneObjectBindingID& Binding, class AActor* Actor, bool bAllowBindingsFromAsset)
 {
@@ -258,7 +258,7 @@ void ALevelSequenceActor::AddBinding(const struct FMovieSceneObjectBindingID& Bi
 // (Event, Public, BlueprintEvent)
 // Parameters:
 // class UObject*                 InSettings                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ULevelSequenceBurnIn::SetSettings(class UObject* InSettings)
 {
@@ -282,7 +282,7 @@ void ULevelSequenceBurnIn::SetSettings(class UObject* InSettings)
 // (Native, Event, Public, BlueprintEvent, Const)
 // Parameters:
 // class UClass*                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6292167D0              		 offset:7467d0                        
+// FunctionAddress:0x00007FF75CC45890              		 offset:3245890                       
 
 class UClass* ULevelSequenceBurnIn::GetSettingsClass()
 {

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,7 +17,7 @@ namespace SDK
 // Function KeyboardWidgetBP.KeyboardWidgetBP_C.ExecuteUbergraph_KeyboardWidgetBP
 struct UKeyboardWidgetBP_C_ExecuteUbergraph_KeyboardWidgetBP_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

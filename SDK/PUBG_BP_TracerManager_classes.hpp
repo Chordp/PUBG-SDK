@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_TracerManager.BP_TracerManager_C
-// 0x0000 (0x0540 - 0x0540)
+// 0x0000 (0x0550 - 0x0550)
 class ABP_TracerManager_C : public ATslTracerManager
 {
 public:

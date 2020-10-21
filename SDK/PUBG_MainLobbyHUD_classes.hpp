@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -64,22 +64,22 @@ public:
 
 	bool HasChildren();
 	void ToggleSystemMenu();
-	void CloseWebPopupImpl(struct FString* PopupId);
+	void CloseWebPopupImpl(const struct FString& PopupId);
 	void HideCurtain();
 	void ShowCurtain();
 	void OnKey_LobbySystemMenu();
-	struct FEventReply OnKeyDown(struct FGeometry* MyGeometry, struct FKeyEvent* InKeyEvent);
-	void OnPrepass_isShipping(class UWidget** BoundWidget);
-	void CleanUpNameTagWidget(int* SlotIndex);
-	void SetupNameTagWidget(int* SlotIndex);
-	void GetNameTagWidget(int* SlotIndex, class UTslLobbyNameTagWidget** Widget);
-	void OnDestroyCharacter(int* SlotIndex);
-	void OnCreateCharacter(int* SlotIndex);
-	void CloseWebPopupByID(struct FString* WebPopupID);
-	void RemoveWebPopup(class UWebPopup_C** Widget);
-	void AddWebPopup(class UWebPopup_C** Widget);
-	void CanShowWebPopup(struct FString* PopupId, bool* Result);
-	void ShowWebPopupImpl(struct FWebPopupParam* Param);
+	struct FEventReply OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
+	void OnPrepass_isShipping(class UWidget* BoundWidget);
+	void CleanUpNameTagWidget(int SlotIndex);
+	void SetupNameTagWidget(int SlotIndex);
+	void GetNameTagWidget(int SlotIndex, class UTslLobbyNameTagWidget** Widget);
+	void OnDestroyCharacter(int SlotIndex);
+	void OnCreateCharacter(int SlotIndex);
+	void CloseWebPopupByID(const struct FString& WebPopupID);
+	void RemoveWebPopup(class UWebPopup_C* Widget);
+	void AddWebPopup(class UWebPopup_C* Widget);
+	void CanShowWebPopup(const struct FString& PopupId, bool* Result);
+	void ShowWebPopupImpl(const struct FWebPopupParam& Param);
 	void OnReload();
 	void GetMainCoherentWidget(class UCoherentUIGTWidget** Browser);
 	void OnKey_SystemMenuOrEscape();
@@ -87,14 +87,14 @@ public:
 	void BndEvt__Button_Setting_K2Node_ComponentBoundEvent_190_OnButtonClickedEvent__DelegateSignature();
 	void BndEvt__Button_Reload_K2Node_ComponentBoundEvent_210_OnButtonClickedEvent__DelegateSignature();
 	void BndEvt__Button_Quit_K2Node_ComponentBoundEvent_229_OnButtonClickedEvent__DelegateSignature();
-	void ShowWebPopup(struct FWebPopupParam* Param);
+	void ShowWebPopup(const struct FWebPopupParam& Param);
 	void Construct();
-	void PreloadWebPopup(TArray<struct FWebPopupParam>* WebPopupParams);
+	void PreloadWebPopup(TArray<struct FWebPopupParam> WebPopupParams);
 	void BndEvt__Button_0_K2Node_ComponentBoundEvent_35_OnButtonClickedEvent__DelegateSignature();
 	void BndEvt__Button_NewSystemMenu_K2Node_ComponentBoundEvent_90_OnButtonClickedEvent__DelegateSignature();
-	void CloseWebPopup(struct FString* PopupId);
+	void CloseWebPopup(const struct FString& PopupId);
 	void InitializeMainUMGHUD();
-	void ExecuteUbergraph_MainLobbyHUD(int* EntryPoint);
+	void ExecuteUbergraph_MainLobbyHUD(int EntryPoint);
 };
 
 

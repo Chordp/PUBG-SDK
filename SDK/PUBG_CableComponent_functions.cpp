@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -18,7 +18,7 @@ namespace SDK
 // class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
 // struct FName                   ComponentProperty              (Parm, ZeroConstructor, IsPlainOldData)
 // struct FName                   SocketName                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B5A0520              		 offset:2ad0520                       
+// FunctionAddress:0x00007FF75C70EB60              		 offset:2d0eb60                       
 
 void UCableComponent::SetAttachEndTo(class AActor* Actor, const struct FName& ComponentProperty, const struct FName& SocketName)
 {
@@ -45,7 +45,7 @@ void UCableComponent::SetAttachEndTo(class AActor* Actor, const struct FName& Co
 // (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // TArray<struct FVector>         Locations                      (Parm, OutParm, ZeroConstructor)
-// FunctionAddress:0x00007FF62B5A0470              		 offset:2ad0470                       
+// FunctionAddress:0x00007FF75C70EAB0              		 offset:2d0eab0                       
 
 void UCableComponent::GetCableParticleLocations(TArray<struct FVector>* Locations)
 {
@@ -72,7 +72,7 @@ void UCableComponent::GetCableParticleLocations(TArray<struct FVector>* Location
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // class USceneComponent*         ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
-// FunctionAddress:0x00007FF62B5A0440              		 offset:2ad0440                       
+// FunctionAddress:0x00007FF75C70EA80              		 offset:2d0ea80                       
 
 class USceneComponent* UCableComponent::GetAttachedComponent()
 {
@@ -98,7 +98,7 @@ class USceneComponent* UCableComponent::GetAttachedComponent()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // class AActor*                  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B5A0410              		 offset:2ad0410                       
+// FunctionAddress:0x00007FF75C70EA50              		 offset:2d0ea50                       
 
 class AActor* UCableComponent::GetAttachedActor()
 {

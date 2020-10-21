@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,7 +17,7 @@ namespace SDK
 // Parameters:
 // bool                           IsCarePackageComing            (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // bool                           IsVehicleComing                (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_FlaregunUiWidget_C::IsCarePackageComming(bool* IsCarePackageComing, bool* IsVehicleComing)
 {
@@ -45,7 +45,7 @@ void UBP_FlaregunUiWidget_C::IsCarePackageComming(bool* IsCarePackageComing, boo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                           bShow                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_FlaregunUiWidget_C::ShowTitle(bool bShow)
 {
@@ -69,7 +69,7 @@ void UBP_FlaregunUiWidget_C::ShowTitle(bool bShow)
 // (Protected, HasOutParms, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // bool                           IsIn                           (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBP_FlaregunUiWidget_C::IsCharacterInWhiteZone(bool* IsIn)
 {
@@ -94,12 +94,12 @@ void UBP_FlaregunUiWidget_C::IsCharacterInWhiteZone(bool* IsIn)
 // Function BP_FlaregunUiWidget.BP_FlaregunUiWidget_C.SetVehicleNumber
 // (Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int*                           NumVehicle                     (Parm, ZeroConstructor, IsPlainOldData)
-// bool*                          CanFire                        (Parm, ZeroConstructor, IsPlainOldData)
-// bool*                          WaitingMine                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            NumVehicle                     (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           CanFire                        (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           WaitingMine                    (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UBP_FlaregunUiWidget_C::SetVehicleNumber(int* NumVehicle, bool* CanFire, bool* WaitingMine)
+void UBP_FlaregunUiWidget_C::SetVehicleNumber(int NumVehicle, bool CanFire, bool WaitingMine)
 {
 	static UFunction* fn;
 
@@ -122,12 +122,12 @@ void UBP_FlaregunUiWidget_C::SetVehicleNumber(int* NumVehicle, bool* CanFire, bo
 // Function BP_FlaregunUiWidget.BP_FlaregunUiWidget_C.SetPackageNumber
 // (Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int*                           NumPackage                     (Parm, ZeroConstructor, IsPlainOldData)
-// bool*                          CanFire                        (Parm, ZeroConstructor, IsPlainOldData)
-// bool*                          WaitingMine                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            NumPackage                     (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           CanFire                        (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           WaitingMine                    (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UBP_FlaregunUiWidget_C::SetPackageNumber(int* NumPackage, bool* CanFire, bool* WaitingMine)
+void UBP_FlaregunUiWidget_C::SetPackageNumber(int NumPackage, bool CanFire, bool WaitingMine)
 {
 	static UFunction* fn;
 
@@ -150,11 +150,11 @@ void UBP_FlaregunUiWidget_C::SetPackageNumber(int* NumPackage, bool* CanFire, bo
 // Function BP_FlaregunUiWidget.BP_FlaregunUiWidget_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
-// float*                         InDeltaTime                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// struct FGeometry               MyGeometry                     (Parm, IsPlainOldData)
+// float                          InDeltaTime                    (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UBP_FlaregunUiWidget_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
+void UBP_FlaregunUiWidget_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
 	static UFunction* fn;
 
@@ -176,10 +176,10 @@ void UBP_FlaregunUiWidget_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTi
 // Function BP_FlaregunUiWidget.BP_FlaregunUiWidget_C.ExecuteUbergraph_BP_FlaregunUiWidget
 // (HasDefaults)
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UBP_FlaregunUiWidget_C::ExecuteUbergraph_BP_FlaregunUiWidget(int* EntryPoint)
+void UBP_FlaregunUiWidget_C::ExecuteUbergraph_BP_FlaregunUiWidget(int EntryPoint)
 {
 	static UFunction* fn;
 

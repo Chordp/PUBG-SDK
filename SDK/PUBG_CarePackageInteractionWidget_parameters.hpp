@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -23,8 +23,8 @@ struct UCarePackageInteractionWidget_C_ShowCarePackageInteractionWidget_Params
 // Function CarePackageInteractionWidget.CarePackageInteractionWidget_C.Tick
 struct UCarePackageInteractionWidget_C_Tick_Params
 {
-	struct FGeometry*                                  MyGeometry;                                               // (Parm, IsPlainOldData)
-	float*                                             InDeltaTime;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FGeometry                                   MyGeometry;                                               // (Parm, IsPlainOldData)
+	float                                              InDeltaTime;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function CarePackageInteractionWidget.CarePackageInteractionWidget_C.Construct
@@ -50,7 +50,7 @@ struct UCarePackageInteractionWidget_C_TimerCheckCarePackage_Params
 // Function CarePackageInteractionWidget.CarePackageInteractionWidget_C.ExecuteUbergraph_CarePackageInteractionWidget
 struct UCarePackageInteractionWidget_C_ExecuteUbergraph_CarePackageInteractionWidget_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

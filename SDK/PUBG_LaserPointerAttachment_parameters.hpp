@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,6 +13,17 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Parameters
 //---------------------------------------------------------------------------
+
+// Function TslGame.TslLaserPointerAttachment.OnSpectatingChanged
+struct ULaserPointerAttachment_C_OnSpectatingChanged_Params
+{
+	bool                                               bIsSpectating;                                            // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function TslGame.TslLaserPointerAttachment.ActivateLaser
+struct ULaserPointerAttachment_C_ActivateLaser_Params
+{
+};
 
 }
 

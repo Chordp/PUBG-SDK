@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -12,98 +12,11 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
-// Function MediaAssets.MediaOverlays.GetTexts
-// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// TArray<struct FMediaPlayerOverlay> OutTexts                       (Parm, OutParm, ZeroConstructor)
-// struct FTimespan               Time                           (Parm)
-// FunctionAddress:0x00007FF62D8ACE10              		 offset:4ddce10                       
-
-void UMediaOverlays::GetTexts(const struct FTimespan& Time, TArray<struct FMediaPlayerOverlay>* OutTexts)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaOverlays.GetTexts"));
-
-	UMediaOverlays_GetTexts_Params params;
-	params.Time = Time;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	if (OutTexts != nullptr)
-		*OutTexts = params.OutTexts;
-}
-
-
-// Function MediaAssets.MediaOverlays.GetSubtitles
-// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// TArray<struct FMediaPlayerOverlay> OutSubtitles                   (Parm, OutParm, ZeroConstructor)
-// struct FTimespan               Time                           (Parm)
-// FunctionAddress:0x00007FF6296BD7F0              		 offset:bed7f0                        
-
-void UMediaOverlays::GetSubtitles(const struct FTimespan& Time, TArray<struct FMediaPlayerOverlay>* OutSubtitles)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaOverlays.GetSubtitles"));
-
-	UMediaOverlays_GetSubtitles_Params params;
-	params.Time = Time;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	if (OutSubtitles != nullptr)
-		*OutSubtitles = params.OutSubtitles;
-}
-
-
-// Function MediaAssets.MediaOverlays.GetCaptions
-// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable, BlueprintPure, Const)
-// Parameters:
-// TArray<struct FMediaPlayerOverlay> OutCaptions                    (Parm, OutParm, ZeroConstructor)
-// struct FTimespan               Time                           (Parm)
-// FunctionAddress:0x00007FF629B76900              		 offset:10a6900                       
-
-void UMediaOverlays::GetCaptions(const struct FTimespan& Time, TArray<struct FMediaPlayerOverlay>* OutCaptions)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function MediaAssets.MediaOverlays.GetCaptions"));
-
-	UMediaOverlays_GetCaptions_Params params;
-	params.Time = Time;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	if (OutCaptions != nullptr)
-		*OutCaptions = params.OutCaptions;
-}
-
-
 // Function MediaAssets.MediaPlayer.SupportsSeeking
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62A235A20              		 offset:1765a20                       
+// FunctionAddress:0x00007FF75E1EE480              		 offset:47ee480                       
 
 bool UMediaPlayer::SupportsSeeking()
 {
@@ -129,7 +42,7 @@ bool UMediaPlayer::SupportsSeeking()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62A0E4220              		 offset:1614220                       
+// FunctionAddress:0x00007FF75DBAE100              		 offset:41ae100                       
 
 bool UMediaPlayer::SupportsScrubbing()
 {
@@ -157,7 +70,7 @@ bool UMediaPlayer::SupportsScrubbing()
 // float                          Rate                           (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           Unthinned                      (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62C8CA6F0              		 offset:3dfa6f0                       
+// FunctionAddress:0x00007FF75A7DBEA0              		 offset:ddbea0                        
 
 bool UMediaPlayer::SupportsRate(float Rate, bool Unthinned)
 {
@@ -185,7 +98,7 @@ bool UMediaPlayer::SupportsRate(float Rate, bool Unthinned)
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class UMediaTexture*           NewTexture                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF628D60F50              		 offset:290f50                        
+// FunctionAddress:0x00007FF75A0EF730              		 offset:6ef730                        
 
 void UMediaPlayer::SetVideoTexture(class UMediaTexture* NewTexture)
 {
@@ -210,7 +123,7 @@ void UMediaPlayer::SetVideoTexture(class UMediaTexture* NewTexture)
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class UMediaSoundWave*         NewSoundWave                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62BC20150              		 offset:3150150                       
+// FunctionAddress:0x00007FF75D730F90              		 offset:3d30f90                       
 
 void UMediaPlayer::SetSoundWave(class UMediaSoundWave* NewSoundWave)
 {
@@ -236,7 +149,7 @@ void UMediaPlayer::SetSoundWave(class UMediaSoundWave* NewSoundWave)
 // Parameters:
 // float                          Rate                           (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF629A08E50              		 offset:f38e50                        
+// FunctionAddress:0x00007FF75A197900              		 offset:797900                        
 
 bool UMediaPlayer::SetRate(float Rate)
 {
@@ -263,7 +176,7 @@ bool UMediaPlayer::SetRate(float Rate)
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class UMediaOverlays*          NewOverlays                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62A679560              		 offset:1ba9560                       
+// FunctionAddress:0x00007FF75D074320              		 offset:3674320                       
 
 void UMediaPlayer::SetOverlays(class UMediaOverlays* NewOverlays)
 {
@@ -289,7 +202,7 @@ void UMediaPlayer::SetOverlays(class UMediaOverlays* NewOverlays)
 // Parameters:
 // bool                           Looping                        (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62A6A4F80              		 offset:1bd4f80                       
+// FunctionAddress:0x00007FF75A8251F0              		 offset:e251f0                        
 
 bool UMediaPlayer::SetLooping(bool Looping)
 {
@@ -316,7 +229,7 @@ bool UMediaPlayer::SetLooping(bool Looping)
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FName                   PlayerName                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62AA4B100              		 offset:1f7b100                       
+// FunctionAddress:0x00007FF759F92D10              		 offset:592d10                        
 
 void UMediaPlayer::SetDesiredPlayerName(const struct FName& PlayerName)
 {
@@ -343,7 +256,7 @@ void UMediaPlayer::SetDesiredPlayerName(const struct FName& PlayerName)
 // EMediaPlayerTrack              TrackType                      (Parm, ZeroConstructor, IsPlainOldData)
 // int                            TrackIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF629A1DCA0              		 offset:f4dca0                        
+// FunctionAddress:0x00007FF75A6DBEE0              		 offset:cdbee0                        
 
 bool UMediaPlayer::SelectTrack(EMediaPlayerTrack TrackType, int TrackIndex)
 {
@@ -372,7 +285,7 @@ bool UMediaPlayer::SelectTrack(EMediaPlayerTrack TrackType, int TrackIndex)
 // Parameters:
 // struct FTimespan               Time                           (ConstParm, Parm, OutParm, ReferenceParm)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF629B1FF60              		 offset:104ff60                       
+// FunctionAddress:0x00007FF75E37FD20              		 offset:497fd20                       
 
 bool UMediaPlayer::Seek(const struct FTimespan& Time)
 {
@@ -399,7 +312,7 @@ bool UMediaPlayer::Seek(const struct FTimespan& Time)
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62962BA30              		 offset:b5ba30                        
+// FunctionAddress:0x00007FF75D91AB90              		 offset:3f1ab90                       
 
 bool UMediaPlayer::Rewind()
 {
@@ -425,7 +338,7 @@ bool UMediaPlayer::Rewind()
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62D79A820              		 offset:4cca820                       
+// FunctionAddress:0x00007FF759E5F0E0              		 offset:45f0e0                        
 
 bool UMediaPlayer::Reopen()
 {
@@ -451,7 +364,7 @@ bool UMediaPlayer::Reopen()
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62D83AA20              		 offset:4d6aa20                       
+// FunctionAddress:0x00007FF75DD451A0              		 offset:43451a0                       
 
 bool UMediaPlayer::Previous()
 {
@@ -477,7 +390,7 @@ bool UMediaPlayer::Previous()
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62D929070              		 offset:4e59070                       
+// FunctionAddress:0x00007FF75A8BFD90              		 offset:ebfd90                        
 
 bool UMediaPlayer::Play()
 {
@@ -503,7 +416,7 @@ bool UMediaPlayer::Play()
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62C7419A0              		 offset:3c719a0                       
+// FunctionAddress:0x00007FF75D403790              		 offset:3a03790                       
 
 bool UMediaPlayer::Pause()
 {
@@ -530,7 +443,7 @@ bool UMediaPlayer::Pause()
 // Parameters:
 // struct FString                 URL                            (Parm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF629C77470              		 offset:11a7470                       
+// FunctionAddress:0x00007FF75AD96150              		 offset:1396150                       
 
 bool UMediaPlayer::OpenUrl(const struct FString& URL)
 {
@@ -558,7 +471,7 @@ bool UMediaPlayer::OpenUrl(const struct FString& URL)
 // Parameters:
 // class UMediaSource*            MediaSource                    (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6292E25C0              		 offset:8125c0                        
+// FunctionAddress:0x00007FF75CA2BBB0              		 offset:302bbb0                       
 
 bool UMediaPlayer::OpenSource(class UMediaSource* MediaSource)
 {
@@ -587,7 +500,7 @@ bool UMediaPlayer::OpenSource(class UMediaSource* MediaSource)
 // class UMediaPlaylist*          InPlaylist                     (Parm, ZeroConstructor, IsPlainOldData)
 // int                            Index                          (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF628B3AFF0              		 offset:6aff0                         
+// FunctionAddress:0x00007FF75CA664F0              		 offset:30664f0                       
 
 bool UMediaPlayer::OpenPlaylistIndex(class UMediaPlaylist* InPlaylist, int Index)
 {
@@ -616,7 +529,7 @@ bool UMediaPlayer::OpenPlaylistIndex(class UMediaPlaylist* InPlaylist, int Index
 // Parameters:
 // class UMediaPlaylist*          InPlaylist                     (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF628F24D20              		 offset:454d20                        
+// FunctionAddress:0x00007FF759DC7040              		 offset:3c7040                        
 
 bool UMediaPlayer::OpenPlaylist(class UMediaPlaylist* InPlaylist)
 {
@@ -644,7 +557,7 @@ bool UMediaPlayer::OpenPlaylist(class UMediaPlaylist* InPlaylist)
 // Parameters:
 // struct FString                 FilePath                       (Parm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62C595D10              		 offset:3ac5d10                       
+// FunctionAddress:0x00007FF75DECE080              		 offset:44ce080                       
 
 bool UMediaPlayer::OpenFile(const struct FString& FilePath)
 {
@@ -671,7 +584,7 @@ bool UMediaPlayer::OpenFile(const struct FString& FilePath)
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF629684F30              		 offset:bb4f30                        
+// FunctionAddress:0x00007FF75E004970              		 offset:4604970                       
 
 bool UMediaPlayer::Next()
 {
@@ -697,7 +610,7 @@ bool UMediaPlayer::Next()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF629BAC9A0              		 offset:10dc9a0                       
+// FunctionAddress:0x00007FF75D0086B0              		 offset:36086b0                       
 
 bool UMediaPlayer::IsReady()
 {
@@ -723,7 +636,7 @@ bool UMediaPlayer::IsReady()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62C427CA0              		 offset:3957ca0                       
+// FunctionAddress:0x00007FF75A05D690              		 offset:65d690                        
 
 bool UMediaPlayer::IsPreparing()
 {
@@ -749,7 +662,7 @@ bool UMediaPlayer::IsPreparing()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF629EB7880              		 offset:13e7880                       
+// FunctionAddress:0x00007FF75B36D4B0              		 offset:196d4b0                       
 
 bool UMediaPlayer::IsPlaying()
 {
@@ -775,7 +688,7 @@ bool UMediaPlayer::IsPlaying()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF6290B3A90              		 offset:5e3a90                        
+// FunctionAddress:0x00007FF75A544390              		 offset:b44390                        
 
 bool UMediaPlayer::IsPaused()
 {
@@ -801,7 +714,7 @@ bool UMediaPlayer::IsPaused()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62D00E310              		 offset:453e310                       
+// FunctionAddress:0x00007FF75ED33260              		 offset:5333260                       
 
 bool UMediaPlayer::IsLooping()
 {
@@ -827,7 +740,7 @@ bool UMediaPlayer::IsLooping()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF628C1F340              		 offset:14f340                        
+// FunctionAddress:0x00007FF75A29B980              		 offset:89b980                        
 
 struct FString UMediaPlayer::GetUrl()
 {
@@ -855,7 +768,7 @@ struct FString UMediaPlayer::GetUrl()
 // EMediaPlayerTrack              TrackType                      (Parm, ZeroConstructor, IsPlainOldData)
 // int                            TrackIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF6290B3980              		 offset:5e3980                        
+// FunctionAddress:0x00007FF75DFC22E0              		 offset:45c22e0                       
 
 struct FString UMediaPlayer::GetTrackLanguage(EMediaPlayerTrack TrackType, int TrackIndex)
 {
@@ -885,7 +798,7 @@ struct FString UMediaPlayer::GetTrackLanguage(EMediaPlayerTrack TrackType, int T
 // EMediaPlayerTrack              TrackType                      (Parm, ZeroConstructor, IsPlainOldData)
 // int                            TrackIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // struct FText                   ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF62C803B30              		 offset:3d33b30                       
+// FunctionAddress:0x00007FF75A05D580              		 offset:65d580                        
 
 struct FText UMediaPlayer::GetTrackDisplayName(EMediaPlayerTrack TrackType, int TrackIndex)
 {
@@ -913,7 +826,7 @@ struct FText UMediaPlayer::GetTrackDisplayName(EMediaPlayerTrack TrackType, int 
 // (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // struct FTimespan               ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF62A39CE90              		 offset:18cce90                       
+// FunctionAddress:0x00007FF75DB02840              		 offset:4102840                       
 
 struct FTimespan UMediaPlayer::GetTime()
 {
@@ -940,7 +853,7 @@ struct FTimespan UMediaPlayer::GetTime()
 // Parameters:
 // EMediaPlayerTrack              TrackType                      (Parm, ZeroConstructor, IsPlainOldData)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62C3E2160              		 offset:3912160                       
+// FunctionAddress:0x00007FF75A07AEB0              		 offset:67aeb0                        
 
 int UMediaPlayer::GetSelectedTrack(EMediaPlayerTrack TrackType)
 {
@@ -968,7 +881,7 @@ int UMediaPlayer::GetSelectedTrack(EMediaPlayerTrack TrackType)
 // Parameters:
 // bool                           Unthinned                      (Parm, ZeroConstructor, IsPlainOldData)
 // struct FFloatRange             ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF6299D53C0              		 offset:f053c0                        
+// FunctionAddress:0x00007FF75E33E730              		 offset:493e730                       
 
 struct FFloatRange UMediaPlayer::GetReverseRates(bool Unthinned)
 {
@@ -995,7 +908,7 @@ struct FFloatRange UMediaPlayer::GetReverseRates(bool Unthinned)
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62BBADDB0              		 offset:30dddb0                       
+// FunctionAddress:0x00007FF75D4FDF90              		 offset:3afdf90                       
 
 float UMediaPlayer::GetRate()
 {
@@ -1021,7 +934,7 @@ float UMediaPlayer::GetRate()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // struct FName                   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62D713970              		 offset:4c43970                       
+// FunctionAddress:0x00007FF75AB9C540              		 offset:119c540                       
 
 struct FName UMediaPlayer::GetPlayerName()
 {
@@ -1048,7 +961,7 @@ struct FName UMediaPlayer::GetPlayerName()
 // Parameters:
 // EMediaPlayerTrack              TrackType                      (Parm, ZeroConstructor, IsPlainOldData)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B9D9990              		 offset:2f09990                       
+// FunctionAddress:0x00007FF75E118FC0              		 offset:4718fc0                       
 
 int UMediaPlayer::GetNumTracks(EMediaPlayerTrack TrackType)
 {
@@ -1076,7 +989,7 @@ int UMediaPlayer::GetNumTracks(EMediaPlayerTrack TrackType)
 // Parameters:
 // bool                           Unthinned                      (Parm, ZeroConstructor, IsPlainOldData)
 // struct FFloatRange             ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF62D234480              		 offset:4764480                       
+// FunctionAddress:0x00007FF75EDD34E0              		 offset:53d34e0                       
 
 struct FFloatRange UMediaPlayer::GetForwardRates(bool Unthinned)
 {
@@ -1103,7 +1016,7 @@ struct FFloatRange UMediaPlayer::GetForwardRates(bool Unthinned)
 // (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // struct FTimespan               ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF628E33B10              		 offset:363b10                        
+// FunctionAddress:0x00007FF75B984E50              		 offset:1f84e50                       
 
 struct FTimespan UMediaPlayer::GetDuration()
 {
@@ -1129,7 +1042,7 @@ struct FTimespan UMediaPlayer::GetDuration()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // struct FName                   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62BDC05D0              		 offset:32f05d0                       
+// FunctionAddress:0x00007FF75E76DE70              		 offset:4d6de70                       
 
 struct FName UMediaPlayer::GetDesiredPlayerName()
 {
@@ -1153,7 +1066,7 @@ struct FName UMediaPlayer::GetDesiredPlayerName()
 
 // Function MediaAssets.MediaPlayer.Close
 // (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF62C296010              		 offset:37c6010                       
+// FunctionAddress:0x00007FF75A26ACA0              		 offset:86aca0                        
 
 void UMediaPlayer::Close()
 {
@@ -1178,7 +1091,7 @@ void UMediaPlayer::Close()
 // Parameters:
 // struct FString                 URL                            (Parm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62A893030              		 offset:1dc3030                       
+// FunctionAddress:0x00007FF75A0A8930              		 offset:6a8930                        
 
 bool UMediaPlayer::CanPlayUrl(const struct FString& URL)
 {
@@ -1206,7 +1119,7 @@ bool UMediaPlayer::CanPlayUrl(const struct FString& URL)
 // Parameters:
 // class UMediaSource*            MediaSource                    (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62C024AC0              		 offset:3554ac0                       
+// FunctionAddress:0x00007FF75A07AE20              		 offset:67ae20                        
 
 bool UMediaPlayer::CanPlaySource(class UMediaSource* MediaSource)
 {
@@ -1233,7 +1146,7 @@ bool UMediaPlayer::CanPlaySource(class UMediaSource* MediaSource)
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62C024A90              		 offset:3554a90                       
+// FunctionAddress:0x00007FF75BBA03F0              		 offset:21a03f0                       
 
 bool UMediaPlayer::CanPause()
 {
@@ -1259,7 +1172,7 @@ bool UMediaPlayer::CanPause()
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // int                            Index                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62C38CD10              		 offset:38bcd10                       
+// FunctionAddress:0x00007FF75DEEA710              		 offset:44ea710                       
 
 void UMediaPlaylist::RemoveAt(int Index)
 {
@@ -1284,7 +1197,7 @@ void UMediaPlaylist::RemoveAt(int Index)
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class UMediaSource*            MediaSource                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B8FD610              		 offset:2e2d610                       
+// FunctionAddress:0x00007FF75AECC310              		 offset:14cc310                       
 
 void UMediaPlaylist::Remove(class UMediaSource* MediaSource)
 {
@@ -1309,7 +1222,7 @@ void UMediaPlaylist::Remove(class UMediaSource* MediaSource)
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF628EB9A50              		 offset:3e9a50                        
+// FunctionAddress:0x00007FF759E309D0              		 offset:4309d0                        
 
 int UMediaPlaylist::Num()
 {
@@ -1336,7 +1249,7 @@ int UMediaPlaylist::Num()
 // Parameters:
 // class UMediaSource*            MediaSource                    (Parm, ZeroConstructor, IsPlainOldData)
 // int                            Index                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF628E20ED0              		 offset:350ed0                        
+// FunctionAddress:0x00007FF75D65FC90              		 offset:3c5fc90                       
 
 void UMediaPlaylist::Insert(class UMediaSource* MediaSource, int Index)
 {
@@ -1363,7 +1276,7 @@ void UMediaPlaylist::Insert(class UMediaSource* MediaSource, int Index)
 // Parameters:
 // int                            InOutIndex                     (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // class UMediaSource*            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF629FB9620              		 offset:14e9620                       
+// FunctionAddress:0x00007FF75B48F560              		 offset:1a8f560                       
 
 class UMediaSource* UMediaPlaylist::GetRandom(int* InOutIndex)
 {
@@ -1393,7 +1306,7 @@ class UMediaSource* UMediaPlaylist::GetRandom(int* InOutIndex)
 // Parameters:
 // int                            InOutIndex                     (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // class UMediaSource*            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62C7B7D40              		 offset:3ce7d40                       
+// FunctionAddress:0x00007FF75CE42180              		 offset:3442180                       
 
 class UMediaSource* UMediaPlaylist::GetPrevious(int* InOutIndex)
 {
@@ -1423,7 +1336,7 @@ class UMediaSource* UMediaPlaylist::GetPrevious(int* InOutIndex)
 // Parameters:
 // int                            InOutIndex                     (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // class UMediaSource*            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62C837D90              		 offset:3d67d90                       
+// FunctionAddress:0x00007FF75AD7F290              		 offset:137f290                       
 
 class UMediaSource* UMediaPlaylist::GetNext(int* InOutIndex)
 {
@@ -1453,7 +1366,7 @@ class UMediaSource* UMediaPlaylist::GetNext(int* InOutIndex)
 // Parameters:
 // int                            Index                          (Parm, ZeroConstructor, IsPlainOldData)
 // class UMediaSource*            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF629EDE5F0              		 offset:140e5f0                       
+// FunctionAddress:0x00007FF759DC6FB0              		 offset:3c6fb0                        
 
 class UMediaSource* UMediaPlaylist::Get(int Index)
 {
@@ -1480,7 +1393,7 @@ class UMediaSource* UMediaPlaylist::Get(int Index)
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class UMediaSource*            MediaSource                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629F53140              		 offset:1483140                       
+// FunctionAddress:0x00007FF75B1045F0              		 offset:17045f0                       
 
 void UMediaPlaylist::Add(class UMediaSource* MediaSource)
 {
@@ -1505,7 +1418,7 @@ void UMediaPlaylist::Add(class UMediaSource* MediaSource)
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FString                 path                           (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF629E0F2E0              		 offset:133f2e0                       
+// FunctionAddress:0x00007FF75D64A640              		 offset:3c4a640                       
 
 void UFileMediaSource::SetFilePath(const struct FString& path)
 {
@@ -1530,7 +1443,7 @@ void UFileMediaSource::SetFilePath(const struct FString& path)
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62CCB82B0              		 offset:41e82b0                       
+// FunctionAddress:0x00007FF75E75A3B0              		 offset:4d5a3b0                       
 
 int UMediaTexture::GetWidth()
 {
@@ -1556,7 +1469,7 @@ int UMediaTexture::GetWidth()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62C86B840              		 offset:3d9b840                       
+// FunctionAddress:0x00007FF75A240950              		 offset:840950                        
 
 int UMediaTexture::GetHeight()
 {
@@ -1582,7 +1495,7 @@ int UMediaTexture::GetHeight()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B88E7B0              		 offset:2dbe7b0                       
+// FunctionAddress:0x00007FF759C90730              		 offset:290730                        
 
 float UMediaTexture::GetAspectRatio()
 {

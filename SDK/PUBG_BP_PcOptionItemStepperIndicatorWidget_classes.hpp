@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -29,6 +29,8 @@ public:
 		return ptr;
 	}
 
+
+	void OnClicked();
 };
 
 

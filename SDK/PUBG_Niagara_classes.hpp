@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,11 +15,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Class Niagara.NiagaraActor
-// 0x0008 (0x0408 - 0x0400)
+// 0x0008 (0x0418 - 0x0410)
 class ANiagaraActor : public AActor
 {
 public:
-	class UNiagaraComponent*                           NiagaraComponent;                                         // 0x0400(0x0008) (Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
+	class UNiagaraComponent*                           NiagaraComponent;                                         // 0x0410(0x0008) (Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
@@ -34,16 +34,16 @@ public:
 
 
 // Class Niagara.NiagaraComponent
-// 0x0050 (0x0A20 - 0x09D0)
+// 0x0050 (0x0A00 - 0x09B0)
 class UNiagaraComponent : public UPrimitiveComponent
 {
 public:
-	unsigned char                                      UnknownData00[0x10];                                      // 0x09D0(0x0010) MISSED OFFSET
-	TArray<struct FNiagaraVariable>                    EffectParameterLocalOverrides;                            // 0x09E0(0x0010) (Edit, ZeroConstructor)
-	TArray<struct FNiagaraScriptDataInterfaceInfo>     EffectDataInterfaceLocalOverrides;                        // 0x09F0(0x0010) (Edit, ZeroConstructor)
-	TArray<class UNiagaraDataInterface*>               InstanceDataInterfaces;                                   // 0x0A00(0x0010) (ZeroConstructor, Transient, DuplicateTransient)
-	bool                                               bRenderingEnabled;                                        // 0x0A10(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0xF];                                       // 0x0A11(0x000F) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x10];                                      // 0x09B0(0x0010) MISSED OFFSET
+	TArray<struct FNiagaraVariable>                    EffectParameterLocalOverrides;                            // 0x09C0(0x0010) (Edit, ZeroConstructor)
+	TArray<struct FNiagaraScriptDataInterfaceInfo>     EffectDataInterfaceLocalOverrides;                        // 0x09D0(0x0010) (Edit, ZeroConstructor)
+	TArray<class UNiagaraDataInterface*>               InstanceDataInterfaces;                                   // 0x09E0(0x0010) (ZeroConstructor, Transient, DuplicateTransient)
+	bool                                               bRenderingEnabled;                                        // 0x09F0(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0xF];                                       // 0x09F1(0x000F) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -469,9 +469,6 @@ public:
 		return ptr;
 	}
 
-
-	class UNiagaraComponent* STATIC_SpawnEffectAttached(class UNiagaraEffect* EffectTemplate, class USceneComponent* AttachToComponent, const struct FName& AttachPointName, const struct FVector& Location, const struct FRotator& Rotation, TEnumAsByte<EAttachLocation> LocationType, bool bAutoDestroy);
-	class UNiagaraComponent* STATIC_SpawnEffectAtLocation(class UObject* WorldContextObject, class UNiagaraEffect* EffectTemplate, const struct FVector& Location, const struct FRotator& Rotation, bool bAutoDestroy);
 };
 
 

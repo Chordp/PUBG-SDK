@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -65,8 +65,8 @@ public:
 
 	void CheckIfCompetitiveMode(bool* IsCompetitive);
 	void CheckLeaveGameStatus(bool* IsLeaveUnsafe);
-	void QuitToDesktop(EPopupButtonID* NewParam);
-	void GotoLobby(EPopupButtonID* InPopupButtonID);
+	void QuitToDesktop(EPopupButtonID NewParam);
+	void GotoLobby(EPopupButtonID InPopupButtonID);
 	void EnableMenuButtons(bool bEnable);
 	void OnVanishingAnimFinished();
 	void HideWidget();
@@ -77,7 +77,7 @@ public:
 	void BndEvt__ExitToDesktopButton_K2Node_ComponentBoundEvent_60_OnClicked__DelegateSignature();
 	void Construct();
 	void BndEvt__KeyGuideButton_K2Node_ComponentBoundEvent_0_OnClicked__DelegateSignature();
-	void OnScrollMissionList(float* Scale);
+	void OnScrollMissionList(float Scale);
 	void Destruct();
 	void BndEvt__EmergingAnim_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature();
 	void BndEvt__EmergingAnim_K2Node_ComponentBoundEvent_2_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature();
@@ -89,7 +89,7 @@ public:
 	void NotifyHideWidget();
 	void BndEvt__LeaveMatchButton_K2Node_ComponentBoundEvent_51_OnClicked__DelegateSignature();
 	void BndEvt__RatingsButton_K2Node_ComponentBoundEvent_99_OnButtonClickedEvent__DelegateSignature();
-	void ExecuteUbergraph_BP_PcSystemMenuWidget(int* EntryPoint);
+	void ExecuteUbergraph_BP_PcSystemMenuWidget(int EntryPoint);
 };
 
 

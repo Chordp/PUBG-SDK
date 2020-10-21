@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,13 +17,13 @@ namespace SDK
 // Function LobbyHUD_Default.LobbyHUD_Default_C.ChangeScene
 struct ALobbyHUD_Default_C_ChangeScene_Params
 {
-	struct FString*                                    PoseId;                                                   // (Parm, ZeroConstructor)
+	struct FString                                     PoseId;                                                   // (Parm, ZeroConstructor)
 };
 
 // Function LobbyHUD_Default.LobbyHUD_Default_C.ShowPoseActor
 struct ALobbyHUD_Default_C_ShowPoseActor_Params
 {
-	struct FString*                                    SourceString;                                             // (Parm, ZeroConstructor)
+	struct FString                                     SourceString;                                             // (Parm, ZeroConstructor)
 	TArray<struct FString>                             SkinIDs;                                                  // (Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
 
@@ -45,8 +45,8 @@ struct ALobbyHUD_Default_C_HideMasteryPose_Params
 // Function LobbyHUD_Default.LobbyHUD_Default_C.ShowMasteryPose
 struct ALobbyHUD_Default_C_ShowMasteryPose_Params
 {
-	struct FString*                                    PoseId;                                                   // (Parm, ZeroConstructor)
-	TArray<struct FString>*                            ItemIds;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	struct FString                                     PoseId;                                                   // (Parm, ZeroConstructor)
+	TArray<struct FString>                             ItemIDs;                                                  // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
 
 // Function LobbyHUD_Default.LobbyHUD_Default_C.ReceivePostBeginPlay
@@ -57,7 +57,7 @@ struct ALobbyHUD_Default_C_ReceivePostBeginPlay_Params
 // Function LobbyHUD_Default.LobbyHUD_Default_C.ExecuteUbergraph_LobbyHUD_Default
 struct ALobbyHUD_Default_C_ExecuteUbergraph_LobbyHUD_Default_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

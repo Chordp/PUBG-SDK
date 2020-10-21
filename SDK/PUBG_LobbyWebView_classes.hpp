@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -37,24 +37,24 @@ public:
 	}
 
 
-	struct FEventReply OnKeyDown(struct FGeometry* MyGeometry, struct FKeyEvent* InKeyEvent);
-	struct FEventReply OnPreviewMouseButtonDown(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent);
+	struct FEventReply OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
+	struct FEventReply OnPreviewMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	class UCoherentUIGTWidget* GetMainCoherentWidget();
-	struct FEventReply OnPreviewKeyDown(struct FGeometry* MyGeometry, struct FKeyEvent* InKeyEvent);
-	void WebViewBroadcast(struct FString* EventName, struct FString* Parameter);
-	void WebViewUnload(int* ViewIndex);
-	void WebViewShow(int* VeiwIndex, bool* visible);
-	void HandleEventFromWeb(class UCoherentUIGTJSPayload** payload);
-	void WebViewInputFocus(int* ViewIndex);
-	void WebViewLoad(int* ViewIndex, struct FString* URL);
-	void J(class UCoherentUIGTJSPayload** payload);
+	struct FEventReply OnPreviewKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent);
+	void WebViewBroadcast(const struct FString& EventName, const struct FString& Parameter);
+	void WebViewUnload(int ViewIndex);
+	void WebViewShow(int VeiwIndex, bool visible);
+	void HandleEventFromWeb(class UCoherentUIGTJSPayload* payload);
+	void WebViewInputFocus(int ViewIndex);
+	void WebViewLoad(int ViewIndex, const struct FString& URL);
+	void J(class UCoherentUIGTJSPayload* payload);
 	void Construct();
-	void Tick(struct FGeometry* MyGeometry, float* InDeltaTime);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void BndEvt__CoherentUIGTWidget_0_K2Node_ComponentBoundEvent_383_UIGTReadyForBindingsSignature__DelegateSignature();
 	void Destruct();
 	void BndEvt__WebView_0_K2Node_ComponentBoundEvent_2_UIGTBindingsReleasedSignature__DelegateSignature();
-	void CustomEvent(float* Scale);
-	void ExecuteUbergraph_LobbyWebView(int* EntryPoint);
+	void CustomEvent(float Scale);
+	void ExecuteUbergraph_LobbyWebView(int EntryPoint);
 };
 
 

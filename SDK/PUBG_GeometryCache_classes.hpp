@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -37,11 +37,11 @@ public:
 
 
 // Class GeometryCache.GeometryCacheActor
-// 0x0008 (0x0408 - 0x0400)
+// 0x0008 (0x0418 - 0x0410)
 class AGeometryCacheActor : public AActor
 {
 public:
-	class UGeometryCacheComponent*                     GeometryCacheComponent;                                   // 0x0400(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
+	class UGeometryCacheComponent*                     GeometryCacheComponent;                                   // 0x0410(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
@@ -58,19 +58,19 @@ public:
 
 
 // Class GeometryCache.GeometryCacheComponent
-// 0x0070 (0x0B40 - 0x0AD0)
+// 0x0070 (0x0B20 - 0x0AB0)
 class UGeometryCacheComponent : public UMeshComponent
 {
 public:
-	class UGeometryCache*                              GeometryCache;                                            // 0x0AD0(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	bool                                               bRunning;                                                 // 0x0AD8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bLooping;                                                 // 0x0AD9(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x2];                                       // 0x0ADA(0x0002) MISSED OFFSET
-	float                                              StartTimeOffset;                                          // 0x0ADC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              PlaybackSpeed;                                            // 0x0AE0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	int                                                NumTracks;                                                // 0x0AE4(0x0004) (Edit, ZeroConstructor, EditConst, IsPlainOldData)
-	float                                              ElapsedTime;                                              // 0x0AE8(0x0004) (Edit, ZeroConstructor, EditConst, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x54];                                      // 0x0AEC(0x0054) MISSED OFFSET
+	class UGeometryCache*                              GeometryCache;                                            // 0x0AB0(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	bool                                               bRunning;                                                 // 0x0AB8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bLooping;                                                 // 0x0AB9(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x2];                                       // 0x0ABA(0x0002) MISSED OFFSET
+	float                                              StartTimeOffset;                                          // 0x0ABC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              PlaybackSpeed;                                            // 0x0AC0(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	int                                                NumTracks;                                                // 0x0AC4(0x0004) (Edit, ZeroConstructor, EditConst, IsPlainOldData)
+	float                                              ElapsedTime;                                              // 0x0AC8(0x0004) (Edit, ZeroConstructor, EditConst, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x54];                                      // 0x0ACC(0x0054) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -157,8 +157,6 @@ public:
 		return ptr;
 	}
 
-
-	void SetMesh(const struct FGeometryCacheMeshData& NewMeshData);
 };
 
 
@@ -178,8 +176,6 @@ public:
 		return ptr;
 	}
 
-
-	void SetMesh(const struct FGeometryCacheMeshData& NewMeshData);
 };
 
 

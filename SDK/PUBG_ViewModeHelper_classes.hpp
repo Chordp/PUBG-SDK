@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -41,12 +41,12 @@ public:
 
 	void OnMouseDown();
 	void OnMouseUp();
-	void AddX(float* Scale);
-	void AddY(float* Scale);
-	void ViewModeZoomInOrOut(float* Scale);
+	void AddX(float Scale);
+	void AddY(float Scale);
+	void ViewModeZoomInOrOut(float Scale);
 	void ViewModeReset();
 	void Construct();
-	void ExecuteUbergraph_ViewModeHelper(int* EntryPoint);
+	void ExecuteUbergraph_ViewModeHelper(int EntryPoint);
 };
 
 

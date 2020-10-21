@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -30,10 +30,6 @@ public:
 		return ptr;
 	}
 
-
-	bool Mount(int PakOrder, const struct FString& MountPoint);
-	float GetInstalledContentSize();
-	float GetDiskFreeSpace();
 };
 
 
@@ -53,14 +49,6 @@ public:
 		return ptr;
 	}
 
-
-	void StartInstall(const struct FScriptDelegate& OnSucceeded, const struct FScriptDelegate& OnFailed);
-	float GetTotalDownloadedSize();
-	float GetRequiredDiskSpace();
-	float GetInstallProgress();
-	struct FText GetDownloadStatusText();
-	float GetDownloadSpeed();
-	float GetDownloadSize();
 };
 
 
@@ -79,12 +67,6 @@ public:
 		return ptr;
 	}
 
-
-	void STATIC_RequestContent(const struct FString& RemoteManifestURL, const struct FString& CloudURL, const struct FString& InstallDirectory, const struct FScriptDelegate& OnSucceeded, const struct FScriptDelegate& OnFailed);
-	bool STATIC_HasActiveWiFiConnection();
-	TArray<struct FString> STATIC_GetSupportedPlatformNames();
-	class UMobileInstalledContent* STATIC_GetInstalledContent(const struct FString& InstallDirectory);
-	struct FString STATIC_GetActiveDeviceProfileName();
 };
 
 

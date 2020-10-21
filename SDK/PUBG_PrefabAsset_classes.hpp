@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,15 +15,15 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Class PrefabAsset.PrefabActor
-// 0x0030 (0x0430 - 0x0400)
+// 0x0030 (0x0440 - 0x0410)
 class APrefabActor : public AActor
 {
 public:
-	class UPrefabComponent*                            PrefabComponent;                                          // 0x0400(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
-	struct FText                                       BackupPrefabCopyData;                                     // 0x0408(0x0018) (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, EditConst)
-	bool                                               bKeepOverrides;                                           // 0x0420(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0421(0x0007) MISSED OFFSET
-	class ULODParentComponent*                         BuildingHLOD;                                             // 0x0428(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, DisableEditOnTemplate, InstancedReference, IsPlainOldData)
+	class UPrefabComponent*                            PrefabComponent;                                          // 0x0410(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, IsPlainOldData)
+	struct FText                                       BackupPrefabCopyData;                                     // 0x0418(0x0018) (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate, EditConst)
+	bool                                               bKeepOverrides;                                           // 0x0430(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0431(0x0007) MISSED OFFSET
+	class ULODParentComponent*                         BuildingHLOD;                                             // 0x0438(0x0008) (Edit, BlueprintVisible, ExportObject, ZeroConstructor, DisableEditOnTemplate, InstancedReference, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
@@ -43,7 +43,7 @@ public:
 
 
 // Class PrefabAsset.PrefabActorHolder
-// 0x0000 (0x0400 - 0x0400)
+// 0x0000 (0x0410 - 0x0410)
 class APrefabActorHolder : public AActor
 {
 public:
@@ -57,16 +57,141 @@ public:
 		return ptr;
 	}
 
+
+	bool WasRecentlyRendered(float Tolerance);
+	void UserConstructionScript();
+	void TearOff();
+	void SnapRootComponentTo(class AActor* InParentActor, const struct FName& InSocketName);
+	void SetTickGroup(TEnumAsByte<ETickingGroup> NewTickGroup);
+	void SetTickableWhenPaused(bool bTickableWhenPaused);
+	void SetReplicates(bool bInReplicates);
+	void SetReplicateMovement(bool bInReplicateMovement);
+	void SetOwner(class AActor* NewOwner);
+	void SetLifeSpan(float InLifespan);
+	void SetActorTickInterval(float TickInterval);
+	void SetActorTickEnabled(bool bEnabled);
+	void SetActorScale3D(const struct FVector& NewScale3D);
+	void SetActorRelativeScale3D(const struct FVector& NewRelativeScale);
+	void SetActorHiddenInGame(bool bNewHidden);
+	void SetActorEnableCollision(bool bNewActorEnableCollision);
+	void RemoveTickPrerequisiteComponent(class UActorComponent* PrerequisiteComponent);
+	void RemoveTickPrerequisiteActor(class AActor* PrerequisiteActor);
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveRadialDamage(float DamageReceived, class UDamageType* DamageType, const struct FVector& Origin, const struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser);
+	void ReceivePointDamage(float Damage, class UDamageType* DamageType, const struct FVector& HitLocation, const struct FVector& HitNormal, class UPrimitiveComponent* HitComponent, const struct FName& BoneName, const struct FVector& ShotFromDirection, class AController* InstigatedBy, class AActor* DamageCauser, const struct FHitResult& HitInfo);
+	void ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
+	void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);
+	void ReceiveDestroyed();
+	void ReceiveBeginPlay();
+	void ReceiveAnyDamage(float Damage, class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser);
+	void ReceiveActorOnReleased(const struct FKey& ButtonReleased);
+	void ReceiveActorOnInputTouchLeave(TEnumAsByte<ETouchIndex> FingerIndex);
+	void ReceiveActorOnInputTouchEnter(TEnumAsByte<ETouchIndex> FingerIndex);
+	void ReceiveActorOnInputTouchEnd(TEnumAsByte<ETouchIndex> FingerIndex);
+	void ReceiveActorOnInputTouchBegin(TEnumAsByte<ETouchIndex> FingerIndex);
+	void ReceiveActorOnClicked(const struct FKey& ButtonPressed);
+	void ReceiveActorEndOverlap(class AActor* OtherActor);
+	void ReceiveActorEndCursorOver();
+	void ReceiveActorBeginOverlap(class AActor* OtherActor);
+	void ReceiveActorBeginCursorOver();
+	void OnRep_Role();
+	void OnRep_ReplicateMovement();
+	void OnRep_ReplicatedMovement();
+	void OnRep_Owner();
+	void OnRep_Instigator();
+	void OnRep_AttachmentReplication();
+	void MakeNoise(float Loudness, class APawn* NoiseInstigator, const struct FVector& NoiseLocation, float MaxRange, const struct FName& Tag);
+	class UMaterialInstanceDynamic* MakeMIDForMaterial(class UMaterialInterface* Parent);
+	bool K2_TeleportTo(const struct FVector& DestLocation, const struct FRotator& DestRotation);
+	bool K2_SetActorTransform(const struct FTransform& NewTransform, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	bool K2_SetActorRotation(const struct FRotator& NewRotation, bool bTeleportPhysics);
+	void K2_SetActorRelativeTransform(const struct FTransform& NewRelativeTransform, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	void K2_SetActorRelativeRotation(const struct FRotator& NewRelativeRotation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	void K2_SetActorRelativeLocation(const struct FVector& NewRelativeLocation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	bool K2_SetActorLocationAndRotation(const struct FVector& NewLocation, const struct FRotator& NewRotation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	bool K2_SetActorLocation(const struct FVector& NewLocation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	void K2_OnReset();
+	void K2_OnEndViewTarget(class APlayerController* PC);
+	void K2_OnBecomeViewTarget(class APlayerController* PC);
+	class USceneComponent* K2_GetRootComponent();
+	struct FRotator K2_GetActorRotation();
+	struct FVector K2_GetActorLocation();
+	void K2_DetachFromActor(EDetachmentRule LocationRule, EDetachmentRule RotationRule, EDetachmentRule ScaleRule);
+	void K2_DestroyComponent(class UActorComponent* Component);
+	void K2_DestroyActor();
+	void K2_AttachToComponent(class USceneComponent* Parent, const struct FName& SocketName, EAttachmentRule LocationRule, EAttachmentRule RotationRule, EAttachmentRule ScaleRule, bool bWeldSimulatedBodies);
+	void K2_AttachToActor(class AActor* ParentActor, const struct FName& SocketName, EAttachmentRule LocationRule, EAttachmentRule RotationRule, EAttachmentRule ScaleRule, bool bWeldSimulatedBodies);
+	void K2_AttachRootComponentToActor(class AActor* InParentActor, const struct FName& InSocketName, TEnumAsByte<EAttachLocation> AttachLocationType, bool bWeldSimulatedBodies);
+	void K2_AttachRootComponentTo(class USceneComponent* InParent, const struct FName& InSocketName, TEnumAsByte<EAttachLocation> AttachLocationType, bool bWeldSimulatedBodies);
+	void K2_AddActorWorldTransform(const struct FTransform& DeltaTransform, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	void K2_AddActorWorldRotation(const struct FRotator& DeltaRotation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	void K2_AddActorWorldOffset(const struct FVector& DeltaLocation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	void K2_AddActorLocalTransform(const struct FTransform& NewTransform, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	void K2_AddActorLocalRotation(const struct FRotator& DeltaRotation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	void K2_AddActorLocalOffset(const struct FVector& DeltaLocation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	bool IsOverlappingActor(class AActor* Other);
+	bool IsChildActor();
+	bool IsActorTickEnabled();
+	bool IsActorBeingDestroyed();
+	bool HasAuthority();
+	float GetVerticalDistanceTo(class AActor* OtherActor);
+	struct FVector GetVelocity();
+	struct FTransform GetTransform();
+	bool GetTickableWhenPaused();
+	float GetSquaredDistanceTo(class AActor* OtherActor);
+	TEnumAsByte<ENetRole> GetRemoteRole();
+	class UChildActorComponent* GetParentComponent();
+	class AActor* GetParentActor();
+	class AActor* GetOwner();
+	void GetOverlappingComponents(TArray<class UPrimitiveComponent*>* OverlappingComponents);
+	void GetOverlappingActors(class UClass* ClassFilter, TArray<class AActor*>* OverlappingActors);
+	float GetLifeSpan();
+	class AController* GetInstigatorController();
+	class APawn* GetInstigator();
+	struct FVector GetInputVectorAxisValue(const struct FKey& InputAxisKey);
+	float GetInputAxisValue(const struct FName& InputAxisName);
+	float GetInputAxisKeyValue(const struct FKey& InputAxisKey);
+	float GetHorizontalDotProductTo(class AActor* OtherActor);
+	float GetHorizontalDistanceTo(class AActor* OtherActor);
+	float GetGameTimeSinceCreation();
+	float GetDotProductTo(class AActor* OtherActor);
+	float GetDistanceTo(class AActor* OtherActor);
+	TArray<class UActorComponent*> GetComponentsByTag(class UClass* ComponentClass, const struct FName& Tag);
+	TArray<class UActorComponent*> GetComponentsByClass(class UClass* ComponentClass);
+	class UActorComponent* GetComponentByClass(class UClass* ComponentClass);
+	struct FName GetAttachParentSocketName();
+	class AActor* GetAttachParentActor();
+	void GetAttachedActors(TArray<class AActor*>* OutActors);
+	void GetAllChildActors(bool bIncludeDescendants, TArray<class AActor*>* ChildActors);
+	struct FVector GetActorUpVector();
+	float GetActorTimeDilation();
+	float GetActorTickInterval();
+	struct FVector GetActorScale3D();
+	struct FVector GetActorRightVector();
+	struct FVector GetActorRelativeScale3D();
+	struct FVector GetActorForwardVector();
+	void GetActorEyesViewPoint(struct FVector* OutLocation, struct FRotator* OutRotation);
+	bool GetActorEnableCollision();
+	void GetActorBounds(bool bOnlyCollidingComponents, struct FVector* Origin, struct FVector* BoxExtent);
+	void ForceNetUpdate();
+	void FlushNetDormancy();
+	void EnableInput(class APlayerController* PlayerController);
+	void DisableInput(class APlayerController* PlayerController);
+	void DetachRootComponentFromParent(bool bMaintainWorldPosition);
+	void AddTickPrerequisiteComponent(class UActorComponent* PrerequisiteComponent);
+	void AddTickPrerequisiteActor(class AActor* PrerequisiteActor);
+	class UActorComponent* AddComponent(const struct FName& TemplateName, bool bManualAttachment, const struct FTransform& RelativeTransform, class UObject* ComponentTemplateContext);
+	bool ActorHasTag(const struct FName& Tag);
 };
 
 
 // Class PrefabAsset.PrefabLODHolder
-// 0x0010 (0x0410 - 0x0400)
+// 0x0010 (0x0420 - 0x0410)
 class APrefabLODHolder : public APrefabActorHolder
 {
 public:
-	class ULODParentComponent*                         HLODParentComponent;                                      // 0x0400(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData)
-	class UStaticMesh*                                 LevelLODMesh;                                             // 0x0408(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	class ULODParentComponent*                         HLODParentComponent;                                      // 0x0410(0x0008) (Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData)
+	class UStaticMesh*                                 LevelLODMesh;                                             // 0x0418(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
@@ -113,25 +238,25 @@ public:
 
 
 // Class PrefabAsset.PrefabBuildingCreator
-// 0x0068 (0x0468 - 0x0400)
+// 0x0068 (0x0478 - 0x0410)
 class APrefabBuildingCreator : public AActor
 {
 public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0400(0x0008) MISSED OFFSET
-	bool                                               bSpawnInOrder;                                            // 0x0408(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               bLockConfiguration;                                       // 0x0409(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x6];                                       // 0x040A(0x0006) MISSED OFFSET
-	TArray<class UPrefabAsset*>                        PrefabAssetList;                                          // 0x0410(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	TArray<class UPrefabAsset*>                        PrefabOverrides;                                          // 0x0420(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	bool                                               bUseRoofPrefab;                                           // 0x0430(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x7];                                       // 0x0431(0x0007) MISSED OFFSET
-	class UPrefabAsset*                                RoofPrefab;                                               // 0x0438(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class AActor*                                      SpawnedRoofPrefab;                                        // 0x0440(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
-	TArray<class AActor*>                              SpawnedPrefabActors;                                      // 0x0448(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
-	float                                              FloorHeight;                                              // 0x0458(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	float                                              BaseOffset;                                               // 0x045C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	int                                                NumberOfFloors;                                           // 0x0460(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x4];                                       // 0x0464(0x0004) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0410(0x0008) MISSED OFFSET
+	bool                                               bSpawnInOrder;                                            // 0x0418(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bLockConfiguration;                                       // 0x0419(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x6];                                       // 0x041A(0x0006) MISSED OFFSET
+	TArray<class UPrefabAsset*>                        PrefabAssetList;                                          // 0x0420(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	TArray<class UPrefabAsset*>                        PrefabOverrides;                                          // 0x0430(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	bool                                               bUseRoofPrefab;                                           // 0x0440(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x7];                                       // 0x0441(0x0007) MISSED OFFSET
+	class UPrefabAsset*                                RoofPrefab;                                               // 0x0448(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class AActor*                                      SpawnedRoofPrefab;                                        // 0x0450(0x0008) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData)
+	TArray<class AActor*>                              SpawnedPrefabActors;                                      // 0x0458(0x0010) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor)
+	float                                              FloorHeight;                                              // 0x0468(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              BaseOffset;                                               // 0x046C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	int                                                NumberOfFloors;                                           // 0x0470(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x4];                                       // 0x0474(0x0004) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -146,25 +271,25 @@ public:
 
 
 // Class PrefabAsset.PrefabComponent
-// 0x00E0 (0x0AB0 - 0x09D0)
+// 0x00E0 (0x0A90 - 0x09B0)
 class UPrefabComponent : public UPrimitiveComponent
 {
 public:
-	TMap<struct FString, struct FPrefabOverride>       ComponentPrefabOverrideMap;                               // 0x09D0(0x0050) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate)
-	struct FVector                                     BoxSelectionScale;                                        // 0x0A20(0x000C) (Edit, IsPlainOldData)
-	struct FVector                                     SelectionBoxOffset;                                       // 0x0A2C(0x000C) (Edit, IsPlainOldData)
-	unsigned char                                      bLockSelection : 1;                                       // 0x0A38(0x0001) (Edit)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0A39(0x0007) MISSED OFFSET
-	class UBlueprint*                                  GeneratedBlueprint;                                       // 0x0A40(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData)
-	class UPrefabAsset*                                Prefab;                                                   // 0x0A48(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData)
-	TMap<struct FName, class AActor*>                  PrefabInstancesMap;                                       // 0x0A50(0x0050) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, DuplicateTransient)
-	unsigned char                                      bTransient : 1;                                           // 0x0AA0(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x0AA1(0x0003) MISSED OFFSET
-	bool                                               bIsBaseBuilding;                                          // 0x0AA4(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x3];                                       // 0x0AA5(0x0003) MISSED OFFSET
-	uint32_t                                           HouseID;                                                  // 0x0AA8(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	bool                                               bIsDestroyedPrefab;                                       // 0x0AAC(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x3];                                       // 0x0AAD(0x0003) MISSED OFFSET
+	TMap<struct FString, struct FPrefabOverride>       ComponentPrefabOverrideMap;                               // 0x09B0(0x0050) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate)
+	struct FVector                                     BoxSelectionScale;                                        // 0x0A00(0x000C) (Edit, IsPlainOldData)
+	struct FVector                                     SelectionBoxOffset;                                       // 0x0A0C(0x000C) (Edit, IsPlainOldData)
+	unsigned char                                      bLockSelection : 1;                                       // 0x0A18(0x0001) (Edit)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0A19(0x0007) MISSED OFFSET
+	class UBlueprint*                                  GeneratedBlueprint;                                       // 0x0A20(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData)
+	class UPrefabAsset*                                Prefab;                                                   // 0x0A28(0x0008) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData)
+	TMap<struct FName, class AActor*>                  PrefabInstancesMap;                                       // 0x0A30(0x0050) (Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, EditConst, DuplicateTransient)
+	unsigned char                                      bTransient : 1;                                           // 0x0A80(0x0001) (Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnTemplate)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x0A81(0x0003) MISSED OFFSET
+	bool                                               bIsBaseBuilding;                                          // 0x0A84(0x0001) (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x3];                                       // 0x0A85(0x0003) MISSED OFFSET
+	uint32_t                                           HouseID;                                                  // 0x0A88(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	bool                                               bIsDestroyedPrefab;                                       // 0x0A8C(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x3];                                       // 0x0A8D(0x0003) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{

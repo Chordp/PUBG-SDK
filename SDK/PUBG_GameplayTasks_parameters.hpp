@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -29,24 +29,19 @@ struct UGameplayTask_EndTask_Params
 {
 };
 
-// Function GameplayTasks.GameplayTask_ClaimResource.ClaimResources
-struct UGameplayTask_ClaimResource_ClaimResources_Params
+// Function GameplayTasks.GameplayTask.ReadyForActivation
+struct UGameplayTask_ClaimResource_ReadyForActivation_Params
 {
-	TScriptInterface<class UGameplayTaskOwnerInterface> InTaskOwner;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	TArray<class UClass*>                              ResourceClasses;                                          // (Parm, ZeroConstructor)
-	unsigned char                                      Priority;                                                 // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-	struct FName                                       TaskInstanceName;                                         // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-	class UGameplayTask_ClaimResource*                 ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
-// Function GameplayTasks.GameplayTask_ClaimResource.ClaimResource
-struct UGameplayTask_ClaimResource_ClaimResource_Params
+// DelegateFunction GameplayTasks.GameplayTask.GenericGameplayTaskDelegate__DelegateSignature
+struct UGameplayTask_ClaimResource_GenericGameplayTaskDelegate__DelegateSignature_Params
 {
-	TScriptInterface<class UGameplayTaskOwnerInterface> InTaskOwner;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	class UClass*                                      ResourceClass;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      Priority;                                                 // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-	struct FName                                       TaskInstanceName;                                         // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-	class UGameplayTask_ClaimResource*                 ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function GameplayTasks.GameplayTask.EndTask
+struct UGameplayTask_ClaimResource_EndTask_Params
+{
 };
 
 // Function GameplayTasks.GameplayTask_SpawnActor.SpawnActor

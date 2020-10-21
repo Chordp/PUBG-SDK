@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -16,7 +16,7 @@ namespace SDK
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 // bool                           IsDesignTime                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UWBP_BlackZoneWarningIcon_C::PreConstruct(bool IsDesignTime)
 {
@@ -38,7 +38,7 @@ void UWBP_BlackZoneWarningIcon_C::PreConstruct(bool IsDesignTime)
 
 // Function WBP_BlackZoneWarningIcon.WBP_BlackZoneWarningIcon_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UWBP_BlackZoneWarningIcon_C::Construct()
 {
@@ -60,10 +60,10 @@ void UWBP_BlackZoneWarningIcon_C::Construct()
 // Function WBP_BlackZoneWarningIcon.WBP_BlackZoneWarningIcon_C.ExecuteUbergraph_WBP_BlackZoneWarningIcon
 // ()
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UWBP_BlackZoneWarningIcon_C::ExecuteUbergraph_WBP_BlackZoneWarningIcon(int* EntryPoint)
+void UWBP_BlackZoneWarningIcon_C::ExecuteUbergraph_WBP_BlackZoneWarningIcon(int EntryPoint)
 {
 	static UFunction* fn;
 

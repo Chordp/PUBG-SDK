@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -82,18 +82,18 @@ public:
 	}
 
 
-	void GetIndexFromRegionName(struct FString* RegionName, int* Array_Index);
-	void UpdateReplayList_Impl(struct FString* RegionOrLocal);
-	void UpdateRegionButtonColors(int* Index_);
+	void GetIndexFromRegionName(const struct FString& RegionName, int* Array_Index);
+	void UpdateReplayList_Impl(const struct FString& RegionOrLocal);
+	void UpdateRegionButtonColors(int Index_);
 	void ChangeCloseButtonForTest();
 	void ResetRecorderStatistics();
 	void ResetSummary();
 	void CheckReplayBusyStatus(bool* bIsReplayBusy);
-	void UpdateRecorderStatistics(struct FTslReplaySummary* inReplaySummary);
-	void UpdateTeamText(struct FTslReplaySummary* inReplaySummary);
+	void UpdateRecorderStatistics(const struct FTslReplaySummary& inReplaySummary);
+	void UpdateTeamText(const struct FTslReplaySummary& inReplaySummary);
 	void SetShouldKeep(bool bShouldKeep);
-	void UpdateReplaySummary(struct FTslReplaySummary* ReplaySummary);
-	void SetReplayItemToProcess(struct FString* RegionOrLocal, struct FReplayItem* inReplayItem);
+	void UpdateReplaySummary(const struct FTslReplaySummary& ReplaySummary);
+	void SetReplayItemToProcess(const struct FString& RegionOrLocal, const struct FReplayItem& inReplayItem);
 	void HidePageWidget();
 	void ShowPageWidget();
 	void ClearReplayList();
@@ -113,16 +113,16 @@ public:
 	void BndEvt__Button_Play_K2Node_ComponentBoundEvent_233_OnButtonClickedEvent__DelegateSignature();
 	void BndEvt__Button_Delete_K2Node_ComponentBoundEvent_810_OnButtonClickedEvent__DelegateSignature();
 	void BndEvt__Button_DeleteOlds_K2Node_ComponentBoundEvent_271_OnButtonClickedEvent__DelegateSignature();
-	void OnKeepAndDeleteOldestReplaysDoneEvent(int* Remains);
-	void OnGetReplaySummaryEvent(struct FTslReplaySummary* ReplaySummary);
+	void OnKeepAndDeleteOldestReplaysDoneEvent(int Remains);
+	void OnGetReplaySummaryEvent(const struct FTslReplaySummary& ReplaySummary);
 	void BndEvt__Button_JP_K2Node_ComponentBoundEvent_485_OnButtonClickedEvent__DelegateSignature();
-	void ExecuteUbergraph_UiReplayList(int* EntryPoint);
+	void ExecuteUbergraph_UiReplayList(int EntryPoint);
 	void DeleteReplayEvent__DelegateSignature();
 	void QuitApplicationEvent__DelegateSignature();
 	void GoPageEvent__DelegateSignature();
 	void PrevPageEvent__DelegateSignature();
 	void NextPageEvent__DelegateSignature();
-	void UpdateReplayList__DelegateSignature(struct FString* RegionOrLocal);
+	void UpdateReplayList__DelegateSignature(const struct FString& RegionOrLocal);
 };
 
 

@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,7 +14,7 @@ namespace SDK
 
 // Function KeyGuideWidgetBP.KeyGuideWidgetBP_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UKeyGuideWidgetBP_C::Construct()
 {
@@ -35,7 +35,7 @@ void UKeyGuideWidgetBP_C::Construct()
 
 // Function KeyGuideWidgetBP.KeyGuideWidgetBP_C.BndEvt__ButtonBack_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UKeyGuideWidgetBP_C::BndEvt__ButtonBack_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature()
 {
@@ -56,7 +56,7 @@ void UKeyGuideWidgetBP_C::BndEvt__ButtonBack_K2Node_ComponentBoundEvent_3_OnButt
 
 // Function KeyGuideWidgetBP.KeyGuideWidgetBP_C.EscapeEvent
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UKeyGuideWidgetBP_C::EscapeEvent()
 {
@@ -78,11 +78,11 @@ void UKeyGuideWidgetBP_C::EscapeEvent()
 // Function KeyGuideWidgetBP.KeyGuideWidgetBP_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// struct FGeometry*              MyGeometry                     (Parm, IsPlainOldData)
-// float*                         InDeltaTime                    (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// struct FGeometry               MyGeometry                     (Parm, IsPlainOldData)
+// float                          InDeltaTime                    (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UKeyGuideWidgetBP_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
+void UKeyGuideWidgetBP_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
 	static UFunction* fn;
 
@@ -104,10 +104,10 @@ void UKeyGuideWidgetBP_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 // Function KeyGuideWidgetBP.KeyGuideWidgetBP_C.ExecuteUbergraph_KeyGuideWidgetBP
 // (HasDefaults)
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UKeyGuideWidgetBP_C::ExecuteUbergraph_KeyGuideWidgetBP(int* EntryPoint)
+void UKeyGuideWidgetBP_C::ExecuteUbergraph_KeyGuideWidgetBP(int EntryPoint)
 {
 	static UFunction* fn;
 

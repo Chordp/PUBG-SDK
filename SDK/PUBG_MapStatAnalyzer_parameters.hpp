@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -19,7 +19,7 @@ struct AMapStatAnalyzer_C_EqualsFloatArray_Params
 {
 	TArray<float>                                      NewParam;                                                 // (Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<float>                                      NewParam1;                                                // (Parm, OutParm, ZeroConstructor, ReferenceParm)
-	float*                                             NewParam2;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              NewParam2;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	bool                                               NewParam3;                                                // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -44,7 +44,7 @@ struct AMapStatAnalyzer_C_GetCurrentLevelSize_Params
 // Function MapStatAnalyzer.MapStatAnalyzer_C.GetExpectedMapSize
 struct AMapStatAnalyzer_C_GetExpectedMapSize_Params
 {
-	float*                                             MapStride;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              MapStride;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 	float                                              NewParam;                                                 // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 };
 
@@ -63,7 +63,7 @@ struct AMapStatAnalyzer_C_GetSavedDir_Params
 // Function MapStatAnalyzer.MapStatAnalyzer_C.LoadStringFromFile
 struct AMapStatAnalyzer_C_LoadStringFromFile_Params
 {
-	struct FString*                                    FullFilePath;                                             // (Parm, ZeroConstructor)
+	struct FString                                     FullFilePath;                                             // (Parm, ZeroConstructor)
 	bool                                               bSuccess;                                                 // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 	struct FString                                     NewVar;                                                   // (Parm, OutParm, ZeroConstructor)
 };
@@ -71,7 +71,7 @@ struct AMapStatAnalyzer_C_LoadStringFromFile_Params
 // Function MapStatAnalyzer.MapStatAnalyzer_C.GetCurrentLevelMinimapURL
 struct AMapStatAnalyzer_C_GetCurrentLevelMinimapURL_Params
 {
-	struct FString*                                    PresetDir;                                                // (Parm, ZeroConstructor)
+	struct FString                                     PresetDir;                                                // (Parm, ZeroConstructor)
 	struct FString                                     NewParam;                                                 // (Parm, OutParm, ZeroConstructor)
 };
 
@@ -79,7 +79,7 @@ struct AMapStatAnalyzer_C_GetCurrentLevelMinimapURL_Params
 struct AMapStatAnalyzer_C_FloatArrayToNewlinedString_Params
 {
 	TArray<float>                                      Array;                                                    // (Parm, OutParm, ZeroConstructor, ReferenceParm)
-	struct FString*                                    NewlinedString;                                           // (Parm, ZeroConstructor)
+	struct FString                                     NewlinedString;                                           // (Parm, ZeroConstructor)
 	struct FString                                     NewVar;                                                   // (Parm, OutParm, ZeroConstructor)
 };
 
@@ -87,7 +87,7 @@ struct AMapStatAnalyzer_C_FloatArrayToNewlinedString_Params
 struct AMapStatAnalyzer_C_StingArrayToNewlinedString_Params
 {
 	TArray<struct FString>                             Array;                                                    // (Parm, OutParm, ZeroConstructor, ReferenceParm)
-	struct FString*                                    NewlinedString;                                           // (Parm, ZeroConstructor)
+	struct FString                                     NewlinedString;                                           // (Parm, ZeroConstructor)
 	struct FString                                     NewVar;                                                   // (Parm, OutParm, ZeroConstructor)
 };
 
@@ -109,15 +109,15 @@ struct AMapStatAnalyzer_C_GetAvgOnArray_Params
 // Function MapStatAnalyzer.MapStatAnalyzer_C.DateTimeToString
 struct AMapStatAnalyzer_C_DateTimeToString_Params
 {
-	struct FDateTime*                                  NewParam;                                                 // (Parm)
+	struct FDateTime                                   NewParam;                                                 // (Parm)
 	struct FString                                     NewParam1;                                                // (Parm, OutParm, ZeroConstructor)
 };
 
 // Function MapStatAnalyzer.MapStatAnalyzer_C.ComputeWorldSize
 struct AMapStatAnalyzer_C_ComputeWorldSize_Params
 {
-	struct FVector*                                    Min;                                                      // (Parm, IsPlainOldData)
-	struct FVector*                                    Max;                                                      // (Parm, IsPlainOldData)
+	struct FVector                                     Min;                                                      // (Parm, IsPlainOldData)
+	struct FVector                                     Max;                                                      // (Parm, IsPlainOldData)
 };
 
 // Function MapStatAnalyzer.MapStatAnalyzer_C.UserConstructionScript
@@ -139,7 +139,7 @@ struct AMapStatAnalyzer_C_ReceiveEndPlay_Params
 // Function MapStatAnalyzer.MapStatAnalyzer_C.ExecuteUbergraph_MapStatAnalyzer
 struct AMapStatAnalyzer_C_ExecuteUbergraph_MapStatAnalyzer_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

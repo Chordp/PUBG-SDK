@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -10,6 +10,7 @@
 #include "PUBG_UMG_classes.hpp"
 #include "PUBG_Engine_classes.hpp"
 #include "PUBG_CoreUObject_classes.hpp"
+#include "PUBG_InputCore_classes.hpp"
 
 namespace SDK
 {
@@ -198,6 +199,14 @@ enum class ECoherentUIGTSettingsSeverity : uint8_t
 //---------------------------------------------------------------------------
 //Script Structs
 //---------------------------------------------------------------------------
+
+// ScriptStruct CoherentUIGTPlugin.CoherentSound
+// 0x0010
+struct FCoherentSound
+{
+	class UAudioComponent*                             Component;                                                // 0x0000(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
+	class USoundWaveProcedural*                        Stream;                                                   // 0x0008(0x0008) (ZeroConstructor, IsPlainOldData)
+};
 
 // ScriptStruct CoherentUIGTPlugin.CoherentUIGTLoadingScreenSettings
 // 0x0018

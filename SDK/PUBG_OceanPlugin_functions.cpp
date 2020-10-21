@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -16,7 +16,7 @@ namespace SDK
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class UTexture2D*              Tex2D                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B5113C0              		 offset:2a413c0                       
+// FunctionAddress:0x00007FF75C67A3F0              		 offset:2c7a3f0                       
 
 void AOceanManager::LoadLandscapeHeightmap(class UTexture2D* Tex2D)
 {
@@ -46,7 +46,7 @@ void AOceanManager::LoadLandscapeHeightmap(class UTexture2D* Tex2D)
 // bool                           TwoIterations                  (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           InClientOnly                   (Parm, ZeroConstructor, IsPlainOldData)
 // struct FVector                 ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B511010              		 offset:2a41010                       
+// FunctionAddress:0x00007FF75C67A040              		 offset:2c7a040                       
 
 struct FVector AOceanManager::GetWaveHeightValue(const struct FVector& Location, class UWorld* World, bool HeightOnly, bool TwoIterations, bool InClientOnly)
 {
@@ -79,7 +79,7 @@ struct FVector AOceanManager::GetWaveHeightValue(const struct FVector& Location,
 // float                          U                              (Parm, ZeroConstructor, IsPlainOldData)
 // float                          V                              (Parm, ZeroConstructor, IsPlainOldData)
 // struct FLinearColor            ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B510DF0              		 offset:2a40df0                       
+// FunctionAddress:0x00007FF75C679E20              		 offset:2c79e20                       
 
 struct FLinearColor AOceanManager::GetHeightmapPixel(float U, float V)
 {
@@ -110,7 +110,7 @@ struct FLinearColor AOceanManager::GetHeightmapPixel(float U, float V)
 // struct FVector                 B                              (Parm, IsPlainOldData)
 // struct FVector                 C                              (Parm, IsPlainOldData)
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B511C20              		 offset:2a41c20                       
+// FunctionAddress:0x00007FF75C67AC50              		 offset:2c7ac50                       
 
 float UAdvancedBuoyancyComponent::TriangleArea(const struct FVector& A, const struct FVector& B, const struct FVector& C)
 {
@@ -143,7 +143,7 @@ float UAdvancedBuoyancyComponent::TriangleArea(const struct FVector& A, const st
 // struct FBuoyancyVertex         L                              (Parm)
 // struct FVector                 InArrow                        (Parm, IsPlainOldData)
 // TArray<struct FForceTriangle>  ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF62B511A00              		 offset:2a41a00                       
+// FunctionAddress:0x00007FF75C67AA30              		 offset:2c7aa30                       
 
 TArray<struct FForceTriangle> UAdvancedBuoyancyComponent::SplitTriangle(const struct FBuoyancyVertex& H, const struct FBuoyancyVertex& M, const struct FBuoyancyVertex& L, const struct FVector& InArrow)
 {
@@ -174,7 +174,7 @@ TArray<struct FForceTriangle> UAdvancedBuoyancyComponent::SplitTriangle(const st
 // Parameters:
 // float                          NewDensity                     (Parm, ZeroConstructor, IsPlainOldData)
 // float                          NewWaterDensity                (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B511940              		 offset:2a41940                       
+// FunctionAddress:0x00007FF75C67A970              		 offset:2c7a970                       
 
 void UAdvancedBuoyancyComponent::SetMeshDensity(float NewDensity, float NewWaterDensity)
 {
@@ -202,7 +202,7 @@ void UAdvancedBuoyancyComponent::SetMeshDensity(float NewDensity, float NewWater
 // struct FVector                 Position                       (Parm, IsPlainOldData)
 // bool                           bJustGetHeightAtLocation       (Parm, ZeroConstructor, IsPlainOldData)
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B510F20              		 offset:2a40f20                       
+// FunctionAddress:0x00007FF75C679F50              		 offset:2c79f50                       
 
 float UAdvancedBuoyancyComponent::GetOceanDepthFromGrid(const struct FVector& Position, bool bJustGetHeightAtLocation)
 {
@@ -228,7 +228,7 @@ float UAdvancedBuoyancyComponent::GetOceanDepthFromGrid(const struct FVector& Po
 
 // Function OceanPlugin.AdvancedBuoyancyComponent.GetOcean
 // (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF62B510F00              		 offset:2a40f00                       
+// FunctionAddress:0x00007FF75C679F30              		 offset:2c79f30                       
 
 void UAdvancedBuoyancyComponent::GetOcean()
 {
@@ -253,7 +253,7 @@ void UAdvancedBuoyancyComponent::GetOcean()
 // Parameters:
 // struct FForceTriangle          TriForce                       (Parm)
 // struct FColor                  DebugColor                     (Parm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B510980              		 offset:2a40980                       
+// FunctionAddress:0x00007FF75C6799B0              		 offset:2c799b0                       
 
 void UAdvancedBuoyancyComponent::DrawDebugStuff(const struct FForceTriangle& TriForce, const struct FColor& DebugColor)
 {
@@ -280,7 +280,7 @@ void UAdvancedBuoyancyComponent::DrawDebugStuff(const struct FForceTriangle& Tri
 // Parameters:
 // struct FVector                 SlamForce                      (Parm, IsPlainOldData)
 // struct FVector                 TriCenter                      (Parm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B5107D0              		 offset:2a407d0                       
+// FunctionAddress:0x00007FF75C679800              		 offset:2c79800                       
 
 void UAdvancedBuoyancyComponent::ApplySlamForce(const struct FVector& SlamForce, const struct FVector& TriCenter)
 {
@@ -306,7 +306,7 @@ void UAdvancedBuoyancyComponent::ApplySlamForce(const struct FVector& SlamForce,
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FForceTriangle          TriForce                       (Parm)
-// FunctionAddress:0x00007FF62B5106B0              		 offset:2a406b0                       
+// FunctionAddress:0x00007FF75C6796E0              		 offset:2c796e0                       
 
 void UAdvancedBuoyancyComponent::ApplyForce(const struct FForceTriangle& TriForce)
 {
@@ -331,7 +331,7 @@ void UAdvancedBuoyancyComponent::ApplyForce(const struct FForceTriangle& TriForc
 // (Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B510ED0              		 offset:2a40ed0                       
+// FunctionAddress:0x00007FF75C679F00              		 offset:2c79f00                       
 
 bool ACustomVehicleController::GetIsDriving()
 {
@@ -355,7 +355,7 @@ bool ACustomVehicleController::GetIsDriving()
 
 // Function OceanPlugin.CustomVehicleController.ExitVehicle
 // (Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF62B510B80              		 offset:2a40b80                       
+// FunctionAddress:0x00007FF75C679BB0              		 offset:2c79bb0                       
 
 void ACustomVehicleController::ExitVehicle()
 {
@@ -379,7 +379,7 @@ void ACustomVehicleController::ExitVehicle()
 // (Native, Public, BlueprintCallable)
 // Parameters:
 // class APawn*                   Vehicle                        (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B510AF0              		 offset:2a40af0                       
+// FunctionAddress:0x00007FF75C679B20              		 offset:2c79b20                       
 
 void ACustomVehicleController::EnterVehicle(class APawn* Vehicle)
 {
@@ -402,7 +402,7 @@ void ACustomVehicleController::EnterVehicle(class APawn* Vehicle)
 
 // Function OceanPlugin.CustomVehicleController.EnableBuoyancy
 // (Exec, Native, Public)
-// FunctionAddress:0x00007FF62B510AD0              		 offset:2a40ad0                       
+// FunctionAddress:0x00007FF75C679B00              		 offset:2c79b00                       
 
 void ACustomVehicleController::EnableBuoyancy()
 {
@@ -424,7 +424,7 @@ void ACustomVehicleController::EnableBuoyancy()
 
 // Function OceanPlugin.CustomVehicleController.DrawBuoyancyPoints
 // (Exec, Native, Public)
-// FunctionAddress:0x00007FF62B510960              		 offset:2a40960                       
+// FunctionAddress:0x00007FF75C679990              		 offset:2c79990                       
 
 void ACustomVehicleController::DrawBuoyancyPoints()
 {
@@ -451,7 +451,7 @@ void ACustomVehicleController::DrawBuoyancyPoints()
 // class AActor*                  OtherActor                     (Parm, ZeroConstructor, IsPlainOldData)
 // class UPrimitiveComponent*     OtherComp                      (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
 // int                            OtherBodyIndex                 (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B511630              		 offset:2a41630                       
+// FunctionAddress:0x00007FF75C67A660              		 offset:2c7a660                       
 
 void AFlockFish::OnEndOverlap(class UPrimitiveComponent* activatedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
@@ -484,7 +484,7 @@ void AFlockFish::OnEndOverlap(class UPrimitiveComponent* activatedComp, class AA
 // int                            OtherBodyIndex                 (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bFromSweep                     (Parm, ZeroConstructor, IsPlainOldData)
 // struct FHitResult              SweepResult                    (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B511440              		 offset:2a41440                       
+// FunctionAddress:0x00007FF75C67A470              		 offset:2c7a470                       
 
 void AFlockFish::OnBeginOverlap(class UPrimitiveComponent* activatedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
@@ -515,7 +515,7 @@ void AFlockFish::OnBeginOverlap(class UPrimitiveComponent* activatedComp, class 
 // Parameters:
 // float                          InLODTransitionStart           (Parm, ZeroConstructor, IsPlainOldData)
 // float                          InLODTransitionEnd             (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B511880              		 offset:2a41880                       
+// FunctionAddress:0x00007FF75C67A8B0              		 offset:2c7a8b0                       
 
 void UOceanMeshComponent::SetLODTransitionRange(float InLODTransitionStart, float InLODTransitionEnd)
 {
@@ -541,7 +541,7 @@ void UOceanMeshComponent::SetLODTransitionRange(float InLODTransitionStart, floa
 // (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
 // Parameters:
 // struct FVector                 Extent                         (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B511770              		 offset:2a41770                       
+// FunctionAddress:0x00007FF75C67A7A0              		 offset:2c7a7a0                       
 
 void UOceanMeshComponent::SetBoundsExtent(const struct FVector& Extent)
 {
@@ -566,7 +566,7 @@ void UOceanMeshComponent::SetBoundsExtent(const struct FVector& Extent)
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // float                          Time                           (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B511800              		 offset:2a41800                       
+// FunctionAddress:0x00007FF75C67A830              		 offset:2c7a830                       
 
 void ATimeManager::SetCurrentLocalTime(float Time)
 {
@@ -592,7 +592,7 @@ void ATimeManager::SetCurrentLocalTime(float Time)
 // Parameters:
 // int                            Year                           (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B511330              		 offset:2a41330                       
+// FunctionAddress:0x00007FF75C67A360              		 offset:2c7a360                       
 
 bool ATimeManager::IsLeapYear(int Year)
 {
@@ -619,7 +619,7 @@ bool ATimeManager::IsLeapYear(int Year)
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FTimeDate               Time                           (Parm)
-// FunctionAddress:0x00007FF62B5112A0              		 offset:2a412a0                       
+// FunctionAddress:0x00007FF75C67A2D0              		 offset:2c7a2d0                       
 
 void ATimeManager::InitializeCalendar(const struct FTimeDate& Time)
 {
@@ -644,7 +644,7 @@ void ATimeManager::InitializeCalendar(const struct FTimeDate& Time)
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // float                          DeltaSeconds                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B511220              		 offset:2a41220                       
+// FunctionAddress:0x00007FF75C67A250              		 offset:2c7a250                       
 
 void ATimeManager::IncrementTime(float DeltaSeconds)
 {
@@ -669,7 +669,7 @@ void ATimeManager::IncrementTime(float DeltaSeconds)
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B5111F0              		 offset:2a411f0                       
+// FunctionAddress:0x00007FF75C67A220              		 offset:2c7a220                       
 
 float ATimeManager::GetYearPhase()
 {
@@ -695,7 +695,7 @@ float ATimeManager::GetYearPhase()
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B510DC0              		 offset:2a40dc0                       
+// FunctionAddress:0x00007FF75C679DF0              		 offset:2c79df0                       
 
 float ATimeManager::GetElapsedDayInMinutes()
 {
@@ -722,7 +722,7 @@ float ATimeManager::GetElapsedDayInMinutes()
 // Parameters:
 // int                            Year                           (Parm, ZeroConstructor, IsPlainOldData)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B510D30              		 offset:2a40d30                       
+// FunctionAddress:0x00007FF75C679D60              		 offset:2c79d60                       
 
 int ATimeManager::GetDaysInYear(int Year)
 {
@@ -751,7 +751,7 @@ int ATimeManager::GetDaysInYear(int Year)
 // int                            Year                           (Parm, ZeroConstructor, IsPlainOldData)
 // int                            Month                          (Parm, ZeroConstructor, IsPlainOldData)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B510C70              		 offset:2a40c70                       
+// FunctionAddress:0x00007FF75C679CA0              		 offset:2c79ca0                       
 
 int ATimeManager::GetDaysInMonth(int Year, int Month)
 {
@@ -779,7 +779,7 @@ int ATimeManager::GetDaysInMonth(int Year, int Month)
 // (Final, Native, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B510C40              		 offset:2a40c40                       
+// FunctionAddress:0x00007FF75C679C70              		 offset:2c79c70                       
 
 float ATimeManager::GetDayPhase()
 {
@@ -806,7 +806,7 @@ float ATimeManager::GetDayPhase()
 // Parameters:
 // struct FTimeDate               Time                           (Parm)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B510BA0              		 offset:2a40ba0                       
+// FunctionAddress:0x00007FF75C679BD0              		 offset:2c79bd0                       
 
 int ATimeManager::GetDayOfYear(const struct FTimeDate& Time)
 {
@@ -833,7 +833,7 @@ int ATimeManager::GetDayOfYear(const struct FTimeDate& Time)
 // (Final, Native, Public, HasDefaults, BlueprintCallable)
 // Parameters:
 // struct FRotator                ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B510920              		 offset:2a40920                       
+// FunctionAddress:0x00007FF75C679950              		 offset:2c79950                       
 
 struct FRotator ATimeManager::CalculateSunAngle()
 {
@@ -859,7 +859,7 @@ struct FRotator ATimeManager::CalculateSunAngle()
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B5108F0              		 offset:2a408f0                       
+// FunctionAddress:0x00007FF75C679920              		 offset:2c79920                       
 
 float ATimeManager::CalculateMoonPhase()
 {
@@ -885,7 +885,7 @@ float ATimeManager::CalculateMoonPhase()
 // (Final, Native, Public, HasDefaults, BlueprintCallable)
 // Parameters:
 // struct FRotator                ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B5108B0              		 offset:2a408b0                       
+// FunctionAddress:0x00007FF75C6798E0              		 offset:2c798e0                       
 
 struct FRotator ATimeManager::CalculateMoonAngle()
 {

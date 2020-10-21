@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_MasteryBannerController.BP_MasteryBannerController_C
-// 0x0000 (0x0488 - 0x0488)
+// 0x0000 (0x0498 - 0x0498)
 class ABP_MasteryBannerController_C : public AMasteryBannerController
 {
 public:
@@ -29,6 +29,9 @@ public:
 		return ptr;
 	}
 
+
+	void SpawnBanner(const struct FString& BannerId, int SurvivalMasteryLevel, bool PlayAnimation, bool ShowBackgroundScene);
+	void DespawnBanner();
 };
 
 

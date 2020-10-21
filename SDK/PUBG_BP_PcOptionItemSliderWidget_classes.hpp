@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass BP_PcOptionItemSliderWidget.BP_PcOptionItemSliderWidget_C
-// 0x0000 (0x0700 - 0x0700)
+// 0x0000 (0x0740 - 0x0740)
 class UBP_PcOptionItemSliderWidget_C : public UTslGameOptionItemSliderWidget
 {
 public:
@@ -29,6 +29,13 @@ public:
 		return ptr;
 	}
 
+
+	void ResetAcceleration();
+	void OnSliderValueTextCommitted(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod);
+	void OnSliderValueTextChanged(const struct FText& Text);
+	void OnSliderValueChanged(float MappedValue);
+	void OnSliderAdjustmentEnd();
+	void OnSliderAdjustmentBegin();
 };
 
 

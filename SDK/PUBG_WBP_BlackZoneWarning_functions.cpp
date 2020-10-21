@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,7 +14,7 @@ namespace SDK
 
 // Function WBP_BlackZoneWarning.WBP_BlackZoneWarning_C.PlayWarning
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UWBP_BlackZoneWarning_C::PlayWarning()
 {
@@ -35,7 +35,7 @@ void UWBP_BlackZoneWarning_C::PlayWarning()
 
 // Function WBP_BlackZoneWarning.WBP_BlackZoneWarning_C.Play Full Warning
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UWBP_BlackZoneWarning_C::Play_Full_Warning()
 {
@@ -57,10 +57,10 @@ void UWBP_BlackZoneWarning_C::Play_Full_Warning()
 // Function WBP_BlackZoneWarning.WBP_BlackZoneWarning_C.ExecuteUbergraph_WBP_BlackZoneWarning
 // ()
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UWBP_BlackZoneWarning_C::ExecuteUbergraph_WBP_BlackZoneWarning(int* EntryPoint)
+void UWBP_BlackZoneWarning_C::ExecuteUbergraph_WBP_BlackZoneWarning(int EntryPoint)
 {
 	static UFunction* fn;
 

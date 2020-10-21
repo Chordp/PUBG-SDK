@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -35,22 +35,22 @@ public:
 
 
 	bool HasChildren();
-	void CreateWebPopupAndAddPanel(struct FWebPopupParam* Param, bool* bShow, bool* bReuse, class UWebPopup_C** WebPopup);
-	void ShowWebPopupImpl(struct FWebPopupParam* PopupParam);
+	void CreateWebPopupAndAddPanel(const struct FWebPopupParam& Param, bool bShow, bool bReuse, class UWebPopup_C** WebPopup);
+	void ShowWebPopupImpl(const struct FWebPopupParam& PopupParam);
 	void OnPreloadWebPopupImpl(TArray<struct FWebPopupParam>* Params);
-	void GetWebPopupFromPopupId(struct FString* PopupId, class UWebPopup_C** WebPopup);
-	void ChangeWebPopupUriImpl(struct FString* PopupId, struct FString* Uri);
-	void OnCloseWebPopupImpl(struct FString* PopupId);
-	void CloseWebPopupByID(struct FString* WebPopupID, bool* bForceRemoveParent);
-	void RemoveWebPopup(class UWebPopup_C** Widget);
-	void AddWebPopup(class UWebPopup_C** Widget);
-	void CanShowWebPopup(struct FString* PopupId, bool* Result);
-	void CreateWebPopupImpl(struct FWebPopupParam* Param, bool* bShow, bool* bReuse);
-	void CloseWebPopup(struct FString* PopupId);
-	void ShowWebPopup(struct FWebPopupParam* Param);
-	void PreloadWebPopup(TArray<struct FWebPopupParam>* WebPopupParams);
+	void GetWebPopupFromPopupId(const struct FString& PopupId, class UWebPopup_C** WebPopup);
+	void ChangeWebPopupUriImpl(const struct FString& PopupId, const struct FString& Uri);
+	void OnCloseWebPopupImpl(const struct FString& PopupId);
+	void CloseWebPopupByID(const struct FString& WebPopupID, bool bForceRemoveParent);
+	void RemoveWebPopup(class UWebPopup_C* Widget);
+	void AddWebPopup(class UWebPopup_C* Widget);
+	void CanShowWebPopup(const struct FString& PopupId, bool* Result);
+	void CreateWebPopupImpl(const struct FWebPopupParam& Param, bool bShow, bool bReuse);
+	void CloseWebPopup(const struct FString& PopupId);
+	void ShowWebPopup(const struct FWebPopupParam& Param);
+	void PreloadWebPopup(TArray<struct FWebPopupParam> WebPopupParams);
 	void Construct();
-	void ExecuteUbergraph_LobbyWebPopupCanvs(int* EntryPoint);
+	void ExecuteUbergraph_LobbyWebPopupCanvs(int EntryPoint);
 };
 
 

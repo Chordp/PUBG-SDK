@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -27,19 +27,19 @@ struct UBloodSpotWidget_C_Construct_Params
 // Function BloodSpotWidget.BloodSpotWidget_C.OnAnimationFinished
 struct UBloodSpotWidget_C_OnAnimationFinished_Params
 {
-	class UWidgetAnimation**                           Animation;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	class UWidgetAnimation*                            Animation;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BloodSpotWidget.BloodSpotWidget_C.OnAnimationStarted
 struct UBloodSpotWidget_C_OnAnimationStarted_Params
 {
-	class UWidgetAnimation**                           Animation;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+	class UWidgetAnimation*                            Animation;                                                // (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BloodSpotWidget.BloodSpotWidget_C.ExecuteUbergraph_BloodSpotWidget
 struct UBloodSpotWidget_C_ExecuteUbergraph_BloodSpotWidget_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

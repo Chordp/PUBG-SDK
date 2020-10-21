@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -78,60 +78,21 @@ public:
 		return ptr;
 	}
 
-
-	void ExecuteUbergraph(int EntryPoint);
 };
 
 
-// Class CoreUObject.TextBuffer
-// 0x0028 (0x0068 - 0x0040)
-class UTextBuffer : public UObject
+// Class CoreUObject.Package
+// 0x0130 (0x0170 - 0x0040)
+class UPackage : public UObject
 {
 public:
-	unsigned char                                      UnknownData00[0x28];                                      // 0x0040(0x0028) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x130];                                     // 0x0040(0x0130) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
 		static UClass* ptr;
 		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.TextBuffer"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.Interface
-// 0x0000 (0x0040 - 0x0040)
-class UInterface : public UObject
-{
-public:
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.Interface"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.PackageMap
-// 0x00B8 (0x00F8 - 0x0040)
-class UPackageMap : public UObject
-{
-public:
-	unsigned char                                      UnknownData00[0xB8];                                      // 0x0040(0x00B8) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.PackageMap"));
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.Package"));
 
 		return ptr;
 	}
@@ -158,6 +119,178 @@ public:
 };
 
 
+// Class CoreUObject.Struct
+// 0x00C0 (0x0108 - 0x0048)
+class UStruct : public UField
+{
+public:
+	class UStruct*                                     SuperField;                                               // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
+	class UField*                                      Children;                                                 // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
+	int32_t                                            PropertySize;                                             // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
+	int32_t                                            MinAlignment;                                             // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
+	char                                               pad_0048[64];                                             // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.Struct"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.Class
+// 0x01E0 (0x02E8 - 0x0108)
+class UClass : public UStruct
+{
+public:
+	unsigned char                                      UnknownData00[0x1E0];                                     // 0x0108(0x01E0) MISSED OFFSET
+
+	template<typename T>
+	inline T* CreateDefaultObject()
+	{
+		return static_cast<T*>(CreateDefaultObject());
+	}
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.Class"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.LinkerPlaceholderClass
+// 0x01A0 (0x0488 - 0x02E8)
+class ULinkerPlaceholderClass : public UClass
+{
+public:
+	unsigned char                                      UnknownData00[0x1A0];                                     // 0x02E8(0x01A0) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.LinkerPlaceholderClass"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.LinkerPlaceholderExportObject
+// 0x00B0 (0x00F0 - 0x0040)
+class ULinkerPlaceholderExportObject : public UObject
+{
+public:
+	unsigned char                                      UnknownData00[0xB0];                                      // 0x0040(0x00B0) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.LinkerPlaceholderExportObject"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.Function
+// 0x0058 (0x0160 - 0x0108)
+class UFunction : public UStruct
+{
+public:
+	int32_t                                            FunctionFlags;                                            // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
+	int16_t                                            RepOffset;                                                // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
+	int8_t                                             NumParms;                                                 // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
+	char                                               pad_008F[1];                                              // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
+	int16_t                                            ParmsSize;                                                // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
+	int16_t                                            ReturnValueOffset;                                        // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
+	int16_t                                            RPCId;                                                    // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
+	int16_t                                            RPCResponseId;                                            // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
+	class UProperty*                                   FirstPropertyToInit;                                      // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
+	class UFunction*                                   EventGraphFunction;                                       // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
+	int32_t                                            EventGraphCallOffset;                                     // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
+	void*                                              Func;                                                     // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.Function"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.LinkerPlaceholderFunction
+// 0x01A0 (0x0300 - 0x0160)
+class ULinkerPlaceholderFunction : public UFunction
+{
+public:
+	unsigned char                                      UnknownData00[0x1A0];                                     // 0x0160(0x01A0) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.LinkerPlaceholderFunction"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.MetaData
+// 0x00A0 (0x00E0 - 0x0040)
+class UMetaData : public UObject
+{
+public:
+	unsigned char                                      UnknownData00[0xA0];                                      // 0x0040(0x00A0) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.MetaData"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.Interface
+// 0x0000 (0x0040 - 0x0040)
+class UInterface : public UObject
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.Interface"));
+
+		return ptr;
+	}
+
+};
+
+
 // Class CoreUObject.Enum
 // 0x0040 (0x0088 - 0x0048)
 class UEnum : public UField
@@ -170,6 +303,44 @@ public:
 		static UClass* ptr;
 		if(!ptr)
 			ptr = UObject::FindClass(_xor_("Class CoreUObject.Enum"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.ScriptStruct
+// 0x0010 (0x0118 - 0x0108)
+class UScriptStruct : public UStruct
+{
+public:
+	unsigned char                                      UnknownData00[0x10];                                      // 0x0108(0x0010) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.ScriptStruct"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.PackageMap
+// 0x00B8 (0x00F8 - 0x0040)
+class UPackageMap : public UObject
+{
+public:
+	unsigned char                                      UnknownData00[0xB8];                                      // 0x0040(0x00B8) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.PackageMap"));
 
 		return ptr;
 	}
@@ -215,473 +386,6 @@ public:
 };
 
 
-// Class CoreUObject.ObjectPropertyBase
-// 0x0008 (0x0098 - 0x0090)
-class UObjectPropertyBase : public UProperty
-{
-public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0090(0x0008) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.ObjectPropertyBase"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.LazyObjectProperty
-// 0x0000 (0x0098 - 0x0098)
-class ULazyObjectProperty : public UObjectPropertyBase
-{
-public:
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.LazyObjectProperty"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.MapProperty
-// 0x0038 (0x00C8 - 0x0090)
-class UMapProperty : public UProperty
-{
-public:
-	unsigned char                                      UnknownData00[0x38];                                      // 0x0090(0x0038) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.MapProperty"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.MulticastDelegateProperty
-// 0x0008 (0x0098 - 0x0090)
-class UMulticastDelegateProperty : public UProperty
-{
-public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0090(0x0008) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.MulticastDelegateProperty"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.NameProperty
-// 0x0000 (0x0090 - 0x0090)
-class UNameProperty : public UProperty
-{
-public:
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.NameProperty"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.NumericProperty
-// 0x0000 (0x0090 - 0x0090)
-class UNumericProperty : public UProperty
-{
-public:
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.NumericProperty"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.ObjectProperty
-// 0x0000 (0x0098 - 0x0098)
-class UObjectProperty : public UObjectPropertyBase
-{
-public:
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.ObjectProperty"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.EncryptedObjectProperty
-// 0x0000 (0x0098 - 0x0098)
-class UEncryptedObjectProperty : public UObjectPropertyBase
-{
-public:
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.EncryptedObjectProperty"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.SetProperty
-// 0x0028 (0x00B8 - 0x0090)
-class USetProperty : public UProperty
-{
-public:
-	unsigned char                                      UnknownData00[0x28];                                      // 0x0090(0x0028) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.SetProperty"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.StrProperty
-// 0x0000 (0x0090 - 0x0090)
-class UStrProperty : public UProperty
-{
-public:
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.StrProperty"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.StructProperty
-// 0x0008 (0x0098 - 0x0090)
-class UStructProperty : public UProperty
-{
-public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0090(0x0008) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.StructProperty"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.UInt16Property
-// 0x0000 (0x0090 - 0x0090)
-class UUInt16Property : public UNumericProperty
-{
-public:
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.UInt16Property"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.UInt32Property
-// 0x0000 (0x0090 - 0x0090)
-class UUInt32Property : public UNumericProperty
-{
-public:
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.UInt32Property"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.UInt64Property
-// 0x0000 (0x0090 - 0x0090)
-class UUInt64Property : public UNumericProperty
-{
-public:
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.UInt64Property"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.WeakObjectProperty
-// 0x0000 (0x0098 - 0x0098)
-class UWeakObjectProperty : public UObjectPropertyBase
-{
-public:
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.WeakObjectProperty"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.Package
-// 0x0130 (0x0170 - 0x0040)
-class UPackage : public UObject
-{
-public:
-	unsigned char                                      UnknownData00[0x130];                                     // 0x0040(0x0130) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.Package"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.Struct
-// 0x00C8 (0x0110 - 0x0048)
-class UStruct : public UField
-{
-public:
-	class UStruct*                                     SuperField;                                               // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
-	class UField*                                      Children;                                                 // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
-	int32_t                                            PropertySize;                                             // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
-	int32_t                                            MinAlignment;                                             // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
-	char                                               pad_0048[64];                                             // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.Struct"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.Class
-// 0x01E0 (0x02F0 - 0x0110)
-class UClass : public UStruct
-{
-public:
-	unsigned char                                      UnknownData00[0x1E0];                                     // 0x0110(0x01E0) MISSED OFFSET
-
-	template<typename T>
-	inline T* CreateDefaultObject()
-	{
-		return static_cast<T*>(CreateDefaultObject());
-	}
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.Class"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.GCObjectReferencer
-// 0x0038 (0x0078 - 0x0040)
-class UGCObjectReferencer : public UObject
-{
-public:
-	unsigned char                                      UnknownData00[0x38];                                      // 0x0040(0x0038) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.GCObjectReferencer"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.LinkerPlaceholderClass
-// 0x01A0 (0x0490 - 0x02F0)
-class ULinkerPlaceholderClass : public UClass
-{
-public:
-	unsigned char                                      UnknownData00[0x1A0];                                     // 0x02F0(0x01A0) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.LinkerPlaceholderClass"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.LinkerPlaceholderExportObject
-// 0x00B0 (0x00F0 - 0x0040)
-class ULinkerPlaceholderExportObject : public UObject
-{
-public:
-	unsigned char                                      UnknownData00[0xB0];                                      // 0x0040(0x00B0) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.LinkerPlaceholderExportObject"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.Function
-// 0x0058 (0x0168 - 0x0110)
-class UFunction : public UStruct
-{
-public:
-	int32_t                                            FunctionFlags;                                            // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
-	int16_t                                            RepOffset;                                                // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
-	int8_t                                             NumParms;                                                 // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
-	char                                               pad_008F[1];                                              // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
-	int16_t                                            ParmsSize;                                                // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
-	int16_t                                            ReturnValueOffset;                                        // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
-	int16_t                                            RPCId;                                                    // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
-	int16_t                                            RPCResponseId;                                            // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
-	class UProperty*                                   FirstPropertyToInit;                                      // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
-	class UFunction*                                   EventGraphFunction;                                       // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
-	int32_t                                            EventGraphCallOffset;                                     // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
-	void*                                              Func;                                                     // 0x0000(0x0000) NOT AUTO-GENERATED PROPERTY
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.Function"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.LinkerPlaceholderFunction
-// 0x01A0 (0x0308 - 0x0168)
-class ULinkerPlaceholderFunction : public UFunction
-{
-public:
-	unsigned char                                      UnknownData00[0x1A0];                                     // 0x0168(0x01A0) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.LinkerPlaceholderFunction"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class CoreUObject.MetaData
-// 0x00A0 (0x00E0 - 0x0040)
-class UMetaData : public UObject
-{
-public:
-	unsigned char                                      UnknownData00[0xA0];                                      // 0x0040(0x00A0) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.MetaData"));
-
-		return ptr;
-	}
-
-};
-
-
 // Class CoreUObject.ObjectRedirector
 // 0x0008 (0x0048 - 0x0040)
 class UObjectRedirector : public UObject
@@ -713,6 +417,25 @@ public:
 		static UClass* ptr;
 		if(!ptr)
 			ptr = UObject::FindClass(_xor_("Class CoreUObject.ArrayProperty"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.ObjectPropertyBase
+// 0x0008 (0x0098 - 0x0090)
+class UObjectPropertyBase : public UProperty
+{
+public:
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0090(0x0008) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.ObjectPropertyBase"));
 
 		return ptr;
 	}
@@ -776,6 +499,24 @@ public:
 };
 
 
+// Class CoreUObject.NumericProperty
+// 0x0000 (0x0090 - 0x0090)
+class UNumericProperty : public UProperty
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.NumericProperty"));
+
+		return ptr;
+	}
+
+};
+
+
 // Class CoreUObject.ByteProperty
 // 0x0008 (0x0098 - 0x0090)
 class UByteProperty : public UNumericProperty
@@ -788,6 +529,24 @@ public:
 		static UClass* ptr;
 		if(!ptr)
 			ptr = UObject::FindClass(_xor_("Class CoreUObject.ByteProperty"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.ObjectProperty
+// 0x0000 (0x0098 - 0x0098)
+class UObjectProperty : public UObjectPropertyBase
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.ObjectProperty"));
 
 		return ptr;
 	}
@@ -960,27 +719,8 @@ public:
 };
 
 
-// Class CoreUObject.ScriptStruct
-// 0x0010 (0x0120 - 0x0110)
-class UScriptStruct : public UStruct
-{
-public:
-	unsigned char                                      UnknownData00[0x10];                                      // 0x0110(0x0010) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class CoreUObject.ScriptStruct"));
-
-		return ptr;
-	}
-
-};
-
-
 // Class CoreUObject.DelegateFunction
-// 0x0000 (0x0168 - 0x0168)
+// 0x0000 (0x0160 - 0x0160)
 class UDelegateFunction : public UFunction
 {
 public:
@@ -998,17 +738,36 @@ public:
 
 
 // Class CoreUObject.DynamicClass
-// 0x0068 (0x0358 - 0x02F0)
+// 0x0068 (0x0350 - 0x02E8)
 class UDynamicClass : public UClass
 {
 public:
-	unsigned char                                      UnknownData00[0x68];                                      // 0x02F0(0x0068) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x68];                                      // 0x02E8(0x0068) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
 		static UClass* ptr;
 		if(!ptr)
 			ptr = UObject::FindClass(_xor_("Class CoreUObject.DynamicClass"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.GCObjectReferencer
+// 0x0038 (0x0078 - 0x0040)
+class UGCObjectReferencer : public UObject
+{
+public:
+	unsigned char                                      UnknownData00[0x38];                                      // 0x0040(0x0038) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.GCObjectReferencer"));
 
 		return ptr;
 	}
@@ -1027,6 +786,245 @@ public:
 		static UClass* ptr;
 		if(!ptr)
 			ptr = UObject::FindClass(_xor_("Class CoreUObject.TextProperty"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.TextBuffer
+// 0x0028 (0x0068 - 0x0040)
+class UTextBuffer : public UObject
+{
+public:
+	unsigned char                                      UnknownData00[0x28];                                      // 0x0040(0x0028) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.TextBuffer"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.LazyObjectProperty
+// 0x0000 (0x0098 - 0x0098)
+class ULazyObjectProperty : public UObjectPropertyBase
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.LazyObjectProperty"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.MapProperty
+// 0x0038 (0x00C8 - 0x0090)
+class UMapProperty : public UProperty
+{
+public:
+	unsigned char                                      UnknownData00[0x38];                                      // 0x0090(0x0038) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.MapProperty"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.MulticastDelegateProperty
+// 0x0008 (0x0098 - 0x0090)
+class UMulticastDelegateProperty : public UProperty
+{
+public:
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0090(0x0008) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.MulticastDelegateProperty"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.NameProperty
+// 0x0000 (0x0090 - 0x0090)
+class UNameProperty : public UProperty
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.NameProperty"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.EncryptedObjectProperty
+// 0x0000 (0x0098 - 0x0098)
+class UEncryptedObjectProperty : public UObjectPropertyBase
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.EncryptedObjectProperty"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.SetProperty
+// 0x0028 (0x00B8 - 0x0090)
+class USetProperty : public UProperty
+{
+public:
+	unsigned char                                      UnknownData00[0x28];                                      // 0x0090(0x0028) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.SetProperty"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.StrProperty
+// 0x0000 (0x0090 - 0x0090)
+class UStrProperty : public UProperty
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.StrProperty"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.StructProperty
+// 0x0008 (0x0098 - 0x0090)
+class UStructProperty : public UProperty
+{
+public:
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0090(0x0008) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.StructProperty"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.UInt16Property
+// 0x0000 (0x0090 - 0x0090)
+class UUInt16Property : public UNumericProperty
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.UInt16Property"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.UInt32Property
+// 0x0000 (0x0090 - 0x0090)
+class UUInt32Property : public UNumericProperty
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.UInt32Property"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.UInt64Property
+// 0x0000 (0x0090 - 0x0090)
+class UUInt64Property : public UNumericProperty
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.UInt64Property"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class CoreUObject.WeakObjectProperty
+// 0x0000 (0x0098 - 0x0098)
+class UWeakObjectProperty : public UObjectPropertyBase
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoreUObject.WeakObjectProperty"));
 
 		return ptr;
 	}

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -67,7 +67,7 @@ struct UABP_Weapon_Kar98k_C_EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weap
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.BlueprintUpdateAnimation
 struct UABP_Weapon_Kar98k_C_BlueprintUpdateAnimation_Params
 {
-	float*                                             DeltaTimeX;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              DeltaTimeX;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.BlueprintInitializeAnimation
@@ -98,7 +98,7 @@ struct UABP_Weapon_Kar98k_C_Reload2_Event_Params
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.ReloadByOneStart_Event
 struct UABP_Weapon_Kar98k_C_ReloadByOneStart_Event_Params
 {
-	int*                                               AmmoToReload;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                AmmoToReload;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.ReloadByOneSingle_Event
@@ -124,7 +124,7 @@ struct UABP_Weapon_Kar98k_C_CancelReload_Event_Params
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.ExecuteUbergraph_ABP_Weapon_Kar98k
 struct UABP_Weapon_Kar98k_C_ExecuteUbergraph_ABP_Weapon_Kar98k_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -29,14 +29,6 @@ public:
 		return ptr;
 	}
 
-
-	bool STATIC_StopLocationServices();
-	bool STATIC_StartLocationServices();
-	bool STATIC_IsLocationAccuracyAvailable(ELocationAccuracy Accuracy);
-	bool STATIC_InitLocationServices(ELocationAccuracy Accuracy, float UpdateFrequency, float MinDistanceFilter);
-	class ULocationServicesImpl* STATIC_GetLocationServicesImpl();
-	struct FLocationServicesData STATIC_GetLastKnownLocation();
-	bool STATIC_AreLocationServicesEnabled();
 };
 
 

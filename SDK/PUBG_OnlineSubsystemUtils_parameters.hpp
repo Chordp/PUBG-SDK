@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,29 +13,6 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Parameters
 //---------------------------------------------------------------------------
-
-// Function OnlineSubsystemUtils.AchievementBlueprintLibrary.GetCachedAchievementProgress
-struct UAchievementBlueprintLibrary_GetCachedAchievementProgress_Params
-{
-	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	class APlayerController*                           PlayerController;                                         // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FName                                       AchievementID;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bFoundID;                                                 // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-	float                                              Progress;                                                 // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function OnlineSubsystemUtils.AchievementBlueprintLibrary.GetCachedAchievementDescription
-struct UAchievementBlueprintLibrary_GetCachedAchievementDescription_Params
-{
-	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	class APlayerController*                           PlayerController;                                         // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FName                                       AchievementID;                                            // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bFoundID;                                                 // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-	struct FText                                       Title;                                                    // (Parm, OutParm)
-	struct FText                                       LockedDescription;                                        // (Parm, OutParm)
-	struct FText                                       UnlockedDescription;                                      // (Parm, OutParm)
-	bool                                               bHidden;                                                  // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-};
 
 // Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievements
 struct UAchievementQueryCallbackProxy_CacheAchievements_Params
@@ -196,15 +173,6 @@ struct UJoinSessionCallbackProxy_JoinSession_Params
 	class UJoinSessionCallbackProxy*                   ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
-// Function OnlineSubsystemUtils.LeaderboardBlueprintLibrary.WriteLeaderboardInteger
-struct ULeaderboardBlueprintLibrary_WriteLeaderboardInteger_Params
-{
-	class APlayerController*                           PlayerController;                                         // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FName                                       StatName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	int                                                StatValue;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
 // Function OnlineSubsystemUtils.LeaderboardFlushCallbackProxy.CreateProxyObjectForFlush
 struct ULeaderboardFlushCallbackProxy_CreateProxyObjectForFlush_Params
 {
@@ -277,13 +245,8 @@ struct APartyBeaconClient_ClientCancelReservationResponse_Params
 	TEnumAsByte<EPartyReservationResult>               ReservationResponse;                                      // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function OnlineSubsystemUtils.TestBeaconClient.ServerPong
-struct ATestBeaconClient_ServerPong_Params
-{
-};
-
-// Function OnlineSubsystemUtils.TestBeaconClient.ClientPing
-struct ATestBeaconClient_ClientPing_Params
+// Function OnlineSubsystemUtils.OnlineBeaconClient.ClientOnConnected
+struct ATestBeaconClient_ClientOnConnected_Params
 {
 };
 
@@ -304,42 +267,6 @@ struct UShowLoginUICallbackProxy_ShowExternalLoginUI_Params
 	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	class APlayerController*                           InPlayerController;                                       // (Parm, ZeroConstructor, IsPlainOldData)
 	class UShowLoginUICallbackProxy*                   ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-};
-
-// Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.RegisterTurnBasedMatchInterfaceObject
-struct UTurnBasedBlueprintLibrary_RegisterTurnBasedMatchInterfaceObject_Params
-{
-	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	class APlayerController*                           PlayerController;                                         // (Parm, ZeroConstructor, IsPlainOldData)
-	class UObject*                                     Object;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetPlayerDisplayName
-struct UTurnBasedBlueprintLibrary_GetPlayerDisplayName_Params
-{
-	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	class APlayerController*                           PlayerController;                                         // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FString                                     MatchId;                                                  // (Parm, ZeroConstructor)
-	int                                                PlayerIndex;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FString                                     PlayerDisplayName;                                        // (Parm, OutParm, ZeroConstructor)
-};
-
-// Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetMyPlayerIndex
-struct UTurnBasedBlueprintLibrary_GetMyPlayerIndex_Params
-{
-	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	class APlayerController*                           PlayerController;                                         // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FString                                     MatchId;                                                  // (Parm, ZeroConstructor)
-	int                                                PlayerIndex;                                              // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetIsMyTurn
-struct UTurnBasedBlueprintLibrary_GetIsMyTurn_Params
-{
-	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	class APlayerController*                           PlayerController;                                         // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FString                                     MatchId;                                                  // (Parm, ZeroConstructor)
-	bool                                               bIsMyTurn;                                                // (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 };
 
 }

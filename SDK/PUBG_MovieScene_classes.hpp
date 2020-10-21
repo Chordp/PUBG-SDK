@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -27,74 +27,6 @@ public:
 		static UClass* ptr;
 		if(!ptr)
 			ptr = UObject::FindClass(_xor_("Class MovieScene.MovieSceneSignedObject"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class MovieScene.MovieSceneSection
-// 0x0020 (0x00E0 - 0x00C0)
-class UMovieSceneSection : public UMovieSceneSignedObject
-{
-public:
-	struct FMovieSceneSectionEvalOptions               EvalOptions;                                              // 0x00C0(0x0002) (Edit)
-	unsigned char                                      UnknownData00[0x2];                                       // 0x00C2(0x0002) MISSED OFFSET
-	float                                              StartTime;                                                // 0x00C4(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	float                                              EndTime;                                                  // 0x00C8(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	int                                                RowIndex;                                                 // 0x00CC(0x0004) (ZeroConstructor, IsPlainOldData)
-	int                                                OverlapPriority;                                          // 0x00D0(0x0004) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      bIsActive : 1;                                            // 0x00D4(0x0001) (Edit)
-	unsigned char                                      bIsLocked : 1;                                            // 0x00D4(0x0001) (Edit)
-	unsigned char                                      bIsInfinite : 1;                                          // 0x00D4(0x0001) (Edit)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x00D5(0x0003) MISSED OFFSET
-	float                                              PrerollTime;                                              // 0x00D8(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-	float                                              PostrollTime;                                             // 0x00DC(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class MovieScene.MovieSceneSection"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class MovieScene.MovieSceneTrack
-// 0x0010 (0x00D0 - 0x00C0)
-class UMovieSceneTrack : public UMovieSceneSignedObject
-{
-public:
-	struct FMovieSceneTrackEvalOptions                 EvalOptions;                                              // 0x00C0(0x0004) (Edit)
-	unsigned char                                      UnknownData00[0xC];                                       // 0x00C4(0x000C) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class MovieScene.MovieSceneTrack"));
-
-		return ptr;
-	}
-
-};
-
-
-// Class MovieScene.MovieSceneNameableTrack
-// 0x0000 (0x00D0 - 0x00D0)
-class UMovieSceneNameableTrack : public UMovieSceneTrack
-{
-public:
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr;
-		if(!ptr)
-			ptr = UObject::FindClass(_xor_("Class MovieScene.MovieSceneNameableTrack"));
 
 		return ptr;
 	}
@@ -290,6 +222,56 @@ public:
 };
 
 
+// Class MovieScene.MovieSceneSection
+// 0x0020 (0x00E0 - 0x00C0)
+class UMovieSceneSection : public UMovieSceneSignedObject
+{
+public:
+	struct FMovieSceneSectionEvalOptions               EvalOptions;                                              // 0x00C0(0x0002) (Edit)
+	unsigned char                                      UnknownData00[0x2];                                       // 0x00C2(0x0002) MISSED OFFSET
+	float                                              StartTime;                                                // 0x00C4(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              EndTime;                                                  // 0x00C8(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	int                                                RowIndex;                                                 // 0x00CC(0x0004) (ZeroConstructor, IsPlainOldData)
+	int                                                OverlapPriority;                                          // 0x00D0(0x0004) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      bIsActive : 1;                                            // 0x00D4(0x0001) (Edit)
+	unsigned char                                      bIsLocked : 1;                                            // 0x00D4(0x0001) (Edit)
+	unsigned char                                      bIsInfinite : 1;                                          // 0x00D4(0x0001) (Edit)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x00D5(0x0003) MISSED OFFSET
+	float                                              PrerollTime;                                              // 0x00D8(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              PostrollTime;                                             // 0x00DC(0x0004) (Edit, ZeroConstructor, IsPlainOldData)
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class MovieScene.MovieSceneSection"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class MovieScene.MovieSceneTrack
+// 0x0010 (0x00D0 - 0x00C0)
+class UMovieSceneTrack : public UMovieSceneSignedObject
+{
+public:
+	struct FMovieSceneTrackEvalOptions                 EvalOptions;                                              // 0x00C0(0x0004) (Edit)
+	unsigned char                                      UnknownData00[0xC];                                       // 0x00C4(0x000C) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class MovieScene.MovieSceneTrack"));
+
+		return ptr;
+	}
+
+};
+
+
 // Class MovieScene.MovieSceneSegmentCompilerTestTrack
 // 0x0010 (0x00E0 - 0x00D0)
 class UMovieSceneSegmentCompilerTestTrack : public UMovieSceneTrack
@@ -320,6 +302,24 @@ public:
 		static UClass* ptr;
 		if(!ptr)
 			ptr = UObject::FindClass(_xor_("Class MovieScene.MovieSceneSegmentCompilerTestSection"));
+
+		return ptr;
+	}
+
+};
+
+
+// Class MovieScene.MovieSceneNameableTrack
+// 0x0000 (0x00D0 - 0x00D0)
+class UMovieSceneNameableTrack : public UMovieSceneTrack
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class MovieScene.MovieSceneNameableTrack"));
 
 		return ptr;
 	}

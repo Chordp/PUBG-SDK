@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -155,217 +155,438 @@ struct UAkComponent_CalculateRelativeSpeed_Params
 	float                                              DeltaTime;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function AkAudio.AkGameplayStatics.UseReverbVolumes
-struct UAkGameplayStatics_UseReverbVolumes_Params
+// Function Engine.SceneComponent.ToggleVisibility
+struct UAkSoundVolumeComponentBase_ToggleVisibility_Params
 {
-	bool                                               inUseReverbVolumes;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bPropagateToChildren;                                     // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function AkAudio.AkGameplayStatics.UnloadBankByName
-struct UAkGameplayStatics_UnloadBankByName_Params
+// Function Engine.SceneComponent.SnapTo
+struct UAkSoundVolumeComponentBase_SnapTo_Params
 {
-	struct FString                                     BankName;                                                 // (Parm, ZeroConstructor)
+	class USceneComponent*                             InParent;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+	struct FName                                       InSocketName;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
-// Function AkAudio.AkGameplayStatics.UnloadBank
-struct UAkGameplayStatics_UnloadBank_Params
+// Function Engine.SceneComponent.SetWorldScale3D
+struct UAkSoundVolumeComponentBase_SetWorldScale3D_Params
 {
-	class UAkAudioBank*                                Bank;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FString                                     BankName;                                                 // (Parm, ZeroConstructor)
+	struct FVector                                     NewScale;                                                 // (Parm, IsPlainOldData)
 };
 
-// Function AkAudio.AkGameplayStatics.StopProfilerCapture
-struct UAkGameplayStatics_StopProfilerCapture_Params
+// Function Engine.SceneComponent.SetVisibility
+struct UAkSoundVolumeComponentBase_SetVisibility_Params
+{
+	bool                                               bNewVisibility;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bPropagateToChildren;                                     // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.SetRelativeScale3D
+struct UAkSoundVolumeComponentBase_SetRelativeScale3D_Params
+{
+	struct FVector                                     NewScale3D;                                               // (Parm, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.SetIsAttachmentReplicated
+struct UAkSoundVolumeComponentBase_SetIsAttachmentReplicated_Params
+{
+	bool                                               ShouldReplicate;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.SetIsAttachmentReferenceReplicated
+struct UAkSoundVolumeComponentBase_SetIsAttachmentReferenceReplicated_Params
+{
+	bool                                               ShouldReplicate;                                          // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.SetHiddenInGame
+struct UAkSoundVolumeComponentBase_SetHiddenInGame_Params
+{
+	bool                                               NewHidden;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bPropagateToChildren;                                     // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.SetAbsolute
+struct UAkSoundVolumeComponentBase_SetAbsolute_Params
+{
+	bool                                               bNewAbsoluteLocation;                                     // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bNewAbsoluteRotation;                                     // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bNewAbsoluteScale;                                        // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.ResetRelativeTransform
+struct UAkSoundVolumeComponentBase_ResetRelativeTransform_Params
 {
 };
 
-// Function AkAudio.AkGameplayStatics.StopOutputCapture
-struct UAkGameplayStatics_StopOutputCapture_Params
+// Function Engine.SceneComponent.OnRep_Visibility
+struct UAkSoundVolumeComponentBase_OnRep_Visibility_Params
+{
+	bool                                               OldValue;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.OnRep_Transform
+struct UAkSoundVolumeComponentBase_OnRep_Transform_Params
 {
 };
 
-// Function AkAudio.AkGameplayStatics.StopAllAmbientSounds
-struct UAkGameplayStatics_StopAllAmbientSounds_Params
-{
-	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-};
-
-// Function AkAudio.AkGameplayStatics.StopAll
-struct UAkGameplayStatics_StopAll_Params
+// Function Engine.SceneComponent.OnRep_AttachSocketName
+struct UAkSoundVolumeComponentBase_OnRep_AttachSocketName_Params
 {
 };
 
-// Function AkAudio.AkGameplayStatics.StopActor
-struct UAkGameplayStatics_StopActor_Params
+// Function Engine.SceneComponent.OnRep_AttachParent
+struct UAkSoundVolumeComponentBase_OnRep_AttachParent_Params
 {
-	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function AkAudio.AkGameplayStatics.StartProfilerCapture
-struct UAkGameplayStatics_StartProfilerCapture_Params
+// Function Engine.SceneComponent.OnRep_AttachChildren
+struct UAkSoundVolumeComponentBase_OnRep_AttachChildren_Params
 {
-	struct FString                                     Filename;                                                 // (Parm, ZeroConstructor)
 };
 
-// Function AkAudio.AkGameplayStatics.StartOutputCapture
-struct UAkGameplayStatics_StartOutputCapture_Params
+// Function Engine.SceneComponent.K2_SetWorldTransform
+struct UAkSoundVolumeComponentBase_K2_SetWorldTransform_Params
 {
-	struct FString                                     Filename;                                                 // (Parm, ZeroConstructor)
+	struct FTransform                                  NewTransform;                                             // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+	bool                                               bSweep;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FHitResult                                  SweepHitResult;                                           // (Parm, OutParm, IsPlainOldData)
+	bool                                               bTeleport;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function AkAudio.AkGameplayStatics.StartAllAmbientSounds
-struct UAkGameplayStatics_StartAllAmbientSounds_Params
+// Function Engine.SceneComponent.K2_SetWorldRotation
+struct UAkSoundVolumeComponentBase_K2_SetWorldRotation_Params
 {
-	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FRotator                                    NewRotation;                                              // (Parm, IsPlainOldData)
+	bool                                               bSweep;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FHitResult                                  SweepHitResult;                                           // (Parm, OutParm, IsPlainOldData)
+	bool                                               bTeleport;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function AkAudio.AkGameplayStatics.SpawnAkComponentAtLocation
-struct UAkGameplayStatics_SpawnAkComponentAtLocation_Params
+// Function Engine.SceneComponent.K2_SetWorldLocationAndRotation
+struct UAkSoundVolumeComponentBase_K2_SetWorldLocationAndRotation_Params
 {
-	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	class UAkAudioEvent*                               AkEvent;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     Location;                                                 // (Parm, IsPlainOldData)
-	struct FRotator                                    Orientation;                                              // (Parm, IsPlainOldData)
-	bool                                               AutoPost;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FString                                     EventName;                                                // (Parm, ZeroConstructor)
-	bool                                               AutoDestroy;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	class UAkComponent*                                ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+	struct FVector                                     NewLocation;                                              // (Parm, IsPlainOldData)
+	struct FRotator                                    NewRotation;                                              // (Parm, IsPlainOldData)
+	bool                                               bSweep;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FHitResult                                  SweepHitResult;                                           // (Parm, OutParm, IsPlainOldData)
+	bool                                               bTeleport;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function AkAudio.AkGameplayStatics.SetSwitch
-struct UAkGameplayStatics_SetSwitch_Params
+// Function Engine.SceneComponent.K2_SetWorldLocation
+struct UAkSoundVolumeComponentBase_K2_SetWorldLocation_Params
 {
-	struct FName                                       SwitchGroup;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FName                                       SwitchState;                                              // (Parm, ZeroConstructor, IsPlainOldData)
-	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     NewLocation;                                              // (Parm, IsPlainOldData)
+	bool                                               bSweep;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FHitResult                                  SweepHitResult;                                           // (Parm, OutParm, IsPlainOldData)
+	bool                                               bTeleport;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function AkAudio.AkGameplayStatics.SetState
-struct UAkGameplayStatics_SetState_Params
+// Function Engine.SceneComponent.K2_SetRelativeTransform
+struct UAkSoundVolumeComponentBase_K2_SetRelativeTransform_Params
 {
-	struct FName                                       StateGroup;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FName                                       State;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FTransform                                  NewTransform;                                             // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+	bool                                               bSweep;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FHitResult                                  SweepHitResult;                                           // (Parm, OutParm, IsPlainOldData)
+	bool                                               bTeleport;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function AkAudio.AkGameplayStatics.SetRTPCValue
-struct UAkGameplayStatics_SetRTPCValue_Params
+// Function Engine.SceneComponent.K2_SetRelativeRotation
+struct UAkSoundVolumeComponentBase_K2_SetRelativeRotation_Params
 {
-	struct FName                                       RTPC;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	float                                              Value;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	int                                                InterpolationTimeMs;                                      // (Parm, ZeroConstructor, IsPlainOldData)
-	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FRotator                                    NewRotation;                                              // (Parm, IsPlainOldData)
+	bool                                               bSweep;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FHitResult                                  SweepHitResult;                                           // (Parm, OutParm, IsPlainOldData)
+	bool                                               bTeleport;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function AkAudio.AkGameplayStatics.SetOutputBusVolume
-struct UAkGameplayStatics_SetOutputBusVolume_Params
+// Function Engine.SceneComponent.K2_SetRelativeLocationAndRotation
+struct UAkSoundVolumeComponentBase_K2_SetRelativeLocationAndRotation_Params
 {
-	float                                              BusVolume;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     NewLocation;                                              // (Parm, IsPlainOldData)
+	struct FRotator                                    NewRotation;                                              // (Parm, IsPlainOldData)
+	bool                                               bSweep;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FHitResult                                  SweepHitResult;                                           // (Parm, OutParm, IsPlainOldData)
+	bool                                               bTeleport;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function AkAudio.AkGameplayStatics.PostTrigger
-struct UAkGameplayStatics_PostTrigger_Params
+// Function Engine.SceneComponent.K2_SetRelativeLocation
+struct UAkSoundVolumeComponentBase_K2_SetRelativeLocation_Params
 {
-	struct FName                                       Trigger;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     NewLocation;                                              // (Parm, IsPlainOldData)
+	bool                                               bSweep;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FHitResult                                  SweepHitResult;                                           // (Parm, OutParm, IsPlainOldData)
+	bool                                               bTeleport;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
-// Function AkAudio.AkGameplayStatics.PostEventByName
-struct UAkGameplayStatics_PostEventByName_Params
+// Function Engine.SceneComponent.K2_GetComponentToWorld
+struct UAkSoundVolumeComponentBase_K2_GetComponentToWorld_Params
 {
-	struct FString                                     EventName;                                                // (Parm, ZeroConstructor)
-	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bStopWhenAttachedToDestroyed;                             // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FTransform                                  ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
-// Function AkAudio.AkGameplayStatics.PostEventAttached
-struct UAkGameplayStatics_PostEventAttached_Params
+// Function Engine.SceneComponent.K2_GetComponentScale
+struct UAkSoundVolumeComponentBase_K2_GetComponentScale_Params
 {
-	class UAkAudioEvent*                               AkEvent;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FName                                       AttachPointName;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bStopWhenAttachedToDestroyed;                             // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FString                                     EventName;                                                // (Parm, ZeroConstructor)
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.K2_GetComponentRotation
+struct UAkSoundVolumeComponentBase_K2_GetComponentRotation_Params
+{
+	struct FRotator                                    ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.K2_GetComponentLocation
+struct UAkSoundVolumeComponentBase_K2_GetComponentLocation_Params
+{
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.K2_DetachFromComponent
+struct UAkSoundVolumeComponentBase_K2_DetachFromComponent_Params
+{
+	EDetachmentRule                                    LocationRule;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	EDetachmentRule                                    RotationRule;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	EDetachmentRule                                    ScaleRule;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bCallModify;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.K2_AttachToComponent
+struct UAkSoundVolumeComponentBase_K2_AttachToComponent_Params
+{
+	class USceneComponent*                             Parent;                                                   // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+	struct FName                                       SocketName;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	EAttachmentRule                                    LocationRule;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	EAttachmentRule                                    RotationRule;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	EAttachmentRule                                    ScaleRule;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bWeldSimulatedBodies;                                     // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.K2_AttachTo
+struct UAkSoundVolumeComponentBase_K2_AttachTo_Params
+{
+	class USceneComponent*                             InParent;                                                 // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+	struct FName                                       InSocketName;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<EAttachLocation>                       AttachType;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bWeldSimulatedBodies;                                     // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.K2_AddWorldTransform
+struct UAkSoundVolumeComponentBase_K2_AddWorldTransform_Params
+{
+	struct FTransform                                  DeltaTransform;                                           // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+	bool                                               bSweep;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FHitResult                                  SweepHitResult;                                           // (Parm, OutParm, IsPlainOldData)
+	bool                                               bTeleport;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.K2_AddWorldRotation
+struct UAkSoundVolumeComponentBase_K2_AddWorldRotation_Params
+{
+	struct FRotator                                    DeltaRotation;                                            // (Parm, IsPlainOldData)
+	bool                                               bSweep;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FHitResult                                  SweepHitResult;                                           // (Parm, OutParm, IsPlainOldData)
+	bool                                               bTeleport;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.K2_AddWorldOffset
+struct UAkSoundVolumeComponentBase_K2_AddWorldOffset_Params
+{
+	struct FVector                                     DeltaLocation;                                            // (Parm, IsPlainOldData)
+	bool                                               bSweep;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FHitResult                                  SweepHitResult;                                           // (Parm, OutParm, IsPlainOldData)
+	bool                                               bTeleport;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.K2_AddRelativeRotation
+struct UAkSoundVolumeComponentBase_K2_AddRelativeRotation_Params
+{
+	struct FRotator                                    DeltaRotation;                                            // (Parm, IsPlainOldData)
+	bool                                               bSweep;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FHitResult                                  SweepHitResult;                                           // (Parm, OutParm, IsPlainOldData)
+	bool                                               bTeleport;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.K2_AddRelativeLocation
+struct UAkSoundVolumeComponentBase_K2_AddRelativeLocation_Params
+{
+	struct FVector                                     DeltaLocation;                                            // (Parm, IsPlainOldData)
+	bool                                               bSweep;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FHitResult                                  SweepHitResult;                                           // (Parm, OutParm, IsPlainOldData)
+	bool                                               bTeleport;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.K2_AddLocalTransform
+struct UAkSoundVolumeComponentBase_K2_AddLocalTransform_Params
+{
+	struct FTransform                                  DeltaTransform;                                           // (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+	bool                                               bSweep;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FHitResult                                  SweepHitResult;                                           // (Parm, OutParm, IsPlainOldData)
+	bool                                               bTeleport;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.K2_AddLocalRotation
+struct UAkSoundVolumeComponentBase_K2_AddLocalRotation_Params
+{
+	struct FRotator                                    DeltaRotation;                                            // (Parm, IsPlainOldData)
+	bool                                               bSweep;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FHitResult                                  SweepHitResult;                                           // (Parm, OutParm, IsPlainOldData)
+	bool                                               bTeleport;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.K2_AddLocalOffset
+struct UAkSoundVolumeComponentBase_K2_AddLocalOffset_Params
+{
+	struct FVector                                     DeltaLocation;                                            // (Parm, IsPlainOldData)
+	bool                                               bSweep;                                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FHitResult                                  SweepHitResult;                                           // (Parm, OutParm, IsPlainOldData)
+	bool                                               bTeleport;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.IsVisible
+struct UAkSoundVolumeComponentBase_IsVisible_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.IsSimulatingPhysics
+struct UAkSoundVolumeComponentBase_IsSimulatingPhysics_Params
+{
+	struct FName                                       BoneName;                                                 // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.IsAnySimulatingPhysics
+struct UAkSoundVolumeComponentBase_IsAnySimulatingPhysics_Params
+{
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.GetUpVector
+struct UAkSoundVolumeComponentBase_GetUpVector_Params
+{
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.GetSocketTransform
+struct UAkSoundVolumeComponentBase_GetSocketTransform_Params
+{
+	struct FName                                       InSocketName;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	TEnumAsByte<ERelativeTransformSpace>               TransformSpace;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FTransform                                  ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.GetSocketRotation
+struct UAkSoundVolumeComponentBase_GetSocketRotation_Params
+{
+	struct FName                                       InSocketName;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FRotator                                    ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.GetSocketQuaternion
+struct UAkSoundVolumeComponentBase_GetSocketQuaternion_Params
+{
+	struct FName                                       InSocketName;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FQuat                                       ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.GetSocketLocation
+struct UAkSoundVolumeComponentBase_GetSocketLocation_Params
+{
+	struct FName                                       InSocketName;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.GetRightVector
+struct UAkSoundVolumeComponentBase_GetRightVector_Params
+{
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.GetRelativeTransform
+struct UAkSoundVolumeComponentBase_GetRelativeTransform_Params
+{
+	struct FTransform                                  ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.GetPhysicsVolume
+struct UAkSoundVolumeComponentBase_GetPhysicsVolume_Params
+{
+	class APhysicsVolume*                              ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+};
+
+// Function Engine.SceneComponent.GetParentComponents
+struct UAkSoundVolumeComponentBase_GetParentComponents_Params
+{
+	TArray<class USceneComponent*>                     Parents;                                                  // (Parm, OutParm, ZeroConstructor)
+};
+
+// Function Engine.SceneComponent.GetNumChildrenComponents
+struct UAkSoundVolumeComponentBase_GetNumChildrenComponents_Params
+{
 	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
-// Function AkAudio.AkGameplayStatics.PostEventAtLocationByName
-struct UAkGameplayStatics_PostEventAtLocationByName_Params
+// Function Engine.SceneComponent.GetForwardVector
+struct UAkSoundVolumeComponentBase_GetForwardVector_Params
 {
-	struct FString                                     EventName;                                                // (Parm, ZeroConstructor)
-	struct FVector                                     Location;                                                 // (Parm, IsPlainOldData)
-	struct FRotator                                    Orientation;                                              // (Parm, IsPlainOldData)
-	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               UseReverb;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
-// Function AkAudio.AkGameplayStatics.PostEventAtLocation
-struct UAkGameplayStatics_PostEventAtLocation_Params
+// Function Engine.SceneComponent.GetComponentVelocity
+struct UAkSoundVolumeComponentBase_GetComponentVelocity_Params
 {
-	class UAkAudioEvent*                               AkEvent;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     Location;                                                 // (Parm, IsPlainOldData)
-	struct FRotator                                    Orientation;                                              // (Parm, IsPlainOldData)
-	struct FString                                     EventName;                                                // (Parm, ZeroConstructor)
-	class UObject*                                     WorldContextObject;                                       // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               UseReverb;                                                // (Parm, ZeroConstructor, IsPlainOldData)
-	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	struct FVector                                     ReturnValue;                                              // (Parm, OutParm, ReturnParm, IsPlainOldData)
 };
 
-// Function AkAudio.AkGameplayStatics.PostEvent
-struct UAkGameplayStatics_PostEvent_Params
+// Function Engine.SceneComponent.GetChildrenComponents
+struct UAkSoundVolumeComponentBase_GetChildrenComponents_Params
 {
-	class UAkAudioEvent*                               AkEvent;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	class AActor*                                      Actor;                                                    // (Parm, ZeroConstructor, IsPlainOldData)
-	bool                                               bStopWhenAttachedToDestroyed;                             // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FString                                     EventName;                                                // (Parm, ZeroConstructor)
-	int                                                ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+	bool                                               bIncludeAllDescendants;                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	TArray<class USceneComponent*>                     Children;                                                 // (Parm, OutParm, ZeroConstructor)
 };
 
-// Function AkAudio.AkGameplayStatics.LoadInitBank
-struct UAkGameplayStatics_LoadInitBank_Params
+// Function Engine.SceneComponent.GetChildComponent
+struct UAkSoundVolumeComponentBase_GetChildComponent_Params
 {
+	int                                                ChildIndex;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	class USceneComponent*                             ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
 };
 
-// Function AkAudio.AkGameplayStatics.LoadBanks
-struct UAkGameplayStatics_LoadBanks_Params
+// Function Engine.SceneComponent.GetAttachSocketName
+struct UAkSoundVolumeComponentBase_GetAttachSocketName_Params
 {
-	TArray<class UAkAudioBank*>                        SoundBanks;                                               // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-	bool                                               SynchronizeSoundBanks;                                    // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FName                                       ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
-// Function AkAudio.AkGameplayStatics.LoadBankByName
-struct UAkGameplayStatics_LoadBankByName_Params
+// Function Engine.SceneComponent.GetAttachParent
+struct UAkSoundVolumeComponentBase_GetAttachParent_Params
 {
-	struct FString                                     BankName;                                                 // (Parm, ZeroConstructor)
+	class USceneComponent*                             ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
 };
 
-// Function AkAudio.AkGameplayStatics.LoadBank
-struct UAkGameplayStatics_LoadBank_Params
+// Function Engine.SceneComponent.GetAllSocketNames
+struct UAkSoundVolumeComponentBase_GetAllSocketNames_Params
 {
-	class UAkAudioBank*                                Bank;                                                     // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FString                                     BankName;                                                 // (Parm, ZeroConstructor)
+	TArray<struct FName>                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm)
 };
 
-// Function AkAudio.AkGameplayStatics.GetAkComponent
-struct UAkGameplayStatics_GetAkComponent_Params
+// Function Engine.SceneComponent.DoesSocketExist
+struct UAkSoundVolumeComponentBase_DoesSocketExist_Params
 {
-	class USceneComponent*                             AttachToComponent;                                        // (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-	struct FName                                       AttachPointName;                                          // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FVector                                     Location;                                                 // (Parm, IsPlainOldData)
-	TEnumAsByte<EAttachLocation>                       LocationType;                                             // (Parm, ZeroConstructor, IsPlainOldData)
-	class UAkComponent*                                ReturnValue;                                              // (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+	struct FName                                       InSocketName;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               ReturnValue;                                              // (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
 };
 
-// Function AkAudio.AkGameplayStatics.ClearBanks
-struct UAkGameplayStatics_ClearBanks_Params
+// Function Engine.SceneComponent.DetachFromParent
+struct UAkSoundVolumeComponentBase_DetachFromParent_Params
 {
-};
-
-// Function AkAudio.AkGameplayStatics.AddOutputCaptureMarker
-struct UAkGameplayStatics_AddOutputCaptureMarker_Params
-{
-	struct FString                                     MarkerText;                                               // (Parm, ZeroConstructor)
+	bool                                               bMaintainWorldPosition;                                   // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               bCallModify;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

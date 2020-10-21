@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,7 +14,7 @@ namespace SDK
 
 // Function BP_MasteryPose_VehicleLean.BP_MasteryPose_VehicleLean_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABP_MasteryPose_VehicleLean_C::UserConstructionScript()
 {
@@ -35,7 +35,7 @@ void ABP_MasteryPose_VehicleLean_C::UserConstructionScript()
 
 // Function BP_MasteryPose_VehicleLean.BP_MasteryPose_VehicleLean_C.ShowLobbyEffects
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABP_MasteryPose_VehicleLean_C::ShowLobbyEffects()
 {
@@ -57,10 +57,10 @@ void ABP_MasteryPose_VehicleLean_C::ShowLobbyEffects()
 // Function BP_MasteryPose_VehicleLean.BP_MasteryPose_VehicleLean_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// float*                         DeltaSeconds                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// float                          DeltaSeconds                   (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void ABP_MasteryPose_VehicleLean_C::ReceiveTick(float* DeltaSeconds)
+void ABP_MasteryPose_VehicleLean_C::ReceiveTick(float DeltaSeconds)
 {
 	static UFunction* fn;
 
@@ -80,7 +80,7 @@ void ABP_MasteryPose_VehicleLean_C::ReceiveTick(float* DeltaSeconds)
 
 // Function BP_MasteryPose_VehicleLean.BP_MasteryPose_VehicleLean_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void ABP_MasteryPose_VehicleLean_C::ReceiveBeginPlay()
 {
@@ -102,10 +102,10 @@ void ABP_MasteryPose_VehicleLean_C::ReceiveBeginPlay()
 // Function BP_MasteryPose_VehicleLean.BP_MasteryPose_VehicleLean_C.ExecuteUbergraph_BP_MasteryPose_VehicleLean
 // ()
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void ABP_MasteryPose_VehicleLean_C::ExecuteUbergraph_BP_MasteryPose_VehicleLean(int* EntryPoint)
+void ABP_MasteryPose_VehicleLean_C::ExecuteUbergraph_BP_MasteryPose_VehicleLean(int EntryPoint)
 {
 	static UFunction* fn;
 

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -57,18 +57,18 @@ public:
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_291D982749D2C15B5A42458E533D3353();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_F04618AC46C758D4557155A3D6C5281B();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_535B35864D6D73BE83E3B0B9F7682E1B();
-	void BlueprintUpdateAnimation(float* DeltaTimeX);
+	void BlueprintUpdateAnimation(float DeltaTimeX);
 	void BlueprintInitializeAnimation();
 	void WeaponFireCycle_Event();
 	void AnimNotify_ClipShow();
 	void AnimNotify_ClipHide();
 	void Reload2_Event();
-	void ReloadByOneStart_Event(int* AmmoToReload);
+	void ReloadByOneStart_Event(int AmmoToReload);
 	void ReloadByOneSingle_Event();
 	void ReloadByOneEnd_Event();
 	void AnimNotify_ShellEject();
 	void CancelReload_Event();
-	void ExecuteUbergraph_ABP_Weapon_Kar98k(int* EntryPoint);
+	void ExecuteUbergraph_ABP_Weapon_Kar98k(int EntryPoint);
 };
 
 

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -51,14 +51,6 @@ public:
 		return ptr;
 	}
 
-
-	void STATIC_SetBypassSourceEffectChainEntry(class UObject* WorldContextObject, class USoundEffectSourcePresetChain* PresetChain, int EntryIndex, bool bBypassed);
-	void STATIC_RemoveSourceEffectFromPresetChain(class UObject* WorldContextObject, class USoundEffectSourcePresetChain* PresetChain, int EntryIndex);
-	void STATIC_RemoveMasterSubmixEffect(class UObject* WorldContextObject, class USoundEffectSubmixPreset* SubmixEffectPreset);
-	int STATIC_GetNumberOfEntriesInSourceEffectChain(class UObject* WorldContextObject, class USoundEffectSourcePresetChain* PresetChain);
-	void STATIC_ClearMasterSubmixEffects(class UObject* WorldContextObject);
-	void STATIC_AddSourceEffectToPresetChain(class UObject* WorldContextObject, class USoundEffectSourcePresetChain* PresetChain, const struct FSourceEffectChainEntry& Entry);
-	void STATIC_AddMasterSubmixEffect(class UObject* WorldContextObject, class USoundEffectSubmixPreset* SubmixEffectPreset);
 };
 
 
@@ -127,28 +119,28 @@ public:
 
 
 // Class AudioMixer.SynthComponent
-// 0x01D0 (0x0690 - 0x04C0)
+// 0x01D0 (0x0670 - 0x04A0)
 class USynthComponent : public USceneComponent
 {
 public:
-	unsigned char                                      bAutoDestroy : 1;                                         // 0x04C0(0x0001)
-	unsigned char                                      bStopWhenOwnerDestroyed : 1;                              // 0x04C0(0x0001)
-	unsigned char                                      bAllowSpatialization : 1;                                 // 0x04C0(0x0001) (Edit, BlueprintVisible)
-	unsigned char                                      bOverrideAttenuation : 1;                                 // 0x04C0(0x0001) (Edit, BlueprintVisible)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x04C1(0x0007) MISSED OFFSET
-	class USoundAttenuation*                           AttenuationSettings;                                      // 0x04C8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	struct FSoundAttenuationSettings                   AttenuationOverrides;                                     // 0x04D0(0x0130) (Edit, BlueprintVisible)
-	class USoundConcurrency*                           ConcurrencySettings;                                      // 0x0600(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	class USoundClass*                                 SoundClass;                                               // 0x0608(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-	class USoundEffectSourcePresetChain*               SourceEffectChain;                                        // 0x0610(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-	float                                              DefaultMasterReverbSendAmount;                            // 0x0618(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x061C(0x0004) MISSED OFFSET
-	class USoundSubmix*                                SoundSubmix;                                              // 0x0620(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
-	TArray<struct FSoundSubmixSendInfo>                SoundSubmixSends;                                         // 0x0628(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	unsigned char                                      UnknownData02[0x8];                                       // 0x0638(0x0008) MISSED OFFSET
-	class USynthSound*                                 Synth;                                                    // 0x0640(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
-	class UAudioComponent*                             AudioComponent;                                           // 0x0648(0x0008) (ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x40];                                      // 0x0650(0x0040) MISSED OFFSET
+	unsigned char                                      bAutoDestroy : 1;                                         // 0x04A0(0x0001)
+	unsigned char                                      bStopWhenOwnerDestroyed : 1;                              // 0x04A0(0x0001)
+	unsigned char                                      bAllowSpatialization : 1;                                 // 0x04A0(0x0001) (Edit, BlueprintVisible)
+	unsigned char                                      bOverrideAttenuation : 1;                                 // 0x04A0(0x0001) (Edit, BlueprintVisible)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x04A1(0x0007) MISSED OFFSET
+	class USoundAttenuation*                           AttenuationSettings;                                      // 0x04A8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	struct FSoundAttenuationSettings                   AttenuationOverrides;                                     // 0x04B0(0x0130) (Edit, BlueprintVisible)
+	class USoundConcurrency*                           ConcurrencySettings;                                      // 0x05E0(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	class USoundClass*                                 SoundClass;                                               // 0x05E8(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	class USoundEffectSourcePresetChain*               SourceEffectChain;                                        // 0x05F0(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	float                                              DefaultMasterReverbSendAmount;                            // 0x05F8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x05FC(0x0004) MISSED OFFSET
+	class USoundSubmix*                                SoundSubmix;                                              // 0x0600(0x0008) (Edit, ZeroConstructor, IsPlainOldData)
+	TArray<struct FSoundSubmixSendInfo>                SoundSubmixSends;                                         // 0x0608(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	unsigned char                                      UnknownData02[0x8];                                       // 0x0618(0x0008) MISSED OFFSET
+	class USynthSound*                                 Synth;                                                    // 0x0620(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
+	class UAudioComponent*                             AudioComponent;                                           // 0x0628(0x0008) (ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x40];                                      // 0x0630(0x0040) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{

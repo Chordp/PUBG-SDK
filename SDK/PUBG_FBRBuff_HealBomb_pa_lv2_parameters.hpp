@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -13,11 +13,6 @@ namespace SDK
 //---------------------------------------------------------------------------
 //Parameters
 //---------------------------------------------------------------------------
-
-// Function FBRBuff_HealBomb_pa_lv2.FBRBuff_HealBomb_pa_lv2_C.UserConstructionScript
-struct AFBRBuff_HealBomb_pa_lv2_C_UserConstructionScript_Params
-{
-};
 
 }
 

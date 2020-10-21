@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -188,7 +188,18 @@ struct FPhysXWheelState
 // 0x0018 (0x0110 - 0x00F8)
 struct FAnimNode_WheelHandler : public FAnimNode_SkeletalControlBase
 {
-	unsigned char                                      UnknownData00[0x18];                                      // 0x00F8(0x0018) MISSED OFFSET
+	struct FComponentSpacePoseLink                     ComponentPose;                                            // 0x0030(0x0018) (Edit, BlueprintVisible)
+	int                                                LODThreshold;                                             // 0x0048(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	float                                              ActualAlpha;                                              // 0x004C(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
+	EAnimAlphaInputType                                AlphaInputType;                                           // 0x0050(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               bAlphaBoolEnabled;                                        // 0x0051(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x2];                                       // 0x0052(0x0002) MISSED OFFSET
+	float                                              ALPHA;                                                    // 0x0054(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	struct FInputScaleBias                             AlphaScaleBias;                                           // 0x0058(0x0008) (Edit, BlueprintVisible)
+	struct FInputAlphaBoolBlend                        AlphaBoolBlend;                                           // 0x0060(0x0050) (Edit, BlueprintVisible)
+	struct FName                                       AlphaCurveName;                                           // 0x00B0(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	struct FInputScaleBiasClamp                        AlphaScaleBiasClamp;                                      // 0x00B8(0x0030) (Edit, BlueprintVisible)
+	unsigned char                                      UnknownData01[0x28];                                      // 0x00E8(0x0028) MISSED OFFSET
 };
 
 }

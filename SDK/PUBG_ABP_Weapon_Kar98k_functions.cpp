@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,7 +14,7 @@ namespace SDK
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.Handle_ReloadByOne_Stop
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UABP_Weapon_Kar98k_C::Handle_ReloadByOne_Stop()
 {
@@ -35,7 +35,7 @@ void UABP_Weapon_Kar98k_C::Handle_ReloadByOne_Stop()
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.Handle_ReloadByOne_Single
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UABP_Weapon_Kar98k_C::Handle_ReloadByOne_Single()
 {
@@ -56,7 +56,7 @@ void UABP_Weapon_Kar98k_C::Handle_ReloadByOne_Single()
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.Handle_ReloadByOne_Start
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UABP_Weapon_Kar98k_C::Handle_ReloadByOne_Start()
 {
@@ -77,7 +77,7 @@ void UABP_Weapon_Kar98k_C::Handle_ReloadByOne_Start()
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.Handle_FireCycle
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UABP_Weapon_Kar98k_C::Handle_FireCycle()
 {
@@ -98,7 +98,7 @@ void UABP_Weapon_Kar98k_C::Handle_FireCycle()
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_18C910A44F9008AC742A4E9E701EA7F8
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UABP_Weapon_Kar98k_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_18C910A44F9008AC742A4E9E701EA7F8()
 {
@@ -119,7 +119,7 @@ void UABP_Weapon_Kar98k_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapo
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_033A2398482A3043781C368D6E04B471
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UABP_Weapon_Kar98k_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_033A2398482A3043781C368D6E04B471()
 {
@@ -140,7 +140,7 @@ void UABP_Weapon_Kar98k_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapo
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_43A4B63640B00C90EE186E9BCF655F5A
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UABP_Weapon_Kar98k_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_43A4B63640B00C90EE186E9BCF655F5A()
 {
@@ -161,7 +161,7 @@ void UABP_Weapon_Kar98k_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapo
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_291D982749D2C15B5A42458E533D3353
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UABP_Weapon_Kar98k_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_291D982749D2C15B5A42458E533D3353()
 {
@@ -182,7 +182,7 @@ void UABP_Weapon_Kar98k_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapo
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_F04618AC46C758D4557155A3D6C5281B
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UABP_Weapon_Kar98k_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_F04618AC46C758D4557155A3D6C5281B()
 {
@@ -203,7 +203,7 @@ void UABP_Weapon_Kar98k_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapo
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_535B35864D6D73BE83E3B0B9F7682E1B
 // (BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UABP_Weapon_Kar98k_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapon_Kar98k_AnimGraphNode_ModifyBone_535B35864D6D73BE83E3B0B9F7682E1B()
 {
@@ -225,10 +225,10 @@ void UABP_Weapon_Kar98k_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Weapo
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.BlueprintUpdateAnimation
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// float*                         DeltaTimeX                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// float                          DeltaTimeX                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UABP_Weapon_Kar98k_C::BlueprintUpdateAnimation(float* DeltaTimeX)
+void UABP_Weapon_Kar98k_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
 	static UFunction* fn;
 
@@ -248,7 +248,7 @@ void UABP_Weapon_Kar98k_C::BlueprintUpdateAnimation(float* DeltaTimeX)
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.BlueprintInitializeAnimation
 // (Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UABP_Weapon_Kar98k_C::BlueprintInitializeAnimation()
 {
@@ -269,7 +269,7 @@ void UABP_Weapon_Kar98k_C::BlueprintInitializeAnimation()
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.WeaponFireCycle_Event
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UABP_Weapon_Kar98k_C::WeaponFireCycle_Event()
 {
@@ -290,7 +290,7 @@ void UABP_Weapon_Kar98k_C::WeaponFireCycle_Event()
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.AnimNotify_ClipShow
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UABP_Weapon_Kar98k_C::AnimNotify_ClipShow()
 {
@@ -311,7 +311,7 @@ void UABP_Weapon_Kar98k_C::AnimNotify_ClipShow()
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.AnimNotify_ClipHide
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UABP_Weapon_Kar98k_C::AnimNotify_ClipHide()
 {
@@ -332,7 +332,7 @@ void UABP_Weapon_Kar98k_C::AnimNotify_ClipHide()
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.Reload2_Event
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UABP_Weapon_Kar98k_C::Reload2_Event()
 {
@@ -354,10 +354,10 @@ void UABP_Weapon_Kar98k_C::Reload2_Event()
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.ReloadByOneStart_Event
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int*                           AmmoToReload                   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            AmmoToReload                   (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UABP_Weapon_Kar98k_C::ReloadByOneStart_Event(int* AmmoToReload)
+void UABP_Weapon_Kar98k_C::ReloadByOneStart_Event(int AmmoToReload)
 {
 	static UFunction* fn;
 
@@ -377,7 +377,7 @@ void UABP_Weapon_Kar98k_C::ReloadByOneStart_Event(int* AmmoToReload)
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.ReloadByOneSingle_Event
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UABP_Weapon_Kar98k_C::ReloadByOneSingle_Event()
 {
@@ -398,7 +398,7 @@ void UABP_Weapon_Kar98k_C::ReloadByOneSingle_Event()
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.ReloadByOneEnd_Event
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UABP_Weapon_Kar98k_C::ReloadByOneEnd_Event()
 {
@@ -419,7 +419,7 @@ void UABP_Weapon_Kar98k_C::ReloadByOneEnd_Event()
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.AnimNotify_ShellEject
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UABP_Weapon_Kar98k_C::AnimNotify_ShellEject()
 {
@@ -440,7 +440,7 @@ void UABP_Weapon_Kar98k_C::AnimNotify_ShellEject()
 
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.CancelReload_Event
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UABP_Weapon_Kar98k_C::CancelReload_Event()
 {
@@ -462,10 +462,10 @@ void UABP_Weapon_Kar98k_C::CancelReload_Event()
 // Function ABP_Weapon_Kar98k.ABP_Weapon_Kar98k_C.ExecuteUbergraph_ABP_Weapon_Kar98k
 // (HasDefaults)
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UABP_Weapon_Kar98k_C::ExecuteUbergraph_ABP_Weapon_Kar98k(int* EntryPoint)
+void UABP_Weapon_Kar98k_C::ExecuteUbergraph_ABP_Weapon_Kar98k(int EntryPoint)
 {
 	static UFunction* fn;
 

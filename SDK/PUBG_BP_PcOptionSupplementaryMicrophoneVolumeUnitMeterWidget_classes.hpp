@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -36,10 +36,10 @@ public:
 
 	void GetGamePadHelpWidgetClass(class UClass** GuideClass);
 	void OnAnimFinish();
-	void UpdateVolumeMeterValue(float* Volume_Level_in_Decimal);
+	void UpdateVolumeMeterValue(float Volume_Level_in_Decimal);
 	void Construct();
-	void UpdateVolumeUnitMeter(float* Energy);
-	void ExecuteUbergraph_BP_PcOptionSupplementaryMicrophoneVolumeUnitMeterWidget(int* EntryPoint);
+	void UpdateVolumeUnitMeter(float Energy);
+	void ExecuteUbergraph_BP_PcOptionSupplementaryMicrophoneVolumeUnitMeterWidget(int EntryPoint);
 };
 
 

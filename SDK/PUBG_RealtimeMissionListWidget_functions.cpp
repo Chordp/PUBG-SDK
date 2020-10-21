@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,7 +14,7 @@ namespace SDK
 
 // Function RealtimeMissionListWidget.RealtimeMissionListWidget_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void URealtimeMissionListWidget_C::Construct()
 {
@@ -36,10 +36,10 @@ void URealtimeMissionListWidget_C::Construct()
 // Function RealtimeMissionListWidget.RealtimeMissionListWidget_C.ExecuteUbergraph_RealtimeMissionListWidget
 // (HasDefaults)
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void URealtimeMissionListWidget_C::ExecuteUbergraph_RealtimeMissionListWidget(int* EntryPoint)
+void URealtimeMissionListWidget_C::ExecuteUbergraph_RealtimeMissionListWidget(int EntryPoint)
 {
 	static UFunction* fn;
 

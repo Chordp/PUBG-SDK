@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -44,10 +44,10 @@ public:
 	void IsCarePackageComming(bool* IsCarePackageComing, bool* IsVehicleComing);
 	void ShowTitle(bool bShow);
 	void IsCharacterInWhiteZone(bool* IsIn);
-	void SetVehicleNumber(int* NumVehicle, bool* CanFire, bool* WaitingMine);
-	void SetPackageNumber(int* NumPackage, bool* CanFire, bool* WaitingMine);
-	void Tick(struct FGeometry* MyGeometry, float* InDeltaTime);
-	void ExecuteUbergraph_BP_FlaregunUiWidget(int* EntryPoint);
+	void SetVehicleNumber(int NumVehicle, bool CanFire, bool WaitingMine);
+	void SetPackageNumber(int NumPackage, bool CanFire, bool WaitingMine);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void ExecuteUbergraph_BP_FlaregunUiWidget(int EntryPoint);
 };
 
 

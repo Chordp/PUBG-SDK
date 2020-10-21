@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -75,9 +75,6 @@ public:
 		return ptr;
 	}
 
-
-	void STATIC_GetCachedAchievementProgress(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FName& AchievementID, bool* bFoundID, float* Progress);
-	void STATIC_GetCachedAchievementDescription(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FName& AchievementID, bool* bFoundID, struct FText* Title, struct FText* LockedDescription, struct FText* UnlockedDescription, bool* bHidden);
 };
 
 
@@ -400,8 +397,6 @@ public:
 		return ptr;
 	}
 
-
-	bool STATIC_WriteLeaderboardInteger(class APlayerController* PlayerController, const struct FName& StatName, int StatValue);
 };
 
 
@@ -475,15 +470,15 @@ public:
 
 
 // Class OnlineSubsystemUtils.OnlineBeacon
-// 0x0028 (0x0428 - 0x0400)
+// 0x0028 (0x0438 - 0x0410)
 class AOnlineBeacon : public AActor
 {
 public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0400(0x0008) MISSED OFFSET
-	float                                              BeaconConnectionInitialTimeout;                           // 0x0408(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	float                                              BeaconConnectionTimeout;                                  // 0x040C(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	class UNetDriver*                                  NetDriver;                                                // 0x0410(0x0008) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x10];                                      // 0x0418(0x0010) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0410(0x0008) MISSED OFFSET
+	float                                              BeaconConnectionInitialTimeout;                           // 0x0418(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	float                                              BeaconConnectionTimeout;                                  // 0x041C(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	class UNetDriver*                                  NetDriver;                                                // 0x0420(0x0008) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x10];                                      // 0x0428(0x0010) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -498,14 +493,14 @@ public:
 
 
 // Class OnlineSubsystemUtils.OnlineBeaconClient
-// 0x0088 (0x04B0 - 0x0428)
+// 0x0088 (0x04C0 - 0x0438)
 class AOnlineBeaconClient : public AOnlineBeacon
 {
 public:
-	class AOnlineBeaconHostObject*                     BeaconOwner;                                              // 0x0428(0x0008) (ZeroConstructor, IsPlainOldData)
-	class UNetConnection*                              BeaconConnection;                                         // 0x0430(0x0008) (ZeroConstructor, IsPlainOldData)
-	EBeaconConnectionState                             ConnectionState;                                          // 0x0438(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x77];                                      // 0x0439(0x0077) MISSED OFFSET
+	class AOnlineBeaconHostObject*                     BeaconOwner;                                              // 0x0438(0x0008) (ZeroConstructor, IsPlainOldData)
+	class UNetConnection*                              BeaconConnection;                                         // 0x0440(0x0008) (ZeroConstructor, IsPlainOldData)
+	EBeaconConnectionState                             ConnectionState;                                          // 0x0448(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x77];                                      // 0x0449(0x0077) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -550,17 +545,17 @@ public:
 
 
 // Class OnlineSubsystemUtils.PartyBeaconClient
-// 0x0130 (0x05E0 - 0x04B0)
+// 0x0130 (0x05F0 - 0x04C0)
 class APartyBeaconClient : public AOnlineBeaconClient
 {
 public:
-	unsigned char                                      UnknownData00[0xC0];                                      // 0x04B0(0x00C0) MISSED OFFSET
-	struct FString                                     DestSessionId;                                            // 0x0570(0x0010) (ZeroConstructor)
-	struct FPartyReservation                           PendingReservation;                                       // 0x0580(0x0030)
-	EClientRequestType                                 RequestType;                                              // 0x05B0(0x0001) (ZeroConstructor, IsPlainOldData)
-	bool                                               bPendingReservationSent;                                  // 0x05B1(0x0001) (ZeroConstructor, IsPlainOldData)
-	bool                                               bCancelReservation;                                       // 0x05B2(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x2D];                                      // 0x05B3(0x002D) MISSED OFFSET
+	unsigned char                                      UnknownData00[0xC0];                                      // 0x04C0(0x00C0) MISSED OFFSET
+	struct FString                                     DestSessionId;                                            // 0x0580(0x0010) (ZeroConstructor)
+	struct FPartyReservation                           PendingReservation;                                       // 0x0590(0x0030)
+	EClientRequestType                                 RequestType;                                              // 0x05C0(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               bPendingReservationSent;                                  // 0x05C1(0x0001) (ZeroConstructor, IsPlainOldData)
+	bool                                               bCancelReservation;                                       // 0x05C2(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x2D];                                      // 0x05C3(0x002D) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -583,7 +578,7 @@ public:
 
 
 // Class OnlineSubsystemUtils.TestBeaconClient
-// 0x0000 (0x04B0 - 0x04B0)
+// 0x0000 (0x04C0 - 0x04C0)
 class ATestBeaconClient : public AOnlineBeaconClient
 {
 public:
@@ -598,20 +593,19 @@ public:
 	}
 
 
-	void ServerPong();
-	void ClientPing();
+	void ClientOnConnected();
 };
 
 
 // Class OnlineSubsystemUtils.OnlineBeaconHost
-// 0x00B8 (0x04E0 - 0x0428)
+// 0x00B8 (0x04F0 - 0x0438)
 class AOnlineBeaconHost : public AOnlineBeacon
 {
 public:
-	int                                                ListenPort;                                               // 0x0428(0x0004) (ZeroConstructor, Config, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x042C(0x0004) MISSED OFFSET
-	TArray<class AOnlineBeaconClient*>                 ClientActors;                                             // 0x0430(0x0010) (ZeroConstructor)
-	unsigned char                                      UnknownData01[0xA0];                                      // 0x0440(0x00A0) MISSED OFFSET
+	int                                                ListenPort;                                               // 0x0438(0x0004) (ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x043C(0x0004) MISSED OFFSET
+	TArray<class AOnlineBeaconClient*>                 ClientActors;                                             // 0x0440(0x0010) (ZeroConstructor)
+	unsigned char                                      UnknownData01[0xA0];                                      // 0x0450(0x00A0) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -626,13 +620,13 @@ public:
 
 
 // Class OnlineSubsystemUtils.OnlineBeaconHostObject
-// 0x0028 (0x0428 - 0x0400)
+// 0x0028 (0x0438 - 0x0410)
 class AOnlineBeaconHostObject : public AActor
 {
 public:
-	struct FString                                     BeaconTypeName;                                           // 0x0400(0x0010) (ZeroConstructor, Transient)
-	class UClass*                                      ClientBeaconActorClass;                                   // 0x0410(0x0008) (ZeroConstructor, IsPlainOldData)
-	TArray<class AOnlineBeaconClient*>                 ClientActors;                                             // 0x0418(0x0010) (ZeroConstructor)
+	struct FString                                     BeaconTypeName;                                           // 0x0410(0x0010) (ZeroConstructor, Transient)
+	class UClass*                                      ClientBeaconActorClass;                                   // 0x0420(0x0008) (ZeroConstructor, IsPlainOldData)
+	TArray<class AOnlineBeaconClient*>                 ClientActors;                                             // 0x0428(0x0010) (ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
@@ -647,17 +641,17 @@ public:
 
 
 // Class OnlineSubsystemUtils.PartyBeaconHost
-// 0x0158 (0x0580 - 0x0428)
+// 0x0158 (0x0590 - 0x0438)
 class APartyBeaconHost : public AOnlineBeaconHostObject
 {
 public:
-	class UPartyBeaconState*                           State;                                                    // 0x0428(0x0008) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x140];                                     // 0x0430(0x0140) MISSED OFFSET
-	bool                                               bLogoutOnSessionTimeout;                                  // 0x0570(0x0001) (ZeroConstructor, Config, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x0571(0x0003) MISSED OFFSET
-	float                                              SessionTimeoutSecs;                                       // 0x0574(0x0004) (ZeroConstructor, Transient, Config, IsPlainOldData)
-	float                                              TravelSessionTimeoutSecs;                                 // 0x0578(0x0004) (ZeroConstructor, Transient, Config, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x4];                                       // 0x057C(0x0004) MISSED OFFSET
+	class UPartyBeaconState*                           State;                                                    // 0x0438(0x0008) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x140];                                     // 0x0440(0x0140) MISSED OFFSET
+	bool                                               bLogoutOnSessionTimeout;                                  // 0x0580(0x0001) (ZeroConstructor, Config, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x0581(0x0003) MISSED OFFSET
+	float                                              SessionTimeoutSecs;                                       // 0x0584(0x0004) (ZeroConstructor, Transient, Config, IsPlainOldData)
+	float                                              TravelSessionTimeoutSecs;                                 // 0x0588(0x0004) (ZeroConstructor, Transient, Config, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x058C(0x0004) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -672,7 +666,7 @@ public:
 
 
 // Class OnlineSubsystemUtils.TestBeaconHost
-// 0x0000 (0x0428 - 0x0428)
+// 0x0000 (0x0438 - 0x0438)
 class ATestBeaconHost : public AOnlineBeaconHostObject
 {
 public:
@@ -813,11 +807,6 @@ public:
 		return ptr;
 	}
 
-
-	void STATIC_RegisterTurnBasedMatchInterfaceObject(class UObject* WorldContextObject, class APlayerController* PlayerController, class UObject* Object);
-	void STATIC_GetPlayerDisplayName(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FString& MatchId, int PlayerIndex, struct FString* PlayerDisplayName);
-	void STATIC_GetMyPlayerIndex(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FString& MatchId, int* PlayerIndex);
-	void STATIC_GetIsMyTurn(class UObject* WorldContextObject, class APlayerController* PlayerController, const struct FString& MatchId, bool* bIsMyTurn);
 };
 
 

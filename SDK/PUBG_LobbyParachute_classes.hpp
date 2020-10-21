@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass LobbyParachute.LobbyParachute_C
-// 0x0000 (0x0440 - 0x0440)
+// 0x0000 (0x0450 - 0x0450)
 class ALobbyParachute_C : public ALobbyParachute
 {
 public:
@@ -30,7 +30,8 @@ public:
 	}
 
 
-	void UserConstructionScript();
+	void OnRep_ReplicatedSkinParam();
+	void InitializeParachuteMesh();
 };
 
 

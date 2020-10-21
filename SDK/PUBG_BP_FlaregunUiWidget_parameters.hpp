@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -36,30 +36,30 @@ struct UBP_FlaregunUiWidget_C_IsCharacterInWhiteZone_Params
 // Function BP_FlaregunUiWidget.BP_FlaregunUiWidget_C.SetVehicleNumber
 struct UBP_FlaregunUiWidget_C_SetVehicleNumber_Params
 {
-	int*                                               NumVehicle;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	bool*                                              CanFire;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	bool*                                              WaitingMine;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                NumVehicle;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               CanFire;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               WaitingMine;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_FlaregunUiWidget.BP_FlaregunUiWidget_C.SetPackageNumber
 struct UBP_FlaregunUiWidget_C_SetPackageNumber_Params
 {
-	int*                                               NumPackage;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	bool*                                              CanFire;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
-	bool*                                              WaitingMine;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                NumPackage;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               CanFire;                                                  // (Parm, ZeroConstructor, IsPlainOldData)
+	bool                                               WaitingMine;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_FlaregunUiWidget.BP_FlaregunUiWidget_C.Tick
 struct UBP_FlaregunUiWidget_C_Tick_Params
 {
-	struct FGeometry*                                  MyGeometry;                                               // (Parm, IsPlainOldData)
-	float*                                             InDeltaTime;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FGeometry                                   MyGeometry;                                               // (Parm, IsPlainOldData)
+	float                                              InDeltaTime;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_FlaregunUiWidget.BP_FlaregunUiWidget_C.ExecuteUbergraph_BP_FlaregunUiWidget
 struct UBP_FlaregunUiWidget_C_ExecuteUbergraph_BP_FlaregunUiWidget_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

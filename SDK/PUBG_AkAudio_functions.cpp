@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,7 +14,7 @@ namespace SDK
 
 // Function AkAudio.AkAmbientSound.StopAmbientSound
 // (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF62B46E920              		 offset:299e920                       
+// FunctionAddress:0x00007FF75C5D20D0              		 offset:2bd20d0                       
 
 void AAkAmbientSound::StopAmbientSound()
 {
@@ -36,7 +36,7 @@ void AAkAmbientSound::StopAmbientSound()
 
 // Function AkAudio.AkAmbientSound.StartAmbientSound
 // (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF62B46E6C0              		 offset:299e6c0                       
+// FunctionAddress:0x00007FF75C5D1E70              		 offset:2bd1e70                       
 
 void AAkAmbientSound::StartAmbientSound()
 {
@@ -60,7 +60,7 @@ void AAkAmbientSound::StartAmbientSound()
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46CC10              		 offset:299cc10                       
+// FunctionAddress:0x00007FF75C5D03C0              		 offset:2bd03c0                       
 
 bool AAkAmbientSound::IsCurrentlyPlaying()
 {
@@ -86,7 +86,7 @@ bool AAkAmbientSound::IsCurrentlyPlaying()
 // (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           inUseVolumesForRTPCs           (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46ED40              		 offset:299ed40                       
+// FunctionAddress:0x00007FF75C5D24F0              		 offset:2bd24f0                       
 
 void UAkComponent::UseVolumesForRTPCs(bool inUseVolumesForRTPCs)
 {
@@ -111,7 +111,7 @@ void UAkComponent::UseVolumesForRTPCs(bool inUseVolumesForRTPCs)
 // (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           inUseReverbVolumes             (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46EBF0              		 offset:299ebf0                       
+// FunctionAddress:0x00007FF75C5D23A0              		 offset:2bd23a0                       
 
 void UAkComponent::UseReverbVolumes(bool inUseReverbVolumes)
 {
@@ -136,7 +136,7 @@ void UAkComponent::UseReverbVolumes(bool inUseReverbVolumes)
 // (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           inUseIndoorCheck               (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46EB60              		 offset:299eb60                       
+// FunctionAddress:0x00007FF75C5D2310              		 offset:2bd2310                       
 
 void UAkComponent::UseIndoorCheck(bool inUseIndoorCheck)
 {
@@ -161,7 +161,7 @@ void UAkComponent::UseIndoorCheck(bool inUseIndoorCheck)
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // int                            PlayingID                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46E960              		 offset:299e960                       
+// FunctionAddress:0x00007FF75C5D2110              		 offset:2bd2110                       
 
 void UAkComponent::StopPlayingID(int PlayingID)
 {
@@ -184,7 +184,7 @@ void UAkComponent::StopPlayingID(int PlayingID)
 
 // Function AkAudio.AkComponent.Stop
 // (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF62B46E800              		 offset:299e800                       
+// FunctionAddress:0x00007FF75C5D1FB0              		 offset:2bd1fb0                       
 
 void UAkComponent::Stop()
 {
@@ -209,7 +209,7 @@ void UAkComponent::Stop()
 // Parameters:
 // struct FString                 SwitchGroup                    (Parm, ZeroConstructor)
 // struct FString                 SwitchState                    (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF62B46E1A0              		 offset:299e1a0                       
+// FunctionAddress:0x00007FF75C5D1950              		 offset:2bd1950                       
 
 void UAkComponent::SetSwitch(const struct FString& SwitchGroup, const struct FString& SwitchState)
 {
@@ -235,7 +235,7 @@ void UAkComponent::SetSwitch(const struct FString& SwitchGroup, const struct FSt
 // (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           bStopWhenOwnerDestroyed        (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46E110              		 offset:299e110                       
+// FunctionAddress:0x00007FF75C5D18C0              		 offset:2bd18c0                       
 
 void UAkComponent::SetStopWhenOwnerDestroyed(bool bStopWhenOwnerDestroyed)
 {
@@ -262,7 +262,7 @@ void UAkComponent::SetStopWhenOwnerDestroyed(bool bStopWhenOwnerDestroyed)
 // struct FString                 RTPC                           (Parm, ZeroConstructor)
 // float                          Value                          (Parm, ZeroConstructor, IsPlainOldData)
 // int                            InterpolationTimeMs            (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46DDB0              		 offset:299ddb0                       
+// FunctionAddress:0x00007FF75C5D1560              		 offset:2bd1560                       
 
 void UAkComponent::SetRTPCValue(const struct FString& RTPC, float Value, int InterpolationTimeMs)
 {
@@ -289,7 +289,7 @@ void UAkComponent::SetRTPCValue(const struct FString& RTPC, float Value, int Int
 // (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 // Parameters:
 // float                          BusVolume                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46DC70              		 offset:299dc70                       
+// FunctionAddress:0x00007FF75C5D1420              		 offset:2bd1420                       
 
 void UAkComponent::SetOutputBusVolume(float BusVolume)
 {
@@ -314,7 +314,7 @@ void UAkComponent::SetOutputBusVolume(float BusVolume)
 // (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 // Parameters:
 // float                          Interval                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46DBF0              		 offset:299dbf0                       
+// FunctionAddress:0x00007FF75C5D13A0              		 offset:2bd13a0                       
 
 void UAkComponent::SetMinVolumeRTPCUpdateInterval(float Interval)
 {
@@ -339,7 +339,7 @@ void UAkComponent::SetMinVolumeRTPCUpdateInterval(float Interval)
 // (BlueprintCosmetic, Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                          Value                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46DB70              		 offset:299db70                       
+// FunctionAddress:0x00007FF75C5D1320              		 offset:2bd1320                       
 
 void UAkComponent::SetAttenuationScalingFactor(float Value)
 {
@@ -364,7 +364,7 @@ void UAkComponent::SetAttenuationScalingFactor(float Value)
 // (BlueprintCosmetic, Native, Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int                            in_uListenerMask               (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46DAE0              		 offset:299dae0                       
+// FunctionAddress:0x00007FF75C5D1290              		 offset:2bd1290                       
 
 void UAkComponent::SetActiveListeners(int in_uListenerMask)
 {
@@ -389,7 +389,7 @@ void UAkComponent::SetActiveListeners(int in_uListenerMask)
 // (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FString                 Trigger                        (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF62B46D930              		 offset:299d930                       
+// FunctionAddress:0x00007FF75C5D10E0              		 offset:2bd10e0                       
 
 void UAkComponent::PostTrigger(const struct FString& Trigger)
 {
@@ -414,7 +414,7 @@ void UAkComponent::PostTrigger(const struct FString& Trigger)
 // (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46D0A0              		 offset:299d0a0                       
+// FunctionAddress:0x00007FF75C5D0850              		 offset:2bd0850                       
 
 int UAkComponent::PostAssociatedAkEvent()
 {
@@ -441,7 +441,7 @@ int UAkComponent::PostAssociatedAkEvent()
 // Parameters:
 // struct FString                 in_EventName                   (Parm, ZeroConstructor)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46CFF0              		 offset:299cff0                       
+// FunctionAddress:0x00007FF75C5D07A0              		 offset:2bd07a0                       
 
 int UAkComponent::PostAkEventByName(const struct FString& in_EventName)
 {
@@ -470,7 +470,7 @@ int UAkComponent::PostAkEventByName(const struct FString& in_EventName)
 // class UAkAudioEvent*           AkEvent                        (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 in_EventName                   (Parm, ZeroConstructor)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46CF00              		 offset:299cf00                       
+// FunctionAddress:0x00007FF75C5D06B0              		 offset:2bd06b0                       
 
 int UAkComponent::PostAkEvent(class UAkAudioEvent* AkEvent, const struct FString& in_EventName)
 {
@@ -498,7 +498,7 @@ int UAkComponent::PostAkEvent(class UAkAudioEvent* AkEvent, const struct FString
 // (Final, BlueprintCosmetic, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46CC70              		 offset:299cc70                       
+// FunctionAddress:0x00007FF75C5D0420              		 offset:2bd0420                       
 
 bool UAkComponent::IsUsingVolumesForRTPCs()
 {
@@ -524,7 +524,7 @@ bool UAkComponent::IsUsingVolumesForRTPCs()
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46CC40              		 offset:299cc40                       
+// FunctionAddress:0x00007FF75C5D03F0              		 offset:2bd03f0                       
 
 bool UAkComponent::IsCurrentlyPlaying()
 {
@@ -550,7 +550,7 @@ bool UAkComponent::IsCurrentlyPlaying()
 // (BlueprintCosmetic, Native, Event, Public, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46CBD0              		 offset:299cbd0                       
+// FunctionAddress:0x00007FF75C5D0380              		 offset:2bd0380                       
 
 float UAkComponent::GetAttenuationRadius()
 {
@@ -576,7 +576,7 @@ float UAkComponent::GetAttenuationRadius()
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // float                          DeltaTime                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46C9F0              		 offset:299c9f0                       
+// FunctionAddress:0x00007FF75C5D01A0              		 offset:2bd01a0                       
 
 void UAkComponent::CalculateRelativeSpeed(float DeltaTime)
 {
@@ -597,23 +597,21 @@ void UAkComponent::CalculateRelativeSpeed(float DeltaTime)
 }
 
 
-// Function AkAudio.AkGameplayStatics.UseReverbVolumes
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Function Engine.SceneComponent.ToggleVisibility
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// bool                           inUseReverbVolumes             (Parm, ZeroConstructor, IsPlainOldData)
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46EC80              		 offset:299ec80                       
+// bool                           bPropagateToChildren           (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75CCE5A90              		 offset:32e5a90                       
 
-void UAkGameplayStatics::STATIC_UseReverbVolumes(bool inUseReverbVolumes, class AActor* Actor)
+void UAkSoundVolumeComponentBase::ToggleVisibility(bool bPropagateToChildren)
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.UseReverbVolumes"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.ToggleVisibility"));
 
-	UAkGameplayStatics_UseReverbVolumes_Params params;
-	params.inUseReverbVolumes = inUseReverbVolumes;
-	params.Actor = Actor;
+	UAkSoundVolumeComponentBase_ToggleVisibility_Params params;
+	params.bPropagateToChildren = bPropagateToChildren;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -624,277 +622,24 @@ void UAkGameplayStatics::STATIC_UseReverbVolumes(bool inUseReverbVolumes, class 
 }
 
 
-// Function AkAudio.AkGameplayStatics.UnloadBankByName
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Function Engine.SceneComponent.SnapTo
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// struct FString                 BankName                       (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF62B46EAD0              		 offset:299ead0                       
+// class USceneComponent*         InParent                       (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// struct FName                   InSocketName                   (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75A84B580              		 offset:e4b580                        
 
-void UAkGameplayStatics::STATIC_UnloadBankByName(const struct FString& BankName)
+bool UAkSoundVolumeComponentBase::SnapTo(class USceneComponent* InParent, const struct FName& InSocketName)
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.UnloadBankByName"));
-
-	UAkGameplayStatics_UnloadBankByName_Params params;
-	params.BankName = BankName;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AkAudio.AkGameplayStatics.UnloadBank
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UAkAudioBank*            Bank                           (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 BankName                       (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF62B46EA00              		 offset:299ea00                       
-
-void UAkGameplayStatics::STATIC_UnloadBank(class UAkAudioBank* Bank, const struct FString& BankName)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.UnloadBank"));
-
-	UAkGameplayStatics_UnloadBank_Params params;
-	params.Bank = Bank;
-	params.BankName = BankName;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AkAudio.AkGameplayStatics.StopProfilerCapture
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF62B46E9E0              		 offset:299e9e0                       
-
-void UAkGameplayStatics::STATIC_StopProfilerCapture()
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.StopProfilerCapture"));
-
-	UAkGameplayStatics_StopProfilerCapture_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AkAudio.AkGameplayStatics.StopOutputCapture
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF62B46E940              		 offset:299e940                       
-
-void UAkGameplayStatics::STATIC_StopOutputCapture()
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.StopOutputCapture"));
-
-	UAkGameplayStatics_StopOutputCapture_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AkAudio.AkGameplayStatics.StopAllAmbientSounds
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46E8B0              		 offset:299e8b0                       
-
-void UAkGameplayStatics::STATIC_StopAllAmbientSounds(class UObject* WorldContextObject)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.StopAllAmbientSounds"));
-
-	UAkGameplayStatics_StopAllAmbientSounds_Params params;
-	params.WorldContextObject = WorldContextObject;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AkAudio.AkGameplayStatics.StopAll
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF62B46E890              		 offset:299e890                       
-
-void UAkGameplayStatics::STATIC_StopAll()
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.StopAll"));
-
-	UAkGameplayStatics_StopAll_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AkAudio.AkGameplayStatics.StopActor
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46E820              		 offset:299e820                       
-
-void UAkGameplayStatics::STATIC_StopActor(class AActor* Actor)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.StopActor"));
-
-	UAkGameplayStatics_StopActor_Params params;
-	params.Actor = Actor;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AkAudio.AkGameplayStatics.StartProfilerCapture
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// struct FString                 Filename                       (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF62B46E770              		 offset:299e770                       
-
-void UAkGameplayStatics::STATIC_StartProfilerCapture(const struct FString& Filename)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.StartProfilerCapture"));
-
-	UAkGameplayStatics_StartProfilerCapture_Params params;
-	params.Filename = Filename;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AkAudio.AkGameplayStatics.StartOutputCapture
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// struct FString                 Filename                       (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF62B46E6E0              		 offset:299e6e0                       
-
-void UAkGameplayStatics::STATIC_StartOutputCapture(const struct FString& Filename)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.StartOutputCapture"));
-
-	UAkGameplayStatics_StartOutputCapture_Params params;
-	params.Filename = Filename;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AkAudio.AkGameplayStatics.StartAllAmbientSounds
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46E650              		 offset:299e650                       
-
-void UAkGameplayStatics::STATIC_StartAllAmbientSounds(class UObject* WorldContextObject)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.StartAllAmbientSounds"));
-
-	UAkGameplayStatics_StartAllAmbientSounds_Params params;
-	params.WorldContextObject = WorldContextObject;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AkAudio.AkGameplayStatics.SpawnAkComponentAtLocation
-// (Final, BlueprintCosmetic, Native, Static, Public, HasDefaults, BlueprintCallable)
-// Parameters:
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
-// class UAkAudioEvent*           AkEvent                        (Parm, ZeroConstructor, IsPlainOldData)
-// struct FVector                 Location                       (Parm, IsPlainOldData)
-// struct FRotator                Orientation                    (Parm, IsPlainOldData)
-// bool                           AutoPost                       (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 EventName                      (Parm, ZeroConstructor)
-// bool                           AutoDestroy                    (Parm, ZeroConstructor, IsPlainOldData)
-// class UAkComponent*            ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46E420              		 offset:299e420                       
-
-class UAkComponent* UAkGameplayStatics::STATIC_SpawnAkComponentAtLocation(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, const struct FVector& Location, const struct FRotator& Orientation, bool AutoPost, const struct FString& EventName, bool AutoDestroy)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.SpawnAkComponentAtLocation"));
-
-	UAkGameplayStatics_SpawnAkComponentAtLocation_Params params;
-	params.WorldContextObject = WorldContextObject;
-	params.AkEvent = AkEvent;
-	params.Location = Location;
-	params.Orientation = Orientation;
-	params.AutoPost = AutoPost;
-	params.EventName = EventName;
-	params.AutoDestroy = AutoDestroy;
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.SnapTo"));
+
+	UAkSoundVolumeComponentBase_SnapTo_Params params;
+	params.InParent = InParent;
+	params.InSocketName = InSocketName;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -907,25 +652,21 @@ class UAkComponent* UAkGameplayStatics::STATIC_SpawnAkComponentAtLocation(class 
 }
 
 
-// Function AkAudio.AkGameplayStatics.SetSwitch
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Function Engine.SceneComponent.SetWorldScale3D
+// (Final, Native, Public, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FName                   SwitchGroup                    (Parm, ZeroConstructor, IsPlainOldData)
-// struct FName                   SwitchState                    (Parm, ZeroConstructor, IsPlainOldData)
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46E330              		 offset:299e330                       
+// struct FVector                 NewScale                       (Parm, IsPlainOldData)
+// FunctionAddress:0x00007FF75D498FE0              		 offset:3a98fe0                       
 
-void UAkGameplayStatics::STATIC_SetSwitch(const struct FName& SwitchGroup, const struct FName& SwitchState, class AActor* Actor)
+void UAkSoundVolumeComponentBase::SetWorldScale3D(const struct FVector& NewScale)
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.SetSwitch"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.SetWorldScale3D"));
 
-	UAkGameplayStatics_SetSwitch_Params params;
-	params.SwitchGroup = SwitchGroup;
-	params.SwitchState = SwitchState;
-	params.Actor = Actor;
+	UAkSoundVolumeComponentBase_SetWorldScale3D_Params params;
+	params.NewScale = NewScale;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -936,23 +677,23 @@ void UAkGameplayStatics::STATIC_SetSwitch(const struct FName& SwitchGroup, const
 }
 
 
-// Function AkAudio.AkGameplayStatics.SetState
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Function Engine.SceneComponent.SetVisibility
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// struct FName                   StateGroup                     (Parm, ZeroConstructor, IsPlainOldData)
-// struct FName                   State                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46E060              		 offset:299e060                       
+// bool                           bNewVisibility                 (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bPropagateToChildren           (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75A116BE0              		 offset:716be0                        
 
-void UAkGameplayStatics::STATIC_SetState(const struct FName& StateGroup, const struct FName& State)
+void UAkSoundVolumeComponentBase::SetVisibility(bool bNewVisibility, bool bPropagateToChildren)
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.SetState"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.SetVisibility"));
 
-	UAkGameplayStatics_SetState_Params params;
-	params.StateGroup = StateGroup;
-	params.State = State;
+	UAkSoundVolumeComponentBase_SetVisibility_Params params;
+	params.bNewVisibility = bNewVisibility;
+	params.bPropagateToChildren = bPropagateToChildren;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -963,27 +704,21 @@ void UAkGameplayStatics::STATIC_SetState(const struct FName& StateGroup, const s
 }
 
 
-// Function AkAudio.AkGameplayStatics.SetRTPCValue
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Function Engine.SceneComponent.SetRelativeScale3D
+// (Native, Public, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FName                   RTPC                           (Parm, ZeroConstructor, IsPlainOldData)
-// float                          Value                          (Parm, ZeroConstructor, IsPlainOldData)
-// int                            InterpolationTimeMs            (Parm, ZeroConstructor, IsPlainOldData)
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46DF20              		 offset:299df20                       
+// struct FVector                 NewScale3D                     (Parm, IsPlainOldData)
+// FunctionAddress:0x00007FF759B47BE0              		 offset:147be0                        
 
-void UAkGameplayStatics::STATIC_SetRTPCValue(const struct FName& RTPC, float Value, int InterpolationTimeMs, class AActor* Actor)
+void UAkSoundVolumeComponentBase::SetRelativeScale3D(const struct FVector& NewScale3D)
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.SetRTPCValue"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.SetRelativeScale3D"));
 
-	UAkGameplayStatics_SetRTPCValue_Params params;
-	params.RTPC = RTPC;
-	params.Value = Value;
-	params.InterpolationTimeMs = InterpolationTimeMs;
-	params.Actor = Actor;
+	UAkSoundVolumeComponentBase_SetRelativeScale3D_Params params;
+	params.NewScale3D = NewScale3D;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -994,23 +729,21 @@ void UAkGameplayStatics::STATIC_SetRTPCValue(const struct FName& RTPC, float Val
 }
 
 
-// Function AkAudio.AkGameplayStatics.SetOutputBusVolume
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Function Engine.SceneComponent.SetIsAttachmentReplicated
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// float                          BusVolume                      (Parm, ZeroConstructor, IsPlainOldData)
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46DCF0              		 offset:299dcf0                       
+// bool                           ShouldReplicate                (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75DC15A60              		 offset:4215a60                       
 
-void UAkGameplayStatics::STATIC_SetOutputBusVolume(float BusVolume, class AActor* Actor)
+void UAkSoundVolumeComponentBase::SetIsAttachmentReplicated(bool ShouldReplicate)
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.SetOutputBusVolume"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.SetIsAttachmentReplicated"));
 
-	UAkGameplayStatics_SetOutputBusVolume_Params params;
-	params.BusVolume = BusVolume;
-	params.Actor = Actor;
+	UAkSoundVolumeComponentBase_SetIsAttachmentReplicated_Params params;
+	params.ShouldReplicate = ShouldReplicate;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -1021,23 +754,21 @@ void UAkGameplayStatics::STATIC_SetOutputBusVolume(float BusVolume, class AActor
 }
 
 
-// Function AkAudio.AkGameplayStatics.PostTrigger
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Function Engine.SceneComponent.SetIsAttachmentReferenceReplicated
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// struct FName                   Trigger                        (Parm, ZeroConstructor, IsPlainOldData)
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46DA30              		 offset:299da30                       
+// bool                           ShouldReplicate                (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75EB98A10              		 offset:5198a10                       
 
-void UAkGameplayStatics::STATIC_PostTrigger(const struct FName& Trigger, class AActor* Actor)
+void UAkSoundVolumeComponentBase::SetIsAttachmentReferenceReplicated(bool ShouldReplicate)
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.PostTrigger"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.SetIsAttachmentReferenceReplicated"));
 
-	UAkGameplayStatics_PostTrigger_Params params;
-	params.Trigger = Trigger;
-	params.Actor = Actor;
+	UAkSoundVolumeComponentBase_SetIsAttachmentReferenceReplicated_Params params;
+	params.ShouldReplicate = ShouldReplicate;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -1048,25 +779,23 @@ void UAkGameplayStatics::STATIC_PostTrigger(const struct FName& Trigger, class A
 }
 
 
-// Function AkAudio.AkGameplayStatics.PostEventByName
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Function Engine.SceneComponent.SetHiddenInGame
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// struct FString                 EventName                      (Parm, ZeroConstructor)
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bStopWhenAttachedToDestroyed   (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46D810              		 offset:299d810                       
+// bool                           NewHidden                      (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bPropagateToChildren           (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75A162FE0              		 offset:762fe0                        
 
-void UAkGameplayStatics::STATIC_PostEventByName(const struct FString& EventName, class AActor* Actor, bool bStopWhenAttachedToDestroyed)
+void UAkSoundVolumeComponentBase::SetHiddenInGame(bool NewHidden, bool bPropagateToChildren)
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.PostEventByName"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.SetHiddenInGame"));
 
-	UAkGameplayStatics_PostEventByName_Params params;
-	params.EventName = EventName;
-	params.Actor = Actor;
-	params.bStopWhenAttachedToDestroyed = bStopWhenAttachedToDestroyed;
+	UAkSoundVolumeComponentBase_SetHiddenInGame_Params params;
+	params.NewHidden = NewHidden;
+	params.bPropagateToChildren = bPropagateToChildren;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -1077,30 +806,1248 @@ void UAkGameplayStatics::STATIC_PostEventByName(const struct FString& EventName,
 }
 
 
-// Function AkAudio.AkGameplayStatics.PostEventAttached
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Function Engine.SceneComponent.SetAbsolute
+// (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UAkAudioEvent*           AkEvent                        (Parm, ZeroConstructor, IsPlainOldData)
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// struct FName                   AttachPointName                (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bStopWhenAttachedToDestroyed   (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 EventName                      (Parm, ZeroConstructor)
+// bool                           bNewAbsoluteLocation           (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bNewAbsoluteRotation           (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bNewAbsoluteScale              (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75B6FC600              		 offset:1cfc600                       
+
+void UAkSoundVolumeComponentBase::SetAbsolute(bool bNewAbsoluteLocation, bool bNewAbsoluteRotation, bool bNewAbsoluteScale)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.SetAbsolute"));
+
+	UAkSoundVolumeComponentBase_SetAbsolute_Params params;
+	params.bNewAbsoluteLocation = bNewAbsoluteLocation;
+	params.bNewAbsoluteRotation = bNewAbsoluteRotation;
+	params.bNewAbsoluteScale = bNewAbsoluteScale;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.SceneComponent.ResetRelativeTransform
+// (Final, Native, Public, BlueprintCallable)
+// FunctionAddress:0x00007FF75A7EA190              		 offset:dea190                        
+
+void UAkSoundVolumeComponentBase::ResetRelativeTransform()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.ResetRelativeTransform"));
+
+	UAkSoundVolumeComponentBase_ResetRelativeTransform_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.SceneComponent.OnRep_Visibility
+// (Final, Native, Private)
+// Parameters:
+// bool                           OldValue                       (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75ADFC070              		 offset:13fc070                       
+
+void UAkSoundVolumeComponentBase::OnRep_Visibility(bool OldValue)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.OnRep_Visibility"));
+
+	UAkSoundVolumeComponentBase_OnRep_Visibility_Params params;
+	params.OldValue = OldValue;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.SceneComponent.OnRep_Transform
+// (Final, Native, Private)
+// FunctionAddress:0x00007FF75D53BDF0              		 offset:3b3bdf0                       
+
+void UAkSoundVolumeComponentBase::OnRep_Transform()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.OnRep_Transform"));
+
+	UAkSoundVolumeComponentBase_OnRep_Transform_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.SceneComponent.OnRep_AttachSocketName
+// (Final, Native, Private)
+// FunctionAddress:0x00007FF75B01D1F0              		 offset:161d1f0                       
+
+void UAkSoundVolumeComponentBase::OnRep_AttachSocketName()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.OnRep_AttachSocketName"));
+
+	UAkSoundVolumeComponentBase_OnRep_AttachSocketName_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.SceneComponent.OnRep_AttachParent
+// (Final, Native, Private)
+// FunctionAddress:0x00007FF75B01D1F0              		 offset:161d1f0                       
+
+void UAkSoundVolumeComponentBase::OnRep_AttachParent()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.OnRep_AttachParent"));
+
+	UAkSoundVolumeComponentBase_OnRep_AttachParent_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.SceneComponent.OnRep_AttachChildren
+// (Final, Native, Private)
+// FunctionAddress:0x00007FF75B6A8320              		 offset:1ca8320                       
+
+void UAkSoundVolumeComponentBase::OnRep_AttachChildren()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.OnRep_AttachChildren"));
+
+	UAkSoundVolumeComponentBase_OnRep_AttachChildren_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.SceneComponent.K2_SetWorldTransform
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// struct FTransform              NewTransform                   (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+// bool                           bSweep                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FHitResult              SweepHitResult                 (Parm, OutParm, IsPlainOldData)
+// bool                           bTeleport                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75D15DFF0              		 offset:375dff0                       
+
+void UAkSoundVolumeComponentBase::K2_SetWorldTransform(const struct FTransform& NewTransform, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.K2_SetWorldTransform"));
+
+	UAkSoundVolumeComponentBase_K2_SetWorldTransform_Params params;
+	params.NewTransform = NewTransform;
+	params.bSweep = bSweep;
+	params.bTeleport = bTeleport;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (SweepHitResult != nullptr)
+		*SweepHitResult = params.SweepHitResult;
+}
+
+
+// Function Engine.SceneComponent.K2_SetWorldRotation
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// struct FRotator                NewRotation                    (Parm, IsPlainOldData)
+// bool                           bSweep                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FHitResult              SweepHitResult                 (Parm, OutParm, IsPlainOldData)
+// bool                           bTeleport                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75B0E2220              		 offset:16e2220                       
+
+void UAkSoundVolumeComponentBase::K2_SetWorldRotation(const struct FRotator& NewRotation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.K2_SetWorldRotation"));
+
+	UAkSoundVolumeComponentBase_K2_SetWorldRotation_Params params;
+	params.NewRotation = NewRotation;
+	params.bSweep = bSweep;
+	params.bTeleport = bTeleport;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (SweepHitResult != nullptr)
+		*SweepHitResult = params.SweepHitResult;
+}
+
+
+// Function Engine.SceneComponent.K2_SetWorldLocationAndRotation
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// struct FVector                 NewLocation                    (Parm, IsPlainOldData)
+// struct FRotator                NewRotation                    (Parm, IsPlainOldData)
+// bool                           bSweep                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FHitResult              SweepHitResult                 (Parm, OutParm, IsPlainOldData)
+// bool                           bTeleport                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75B365B50              		 offset:1965b50                       
+
+void UAkSoundVolumeComponentBase::K2_SetWorldLocationAndRotation(const struct FVector& NewLocation, const struct FRotator& NewRotation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.K2_SetWorldLocationAndRotation"));
+
+	UAkSoundVolumeComponentBase_K2_SetWorldLocationAndRotation_Params params;
+	params.NewLocation = NewLocation;
+	params.NewRotation = NewRotation;
+	params.bSweep = bSweep;
+	params.bTeleport = bTeleport;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (SweepHitResult != nullptr)
+		*SweepHitResult = params.SweepHitResult;
+}
+
+
+// Function Engine.SceneComponent.K2_SetWorldLocation
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// struct FVector                 NewLocation                    (Parm, IsPlainOldData)
+// bool                           bSweep                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FHitResult              SweepHitResult                 (Parm, OutParm, IsPlainOldData)
+// bool                           bTeleport                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75EE7D140              		 offset:547d140                       
+
+void UAkSoundVolumeComponentBase::K2_SetWorldLocation(const struct FVector& NewLocation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.K2_SetWorldLocation"));
+
+	UAkSoundVolumeComponentBase_K2_SetWorldLocation_Params params;
+	params.NewLocation = NewLocation;
+	params.bSweep = bSweep;
+	params.bTeleport = bTeleport;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (SweepHitResult != nullptr)
+		*SweepHitResult = params.SweepHitResult;
+}
+
+
+// Function Engine.SceneComponent.K2_SetRelativeTransform
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// struct FTransform              NewTransform                   (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+// bool                           bSweep                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FHitResult              SweepHitResult                 (Parm, OutParm, IsPlainOldData)
+// bool                           bTeleport                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75D85A0A0              		 offset:3e5a0a0                       
+
+void UAkSoundVolumeComponentBase::K2_SetRelativeTransform(const struct FTransform& NewTransform, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.K2_SetRelativeTransform"));
+
+	UAkSoundVolumeComponentBase_K2_SetRelativeTransform_Params params;
+	params.NewTransform = NewTransform;
+	params.bSweep = bSweep;
+	params.bTeleport = bTeleport;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (SweepHitResult != nullptr)
+		*SweepHitResult = params.SweepHitResult;
+}
+
+
+// Function Engine.SceneComponent.K2_SetRelativeRotation
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// struct FRotator                NewRotation                    (Parm, IsPlainOldData)
+// bool                           bSweep                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FHitResult              SweepHitResult                 (Parm, OutParm, IsPlainOldData)
+// bool                           bTeleport                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75D5EC710              		 offset:3bec710                       
+
+void UAkSoundVolumeComponentBase::K2_SetRelativeRotation(const struct FRotator& NewRotation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.K2_SetRelativeRotation"));
+
+	UAkSoundVolumeComponentBase_K2_SetRelativeRotation_Params params;
+	params.NewRotation = NewRotation;
+	params.bSweep = bSweep;
+	params.bTeleport = bTeleport;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (SweepHitResult != nullptr)
+		*SweepHitResult = params.SweepHitResult;
+}
+
+
+// Function Engine.SceneComponent.K2_SetRelativeLocationAndRotation
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// struct FVector                 NewLocation                    (Parm, IsPlainOldData)
+// struct FRotator                NewRotation                    (Parm, IsPlainOldData)
+// bool                           bSweep                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FHitResult              SweepHitResult                 (Parm, OutParm, IsPlainOldData)
+// bool                           bTeleport                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75BBCD2A0              		 offset:21cd2a0                       
+
+void UAkSoundVolumeComponentBase::K2_SetRelativeLocationAndRotation(const struct FVector& NewLocation, const struct FRotator& NewRotation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.K2_SetRelativeLocationAndRotation"));
+
+	UAkSoundVolumeComponentBase_K2_SetRelativeLocationAndRotation_Params params;
+	params.NewLocation = NewLocation;
+	params.NewRotation = NewRotation;
+	params.bSweep = bSweep;
+	params.bTeleport = bTeleport;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (SweepHitResult != nullptr)
+		*SweepHitResult = params.SweepHitResult;
+}
+
+
+// Function Engine.SceneComponent.K2_SetRelativeLocation
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// struct FVector                 NewLocation                    (Parm, IsPlainOldData)
+// bool                           bSweep                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FHitResult              SweepHitResult                 (Parm, OutParm, IsPlainOldData)
+// bool                           bTeleport                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75BB81720              		 offset:2181720                       
+
+void UAkSoundVolumeComponentBase::K2_SetRelativeLocation(const struct FVector& NewLocation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.K2_SetRelativeLocation"));
+
+	UAkSoundVolumeComponentBase_K2_SetRelativeLocation_Params params;
+	params.NewLocation = NewLocation;
+	params.bSweep = bSweep;
+	params.bTeleport = bTeleport;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (SweepHitResult != nullptr)
+		*SweepHitResult = params.SweepHitResult;
+}
+
+
+// Function Engine.SceneComponent.K2_GetComponentToWorld
+// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FTransform              ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75E245280              		 offset:4845280                       
+
+struct FTransform UAkSoundVolumeComponentBase::K2_GetComponentToWorld()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.K2_GetComponentToWorld"));
+
+	UAkSoundVolumeComponentBase_K2_GetComponentToWorld_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.SceneComponent.K2_GetComponentScale
+// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FVector                 ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75A0FE6D0              		 offset:6fe6d0                        
+
+struct FVector UAkSoundVolumeComponentBase::K2_GetComponentScale()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.K2_GetComponentScale"));
+
+	UAkSoundVolumeComponentBase_K2_GetComponentScale_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.SceneComponent.K2_GetComponentRotation
+// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FRotator                ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75CAB6CD0              		 offset:30b6cd0                       
+
+struct FRotator UAkSoundVolumeComponentBase::K2_GetComponentRotation()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.K2_GetComponentRotation"));
+
+	UAkSoundVolumeComponentBase_K2_GetComponentRotation_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.SceneComponent.K2_GetComponentLocation
+// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FVector                 ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75D712F00              		 offset:3d12f00                       
+
+struct FVector UAkSoundVolumeComponentBase::K2_GetComponentLocation()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.K2_GetComponentLocation"));
+
+	UAkSoundVolumeComponentBase_K2_GetComponentLocation_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.SceneComponent.K2_DetachFromComponent
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// EDetachmentRule                LocationRule                   (Parm, ZeroConstructor, IsPlainOldData)
+// EDetachmentRule                RotationRule                   (Parm, ZeroConstructor, IsPlainOldData)
+// EDetachmentRule                ScaleRule                      (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bCallModify                    (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75B4C4D70              		 offset:1ac4d70                       
+
+void UAkSoundVolumeComponentBase::K2_DetachFromComponent(EDetachmentRule LocationRule, EDetachmentRule RotationRule, EDetachmentRule ScaleRule, bool bCallModify)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.K2_DetachFromComponent"));
+
+	UAkSoundVolumeComponentBase_K2_DetachFromComponent_Params params;
+	params.LocationRule = LocationRule;
+	params.RotationRule = RotationRule;
+	params.ScaleRule = ScaleRule;
+	params.bCallModify = bCallModify;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.SceneComponent.K2_AttachToComponent
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class USceneComponent*         Parent                         (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// struct FName                   SocketName                     (Parm, ZeroConstructor, IsPlainOldData)
+// EAttachmentRule                LocationRule                   (Parm, ZeroConstructor, IsPlainOldData)
+// EAttachmentRule                RotationRule                   (Parm, ZeroConstructor, IsPlainOldData)
+// EAttachmentRule                ScaleRule                      (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bWeldSimulatedBodies           (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75BB4F3A0              		 offset:214f3a0                       
+
+bool UAkSoundVolumeComponentBase::K2_AttachToComponent(class USceneComponent* Parent, const struct FName& SocketName, EAttachmentRule LocationRule, EAttachmentRule RotationRule, EAttachmentRule ScaleRule, bool bWeldSimulatedBodies)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.K2_AttachToComponent"));
+
+	UAkSoundVolumeComponentBase_K2_AttachToComponent_Params params;
+	params.Parent = Parent;
+	params.SocketName = SocketName;
+	params.LocationRule = LocationRule;
+	params.RotationRule = RotationRule;
+	params.ScaleRule = ScaleRule;
+	params.bWeldSimulatedBodies = bWeldSimulatedBodies;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.SceneComponent.K2_AttachTo
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// class USceneComponent*         InParent                       (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
+// struct FName                   InSocketName                   (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<EAttachLocation>   AttachType                     (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bWeldSimulatedBodies           (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75CF53BC0              		 offset:3553bc0                       
+
+bool UAkSoundVolumeComponentBase::K2_AttachTo(class USceneComponent* InParent, const struct FName& InSocketName, TEnumAsByte<EAttachLocation> AttachType, bool bWeldSimulatedBodies)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.K2_AttachTo"));
+
+	UAkSoundVolumeComponentBase_K2_AttachTo_Params params;
+	params.InParent = InParent;
+	params.InSocketName = InSocketName;
+	params.AttachType = AttachType;
+	params.bWeldSimulatedBodies = bWeldSimulatedBodies;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.SceneComponent.K2_AddWorldTransform
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// struct FTransform              DeltaTransform                 (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+// bool                           bSweep                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FHitResult              SweepHitResult                 (Parm, OutParm, IsPlainOldData)
+// bool                           bTeleport                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75B51EFF0              		 offset:1b1eff0                       
+
+void UAkSoundVolumeComponentBase::K2_AddWorldTransform(const struct FTransform& DeltaTransform, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.K2_AddWorldTransform"));
+
+	UAkSoundVolumeComponentBase_K2_AddWorldTransform_Params params;
+	params.DeltaTransform = DeltaTransform;
+	params.bSweep = bSweep;
+	params.bTeleport = bTeleport;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (SweepHitResult != nullptr)
+		*SweepHitResult = params.SweepHitResult;
+}
+
+
+// Function Engine.SceneComponent.K2_AddWorldRotation
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// struct FRotator                DeltaRotation                  (Parm, IsPlainOldData)
+// bool                           bSweep                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FHitResult              SweepHitResult                 (Parm, OutParm, IsPlainOldData)
+// bool                           bTeleport                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75D46E7C0              		 offset:3a6e7c0                       
+
+void UAkSoundVolumeComponentBase::K2_AddWorldRotation(const struct FRotator& DeltaRotation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.K2_AddWorldRotation"));
+
+	UAkSoundVolumeComponentBase_K2_AddWorldRotation_Params params;
+	params.DeltaRotation = DeltaRotation;
+	params.bSweep = bSweep;
+	params.bTeleport = bTeleport;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (SweepHitResult != nullptr)
+		*SweepHitResult = params.SweepHitResult;
+}
+
+
+// Function Engine.SceneComponent.K2_AddWorldOffset
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// struct FVector                 DeltaLocation                  (Parm, IsPlainOldData)
+// bool                           bSweep                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FHitResult              SweepHitResult                 (Parm, OutParm, IsPlainOldData)
+// bool                           bTeleport                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75D39C550              		 offset:399c550                       
+
+void UAkSoundVolumeComponentBase::K2_AddWorldOffset(const struct FVector& DeltaLocation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.K2_AddWorldOffset"));
+
+	UAkSoundVolumeComponentBase_K2_AddWorldOffset_Params params;
+	params.DeltaLocation = DeltaLocation;
+	params.bSweep = bSweep;
+	params.bTeleport = bTeleport;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (SweepHitResult != nullptr)
+		*SweepHitResult = params.SweepHitResult;
+}
+
+
+// Function Engine.SceneComponent.K2_AddRelativeRotation
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// struct FRotator                DeltaRotation                  (Parm, IsPlainOldData)
+// bool                           bSweep                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FHitResult              SweepHitResult                 (Parm, OutParm, IsPlainOldData)
+// bool                           bTeleport                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF759C632A0              		 offset:2632a0                        
+
+void UAkSoundVolumeComponentBase::K2_AddRelativeRotation(const struct FRotator& DeltaRotation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.K2_AddRelativeRotation"));
+
+	UAkSoundVolumeComponentBase_K2_AddRelativeRotation_Params params;
+	params.DeltaRotation = DeltaRotation;
+	params.bSweep = bSweep;
+	params.bTeleport = bTeleport;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (SweepHitResult != nullptr)
+		*SweepHitResult = params.SweepHitResult;
+}
+
+
+// Function Engine.SceneComponent.K2_AddRelativeLocation
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// struct FVector                 DeltaLocation                  (Parm, IsPlainOldData)
+// bool                           bSweep                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FHitResult              SweepHitResult                 (Parm, OutParm, IsPlainOldData)
+// bool                           bTeleport                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75DE323F0              		 offset:44323f0                       
+
+void UAkSoundVolumeComponentBase::K2_AddRelativeLocation(const struct FVector& DeltaLocation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.K2_AddRelativeLocation"));
+
+	UAkSoundVolumeComponentBase_K2_AddRelativeLocation_Params params;
+	params.DeltaLocation = DeltaLocation;
+	params.bSweep = bSweep;
+	params.bTeleport = bTeleport;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (SweepHitResult != nullptr)
+		*SweepHitResult = params.SweepHitResult;
+}
+
+
+// Function Engine.SceneComponent.K2_AddLocalTransform
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// struct FTransform              DeltaTransform                 (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+// bool                           bSweep                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FHitResult              SweepHitResult                 (Parm, OutParm, IsPlainOldData)
+// bool                           bTeleport                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75D928C70              		 offset:3f28c70                       
+
+void UAkSoundVolumeComponentBase::K2_AddLocalTransform(const struct FTransform& DeltaTransform, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.K2_AddLocalTransform"));
+
+	UAkSoundVolumeComponentBase_K2_AddLocalTransform_Params params;
+	params.DeltaTransform = DeltaTransform;
+	params.bSweep = bSweep;
+	params.bTeleport = bTeleport;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (SweepHitResult != nullptr)
+		*SweepHitResult = params.SweepHitResult;
+}
+
+
+// Function Engine.SceneComponent.K2_AddLocalRotation
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// struct FRotator                DeltaRotation                  (Parm, IsPlainOldData)
+// bool                           bSweep                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FHitResult              SweepHitResult                 (Parm, OutParm, IsPlainOldData)
+// bool                           bTeleport                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75AF7E1C0              		 offset:157e1c0                       
+
+void UAkSoundVolumeComponentBase::K2_AddLocalRotation(const struct FRotator& DeltaRotation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.K2_AddLocalRotation"));
+
+	UAkSoundVolumeComponentBase_K2_AddLocalRotation_Params params;
+	params.DeltaRotation = DeltaRotation;
+	params.bSweep = bSweep;
+	params.bTeleport = bTeleport;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (SweepHitResult != nullptr)
+		*SweepHitResult = params.SweepHitResult;
+}
+
+
+// Function Engine.SceneComponent.K2_AddLocalOffset
+// (Final, Native, Public, HasOutParms, HasDefaults, BlueprintCallable)
+// Parameters:
+// struct FVector                 DeltaLocation                  (Parm, IsPlainOldData)
+// bool                           bSweep                         (Parm, ZeroConstructor, IsPlainOldData)
+// struct FHitResult              SweepHitResult                 (Parm, OutParm, IsPlainOldData)
+// bool                           bTeleport                      (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75A0FE520              		 offset:6fe520                        
+
+void UAkSoundVolumeComponentBase::K2_AddLocalOffset(const struct FVector& DeltaLocation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.K2_AddLocalOffset"));
+
+	UAkSoundVolumeComponentBase_K2_AddLocalOffset_Params params;
+	params.DeltaLocation = DeltaLocation;
+	params.bSweep = bSweep;
+	params.bTeleport = bTeleport;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (SweepHitResult != nullptr)
+		*SweepHitResult = params.SweepHitResult;
+}
+
+
+// Function Engine.SceneComponent.IsVisible
+// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75D1F1B60              		 offset:37f1b60                       
+
+bool UAkSoundVolumeComponentBase::IsVisible()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.IsVisible"));
+
+	UAkSoundVolumeComponentBase_IsVisible_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.SceneComponent.IsSimulatingPhysics
+// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FName                   BoneName                       (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75B0B03B0              		 offset:16b03b0                       
+
+bool UAkSoundVolumeComponentBase::IsSimulatingPhysics(const struct FName& BoneName)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.IsSimulatingPhysics"));
+
+	UAkSoundVolumeComponentBase_IsSimulatingPhysics_Params params;
+	params.BoneName = BoneName;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.SceneComponent.IsAnySimulatingPhysics
+// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75DE323C0              		 offset:44323c0                       
+
+bool UAkSoundVolumeComponentBase::IsAnySimulatingPhysics()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.IsAnySimulatingPhysics"));
+
+	UAkSoundVolumeComponentBase_IsAnySimulatingPhysics_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.SceneComponent.GetUpVector
+// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FVector                 ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75B2B75C0              		 offset:18b75c0                       
+
+struct FVector UAkSoundVolumeComponentBase::GetUpVector()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.GetUpVector"));
+
+	UAkSoundVolumeComponentBase_GetUpVector_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.SceneComponent.GetSocketTransform
+// (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FName                   InSocketName                   (Parm, ZeroConstructor, IsPlainOldData)
+// TEnumAsByte<ERelativeTransformSpace> TransformSpace                 (Parm, ZeroConstructor, IsPlainOldData)
+// struct FTransform              ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75AF97830              		 offset:1597830                       
+
+struct FTransform UAkSoundVolumeComponentBase::GetSocketTransform(const struct FName& InSocketName, TEnumAsByte<ERelativeTransformSpace> TransformSpace)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.GetSocketTransform"));
+
+	UAkSoundVolumeComponentBase_GetSocketTransform_Params params;
+	params.InSocketName = InSocketName;
+	params.TransformSpace = TransformSpace;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.SceneComponent.GetSocketRotation
+// (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FName                   InSocketName                   (Parm, ZeroConstructor, IsPlainOldData)
+// struct FRotator                ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75D606C80              		 offset:3c06c80                       
+
+struct FRotator UAkSoundVolumeComponentBase::GetSocketRotation(const struct FName& InSocketName)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.GetSocketRotation"));
+
+	UAkSoundVolumeComponentBase_GetSocketRotation_Params params;
+	params.InSocketName = InSocketName;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.SceneComponent.GetSocketQuaternion
+// (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FName                   InSocketName                   (Parm, ZeroConstructor, IsPlainOldData)
+// struct FQuat                   ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75A18ECE0              		 offset:78ece0                        
+
+struct FQuat UAkSoundVolumeComponentBase::GetSocketQuaternion(const struct FName& InSocketName)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.GetSocketQuaternion"));
+
+	UAkSoundVolumeComponentBase_GetSocketQuaternion_Params params;
+	params.InSocketName = InSocketName;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.SceneComponent.GetSocketLocation
+// (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FName                   InSocketName                   (Parm, ZeroConstructor, IsPlainOldData)
+// struct FVector                 ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75E767150              		 offset:4d67150                       
+
+struct FVector UAkSoundVolumeComponentBase::GetSocketLocation(const struct FName& InSocketName)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.GetSocketLocation"));
+
+	UAkSoundVolumeComponentBase_GetSocketLocation_Params params;
+	params.InSocketName = InSocketName;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.SceneComponent.GetRightVector
+// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FVector                 ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75DEF42A0              		 offset:44f42a0                       
+
+struct FVector UAkSoundVolumeComponentBase::GetRightVector()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.GetRightVector"));
+
+	UAkSoundVolumeComponentBase_GetRightVector_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.SceneComponent.GetRelativeTransform
+// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FTransform              ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75BA24D90              		 offset:2024d90                       
+
+struct FTransform UAkSoundVolumeComponentBase::GetRelativeTransform()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.GetRelativeTransform"));
+
+	UAkSoundVolumeComponentBase_GetRelativeTransform_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.SceneComponent.GetPhysicsVolume
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// class APhysicsVolume*          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75E873FA0              		 offset:4e73fa0                       
+
+class APhysicsVolume* UAkSoundVolumeComponentBase::GetPhysicsVolume()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.GetPhysicsVolume"));
+
+	UAkSoundVolumeComponentBase_GetPhysicsVolume_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.SceneComponent.GetParentComponents
+// (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// TArray<class USceneComponent*> Parents                        (Parm, OutParm, ZeroConstructor)
+// FunctionAddress:0x00007FF759E40000              		 offset:440000                        
+
+void UAkSoundVolumeComponentBase::GetParentComponents(TArray<class USceneComponent*>* Parents)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.GetParentComponents"));
+
+	UAkSoundVolumeComponentBase_GetParentComponents_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (Parents != nullptr)
+		*Parents = params.Parents;
+}
+
+
+// Function Engine.SceneComponent.GetNumChildrenComponents
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46D620              		 offset:299d620                       
+// FunctionAddress:0x00007FF759AB2400              		 offset:b2400                         
 
-int UAkGameplayStatics::STATIC_PostEventAttached(class UAkAudioEvent* AkEvent, class AActor* Actor, const struct FName& AttachPointName, bool bStopWhenAttachedToDestroyed, const struct FString& EventName)
+int UAkSoundVolumeComponentBase::GetNumChildrenComponents()
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.PostEventAttached"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.GetNumChildrenComponents"));
 
-	UAkGameplayStatics_PostEventAttached_Params params;
-	params.AkEvent = AkEvent;
-	params.Actor = Actor;
-	params.AttachPointName = AttachPointName;
-	params.bStopWhenAttachedToDestroyed = bStopWhenAttachedToDestroyed;
-	params.EventName = EventName;
+	UAkSoundVolumeComponentBase_GetNumChildrenComponents_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -1113,65 +2060,20 @@ int UAkGameplayStatics::STATIC_PostEventAttached(class UAkAudioEvent* AkEvent, c
 }
 
 
-// Function AkAudio.AkGameplayStatics.PostEventAtLocationByName
-// (Final, BlueprintCosmetic, Native, Static, Public, HasDefaults, BlueprintCallable)
+// Function Engine.SceneComponent.GetForwardVector
+// (Final, Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FString                 EventName                      (Parm, ZeroConstructor)
-// struct FVector                 Location                       (Parm, IsPlainOldData)
-// struct FRotator                Orientation                    (Parm, IsPlainOldData)
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           UseReverb                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46D470              		 offset:299d470                       
+// struct FVector                 ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75D2338C0              		 offset:38338c0                       
 
-void UAkGameplayStatics::STATIC_PostEventAtLocationByName(const struct FString& EventName, const struct FVector& Location, const struct FRotator& Orientation, class UObject* WorldContextObject, bool UseReverb)
+struct FVector UAkSoundVolumeComponentBase::GetForwardVector()
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.PostEventAtLocationByName"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.GetForwardVector"));
 
-	UAkGameplayStatics_PostEventAtLocationByName_Params params;
-	params.EventName = EventName;
-	params.Location = Location;
-	params.Orientation = Orientation;
-	params.WorldContextObject = WorldContextObject;
-	params.UseReverb = UseReverb;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AkAudio.AkGameplayStatics.PostEventAtLocation
-// (Final, BlueprintCosmetic, Native, Static, Public, HasDefaults, BlueprintCallable)
-// Parameters:
-// class UAkAudioEvent*           AkEvent                        (Parm, ZeroConstructor, IsPlainOldData)
-// struct FVector                 Location                       (Parm, IsPlainOldData)
-// struct FRotator                Orientation                    (Parm, IsPlainOldData)
-// struct FString                 EventName                      (Parm, ZeroConstructor)
-// class UObject*                 WorldContextObject             (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           UseReverb                      (Parm, ZeroConstructor, IsPlainOldData)
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46D280              		 offset:299d280                       
-
-int UAkGameplayStatics::STATIC_PostEventAtLocation(class UAkAudioEvent* AkEvent, const struct FVector& Location, const struct FRotator& Orientation, const struct FString& EventName, class UObject* WorldContextObject, bool UseReverb)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.PostEventAtLocation"));
-
-	UAkGameplayStatics_PostEventAtLocation_Params params;
-	params.AkEvent = AkEvent;
-	params.Location = Location;
-	params.Orientation = Orientation;
-	params.EventName = EventName;
-	params.WorldContextObject = WorldContextObject;
-	params.UseReverb = UseReverb;
+	UAkSoundVolumeComponentBase_GetForwardVector_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -1184,28 +2086,20 @@ int UAkGameplayStatics::STATIC_PostEventAtLocation(class UAkAudioEvent* AkEvent,
 }
 
 
-// Function AkAudio.AkGameplayStatics.PostEvent
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Function Engine.SceneComponent.GetComponentVelocity
+// (Native, Public, HasDefaults, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// class UAkAudioEvent*           AkEvent                        (Parm, ZeroConstructor, IsPlainOldData)
-// class AActor*                  Actor                          (Parm, ZeroConstructor, IsPlainOldData)
-// bool                           bStopWhenAttachedToDestroyed   (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 EventName                      (Parm, ZeroConstructor)
-// int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46D0D0              		 offset:299d0d0                       
+// struct FVector                 ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75BBE89E0              		 offset:21e89e0                       
 
-int UAkGameplayStatics::STATIC_PostEvent(class UAkAudioEvent* AkEvent, class AActor* Actor, bool bStopWhenAttachedToDestroyed, const struct FString& EventName)
+struct FVector UAkSoundVolumeComponentBase::GetComponentVelocity()
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.PostEvent"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.GetComponentVelocity"));
 
-	UAkGameplayStatics_PostEvent_Params params;
-	params.AkEvent = AkEvent;
-	params.Actor = Actor;
-	params.bStopWhenAttachedToDestroyed = bStopWhenAttachedToDestroyed;
-	params.EventName = EventName;
+	UAkSoundVolumeComponentBase_GetComponentVelocity_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -1218,18 +2112,22 @@ int UAkGameplayStatics::STATIC_PostEvent(class UAkAudioEvent* AkEvent, class AAc
 }
 
 
-// Function AkAudio.AkGameplayStatics.LoadInitBank
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF62B46CEE0              		 offset:299cee0                       
+// Function Engine.SceneComponent.GetChildrenComponents
+// (Final, Native, Public, HasOutParms, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                           bIncludeAllDescendants         (Parm, ZeroConstructor, IsPlainOldData)
+// TArray<class USceneComponent*> Children                       (Parm, OutParm, ZeroConstructor)
+// FunctionAddress:0x00007FF75A8660D0              		 offset:e660d0                        
 
-void UAkGameplayStatics::STATIC_LoadInitBank()
+void UAkSoundVolumeComponentBase::GetChildrenComponents(bool bIncludeAllDescendants, TArray<class USceneComponent*>* Children)
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.LoadInitBank"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.GetChildrenComponents"));
 
-	UAkGameplayStatics_LoadInitBank_Params params;
+	UAkSoundVolumeComponentBase_GetChildrenComponents_Params params;
+	params.bIncludeAllDescendants = bIncludeAllDescendants;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -1237,110 +2135,28 @@ void UAkGameplayStatics::STATIC_LoadInitBank()
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
+
+	if (Children != nullptr)
+		*Children = params.Children;
 }
 
 
-// Function AkAudio.AkGameplayStatics.LoadBanks
-// (Final, BlueprintCosmetic, Native, Static, Public, HasOutParms, BlueprintCallable)
+// Function Engine.SceneComponent.GetChildComponent
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// TArray<class UAkAudioBank*>    SoundBanks                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
-// bool                           SynchronizeSoundBanks          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46CDF0              		 offset:299cdf0                       
+// int                            ChildIndex                     (Parm, ZeroConstructor, IsPlainOldData)
+// class USceneComponent*         ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+// FunctionAddress:0x00007FF75ECCA8C0              		 offset:52ca8c0                       
 
-void UAkGameplayStatics::STATIC_LoadBanks(TArray<class UAkAudioBank*> SoundBanks, bool SynchronizeSoundBanks)
+class USceneComponent* UAkSoundVolumeComponentBase::GetChildComponent(int ChildIndex)
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.LoadBanks"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.GetChildComponent"));
 
-	UAkGameplayStatics_LoadBanks_Params params;
-	params.SoundBanks = SoundBanks;
-	params.SynchronizeSoundBanks = SynchronizeSoundBanks;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AkAudio.AkGameplayStatics.LoadBankByName
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// struct FString                 BankName                       (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF62B46CD60              		 offset:299cd60                       
-
-void UAkGameplayStatics::STATIC_LoadBankByName(const struct FString& BankName)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.LoadBankByName"));
-
-	UAkGameplayStatics_LoadBankByName_Params params;
-	params.BankName = BankName;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AkAudio.AkGameplayStatics.LoadBank
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
-// Parameters:
-// class UAkAudioBank*            Bank                           (Parm, ZeroConstructor, IsPlainOldData)
-// struct FString                 BankName                       (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF62B46CC90              		 offset:299cc90                       
-
-void UAkGameplayStatics::STATIC_LoadBank(class UAkAudioBank* Bank, const struct FString& BankName)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.LoadBank"));
-
-	UAkGameplayStatics_LoadBank_Params params;
-	params.Bank = Bank;
-	params.BankName = BankName;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AkAudio.AkGameplayStatics.GetAkComponent
-// (Final, BlueprintCosmetic, Native, Static, Public, HasDefaults, BlueprintCallable)
-// Parameters:
-// class USceneComponent*         AttachToComponent              (Parm, ZeroConstructor, InstancedReference, IsPlainOldData)
-// struct FName                   AttachPointName                (Parm, ZeroConstructor, IsPlainOldData)
-// struct FVector                 Location                       (Parm, IsPlainOldData)
-// TEnumAsByte<EAttachLocation>   LocationType                   (Parm, ZeroConstructor, IsPlainOldData)
-// class UAkComponent*            ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
-// FunctionAddress:0x00007FF62B46CA90              		 offset:299ca90                       
-
-class UAkComponent* UAkGameplayStatics::STATIC_GetAkComponent(class USceneComponent* AttachToComponent, const struct FName& AttachPointName, const struct FVector& Location, TEnumAsByte<EAttachLocation> LocationType)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.GetAkComponent"));
-
-	UAkGameplayStatics_GetAkComponent_Params params;
-	params.AttachToComponent = AttachToComponent;
-	params.AttachPointName = AttachPointName;
-	params.Location = Location;
-	params.LocationType = LocationType;
+	UAkSoundVolumeComponentBase_GetChildComponent_Params params;
+	params.ChildIndex = ChildIndex;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -1353,18 +2169,20 @@ class UAkComponent* UAkGameplayStatics::STATIC_GetAkComponent(class USceneCompon
 }
 
 
-// Function AkAudio.AkGameplayStatics.ClearBanks
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF62B46CA70              		 offset:299ca70                       
+// Function Engine.SceneComponent.GetAttachSocketName
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FName                   ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75AA44960              		 offset:1044960                       
 
-void UAkGameplayStatics::STATIC_ClearBanks()
+struct FName UAkSoundVolumeComponentBase::GetAttachSocketName()
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.ClearBanks"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.GetAttachSocketName"));
 
-	UAkGameplayStatics_ClearBanks_Params params;
+	UAkSoundVolumeComponentBase_GetAttachSocketName_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -1372,24 +2190,108 @@ void UAkGameplayStatics::STATIC_ClearBanks()
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
 }
 
 
-// Function AkAudio.AkGameplayStatics.AddOutputCaptureMarker
-// (Final, BlueprintCosmetic, Native, Static, Public, BlueprintCallable)
+// Function Engine.SceneComponent.GetAttachParent
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// struct FString                 MarkerText                     (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF62B46C960              		 offset:299c960                       
+// class USceneComponent*         ReturnValue                    (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData)
+// FunctionAddress:0x00007FF759FE2C30              		 offset:5e2c30                        
 
-void UAkGameplayStatics::STATIC_AddOutputCaptureMarker(const struct FString& MarkerText)
+class USceneComponent* UAkSoundVolumeComponentBase::GetAttachParent()
 {
 	static UFunction* fn;
 
 		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function AkAudio.AkGameplayStatics.AddOutputCaptureMarker"));
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.GetAttachParent"));
 
-	UAkGameplayStatics_AddOutputCaptureMarker_Params params;
-	params.MarkerText = MarkerText;
+	UAkSoundVolumeComponentBase_GetAttachParent_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.SceneComponent.GetAllSocketNames
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// TArray<struct FName>           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
+// FunctionAddress:0x00007FF75AF977A0              		 offset:15977a0                       
+
+TArray<struct FName> UAkSoundVolumeComponentBase::GetAllSocketNames()
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.GetAllSocketNames"));
+
+	UAkSoundVolumeComponentBase_GetAllSocketNames_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.SceneComponent.DoesSocketExist
+// (Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// struct FName                   InSocketName                   (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
+// FunctionAddress:0x00007FF75DBCA000              		 offset:41ca000                       
+
+bool UAkSoundVolumeComponentBase::DoesSocketExist(const struct FName& InSocketName)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.DoesSocketExist"));
+
+	UAkSoundVolumeComponentBase_DoesSocketExist_Params params;
+	params.InSocketName = InSocketName;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.SceneComponent.DetachFromParent
+// (Native, Public, BlueprintCallable)
+// Parameters:
+// bool                           bMaintainWorldPosition         (Parm, ZeroConstructor, IsPlainOldData)
+// bool                           bCallModify                    (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75A6874A0              		 offset:c874a0                        
+
+void UAkSoundVolumeComponentBase::DetachFromParent(bool bMaintainWorldPosition, bool bCallModify)
+{
+	static UFunction* fn;
+
+		if(!fn)
+		fn = UObject::FindObject<UFunction>(_xor_("Function Engine.SceneComponent.DetachFromParent"));
+
+	UAkSoundVolumeComponentBase_DetachFromParent_Params params;
+	params.bMaintainWorldPosition = bMaintainWorldPosition;
+	params.bCallModify = bCallModify;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass KeyGuideTabWidget.KeyGuideTabWidget_C
-// 0x0000 (0x0468 - 0x0468)
+// 0x0000 (0x0478 - 0x0478)
 class UKeyGuideTabWidget_C : public UTslTabSelectorWidget
 {
 public:
@@ -29,6 +29,11 @@ public:
 		return ptr;
 	}
 
+
+	void UpdateIndexTo(int NewIndex);
+	void RotateRight();
+	void RotateLeft();
+	void ResetSelector();
 };
 
 

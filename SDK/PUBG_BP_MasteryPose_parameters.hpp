@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -22,7 +22,7 @@ struct ABP_MasteryPose_C_ClearEffects_Params
 // Function BP_MasteryPose.BP_MasteryPose_C.AttachObjects
 struct ABP_MasteryPose_C_AttachObjects_Params
 {
-	class ACharacter**                                 LobbyCharacter;                                           // (Parm, ZeroConstructor, IsPlainOldData)
+	class ACharacter*                                  LobbyCharacter;                                           // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_MasteryPose.BP_MasteryPose_C.ShowPlayerCardEffects
@@ -53,7 +53,7 @@ struct ABP_MasteryPose_C_ReceiveDestroyed_Params
 // Function BP_MasteryPose.BP_MasteryPose_C.AttachObjectsEvent
 struct ABP_MasteryPose_C_AttachObjectsEvent_Params
 {
-	class ACharacter**                                 Character;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	class ACharacter*                                  Character;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function BP_MasteryPose.BP_MasteryPose_C.ClearEffectsEvent
@@ -69,7 +69,7 @@ struct ABP_MasteryPose_C_ShowEffects_Params
 // Function BP_MasteryPose.BP_MasteryPose_C.ExecuteUbergraph_BP_MasteryPose
 struct ABP_MasteryPose_C_ExecuteUbergraph_BP_MasteryPose_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

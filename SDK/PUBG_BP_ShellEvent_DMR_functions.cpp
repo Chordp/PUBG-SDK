@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,15 +15,15 @@ namespace SDK
 // Function BP_ShellEvent_DMR.BP_ShellEvent_DMR_C.RunEvent
 // (Event, Public, HasOutParms, BlueprintEvent)
 // Parameters:
-// struct FVector*                InCollideDirection             (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// struct FVector*                InHitLocation                  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// struct FVector*                InHitNormal                    (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
-// struct FName*                  InBoneName                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
-// class UWorld**                 InWorld                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// class AActor**                 InActor                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// struct FVector                 InCollideDirection             (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+// struct FVector                 InHitLocation                  (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+// struct FVector                 InHitNormal                    (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData)
+// struct FName                   InBoneName                     (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
+// class UWorld*                  InWorld                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// class AActor*                  InActor                        (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UBP_ShellEvent_DMR_C::RunEvent(struct FVector* InCollideDirection, struct FVector* InHitLocation, struct FVector* InHitNormal, struct FName* InBoneName, class UWorld** InWorld, class AActor** InActor)
+void UBP_ShellEvent_DMR_C::RunEvent(const struct FVector& InCollideDirection, const struct FVector& InHitLocation, const struct FVector& InHitNormal, const struct FName& InBoneName, class UWorld* InWorld, class AActor* InActor)
 {
 	static UFunction* fn;
 
@@ -49,10 +49,10 @@ void UBP_ShellEvent_DMR_C::RunEvent(struct FVector* InCollideDirection, struct F
 // Function BP_ShellEvent_DMR.BP_ShellEvent_DMR_C.ExecuteUbergraph_BP_ShellEvent_DMR
 // (HasDefaults)
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UBP_ShellEvent_DMR_C::ExecuteUbergraph_BP_ShellEvent_DMR(int* EntryPoint)
+void UBP_ShellEvent_DMR_C::ExecuteUbergraph_BP_ShellEvent_DMR(int EntryPoint)
 {
 	static UFunction* fn;
 

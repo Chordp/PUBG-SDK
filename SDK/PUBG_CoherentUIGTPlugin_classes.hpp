@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Class CoherentUIGTPlugin.CoherentUIGTWidget
-// 0x0360 (0x04A0 - 0x0140)
+// 0x01E0 (0x0320 - 0x0140)
 class UCoherentUIGTWidget : public UWidget
 {
 public:
@@ -45,11 +45,13 @@ public:
 	int                                                LayerWidthThreshold;                                      // 0x026C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	int                                                LayerHeightThreshold;                                     // 0x0270(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bEnableAdditionalDefaultStyles;                           // 0x0274(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x20B];                                     // 0x0275(0x020B) MISSED OFFSET
-	struct FString                                     URL;                                                      // 0x0480(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
-	float                                              ClickThroughAlphaThreshold;                               // 0x0490(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               Transparent;                                              // 0x0494(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData04[0xB];                                       // 0x0495(0x000B) MISSED OFFSET
+	unsigned char                                      UnknownData03[0x3];                                       // 0x0275(0x0003) MISSED OFFSET
+	class UCoherentUIGTAudioWrapper*                   AudioWrapper;                                             // 0x0278(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
+	unsigned char                                      UnknownData04[0x80];                                      // 0x0280(0x0080) MISSED OFFSET
+	struct FString                                     URL;                                                      // 0x0300(0x0010) (Edit, BlueprintVisible, ZeroConstructor)
+	float                                              ClickThroughAlphaThreshold;                               // 0x0310(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               Transparent;                                              // 0x0314(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData05[0xB];                                       // 0x0315(0x000B) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -106,12 +108,33 @@ public:
 };
 
 
+// Class CoherentUIGTPlugin.CoherentUIGTAudioWrapper
+// 0x0190 (0x01D0 - 0x0040)
+class UCoherentUIGTAudioWrapper : public UObject
+{
+public:
+	class UObject*                                     Owner;                                                    // 0x0040(0x0008) (ZeroConstructor, IsPlainOldData)
+	TMap<int, struct FCoherentSound>                   Sounds;                                                   // 0x0048(0x0050) (ZeroConstructor)
+	unsigned char                                      UnknownData00[0x138];                                     // 0x0098(0x0138) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr;
+		if(!ptr)
+			ptr = UObject::FindClass(_xor_("Class CoherentUIGTPlugin.CoherentUIGTAudioWrapper"));
+
+		return ptr;
+	}
+
+};
+
+
 // Class CoherentUIGTPlugin.CoherentUIGTSystem
-// 0x0040 (0x0440 - 0x0400)
+// 0x0040 (0x0450 - 0x0410)
 class ACoherentUIGTSystem : public AActor
 {
 public:
-	unsigned char                                      UnknownData00[0x40];                                      // 0x0400(0x0040) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x40];                                      // 0x0410(0x0040) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -122,6 +145,131 @@ public:
 		return ptr;
 	}
 
+
+	bool WasRecentlyRendered(float Tolerance);
+	void UserConstructionScript();
+	void TearOff();
+	void SnapRootComponentTo(class AActor* InParentActor, const struct FName& InSocketName);
+	void SetTickGroup(TEnumAsByte<ETickingGroup> NewTickGroup);
+	void SetTickableWhenPaused(bool bTickableWhenPaused);
+	void SetReplicates(bool bInReplicates);
+	void SetReplicateMovement(bool bInReplicateMovement);
+	void SetOwner(class AActor* NewOwner);
+	void SetLifeSpan(float InLifespan);
+	void SetActorTickInterval(float TickInterval);
+	void SetActorTickEnabled(bool bEnabled);
+	void SetActorScale3D(const struct FVector& NewScale3D);
+	void SetActorRelativeScale3D(const struct FVector& NewRelativeScale);
+	void SetActorHiddenInGame(bool bNewHidden);
+	void SetActorEnableCollision(bool bNewActorEnableCollision);
+	void RemoveTickPrerequisiteComponent(class UActorComponent* PrerequisiteComponent);
+	void RemoveTickPrerequisiteActor(class AActor* PrerequisiteActor);
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveRadialDamage(float DamageReceived, class UDamageType* DamageType, const struct FVector& Origin, const struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser);
+	void ReceivePointDamage(float Damage, class UDamageType* DamageType, const struct FVector& HitLocation, const struct FVector& HitNormal, class UPrimitiveComponent* HitComponent, const struct FName& BoneName, const struct FVector& ShotFromDirection, class AController* InstigatedBy, class AActor* DamageCauser, const struct FHitResult& HitInfo);
+	void ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
+	void ReceiveEndPlay(TEnumAsByte<EEndPlayReason> EndPlayReason);
+	void ReceiveDestroyed();
+	void ReceiveBeginPlay();
+	void ReceiveAnyDamage(float Damage, class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser);
+	void ReceiveActorOnReleased(const struct FKey& ButtonReleased);
+	void ReceiveActorOnInputTouchLeave(TEnumAsByte<ETouchIndex> FingerIndex);
+	void ReceiveActorOnInputTouchEnter(TEnumAsByte<ETouchIndex> FingerIndex);
+	void ReceiveActorOnInputTouchEnd(TEnumAsByte<ETouchIndex> FingerIndex);
+	void ReceiveActorOnInputTouchBegin(TEnumAsByte<ETouchIndex> FingerIndex);
+	void ReceiveActorOnClicked(const struct FKey& ButtonPressed);
+	void ReceiveActorEndOverlap(class AActor* OtherActor);
+	void ReceiveActorEndCursorOver();
+	void ReceiveActorBeginOverlap(class AActor* OtherActor);
+	void ReceiveActorBeginCursorOver();
+	void OnRep_Role();
+	void OnRep_ReplicateMovement();
+	void OnRep_ReplicatedMovement();
+	void OnRep_Owner();
+	void OnRep_Instigator();
+	void OnRep_AttachmentReplication();
+	void MakeNoise(float Loudness, class APawn* NoiseInstigator, const struct FVector& NoiseLocation, float MaxRange, const struct FName& Tag);
+	class UMaterialInstanceDynamic* MakeMIDForMaterial(class UMaterialInterface* Parent);
+	bool K2_TeleportTo(const struct FVector& DestLocation, const struct FRotator& DestRotation);
+	bool K2_SetActorTransform(const struct FTransform& NewTransform, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	bool K2_SetActorRotation(const struct FRotator& NewRotation, bool bTeleportPhysics);
+	void K2_SetActorRelativeTransform(const struct FTransform& NewRelativeTransform, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	void K2_SetActorRelativeRotation(const struct FRotator& NewRelativeRotation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	void K2_SetActorRelativeLocation(const struct FVector& NewRelativeLocation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	bool K2_SetActorLocationAndRotation(const struct FVector& NewLocation, const struct FRotator& NewRotation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	bool K2_SetActorLocation(const struct FVector& NewLocation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	void K2_OnReset();
+	void K2_OnEndViewTarget(class APlayerController* PC);
+	void K2_OnBecomeViewTarget(class APlayerController* PC);
+	class USceneComponent* K2_GetRootComponent();
+	struct FRotator K2_GetActorRotation();
+	struct FVector K2_GetActorLocation();
+	void K2_DetachFromActor(EDetachmentRule LocationRule, EDetachmentRule RotationRule, EDetachmentRule ScaleRule);
+	void K2_DestroyComponent(class UActorComponent* Component);
+	void K2_DestroyActor();
+	void K2_AttachToComponent(class USceneComponent* Parent, const struct FName& SocketName, EAttachmentRule LocationRule, EAttachmentRule RotationRule, EAttachmentRule ScaleRule, bool bWeldSimulatedBodies);
+	void K2_AttachToActor(class AActor* ParentActor, const struct FName& SocketName, EAttachmentRule LocationRule, EAttachmentRule RotationRule, EAttachmentRule ScaleRule, bool bWeldSimulatedBodies);
+	void K2_AttachRootComponentToActor(class AActor* InParentActor, const struct FName& InSocketName, TEnumAsByte<EAttachLocation> AttachLocationType, bool bWeldSimulatedBodies);
+	void K2_AttachRootComponentTo(class USceneComponent* InParent, const struct FName& InSocketName, TEnumAsByte<EAttachLocation> AttachLocationType, bool bWeldSimulatedBodies);
+	void K2_AddActorWorldTransform(const struct FTransform& DeltaTransform, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	void K2_AddActorWorldRotation(const struct FRotator& DeltaRotation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	void K2_AddActorWorldOffset(const struct FVector& DeltaLocation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	void K2_AddActorLocalTransform(const struct FTransform& NewTransform, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	void K2_AddActorLocalRotation(const struct FRotator& DeltaRotation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	void K2_AddActorLocalOffset(const struct FVector& DeltaLocation, bool bSweep, bool bTeleport, struct FHitResult* SweepHitResult);
+	bool IsOverlappingActor(class AActor* Other);
+	bool IsChildActor();
+	bool IsActorTickEnabled();
+	bool IsActorBeingDestroyed();
+	bool HasAuthority();
+	float GetVerticalDistanceTo(class AActor* OtherActor);
+	struct FVector GetVelocity();
+	struct FTransform GetTransform();
+	bool GetTickableWhenPaused();
+	float GetSquaredDistanceTo(class AActor* OtherActor);
+	TEnumAsByte<ENetRole> GetRemoteRole();
+	class UChildActorComponent* GetParentComponent();
+	class AActor* GetParentActor();
+	class AActor* GetOwner();
+	void GetOverlappingComponents(TArray<class UPrimitiveComponent*>* OverlappingComponents);
+	void GetOverlappingActors(class UClass* ClassFilter, TArray<class AActor*>* OverlappingActors);
+	float GetLifeSpan();
+	class AController* GetInstigatorController();
+	class APawn* GetInstigator();
+	struct FVector GetInputVectorAxisValue(const struct FKey& InputAxisKey);
+	float GetInputAxisValue(const struct FName& InputAxisName);
+	float GetInputAxisKeyValue(const struct FKey& InputAxisKey);
+	float GetHorizontalDotProductTo(class AActor* OtherActor);
+	float GetHorizontalDistanceTo(class AActor* OtherActor);
+	float GetGameTimeSinceCreation();
+	float GetDotProductTo(class AActor* OtherActor);
+	float GetDistanceTo(class AActor* OtherActor);
+	TArray<class UActorComponent*> GetComponentsByTag(class UClass* ComponentClass, const struct FName& Tag);
+	TArray<class UActorComponent*> GetComponentsByClass(class UClass* ComponentClass);
+	class UActorComponent* GetComponentByClass(class UClass* ComponentClass);
+	struct FName GetAttachParentSocketName();
+	class AActor* GetAttachParentActor();
+	void GetAttachedActors(TArray<class AActor*>* OutActors);
+	void GetAllChildActors(bool bIncludeDescendants, TArray<class AActor*>* ChildActors);
+	struct FVector GetActorUpVector();
+	float GetActorTimeDilation();
+	float GetActorTickInterval();
+	struct FVector GetActorScale3D();
+	struct FVector GetActorRightVector();
+	struct FVector GetActorRelativeScale3D();
+	struct FVector GetActorForwardVector();
+	void GetActorEyesViewPoint(struct FVector* OutLocation, struct FRotator* OutRotation);
+	bool GetActorEnableCollision();
+	void GetActorBounds(bool bOnlyCollidingComponents, struct FVector* Origin, struct FVector* BoxExtent);
+	void ForceNetUpdate();
+	void FlushNetDormancy();
+	void EnableInput(class APlayerController* PlayerController);
+	void DisableInput(class APlayerController* PlayerController);
+	void DetachRootComponentFromParent(bool bMaintainWorldPosition);
+	void AddTickPrerequisiteComponent(class UActorComponent* PrerequisiteComponent);
+	void AddTickPrerequisiteActor(class AActor* PrerequisiteActor);
+	class UActorComponent* AddComponent(const struct FName& TemplateName, bool bManualAttachment, const struct FTransform& RelativeTransform, class UObject* ComponentTemplateContext);
+	bool ActorHasTag(const struct FName& Tag);
 };
 
 
@@ -201,7 +349,7 @@ public:
 
 
 // Class CoherentUIGTPlugin.CoherentUIGTBaseComponent
-// 0x0320 (0x0530 - 0x0210)
+// 0x01A0 (0x03B0 - 0x0210)
 class UCoherentUIGTBaseComponent : public UActorComponent
 {
 public:
@@ -229,7 +377,9 @@ public:
 	int                                                LayerHeightThreshold;                                     // 0x0334(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bEnableAdditionalDefaultStyles;                           // 0x0338(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
 	bool                                               bDelayedUpdate;                                           // 0x0339(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x1F6];                                     // 0x033A(0x01F6) MISSED OFFSET
+	unsigned char                                      UnknownData01[0x26];                                      // 0x033A(0x0026) MISSED OFFSET
+	class UCoherentUIGTAudioWrapper*                   AudioWrapper;                                             // 0x0360(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x48];                                      // 0x0368(0x0048) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -268,18 +418,18 @@ public:
 
 
 // Class CoherentUIGTPlugin.CoherentUIGTComponent
-// 0x0030 (0x0560 - 0x0530)
+// 0x0030 (0x03E0 - 0x03B0)
 class UCoherentUIGTComponent : public UCoherentUIGTBaseComponent
 {
 public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0530(0x0008) MISSED OFFSET
-	int                                                Width;                                                    // 0x0538(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	int                                                Height;                                                   // 0x053C(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               ManualTexture;                                            // 0x0540(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x0541(0x0003) MISSED OFFSET
-	float                                              ClickThroughAlphaThreshold;                               // 0x0544(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	bool                                               Transparent;                                              // 0x0548(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData02[0x17];                                      // 0x0549(0x0017) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x8];                                       // 0x03B0(0x0008) MISSED OFFSET
+	int                                                Width;                                                    // 0x03B8(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	int                                                Height;                                                   // 0x03BC(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               ManualTexture;                                            // 0x03C0(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x03C1(0x0003) MISSED OFFSET
+	float                                              ClickThroughAlphaThreshold;                               // 0x03C4(0x0004) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               Transparent;                                              // 0x03C8(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x17];                                      // 0x03C9(0x0017) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -294,14 +444,14 @@ public:
 
 
 // Class CoherentUIGTPlugin.CoherentUIGTHUD
-// 0x0020 (0x0550 - 0x0530)
+// 0x0020 (0x03D0 - 0x03B0)
 class UCoherentUIGTHUD : public UCoherentUIGTBaseComponent
 {
 public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0530(0x0008) MISSED OFFSET
-	class UMaterial*                                   HUDMaterial;                                              // 0x0538(0x0008) (ZeroConstructor, IsPlainOldData)
-	class UMaterialInstanceDynamic*                    HUDMaterialInstance;                                      // 0x0540(0x0008) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x8];                                       // 0x0548(0x0008) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x8];                                       // 0x03B0(0x0008) MISSED OFFSET
+	class UMaterial*                                   HUDMaterial;                                              // 0x03B8(0x0008) (ZeroConstructor, IsPlainOldData)
+	class UMaterialInstanceDynamic*                    HUDMaterialInstance;                                      // 0x03C0(0x0008) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x8];                                       // 0x03C8(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -330,29 +480,16 @@ public:
 		return ptr;
 	}
 
-
-	void STATIC_TriggerJSEvent(class UCoherentUIGTBaseComponent* Component, const struct FString& EventName, class UCoherentUIGTJSEvent* JSEvent);
-	void STATIC_SetupLoadingScreen(class UObject* WorldContextObject, const struct FCoherentUIGTLoadingScreenSettings& Settings);
-	class UCoherentUIGTJSEvent* STATIC_CreateJSEvent(class UObject* WorldContextObject);
-	void STATIC_AddStructArg(class UCoherentUIGTJSEvent* JSEvent, class UStructProperty* Arg);
-	void STATIC_AddString(class UCoherentUIGTJSEvent* JSEvent, const struct FString& Arg);
-	void STATIC_AddObject(class UCoherentUIGTJSEvent* JSEvent, class UObject* Arg);
-	void STATIC_AddInt32(class UCoherentUIGTJSEvent* JSEvent, int Arg);
-	void STATIC_AddFloat(class UCoherentUIGTJSEvent* JSEvent, float Arg);
-	void STATIC_AddByte(class UCoherentUIGTJSEvent* JSEvent, unsigned char Arg);
-	void STATIC_AddBool(class UCoherentUIGTJSEvent* JSEvent, bool Arg);
-	void STATIC_AddArrayOfStructs(class UCoherentUIGTJSEvent* JSEvent, TArray<int> Arg);
-	void STATIC_AddArray(class UCoherentUIGTJSEvent* JSEvent, TArray<int> Arg, int ArrayType);
 };
 
 
 // Class CoherentUIGTPlugin.CoherentUIGTGameHUD
-// 0x0098 (0x0580 - 0x04E8)
+// 0x0098 (0x0590 - 0x04F8)
 class ACoherentUIGTGameHUD : public AHUD
 {
 public:
-	class UCoherentUIGTHUD*                            CoherentUIGTHUD;                                          // 0x04E8(0x0008) (BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x90];                                      // 0x04F0(0x0090) MISSED OFFSET
+	class UCoherentUIGTHUD*                            CoherentUIGTHUD;                                          // 0x04F8(0x0008) (BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x90];                                      // 0x0500(0x0090) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -370,15 +507,15 @@ public:
 
 
 // Class CoherentUIGTPlugin.CoherentUIGTInputActor
-// 0x0058 (0x0458 - 0x0400)
+// 0x0058 (0x0468 - 0x0410)
 class ACoherentUIGTInputActor : public AActor
 {
 public:
-	struct FScriptMulticastDelegate                    OnCoherentUIGTInputActorMouseButtonDown;                  // 0x0400(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnCoherentUIGTInputActorMouseButtonUp;                    // 0x0410(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnCoherentUIGTInputActorKeyDown;                          // 0x0420(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnCoherentUIGTInputActorKeyUp;                            // 0x0430(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
-	unsigned char                                      UnknownData00[0x18];                                      // 0x0440(0x0018) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnCoherentUIGTInputActorMouseButtonDown;                  // 0x0410(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnCoherentUIGTInputActorMouseButtonUp;                    // 0x0420(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnCoherentUIGTInputActorKeyDown;                          // 0x0430(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnCoherentUIGTInputActorKeyUp;                            // 0x0440(0x0010) (ZeroConstructor, InstancedReference, BlueprintAssignable)
+	unsigned char                                      UnknownData00[0x18];                                      // 0x0450(0x0018) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{

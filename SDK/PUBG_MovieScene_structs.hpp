@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -78,25 +78,6 @@ enum class EEvaluationMethod : uint8_t
 //---------------------------------------------------------------------------
 //Script Structs
 //---------------------------------------------------------------------------
-
-// ScriptStruct MovieScene.MovieSceneSectionEvalOptions
-// 0x0002
-struct FMovieSceneSectionEvalOptions
-{
-	bool                                               bCanEditCompletionMode;                                   // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
-	EMovieSceneCompletionMode                          CompletionMode;                                           // 0x0001(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-};
-
-// ScriptStruct MovieScene.MovieSceneTrackEvalOptions
-// 0x0004
-struct FMovieSceneTrackEvalOptions
-{
-	unsigned char                                      bCanEvaluateNearestSection : 1;                           // 0x0000(0x0001)
-	unsigned char                                      bEvaluateNearestSection : 1;                              // 0x0000(0x0001) (Edit)
-	unsigned char                                      bEvaluateInPreroll : 1;                                   // 0x0000(0x0001) (Edit)
-	unsigned char                                      bEvaluateInPostroll : 1;                                  // 0x0000(0x0001) (Edit)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
-};
 
 // ScriptStruct MovieScene.MovieSceneSegment
 // 0x0050
@@ -274,7 +255,14 @@ struct FMovieSceneEvaluationTemplate
 // 0x0000 (0x0220 - 0x0220)
 struct FCachedMovieSceneEvaluationTemplate : public FMovieSceneEvaluationTemplate
 {
-
+	TMap<uint32_t, struct FMovieSceneEvaluationTrack>  Tracks;                                                   // 0x0000(0x0050) (ZeroConstructor)
+	unsigned char                                      UnknownData00[0x50];                                      // 0x0050(0x0050) MISSED OFFSET
+	struct FMovieSceneEvaluationField                  EvaluationField;                                          // 0x00A0(0x0030)
+	struct FMovieSceneSequenceHierarchy                Hierarchy;                                                // 0x00D0(0x00A0)
+	struct FMovieSceneTemplateGenerationLedger         TemplateLedger;                                           // 0x0170(0x00A8)
+	unsigned char                                      bHasLegacyTrackInstances : 1;                             // 0x0218(0x0001)
+	unsigned char                                      bKeepStaleTracks : 1;                                     // 0x0218(0x0001)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x0219(0x0007) MISSED OFFSET
 };
 
 // ScriptStruct MovieScene.MovieSceneTrackCompilationParams
@@ -350,6 +338,50 @@ struct FMovieSceneBindingOverrideData
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0021(0x0003) MISSED OFFSET
 };
 
+// ScriptStruct MovieScene.MovieSceneSectionEvalOptions
+// 0x0002
+struct FMovieSceneSectionEvalOptions
+{
+	bool                                               bCanEditCompletionMode;                                   // 0x0000(0x0001) (ZeroConstructor, IsPlainOldData)
+	EMovieSceneCompletionMode                          CompletionMode;                                           // 0x0001(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
+};
+
+// ScriptStruct MovieScene.MovieSceneTrackEvalOptions
+// 0x0004
+struct FMovieSceneTrackEvalOptions
+{
+	unsigned char                                      bCanEvaluateNearestSection : 1;                           // 0x0000(0x0001)
+	unsigned char                                      bEvaluateNearestSection : 1;                              // 0x0000(0x0001) (Edit)
+	unsigned char                                      bEvaluateInPreroll : 1;                                   // 0x0000(0x0001) (Edit)
+	unsigned char                                      bEvaluateInPostroll : 1;                                  // 0x0000(0x0001) (Edit)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0001(0x0003) MISSED OFFSET
+};
+
+// ScriptStruct MovieScene.MovieSceneEvalTemplateBase
+// 0x0010
+struct FMovieSceneEvalTemplateBase
+{
+	unsigned char                                      UnknownData00[0x10];                                      // 0x0000(0x0010) MISSED OFFSET
+};
+
+// ScriptStruct MovieScene.MovieSceneEvalTemplate
+// 0x0008 (0x0018 - 0x0010)
+struct FMovieSceneEvalTemplate : public FMovieSceneEvalTemplateBase
+{
+	EMovieSceneCompletionMode                          CompletionMode;                                           // 0x0010(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0011(0x0007) MISSED OFFSET
+};
+
+// ScriptStruct MovieScene.MovieScenePropertySectionData
+// 0x0028
+struct FMovieScenePropertySectionData
+{
+	struct FName                                       PropertyName;                                             // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData)
+	struct FString                                     PropertyPath;                                             // 0x0008(0x0010) (ZeroConstructor)
+	struct FName                                       FunctionName;                                             // 0x0018(0x0008) (ZeroConstructor, IsPlainOldData)
+	struct FName                                       NotifyFunctionName;                                       // 0x0020(0x0008) (ZeroConstructor, IsPlainOldData)
+};
+
 // ScriptStruct MovieScene.MovieSceneTrackLabels
 // 0x0010
 struct FMovieSceneTrackLabels
@@ -383,26 +415,11 @@ struct FSectionEvaluationData
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0009(0x0003) MISSED OFFSET
 };
 
-// ScriptStruct MovieScene.MovieSceneEvalTemplateBase
-// 0x0010
-struct FMovieSceneEvalTemplateBase
-{
-	unsigned char                                      UnknownData00[0x10];                                      // 0x0000(0x0010) MISSED OFFSET
-};
-
 // ScriptStruct MovieScene.MovieSceneEmptyStruct
 // 0x0001
 struct FMovieSceneEmptyStruct
 {
 	unsigned char                                      UnknownData00[0x1];                                       // 0x0000(0x0001) MISSED OFFSET
-};
-
-// ScriptStruct MovieScene.MovieSceneEvalTemplate
-// 0x0008 (0x0018 - 0x0010)
-struct FMovieSceneEvalTemplate : public FMovieSceneEvalTemplateBase
-{
-	EMovieSceneCompletionMode                          CompletionMode;                                           // 0x0010(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0011(0x0007) MISSED OFFSET
 };
 
 // ScriptStruct MovieScene.MovieSceneTrackImplementation
@@ -436,16 +453,6 @@ struct FMovieSceneSequenceCachedSignature
 struct FMovieSceneLegacyTrackInstanceTemplate : public FMovieSceneEvalTemplate
 {
 	class UMovieSceneTrack*                            Track;                                                    // 0x0018(0x0008) (ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData)
-};
-
-// ScriptStruct MovieScene.MovieScenePropertySectionData
-// 0x0028
-struct FMovieScenePropertySectionData
-{
-	struct FName                                       PropertyName;                                             // 0x0000(0x0008) (ZeroConstructor, IsPlainOldData)
-	struct FString                                     PropertyPath;                                             // 0x0008(0x0010) (ZeroConstructor)
-	struct FName                                       FunctionName;                                             // 0x0018(0x0008) (ZeroConstructor, IsPlainOldData)
-	struct FName                                       NotifyFunctionName;                                       // 0x0020(0x0008) (ZeroConstructor, IsPlainOldData)
 };
 
 // ScriptStruct MovieScene.MovieSceneKeyStruct

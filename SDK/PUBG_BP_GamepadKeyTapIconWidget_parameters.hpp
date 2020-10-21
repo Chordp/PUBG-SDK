@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -23,7 +23,7 @@ struct UBP_GamepadKeyTapIconWidget_C_PreConstruct_Params
 // Function BP_GamepadKeyTapIconWidget.BP_GamepadKeyTapIconWidget_C.ExecuteUbergraph_BP_GamepadKeyTapIconWidget
 struct UBP_GamepadKeyTapIconWidget_C_ExecuteUbergraph_BP_GamepadKeyTapIconWidget_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

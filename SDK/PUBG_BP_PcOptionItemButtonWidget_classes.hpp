@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,7 +15,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass BP_PcOptionItemButtonWidget.BP_PcOptionItemButtonWidget_C
-// 0x0000 (0x0708 - 0x0708)
+// 0x0000 (0x0748 - 0x0748)
 class UBP_PcOptionItemButtonWidget_C : public UTslGameOptionItemButtonWidget
 {
 public:
@@ -29,6 +29,9 @@ public:
 		return ptr;
 	}
 
+
+	void ShowPopupDialogEx();
+	void OnPopupButtonPressedEvent(EPopupButtonID ButtonID);
 };
 
 

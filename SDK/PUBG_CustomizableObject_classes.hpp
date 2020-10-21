@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,15 +15,15 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Class CustomizableObject.CustomizableSkeletalComponent
-// 0x0050 (0x0510 - 0x04C0)
+// 0x0050 (0x04F0 - 0x04A0)
 class UCustomizableSkeletalComponent : public USceneComponent
 {
 public:
-	bool                                               bPendingUpdateSkeletalMesh;                               // 0x04C0(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x04C1(0x0003) MISSED OFFSET
-	float                                              SkippedLastRenderTime;                                    // 0x04C4(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
-	class UCustomizableObjectInstance*                 CustomizableObjectInstance;                               // 0x04C8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x40];                                      // 0x04D0(0x0040) MISSED OFFSET
+	bool                                               bPendingUpdateSkeletalMesh;                               // 0x04A0(0x0001) (ZeroConstructor, Transient, IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x04A1(0x0003) MISSED OFFSET
+	float                                              SkippedLastRenderTime;                                    // 0x04A4(0x0004) (ZeroConstructor, Transient, IsPlainOldData)
+	class UCustomizableObjectInstance*                 CustomizableObjectInstance;                               // 0x04A8(0x0008) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData01[0x40];                                      // 0x04B0(0x0040) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -40,7 +40,7 @@ public:
 
 
 // Class CustomizableObject.CustomizableObjectInstance
-// 0x0200 (0x0240 - 0x0040)
+// 0x0210 (0x0250 - 0x0040)
 class UCustomizableObjectInstance : public UObject
 {
 public:
@@ -57,9 +57,9 @@ public:
 	struct FScriptMulticastDelegate                    UpdatedDelegate;                                          // 0x00B8(0x0010) (ZeroConstructor, Transient, InstancedReference, BlueprintAssignable)
 	unsigned char                                      UnknownData01[0x98];                                      // 0x00C8(0x0098) MISSED OFFSET
 	struct FString                                     SkeletalMeshStatus;                                       // 0x0160(0x0010) (ZeroConstructor)
-	unsigned char                                      UnknownData02[0xC0];                                      // 0x0170(0x00C0) MISSED OFFSET
-	class UCustomizableInstancePrivateData*            PrivateData;                                              // 0x0230(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x8];                                       // 0x0238(0x0008) MISSED OFFSET
+	unsigned char                                      UnknownData02[0xC8];                                      // 0x0170(0x00C8) MISSED OFFSET
+	class UCustomizableInstancePrivateData*            PrivateData;                                              // 0x0238(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x10];                                      // 0x0240(0x0010) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -104,7 +104,7 @@ public:
 
 
 // Class CustomizableObject.CustomizableInstancePrivateData
-// 0x0358 (0x0398 - 0x0040)
+// 0x0378 (0x03B8 - 0x0040)
 class UCustomizableInstancePrivateData : public UObject
 {
 public:
@@ -119,6 +119,8 @@ public:
 	unsigned char                                      UnknownData03[0x1C8];                                     // 0x0170(0x01C8) MISSED OFFSET
 	TArray<class UMaterialInterface*>                  ReferencedMaterials;                                      // 0x0338(0x0010) (ZeroConstructor, Transient)
 	unsigned char                                      UnknownData04[0x50];                                      // 0x0348(0x0050) MISSED OFFSET
+	TArray<class UPhysicsAsset*>                       PhysicsAssetsToMerge;                                     // 0x0398(0x0010) (ZeroConstructor, Transient)
+	unsigned char                                      UnknownData05[0x10];                                      // 0x03A8(0x0010) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -153,7 +155,7 @@ public:
 
 
 // Class CustomizableObject.CustomizableObject
-// 0x0278 (0x02B8 - 0x0040)
+// 0x0228 (0x0268 - 0x0040)
 class UCustomizableObject : public UObject
 {
 public:
@@ -165,22 +167,17 @@ public:
 	TArray<TAssetPtr<class UMaterialInterface>>        ReferencedMaterials;                                      // 0x0058(0x0010) (Edit, ZeroConstructor, EditConst)
 	TArray<struct FMutableModelImageProperties>        ImageProperties;                                          // 0x0068(0x0010) (Edit, ZeroConstructor, EditConst)
 	TMap<struct FString, struct FCustomizableObjectIdPair> GroupNodeMap;                                             // 0x0078(0x0050) (ZeroConstructor)
-	struct FCompilationOptions                         CompileOptions;                                           // 0x00C8(0x0020)
-	struct FCustomizableObjectExportOptions            ExportOptions;                                            // 0x00E8(0x0018)
-	EMutableCompileMeshType                            MeshCompileType;                                          // 0x0100(0x0001) (Edit, ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData01[0x7];                                       // 0x0101(0x0007) MISSED OFFSET
-	TArray<class UCustomizableObject*>                 WorkingSet;                                               // 0x0108(0x0010) (Edit, ZeroConstructor)
-	struct FGuid                                       VersionId;                                                // 0x0118(0x0010) (IsPlainOldData)
-	TArray<struct FMutableModelParameterProperties>    ParameterProperties;                                      // 0x0128(0x0010) (ZeroConstructor)
-	unsigned char                                      UnknownData02[0x50];                                      // 0x0138(0x0050) MISSED OFFSET
-	TMap<struct FString, struct FParameterUIData>      ParameterUIDataMap;                                       // 0x0188(0x0050) (ZeroConstructor)
-	TMap<struct FString, struct FParameterUIData>      StateUIDataMap;                                           // 0x01D8(0x0050) (ZeroConstructor)
-	TMap<struct FString, class UPhysicsAsset*>         PhysicsAssetMap;                                          // 0x0228(0x0050) (ZeroConstructor)
-	TAssetPtr<class UMutableMaskOutCache>              MaskOutCache;                                             // 0x0278(0x0020)
-	bool                                               bIsChildObject;                                           // 0x0298(0x0001) (ZeroConstructor, IsPlainOldData)
-	unsigned char                                      UnknownData03[0x7];                                       // 0x0299(0x0007) MISSED OFFSET
-	class UMutableMaskOutCache*                        MaskOutCache_HardRef;                                     // 0x02A0(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
-	unsigned char                                      UnknownData04[0x10];                                      // 0x02A8(0x0010) MISSED OFFSET
+	struct FGuid                                       VersionId;                                                // 0x00C8(0x0010) (IsPlainOldData)
+	TArray<struct FMutableModelParameterProperties>    ParameterProperties;                                      // 0x00D8(0x0010) (ZeroConstructor, Transient)
+	unsigned char                                      UnknownData01[0x50];                                      // 0x00E8(0x0050) MISSED OFFSET
+	TMap<struct FString, struct FParameterUIData>      ParameterUIDataMap;                                       // 0x0138(0x0050) (ZeroConstructor)
+	TMap<struct FString, struct FParameterUIData>      StateUIDataMap;                                           // 0x0188(0x0050) (ZeroConstructor)
+	TMap<struct FString, TAssetPtr<class UPhysicsAsset>> PhysicsAssetsMap;                                         // 0x01D8(0x0050) (ZeroConstructor)
+	TAssetPtr<class UMutableMaskOutCache>              MaskOutCache;                                             // 0x0228(0x0020)
+	bool                                               bIsChildObject;                                           // 0x0248(0x0001) (ZeroConstructor, IsPlainOldData)
+	unsigned char                                      UnknownData02[0x7];                                       // 0x0249(0x0007) MISSED OFFSET
+	class UMutableMaskOutCache*                        MaskOutCache_HardRef;                                     // 0x0250(0x0008) (ZeroConstructor, Transient, IsPlainOldData)
+	unsigned char                                      UnknownData03[0x10];                                      // 0x0258(0x0010) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -300,8 +297,6 @@ public:
 		return ptr;
 	}
 
-
-	void DelegatedCallback(class UCustomizableObjectInstance* Instance);
 };
 
 

@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -39,7 +39,7 @@ public:
 
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Charm_Common_AnimGraphNode_ModifyBone_EE8E4B654952686C402109A27DEC775E();
 	void EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_Charm_Common_AnimGraphNode_RigidBody_8538612846363ECDC0868F81EE414107();
-	void ExecuteUbergraph_ABP_Charm_Common(int* EntryPoint);
+	void ExecuteUbergraph_ABP_Charm_Common(int EntryPoint);
 };
 
 

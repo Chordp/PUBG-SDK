@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -16,7 +16,7 @@ namespace SDK
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // bool                           bNeverSkipUpdate               (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D6D70              		 offset:2a06d70                       
+// FunctionAddress:0x00007FF75C6216C0              		 offset:2c216c0                       
 
 void UCustomizableSkeletalComponent::UpdateSkeletalMeshAsync(bool bNeverSkipUpdate)
 {
@@ -42,7 +42,7 @@ void UCustomizableSkeletalComponent::UpdateSkeletalMeshAsync(bool bNeverSkipUpda
 // Parameters:
 // bool                           bIgnoreCloseDist               (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           bForceHighPriority             (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D6CA0              		 offset:2a06ca0                       
+// FunctionAddress:0x00007FF75C6215F0              		 offset:2c215f0                       
 
 void UCustomizableObjectInstance::UpdateSkeletalMeshAsync(bool bIgnoreCloseDist, bool bForceHighPriority)
 {
@@ -69,7 +69,7 @@ void UCustomizableObjectInstance::UpdateSkeletalMeshAsync(bool bIgnoreCloseDist,
 // Parameters:
 // struct FString                 VectorParamName                (Parm, ZeroConstructor)
 // struct FLinearColor            VectorValue                    (Parm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D6290              		 offset:2a06290                       
+// FunctionAddress:0x00007FF75C6214E0              		 offset:2c214e0                       
 
 void UCustomizableObjectInstance::SetVectorParameterSelectedOption(const struct FString& VectorParamName, const struct FLinearColor& VectorValue)
 {
@@ -93,7 +93,7 @@ void UCustomizableObjectInstance::SetVectorParameterSelectedOption(const struct 
 
 // Function CustomizableObject.CustomizableObjectInstance.SetRandomValues
 // (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF62B4D6C60              		 offset:2a06c60                       
+// FunctionAddress:0x00007FF75C6214C0              		 offset:2c214c0                       
 
 void UCustomizableObjectInstance::SetRandomValues()
 {
@@ -132,7 +132,7 @@ void UCustomizableObjectInstance::SetRandomValues()
 // float                          Angle                          (Parm, ZeroConstructor, IsPlainOldData)
 // ECustomizableObjectProjectorType ProjectionType                 (Parm, ZeroConstructor, IsPlainOldData)
 // int                            RangeIndex                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D67B0              		 offset:2a067b0                       
+// FunctionAddress:0x00007FF75C621010              		 offset:2c21010                       
 
 void UCustomizableObjectInstance::SetProjectorValue(const struct FString& ProjectorParamName, float posX, float posY, float posZ, float dirX, float dirY, float dirZ, float upX, float upY, float upZ, float ScaleX, float ScaleY, float ScaleZ, float Angle, ECustomizableObjectProjectorType ProjectionType, int RangeIndex)
 {
@@ -174,7 +174,7 @@ void UCustomizableObjectInstance::SetProjectorValue(const struct FString& Projec
 // struct FString                 ParamName                      (Parm, ZeroConstructor)
 // int                            RangeIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // ECustomizableObjectProjectorType Type                           (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D6690              		 offset:2a06690                       
+// FunctionAddress:0x00007FF75C620EF0              		 offset:2c20ef0                       
 
 void UCustomizableObjectInstance::SetProjectorParameterType(const struct FString& ParamName, int RangeIndex, ECustomizableObjectProjectorType Type)
 {
@@ -203,7 +203,7 @@ void UCustomizableObjectInstance::SetProjectorParameterType(const struct FString
 // struct FString                 ParamName                      (Parm, ZeroConstructor)
 // struct FString                 SelectedOptionName             (Parm, ZeroConstructor)
 // int                            RangeIndex                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D6550              		 offset:2a06550                       
+// FunctionAddress:0x00007FF75C620DB0              		 offset:2c20db0                       
 
 void UCustomizableObjectInstance::SetIntParameterSelectedOption(const struct FString& ParamName, const struct FString& SelectedOptionName, int RangeIndex)
 {
@@ -232,7 +232,7 @@ void UCustomizableObjectInstance::SetIntParameterSelectedOption(const struct FSt
 // struct FString                 FloatParamName                 (Parm, ZeroConstructor)
 // float                          FloatValue                     (Parm, ZeroConstructor, IsPlainOldData)
 // int                            RangeIndex                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D6420              		 offset:2a06420                       
+// FunctionAddress:0x00007FF75C620C80              		 offset:2c20c80                       
 
 void UCustomizableObjectInstance::SetFloatParameterSelectedOption(const struct FString& FloatParamName, float FloatValue, int RangeIndex)
 {
@@ -259,7 +259,7 @@ void UCustomizableObjectInstance::SetFloatParameterSelectedOption(const struct F
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // struct FString                 StateName                      (Parm, ZeroConstructor)
-// FunctionAddress:0x00007FF62B4D6380              		 offset:2a06380                       
+// FunctionAddress:0x00007FF75C620BE0              		 offset:2c20be0                       
 
 void UCustomizableObjectInstance::SetCurrentState(const struct FString& StateName)
 {
@@ -285,7 +285,7 @@ void UCustomizableObjectInstance::SetCurrentState(const struct FString& StateNam
 // Parameters:
 // struct FString                 ColorParamName                 (Parm, ZeroConstructor)
 // struct FLinearColor            ColorValue                     (Parm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D6290              		 offset:2a06290                       
+// FunctionAddress:0x00007FF75C620AF0              		 offset:2c20af0                       
 
 void UCustomizableObjectInstance::SetColorParameterSelectedOption(const struct FString& ColorParamName, const struct FLinearColor& ColorValue)
 {
@@ -312,7 +312,7 @@ void UCustomizableObjectInstance::SetColorParameterSelectedOption(const struct F
 // Parameters:
 // struct FString                 BoolParamName                  (Parm, ZeroConstructor)
 // bool                           BoolValue                      (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D61A0              		 offset:2a061a0                       
+// FunctionAddress:0x00007FF75C620A00              		 offset:2c20a00                       
 
 void UCustomizableObjectInstance::SetBoolParameterSelectedOption(const struct FString& BoolParamName, bool BoolValue)
 {
@@ -339,7 +339,7 @@ void UCustomizableObjectInstance::SetBoolParameterSelectedOption(const struct FS
 // Parameters:
 // struct FString                 ParamName                      (Parm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D60D0              		 offset:2a060d0                       
+// FunctionAddress:0x00007FF75C620930              		 offset:2c20930                       
 
 bool UCustomizableObjectInstance::IsParameterRelevant(const struct FString& ParamName)
 {
@@ -374,7 +374,7 @@ bool UCustomizableObjectInstance::IsParameterRelevant(const struct FString& Para
 // ECustomizableObjectProjectorType OutType                        (Parm, OutParm, ZeroConstructor, IsPlainOldData)
 // int                            RangeIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D58B0              		 offset:2a058b0                       
+// FunctionAddress:0x00007FF75C620110              		 offset:2c20110                       
 
 bool UCustomizableObjectInstance::GetProjectorValue(const struct FString& ProjectorParamName, int RangeIndex, struct FVector* OutPos, struct FVector* OutDir, struct FVector* OutUp, struct FVector* OutScale, float* OutAngle, ECustomizableObjectProjectorType* OutType)
 {
@@ -416,7 +416,7 @@ bool UCustomizableObjectInstance::GetProjectorValue(const struct FString& Projec
 // Parameters:
 // struct FString                 ParamName                      (Parm, ZeroConstructor)
 // struct FVector                 ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D57F0              		 offset:2a057f0                       
+// FunctionAddress:0x00007FF75C620050              		 offset:2c20050                       
 
 struct FVector UCustomizableObjectInstance::GetProjectorUp(const struct FString& ParamName)
 {
@@ -444,7 +444,7 @@ struct FVector UCustomizableObjectInstance::GetProjectorUp(const struct FString&
 // Parameters:
 // struct FString                 ParamName                      (Parm, ZeroConstructor)
 // struct FVector                 ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D5730              		 offset:2a05730                       
+// FunctionAddress:0x00007FF75C61FF90              		 offset:2c1ff90                       
 
 struct FVector UCustomizableObjectInstance::GetProjectorScale(const struct FString& ParamName)
 {
@@ -472,7 +472,7 @@ struct FVector UCustomizableObjectInstance::GetProjectorScale(const struct FStri
 // Parameters:
 // struct FString                 ParamName                      (Parm, ZeroConstructor)
 // struct FVector                 ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D5670              		 offset:2a05670                       
+// FunctionAddress:0x00007FF75C61FED0              		 offset:2c1fed0                       
 
 struct FVector UCustomizableObjectInstance::GetProjectorPosition(const struct FString& ParamName)
 {
@@ -501,7 +501,7 @@ struct FVector UCustomizableObjectInstance::GetProjectorPosition(const struct FS
 // struct FString                 ParamName                      (Parm, ZeroConstructor)
 // int                            RangeIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // ECustomizableObjectProjectorType ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D5580              		 offset:2a05580                       
+// FunctionAddress:0x00007FF75C61FDE0              		 offset:2c1fde0                       
 
 ECustomizableObjectProjectorType UCustomizableObjectInstance::GetProjectorParameterType(const struct FString& ParamName, int RangeIndex)
 {
@@ -530,7 +530,7 @@ ECustomizableObjectProjectorType UCustomizableObjectInstance::GetProjectorParame
 // Parameters:
 // struct FString                 ParamName                      (Parm, ZeroConstructor)
 // struct FVector                 ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D54C0              		 offset:2a054c0                       
+// FunctionAddress:0x00007FF75C61FD20              		 offset:2c1fd20                       
 
 struct FVector UCustomizableObjectInstance::GetProjectorDirection(const struct FString& ParamName)
 {
@@ -559,7 +559,7 @@ struct FVector UCustomizableObjectInstance::GetProjectorDirection(const struct F
 // struct FString                 ParamName                      (Parm, ZeroConstructor)
 // int                            DescIndex                      (Parm, ZeroConstructor, IsPlainOldData)
 // class UTexture2D*              ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D4EB0              		 offset:2a04eb0                       
+// FunctionAddress:0x00007FF75C61F6E0              		 offset:2c1f6e0                       
 
 class UTexture2D* UCustomizableObjectInstance::GetParameterDescription(const struct FString& ParamName, int DescIndex)
 {
@@ -589,7 +589,7 @@ class UTexture2D* UCustomizableObjectInstance::GetParameterDescription(const str
 // struct FString                 ParamName                      (Parm, ZeroConstructor)
 // int                            RangeIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF62B4D4D20              		 offset:2a04d20                       
+// FunctionAddress:0x00007FF75C61F520              		 offset:2c1f520                       
 
 struct FString UCustomizableObjectInstance::GetIntParameterSelectedOption(const struct FString& ParamName, int RangeIndex)
 {
@@ -619,7 +619,7 @@ struct FString UCustomizableObjectInstance::GetIntParameterSelectedOption(const 
 // struct FString                 FloatParamName                 (Parm, ZeroConstructor)
 // int                            RangeIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // float                          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D4AA0              		 offset:2a04aa0                       
+// FunctionAddress:0x00007FF75C61F250              		 offset:2c1f250                       
 
 float UCustomizableObjectInstance::GetFloatParameterSelectedOption(const struct FString& FloatParamName, int RangeIndex)
 {
@@ -647,7 +647,7 @@ float UCustomizableObjectInstance::GetFloatParameterSelectedOption(const struct 
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF62B4D4A10              		 offset:2a04a10                       
+// FunctionAddress:0x00007FF75C61F1C0              		 offset:2c1f1c0                       
 
 struct FString UCustomizableObjectInstance::GetCurrentState()
 {
@@ -674,7 +674,7 @@ struct FString UCustomizableObjectInstance::GetCurrentState()
 // Parameters:
 // struct FString                 ColorParamName                 (Parm, ZeroConstructor)
 // struct FLinearColor            ReturnValue                    (Parm, OutParm, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D4950              		 offset:2a04950                       
+// FunctionAddress:0x00007FF75C61F100              		 offset:2c1f100                       
 
 struct FLinearColor UCustomizableObjectInstance::GetColorParameterSelectedOption(const struct FString& ColorParamName)
 {
@@ -702,7 +702,7 @@ struct FLinearColor UCustomizableObjectInstance::GetColorParameterSelectedOption
 // Parameters:
 // struct FString                 BoolParamName                  (Parm, ZeroConstructor)
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D48A0              		 offset:2a048a0                       
+// FunctionAddress:0x00007FF75C61F050              		 offset:2c1f050                       
 
 bool UCustomizableObjectInstance::GetBoolParameterSelectedOption(const struct FString& BoolParamName)
 {
@@ -730,7 +730,7 @@ bool UCustomizableObjectInstance::GetBoolParameterSelectedOption(const struct FS
 // Parameters:
 // struct FString                 ParamName                      (Parm, ZeroConstructor)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D47C0              		 offset:2a047c0                       
+// FunctionAddress:0x00007FF75C61EF70              		 offset:2c1ef70                       
 
 int UCustomizableObjectInstance::FindVectorParameterNameIndex(const struct FString& ParamName)
 {
@@ -758,7 +758,7 @@ int UCustomizableObjectInstance::FindVectorParameterNameIndex(const struct FStri
 // Parameters:
 // struct FString                 ParamName                      (Parm, ZeroConstructor)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D4710              		 offset:2a04710                       
+// FunctionAddress:0x00007FF75C61EEC0              		 offset:2c1eec0                       
 
 int UCustomizableObjectInstance::FindProjectorParameterNameIndex(const struct FString& ParamName)
 {
@@ -786,7 +786,7 @@ int UCustomizableObjectInstance::FindProjectorParameterNameIndex(const struct FS
 // Parameters:
 // struct FString                 ParamName                      (Parm, ZeroConstructor)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D45B0              		 offset:2a045b0                       
+// FunctionAddress:0x00007FF75C61ED60              		 offset:2c1ed60                       
 
 int UCustomizableObjectInstance::FindIntParameterNameIndex(const struct FString& ParamName)
 {
@@ -814,7 +814,7 @@ int UCustomizableObjectInstance::FindIntParameterNameIndex(const struct FString&
 // Parameters:
 // struct FString                 ParamName                      (Parm, ZeroConstructor)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D4500              		 offset:2a04500                       
+// FunctionAddress:0x00007FF75C61ECB0              		 offset:2c1ecb0                       
 
 int UCustomizableObjectInstance::FindFloatParameterNameIndex(const struct FString& ParamName)
 {
@@ -842,7 +842,7 @@ int UCustomizableObjectInstance::FindFloatParameterNameIndex(const struct FStrin
 // Parameters:
 // struct FString                 ParamName                      (Parm, ZeroConstructor)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D4450              		 offset:2a04450                       
+// FunctionAddress:0x00007FF75C61EC00              		 offset:2c1ec00                       
 
 int UCustomizableObjectInstance::FindBoolParameterNameIndex(const struct FString& ParamName)
 {
@@ -869,7 +869,7 @@ int UCustomizableObjectInstance::FindBoolParameterNameIndex(const struct FString
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class UCustomizableObjectInstance* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D4370              		 offset:2a04370                       
+// FunctionAddress:0x00007FF75C61EB20              		 offset:2c1eb20                       
 
 class UCustomizableObjectInstance* UCustomizableObjectInstance::Clone()
 {
@@ -893,7 +893,7 @@ class UCustomizableObjectInstance* UCustomizableObjectInstance::Clone()
 
 // Function CustomizableObject.CustomizableObject.UnloadMaskOutCache
 // (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF62B4D6C80              		 offset:2a06c80                       
+// FunctionAddress:0x00007FF75C6215D0              		 offset:2c215d0                       
 
 void UCustomizableObject::UnloadMaskOutCache()
 {
@@ -915,7 +915,7 @@ void UCustomizableObject::UnloadMaskOutCache()
 
 // Function CustomizableObject.CustomizableObject.LoadMaskOutCache
 // (Final, Native, Public, BlueprintCallable)
-// FunctionAddress:0x00007FF62B4D6180              		 offset:2a06180                       
+// FunctionAddress:0x00007FF75C6209E0              		 offset:2c209e0                       
 
 void UCustomizableObject::LoadMaskOutCache()
 {
@@ -940,7 +940,7 @@ void UCustomizableObject::LoadMaskOutCache()
 // Parameters:
 // int                            StateIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // struct FParameterUIData        ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF62B4D5F80              		 offset:2a05f80                       
+// FunctionAddress:0x00007FF75C6207E0              		 offset:2c207e0                       
 
 struct FParameterUIData UCustomizableObject::GetStateUIMetadataFromIndex(int StateIndex)
 {
@@ -968,7 +968,7 @@ struct FParameterUIData UCustomizableObject::GetStateUIMetadataFromIndex(int Sta
 // Parameters:
 // struct FString                 StateName                      (Parm, ZeroConstructor)
 // struct FParameterUIData        ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF62B4D5E70              		 offset:2a05e70                       
+// FunctionAddress:0x00007FF75C6206D0              		 offset:2c206d0                       
 
 struct FParameterUIData UCustomizableObject::GetStateUIMetadata(const struct FString& StateName)
 {
@@ -997,7 +997,7 @@ struct FParameterUIData UCustomizableObject::GetStateUIMetadata(const struct FSt
 // struct FString                 StateName                      (Parm, ZeroConstructor)
 // int                            ParameterIndex                 (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF62B4D5D40              		 offset:2a05d40                       
+// FunctionAddress:0x00007FF75C6205A0              		 offset:2c205a0                       
 
 struct FString UCustomizableObject::GetStateParameterName(const struct FString& StateName, int ParameterIndex)
 {
@@ -1026,7 +1026,7 @@ struct FString UCustomizableObject::GetStateParameterName(const struct FString& 
 // Parameters:
 // struct FString                 StateName                      (Parm, ZeroConstructor)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D5C90              		 offset:2a05c90                       
+// FunctionAddress:0x00007FF75C6204F0              		 offset:2c204f0                       
 
 int UCustomizableObject::GetStateParameterCount(const struct FString& StateName)
 {
@@ -1054,7 +1054,7 @@ int UCustomizableObject::GetStateParameterCount(const struct FString& StateName)
 // Parameters:
 // int                            StateIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF62B4D5BB0              		 offset:2a05bb0                       
+// FunctionAddress:0x00007FF75C620410              		 offset:2c20410                       
 
 struct FString UCustomizableObject::GetStateName(int StateIndex)
 {
@@ -1081,7 +1081,7 @@ struct FString UCustomizableObject::GetStateName(int StateIndex)
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D5B80              		 offset:2a05b80                       
+// FunctionAddress:0x00007FF75C6203E0              		 offset:2c203e0                       
 
 int UCustomizableObject::GetStateCount()
 {
@@ -1108,7 +1108,7 @@ int UCustomizableObject::GetStateCount()
 // Parameters:
 // int                            ParamIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // struct FParameterUIData        ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF62B4D5340              		 offset:2a05340                       
+// FunctionAddress:0x00007FF75C61FBA0              		 offset:2c1fba0                       
 
 struct FParameterUIData UCustomizableObject::GetParameterUIMetadataFromIndex(int ParamIndex)
 {
@@ -1136,7 +1136,7 @@ struct FParameterUIData UCustomizableObject::GetParameterUIMetadataFromIndex(int
 // Parameters:
 // struct FString                 ParamName                      (Parm, ZeroConstructor)
 // struct FParameterUIData        ReturnValue                    (Parm, OutParm, ReturnParm)
-// FunctionAddress:0x00007FF62B4D5230              		 offset:2a05230                       
+// FunctionAddress:0x00007FF75C61FA90              		 offset:2c1fa90                       
 
 struct FParameterUIData UCustomizableObject::GetParameterUIMetadata(const struct FString& ParamName)
 {
@@ -1164,7 +1164,7 @@ struct FParameterUIData UCustomizableObject::GetParameterUIMetadata(const struct
 // Parameters:
 // struct FString                 Name                           (Parm, ZeroConstructor)
 // EMutableParameterType          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D5180              		 offset:2a05180                       
+// FunctionAddress:0x00007FF75C61F9E0              		 offset:2c1f9e0                       
 
 EMutableParameterType UCustomizableObject::GetParameterTypeByName(const struct FString& Name)
 {
@@ -1192,7 +1192,7 @@ EMutableParameterType UCustomizableObject::GetParameterTypeByName(const struct F
 // Parameters:
 // int                            ParamIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // EMutableParameterType          ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D50F0              		 offset:2a050f0                       
+// FunctionAddress:0x00007FF75C61F950              		 offset:2c1f950                       
 
 EMutableParameterType UCustomizableObject::GetParameterType(int ParamIndex)
 {
@@ -1220,7 +1220,7 @@ EMutableParameterType UCustomizableObject::GetParameterType(int ParamIndex)
 // Parameters:
 // int                            ParamIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF62B4D5050              		 offset:2a05050                       
+// FunctionAddress:0x00007FF75C61F880              		 offset:2c1f880                       
 
 struct FString UCustomizableObject::GetParameterName(int ParamIndex)
 {
@@ -1248,7 +1248,7 @@ struct FString UCustomizableObject::GetParameterName(int ParamIndex)
 // Parameters:
 // struct FString                 ParamName                      (Parm, ZeroConstructor)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D4FA0              		 offset:2a04fa0                       
+// FunctionAddress:0x00007FF75C61F7D0              		 offset:2c1f7d0                       
 
 int UCustomizableObject::GetParameterDescriptionCount(const struct FString& ParamName)
 {
@@ -1275,7 +1275,7 @@ int UCustomizableObject::GetParameterDescriptionCount(const struct FString& Para
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D4E80              		 offset:2a04e80                       
+// FunctionAddress:0x00007FF75C61F6B0              		 offset:2c1f6b0                       
 
 int UCustomizableObject::GetParameterCount()
 {
@@ -1302,7 +1302,7 @@ int UCustomizableObject::GetParameterCount()
 // Parameters:
 // int                            ParamIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D4C90              		 offset:2a04c90                       
+// FunctionAddress:0x00007FF75C61F490              		 offset:2c1f490                       
 
 int UCustomizableObject::GetIntParameterNumOptions(int ParamIndex)
 {
@@ -1331,7 +1331,7 @@ int UCustomizableObject::GetIntParameterNumOptions(int ParamIndex)
 // int                            ParamIndex                     (Parm, ZeroConstructor, IsPlainOldData)
 // int                            K                              (Parm, ZeroConstructor, IsPlainOldData)
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF62B4D4BC0              		 offset:2a04bc0                       
+// FunctionAddress:0x00007FF75C61F370              		 offset:2c1f370                       
 
 struct FString UCustomizableObject::GetIntParameterAvailableOption(int ParamIndex, int K)
 {
@@ -1360,7 +1360,7 @@ struct FString UCustomizableObject::GetIntParameterAvailableOption(int ParamInde
 // Parameters:
 // struct FString                 Name                           (Parm, ZeroConstructor)
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D4660              		 offset:2a04660                       
+// FunctionAddress:0x00007FF75C61EE10              		 offset:2c1ee10                       
 
 int UCustomizableObject::FindParameter(const struct FString& Name)
 {
@@ -1387,7 +1387,7 @@ int UCustomizableObject::FindParameter(const struct FString& Name)
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // class UCustomizableObjectInstance* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D43A0              		 offset:2a043a0                       
+// FunctionAddress:0x00007FF75C61EB50              		 offset:2c1eb50                       
 
 class UCustomizableObjectInstance* UCustomizableObject::CreateInstance()
 {
@@ -1413,7 +1413,7 @@ class UCustomizableObjectInstance* UCustomizableObject::CreateInstance()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D60A0              		 offset:2a060a0                       
+// FunctionAddress:0x00007FF75C620900              		 offset:2c20900                       
 
 int UCustomizableObjectSystem::GetTotalInstances()
 {
@@ -1439,7 +1439,7 @@ int UCustomizableObjectSystem::GetTotalInstances()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D6070              		 offset:2a06070                       
+// FunctionAddress:0x00007FF75C6208D0              		 offset:2c208d0                       
 
 int UCustomizableObjectSystem::GetTextureMemoryUsed()
 {
@@ -1465,7 +1465,7 @@ int UCustomizableObjectSystem::GetTextureMemoryUsed()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // struct FString                 ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm)
-// FunctionAddress:0x00007FF62B4D5430              		 offset:2a05430                       
+// FunctionAddress:0x00007FF75C61FC90              		 offset:2c1fc90                       
 
 struct FString UCustomizableObjectSystem::GetPluginVersion()
 {
@@ -1491,7 +1491,7 @@ struct FString UCustomizableObjectSystem::GetPluginVersion()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D4E50              		 offset:2a04e50                       
+// FunctionAddress:0x00007FF75C61F680              		 offset:2c1f680                       
 
 int UCustomizableObjectSystem::GetNumPendingInstances()
 {
@@ -1517,7 +1517,7 @@ int UCustomizableObjectSystem::GetNumPendingInstances()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D4E20              		 offset:2a04e20                       
+// FunctionAddress:0x00007FF75C61F650              		 offset:2c1f650                       
 
 int UCustomizableObjectSystem::GetNumInstances()
 {
@@ -1543,7 +1543,7 @@ int UCustomizableObjectSystem::GetNumInstances()
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
 // class UCustomizableObjectSystem* ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D4B90              		 offset:2a04b90                       
+// FunctionAddress:0x00007FF75C61F340              		 offset:2c1f340                       
 
 class UCustomizableObjectSystem* UCustomizableObjectSystem::STATIC_GetInstance()
 {
@@ -1569,7 +1569,7 @@ class UCustomizableObjectSystem* UCustomizableObjectSystem::STATIC_GetInstance()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // int                            ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D4870              		 offset:2a04870                       
+// FunctionAddress:0x00007FF75C61F020              		 offset:2c1f020                       
 
 int UCustomizableObjectSystem::GetAverageBuildTime()
 {
@@ -1595,7 +1595,7 @@ int UCustomizableObjectSystem::GetAverageBuildTime()
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                           ReturnValue                    (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D4340              		 offset:2a04340                       
+// FunctionAddress:0x00007FF75C61EAF0              		 offset:2c1eaf0                       
 
 bool UCustomizableObjectSystem::AreEnginePatchesPresent()
 {
@@ -1614,31 +1614,6 @@ bool UCustomizableObjectSystem::AreEnginePatchesPresent()
 	fn->FunctionFlags = flags;
 
 	return params.ReturnValue;
-}
-
-
-// Function CustomizableObject.InstanceUpdatedHelper.DelegatedCallback
-// (Final, Native, Public)
-// Parameters:
-// class UCustomizableObjectInstance* Instance                       (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF62B4D43D0              		 offset:2a043d0                       
-
-void UInstanceUpdatedHelper::DelegatedCallback(class UCustomizableObjectInstance* Instance)
-{
-	static UFunction* fn;
-
-		if(!fn)
-		fn = UObject::FindObject<UFunction>(_xor_("Function CustomizableObject.InstanceUpdatedHelper.DelegatedCallback"));
-
-	UInstanceUpdatedHelper_DelegatedCallback_Params params;
-	params.Instance = Instance;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
 }
 
 

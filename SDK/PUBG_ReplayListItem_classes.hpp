@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -69,52 +69,52 @@ public:
 	}
 
 
-	void SetMK3DReplayVersion(int* MK3DReplayVersion);
-	void SetHaveCameraEvent(bool* bHaveCameraEvent);
-	void SetGameVersion(struct FString* GameVersion);
-	void SetAllDeadOrWin(bool* bAllDeadOrWin);
-	void SetSeverRecording(bool* bIsServerRecording);
-	void SetActionMessageDownloadPercent(float* fPercent);
-	void ShowDownloadPercent(struct FString* strFileName, int* nReceived, int* nTotal);
+	void SetMK3DReplayVersion(int MK3DReplayVersion);
+	void SetHaveCameraEvent(bool bHaveCameraEvent);
+	void SetGameVersion(const struct FString& GameVersion);
+	void SetAllDeadOrWin(bool bAllDeadOrWin);
+	void SetSeverRecording(bool bIsServerRecording);
+	void SetActionMessageDownloadPercent(float fPercent);
+	void ShowDownloadPercent(const struct FString& strFileName, int nReceived, int nTotal);
 	void DisableDownload();
-	void SetArchived(bool* IsArchived);
-	void SetRegionOrLocal(struct FString* inRegionOrLocal);
+	void SetArchived(bool IsArchived);
+	void SetRegionOrLocal(const struct FString& inRegionOrLocal);
 	void SetShouldKeep(bool bShouldKeep);
-	void SetCorrupt(bool* bIsCorrupt);
-	void SetInComplete(bool* bIncomplete);
-	void SetVersionCompatible(bool* bIsVersionCompatible);
-	void SetMode(struct FString* Mode);
-	void SetLength(int* LengthInMS);
-	void SetActionMessageSimple(struct FString* Message);
-	void SetActionMessageDecompressPercent(float* fPercent);
+	void SetCorrupt(bool bIsCorrupt);
+	void SetInComplete(bool bIncomplete);
+	void SetVersionCompatible(bool bIsVersionCompatible);
+	void SetMode(const struct FString& Mode);
+	void SetLength(int LengthInMS);
+	void SetActionMessageSimple(const struct FString& Message);
+	void SetActionMessageDecompressPercent(float fPercent);
 	void SetActionMessage(bool bIsDownloading, bool bIsUnzipping);
 	void SetDownloadCancelBtns(bool bIsDownloading, bool bIsUnzipping);
-	void SetDate(struct FDateTime* Date);
-	void SetLive(bool* IsLive);
-	void SetSize(int* SizeInBytes);
-	void SetFriendlyName(struct FString* FriendlyName);
-	void SetReplayItem(struct FReplayItem* ReplayItem);
-	void SetSessionName(struct FString* Text);
-	void OnProgress(struct FString* archive, float* Percentage, int* bytes);
-	void OnFileDone(struct FString* archive, struct FString* file);
-	void OnDone(struct FString* archive, TEnumAsByte<EZipUtilityCompletionState>* CompletionState);
+	void SetDate(const struct FDateTime& Date);
+	void SetLive(bool IsLive);
+	void SetSize(int SizeInBytes);
+	void SetFriendlyName(const struct FString& FriendlyName);
+	void SetReplayItem(const struct FReplayItem& ReplayItem);
+	void SetSessionName(const struct FString& Text);
+	void OnProgress(const struct FString& archive, float Percentage, int bytes);
+	void OnFileDone(const struct FString& archive, const struct FString& file);
+	void OnDone(const struct FString& archive, TEnumAsByte<EZipUtilityCompletionState> CompletionState);
 	void BndEvt__Cancel_K2Node_ComponentBoundEvent_92_OnButtonClickedEvent__DelegateSignature();
 	void BndEvt__CheckBoxShouldKeep_K2Node_ComponentBoundEvent_548_OnCheckBoxComponentStateChanged__DelegateSignature(bool bIsChecked);
-	void UnzipEvent(struct FString* strFullPath, struct FString* strToExtract);
-	void ShowUnzipPercent(struct FString* archive, float* Percentage, int* bytes);
+	void UnzipEvent(const struct FString& strFullPath, const struct FString& strToExtract);
+	void ShowUnzipPercent(const struct FString& archive, float Percentage, int bytes);
 	void BndEvt__ButtonReplay_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
-	void OnStartProcess(struct FString* archive, int* bytes);
-	void OnFileFound(struct FString* archive, struct FString* file, int* Size);
-	void ShowUnZipFileDone(struct FString* archive, struct FString* file);
-	void ShowUnzipDone(struct FString* archive, TEnumAsByte<EZipUtilityCompletionState>* CompletionState);
+	void OnStartProcess(const struct FString& archive, int bytes);
+	void OnFileFound(const struct FString& archive, const struct FString& file, int Size);
+	void ShowUnZipFileDone(const struct FString& archive, const struct FString& file);
+	void ShowUnzipDone(const struct FString& archive, TEnumAsByte<EZipUtilityCompletionState> CompletionState);
 	void BndEvt__Download_K2Node_ComponentBoundEvent_15_OnButtonClickedEvent__DelegateSignature();
 	void Construct();
-	void ExecuteUbergraph_ReplayListItem(int* EntryPoint);
-	void EventOnUpdateItem__DelegateSignature(struct FReplayItem* inReplayItem);
-	void EventOnUpdateShouldKeep__DelegateSignature(struct FString* RegionOrLocal, struct FReplayItem* inReplayItem, struct FReplayItem* bShoudUpdate);
-	void EventOnCancelDownloading__DelegateSignature(struct FString* Name, class UWidget** Widget);
-	void EventOnDownload__DelegateSignature(struct FString* Name, class UWidget** Widget);
-	void EventOnItemClicked__DelegateSignature(struct FString* inRegionOrLocal, struct FReplayItem* inReplayItem);
+	void ExecuteUbergraph_ReplayListItem(int EntryPoint);
+	void EventOnUpdateItem__DelegateSignature(const struct FReplayItem& inReplayItem);
+	void EventOnUpdateShouldKeep__DelegateSignature(const struct FString& RegionOrLocal, const struct FReplayItem& inReplayItem, const struct FReplayItem& bShoudUpdate);
+	void EventOnCancelDownloading__DelegateSignature(const struct FString& Name, class UWidget* Widget);
+	void EventOnDownload__DelegateSignature(const struct FString& Name, class UWidget* Widget);
+	void EventOnItemClicked__DelegateSignature(const struct FString& inRegionOrLocal, const struct FReplayItem& inReplayItem);
 };
 
 

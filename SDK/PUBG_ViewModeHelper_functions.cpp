@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,7 +14,7 @@ namespace SDK
 
 // Function ViewModeHelper.ViewModeHelper_C.OnMouseDown
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UViewModeHelper_C::OnMouseDown()
 {
@@ -35,7 +35,7 @@ void UViewModeHelper_C::OnMouseDown()
 
 // Function ViewModeHelper.ViewModeHelper_C.OnMouseUp
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UViewModeHelper_C::OnMouseUp()
 {
@@ -57,10 +57,10 @@ void UViewModeHelper_C::OnMouseUp()
 // Function ViewModeHelper.ViewModeHelper_C.AddX
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float*                         Scale                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// float                          Scale                          (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UViewModeHelper_C::AddX(float* Scale)
+void UViewModeHelper_C::AddX(float Scale)
 {
 	static UFunction* fn;
 
@@ -81,10 +81,10 @@ void UViewModeHelper_C::AddX(float* Scale)
 // Function ViewModeHelper.ViewModeHelper_C.AddY
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float*                         Scale                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// float                          Scale                          (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UViewModeHelper_C::AddY(float* Scale)
+void UViewModeHelper_C::AddY(float Scale)
 {
 	static UFunction* fn;
 
@@ -105,10 +105,10 @@ void UViewModeHelper_C::AddY(float* Scale)
 // Function ViewModeHelper.ViewModeHelper_C.ViewModeZoomInOrOut
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float*                         Scale                          (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// float                          Scale                          (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UViewModeHelper_C::ViewModeZoomInOrOut(float* Scale)
+void UViewModeHelper_C::ViewModeZoomInOrOut(float Scale)
 {
 	static UFunction* fn;
 
@@ -128,7 +128,7 @@ void UViewModeHelper_C::ViewModeZoomInOrOut(float* Scale)
 
 // Function ViewModeHelper.ViewModeHelper_C.ViewModeReset
 // (BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UViewModeHelper_C::ViewModeReset()
 {
@@ -149,7 +149,7 @@ void UViewModeHelper_C::ViewModeReset()
 
 // Function ViewModeHelper.ViewModeHelper_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UViewModeHelper_C::Construct()
 {
@@ -171,10 +171,10 @@ void UViewModeHelper_C::Construct()
 // Function ViewModeHelper.ViewModeHelper_C.ExecuteUbergraph_ViewModeHelper
 // (HasDefaults)
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UViewModeHelper_C::ExecuteUbergraph_ViewModeHelper(int* EntryPoint)
+void UViewModeHelper_C::ExecuteUbergraph_ViewModeHelper(int EntryPoint)
 {
 	static UFunction* fn;
 

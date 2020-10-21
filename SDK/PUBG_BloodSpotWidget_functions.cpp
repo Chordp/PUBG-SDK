@@ -1,4 +1,4 @@
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -14,7 +14,7 @@ namespace SDK
 
 // Function BloodSpotWidget.BloodSpotWidget_C.Start
 // (Public, BlueprintCallable, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBloodSpotWidget_C::Start()
 {
@@ -35,7 +35,7 @@ void UBloodSpotWidget_C::Start()
 
 // Function BloodSpotWidget.BloodSpotWidget_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
 void UBloodSpotWidget_C::Construct()
 {
@@ -57,10 +57,10 @@ void UBloodSpotWidget_C::Construct()
 // Function BloodSpotWidget.BloodSpotWidget_C.OnAnimationFinished
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// class UWidgetAnimation**       Animation                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// class UWidgetAnimation*        Animation                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UBloodSpotWidget_C::OnAnimationFinished(class UWidgetAnimation** Animation)
+void UBloodSpotWidget_C::OnAnimationFinished(class UWidgetAnimation* Animation)
 {
 	static UFunction* fn;
 
@@ -81,10 +81,10 @@ void UBloodSpotWidget_C::OnAnimationFinished(class UWidgetAnimation** Animation)
 // Function BloodSpotWidget.BloodSpotWidget_C.OnAnimationStarted
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// class UWidgetAnimation**       Animation                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// class UWidgetAnimation*        Animation                      (ConstParm, Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UBloodSpotWidget_C::OnAnimationStarted(class UWidgetAnimation** Animation)
+void UBloodSpotWidget_C::OnAnimationStarted(class UWidgetAnimation* Animation)
 {
 	static UFunction* fn;
 
@@ -105,10 +105,10 @@ void UBloodSpotWidget_C::OnAnimationStarted(class UWidgetAnimation** Animation)
 // Function BloodSpotWidget.BloodSpotWidget_C.ExecuteUbergraph_BloodSpotWidget
 // (HasDefaults)
 // Parameters:
-// int*                           EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
-// FunctionAddress:0x00007FF629EA4280              		 offset:13d4280                       
+// int                            EntryPoint                     (Parm, ZeroConstructor, IsPlainOldData)
+// FunctionAddress:0x00007FF75E302250              		 offset:4902250                       
 
-void UBloodSpotWidget_C::ExecuteUbergraph_BloodSpotWidget(int* EntryPoint)
+void UBloodSpotWidget_C::ExecuteUbergraph_BloodSpotWidget(int EntryPoint)
 {
 	static UFunction* fn;
 

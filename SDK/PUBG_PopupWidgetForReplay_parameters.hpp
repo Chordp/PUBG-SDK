@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -53,23 +53,23 @@ struct UPopupWidgetForReplay_C_XBoxOneOk_Params
 // Function PopupWidgetForReplay.PopupWidgetForReplay_C.SetPopup
 struct UPopupWidgetForReplay_C_SetPopup_Params
 {
-	EPopupStyle*                                       PopupStyle;                                               // (Parm, ZeroConstructor, IsPlainOldData)
-	struct FText*                                      Title;                                                    // (ConstParm, Parm, OutParm, ReferenceParm)
-	struct FText*                                      Message;                                                  // (ConstParm, Parm, OutParm, ReferenceParm)
-	struct FScriptDelegate*                            PressedDelegate;                                          // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	EPopupStyle                                        PopupStyle;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FText                                       Title;                                                    // (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FText                                       Message;                                                  // (ConstParm, Parm, OutParm, ReferenceParm)
+	struct FScriptDelegate                             PressedDelegate;                                          // (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
 
 // Function PopupWidgetForReplay.PopupWidgetForReplay_C.Tick
 struct UPopupWidgetForReplay_C_Tick_Params
 {
-	struct FGeometry*                                  MyGeometry;                                               // (Parm, IsPlainOldData)
-	float*                                             InDeltaTime;                                              // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FGeometry                                   MyGeometry;                                               // (Parm, IsPlainOldData)
+	float                                              InDeltaTime;                                              // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function PopupWidgetForReplay.PopupWidgetForReplay_C.ExecuteUbergraph_PopupWidgetForReplay
 struct UPopupWidgetForReplay_C_ExecuteUbergraph_PopupWidgetForReplay_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function PopupWidgetForReplay.PopupWidgetForReplay_C.HideMyself__DelegateSignature

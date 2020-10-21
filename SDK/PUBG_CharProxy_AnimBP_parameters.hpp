@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -17,7 +17,7 @@ namespace SDK
 // Function CharProxy_AnimBP.CharProxy_AnimBP_C.ProcessLobbyCharacter
 struct UCharProxy_AnimBP_C_ProcessLobbyCharacter_Params
 {
-	class ALobbyCharacter**                            LobbyCharRef;                                             // (Parm, ZeroConstructor, IsPlainOldData)
+	class ALobbyCharacter*                             LobbyCharRef;                                             // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function CharProxy_AnimBP.CharProxy_AnimBP_C.UpdateBlink
@@ -294,7 +294,7 @@ struct UCharProxy_AnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_CharProxy
 // Function CharProxy_AnimBP.CharProxy_AnimBP_C.BlueprintUpdateAnimation
 struct UCharProxy_AnimBP_C_BlueprintUpdateAnimation_Params
 {
-	float*                                             DeltaTimeX;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	float                                              DeltaTimeX;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function CharProxy_AnimBP.CharProxy_AnimBP_C.BlueprintInitializeAnimation
@@ -316,13 +316,13 @@ struct UCharProxy_AnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_CharProxy
 // Function CharProxy_AnimBP.CharProxy_AnimBP_C.OnLobbyEmotePlay_Event
 struct UCharProxy_AnimBP_C_OnLobbyEmotePlay_Event_Params
 {
-	struct FName*                                      EmoteName;                                                // (Parm, ZeroConstructor, IsPlainOldData)
+	struct FName                                       EmoteName;                                                // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 // Function CharProxy_AnimBP.CharProxy_AnimBP_C.ExecuteUbergraph_CharProxy_AnimBP
 struct UCharProxy_AnimBP_C_ExecuteUbergraph_CharProxy_AnimBP_Params
 {
-	int*                                               EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
+	int                                                EntryPoint;                                               // (Parm, ZeroConstructor, IsPlainOldData)
 };
 
 }

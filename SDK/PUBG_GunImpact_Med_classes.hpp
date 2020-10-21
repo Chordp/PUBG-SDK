@@ -1,6 +1,6 @@
 #pragma once
 
-// PUBG (8.3.5.39) SDK
+// PUBG (9.1.5.3) SDK
 
 #ifdef _MSC_VER
 	#pragma pack(push, 0x8)
@@ -15,11 +15,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass GunImpact_Med.GunImpact_Med_C
-// 0x0008 (0x0DF0 - 0x0DE8)
+// 0x0008 (0x0E00 - 0x0DF8)
 class AGunImpact_Med_C : public ATslImpactEffect
 {
 public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x0DE8(0x0008) (Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x0DF8(0x0008) (Transient, DuplicateTransient)
 
 	static UClass* StaticClass()
 	{
@@ -33,11 +33,11 @@ public:
 
 	struct FDecalEffectDataSet GetAdjustedDecalEffectDataSet_BP();
 	void UserConstructionScript();
-	void PreWakeUp_BP(struct FTransform* InitialTransform);
-	void WakeUp_BP(struct FTransform* InitialTransform);
+	void PreWakeUp_BP(const struct FTransform& InitialTransform);
+	void WakeUp_BP(const struct FTransform& InitialTransform);
 	void ReceiveBeginPlay();
 	void AdjustDecalEffectDataSet_BP();
-	void ExecuteUbergraph_GunImpact_Med(int* EntryPoint);
+	void ExecuteUbergraph_GunImpact_Med(int EntryPoint);
 };
 
 
